@@ -1,0 +1,295 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch,
+      Decrees: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1625922730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20250309/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_2,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Energie,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/energie.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_3,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Kultur,
+          CollectionStartDate: {
+            Seconds: 1589116330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1605013930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240818/kultur.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+          CollectionStartDate: {
+            Seconds: 1581340330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_5,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+          CollectionStartDate: {
+            Seconds: 1575983530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1591794730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 50000,
+          MaxElectronicSignatureCount: 5000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: true
+          },
+          State: CollectionApplicable
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Decrees: [
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_7,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+          CollectionStartDate: {
+            Seconds: 1581599530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/1231sa/steuern.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: true
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_8,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          CollectionStartDate: {
+            Seconds: 1576242730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Decrees: [
+        {
+          Id: Guid_9,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über den Ausbau des öffentlichen Nahverkehrs,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240922/nahverkehr-ausbau.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_10,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_11,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+          CollectionStartDate: {
+            Seconds: 1581340330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240324/digitales-buergerportal.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_12,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+          CollectionStartDate: {
+            Seconds: 1575983530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        }
+      ]
+    }
+  ]
+}

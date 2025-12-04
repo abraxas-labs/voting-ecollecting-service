@@ -1,0 +1,110 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.wohnraum-schuetzen.ch/,
+        Type: 1,
+        State: 6,
+        LogoId: Guid_2,
+        Reason: Wir brauchen Wohnraum!,
+        Address: {
+          ZipCode: 4058,
+          Locality: Basel,
+          IsComplete: true,
+          CommitteeOrPerson: Verein für Wohnschutz,
+          StreetOrPostOfficeBox: Rheinstrasse 17
+        },
+        ImageId: Guid_3,
+        Wording: Wohnraum für alle,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Wohnschutz-Initiative,
+        LockedFields: {
+          Wording: false,
+          Description: true,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 4000,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412223,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 2,
+        MaxElectronicSignatureCount: 0,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.wohnraum-schuetzen.ch/,
+        Type: 1,
+        State: 7,
+        LogoId: Guid_2,
+        Reason: Wir brauchen Wohnraum!,
+        Address: {
+          ZipCode: 4058,
+          Locality: Basel,
+          IsComplete: true,
+          CommitteeOrPerson: Verein für Wohnschutz,
+          StreetOrPostOfficeBox: Rheinstrasse 17
+        },
+        ImageId: Guid_3,
+        Wording: Wohnraum für alle,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: Test user,
+          ModifiedByEmail: voting+tester@abraxas.ch
+        },
+        SubTypeId: Guid_4,
+        Description: Wohnschutz-Initiative,
+        LockedFields: {
+          Wording: false,
+          Description: true,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 4000,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412223,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 2,
+        MaxElectronicSignatureCount: 0,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    }
+  ]
+}

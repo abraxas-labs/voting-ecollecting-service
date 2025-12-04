@@ -1,0 +1,6 @@
+﻿{
+  DomainOfInfluenceTypes: [
+    Ch,
+    Ct
+  ]
+}

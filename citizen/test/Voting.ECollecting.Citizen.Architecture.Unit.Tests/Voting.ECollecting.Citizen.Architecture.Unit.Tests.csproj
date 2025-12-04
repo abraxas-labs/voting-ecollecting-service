@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>;CS1591;SA0001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TngTech.ArchUnitNET.xUnit" Version="0.11.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Abstractions.Adapter.Data\Voting.ECollecting.Citizen.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Abstractions.Adapter.VotingStimmregister\Voting.ECollecting.Citizen.Abstractions.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Abstractions.Api\Voting.ECollecting.Citizen.Abstractions.Api.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Abstractions.Core\Voting.ECollecting.Citizen.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Adapter.Data\Voting.ECollecting.Citizen.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Adapter.VotingStimmregister\Voting.ECollecting.Citizen.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Api\Voting.ECollecting.Citizen.Api.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Core\Voting.ECollecting.Citizen.Core.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Domain\Voting.ECollecting.Citizen.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.WebService\Voting.ECollecting.Citizen.WebService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="solution-architecture.puml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

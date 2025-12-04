@@ -1,0 +1,117 @@
+﻿{
+  member: {
+    InitiativeId: Guid_1,
+    SortIndex: 19,
+    FirstName: Foo,
+    LastName: Bar,
+    PoliticalFirstName: Foo (pol),
+    PoliticalLastName: Bar (pol),
+    Bfs: 3203,
+    PoliticalBfs: 3203,
+    PoliticalDuty: Protokollführer,
+    DateOfBirth: Date_1,
+    Email: foo@example.com,
+    MemberSignatureRequested: true,
+    ApprovalState: Requested,
+    Token: {
+      Value: <url-token>
+    },
+    TokenExpiry: DateTime_1,
+    CanEdit: true,
+    CanReset: false,
+    CanVerify: true,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test user,
+      CreatedByEmail: voting+tester@abraxas.ch,
+      CreatedAt: DateTime_2
+    },
+    Id: Guid_2
+  },
+  sent: [
+    {
+      RecipientEmail: foo@example.com,
+      Subject: E-Collecting: Einladung zum Komiteemitglied,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Einladung zum Komiteemitglied</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><h2>Neue Mitgliedschaft im Initiativkomitee in E-Collecting</h2>
+<p>Hallo,</p>
+<p>
+  Im E-Collecting wurden Sie zum Initiativkomitee von Kein Zwang gegen Kinder und Jugendliche hinzugefügt.
+  Bestätigen Sie die Teilnahme <a href="http://localhost:4700/sg/initiative-committee-membership-approval#token=<url-token>">hier</a>.
+</p>
+<p>
+   Zusätzlich wurde für Sie eine Berechtigung angelegt.
+   Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
+</p></div>
+</body>
+</html>
+    }
+  ],
+  notifications: [
+    {
+      RecipientEMail: foo@example.com,
+      State: Sent,
+      SentTimestamp: DateTime_2,
+      TemplateBag: {
+        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        RecipientIsCitizen: true,
+        NotificationType: CommitteeMembershipAddedWithPermission,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    }
+  ],
+  permission: {
+    LastName: Bar,
+    FirstName: Foo,
+    Email: foo@example.com,
+    Token: {
+      Value: <url-token>
+    },
+    TokenExpiry: DateTime_1,
+    Accepted: false,
+    State: Pending,
+    IamLastName: ,
+    IamFirstName: ,
+    IamUserId: ,
+    Role: Deputy,
+    CollectionId: Guid_1,
+    InitiativeCommitteeMemberId: Guid_2,
+    FullName: Foo Bar,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test user,
+      CreatedByEmail: voting+tester@abraxas.ch,
+      CreatedAt: DateTime_2
+    },
+    Id: Guid_4
+  }
+}

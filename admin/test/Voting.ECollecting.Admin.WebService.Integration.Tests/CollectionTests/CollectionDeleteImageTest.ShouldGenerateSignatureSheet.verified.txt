@@ -1,0 +1,105 @@
+﻿{
+  Description: Kein Zwang gegen Kinder und Jugendliche,
+  Wording:
+Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
+Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
+dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
+
+Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+  Reason: Kinder müssen geschützt werden!,
+  CommitteeMembers: [
+    {
+      LastName: Huber,
+      PoliticalLastName: Huber,
+      FirstName: Patrick,
+      PoliticalFirstName: Pädu,
+      DayOfBirth: 9,
+      MonthOfBirth: 8,
+      YearOfBirth: 1982,
+      Residence: Berg SG,
+      PoliticalResidence: Berg SG,
+      ApprovalState: Approved
+    },
+    {
+      LastName: Schmid,
+      PoliticalLastName: Schmid,
+      FirstName: Nina,
+      PoliticalFirstName: Nina,
+      DayOfBirth: 12,
+      MonthOfBirth: 6,
+      YearOfBirth: 1997,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      ApprovalState: Approved
+    },
+    {
+      LastName: Arnold,
+      PoliticalLastName: Arnold,
+      FirstName: Carla,
+      PoliticalFirstName: Carla,
+      DayOfBirth: 19,
+      MonthOfBirth: 8,
+      YearOfBirth: 1994,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      ApprovalState: Approved
+    },
+    {
+      LastName: Brunner,
+      PoliticalLastName: Brunner,
+      FirstName: Florian,
+      PoliticalFirstName: Flo,
+      DayOfBirth: 14,
+      MonthOfBirth: 3,
+      YearOfBirth: 1983,
+      Residence: Berg SG,
+      PoliticalResidence: Berg SG,
+      ApprovalState: Approved
+    },
+    {
+      LastName: Gerber,
+      PoliticalLastName: Gerber,
+      FirstName: Melanie,
+      PoliticalFirstName: Melanie,
+      DayOfBirth: 22,
+      MonthOfBirth: 12,
+      YearOfBirth: 1991,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      ApprovalState: Approved
+    },
+    {
+      LastName: Keller,
+      PoliticalLastName: Keller,
+      FirstName: Andreas,
+      PoliticalFirstName: Andi,
+      DayOfBirth: 6,
+      MonthOfBirth: 6,
+      YearOfBirth: 1978,
+      Residence: Berg SG,
+      PoliticalResidence: Berg SG,
+      ApprovalState: Approved
+    },
+    {
+      LastName: Schwarz,
+      PoliticalLastName: Schwarz,
+      FirstName: Sophia,
+      PoliticalFirstName: Sophia,
+      DayOfBirth: 17,
+      MonthOfBirth: 4,
+      YearOfBirth: 1996,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      ApprovalState: Approved
+    }
+  ],
+  CommitteeName: Forum für Menschenrechte,
+  CommitteeStreet: Kramgasse 7,
+  CommitteeZipCode: 3011,
+  CommitteeLocality: Bern,
+  Website: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+  Logo: iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVR4nO2Y6U7jMBSFef83KJsAAapQSwGx70sFpSDEVtaeZ/HoWLhK0pRFdDRn4Pz4BLHrxL7f9c0yAiAYyDDyrydgYCEQxkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQvALhHS73fD09BT/lvU/PDyE+/v7geMfHx9j/6Dx3+X5+Tm8vLyU9nHevPbr62tpP8exf9B4OSFcbK1WC5VKJZydneX6uJBqtRr7yOzsbLi+vs4Fo/Y2lkxPT4d2uz3U+e3u7sZzr66u9iUR20ZHR2P/xMREODk5yf1me3s7jI2Nxf7x8fF4LmkhDDiDnAKaFcIFz8/PxwUdHByEZrMZJicnw9TUVJTI39Tr9RiQnZ2dcHp6GoVw4e/tps/CjF9ZWenNrShkc3Oz1855p8S5vLyM/YeHh/F4cXExtFqtXuJwHZJCuIUZXAZ5eXm5TwgznW0bGxu9tqOjo9jGv3d3d/H/RqPR6z8/P49tDFbxetxNa2trudJBiaRsfpwTZa+vr/cJ4TkonsmUTS7+jknC45mZmbi2VMrSmLm5OU0hhJnDhaRAZ4Vwu7MtW4LSopeWlmJ5qFQq4fj4OLerGERma/FaHMsEWFhYiMGhiLS7yuZ2c3MTr93pdPqEXF1dxTbKyo6hIJYu3vPS7sj2p13C5JAUUsz8rBAGgG3ZewYDyTYGNdX2VquVOxezkqWr7DrcVZTCUkgZlP7R3MqEcJ5sK94TOK9UtsrKXCqBt7e3FoI39vf34ziWlM88+VjIXypZeLtnpPtCtnx9VcivLFkXFxdDvam32+3cPSOVLwbpq0J+7E2dmcSStLW1FRfDcsJjLuI7j72dTqfvWhxTfE+glEHvLQwg55IkM9t5zJfQH/nYm63nRdJ7BAP70YthvV7PvRhyZw1jbnzKKpsbA132Yshk+ejFcG9vb6gyhi6EO4FBLVL8BMKdVJb1yIgZ9qeT9DmnSPETCXfee9f+7z6dGFgIfhAWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWvwBvp5lf+N7iLMAAAAASUVORK5CYII=,
+  CollectionStartDate: Date_MinValue,
+  CollectionEndDate: Date_MinValue,
+  SignatureListSubmissionEndDate: Date_MinValue
+}

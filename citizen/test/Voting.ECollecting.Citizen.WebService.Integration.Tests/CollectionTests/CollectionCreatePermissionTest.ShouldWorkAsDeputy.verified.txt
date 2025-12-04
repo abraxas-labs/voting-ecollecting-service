@@ -1,0 +1,27 @@
+﻿{
+  LastName: Muster,
+  FirstName: Hans,
+  Email: hans.muster@example.com,
+  Token: {
+    Value: <url-token>
+  },
+  TokenExpiry: DateTime_1,
+  Accepted: false,
+  State: Pending,
+  IamLastName: ,
+  IamFirstName: ,
+  IamUserId: ,
+  Role: Reader,
+  CollectionId: Guid_1,
+  FullName: Hans Muster,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: user-id-deputy,
+    CreatedByName: Test user,
+    CreatedByEmail: voting+tester@abraxas.ch,
+    CreatedAt: DateTime_2
+  },
+  Id: Guid_2
+}

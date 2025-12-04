@@ -1,0 +1,29 @@
+﻿{
+  DomainOfInfluences: [
+    {
+      Bfs: 3203,
+      Name: Stadt St.Gallen,
+      Type: Mu,
+      Settings: {
+        InitiativeMinSignatureCount: 100000,
+        InitiativeMaxElectronicSignaturePercent: 50,
+        InitiativeNumberOfMembersCommittee: 15,
+        ReferendumMinSignatureCount: 10000,
+        ReferendumMaxElectronicSignaturePercent: 20,
+        ECollectingEnabled: true
+      },
+      Address: {
+        Street: Bahnhofsplatz 1,
+        ZipCode: 9001,
+        Locality: St.Gallen
+      },
+      Phone: +41 12 345 67 99,
+      Email: stadt-sg@example.com,
+      Webpage: https://stadt.sg.ch,
+      Logo: {
+        Id: Guid_1,
+        Name: placeholder-logo.png
+      }
+    }
+  ]
+}

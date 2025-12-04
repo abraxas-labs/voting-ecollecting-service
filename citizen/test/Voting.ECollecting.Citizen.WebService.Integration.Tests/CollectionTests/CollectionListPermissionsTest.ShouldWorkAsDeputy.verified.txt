@@ -1,0 +1,52 @@
+﻿{
+  Permissions: [
+    {
+      Id: Guid_1,
+      CollectionId: Guid_2,
+      LastName: Gruen,
+      FirstName: Jessica,
+      Email: jessica.gruen@example.com,
+      State: Rejected,
+      Role: Reader,
+      IamLastName: Gruen,
+      IamFirstName: Jessica,
+      IamUserId: user-id-reader-not-accepted
+    },
+    {
+      Id: Guid_3,
+      CollectionId: Guid_2,
+      LastName: Huenkeler,
+      FirstName: Peter,
+      Email: peter.huenkeler@example.com,
+      State: Pending,
+      Role: Deputy,
+      IamLastName: Huenkeler,
+      IamFirstName: Peter,
+      IamUserId: user-id-deputy-not-accepted
+    },
+    {
+      Id: Guid_4,
+      CollectionId: Guid_2,
+      LastName: Meier,
+      FirstName: Rudolph,
+      Email: rudolph.meier@example.com,
+      State: Accepted,
+      Role: Deputy,
+      IamLastName: Meier,
+      IamFirstName: Rudolph,
+      IamUserId: user-id-deputy
+    },
+    {
+      Id: Guid_5,
+      CollectionId: Guid_2,
+      LastName: Mueller,
+      FirstName: Jeanine,
+      Email: jeanine.mueller@example.com,
+      State: Accepted,
+      Role: Reader,
+      IamLastName: Mueller,
+      IamFirstName: Jeanine,
+      IamUserId: user-id-reader
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="UserNotification.InformalReviewRequested" xml:space="preserve">
+    <value>Informelle Vorprüfung beantragt.</value>
+  </data>
+  <data name="UserNotification.InformalReviewWithdrawn" xml:space="preserve">
+    <value>Informelle Vorprüfung beendet.</value>
+  </data>
+  <data name="UserNotification.StateChanged" xml:space="preserve">
+    <value>Der Status wurde auf '{0}' geändert.</value>
+  </data>
+  <data name="CollectionState.PreRecorded" xml:space="preserve">
+    <value>Vorerfasst</value>
+  </data>
+  <data name="CollectionState.InPreparation" xml:space="preserve">
+    <value>In Erfassung</value>
+  </data>
+  <data name="CollectionState.Withdrawn" xml:space="preserve">
+    <value>Zurückgezogen</value>
+  </data>
+  <data name="CollectionState.Submitted" xml:space="preserve">
+    <value>Eingereicht</value>
+  </data>
+  <data name="CollectionState.NotPassed" xml:space="preserve">
+    <value>Nicht zulässig</value>
+  </data>
+  <data name="CollectionState.ReturnedForCorrection" xml:space="preserve">
+    <value>In Korrektur</value>
+  </data>
+  <data name="CollectionState.UnderReview" xml:space="preserve">
+    <value>In Prüfung</value>
+  </data>
+  <data name="CollectionState.ReadyForRegistration" xml:space="preserve">
+    <value>Bereit für Anmeldung</value>
+  </data>
+  <data name="CollectionState.Registered" xml:space="preserve">
+    <value>Angemeldet</value>
+  </data>
+  <data name="CollectionState.PreparingForCollection" xml:space="preserve">
+    <value>Sammlung wird aufgeschaltet</value>
+  </data>
+  <data name="CollectionState.EnabledForCollection.Initiative" xml:space="preserve">
+    <value>Freigegeben</value>
+  </data>
+  <data name="CollectionState.EnabledForCollection.Referendum" xml:space="preserve">
+    <value>Erfasst</value>
+  </data>
+  <data name="CollectionState.SignatureSheetsSubmitted" xml:space="preserve">
+    <value>Sammlung beendet</value>
+  </data>
+  <data name="CollectionState.EndedCameAbout" xml:space="preserve">
+    <value>Zustandegekommen</value>
+  </data>
+  <data name="CollectionState.EndedCameNotAbout" xml:space="preserve">
+    <value>Nicht zustandegekommen</value>
+  </data>
+</root>

@@ -1,0 +1,48 @@
+﻿{
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Stadtweite Friedhofsinitiative,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Stadtweite Friedhofsinitiative,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Stadtweite Friedhofsinitiative,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'Zustandegekommen' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_5
+  }
+}

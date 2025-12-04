@@ -1,0 +1,37 @@
+﻿{
+  DomainOfInfluenceType: Ct,
+  CollectionType: Einheitsinitiative,
+  CollectionDescription: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+  TotalValidElectronicSignatureCount: 42,
+  TotalValidPhysicalSignatureCount: 58,
+  TotalInvalidPhysicalSignatureCount: 9,
+  TotalSignatureCount: 100,
+  DomainOfInfluences: [
+    {
+      Name: Bezirk St.Gallen,
+      ValidElectronicSignatureCount: 30,
+      ValidPhysicalSignatureCount: 51,
+      InvalidPhysicalSignatureCount: 9,
+      DomainOfInfluences: [
+        {
+          Name: St. Gallen,
+          ValidElectronicSignatureCount: 10,
+          ValidPhysicalSignatureCount: 17,
+          InvalidPhysicalSignatureCount: 3
+        },
+        {
+          Name: Goldach,
+          ValidElectronicSignatureCount: 10,
+          ValidPhysicalSignatureCount: 17,
+          InvalidPhysicalSignatureCount: 3
+        },
+        {
+          Name: Berg (SG),
+          ValidElectronicSignatureCount: 10,
+          ValidPhysicalSignatureCount: 17,
+          InvalidPhysicalSignatureCount: 3
+        }
+      ]
+    }
+  ]
+}

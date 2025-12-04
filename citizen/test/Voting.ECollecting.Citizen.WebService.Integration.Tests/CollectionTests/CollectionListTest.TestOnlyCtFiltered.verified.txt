@@ -1,0 +1,311 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Referendums: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          CollectionStartDate: {
+            Seconds: 1576242730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_2,
+                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Type: Referendum,
+                Reason: Föderalismus wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_3,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_4,
+                  CollectionId: Guid_2,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_5,
+              Decree: {
+                Id: Guid_1,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_5,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_6,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_7,
+                  CollectionId: Guid_5,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 101
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_8,
+              Decree: {
+                Id: Guid_1,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_8,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_9,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_10,
+                  CollectionId: Guid_8,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 61
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 162
+          },
+          State: CollectionApplicable
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_11,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+          Collection: {
+            Id: Guid_11,
+            Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Type: Initiative,
+            Reason: Frauen sollen auch wählen dürfen,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_12,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_13,
+              CollectionId: Guid_11,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+              StreetOrPostOfficeBox: Bahnhofplatz 6,
+              ZipCode: 2502,
+              Locality: Biel/Bienne
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: SG-123.412210,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_14,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Jugendliche, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+          Collection: {
+            Id: Guid_14,
+            Description: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Type: Initiative,
+            Reason: Frauen sollen auch wählen dürfen,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_15,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_16,
+              CollectionId: Guid_14,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 42
+            },
+            Address: {
+              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+              StreetOrPostOfficeBox: Bahnhofplatz 6,
+              ZipCode: 2502,
+              Locality: Biel/Bienne
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: SG-123.412212,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu
+    }
+  ]
+}

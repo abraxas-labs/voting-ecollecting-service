@@ -1,0 +1,133 @@
+﻿{
+  SignatureSheets: [
+    {
+      Id: Guid_1,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: Berg (SG),
+      Bfs: 3211
+    },
+    {
+      Id: Guid_2,
+      Number: 7,
+      ReceivedAt: {
+        Seconds: 1578402730,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: Berg (SG),
+      Bfs: 3211
+    },
+    {
+      Id: Guid_3,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: Goldach,
+      Bfs: 3213
+    },
+    {
+      Id: Guid_4,
+      Number: 7,
+      ReceivedAt: {
+        Seconds: 1578402730,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: Goldach,
+      Bfs: 3213
+    },
+    {
+      Id: Guid_5,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203
+    },
+    {
+      Id: Guid_6,
+      Number: 7,
+      ReceivedAt: {
+        Seconds: 1578402730,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203
+    }
+  ]
+}

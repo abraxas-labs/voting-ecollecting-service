@@ -1,0 +1,42 @@
+﻿{
+  PageInfo: {
+    CurrentPage: 1,
+    PageSize: 1,
+    TotalPages: 1,
+    ItemsCount: 1,
+    TotalItemsCount: 1,
+    HasPreviousPage: false,
+    HasNextPage: false
+  },
+  Candidates: [
+    {
+      Person: {
+        RegisterId: Guid_1,
+        IsVotingAllowed: true,
+        IsBirthDateValidForVotingRights: true,
+        IsNationalityValidForVotingRights: true,
+        OfficialName: Abel,
+        FirstName: Angela,
+        DateOfBirth: {
+          Seconds: 585792000
+        },
+        ResidenceAddressStreet: Oststr.,
+        ResidenceAddressHouseNumber: 19
+      },
+      ExistingSignature: {
+        Bfs: 3213,
+        MunicipalityName: Goldach,
+        Electronic: false,
+        CollectionDescription: Referendum gegen die Änderung der direkten Bundessteuer,
+        SignatureSheetNumber: 2,
+        HasSignatureSheetNumber: true,
+        CollectionDateTime: {
+          Seconds: 1578661930,
+          Nanos: 200000000
+        },
+        IsInSameMunicipality: false,
+        IsOnSameSheet: false
+      }
+    }
+  ]
+}

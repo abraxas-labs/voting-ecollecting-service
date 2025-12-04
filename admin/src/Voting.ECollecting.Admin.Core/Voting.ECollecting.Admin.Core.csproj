@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="$(FluentValidationVersion)" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="$(FluentValidationVersion)" />
+    <PackageReference Include="NCrontab.Signed" Version="3.3.3" />
+    <PackageReference Include="Voting.Lib.Iam" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Iam.SecondFactor" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Scheduler" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.UserNotifications" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Cryptography.Kms" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Cryptography.Mocks" Version="$(VotingLibVersion)" />
+    <PackageReference Include="CsvHelper" Version="$(CsvHelperVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Abstractions.Core\Voting.ECollecting.Shared.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Core\Voting.ECollecting.Shared.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.Data\Voting.ECollecting.Admin.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.VotingBasis\Voting.ECollecting.Admin.Abstractions.Adapter.VotingBasis.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam\Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Core\Voting.ECollecting.Admin.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Domain\Voting.ECollecting.Admin.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Update="C:\Projects\voting\apps\vo-ecollecting\vo-ecollecting-admin-service\config\/stylecop.json" Link="Utils\stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

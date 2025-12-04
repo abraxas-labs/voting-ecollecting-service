@@ -1,0 +1,66 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionPermissions,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Role: 2,
+        Email: peter.huenkeler@example.com,
+        State: 1,
+        Token: Scrubbed,
+        LastName: Huenkeler,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        FirstName: Peter,
+        IamUserId: user-id-deputy-not-accepted,
+        IamLastName: Huenkeler,
+        TokenExpiry: DateTimeOffset_2,
+        CollectionId: Guid_2,
+        IamFirstName: Peter,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Role: 2,
+        Email: peter.huenkeler@example.com,
+        State: 1,
+        Token: Scrubbed,
+        LastName: Huenkeler,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        FirstName: Peter,
+        IamUserId: user-id-deputy-not-accepted,
+        IamLastName: Huenkeler,
+        TokenExpiry: DateTimeOffset_3,
+        CollectionId: Guid_2,
+        IamFirstName: Peter,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

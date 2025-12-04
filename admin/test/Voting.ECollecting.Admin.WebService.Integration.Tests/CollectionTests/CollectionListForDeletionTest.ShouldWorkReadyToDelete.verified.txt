@@ -1,0 +1,417 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch,
+      Decrees: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Altersvorsorge,
+          CollectionStartDate: {
+            Seconds: 1468156330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1499692330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20200927/altersvorsorge.html,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Altersvorsorge,
+                MinSignatureCount: 100000,
+                MaxElectronicSignatureCount: 10000
+              },
+              MembersCommittee: Max Müller, Präsident SP Zürich; Laura Schmid, Vorsitzende Pro Familia Verein Bern; Thomas Keller, Finanzverantwortlicher Greenpeace Schweiz; Anna Meier, Kommunikationsbeauftragte WWF Schweiz; Felix Weber, Projektleiter Klimaschutzverein Basel; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima Zürich; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund Genf; Jonas Berger, Geschäftsführender Vorstand Junge Grüne Schweiz; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative Basel,
+              Collection: {
+                Id: Guid_2,
+                Description: Referendum gegen die Änderung der Altersvorsorge,
+                Type: Referendum,
+                Reason: Generationengerechtigkeit wahren!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20200927/altersvorsorge.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EndedCameNotAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_3,
+                  CollectionId: Guid_2,
+                  TotalCitizenCount: 111432,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 1410
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee für eine gerechte Altersvorsorge,
+                  StreetOrPostOfficeBox: Theaterplatz 1,
+                  ZipCode: 3011,
+                  Locality: Bern
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1468156330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1499692330,
+                  Nanos: 200000000
+                },
+                PeriodState: Expired
+              },
+              Number: 
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 111432,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 1410
+          },
+          State: EndedCameNotAbout,
+          CameNotAboutReason: MinSignatureCountNotReached,
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 8
+          }
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine nachhaltige Verkehrspolitik auf Bundesebene.
+Der öffentliche Verkehr soll gestärkt und der motorisierte Individualverkehr
+reduziert werden.,
+          Collection: {
+            Id: Guid_4,
+            Description: Bundesweite Verkehrsinitiative,
+            Type: Initiative,
+            Reason: Verkehr muss nachhaltig sein!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/verkehrsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_5,
+              CollectionId: Guid_4,
+              TotalCitizenCount: 50000,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 587
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: true,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0013,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 9
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Decrees: [
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+          CollectionStartDate: {
+            Seconds: 1499692330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1531228330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_7,
+              Decree: {
+                Id: Guid_6,
+                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_7,
+                Description: Referendum gegen die Änderung des Bildungsgesetzes (withdrawn),
+                Type: Referendum,
+                Reason: Bildungsqualität im Kanton sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: Withdrawn,
+                Address: {
+                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
+                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                }
+              },
+              Number: 
+            },
+            {
+              Id: Guid_8,
+              Decree: {
+                Id: Guid_6,
+                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_8,
+                Description: Referendum gegen die Änderung des Bildungsgesetzes,
+                Type: Referendum,
+                Reason: Bildungsqualität im Kanton sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EndedCameAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_9,
+                  CollectionId: Guid_8,
+                  TotalCitizenCount: 3632,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 161
+                },
+                Address: {
+                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
+                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1499692330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1531228330,
+                  Nanos: 200000000
+                },
+                PeriodState: Expired
+              },
+              Number: 
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 3632,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 161
+          },
+          State: EndedCameAbout,
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 5
+          }
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_10,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          Wording:
+Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit einem Volumen von 100 Mio. Franken. Der Fonds wird aus Mitteln des besonderen Eigenkapitals geäufnet. Die Mittel werden verwendet für:
+
+- Massnahmen zur Verminderung der CO2-Emissionen bei Gebäuden durch die Förderungen von CO2-emissionsarmen Heizsystemen und die energetische Sanierung von Gebäudehüllen;
+- den Ausbau der Stromgewinnung durch erneuerbare Energien wie Photovoltaik, Windkraft und Biomasse;
+- gezielte Massnahmen zur Energieverbrauchsreduktion.»,
+          Collection: {
+            Id: Guid_10,
+            Description: Stadt St.Galler Klimafonds,
+            Type: Initiative,
+            Reason: SP setzt auf ausser-parlamentarischen Druck: Klimafonds-Initiative Eingereicht,
+            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/5660,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_11,
+              CollectionId: Guid_10,
+              TotalCitizenCount: 4629,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 187
+            },
+            Address: {
+              CommitteeOrPerson: Initiative Saubere Energie,
+              StreetOrPostOfficeBox: Aeschenplatz 6,
+              ZipCode: 4052,
+              Locality: Basel
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: true,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.412214,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 31
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu
+    }
+  ]
+}

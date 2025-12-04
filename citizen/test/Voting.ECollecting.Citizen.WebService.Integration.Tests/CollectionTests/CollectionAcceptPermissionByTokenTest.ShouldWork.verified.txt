@@ -1,0 +1,27 @@
+﻿{
+  LastName: Huenkeler,
+  FirstName: Peter,
+  Email: peter.huenkeler@example.com,
+  Accepted: true,
+  State: Accepted,
+  IamLastName: user,
+  IamFirstName: Test,
+  IamUserId: user-id-citizen,
+  Role: Deputy,
+  CollectionId: Guid_1,
+  FullName: Test user,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: user-id-citizen,
+    ModifiedByName: Test user,
+    ModifiedByEmail: peter.huenkeler@example.com,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

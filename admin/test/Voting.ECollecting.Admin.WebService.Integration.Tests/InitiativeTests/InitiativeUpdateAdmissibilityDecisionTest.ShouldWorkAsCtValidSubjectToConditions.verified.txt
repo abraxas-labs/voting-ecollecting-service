@@ -1,0 +1,72 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MinSignatureCount: 4000,
+  MaxElectronicSignatureCount: 500,
+  Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+  Collection: {
+    Id: Guid_1,
+    Description: Initiative für nachhaltige Stadtentwicklung,
+    Type: Initiative,
+    Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+    Link: https://www.stadtentwicklung-sg.ch/initiative,
+    Image: {
+      Id: Guid_2,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_3,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: true,
+    SignatureSheetTemplate: {
+      Id: Guid_4,
+      Name: placeholder-signatures.pdf
+    },
+    State: Submitted,
+    Address: {
+      CommitteeOrPerson: Schweizer Verkehrsforum,
+      StreetOrPostOfficeBox: Bahnhofstrasse 58,
+      ZipCode: 8001,
+      Locality: Zürich
+    },
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: true,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: false,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: false,
+      CanDeleteAdmissibilityDecision: false,
+      CanEditGeneralInformation: false,
+      CanReturnForCorrection: true
+    }
+  },
+  SubType: {
+    Id: Guid_5,
+    Bfs: 3200,
+    DomainOfInfluenceType: Ct,
+    Description: Gesetzesinitiative,
+    MinSignatureCount: 6000,
+    MaxElectronicSignatureCount: 3000
+  },
+  GovernmentDecisionNumber: 123CHE2,
+  AdmissibilityDecisionState: ValidButSubjectToConditions,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

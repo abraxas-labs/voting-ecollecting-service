@@ -1,0 +1,325 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3203,
+        IsLocked: true,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        CollectionId: Guid_2,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: St. Gallen,
+        ElectronicCitizenCount: 10
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3203,
+        IsLocked: true,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_2,
+        PhysicalCount: {
+          Total: 50,
+          Valid: 18,
+          CanAdd: true,
+          Invalid: 32
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: St. Gallen,
+        ElectronicCitizenCount: 10
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    },
+    {
+      SourceEntityName: CollectionCounts,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_4,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        CollectionId: Guid_2,
+        TotalCitizenCount: 4124,
+        ElectronicCitizenCount: 61,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      RecordAfter: {
+        Id: Guid_4,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_4,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_2,
+        TotalCitizenCount: 4125,
+        ElectronicCitizenCount: 61,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      SourceEntityId: Guid_4,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_5
+    },
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_6,
+        Count: {
+          Total: 25,
+          Valid: 25,
+          CanAdd: false,
+          Invalid: 0
+        },
+        State: 4,
+        Number: 6,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        AttestedAt: DateTimeOffset_5,
+        ReceivedAt: DateTimeOffset_6,
+        CollectionMunicipalityId: Guid_1
+      },
+      RecordAfter: {
+        Id: Guid_6,
+        Count: {
+          Total: 55,
+          Valid: 26,
+          CanAdd: true,
+          Invalid: 29
+        },
+        State: 5,
+        Number: 6,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_7,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_5,
+        ReceivedAt: DateTimeOffset_6,
+        CollectionMunicipalityId: Guid_1
+      },
+      SourceEntityId: Guid_6,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_7
+    },
+    {
+      SourceEntityName: CollectionCitizens,
+      Action: Deleted,
+      RecordBefore: {
+        Id: Guid_8,
+        Age: 46,
+        Sex: 2,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        SignatureSheetId: Guid_6,
+        CollectionDateTime: DateTimeOffset_1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        CollectionMunicipalityId: Guid_1
+      },
+      SourceEntityId: Guid_8,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_4
+      },
+      Id: Guid_9
+    },
+    {
+      SourceEntityName: CollectionCitizens,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_10,
+        Age: 82,
+        Sex: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_8,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        SignatureSheetId: Guid_6,
+        CollectionDateTime: DateTimeOffset_1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        CollectionMunicipalityId: Guid_1
+      },
+      SourceEntityId: Guid_10,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_11
+    },
+    {
+      SourceEntityName: CollectionCitizens,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_12,
+        Age: 70,
+        Sex: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_9,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        SignatureSheetId: Guid_6,
+        CollectionDateTime: DateTimeOffset_1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        CollectionMunicipalityId: Guid_1
+      },
+      SourceEntityId: Guid_12,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_6
+      },
+      Id: Guid_13
+    }
+  ],
+  CollectionCitizenLogAuditTrailEntries: [
+    {
+      CollectionId: Guid_2,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_14,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_10,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_2,
+        CollectionCitizenId: Guid_10,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        VotingStimmregisterIdMac: sEw0DtSoVWqre9u1OhNXQzfiZjuGJFrdAeyzobZzHlk=,
+        VotingStimmregisterIdEncrypted: Scrubbed
+      },
+      SourceEntityId: Guid_14,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_7
+      },
+      Id: Guid_15
+    },
+    {
+      CollectionId: Guid_2,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_16,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_11,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_2,
+        CollectionCitizenId: Guid_12,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        VotingStimmregisterIdMac: mcLLb9l51bqCG+aMCdrXydOOQghviGwXycgSGd45eS4=,
+        VotingStimmregisterIdEncrypted: Scrubbed
+      },
+      SourceEntityId: Guid_16,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_8
+      },
+      Id: Guid_17
+    }
+  ]
+}

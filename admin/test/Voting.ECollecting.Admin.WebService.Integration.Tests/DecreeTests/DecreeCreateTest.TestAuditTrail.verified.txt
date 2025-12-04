@@ -1,0 +1,39 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Decrees,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.ratsinfo.sg.ch/geschaefte/4754,
+        State: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        Description: Kantonsratsbeschluss Revision Wassergesetz (33-43.34),
+        CollectionEndDate: DateTimeOffset_2,
+        MinSignatureCount: 50000,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        MaxElectronicSignatureCount: 10000
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_2
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Abstractions.Core\Voting.ECollecting.Shared.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Domain\Voting.ECollecting.Shared.Domain.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Domain\Voting.ECollecting.Admin.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,67 @@
+﻿{
+  Initiatives: [
+    {
+      Id: Guid_1,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      MinSignatureCount: 1000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
+Parks und Gärten sollen erhalten und neue geschaffen werden.,
+      Collection: {
+        Id: Guid_1,
+        Description: Stadtweite Grünflächen,
+        Type: Initiative,
+        Reason: Mehr Grün in der Stadt!,
+        Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        Address: {
+          CommitteeOrPerson: Komitee Grünflächen,
+          StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+          ZipCode: 9000,
+          Locality: St.Gallen
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: true,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: false
+        },
+        CollectionStartDate: {
+          Seconds: 1575983530,
+          Nanos: 200000000
+        },
+        CollectionEndDate: {
+          Seconds: 1591794730,
+          Nanos: 200000000
+        },
+        PeriodState: InCollection
+      },
+      GovernmentDecisionNumber: MUSG-2025-007,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    }
+  ]
+}

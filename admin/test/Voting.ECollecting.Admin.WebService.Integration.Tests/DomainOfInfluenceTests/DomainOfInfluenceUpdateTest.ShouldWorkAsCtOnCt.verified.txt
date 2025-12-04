@@ -1,0 +1,18 @@
+﻿{
+  Bfs: 17,
+  Name: St. Gallen-updated,
+  Type: Ct,
+  Settings: {
+    ReferendumMinSignatureCount: 50000,
+    ReferendumMaxElectronicSignaturePercent: 20,
+    ECollectingEnabled: true
+  },
+  Address: {
+    Street: Edited street 99,
+    ZipCode: 9099,
+    Locality: St.Gallen-updated
+  },
+  Phone: +41 79 123 99 99,
+  Email: canton-sg-edited@example.com,
+  Webpage: https://www.sg-updated.example.ch
+}

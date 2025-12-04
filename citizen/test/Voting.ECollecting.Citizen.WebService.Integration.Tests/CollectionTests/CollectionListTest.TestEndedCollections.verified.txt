@@ -1,0 +1,1286 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch,
+      Initiatives: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die AHV-Reform soll die Finanzierung der Altersvorsorge sichern. Dafür werden
+verschiedene Massnahmen vorgeschlagen, darunter eine Erhöhung des Rentenalters
+und eine Anpassung der Beiträge.,
+          Collection: {
+            Id: Guid_1,
+            Description: AHV-Reform,
+            Type: Initiative,
+            Reason: Die AHV muss nachhaltig finanziert werden!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/ahv-21.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_2,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_3,
+              CollectionId: Guid_1,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee AHV Reform,
+              StreetOrPostOfficeBox: Postfach 400,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1583845930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1597065130,
+              Nanos: 200000000
+            },
+            PeriodState: Published
+          },
+          GovernmentDecisionNumber: CHE-2023-0008,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+          Collection: {
+            Id: Guid_4,
+            Description: Für den öffentlichen Veloverkehr,
+            Type: Initiative,
+            Reason: Der Veloverkehr muss nachhaltig finanziert werden!,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_5,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_6,
+              CollectionId: Guid_4,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CHE-2023-0012,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_7,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+          Collection: {
+            Id: Guid_7,
+            Description: Für den öffentlichen Verkehr,
+            Type: Initiative,
+            Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden!,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_8,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_9,
+              CollectionId: Guid_7,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CHE-2023-0009,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_10,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+#2
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+          Collection: {
+            Id: Guid_10,
+            Description: Für den öffentlichen Verkehr (2),
+            Type: Initiative,
+            Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_11,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_12,
+              CollectionId: Guid_10,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: ,
+              StreetOrPostOfficeBox: ,
+              ZipCode: ,
+              Locality: 
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CHE-2023-0010,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_13,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung vom 18. April 1999 wird wie folgt geändert:
+Art. 108b (neu) Steuerpolitische Massnahmen zur Wohneigentumsförderung
+1 Bund und Kantone treffen zur Förderung und zum Erhalt des selbstgenutzten Wohneigentums wirksame steuerpolitische Massnahmen.,
+          Collection: {
+            Id: Guid_13,
+            Description: Sicheres Wohnen im Alter,
+            Type: Initiative,
+            Reason: Die AHV muss nachhaltig finanziert werden!,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis359t.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_14,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_15,
+              CollectionId: Guid_13,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 167
+            },
+            Address: {
+              CommitteeOrPerson: Initiative Sicheres Wohnen im Alter,
+              StreetOrPostOfficeBox: Aeschenplatz 6,
+              ZipCode: 4052,
+              Locality: Basel
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0011,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_16,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine nachhaltige Verkehrspolitik auf Bundesebene.
+Der öffentliche Verkehr soll gestärkt und der motorisierte Individualverkehr
+reduziert werden.,
+          Collection: {
+            Id: Guid_16,
+            Description: Bundesweite Verkehrsinitiative,
+            Type: Initiative,
+            Reason: Verkehr muss nachhaltig sein!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/verkehrsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_17,
+              Name: placeholder-signatures.pdf
+            },
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_18,
+              CollectionId: Guid_16,
+              TotalCitizenCount: 50000,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 587
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0013,
+          CommitteeDescription: ,
+          CameNotAboutReason: NoSignatureSheetUploaded,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Referendums: [
+        {
+          Id: Guid_19,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          CollectionStartDate: {
+            Seconds: 1576242730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_20,
+              Decree: {
+                Id: Guid_19,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_20,
+                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Type: Referendum,
+                Reason: Föderalismus wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_21,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_22,
+                  CollectionId: Guid_20,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_23,
+              Decree: {
+                Id: Guid_19,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_23,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_24,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_25,
+                  CollectionId: Guid_23,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 101
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_26,
+              Decree: {
+                Id: Guid_19,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_26,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_27,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_28,
+                  CollectionId: Guid_26,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 61
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 162
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_29,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+          CollectionStartDate: {
+            Seconds: 1499692330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1531228330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_30,
+              Decree: {
+                Id: Guid_29,
+                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                PeriodState: Expired,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_30,
+                Description: Referendum gegen die Änderung des Bildungsgesetzes,
+                Type: Referendum,
+                Reason: Bildungsqualität im Kanton sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_31,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EndedCameAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_32,
+                  CollectionId: Guid_30,
+                  TotalCitizenCount: 3632,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 161
+                },
+                Address: {
+                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
+                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1499692330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1531228330,
+                  Nanos: 200000000
+                },
+                PeriodState: Expired
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 3632,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 161
+          },
+          State: EndedCameAbout
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_33,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Einheitsinitiative «Behördenlöhne vors Volk» wurde im Februar 2020 von den Stimmberechtigten abgelehnt.
+Im Rahmen des Kantonsratsbeschlusses verlangte der Kantonsrat eine Transparenz-Bestimmung.
+Diese wurde im II. Nachtrag zum Gemeindegesetz formuliert.
+Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürgerschaft gewählten Behördenmitglieder zu veröffentlichen.,
+          Collection: {
+            Id: Guid_33,
+            Description: Behördenlöhne vors Volk,
+            Type: Initiative,
+            Reason: Jeder soll wissen was ein Regierungsrat verdient!,
+            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_34,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_35,
+              CollectionId: Guid_33,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+              StreetOrPostOfficeBox: Burgstrasse 4,
+              ZipCode: 3600,
+              Locality: Thun
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1583845930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1597065130,
+              Nanos: 200000000
+            },
+            PeriodState: Published
+          },
+          GovernmentDecisionNumber: SG-123.412229,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_36,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+          Collection: {
+            Id: Guid_36,
+            Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Type: Initiative,
+            Reason: Frauen sollen auch wählen dürfen,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_37,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_38,
+              CollectionId: Guid_36,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+              StreetOrPostOfficeBox: Bahnhofplatz 6,
+              ZipCode: 2502,
+              Locality: Biel/Bienne
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: SG-123.412210,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_39,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Jugendliche, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+          Collection: {
+            Id: Guid_39,
+            Description: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Type: Initiative,
+            Reason: Frauen sollen auch wählen dürfen,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_40,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_41,
+              CollectionId: Guid_39,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 42
+            },
+            Address: {
+              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+              StreetOrPostOfficeBox: Bahnhofplatz 6,
+              ZipCode: 2502,
+              Locality: Biel/Bienne
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: SG-123.412212,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_42,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Bundesverfassung[1] wird wie folgt geändert:
+Art. 93 Abs. 4
+Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebühren. Das Empfangen von Programmen begründet keine Beitragspflicht.,
+          Collection: {
+            Id: Guid_42,
+            Description: Radio und Fernsehen – ohne Billag,
+            Type: Initiative,
+            Reason: Keine Gebühren mehr für Radio und Fernsehen,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis446t.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_43,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_44,
+              CollectionId: Guid_42,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 487
+            },
+            Address: {
+              CommitteeOrPerson: Schweizer Medienverband,
+              StreetOrPostOfficeBox: Medienstrasse 22,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.412211,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_45,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
+
+In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
+im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
+zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
+
+In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
+Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+          Collection: {
+            Id: Guid_45,
+            Description: Freie Schulwahl auf der Oberstufe,
+            Type: Initiative,
+            Reason: Jeder darf wählen an welche Schule er gehen möchte,
+            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_46,
+              Name: placeholder-signatures.pdf
+            },
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_47,
+              CollectionId: Guid_45,
+              TotalCitizenCount: 3487,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 15
+            },
+            Address: {
+              CommitteeOrPerson: Bildungsethik Schweiz,
+              StreetOrPostOfficeBox: Rosenweg 4,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1562764330,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.4122177,
+          CommitteeDescription: ,
+          CameNotAboutReason: MinSignatureCountNotReached,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Initiatives: [
+        {
+          Id: Guid_48,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          MinSignatureCount: 500,
+          MaxElectronicSignatureCount: 250,
+          Wording: Diese Initiative fordert eine bessere Nutzung der Bundesbahnen in Goldach.,
+          Collection: {
+            Id: Guid_48,
+            Description: Goldacher Bahnersatz,
+            Type: Initiative,
+            Reason: Bessere Nutzung der Bundesbahnen!,
+            Link: https://www.goldach.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_49,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_50,
+              CollectionId: Guid_48,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Seenähe,
+              StreetOrPostOfficeBox: Bodenseestraße 1,
+              ZipCode: 9403,
+              Locality: Goldach
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUGD-2025-003,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_51,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          MinSignatureCount: 500,
+          MaxElectronicSignatureCount: 250,
+          Wording:
+Diese Initiative fordert eine bessere Nutzung der Bodenseenähe in Goldach.
+Die Uferpromenade soll ausgebaut und der Zugang zum See verbessert werden.
+Zudem sollen mehr Freizeitangebote am See geschaffen werden.,
+          Collection: {
+            Id: Guid_51,
+            Description: Goldacher Seenähe,
+            Type: Initiative,
+            Reason: Bessere Nutzung der Bodenseenähe!,
+            Link: https://www.goldach.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_52,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_53,
+              CollectionId: Guid_51,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Seenähe,
+              StreetOrPostOfficeBox: Bodenseestraße 1,
+              ZipCode: 9403,
+              Locality: Goldach
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUGD-2025-002,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_54,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
+Parks und Gärten sollen erhalten und neue geschaffen werden.,
+          Collection: {
+            Id: Guid_54,
+            Description: Stadtweite Grünflächen,
+            Type: Initiative,
+            Reason: Mehr Grün in der Stadt!,
+            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_55,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_56,
+              CollectionId: Guid_54,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Grünflächen,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-007,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_57,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
+Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+          Collection: {
+            Id: Guid_57,
+            Description: Stadtweite Recyclinginitiative,
+            Type: Initiative,
+            Reason: Mehr Recycling für eine nachhaltige Stadt!,
+            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_58,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_59,
+              CollectionId: Guid_57,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 500
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Recyclinginitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-008,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_60,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording: Diese Initiative fordert strengere Friedhofauflagen in der Stadt St.Gallen.,
+          Collection: {
+            Id: Guid_60,
+            Description: Stadtweite Friedhofsinitiative,
+            Type: Initiative,
+            Reason: Friedhof schützen für zukünftige Generationen!,
+            Link: https://www.stadt.sg.ch/home/friedhofsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_61,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_62,
+              CollectionId: Guid_60,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Friedhofinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-010,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_63,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert strengere Umweltauflagen in der Stadt St.Gallen.
+Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.,
+          Collection: {
+            Id: Guid_63,
+            Description: Stadtweite Umweltinitiative,
+            Type: Initiative,
+            Reason: Umwelt schützen für zukünftige Generationen!,
+            Link: https://www.stadt.sg.ch/home/umweltinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_64,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_65,
+              CollectionId: Guid_63,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Umweltinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-009,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_66,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Unterstützung für kulturelle Veranstaltungen
+in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
+          Collection: {
+            Id: Guid_66,
+            Description: Stadtweite Kulturinitiative,
+            Type: Initiative,
+            Reason: Kultur für alle!,
+            Link: https://www.stadt.sg.ch/home/kulturinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_67,
+              Name: placeholder-signatures.pdf
+            },
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_68,
+              CollectionId: Guid_66,
+              TotalCitizenCount: 875,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 45
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Kulturinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1562764330,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-012,
+          CommitteeDescription: ,
+          CameNotAboutReason: NoSignatureSheetUploaded,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    }
+  ]
+}

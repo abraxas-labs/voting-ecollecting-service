@@ -1,0 +1,26 @@
+﻿{
+  DomainOfInfluences: [
+    {
+      Bfs: 17,
+      Name: Kanton St.Gallen,
+      Type: Ct,
+      Settings: {
+        ReferendumMinSignatureCount: 50000,
+        ReferendumMaxElectronicSignaturePercent: 20,
+        ECollectingEnabled: true
+      },
+      Address: {
+        Street: Regierungsgebaeude,
+        ZipCode: 9000,
+        Locality: St.Gallen
+      },
+      Phone: +41 12 345 67 89,
+      Email: kanton-sg@example.com,
+      Webpage: https://sg.ch,
+      Logo: {
+        Id: Guid_1,
+        Name: placeholder-logo.png
+      }
+    }
+  ]
+}

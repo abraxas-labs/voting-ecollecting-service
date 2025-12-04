@@ -1,0 +1,457 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/home/gesundheitsreform.html,
+        Type: 1,
+        State: 9,
+        LogoId: Guid_2,
+        Reason: Gesundheit für alle!,
+        Address: {
+          ZipCode: 3600,
+          Locality: Thun,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+          StreetOrPostOfficeBox: Burgstrasse 4
+        },
+        ImageId: Guid_3,
+        Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Kantonale Gesundheitsreform,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 4000,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412226,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: true
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/home/gesundheitsreform.html,
+        Type: 1,
+        State: 10,
+        LogoId: Guid_2,
+        Reason: Gesundheit für alle!,
+        Address: {
+          ZipCode: 3600,
+          Locality: Thun,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+          StreetOrPostOfficeBox: Burgstrasse 4
+        },
+        ImageId: Guid_3,
+        Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Kantonale Gesundheitsreform,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        CollectionEndDate: DateTimeOffset_3,
+        MinSignatureCount: 4000,
+        CollectionStartDate: DateTimeOffset_4,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412226,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    },
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/home/gesundheitsreform.html,
+        Type: 1,
+        State: 10,
+        LogoId: Guid_2,
+        Reason: Gesundheit für alle!,
+        Address: {
+          ZipCode: 3600,
+          Locality: Thun,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+          StreetOrPostOfficeBox: Burgstrasse 4
+        },
+        ImageId: Guid_3,
+        Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Kantonale Gesundheitsreform,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        CollectionEndDate: DateTimeOffset_3,
+        MinSignatureCount: 4000,
+        CollectionStartDate: DateTimeOffset_4,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412226,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: true
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/home/gesundheitsreform.html,
+        Type: 1,
+        State: 10,
+        LogoId: Guid_2,
+        Reason: Gesundheit für alle!,
+        Address: {
+          ZipCode: 3600,
+          Locality: Thun,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+          StreetOrPostOfficeBox: Burgstrasse 4
+        },
+        ImageId: Guid_3,
+        Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+        MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Kantonale Gesundheitsreform,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        EncryptionKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_Encryption12,
+        CollectionEndDate: DateTimeOffset_3,
+        MinSignatureCount: 4000,
+        CollectionStartDate: DateTimeOffset_4,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412226,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_7
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_8,
+        Bfs: 3203,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 0,
+          Valid: 0,
+          CanAdd: false,
+          Invalid: 0
+        },
+        NextSheetNumber: 1,
+        MunicipalityName: St.Gallen,
+        ElectronicCitizenCount: 0
+      },
+      SourceEntityId: Guid_8,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_9
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_10,
+        Bfs: 3211,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_6,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 0,
+          Valid: 0,
+          CanAdd: false,
+          Invalid: 0
+        },
+        NextSheetNumber: 1,
+        MunicipalityName: Berg SG,
+        ElectronicCitizenCount: 0
+      },
+      SourceEntityId: Guid_10,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_4
+      },
+      Id: Guid_11
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_12,
+        Bfs: 3213,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_7,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 0,
+          Valid: 0,
+          CanAdd: false,
+          Invalid: 0
+        },
+        NextSheetNumber: 1,
+        MunicipalityName: Goldach,
+        ElectronicCitizenCount: 0
+      },
+      SourceEntityId: Guid_12,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_13
+    },
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/home/gesundheitsreform.html,
+        Type: 1,
+        State: 10,
+        LogoId: Guid_2,
+        Reason: Gesundheit für alle!,
+        Address: {
+          ZipCode: 3600,
+          Locality: Thun,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+          StreetOrPostOfficeBox: Burgstrasse 4
+        },
+        ImageId: Guid_3,
+        Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+        MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Kantonale Gesundheitsreform,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        EncryptionKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_Encryption12,
+        CollectionEndDate: DateTimeOffset_3,
+        MinSignatureCount: 4000,
+        CollectionStartDate: DateTimeOffset_4,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412226,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: true
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/home/gesundheitsreform.html,
+        Type: 1,
+        State: 11,
+        LogoId: Guid_2,
+        Reason: Gesundheit für alle!,
+        Address: {
+          ZipCode: 3600,
+          Locality: Thun,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+          StreetOrPostOfficeBox: Burgstrasse 4
+        },
+        ImageId: Guid_3,
+        Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+        MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Kantonale Gesundheitsreform,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        EncryptionKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_Encryption12,
+        CollectionEndDate: DateTimeOffset_3,
+        MinSignatureCount: 4000,
+        CollectionStartDate: DateTimeOffset_4,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: SG-123.412226,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_6
+      },
+      Id: Guid_14
+    }
+  ]
+}

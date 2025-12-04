@@ -1,0 +1,72 @@
+﻿{
+  MinSignatureCount: 1000,
+  Wording:
+Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
+Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+  GovernmentDecisionNumber: ,
+  LockedFields: {
+    Description: false,
+    Wording: false,
+    CommitteeMembers: false
+  },
+  CollectionStartDate: DateTime_1,
+  CollectionEndDate: DateTime_2,
+  Description: Stadtweite Veloinfrastruktur,
+  Type: Initiative,
+  Reason: Mehr Platz für Velos!,
+  Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+  LogoId: Guid_1,
+  ImageId: Guid_2,
+  SignatureSheetTemplateGenerated: false,
+  SignatureSheetTemplateId: Guid_3,
+  State: PreRecorded,
+  Address: {
+    CommitteeOrPerson: Schweizer Veloinfrastruktur,
+    StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+    ZipCode: 9000,
+    Locality: St.Gallen,
+    IsComplete: true
+  },
+  Municipalities: [
+    {
+      CollectionId: Guid_4,
+      Bfs: 3203,
+      MunicipalityName: St.Gallen,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_5
+    }
+  ],
+  EncryptionKeyId: KVotingECollecting_95582881-39a8-4e9c-9094-347cb35f94bd_Encryption12,
+  MacKeyId: KVotingECollecting_95582881-39a8-4e9c-9094-347cb35f94bd_DuplicateDetection128,
+  IsElectronicSubmission: false,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Mu,
+  Bfs: 3203,
+  MaxElectronicSignatureCount: 500,
+  PeriodState: Published,
+  SignatureListSubmissionEndDate: DateTime_4,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_5,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_3
+  },
+  Id: Guid_4
+}

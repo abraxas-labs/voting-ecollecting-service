@@ -1,0 +1,39 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionPermissions,
+      Action: Deleted,
+      RecordBefore: {
+        Id: Guid_1,
+        Role: 2,
+        Email: rudolph.meier@example.com,
+        State: 2,
+        LastName: Meier,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        FirstName: Rudolph,
+        IamUserId: user-id-deputy,
+        IamLastName: Meier,
+        CollectionId: Guid_2,
+        IamFirstName: Rudolph,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

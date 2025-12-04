@@ -1,0 +1,48 @@
+﻿{
+  DomainOfInfluences: [
+    {
+      Bfs: 1,
+      Name: Kanton St.Gallen eidgenössisch,
+      Type: Ch,
+      Settings: {
+        InitiativeMinSignatureCount: 100000,
+        InitiativeMaxElectronicSignaturePercent: 80,
+        ECollectingEnabled: true
+      },
+      Address: {
+        Street: Bundesplatz 3,
+        ZipCode: 3003,
+        Locality: Bern
+      },
+      Phone: +41 12 345 67 89,
+      Email: bund@example.com,
+      Webpage: https://admin.ch,
+      Logo: {
+        Id: Guid_1,
+        Name: placeholder-logo.png
+      }
+    },
+    {
+      Bfs: 17,
+      Name: Kanton St.Gallen,
+      Type: Ct,
+      Settings: {
+        ReferendumMinSignatureCount: 50000,
+        ReferendumMaxElectronicSignaturePercent: 20,
+        ECollectingEnabled: true
+      },
+      Address: {
+        Street: Regierungsgebaeude,
+        ZipCode: 9000,
+        Locality: St.Gallen
+      },
+      Phone: +41 12 345 67 89,
+      Email: kanton-sg@example.com,
+      Webpage: https://sg.ch,
+      Logo: {
+        Id: Guid_2,
+        Name: placeholder-logo.png
+      }
+    }
+  ]
+}

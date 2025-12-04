@@ -1,0 +1,8 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.ECollecting.Shared.Domain\Voting.ECollecting.Shared.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Voting.Lib.UserNotifications" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿{
+  InitiativeId: Guid_1,
+  SortIndex: 1,
+  FirstName: Lukas,
+  LastName: Meier,
+  PoliticalFirstName: Luki,
+  PoliticalLastName: Meier,
+  Bfs: 3211,
+  PoliticalBfs: 3211,
+  PoliticalDuty: SVP Parteivorstand SG,
+  DateOfBirth: Date_1,
+  Email: lukas.meier@example.com,
+  MemberSignatureRequested: false,
+  SignatureType: UploadedSignature,
+  ApprovalState: Rejected,
+  CanEdit: false,
+  CanReset: true,
+  CanVerify: false,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Admin,
+    CreatedByEmail: admin@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_1
+  },
+  Id: Guid_2
+}

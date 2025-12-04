@@ -1,0 +1,61 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Deleted,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://sg.ch/abwasser/,
+        Type: 1,
+        State: 1,
+        LogoId: Guid_2,
+        Reason: Gewässer vor dem Abwasser schützen,
+        Address: {
+          ZipCode: 8005,
+          Locality: Zürich,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Abwasser Initiative,
+          StreetOrPostOfficeBox: Langstrasse 200
+        },
+        ImageId: Guid_3,
+        Wording: ,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: unrelated-admin,
+          CreatedByName: Unrelated ECol Seeder Admin Creator,
+          CreatedByEmail: unrelated-admin-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Abwasser Initiative,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 4000,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: CH-123.4567,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 1,
+        MaxElectronicSignatureCount: 1000,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    }
+  ]
+}

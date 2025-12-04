@@ -1,0 +1,201 @@
+﻿[
+  {
+    MinSignatureCount: 100000,
+    Wording:
+Alle Arbeitnehmerinnen und Arbeitnehmer haben Anspruch auf bezahlte Ferien von
+jährlich mindestens sechs Wochen.,
+    SubTypeId: Guid_1,
+    GovernmentDecisionNumber: CHE-2023-0007,
+    AdmissibilityDecisionState: Valid,
+    LockedFields: {
+      Description: false,
+      Wording: false,
+      CommitteeMembers: false
+    },
+    CollectionStartDate: DateTime_1,
+    CollectionEndDate: DateTime_2,
+    Description: 6 Wochen Ferien für alle,
+    Type: Initiative,
+    Reason: 6 Wochen Ferien für alle,
+    Link: https://www.bk.admin.ch/ch/d/pore/vi/vis362.html,
+    LogoId: Guid_2,
+    ImageId: Guid_3,
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplateId: Guid_4,
+    State: EnabledForCollection,
+    Address: {
+      CommitteeOrPerson: Travail Suisse,
+      StreetOrPostOfficeBox:  Postfach 5775,
+      ZipCode: 3001,
+      Locality: Bern,
+      IsComplete: true
+    },
+    Municipalities: [
+      {
+        CollectionId: Guid_5,
+        Bfs: 3203,
+        MunicipalityName: St.Gallen,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_3
+        },
+        Id: Guid_6
+      },
+      {
+        CollectionId: Guid_5,
+        Bfs: 3211,
+        MunicipalityName: Berg SG,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_3
+        },
+        Id: Guid_7
+      },
+      {
+        CollectionId: Guid_5,
+        Bfs: 3213,
+        MunicipalityName: Goldach,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_3
+        },
+        Id: Guid_8
+      }
+    ],
+    EncryptionKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_Encryption12,
+    MacKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_DuplicateDetection128,
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    DomainOfInfluenceType: Ch,
+    Bfs: 1,
+    MaxElectronicSignatureCount: 10000,
+    PeriodState: Published,
+    SignatureListSubmissionEndDate: DateTime_4,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Citizen Creator,
+      CreatedByEmail: citizen-creator@example.com,
+      CreatedAt: DateTime_5
+    },
+    Id: Guid_5
+  },
+  {
+    MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+    DecreeId: Guid_9,
+    Number: ,
+    CollectionStartDate: DateTime_6,
+    CollectionEndDate: DateTime_7,
+    Description: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen  (p: Reader),
+    Type: Referendum,
+    Reason: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen,
+    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/19880612/krankenversicherung.html,
+    LogoId: Guid_10,
+    ImageId: Guid_11,
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplateId: Guid_12,
+    State: EnabledForCollection,
+    Address: {
+      CommitteeOrPerson: Komitee für wohnortnahe Schulen St. Gallen,
+      StreetOrPostOfficeBox: Schulweg 12,
+      ZipCode: 9000,
+      Locality: St.Gallen,
+      IsComplete: true
+    },
+    Municipalities: [
+      {
+        CollectionId: Guid_13,
+        Bfs: 3203,
+        MunicipalityName: St.Gallen,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_3
+        },
+        Id: Guid_14
+      },
+      {
+        CollectionId: Guid_13,
+        Bfs: 3211,
+        MunicipalityName: Berg SG,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_3
+        },
+        Id: Guid_15
+      },
+      {
+        CollectionId: Guid_13,
+        Bfs: 3213,
+        MunicipalityName: Goldach,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_3
+        },
+        Id: Guid_16
+      }
+    ],
+    EncryptionKeyId: KVotingECollecting_98ee1e73-4866-49ec-87ba-a3fed7924ec4_Encryption12,
+    MacKeyId: KVotingECollecting_98ee1e73-4866-49ec-87ba-a3fed7924ec4_DuplicateDetection128,
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    DomainOfInfluenceType: Ct,
+    Bfs: 17,
+    MaxElectronicSignatureCount: 300,
+    PeriodState: Published,
+    SignatureListSubmissionEndDate: DateTime_8,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: unrelated-citizen,
+      CreatedByName: Unrelated ECol Seeder Citizen Creator,
+      CreatedByEmail: unrelated-citizen-creator@example.com,
+      CreatedAt: DateTime_9
+    },
+    Id: Guid_13
+  }
+]

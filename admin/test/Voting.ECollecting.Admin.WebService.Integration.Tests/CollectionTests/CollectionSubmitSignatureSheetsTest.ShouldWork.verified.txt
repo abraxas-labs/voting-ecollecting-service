@@ -1,0 +1,70 @@
+﻿{
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Referendum
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Referendum
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Referendum
+      },
+      Id: Guid_4
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'Sammlung beendet' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_5
+  },
+  response: {
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: false,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: false,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: true,
+      CanGenerateDocuments: true,
+      CanEditAdmissibilityDecision: false,
+      CanDeleteAdmissibilityDecision: false,
+      CanEditGeneralInformation: false,
+      CanReturnForCorrection: false
+    }
+  }
+}

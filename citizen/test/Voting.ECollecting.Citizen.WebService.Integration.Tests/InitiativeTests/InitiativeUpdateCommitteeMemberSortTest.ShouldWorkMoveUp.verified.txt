@@ -1,0 +1,77 @@
+﻿[
+  {
+    Email: margarita@example.com
+  },
+  {
+    Email: lukas.meier@example.com,
+    SortIndex: 1
+  },
+  {
+    Email: yannick.brunner@example.com,
+    SortIndex: 2
+  },
+  {
+    Email: elena.fischer@example.com,
+    SortIndex: 3
+  },
+  {
+    Email: sara.schneider@example.com,
+    SortIndex: 4
+  },
+  {
+    Email: thomas.keller@example.com,
+    SortIndex: 5
+  },
+  {
+    Email: julia.baumann@example.com,
+    SortIndex: 6
+  },
+  {
+    Email: patrick.huber@example.com,
+    SortIndex: 7
+  },
+  {
+    Email: nina.schmid@example.com,
+    SortIndex: 8
+  },
+  {
+    Email: daniel.egli@example.com,
+    SortIndex: 9
+  },
+  {
+    Email: laura.kaiser@example.com,
+    SortIndex: 10
+  },
+  {
+    Email: martin.steiner@example.com,
+    SortIndex: 11
+  },
+  {
+    Email: svenja.moser@example.com,
+    SortIndex: 12
+  },
+  {
+    Email: tobias.scherrer@example.com,
+    SortIndex: 13
+  },
+  {
+    Email: carla.arnold@example.com,
+    SortIndex: 14
+  },
+  {
+    Email: florian.brunner@example.com,
+    SortIndex: 15
+  },
+  {
+    Email: melanie.gerber@example.com,
+    SortIndex: 16
+  },
+  {
+    Email: andreas.keller@example.com,
+    SortIndex: 17
+  },
+  {
+    Email: sophia.schwarz@example.com,
+    SortIndex: 18
+  }
+]

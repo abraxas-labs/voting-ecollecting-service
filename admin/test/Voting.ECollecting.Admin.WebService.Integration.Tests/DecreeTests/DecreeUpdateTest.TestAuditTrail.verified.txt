@@ -1,0 +1,70 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Decrees,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+        State: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
+        CollectionEndDate: DateTimeOffset_3,
+        MinSignatureCount: 3000,
+        CollectionStartDate: DateTimeOffset_4,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        MaxElectronicSignatureCount: 300
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.ratsinfo.sg.ch/geschaefte/4754-updated,
+        State: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        Description: Kantonsratsbeschluss Revision Wassergesetz (33-43.34) UPDATED,
+        CollectionEndDate: DateTimeOffset_5,
+        MinSignatureCount: 50000,
+        CollectionStartDate: DateTimeOffset_6,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        MaxElectronicSignatureCount: 10000
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_2
+    }
+  ]
+}

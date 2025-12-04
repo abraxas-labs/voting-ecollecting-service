@@ -1,0 +1,14 @@
+﻿{
+  Permissions: [
+    {
+      FullName: Test Citizen Creator,
+      Email: citizen-creator@example.com,
+      Role: Owner
+    },
+    {
+      FullName: Rudolph Meier,
+      Email: rudolph.meier@example.com,
+      Role: Deputy
+    }
+  ]
+}

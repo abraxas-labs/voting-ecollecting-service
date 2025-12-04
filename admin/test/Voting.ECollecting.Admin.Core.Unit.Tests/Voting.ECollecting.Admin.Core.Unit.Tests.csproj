@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Adapter.Data\Voting.ECollecting.Admin.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Core\Voting.ECollecting.Admin.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Core\Voting.ECollecting.Admin.Core.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Domain\Voting.ECollecting.Admin.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,74 @@
+﻿{
+  Id: Guid_1,
+  Decree: {
+    Id: Guid_2,
+    Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+    MinSignatureCount: 300,
+    MaxElectronicSignatureCount: 30
+  },
+  MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+  Collection: {
+    Id: Guid_1,
+    Description: Referendum gegen die Änderung des Steuergesetzes,
+    Type: Referendum,
+    Reason: Steuergerechtigkeit in der Stadt wahren!,
+    Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+    Image: {
+      Id: Guid_3,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_4,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplate: {
+      Id: Guid_5,
+      Name: placeholder-signatures.pdf
+    },
+    State: EnabledForCollection,
+    AttestedCollectionCount: {
+      Id: Guid_6,
+      CollectionId: Guid_1,
+      HasTotalCitizenCount: true
+    },
+    Address: {
+      CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
+      StreetOrPostOfficeBox: Rathausplatz 1,
+      ZipCode: 9000,
+      Locality: St.Gallen
+    },
+    IsElectronicSubmission: false,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: true,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: false,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: true,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: false,
+      CanDeleteAdmissibilityDecision: false,
+      CanEditGeneralInformation: false,
+      CanReturnForCorrection: false
+    },
+    CollectionStartDate: {
+      Seconds: 1575983530,
+      Nanos: 200000000
+    },
+    CollectionEndDate: {
+      Seconds: 1594386730,
+      Nanos: 200000000
+    },
+    PeriodState: InCollection
+  },
+  Number: 
+}

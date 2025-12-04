@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Voting.Stimmregister.Service.Proto" Version="$(VotingStimmregisterServiceProtoVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Domain\Voting.ECollecting.Citizen.Domain.csproj" />
+  </ItemGroup>
+</Project>

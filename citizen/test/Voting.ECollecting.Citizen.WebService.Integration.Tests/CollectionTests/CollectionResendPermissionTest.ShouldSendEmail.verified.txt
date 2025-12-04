@@ -1,0 +1,56 @@
+﻿{
+  sent: [
+    {
+      RecipientEmail: peter.huenkeler@example.com,
+      Subject: E-Collecting: Neue Berechtigung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Neue Berechtigung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><h2>Neue Berechtigung in E-Collecting</h2>
+<p>Hallo,</p>
+<p>
+Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">Kein Zwang gegen Kinder und Jugendliche</a> für Sie hinzugefügt.
+Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
+</p></div>
+</body>
+</html>
+    }
+  ],
+  notifications: [
+    {
+      RecipientEMail: peter.huenkeler@example.com,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        RecipientIsCitizen: true,
+        NotificationType: PermissionAdded,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    }
+  ]
+}

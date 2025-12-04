@@ -1,0 +1,66 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: patrick.huber@example.com,
+        LastName: Huber,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Patrick,
+        SortIndex: 7,
+        DateOfBirth: 1982-08-09,
+        InitiativeId: Guid_2,
+        PoliticalBfs: 3211,
+        ApprovalState: 4,
+        PoliticalDuty: CVP Vorstand Wil,
+        SignatureType: 1,
+        PoliticalLastName: Huber,
+        PoliticalFirstName: Pädu,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: patrick.huber@example.com,
+        LastName: Huber,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        FirstName: Patrick,
+        SortIndex: 7,
+        DateOfBirth: 1982-08-09,
+        InitiativeId: Guid_2,
+        PoliticalBfs: 3211,
+        ApprovalState: 1,
+        PoliticalDuty: CVP Vorstand Wil,
+        SignatureType: 1,
+        PoliticalLastName: Huber,
+        PoliticalFirstName: Pädu,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

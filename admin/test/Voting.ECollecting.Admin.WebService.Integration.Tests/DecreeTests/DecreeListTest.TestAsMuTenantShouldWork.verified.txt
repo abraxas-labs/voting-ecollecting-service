@@ -1,0 +1,88 @@
+﻿{
+  Decrees: [
+    {
+      Id: Guid_1,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Verkehrsinfrastruktur,
+      CollectionStartDate: {
+        Seconds: 1594386730,
+        Nanos: 200000000
+      },
+      CollectionEndDate: {
+        Seconds: 1610284330,
+        Nanos: 200000000
+      },
+      MinSignatureCount: 300,
+      MaxElectronicSignatureCount: 30,
+      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+      PeriodState: Published,
+      UserPermissions: {
+        CanEdit: true,
+        CanFinish: false,
+        CanGenerateDocuments: false,
+        CanAddCollection: false,
+        CanDelete: false
+      },
+      State: CollectionApplicable
+    },
+    {
+      Id: Guid_2,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+      CollectionStartDate: {
+        Seconds: 1575983530,
+        Nanos: 200000000
+      },
+      CollectionEndDate: {
+        Seconds: 1594386730,
+        Nanos: 200000000
+      },
+      MinSignatureCount: 300,
+      MaxElectronicSignatureCount: 30,
+      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+      PeriodState: InCollection,
+      UserPermissions: {
+        CanEdit: false,
+        CanFinish: true,
+        CanGenerateDocuments: true,
+        CanAddCollection: true,
+        CanDelete: false
+      },
+      State: CollectionApplicable
+    },
+    {
+      Id: Guid_3,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
+      CollectionStartDate: {
+        Seconds: 1499692330,
+        Nanos: 200000000
+      },
+      CollectionEndDate: {
+        Seconds: 1531228330,
+        Nanos: 200000000
+      },
+      MinSignatureCount: 300,
+      MaxElectronicSignatureCount: 30,
+      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
+      PeriodState: Expired,
+      UserPermissions: {
+        CanEdit: false,
+        CanFinish: false,
+        CanGenerateDocuments: false,
+        CanAddCollection: false,
+        CanDelete: false
+      },
+      State: EndedCameNotAbout,
+      CameNotAboutReason: MinSignatureCountNotReached,
+      SensitiveDataExpiryDate: {
+        Year: 2020,
+        Month: 1,
+        Day: 3
+      }
+    }
+  ]
+}

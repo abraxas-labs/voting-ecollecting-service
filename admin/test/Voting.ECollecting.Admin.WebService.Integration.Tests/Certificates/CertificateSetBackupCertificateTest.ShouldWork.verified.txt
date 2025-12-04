@@ -1,0 +1,73 @@
+﻿{
+  Certificate: {
+    Active: true,
+    Content: {
+      Name: backup-certificate.pem,
+      ContentType: application/x-pem-file,
+      Content: {
+        FileId: Guid_1,
+        Id: Guid_2
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_1
+    },
+    ContentId: Guid_1,
+    Info: {
+      NotBefore: DateTime_2,
+      NotAfter: DateTime_3,
+      Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+,
+      Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985
+    },
+    CAInfo: {
+      NotBefore: DateTime_4,
+      NotAfter: DateTime_5,
+      Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col CA-Zertifikat Test
+,
+      Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_3
+  },
+  Data:
+-----BEGIN CERTIFICATE-----
+MIICwzCCAkigAwIBAgIUTU+10gqV3cUBNSa1XVgefd5o5CYwCgYIKoZIzj0EAwMw
+gZUxCzAJBgNVBAYTAkNIMRIwEAYDVQQIDAlTdC5HYWxsZW4xEjAQBgNVBAcMCVN0
+LkdhbGxlbjEsMCoGA1UECgwjU3RhYXRza2FuemxlaSBkZXMgS2FudG9ucyBTdC5H
+YWxsZW4xDTALBgNVBAsMBERmUFIxITAfBgNVBAMMGEUtQ29sIENBLVplcnRpZmlr
+YXQgVGVzdDAeFw0yNTAyMDgxNzQxNThaFw0yNjAyMDgxNzQxNThaMIGZMQswCQYD
+VQQGEwJDSDESMBAGA1UECAwJU3QuR2FsbGVuMRIwEAYDVQQHDAlTdC5HYWxsZW4x
+LDAqBgNVBAoMI1N0YWF0c2thbnpsZWkgZGVzIEthbnRvbnMgU3QuR2FsbGVuMQ0w
+CwYDVQQLDAREZlBSMSUwIwYDVQQDDBxFLUNvbCBCYWNrdXAtWmVydGlmaWthdCBU
+ZXN0MHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEgdxrkKsyHagC0iaCJjdGsORMGwqz
+A7dz8Hrxh/aNKsdDhai2yWaKlhI5hEPrbsKeU7dLmjAs8NCUYcz++rtJ8cTx2mWe
+v8d6bqoNMCLynoSs/Ksu90UihQNlGqS0B+Bfo1MwUTAdBgNVHQ4EFgQUXwi5tuQb
+KTM2lNtTQGdTQ/GCF68wHwYDVR0jBBgwFoAUWUFqwloJsnzw+IOMDJGHORWJSpgw
+DwYDVR0TAQH/BAUwAwEB/zAKBggqhkjOPQQDAwNpADBmAjEA4fQMUFTlZRygglCq
+DdbEippaRXK1LDE1DA2MLTr230SOgn1NmPeyX0Jl68PaWj3YAjEAydCgv7ushv9y
+Mh+5niWKGZi0r5DOE7XY7k2syutlEkMoqe/+p+3hSZktyxHBPV3N
+-----END CERTIFICATE-----
+
+}

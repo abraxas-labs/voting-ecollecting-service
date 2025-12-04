@@ -1,0 +1,28 @@
+﻿{
+  PageInfo: {
+    CurrentPage: 1,
+    PageSize: 1,
+    TotalPages: 1,
+    ItemsCount: 1,
+    TotalItemsCount: 1,
+    HasPreviousPage: false,
+    HasNextPage: false
+  },
+  Candidates: [
+    {
+      Person: {
+        RegisterId: Guid_1,
+        IsVotingAllowed: false,
+        IsBirthDateValidForVotingRights: true,
+        IsNationalityValidForVotingRights: true,
+        OfficialName: Abicht,
+        FirstName: Alicia,
+        DateOfBirth: {
+          Seconds: 169776000
+        },
+        ResidenceAddressStreet: Schwalbenstr.,
+        ResidenceAddressHouseNumber: 2
+      }
+    }
+  ]
+}

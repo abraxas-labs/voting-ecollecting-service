@@ -1,0 +1,40 @@
+﻿{
+  MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+  DecreeId: Guid_1,
+  Number: ,
+  Description: Gerechtigkeit für alle,
+  Type: Referendum,
+  Reason: Gerechtigkeit für alle im Kanton wahren!,
+  Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+  LogoId: Guid_2,
+  ImageId: Guid_3,
+  SignatureSheetTemplateGenerated: false,
+  SignatureSheetTemplateId: Guid_4,
+  State: InPreparation,
+  Address: {
+    CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
+    StreetOrPostOfficeBox: Klosterhof 2,
+    ZipCode: 9000,
+    Locality: St.Gallen,
+    IsComplete: true
+  },
+  IsElectronicSubmission: true,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MaxElectronicSignatureCount: 300,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: default-user-id,
+    ModifiedByName: Test user,
+    ModifiedByEmail: voting+tester@abraxas.ch,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_5
+}

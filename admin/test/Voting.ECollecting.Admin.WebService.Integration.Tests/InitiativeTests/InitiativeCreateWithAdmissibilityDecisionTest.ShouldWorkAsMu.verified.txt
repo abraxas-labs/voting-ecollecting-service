@@ -1,0 +1,50 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Mu,
+  Bfs: 3203,
+  Wording: Für mehr gerechtigkeit!,
+  Collection: {
+    Id: Guid_1,
+    Description: foo bar baz,
+    Type: Initiative,
+    Reason: ,
+    Link: ,
+    SignatureSheetTemplateGenerated: false,
+    State: PreRecorded,
+    Address: {
+      CommitteeOrPerson: Hans Muster,
+      StreetOrPostOfficeBox: Postfach 12,
+      ZipCode: 9001,
+      Locality: St.Gallen
+    },
+    IsElectronicSubmission: false,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: true,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: true,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: true,
+      CanDeleteAdmissibilityDecision: true,
+      CanEditGeneralInformation: true,
+      CanReturnForCorrection: false
+    }
+  },
+  GovernmentDecisionNumber: 12345,
+  AdmissibilityDecisionState: Open,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

@@ -1,0 +1,42 @@
+﻿{
+  PageInfo: {
+    CurrentPage: 1,
+    PageSize: 1,
+    TotalPages: 1,
+    ItemsCount: 1,
+    TotalItemsCount: 1,
+    HasPreviousPage: false,
+    HasNextPage: false
+  },
+  Candidates: [
+    {
+      Person: {
+        RegisterId: Guid_1,
+        IsVotingAllowed: true,
+        IsBirthDateValidForVotingRights: true,
+        IsNationalityValidForVotingRights: true,
+        OfficialName: Trautmann,
+        FirstName: Lars,
+        DateOfBirth: {
+          Seconds: -190944000
+        },
+        ResidenceAddressStreet: Vonwilstr.,
+        ResidenceAddressHouseNumber: 29
+      },
+      ExistingSignature: {
+        Bfs: 3203,
+        MunicipalityName: St. Gallen,
+        Electronic: false,
+        CollectionDescription: Für den öffentlichen Verkehr,
+        SignatureSheetNumber: 1,
+        HasSignatureSheetNumber: true,
+        CollectionDateTime: {
+          Seconds: 1578661930,
+          Nanos: 200000000
+        },
+        IsInSameMunicipality: true,
+        IsOnSameSheet: true
+      }
+    }
+  ]
+}

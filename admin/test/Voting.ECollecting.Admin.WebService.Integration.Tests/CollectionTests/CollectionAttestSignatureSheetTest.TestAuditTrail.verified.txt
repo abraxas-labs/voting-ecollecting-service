@@ -1,0 +1,291 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Count: {
+          Total: 20,
+          Valid: 1,
+          CanAdd: true,
+          Invalid: 19
+        },
+        State: 1,
+        Number: 1,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        ReceivedAt: DateTimeOffset_2,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Count: {
+          Total: 20,
+          Valid: 1,
+          CanAdd: true,
+          Invalid: 19
+        },
+        State: 2,
+        Number: 1,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_1,
+        ReceivedAt: DateTimeOffset_2,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    },
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_4,
+        Count: {
+          Total: 21,
+          Valid: 1,
+          CanAdd: true,
+          Invalid: 20
+        },
+        State: 1,
+        Number: 2,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        ReceivedAt: DateTimeOffset_2,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_4,
+        Count: {
+          Total: 21,
+          Valid: 1,
+          CanAdd: true,
+          Invalid: 20
+        },
+        State: 2,
+        Number: 2,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_4,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_1,
+        ReceivedAt: DateTimeOffset_2,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_4,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_5
+    },
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_6,
+        Count: {
+          Total: 17,
+          Valid: 12,
+          CanAdd: true,
+          Invalid: 5
+        },
+        State: 1,
+        Number: 3,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        ReceivedAt: DateTimeOffset_5,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_6,
+        Count: {
+          Total: 17,
+          Valid: 12,
+          CanAdd: true,
+          Invalid: 5
+        },
+        State: 2,
+        Number: 3,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_6,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_1,
+        ReceivedAt: DateTimeOffset_5,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_6,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_7
+    },
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_8,
+        Count: {
+          Total: 17,
+          Valid: 12,
+          CanAdd: true,
+          Invalid: 5
+        },
+        State: 2,
+        Number: 4,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        AttestedAt: DateTimeOffset_2,
+        ReceivedAt: DateTimeOffset_5,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_8,
+        Count: {
+          Total: 17,
+          Valid: 12,
+          CanAdd: true,
+          Invalid: 5
+        },
+        State: 2,
+        Number: 4,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_7,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_2,
+        ReceivedAt: DateTimeOffset_5,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_8,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_4
+      },
+      Id: Guid_9
+    },
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_10,
+        Count: {
+          Total: 26,
+          Valid: 25,
+          CanAdd: true,
+          Invalid: 1
+        },
+        State: 2,
+        Number: 5,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        AttestedAt: DateTimeOffset_2,
+        ReceivedAt: DateTimeOffset_5,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_10,
+        Count: {
+          Total: 26,
+          Valid: 25,
+          CanAdd: true,
+          Invalid: 1
+        },
+        State: 2,
+        Number: 5,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_8,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_2,
+        ReceivedAt: DateTimeOffset_5,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_10,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_11
+    }
+  ]
+}

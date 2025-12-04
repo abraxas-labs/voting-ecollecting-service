@@ -1,0 +1,11 @@
+﻿{
+  Id: Guid_1,
+  CollectionId: Guid_2,
+  CollectionType: Referendum,
+  CreatedAt: {
+    Seconds: 1578661930,
+    Nanos: 200000000
+  },
+  CreatedByName: default user firstname default user lastname,
+  Content: Informelle Vorprüfung beendet.
+}

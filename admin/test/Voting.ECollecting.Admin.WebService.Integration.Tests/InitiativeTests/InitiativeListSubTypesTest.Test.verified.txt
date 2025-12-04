@@ -1,0 +1,36 @@
+﻿{
+  SubTypes: [
+    {
+      Id: Guid_1,
+      Bfs: ,
+      DomainOfInfluenceType: Ch,
+      Description: Volksinitiative,
+      MinSignatureCount: 100000,
+      MaxElectronicSignatureCount: 50000
+    },
+    {
+      Id: Guid_2,
+      Bfs: 3200,
+      DomainOfInfluenceType: Ct,
+      Description: Einheitsinitiative,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 2000
+    },
+    {
+      Id: Guid_3,
+      Bfs: 3200,
+      DomainOfInfluenceType: Ct,
+      Description: Gesetzesinitiative,
+      MinSignatureCount: 6000,
+      MaxElectronicSignatureCount: 3000
+    },
+    {
+      Id: Guid_4,
+      Bfs: 3200,
+      DomainOfInfluenceType: Ct,
+      Description: Verfassungsinitiative,
+      MinSignatureCount: 8000,
+      MaxElectronicSignatureCount: 4000
+    }
+  ]
+}

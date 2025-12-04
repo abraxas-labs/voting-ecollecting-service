@@ -1,0 +1,28 @@
+﻿{
+  InitiativeId: Guid_1,
+  FirstName: Foo (updated),
+  LastName: Bar (updated),
+  PoliticalFirstName: Foo (pol) (updated),
+  PoliticalLastName: Bar (pol) (updated),
+  Bfs: 3213,
+  PoliticalBfs: 3213,
+  PoliticalDuty: Protokollführer (updated),
+  DateOfBirth: Date_1,
+  Email: margarita@example.com,
+  MemberSignatureRequested: true,
+  ApprovalState: Requested,
+  CanEdit: true,
+  CanReset: false,
+  CanVerify: true,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Admin,
+    CreatedByEmail: admin@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: default-user-id,
+    ModifiedByName: Test user,
+    ModifiedByEmail: voting+tester@abraxas.ch,
+    ModifiedAt: DateTime_1
+  },
+  Id: Guid_2
+}

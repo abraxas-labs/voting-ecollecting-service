@@ -1,0 +1,39 @@
+﻿{
+  RecipientEmail: support@sg.ch,
+  Subject: E-Collecting: Feedback Accessibility,
+  HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Feedback Accessibility</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"> <h2>Feedback Accessibility</h2>
+ <p>Anrede: Frau</p>
+ <p>Vorname: Petra</p>
+ <p>Nachname: Muster</p>
+ <p>Email: petra<span>.</span>muster<span>@</span>example<span>.</span>com</p>
+ <p>Telefon: 071 123 45 67</p>
+ <p>Kategorie: Optimierungsvorschlag</p>
+ <p>Meldung: Test</p></div>
+</body>
+</html>
+}

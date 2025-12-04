@@ -1,0 +1,141 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Certificates,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Info: {
+          Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+,
+          NotAfter: DateTimeOffset_1,
+          NotBefore: DateTimeOffset_2,
+          Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985
+        },
+        Label: Zert000,
+        Active: true,
+        CAInfo: {
+          Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col CA-Zertifikat Test
+,
+          NotAfter: DateTimeOffset_3,
+          NotBefore: DateTimeOffset_4,
+          Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9
+        },
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        ContentId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Info: {
+          Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+,
+          NotAfter: DateTimeOffset_1,
+          NotBefore: DateTimeOffset_2,
+          Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985
+        },
+        Label: Zert000,
+        Active: false,
+        CAInfo: {
+          Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col CA-Zertifikat Test
+,
+          NotAfter: DateTimeOffset_3,
+          NotBefore: DateTimeOffset_4,
+          Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9
+        },
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        ContentId: Guid_2
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    },
+    {
+      SourceEntityName: Certificates,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_4,
+        Info: {
+          Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+,
+          NotAfter: DateTimeOffset_1,
+          NotBefore: DateTimeOffset_2,
+          Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985
+        },
+        Active: true,
+        CAInfo: {
+          Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col CA-Zertifikat Test
+,
+          NotAfter: DateTimeOffset_3,
+          NotBefore: DateTimeOffset_4,
+          Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9
+        },
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_6,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        ContentId: Guid_5
+      },
+      SourceEntityId: Guid_4,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_6
+    }
+  ]
+}

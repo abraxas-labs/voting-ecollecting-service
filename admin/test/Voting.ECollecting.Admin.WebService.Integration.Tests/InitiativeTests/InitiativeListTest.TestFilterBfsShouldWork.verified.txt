@@ -1,0 +1,1149 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch
+    },
+    {
+      DomainOfInfluenceType: Ct
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Initiatives: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine Verkehrsberuhigung in der Stadt St.Gallen.
+Tempo 30 soll in Wohnquartieren eingeführt und die Sicherheit für
+Fussgänger und Velofahrer verbessert werden.,
+          Collection: {
+            Id: Guid_1,
+            Description: Stadtweite Verkehrsberuhigung,
+            Type: Initiative,
+            Reason: Sicherere Strassen für alle!,
+            Link: https://www.stadt.sg.ch/home/verkehrsberuhigung.html,
+            SignatureSheetTemplateGenerated: false,
+            State: UnderReview,
+            Address: {
+              CommitteeOrPerson: Komitee Verkehrsberuhigung,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-003,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_2,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr bezahlbaren Wohnraum in der Stadt St.Gallen.
+Die Stadt soll mehr günstige Wohnungen bauen und den Mieterschutz stärken.,
+          Collection: {
+            Id: Guid_2,
+            Description: Stadtweite Wohninitiative,
+            Type: Initiative,
+            Reason: Wohnraum für alle!,
+            Link: https://www.stadt.sg.ch/home/wohninitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: NotPassed,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-001,
+          AdmissibilityDecisionState: Rejected,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_3,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine Verbesserung der Schulinfrastruktur in der
+Stadt St.Gallen. Die Schulen sollen modernisiert und die Klassengrössen
+reduziert werden.,
+          Collection: {
+            Id: Guid_3,
+            Description: Stadtweite Schulinitiative,
+            Type: Initiative,
+            Reason: Bessere Schulen für unsere Kinder!,
+            Link: https://www.stadt.sg.ch/home/schulinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReturnedForCorrection,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-002,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: true,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld umfassend zu sanieren und auszubauen.
+Ziel ist es, den steigenden Bedarf an Sport- und Bewegungsflächen für Schulen, Vereine und die Bevölkerung zu decken.
+Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestaltet werden.,
+          Collection: {
+            Id: Guid_4,
+            Description: Sanierung und Ausbau der Sportanlagen Lerchenfeld,
+            Type: Initiative,
+            Reason: Moderne Sportanlagen für Schulen und Vereine!,
+            Link: https://www.stadt.sg.ch/home/lerchenfeld-sportanlagen.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_5,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert mehr Parkplätze in der Stadt St.Gallen.
+Die Parkplatzsituation soll verbessert und neue Parkhäuser gebaut werden.,
+          Collection: {
+            Id: Guid_5,
+            Description: Stadtweite Parkplatzinitiative,
+            Type: Initiative,
+            Reason: Mehr Parkplätze in der Stadt!,
+            Link: https://www.stadt.sg.ch/home/parkplatzinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Withdrawn,
+            Address: {
+              CommitteeOrPerson: Komitee Stadtweite Parkplatzinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: true,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Das Baugesetz der Stadt St.Gallen wird wie folgt ergänzt:
+Für alle städtischen Bauprojekte ab einem Investitionsvolumen von 1 Mio. Franken sind die wichtigsten Entscheidungsgrundlagen, Kostenpläne und Vergabekriterien öffentlich zugänglich zu machen.
+Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentlicher Mittel zu erhöhen.,
+          Collection: {
+            Id: Guid_6,
+            Description: Transparenz bei öffentlichen Bauprojekten (p: Reader),
+            Type: Initiative,
+            Reason: Bürgerinnen und Bürger sollen über städtische Bauprojekte besser informiert werden!,
+            Link: https://www.stadt.sg.ch/home/bauprojekte-transparenz.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Schweizer Bauprojekte,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_7,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Unterstützung für kulturelle Veranstaltungen
+in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
+          Collection: {
+            Id: Guid_7,
+            Description: Stadtweite Kulturinitiative,
+            Type: Initiative,
+            Reason: Kultur für alle!,
+            Link: https://www.stadt.sg.ch/home/kulturinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_8,
+              CollectionId: Guid_7,
+              TotalCitizenCount: 875,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 45
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Kulturinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1562764330,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-012,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 21
+          }
+        },
+        {
+          Id: Guid_9,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
+Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+          Collection: {
+            Id: Guid_9,
+            Description: Stadtweite Veloinfrastruktur,
+            Type: Initiative,
+            Reason: Mehr Platz für Velos!,
+            Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Schweizer Veloinfrastruktur,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_10,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Sportanlagen in der Stadt St.Gallen.
+Die Sportinfrastruktur soll ausgebaut und der Zugang zu Sportangeboten
+verbessert werden.,
+          Collection: {
+            Id: Guid_10,
+            Description: Stadtweite Sportinitiative,
+            Type: Initiative,
+            Reason: Mehr Sport für alle!,
+            Link: https://www.stadt.sg.ch/home/sportinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_11,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording: Diese Initiative fordert strengere Friedhofauflagen in der Stadt St.Gallen.,
+          Collection: {
+            Id: Guid_11,
+            Description: Stadtweite Friedhofsinitiative,
+            Type: Initiative,
+            Reason: Friedhof schützen für zukünftige Generationen!,
+            Link: https://www.stadt.sg.ch/home/friedhofsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_12,
+              CollectionId: Guid_11,
+              TotalCitizenCount: 1234,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Friedhofinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-010,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_13,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine nachhaltige Energiepolitik für die Stadt St.Gallen.
+Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden.,
+          Collection: {
+            Id: Guid_13,
+            Description: Stadtweite Energieinitiative,
+            Type: Initiative,
+            Reason: Nachhaltige Energie für St.Gallen!,
+            Link: https://www.stadt.sg.ch/home/energieinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_14,
+              CollectionId: Guid_13,
+              TotalCitizenCount: 1500,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 784
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Energieinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-011,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 7
+          }
+        },
+        {
+          Id: Guid_15,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
+Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+          Collection: {
+            Id: Guid_15,
+            Description: Stadtweite Veloinfrastruktur,
+            Type: Initiative,
+            Reason: Mehr Platz für Velos!,
+            Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Schweizer Veloinfrastruktur,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_16,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld zu modernisieren und um zusätzliche Trainings- und Spielflächen zu erweitern.
+Ziel ist es, den wachsenden Anforderungen von Schulen, Sportvereinen und Freizeitsportlern gerecht zu werden.
+Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet werden.,
+          Collection: {
+            Id: Guid_16,
+            Description: Modernisierung und Erweiterung der Sportanlagen Lerchenfeld,
+            Type: Initiative,
+            Reason: Bedarfsgerechte Sportinfrastruktur für Schulen, Vereine und die Bevölkerung,
+            Link: https://www.stadt.sg.ch/leben-in-stgallen/sport/sportanlagen/lerchenfeld.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: 123.4CHESG,
+          AdmissibilityDecisionState: Open,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_17,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine umfassende Bildungsreform auf Stadtebene.
+Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
+in Schulen voranzutreiben.,
+          Collection: {
+            Id: Guid_17,
+            Description: Stadtweite Bildungsinitiative,
+            Type: Initiative,
+            Reason: Bildung für die Zukunft!,
+            Link: https://www.stadt.sg.ch/home/bildungsinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReadyForRegistration,
+            Address: {
+              CommitteeOrPerson: Komitee Bildungsinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-004,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_18,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Stadtebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+          Collection: {
+            Id: Guid_18,
+            Description: Stadtweite Gesundheitsinitiative,
+            Type: Initiative,
+            Reason: Gesundheit für alle!,
+            Link: https://www.stadt.sg.ch/home/gesundheitsinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Registered,
+            Address: {
+              CommitteeOrPerson: Komitee Gesundheitsinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-005,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_19,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
+Parks und Gärten sollen erhalten und neue geschaffen werden.,
+          Collection: {
+            Id: Guid_19,
+            Description: Stadtweite Grünflächen,
+            Type: Initiative,
+            Reason: Mehr Grün in der Stadt!,
+            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_20,
+              CollectionId: Guid_19,
+              HasTotalCitizenCount: true
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Grünflächen,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-007,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_21,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
+Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+          Collection: {
+            Id: Guid_21,
+            Description: Stadtweite Recyclinginitiative,
+            Type: Initiative,
+            Reason: Mehr Recycling für eine nachhaltige Stadt!,
+            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_22,
+              CollectionId: Guid_21,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 500
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Recyclinginitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-008,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_23,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert strengere Umweltauflagen in der Stadt St.Gallen.
+Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.,
+          Collection: {
+            Id: Guid_23,
+            Description: Stadtweite Umweltinitiative,
+            Type: Initiative,
+            Reason: Umwelt schützen für zukünftige Generationen!,
+            Link: https://www.stadt.sg.ch/home/umweltinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_24,
+              CollectionId: Guid_23,
+              TotalCitizenCount: 1234,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Umweltinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-009,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_25,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Gestützt auf Art. 10 der Gemeindeordnung stellen die unterzeichnenden
+Stimmberechtigten der Stadt St.Gallen folgendes Initiativbegehren (Zonenplaninitiative):,
+          Collection: {
+            Id: Guid_25,
+            Description: Für lebendige Quartiere – Wiesli retten (Wiesli-Initiative),
+            Type: Initiative,
+            Reason: Wiesli retten!,
+            Link: https://www.stadt.sg.ch/home/verwaltung-politik/demokratie-politik/stadtparlament/wiesli-initiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: PreparingForCollection,
+            Address: {
+              CommitteeOrPerson: Komitee Grünflächen,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-006,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    }
+  ]
+}

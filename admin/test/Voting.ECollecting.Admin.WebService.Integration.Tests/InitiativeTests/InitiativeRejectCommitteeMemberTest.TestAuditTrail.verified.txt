@@ -1,0 +1,66 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: lukas.meier@example.com,
+        LastName: Meier,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Lukas,
+        SortIndex: 1,
+        DateOfBirth: 1988-05-23,
+        InitiativeId: Guid_2,
+        PoliticalBfs: 3211,
+        ApprovalState: 2,
+        PoliticalDuty: SVP Parteivorstand SG,
+        SignatureType: 1,
+        PoliticalLastName: Meier,
+        PoliticalFirstName: Luki,
+        MemberSignatureRequested: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: lukas.meier@example.com,
+        LastName: Meier,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        FirstName: Lukas,
+        SortIndex: 1,
+        DateOfBirth: 1988-05-23,
+        InitiativeId: Guid_2,
+        PoliticalBfs: 3211,
+        ApprovalState: 5,
+        PoliticalDuty: SVP Parteivorstand SG,
+        SignatureType: 1,
+        PoliticalLastName: Meier,
+        PoliticalFirstName: Luki,
+        MemberSignatureRequested: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

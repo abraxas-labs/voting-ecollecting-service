@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="$(FluentValidationVersion)" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="$(FluentValidationVersion)" />
+    <PackageReference Include="Riok.Mapperly" Version="$(MapperlyVersion)" />
+    <PackageReference Include="Voting.Lib.Cryptography.Kms" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Cryptography.Mocks" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.UserNotifications" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Abstractions.Core\Voting.ECollecting.Shared.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Core\Voting.ECollecting.Shared.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.Admin\Voting.ECollecting.Citizen.Abstractions.Adapter.Admin.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.Data\Voting.ECollecting.Citizen.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.VotingStimmregister\Voting.ECollecting.Citizen.Abstractions.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Core\Voting.ECollecting.Citizen.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Domain\Voting.ECollecting.Citizen.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Release'">
+    <Compile Remove="**\*Mock.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Voting.ECollecting.Citizen.WebService.Integration.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

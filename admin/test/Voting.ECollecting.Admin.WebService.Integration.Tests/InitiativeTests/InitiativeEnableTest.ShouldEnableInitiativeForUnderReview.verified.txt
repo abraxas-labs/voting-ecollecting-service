@@ -1,0 +1,153 @@
+﻿{
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Volksinitiative «50% mehr Kinderabzüge»,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Volksinitiative «50% mehr Kinderabzüge»,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Volksinitiative «50% mehr Kinderabzüge»,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'Sammlung wird aufgeschaltet' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_5
+  },
+  initiative: {
+    MinSignatureCount: 4000,
+    Wording: Diese initiative will mehr kinderabzüge!,
+    SubTypeId: Guid_6,
+    GovernmentDecisionNumber: SG-123.412224,
+    AdmissibilityDecisionState: Valid,
+    LockedFields: {
+      Description: false,
+      Wording: true,
+      CommitteeMembers: false
+    },
+    CollectionStartDate: DateTime_2,
+    CollectionEndDate: DateTime_3,
+    Description: Volksinitiative «50% mehr Kinderabzüge»,
+    Type: Initiative,
+    Reason: Steuerliche Entlastung von Familien: Kinder- und Betreuungsabzüge,
+    Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4375,
+    LogoId: Guid_7,
+    ImageId: Guid_8,
+    SignatureSheetTemplateGenerated: false,
+    State: EnabledForCollection,
+    Address: {
+      CommitteeOrPerson: Pro Familia,
+      StreetOrPostOfficeBox: Rheinstrasse 17,
+      ZipCode: 4058,
+      Locality: Basel,
+      IsComplete: true
+    },
+    Municipalities: [
+      {
+        CollectionId: Guid_1,
+        Bfs: 3203,
+        MunicipalityName: St.Gallen,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_9
+      },
+      {
+        CollectionId: Guid_1,
+        Bfs: 3211,
+        MunicipalityName: Berg SG,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_10
+      },
+      {
+        CollectionId: Guid_1,
+        Bfs: 3213,
+        MunicipalityName: Goldach,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_11
+      }
+    ],
+    EncryptionKeyId: KVotingECollecting_12c2740c-ef3d-4f7b-b44d-6833cc31fe38_Encryption12,
+    MacKeyId: KVotingECollecting_12c2740c-ef3d-4f7b-b44d-6833cc31fe38_DuplicateDetection128,
+    IsElectronicSubmission: false,
+    InformalReviewRequested: false,
+    DomainOfInfluenceType: Ct,
+    Bfs: 17,
+    MaxElectronicSignatureCount: 0,
+    PeriodState: InCollection,
+    SignatureListSubmissionEndDate: DateTime_4,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Citizen Creator,
+      CreatedByEmail: citizen-creator@example.com,
+      CreatedAt: DateTime_5,
+      ModifiedById: default-user-id,
+      ModifiedByName: default user firstname default user lastname,
+      ModifiedByEmail: default-user@example.com,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_1
+  }
+}

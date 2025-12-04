@@ -1,0 +1,23 @@
+﻿{
+  CollectionMunicipalityId: Guid_1,
+  Number: 1,
+  ReceivedAt: DateTime_1,
+  Count: {
+    Invalid: 20,
+    Total: 20,
+    CanAdd: true
+  },
+  State: Created,
+  IsSample: false,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Admin,
+    CreatedByEmail: admin@example.com,
+    CreatedAt: DateTime_2,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

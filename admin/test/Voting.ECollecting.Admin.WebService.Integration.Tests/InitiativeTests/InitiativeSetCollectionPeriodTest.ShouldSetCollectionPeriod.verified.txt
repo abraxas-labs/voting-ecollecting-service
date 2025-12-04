@@ -1,0 +1,106 @@
+﻿{
+  MinSignatureCount: 4000,
+  Wording: ,
+  SubTypeId: Guid_1,
+  GovernmentDecisionNumber: CH-123.4567,
+  AdmissibilityDecisionState: Open,
+  LockedFields: {
+    Description: false,
+    Wording: false,
+    CommitteeMembers: false
+  },
+  CollectionStartDate: DateTime_1,
+  CollectionEndDate: DateTime_2,
+  Description: Abwasser Initiative,
+  Type: Initiative,
+  Reason: Gewässer vor dem Abwasser schützen,
+  Link: https://sg.ch/abwasser/,
+  LogoId: Guid_2,
+  ImageId: Guid_3,
+  SignatureSheetTemplateGenerated: false,
+  SignatureSheetTemplateId: Guid_4,
+  State: PreRecorded,
+  Address: {
+    CommitteeOrPerson: Komitee Abwasser Initiative,
+    StreetOrPostOfficeBox: Langstrasse 200,
+    ZipCode: 8005,
+    Locality: Zürich,
+    IsComplete: true
+  },
+  Municipalities: [
+    {
+      CollectionId: Guid_5,
+      Bfs: 3203,
+      MunicipalityName: St.Gallen,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_6
+    },
+    {
+      CollectionId: Guid_5,
+      Bfs: 3211,
+      MunicipalityName: Berg SG,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_7
+    },
+    {
+      CollectionId: Guid_5,
+      Bfs: 3213,
+      MunicipalityName: Goldach,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_8
+    }
+  ],
+  EncryptionKeyId: KVotingECollecting_111adb3f-c0e8-48b5-bf98-765192abb1da_Encryption12,
+  MacKeyId: KVotingECollecting_111adb3f-c0e8-48b5-bf98-765192abb1da_DuplicateDetection128,
+  IsElectronicSubmission: false,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MaxElectronicSignatureCount: 1000,
+  PeriodState: Published,
+  SignatureListSubmissionEndDate: DateTime_4,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: unrelated-admin,
+    CreatedByName: Unrelated ECol Seeder Admin Creator,
+    CreatedByEmail: unrelated-admin-creator@example.com,
+    CreatedAt: DateTime_5,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_3
+  },
+  Id: Guid_5
+}

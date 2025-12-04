@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Voting.Lib.Iam" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Domain\Voting.ECollecting.Citizen.Domain.csproj" />
+  </ItemGroup>
+</Project>

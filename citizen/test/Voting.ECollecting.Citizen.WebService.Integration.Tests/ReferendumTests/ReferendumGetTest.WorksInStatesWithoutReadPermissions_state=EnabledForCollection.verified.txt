@@ -1,0 +1,49 @@
+﻿{
+  Id: Guid_1,
+  Decree: {
+    Id: Guid_2,
+    Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+    PeriodState: Published,
+    MaxElectronicSignatureCount: 300
+  },
+  MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+  Collection: {
+    Id: Guid_1,
+    Description: Gerechtigkeit für alle,
+    Type: Referendum,
+    Reason: Gerechtigkeit für alle im Kanton wahren!,
+    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+    Image: {
+      Id: Guid_3,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_4,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplate: {
+      Id: Guid_5,
+      Name: placeholder-signatures.pdf
+    },
+    State: EnabledForCollection,
+    AttestedCollectionCount: {
+      Id: Guid_6,
+      CollectionId: Guid_1,
+      HasTotalCitizenCount: false
+    },
+    Address: {
+      CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
+      StreetOrPostOfficeBox: Klosterhof 2,
+      ZipCode: 9000,
+      Locality: St.Gallen
+    },
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    IsSigned: false,
+    HasIsSigned: false
+  },
+  Number: ,
+  IsOtherReferendumOfSameDecreeSigned: false,
+  HasIsOtherReferendumOfSameDecreeSigned: false
+}

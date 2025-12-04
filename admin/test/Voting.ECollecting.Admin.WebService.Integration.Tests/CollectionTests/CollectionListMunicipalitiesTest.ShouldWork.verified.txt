@@ -1,0 +1,55 @@
+﻿{
+  Municipalities: [
+    {
+      Bfs: 3211,
+      MunicipalityName: Berg (SG),
+      PhysicalCount: {
+        Total: 20,
+        Valid: 17,
+        Invalid: 3
+      },
+      TotalValidCitizenCount: 27,
+      ElectronicCitizenCount: 10,
+      IsLocked: true,
+      SignatureSheetsCount: {
+        TotalSignatureSheetsCount: 4,
+        TotalSubmittedOrConfirmedSignatureSheetsCount: 2,
+        TotalNotSubmittedSignatureSheetsCount: 1
+      }
+    },
+    {
+      Bfs: 3213,
+      MunicipalityName: Goldach,
+      PhysicalCount: {
+        Total: 20,
+        Valid: 17,
+        Invalid: 3
+      },
+      TotalValidCitizenCount: 27,
+      ElectronicCitizenCount: 10,
+      IsLocked: true,
+      SignatureSheetsCount: {
+        TotalSignatureSheetsCount: 4,
+        TotalSubmittedOrConfirmedSignatureSheetsCount: 2,
+        TotalNotSubmittedSignatureSheetsCount: 1
+      }
+    },
+    {
+      Bfs: 3203,
+      MunicipalityName: St. Gallen,
+      PhysicalCount: {
+        Total: 20,
+        Valid: 17,
+        Invalid: 3
+      },
+      TotalValidCitizenCount: 27,
+      ElectronicCitizenCount: 10,
+      IsLocked: true,
+      SignatureSheetsCount: {
+        TotalSignatureSheetsCount: 4,
+        TotalSubmittedOrConfirmedSignatureSheetsCount: 2,
+        TotalNotSubmittedSignatureSheetsCount: 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MinSignatureCount: 4000,
+  MaxElectronicSignatureCount: 1000,
+  Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+  Collection: {
+    Id: Guid_1,
+    Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+    Type: Initiative,
+    Reason: Frauen sollen auch wählen dürfen,
+    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+    Image: {
+      Id: Guid_2,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_3,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplate: {
+      Id: Guid_4,
+      Name: placeholder-signatures.pdf
+    },
+    State: EnabledForCollection,
+    AttestedCollectionCount: {
+      Id: Guid_5,
+      CollectionId: Guid_1,
+      HasTotalCitizenCount: false,
+      ElectronicCitizenCount: 1
+    },
+    Address: {
+      CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+      StreetOrPostOfficeBox: Bahnhofplatz 6,
+      ZipCode: 2502,
+      Locality: Biel/Bienne
+    },
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    IsSigned: true,
+    HasIsSigned: true,
+    SignAcceptedAcrs: [
+      urn:qa.agov.ch:names:tc:ac:classes:400,
+      urn:qa.agov.ch:names:tc:ac:classes:500
+    ],
+    CollectionStartDate: {
+      Seconds: 1575983530,
+      Nanos: 200000000
+    },
+    CollectionEndDate: {
+      Seconds: 1591794730,
+      Nanos: 200000000
+    },
+    PeriodState: InCollection
+  },
+  SubType: {
+    Id: Guid_6,
+    DomainOfInfluenceType: Ct,
+    Description: Einheitsinitiative,
+    MinSignatureCount: 4000,
+    MaxElectronicSignatureCount: 2000
+  },
+  GovernmentDecisionNumber: SG-123.412210,
+  CommitteeDescription: Pädu Huber (CVP Vorstand Wil), Berg SG; Nina Schmid (JUSO Mitglied SG), St.Gallen; Carla Arnold, St.Gallen; Flo Brunner (SP Mitglied Wil), Berg SG; Melanie Gerber, St.Gallen; Andi Keller, Berg SG; Sophia Schwarz, St.Gallen,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

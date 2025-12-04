@@ -1,0 +1,14 @@
+﻿{
+  resp: {
+    Id: Guid_1,
+    CorrelationCode: mocked code,
+    QrCode: mocked qr code
+  },
+  createdTransactions: [
+    {
+      Item1: Guid_1,
+      Item2: 24ba9fd2acb223f41c8a722de928020949236ed26889510ff67dcd76a3988281,
+      Item3: Kontrollzeichen löschen
+    }
+  ]
+}

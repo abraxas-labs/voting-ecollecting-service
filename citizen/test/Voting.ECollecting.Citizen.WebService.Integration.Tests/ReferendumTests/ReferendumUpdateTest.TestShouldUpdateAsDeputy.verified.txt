@@ -1,0 +1,40 @@
+﻿{
+  MembersCommittee: Heinz Müller, Präsident SP St. Gallen,
+  DecreeId: Guid_1,
+  Number: ,
+  Description: Gegen das Schmutzwassergsetz,
+  Type: Referendum,
+  Reason: Trinkwasser muss erhalten bleiben.,
+  Link: https://www.ratsinfo.sg.ch/geschaefte/4754-updated,
+  LogoId: Guid_2,
+  ImageId: Guid_3,
+  SignatureSheetTemplateGenerated: false,
+  SignatureSheetTemplateId: Guid_4,
+  State: InPreparation,
+  Address: {
+    CommitteeOrPerson: Abwasser Komitee,
+    StreetOrPostOfficeBox: Otmarstrasse,
+    ZipCode: 9000,
+    Locality: St.Gallen,
+    IsComplete: true
+  },
+  IsElectronicSubmission: true,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MaxElectronicSignatureCount: 300,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: user-id-deputy,
+    ModifiedByName: Test user,
+    ModifiedByEmail: voting+tester@abraxas.ch,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_5
+}

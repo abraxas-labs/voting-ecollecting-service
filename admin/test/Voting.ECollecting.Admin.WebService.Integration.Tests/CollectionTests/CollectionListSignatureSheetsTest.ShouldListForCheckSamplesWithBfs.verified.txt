@@ -1,0 +1,102 @@
+﻿{
+  PageInfo: {
+    CurrentPage: 1,
+    PageSize: 10,
+    TotalPages: 1,
+    ItemsCount: 3,
+    TotalItemsCount: 3,
+    HasPreviousPage: false,
+    HasNextPage: false
+  },
+  SignatureSheets: [
+    {
+      Id: Guid_1,
+      Number: 4,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 17,
+        Valid: 12,
+        Invalid: 5
+      },
+      State: Attested,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203,
+      UserPermissions: {
+        CanEdit: false,
+        CanDelete: false,
+        CanSubmit: true,
+        CanUnsubmit: false,
+        CanDiscard: true,
+        CanRestore: false
+      }
+    },
+    {
+      Id: Guid_2,
+      Number: 5,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 26,
+        Valid: 25,
+        Invalid: 1
+      },
+      State: Attested,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203,
+      UserPermissions: {
+        CanEdit: false,
+        CanDelete: false,
+        CanSubmit: true,
+        CanUnsubmit: false,
+        CanDiscard: true,
+        CanRestore: false
+      }
+    },
+    {
+      Id: Guid_3,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Attested,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203,
+      UserPermissions: {
+        CanEdit: false,
+        CanDelete: false,
+        CanSubmit: true,
+        CanUnsubmit: false,
+        CanDiscard: true,
+        CanRestore: false
+      }
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Decrees,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        State: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+        CollectionEndDate: DateTimeOffset_2,
+        MinSignatureCount: 50000,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        MaxElectronicSignatureCount: 5000
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        State: 2,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_4,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+        CollectionEndDate: DateTimeOffset_2,
+        MinSignatureCount: 50000,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        SensitiveDataExpiryDate: 2021-01-09,
+        MaxElectronicSignatureCount: 5000
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_2
+    },
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_3,
+        Bfs: 1,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/nationale-bundessteuer.html,
+        Type: 2,
+        State: 12,
+        LogoId: Guid_4,
+        Number: ,
+        Reason: Keine nationale Steuern!,
+        Address: {
+          ZipCode: 3011,
+          Locality: Bern,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+          StreetOrPostOfficeBox: Kramgasse 12
+        },
+        ImageId: Guid_5,
+        DecreeId: Guid_1,
+        MacKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        Description: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        EncryptionKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_Encryption12,
+        MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+        CollectionEndDate: DateTimeOffset_2,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        SignatureSheetTemplateId: Guid_6,
+        MaxElectronicSignatureCount: 5000,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_3,
+        Bfs: 1,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/nationale-bundessteuer.html,
+        Type: 2,
+        State: 13,
+        LogoId: Guid_4,
+        Number: ,
+        Reason: Keine nationale Steuern!,
+        Address: {
+          ZipCode: 3011,
+          Locality: Bern,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+          StreetOrPostOfficeBox: Kramgasse 12
+        },
+        ImageId: Guid_5,
+        DecreeId: Guid_1,
+        MacKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_6,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        Description: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        EncryptionKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_Encryption12,
+        MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+        CollectionEndDate: DateTimeOffset_2,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        SignatureSheetTemplateId: Guid_6,
+        MaxElectronicSignatureCount: 5000,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_3,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_7
+    },
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_8,
+        Bfs: 1,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        Type: 2,
+        State: 11,
+        LogoId: Guid_9,
+        Number: ,
+        Reason: Steuergerechtigkeit für alle!,
+        Address: {
+          ZipCode: 3011,
+          Locality: Bern,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+          StreetOrPostOfficeBox: Kramgasse 12
+        },
+        ImageId: Guid_10,
+        DecreeId: Guid_1,
+        MacKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        Description: Referendum gegen die Änderung der direkten Bundessteuer,
+        EncryptionKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_Encryption12,
+        MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+        CollectionEndDate: DateTimeOffset_2,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        SignatureSheetTemplateId: Guid_11,
+        MaxElectronicSignatureCount: 5000,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_8,
+        Bfs: 1,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        Type: 2,
+        State: 13,
+        LogoId: Guid_9,
+        Number: ,
+        Reason: Steuergerechtigkeit für alle!,
+        Address: {
+          ZipCode: 3011,
+          Locality: Bern,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+          StreetOrPostOfficeBox: Kramgasse 12
+        },
+        ImageId: Guid_10,
+        DecreeId: Guid_1,
+        MacKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_7,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        Description: Referendum gegen die Änderung der direkten Bundessteuer,
+        EncryptionKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_Encryption12,
+        MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+        CollectionEndDate: DateTimeOffset_2,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        SignatureSheetTemplateId: Guid_11,
+        MaxElectronicSignatureCount: 5000,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_8,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_12
+    }
+  ]
+}

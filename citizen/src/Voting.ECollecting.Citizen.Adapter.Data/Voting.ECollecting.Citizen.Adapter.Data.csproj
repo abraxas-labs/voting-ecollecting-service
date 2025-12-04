@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="$(EfCoreVersion)" Condition="'$(Configuration)' != 'Release'" PrivateAssets="All" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="$(NpgsqlEfCoreVersion)" />
+    <PackageReference Include="Voting.Lib.Database" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Adapter.Data\Voting.ECollecting.Shared.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Domain\Voting.ECollecting.Shared.Domain.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Migrations\Voting.ECollecting.Shared.Migrations.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.Data\Voting.ECollecting.Citizen.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.csproj" />
+  </ItemGroup>
+</Project>

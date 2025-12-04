@@ -1,0 +1,42 @@
+﻿{
+  RecipientEmail: foo@example.com,
+  Subject: E-Collecting: Änderungen in example.com Foo bar baz<script>alert('xss')</script>,
+  HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neuigkeiten in E-Collecting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Neuigkeiten in E-Collecting</h2>
+    <p>Hallo,</p>
+    <p>im E-Collecting gibt es Neuigkeiten:</p>
+    <ul>
+       <li>
+   <a href="http://localhost:5001/initiatives/fd680937-4b7a-46d9-87ef-51540a40aa85">example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</a><br />
+   Es ist eine neue Nachricht verf&#252;gbar<span>.</span>
+</li>
+    </ul>
+  </div>
+</body>
+</html>
+}

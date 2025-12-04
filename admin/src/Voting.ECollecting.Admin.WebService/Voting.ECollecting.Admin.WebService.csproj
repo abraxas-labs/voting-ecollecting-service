@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <UserSecretsId>0d1a6bbc-e756-4508-8891-7f859e1a7623</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Grpc.AspNetCore" Version="$(GrpcAspNetCoreVersion)" />
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="$(GrpcAspNetCoreVersion)" />
+    <PackageReference Include="Grpc.AspNetCore.Web" Version="$(GrpcAspNetCoreVersion)" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="$(EfCoreVersion)" />
+    <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
+    <PackageReference Include="prometheus-net.AspNetCore.Grpc" Version="8.2.1" />
+    <PackageReference Include="prometheus-net.AspNetCore.HealthChecks" Version="8.2.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
+    <PackageReference Include="Serilog.Expressions" Version="4.0.0" />
+    <PackageReference Include="Voting.Lib.Rest" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Grpc" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Prometheus" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Core\Voting.ECollecting.Shared.Core.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Migrations\Voting.ECollecting.Shared.Migrations.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Core\Voting.ECollecting.Admin.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Adapter.Data\Voting.ECollecting.Admin.Adapter.Data.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Adapter.VotingBasis\Voting.ECollecting.Admin.Adapter.VotingBasis.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Adapter.VotingIam\Voting.ECollecting.Admin.Adapter.VotingIam.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Adapter.VotingStimmregister\Voting.ECollecting.Admin.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Api\Voting.ECollecting.Admin.Api.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Core\Voting.ECollecting.Admin.Core.csproj" />
+  </ItemGroup>
+
+</Project>

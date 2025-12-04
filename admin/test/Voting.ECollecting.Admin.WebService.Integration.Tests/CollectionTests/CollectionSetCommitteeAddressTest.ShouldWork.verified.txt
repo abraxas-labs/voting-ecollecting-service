@@ -1,0 +1,57 @@
+﻿{
+  MinSignatureCount: 100000,
+  Wording:
+#2
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+  SubTypeId: Guid_1,
+  GovernmentDecisionNumber: CHE-2023-0010,
+  AdmissibilityDecisionState: Valid,
+  LockedFields: {
+    Description: false,
+    Wording: false,
+    CommitteeMembers: false
+  },
+  CollectionStartDate: DateTime_1,
+  CollectionEndDate: DateTime_2,
+  Description: Für den öffentlichen Verkehr (2),
+  Type: Initiative,
+  Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+  Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+  LogoId: Guid_2,
+  ImageId: Guid_3,
+  SignatureSheetTemplateGenerated: false,
+  SignatureSheetTemplateId: Guid_4,
+  State: EnabledForCollection,
+  Address: {
+    CommitteeOrPerson: Test Committee,
+    StreetOrPostOfficeBox: Test Street,
+    ZipCode: 12345,
+    Locality: Test City,
+    IsComplete: true
+  },
+  EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
+  MacKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_DuplicateDetection128,
+  IsElectronicSubmission: true,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Ch,
+  Bfs: 1,
+  MaxElectronicSignatureCount: 10000,
+  PeriodState: InCollection,
+  SignatureListSubmissionEndDate: DateTime_3,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_4,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_5
+  },
+  Id: Guid_5
+}

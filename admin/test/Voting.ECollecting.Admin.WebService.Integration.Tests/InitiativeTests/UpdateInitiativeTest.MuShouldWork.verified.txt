@@ -1,0 +1,63 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Mu,
+  Bfs: 3203,
+  MinSignatureCount: 1000,
+  MaxElectronicSignatureCount: 500,
+  Wording: Für mehr gerechtigkeit!-updated,
+  Collection: {
+    Id: Guid_1,
+    Description: foo bar baz-updated,
+    Type: Initiative,
+    Reason: Mehr Platz für Velos!,
+    Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+    Image: {
+      Id: Guid_2,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_3,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplate: {
+      Id: Guid_4,
+      Name: placeholder-signatures.pdf
+    },
+    State: PreRecorded,
+    Address: {
+      CommitteeOrPerson: Hans Muster-updated,
+      StreetOrPostOfficeBox: Postfach 12-updated,
+      ZipCode: 9001-updated,
+      Locality: St.Gallen-updated
+    },
+    IsElectronicSubmission: false,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: true,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: true,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: true,
+      CanDeleteAdmissibilityDecision: true,
+      CanEditGeneralInformation: true,
+      CanReturnForCorrection: false
+    }
+  },
+  GovernmentDecisionNumber: ,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

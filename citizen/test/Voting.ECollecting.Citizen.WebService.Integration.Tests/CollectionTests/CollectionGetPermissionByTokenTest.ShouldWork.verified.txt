@@ -1,0 +1,16 @@
+﻿{
+  CollectionId: Guid_1,
+  CollectionType: Initiative,
+  CollectionDescription: Kein Zwang gegen Kinder und Jugendliche,
+  InvitedByName: Test Citizen Creator,
+  LastName: Huenkeler,
+  FirstName: Peter,
+  Role: Deputy,
+  AcceptAcceptedAcrs: [
+    urn:qa.agov.ch:names:tc:ac:classes:100,
+    urn:qa.agov.ch:names:tc:ac:classes:200,
+    urn:qa.agov.ch:names:tc:ac:classes:300,
+    urn:qa.agov.ch:names:tc:ac:classes:400,
+    urn:qa.agov.ch:names:tc:ac:classes:500
+  ]
+}

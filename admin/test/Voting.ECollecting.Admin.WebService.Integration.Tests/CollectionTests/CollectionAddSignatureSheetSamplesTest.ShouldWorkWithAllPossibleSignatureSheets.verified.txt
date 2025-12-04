@@ -1,0 +1,177 @@
+﻿{
+  SignatureSheets: [
+    {
+      Id: Guid_1,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: Berg (SG),
+      Bfs: 3211
+    },
+    {
+      Id: Guid_2,
+      Number: 7,
+      ReceivedAt: {
+        Seconds: 1578402730,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: Berg (SG),
+      Bfs: 3211
+    },
+    {
+      Id: Guid_3,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: Goldach,
+      Bfs: 3213
+    },
+    {
+      Id: Guid_4,
+      Number: 7,
+      ReceivedAt: {
+        Seconds: 1578402730,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: Goldach,
+      Bfs: 3213
+    },
+    {
+      Id: Guid_5,
+      Number: 4,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 17,
+        Valid: 12,
+        Invalid: 5
+      },
+      State: Submitted,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203
+    },
+    {
+      Id: Guid_6,
+      Number: 5,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 26,
+        Valid: 25,
+        Invalid: 1
+      },
+      State: Submitted,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203
+    },
+    {
+      Id: Guid_7,
+      Number: 6,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203
+    },
+    {
+      Id: Guid_8,
+      Number: 7,
+      ReceivedAt: {
+        Seconds: 1578402730,
+        Nanos: 200000000
+      },
+      AttestedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203
+    }
+  ]
+}

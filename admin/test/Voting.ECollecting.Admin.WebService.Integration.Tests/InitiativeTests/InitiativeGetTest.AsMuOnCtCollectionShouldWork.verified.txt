@@ -1,0 +1,76 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MinSignatureCount: 4000,
+  MaxElectronicSignatureCount: 1000,
+  Wording:
+Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
+Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
+dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
+
+Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+  Collection: {
+    Id: Guid_1,
+    Description: Kein Zwang gegen Kinder und Jugendliche,
+    Type: Initiative,
+    Reason: Kinder müssen geschützt werden!,
+    Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+    Image: {
+      Id: Guid_2,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_3,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: false,
+    SignatureSheetTemplate: {
+      Id: Guid_4,
+      Name: placeholder-signatures.pdf
+    },
+    State: InPreparation,
+    Address: {
+      CommitteeOrPerson: Forum für Menschenrechte,
+      StreetOrPostOfficeBox: Kramgasse 7,
+      ZipCode: 3011,
+      Locality: Bern
+    },
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: false,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: false,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: false,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: false,
+      CanDeleteAdmissibilityDecision: false,
+      CanEditGeneralInformation: false,
+      CanReturnForCorrection: false
+    }
+  },
+  SubType: {
+    Id: Guid_5,
+    Bfs: 3200,
+    DomainOfInfluenceType: Ct,
+    Description: Gesetzesinitiative,
+    MinSignatureCount: 6000,
+    MaxElectronicSignatureCount: 3000
+  },
+  GovernmentDecisionNumber: ,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="$(GrpcAspNetCoreVersion)" />
+    <PackageReference Include="Grpc.Net.Client.Web" Version="$(GrpcAspNetCoreVersion)" />
+    <PackageReference Include="Voting.Basis.Service.Proto" Version="$(VotingBasisServiceProtoVersion)" />
+    <PackageReference Include="Voting.Lib.Iam" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Grpc" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.VotingBasis\Voting.ECollecting.Admin.Abstractions.Adapter.VotingBasis.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3790 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch,
+      Initiatives: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine bessere Digitalisierung auf Bundesebene.
+Die digitale Transformation soll beschleunigt und der Zugang zu digitalen
+Dienstleistungen verbessert werden.,
+          Collection: {
+            Id: Guid_1,
+            Description: Bundesweite Digitalisierungsinitiative,
+            Type: Initiative,
+            Reason: Digitalisierung für alle!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/digitalisierungsinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Bündnis für Digitalisierung,
+              StreetOrPostOfficeBox: Waisenhausplatz 21,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_2,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine Harmonisierung des Bildungswesens in der Schweiz.
+Alle Kinder sollen unabhängig von ihrem Wohnkanton die gleichen Bildungschancen haben.,
+          Collection: {
+            Id: Guid_2,
+            Description: Bundesweite Bildungsinitiative,
+            Type: Initiative,
+            Reason: Bildung ist ein Grundrecht!,
+            Link: https://www.eda.admin.ch/eda/de/home/vertretungen-und-reisen/abstimmungen.html,
+            SignatureSheetTemplateGenerated: false,
+            State: NotPassed,
+            Address: {
+              CommitteeOrPerson: Komitee Bildungsgerichtigkeit,
+              StreetOrPostOfficeBox: Postfach 400,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CHE-2023-0002,
+          AdmissibilityDecisionState: Rejected,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_3,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+          Collection: {
+            Id: Guid_3,
+            Description: Für den öffentlichen Verkehr,
+            Type: Initiative,
+            Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden!,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_4,
+              CollectionId: Guid_3,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CHE-2023-0009,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_5,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine nachhaltige Verkehrspolitik auf Bundesebene.
+Der öffentliche Verkehr soll gestärkt und der motorisierte Individualverkehr
+reduziert werden.,
+          Collection: {
+            Id: Guid_5,
+            Description: Bundesweite Verkehrsinitiative,
+            Type: Initiative,
+            Reason: Verkehr muss nachhaltig sein!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/verkehrsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_6,
+              CollectionId: Guid_5,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 587
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0013,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 9
+          }
+        },
+        {
+          Id: Guid_7,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung vom 18. April 1999 wird wie folgt geändert:
+Art. 108b (neu) Steuerpolitische Massnahmen zur Wohneigentumsförderung
+1 Bund und Kantone treffen zur Förderung und zum Erhalt des selbstgenutzten Wohneigentums wirksame steuerpolitische Massnahmen.,
+          Collection: {
+            Id: Guid_7,
+            Description: Sicheres Wohnen im Alter,
+            Type: Initiative,
+            Reason: Die AHV muss nachhaltig finanziert werden!,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis359t.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_8,
+              CollectionId: Guid_7,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 167
+            },
+            Address: {
+              CommitteeOrPerson: Initiative Sicheres Wohnen im Alter,
+              StreetOrPostOfficeBox: Aeschenplatz 6,
+              ZipCode: 4052,
+              Locality: Basel
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0011,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_9,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Alle Arbeitnehmerinnen und Arbeitnehmer haben Anspruch auf bezahlte Ferien von
+jährlich mindestens sechs Wochen.,
+          Collection: {
+            Id: Guid_9,
+            Description: 6 Wochen Ferien für alle,
+            Type: Initiative,
+            Reason: 6 Wochen Ferien für alle,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis362.html,
+            SignatureSheetTemplateGenerated: false,
+            State: PreparingForCollection,
+            Address: {
+              CommitteeOrPerson: Travail Suisse,
+              StreetOrPostOfficeBox:  Postfach 5775,
+              ZipCode: 3001,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1583845930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1597065130,
+              Nanos: 200000000
+            },
+            PeriodState: Published
+          },
+          GovernmentDecisionNumber: CHE-2023-0007,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_10,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt ergänzt:
+Politische Parteien und Komitees müssen ihre Einnahmen und Ausgaben ab einem bestimmten Schwellenwert offenlegen.
+Ziel ist es, Transparenz und Vertrauen in die Demokratie zu stärken und verdeckte Einflussnahme zu verhindern.,
+          Collection: {
+            Id: Guid_10,
+            Description: Transparenz bei Parteienfinanzierung (p: Reader),
+            Type: Initiative,
+            Reason: Die Finanzierung politischer Parteien soll offengelegt werden!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/parteienfinanzierung.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Verein Nachhaltige Finanzierung,
+              StreetOrPostOfficeBox: Güterstrasse 8,
+              ZipCode: 4053,
+              Locality: Basel
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_11,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Schweiz soll bis 2050 klimaneutral werden. Dafür braucht es verbindliche Massnahmen
+in allen Bereichen der Gesellschaft. Diese Initiative setzt sich für eine nachhaltige
+Klimapolitik auf Bundesebene ein.,
+          Collection: {
+            Id: Guid_11,
+            Description: Bundesweite Klimainitiative,
+            Type: Initiative,
+            Reason: Schweizweiter Klimaschutz ist notwendig!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/klimaschutzgesetz.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Klima-Allianz Schweiz,
+              StreetOrPostOfficeBox: Bollwerk 35,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_12,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Initiative fordert den Ausbau erneuerbarer Energien und die Reduktion fossiler Brennstoffe.
+Ziel ist es, die Energieunabhängigkeit zu stärken und den CO₂-Ausstoß deutlich zu senken.,
+          Collection: {
+            Id: Guid_12,
+            Description: Initiative für nachhaltige Energieversorgung,
+            Type: Initiative,
+            Reason: Die Schweiz soll ihre Energieversorgung nachhaltiger gestalten!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/energieinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Bündnis für Digitalisierung,
+              StreetOrPostOfficeBox: Waisenhausplatz 21,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CHE-2023-0001,
+          AdmissibilityDecisionState: Open,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_13,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Initiative fordert die Integration digitaler Kompetenzen in den Lehrplan aller Schulen.
+Ziel ist es, Schülerinnen und Schüler optimal auf die Herausforderungen der digitalen Zukunft vorzubereiten.,
+          Collection: {
+            Id: Guid_13,
+            Description: Initiative für digitale Bildung,
+            Type: Initiative,
+            Reason: Digitale Kompetenzen für die nächste Generation stärken!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/digitalebildung.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Bündnis für Digitalisierung,
+              StreetOrPostOfficeBox: Waisenhausplatz 21,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_14,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          Wording:
+Diese Initiative fordert eine bessere Gesundheitsversorgung für alle.
+Die Kosten sollen gerechter verteilt und der Zugang zu medizinischer
+Versorgung verbessert werden.,
+          Collection: {
+            Id: Guid_14,
+            Description: Bundesweite Gesundheitsinitiative,
+            Type: Initiative,
+            Reason: Gesundheit für alle!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/gesundheitsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_15,
+              CollectionId: Guid_14,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 8725
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Spitälerverbund,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0015,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 20
+          }
+        },
+        {
+          Id: Guid_16,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          Wording:
+Diese Initiative fordert eine Reduktion der Arbeitszeit auf Bundesebene.
+Die 4-Tage-Woche soll eingeführt und die Work-Life-Balance verbessert werden.,
+          Collection: {
+            Id: Guid_16,
+            Description: Bundesweite Arbeitszeitinitiative,
+            Type: Initiative,
+            Reason: Bessere Work-Life-Balance!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/arbeitszeitinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReturnedForCorrection,
+            Address: {
+              CommitteeOrPerson: Verein Arbeitszeit Jetzt,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CHE-2023-0003,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: true,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_17,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          Wording:
+Diese Initiative fordert eine gerechtere Steuerpolitik auf Bundesebene.
+Die Steuerlast soll fairer verteilt und Steuerschlupflöcher geschlossen werden.,
+          Collection: {
+            Id: Guid_17,
+            Description: Bundesweite Steuerinitiative,
+            Type: Initiative,
+            Reason: Steuergerechtigkeit für alle!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/steuerinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: UnderReview,
+            Address: {
+              CommitteeOrPerson: Steuernkommission Schweiz,
+              StreetOrPostOfficeBox: Bollwerk 35,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CHE-2023-0004,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_18,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine nachhaltigere Landwirtschaft auf Bundesebene.
+Die ökologische Produktion soll gefördert und der Einsatz von Pestiziden
+reduziert werden.,
+          Collection: {
+            Id: Guid_18,
+            Description: Bundesweite Landwirtschaftsinitiative,
+            Type: Initiative,
+            Reason: Nachhaltige Landwirtschaft!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/landwirtschaftsinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Withdrawn,
+            Address: {
+              CommitteeOrPerson: Arbeitsgruppe Umwelt Luzern,
+              StreetOrPostOfficeBox: Pilatusstrasse 15,
+              ZipCode: 6003,
+              Locality: Luzern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_19,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die AHV-Reform soll die Finanzierung der Altersvorsorge sichern. Dafür werden
+verschiedene Massnahmen vorgeschlagen, darunter eine Erhöhung des Rentenalters
+und eine Anpassung der Beiträge.,
+          Collection: {
+            Id: Guid_19,
+            Description: AHV-Reform,
+            Type: Initiative,
+            Reason: Die AHV muss nachhaltig finanziert werden!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/ahv-21.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_20,
+              CollectionId: Guid_19,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee AHV Reform,
+              StreetOrPostOfficeBox: Postfach 400,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1583845930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1597065130,
+              Nanos: 200000000
+            },
+            PeriodState: Published
+          },
+          GovernmentDecisionNumber: CHE-2023-0008,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_21,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine umfassende Bildungsreform auf Bundesebene.
+Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
+in Schulen voranzutreiben.,
+          Collection: {
+            Id: Guid_21,
+            Description: Bundesweite Bildungsreform,
+            Type: Initiative,
+            Reason: Bildung für die Zukunft!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/bildungsreform.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReadyForRegistration,
+            Address: {
+              CommitteeOrPerson: Komitee Bildungsgerichtigkeit,
+              StreetOrPostOfficeBox: Postfach 400,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CHE-2023-0005,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_22,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+#2
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+          Collection: {
+            Id: Guid_22,
+            Description: Für den öffentlichen Verkehr (2),
+            Type: Initiative,
+            Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_23,
+              CollectionId: Guid_22,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: ,
+              StreetOrPostOfficeBox: ,
+              ZipCode: ,
+              Locality: 
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CHE-2023-0010,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_24,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Bundesebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+          Collection: {
+            Id: Guid_24,
+            Description: Bundesweite Gesundheitsreform,
+            Type: Initiative,
+            Reason: Gesundheit für alle!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/gesundheitsreform.html,
+            SignatureSheetTemplateGenerated: false,
+            State: Registered,
+            Address: {
+              CommitteeOrPerson: Komitee Spitälerverbund,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CHE-2023-0006,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_25,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+          Collection: {
+            Id: Guid_25,
+            Description: Für den öffentlichen Veloverkehr,
+            Type: Initiative,
+            Reason: Der Veloverkehr muss nachhaltig finanziert werden!,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
+            SignatureSheetTemplateGenerated: false,
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_26,
+              CollectionId: Guid_25,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Verein Verkehrsschutz,
+              StreetOrPostOfficeBox: Bahnhofstrasse 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CHE-2023-0012,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Initiatives: [
+        {
+          Id: Guid_27,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          Wording:
+Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit einem Volumen von 100 Mio. Franken. Der Fonds wird aus Mitteln des besonderen Eigenkapitals geäufnet. Die Mittel werden verwendet für:
+
+- Massnahmen zur Verminderung der CO2-Emissionen bei Gebäuden durch die Förderungen von CO2-emissionsarmen Heizsystemen und die energetische Sanierung von Gebäudehüllen;
+- den Ausbau der Stromgewinnung durch erneuerbare Energien wie Photovoltaik, Windkraft und Biomasse;
+- gezielte Massnahmen zur Energieverbrauchsreduktion.»,
+          Collection: {
+            Id: Guid_27,
+            Description: Stadt St.Galler Klimafonds,
+            Type: Initiative,
+            Reason: SP setzt auf ausser-parlamentarischen Druck: Klimafonds-Initiative Eingereicht,
+            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/5660,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_28,
+              CollectionId: Guid_27,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 187
+            },
+            Address: {
+              CommitteeOrPerson: Initiative Saubere Energie,
+              StreetOrPostOfficeBox: Aeschenplatz 6,
+              ZipCode: 4052,
+              Locality: Basel
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.412214,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 31
+          }
+        },
+        {
+          Id: Guid_29,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording: ,
+          Collection: {
+            Id: Guid_29,
+            Description: Abwasser Initiative,
+            Type: Initiative,
+            Reason: Gewässer vor dem Abwasser schützen,
+            Link: https://sg.ch/abwasser/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Komitee Abwasser Initiative,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CH-123.4567,
+          AdmissibilityDecisionState: Open,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_30,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          Wording: Diese initiative will mehr kinderabzüge!,
+          Collection: {
+            Id: Guid_30,
+            Description: Volksinitiative «50% mehr Kinderabzüge»,
+            Type: Initiative,
+            Reason: Steuerliche Entlastung von Familien: Kinder- und Betreuungsabzüge,
+            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4375,
+            SignatureSheetTemplateGenerated: false,
+            State: UnderReview,
+            Address: {
+              CommitteeOrPerson: Pro Familia,
+              StreetOrPostOfficeBox: Rheinstrasse 17,
+              ZipCode: 4058,
+              Locality: Basel
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: SG-123.412224,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: true,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_31,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Das kantonale Baugesetz wird wie folgt ergänzt:
+Für alle Bauprojekte des Kantons ab einem Investitionsvolumen von 2 Mio. Franken sind die wichtigsten Entscheidungsgrundlagen, Kostenpläne und Vergabekriterien öffentlich zugänglich zu machen.
+Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentlicher Mittel zu erhöhen.,
+          Collection: {
+            Id: Guid_31,
+            Description: Transparenz bei kantonalen Bauprojekten (p: Reader),
+            Type: Initiative,
+            Reason: Kantonale Bauprojekte sollen für die Öffentlichkeit nachvollziehbar sein!,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/bauprojekte-transparenz.html,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Verein Bauen für Alle,
+              StreetOrPostOfficeBox: Lerchenweg 12,
+              ZipCode: 8400,
+              Locality: Winterthur
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CH-123.4568,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_32,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Das kantonale Gesetz über den öffentlichen Verkehr wird wie folgt ergänzt:
+
+Der Kanton fördert den Ausbau und die Nutzung von nachhaltigen Mobilitätsformen wie ÖV, Fahrrad und Carsharing.
+Bis 2030 soll der Anteil des motorisierten Individualverkehrs um 20% reduziert werden.
+Zur Umsetzung werden gezielte Investitionen in Infrastruktur und Sensibilisierungskampagnen getätigt.,
+          Collection: {
+            Id: Guid_32,
+            Description: Initiative für nachhaltige Mobilität (p: Deputy),
+            Type: Initiative,
+            Reason: Förderung von umweltfreundlichen Verkehrsmitteln und Reduktion des CO2-Ausstoßes im Kanton St. Gallen.,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/nachhaltige-mobilitaet.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Verein Zukunft Mobilität,
+              StreetOrPostOfficeBox: Mobilitätsweg 10,
+              ZipCode: 9000,
+              Locality: St. Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_33,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording: ,
+          Collection: {
+            Id: Guid_33,
+            Description: Seen Initiative,
+            Type: Initiative,
+            Reason: Seen vor dem Abwasser schützen,
+            Link: https://sg.ch/seen/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Komitee Abwasser Initiative,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1586437930,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: CH-123.45699,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_34,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording: ,
+          Collection: {
+            Id: Guid_34,
+            Description: Abwasser Initiative 1,
+            Type: Initiative,
+            Reason: Gewässer vor dem Abwasser schützen,
+            Link: https://sg.ch/abwasser/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Komitee Abwasser Initiative,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CH-123.45610,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_35,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Bundesverfassung[1] wird wie folgt geändert:
+Art. 93 Abs. 4
+Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebühren. Das Empfangen von Programmen begründet keine Beitragspflicht.,
+          Collection: {
+            Id: Guid_35,
+            Description: Radio und Fernsehen – ohne Billag,
+            Type: Initiative,
+            Reason: Keine Gebühren mehr für Radio und Fernsehen,
+            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis446t.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_36,
+              CollectionId: Guid_35,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 487
+            },
+            Address: {
+              CommitteeOrPerson: Schweizer Medienverband,
+              StreetOrPostOfficeBox: Medienstrasse 22,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.412211,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_37,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Das Gesetz über das öffentliche Beschaffungswesen wird wie folgt ergänzt:
+Alle vergebenen öffentlichen Aufträge ab einem Wert von 50'000 Franken sind mit den wichtigsten Vergabekriterien und dem Zuschlagsentscheid öffentlich zugänglich zu machen.
+
+Ziel ist es, die Nachvollziehbarkeit und Fairness bei der Vergabe öffentlicher Aufträge zu erhöhen und Korruption vorzubeugen.,
+          Collection: {
+            Id: Guid_37,
+            Description: Mehr Transparenz bei öffentlichen Aufträgen (p: Reader),
+            Type: Initiative,
+            Reason: Öffentliche Aufträge sollen nachvollziehbar und fair vergeben werden.,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/mehr-transparenz-oeffentliche-auftraege.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Verein Digitale Verantwortung,
+              StreetOrPostOfficeBox: Zentralstrasse 19,
+              ZipCode: 8003,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: true,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_38,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 500,
+          Wording: Die Initiative fordert strengere Grenzwerte für Luftschadstoffe und die Förderung des öffentlichen Verkehrs.,
+          Collection: {
+            Id: Guid_38,
+            Description: Initiative für bessere Luftqualität,
+            Type: Initiative,
+            Reason: Reduktion von Feinstaub und Stickoxiden in städtischen Gebieten.,
+            Link: https://www.umwelt-sg.ch/luftqualitaet-initiative,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Schweizer Verkehrsforum,
+              StreetOrPostOfficeBox: Bahnhofstrasse 58,
+              ZipCode: 8001,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_39,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Am 16. August 2007 wurde die Volksinitiative «Wiedereinführung von Schulnoten ab der 4. Klasse» (nachfolgend Noteninitiative) eingereicht.
+Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis zur 6. Klasse der Primarschule.,
+          Collection: {
+            Id: Guid_39,
+            Description: Wiedereinführung von Schulnoten ab der 4. Klasse,
+            Type: Initiative,
+            Reason: Die Schülerinnen und Schüler der 1. bis 6. Klasse der Volksschulen von Appenzell Ausserrhoden werden heute nicht mit Noten sondern mit Worten beurteilt.,
+            Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/abgeschlossene-volksinitiativen/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreparingForCollection,
+            Address: {
+              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+              StreetOrPostOfficeBox: Burgstrasse 4,
+              ZipCode: 3600,
+              Locality: Thun
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1583845930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1597065130,
+              Nanos: 200000000
+            },
+            PeriodState: Published
+          },
+          GovernmentDecisionNumber: SG-123.412227,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_40,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 500,
+          Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
+          Collection: {
+            Id: Guid_40,
+            Description: Motorfahrzeugsteuer-Initiative,
+            Type: Initiative,
+            Reason: Mehr Autos in der Stadt!,
+            Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Schweizer Verkehrsforum,
+              StreetOrPostOfficeBox: Bahnhofstrasse 58,
+              ZipCode: 8001,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_41,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          Wording: Wohnraum für alle,
+          Collection: {
+            Id: Guid_41,
+            Description: Wohnschutz-Initiative,
+            Type: Initiative,
+            Reason: Wir brauchen Wohnraum!,
+            Link: https://www.wohnraum-schuetzen.ch/,
+            SignatureSheetTemplateGenerated: true,
+            State: ReturnedForCorrection,
+            Address: {
+              CommitteeOrPerson: Verein für Wohnschutz,
+              StreetOrPostOfficeBox: Rheinstrasse 17,
+              ZipCode: 4058,
+              Locality: Basel
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: SG-123.412223,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: true,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_42,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording: ,
+          Collection: {
+            Id: Guid_42,
+            Description: Abwasser Initiative 3,
+            Type: Initiative,
+            Reason: Gewässer vor dem Abwasser schützen,
+            Link: https://sg.ch/abwasser/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Komitee Abwasser Initiative,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CH-123.45610,
+          AdmissibilityDecisionState: Rejected,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_43,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording: ,
+          Collection: {
+            Id: Guid_43,
+            Description: Abwasser Initiative 2,
+            Type: Initiative,
+            Reason: Gewässer vor dem Abwasser schützen,
+            Link: https://sg.ch/abwasser/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Komitee Abwasser Initiative,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CH-123.45610,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_44,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 500,
+          Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+          Collection: {
+            Id: Guid_44,
+            Description: Initiative für nachhaltige Stadtentwicklung,
+            Type: Initiative,
+            Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+            Link: https://www.stadtentwicklung-sg.ch/initiative,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Schweizer Verkehrsforum,
+              StreetOrPostOfficeBox: Bahnhofstrasse 58,
+              ZipCode: 8001,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: 123CHE2,
+          AdmissibilityDecisionState: Open,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_45,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine umfassende Bildungsreform auf Kantonsebene.
+Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
+in Schulen voranzutreiben.,
+          Collection: {
+            Id: Guid_45,
+            Description: Kantonale Bildungsreform,
+            Type: Initiative,
+            Reason: Bildung für die Zukunft!,
+            Link: https://www.sg.ch/home/bildungsreform.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReadyForRegistration,
+            Address: {
+              CommitteeOrPerson: Verein Bildung für Alle,
+              StreetOrPostOfficeBox: Lerchenweg 12,
+              ZipCode: 8400,
+              Locality: Winterthur
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: SG-123.412225,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_46,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+          Collection: {
+            Id: Guid_46,
+            Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Type: Initiative,
+            Reason: Frauen sollen auch wählen dürfen,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_47,
+              CollectionId: Guid_46,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+              StreetOrPostOfficeBox: Bahnhofplatz 6,
+              ZipCode: 2502,
+              Locality: Biel/Bienne
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: SG-123.412210,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_48,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
+
+In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
+im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
+zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
+
+In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
+Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+          Collection: {
+            Id: Guid_48,
+            Description: Freie Schulwahl auf der Oberstufe,
+            Type: Initiative,
+            Reason: Jeder darf wählen an welche Schule er gehen möchte,
+            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_49,
+              CollectionId: Guid_48,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 15
+            },
+            Address: {
+              CommitteeOrPerson: Bildungsethik Schweiz,
+              StreetOrPostOfficeBox: Rosenweg 4,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1562764330,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.4122177,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 15
+          }
+        },
+        {
+          Id: Guid_50,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+          Collection: {
+            Id: Guid_50,
+            Description: Kantonale Gesundheitsreform,
+            Type: Initiative,
+            Reason: Gesundheit für alle!,
+            Link: https://www.sg.ch/home/gesundheitsreform.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Registered,
+            Address: {
+              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+              StreetOrPostOfficeBox: Burgstrasse 4,
+              ZipCode: 3600,
+              Locality: Thun
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: SG-123.412226,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_51,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
+Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
+dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
+
+Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+          Collection: {
+            Id: Guid_51,
+            Description: Kein Zwang gegen Kinder und Jugendliche,
+            Type: Initiative,
+            Reason: Kinder müssen geschützt werden!,
+            Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Forum für Menschenrechte,
+              StreetOrPostOfficeBox: Kramgasse 7,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_52,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Einheitsinitiative «Behördenlöhne vors Volk» wurde im Februar 2020 von den Stimmberechtigten abgelehnt.
+Im Rahmen des Kantonsratsbeschlusses verlangte der Kantonsrat eine Transparenz-Bestimmung.
+Diese wurde im II. Nachtrag zum Gemeindegesetz formuliert.
+Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürgerschaft gewählten Behördenmitglieder zu veröffentlichen.,
+          Collection: {
+            Id: Guid_52,
+            Description: Behördenlöhne vors Volk,
+            Type: Initiative,
+            Reason: Jeder soll wissen was ein Regierungsrat verdient!,
+            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_53,
+              CollectionId: Guid_52,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+              StreetOrPostOfficeBox: Burgstrasse 4,
+              ZipCode: 3600,
+              Locality: Thun
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1583845930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1597065130,
+              Nanos: 200000000
+            },
+            PeriodState: Published
+          },
+          GovernmentDecisionNumber: SG-123.412229,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_54,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Unterzeichnenden fordern, dass im Planungs- und Baugesetz folgender Artikel gestrichen wird:
+
+Art. 33 Inhalt Kantonale Sondernutzungspläne werden erlassen für:
+a) Abbaustellen von kantonaler und regionaler Bedeutung;
+b) Deponien von kantonaler und regionaler Bedeutung;
+c) Anlagen zur Gewinnung von Energie;
+d) Anlagen zur Nutzung des Untergrundes;
+e) Strassen und Wasserbauten, soweit sie mit Vorhaben nach Bst. a bis d dieser Bestimmung zusammenhängen.,
+          Collection: {
+            Id: Guid_54,
+            Description: Schutz der kommunalen Demokratie,
+            Type: Initiative,
+            Reason: Die kommunale Demokratie muss geschützt werden!,
+            Link: https://publikationen.sg.ch/ekab/00.149.953/publikation/,
+            SignatureSheetTemplateGenerated: false,
+            State: NotPassed,
+            Address: {
+              CommitteeOrPerson: Forum für Menschenrechte,
+              StreetOrPostOfficeBox: Kramgasse 7,
+              ZipCode: 3011,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: SG-123.412222,
+          AdmissibilityDecisionState: Rejected,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_55,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Jugendliche, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+          Collection: {
+            Id: Guid_55,
+            Description: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Type: Initiative,
+            Reason: Frauen sollen auch wählen dürfen,
+            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            SignatureSheetTemplateGenerated: false,
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_56,
+              CollectionId: Guid_55,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 42
+            },
+            Address: {
+              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+              StreetOrPostOfficeBox: Bahnhofplatz 6,
+              ZipCode: 2502,
+              Locality: Biel/Bienne
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: SG-123.412212,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_57,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Der Erlass <Gesetz über die Jagd, den Schutz der wildlebenden Säugetiere und Vögelsowie deren Lebensräume (Jagdgesetz) vom 17. November 1994> wird wie folgt geändert:
+
+Art.41 Anlagenl
+1. (neu) Grundeigentümerinnen und Grundeigentümer beachten bei Zäunen insbesondere:
+    a) Zäune aus Stacheldraht sind verboten.
+    b) Mobile Weidenetze und elektrische Zäune:
+      1. werden sachgerecht erstellt, für Wildtiere gut sichtbar gemacht, unterhalten undregel mässig kontrol liert;
+      2. dürfen nur unter Strom stehen, wenn sich in den eingezäunten Flächen Nutztierebefinden oder um Spezialkulturen oder genutzte Ackerflächen vor Schädigungenzu schützen;
+      3. werden, sofern ungenutzt, innert einem Tag vom Strom genommen.
+    c) Ungenutzte Weidenetze werden innert zweiWochen entfernt.
+    d) Permanente Zäune, die im Wald liegen oder die Zugänglichkeit des Waldeseinschränken,
+       sind grundsätzlich verboten. Ausnahmen sind zulässig,
+       wenn sie imöffentlichen lnteresse liegen und notwendig sind,
+       insbesondere zum Schutzwertvoller Lebensräume von Tieren und Pflanzen,
+       zur Waldverjüngung oder zumSchutz vor Gefahren.
+       Die Zäune werden sachgerecht erstellt, für Wildtiere gutsichtbar gemacht, unterhalten und regelmässig kontrolliert.
+       Nicht mehr genutzteZäune werden innert nützlicher Frist sachgerecht zurückgebaut.,
+          Collection: {
+            Id: Guid_57,
+            Description: Stopp dem Tierleid – gegen Zäune als Todesfallen für Wildtiere,
+            Type: Initiative,
+            Reason: Gesetzesinitiative <Stopp dem Tierleid -gegen Zäune als Todesfallen für Wildtiere,
+            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4751,
+            SignatureSheetTemplateGenerated: true,
+            State: Withdrawn,
+            Address: {
+              CommitteeOrPerson: Verein Pfote,
+              StreetOrPostOfficeBox: Zentralstrasse 19,
+              ZipCode: 8003,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Initiatives: [
+        {
+          Id: Guid_58,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine Verkehrsberuhigung in der Stadt St.Gallen.
+Tempo 30 soll in Wohnquartieren eingeführt und die Sicherheit für
+Fussgänger und Velofahrer verbessert werden.,
+          Collection: {
+            Id: Guid_58,
+            Description: Stadtweite Verkehrsberuhigung,
+            Type: Initiative,
+            Reason: Sicherere Strassen für alle!,
+            Link: https://www.stadt.sg.ch/home/verkehrsberuhigung.html,
+            SignatureSheetTemplateGenerated: false,
+            State: UnderReview,
+            Address: {
+              CommitteeOrPerson: Komitee Verkehrsberuhigung,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: true
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-003,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_59,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr bezahlbaren Wohnraum in der Stadt St.Gallen.
+Die Stadt soll mehr günstige Wohnungen bauen und den Mieterschutz stärken.,
+          Collection: {
+            Id: Guid_59,
+            Description: Stadtweite Wohninitiative,
+            Type: Initiative,
+            Reason: Wohnraum für alle!,
+            Link: https://www.stadt.sg.ch/home/wohninitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: NotPassed,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-001,
+          AdmissibilityDecisionState: Rejected,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_60,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine Verbesserung der Schulinfrastruktur in der
+Stadt St.Gallen. Die Schulen sollen modernisiert und die Klassengrössen
+reduziert werden.,
+          Collection: {
+            Id: Guid_60,
+            Description: Stadtweite Schulinitiative,
+            Type: Initiative,
+            Reason: Bessere Schulen für unsere Kinder!,
+            Link: https://www.stadt.sg.ch/home/schulinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReturnedForCorrection,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-002,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
+          LockedFields: {
+            Wording: false,
+            Description: true,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_61,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld umfassend zu sanieren und auszubauen.
+Ziel ist es, den steigenden Bedarf an Sport- und Bewegungsflächen für Schulen, Vereine und die Bevölkerung zu decken.
+Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestaltet werden.,
+          Collection: {
+            Id: Guid_61,
+            Description: Sanierung und Ausbau der Sportanlagen Lerchenfeld,
+            Type: Initiative,
+            Reason: Moderne Sportanlagen für Schulen und Vereine!,
+            Link: https://www.stadt.sg.ch/home/lerchenfeld-sportanlagen.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: true
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_62,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert mehr Parkplätze in der Stadt St.Gallen.
+Die Parkplatzsituation soll verbessert und neue Parkhäuser gebaut werden.,
+          Collection: {
+            Id: Guid_62,
+            Description: Stadtweite Parkplatzinitiative,
+            Type: Initiative,
+            Reason: Mehr Parkplätze in der Stadt!,
+            Link: https://www.stadt.sg.ch/home/parkplatzinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Withdrawn,
+            Address: {
+              CommitteeOrPerson: Komitee Stadtweite Parkplatzinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: true,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_63,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Das Baugesetz der Stadt St.Gallen wird wie folgt ergänzt:
+Für alle städtischen Bauprojekte ab einem Investitionsvolumen von 1 Mio. Franken sind die wichtigsten Entscheidungsgrundlagen, Kostenpläne und Vergabekriterien öffentlich zugänglich zu machen.
+Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentlicher Mittel zu erhöhen.,
+          Collection: {
+            Id: Guid_63,
+            Description: Transparenz bei öffentlichen Bauprojekten (p: Reader),
+            Type: Initiative,
+            Reason: Bürgerinnen und Bürger sollen über städtische Bauprojekte besser informiert werden!,
+            Link: https://www.stadt.sg.ch/home/bauprojekte-transparenz.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Schweizer Bauprojekte,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: true,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_64,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Unterstützung für kulturelle Veranstaltungen
+in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
+          Collection: {
+            Id: Guid_64,
+            Description: Stadtweite Kulturinitiative,
+            Type: Initiative,
+            Reason: Kultur für alle!,
+            Link: https://www.stadt.sg.ch/home/kulturinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_65,
+              CollectionId: Guid_64,
+              TotalCitizenCount: 875,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 45
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Kulturinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: true,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1562764330,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-012,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 21
+          }
+        },
+        {
+          Id: Guid_66,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
+Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+          Collection: {
+            Id: Guid_66,
+            Description: Stadtweite Veloinfrastruktur,
+            Type: Initiative,
+            Reason: Mehr Platz für Velos!,
+            Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+            SignatureSheetTemplateGenerated: false,
+            State: InPreparation,
+            Address: {
+              CommitteeOrPerson: Schweizer Veloinfrastruktur,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: true,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_67,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Sportanlagen in der Stadt St.Gallen.
+Die Sportinfrastruktur soll ausgebaut und der Zugang zu Sportangeboten
+verbessert werden.,
+          Collection: {
+            Id: Guid_67,
+            Description: Stadtweite Sportinitiative,
+            Type: Initiative,
+            Reason: Mehr Sport für alle!,
+            Link: https://www.stadt.sg.ch/home/sportinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: true
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_68,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording: Diese Initiative fordert strengere Friedhofauflagen in der Stadt St.Gallen.,
+          Collection: {
+            Id: Guid_68,
+            Description: Stadtweite Friedhofsinitiative,
+            Type: Initiative,
+            Reason: Friedhof schützen für zukünftige Generationen!,
+            Link: https://www.stadt.sg.ch/home/friedhofsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_69,
+              CollectionId: Guid_68,
+              TotalCitizenCount: 1234,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Friedhofinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: true,
+              CanGenerateDocuments: true,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-010,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_70,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine nachhaltige Energiepolitik für die Stadt St.Gallen.
+Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden.,
+          Collection: {
+            Id: Guid_70,
+            Description: Stadtweite Energieinitiative,
+            Type: Initiative,
+            Reason: Nachhaltige Energie für St.Gallen!,
+            Link: https://www.stadt.sg.ch/home/energieinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_71,
+              CollectionId: Guid_70,
+              TotalCitizenCount: 1500,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 784
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Energieinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: true,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-011,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 7
+          }
+        },
+        {
+          Id: Guid_72,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
+Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+          Collection: {
+            Id: Guid_72,
+            Description: Stadtweite Veloinfrastruktur,
+            Type: Initiative,
+            Reason: Mehr Platz für Velos!,
+            Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Schweizer Veloinfrastruktur,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: true,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: true,
+              CanDeleteAdmissibilityDecision: true,
+              CanEditGeneralInformation: true,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_73,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld zu modernisieren und um zusätzliche Trainings- und Spielflächen zu erweitern.
+Ziel ist es, den wachsenden Anforderungen von Schulen, Sportvereinen und Freizeitsportlern gerecht zu werden.
+Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet werden.,
+          Collection: {
+            Id: Guid_73,
+            Description: Modernisierung und Erweiterung der Sportanlagen Lerchenfeld,
+            Type: Initiative,
+            Reason: Bedarfsgerechte Sportinfrastruktur für Schulen, Vereine und die Bevölkerung,
+            Link: https://www.stadt.sg.ch/leben-in-stgallen/sport/sportanlagen/lerchenfeld.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Submitted,
+            Address: {
+              CommitteeOrPerson: Komitee Sportinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: true,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: true
+            }
+          },
+          GovernmentDecisionNumber: 123.4CHESG,
+          AdmissibilityDecisionState: Open,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_74,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine umfassende Bildungsreform auf Stadtebene.
+Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
+in Schulen voranzutreiben.,
+          Collection: {
+            Id: Guid_74,
+            Description: Stadtweite Bildungsinitiative,
+            Type: Initiative,
+            Reason: Bildung für die Zukunft!,
+            Link: https://www.stadt.sg.ch/home/bildungsinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: ReadyForRegistration,
+            Address: {
+              CommitteeOrPerson: Komitee Bildungsinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-004,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_75,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Stadtebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+          Collection: {
+            Id: Guid_75,
+            Description: Stadtweite Gesundheitsinitiative,
+            Type: Initiative,
+            Reason: Gesundheit für alle!,
+            Link: https://www.stadt.sg.ch/home/gesundheitsinitiative.html,
+            SignatureSheetTemplateGenerated: true,
+            State: Registered,
+            Address: {
+              CommitteeOrPerson: Komitee Gesundheitsinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: true,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: MUSG-2025-005,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_76,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
+Parks und Gärten sollen erhalten und neue geschaffen werden.,
+          Collection: {
+            Id: Guid_76,
+            Description: Stadtweite Grünflächen,
+            Type: Initiative,
+            Reason: Mehr Grün in der Stadt!,
+            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_77,
+              CollectionId: Guid_76,
+              HasTotalCitizenCount: true
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Grünflächen,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: true,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-007,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_78,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
+Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+          Collection: {
+            Id: Guid_78,
+            Description: Stadtweite Recyclinginitiative,
+            Type: Initiative,
+            Reason: Mehr Recycling für eine nachhaltige Stadt!,
+            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_79,
+              CollectionId: Guid_78,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 500
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Recyclinginitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: true,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-008,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_80,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert strengere Umweltauflagen in der Stadt St.Gallen.
+Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.,
+          Collection: {
+            Id: Guid_80,
+            Description: Stadtweite Umweltinitiative,
+            Type: Initiative,
+            Reason: Umwelt schützen für zukünftige Generationen!,
+            Link: https://www.stadt.sg.ch/home/umweltinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_81,
+              CollectionId: Guid_80,
+              TotalCitizenCount: 1234,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Umweltinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: true,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1578575530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-009,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_82,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Gestützt auf Art. 10 der Gemeindeordnung stellen die unterzeichnenden
+Stimmberechtigten der Stadt St.Gallen folgendes Initiativbegehren (Zonenplaninitiative):,
+          Collection: {
+            Id: Guid_82,
+            Description: Für lebendige Quartiere – Wiesli retten (Wiesli-Initiative),
+            Type: Initiative,
+            Reason: Wiesli retten!,
+            Link: https://www.stadt.sg.ch/home/verwaltung-politik/demokratie-politik/stadtparlament/wiesli-initiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: PreparingForCollection,
+            Address: {
+              CommitteeOrPerson: Komitee Grünflächen,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: true,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-006,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    }
+  ]
+}

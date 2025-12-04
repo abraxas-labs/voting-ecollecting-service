@@ -1,0 +1,19 @@
+﻿// (c) Copyright by Abraxas Informatik AG
+// For license information see LICENSE file
+
+using System.Text.Json;
+
+namespace Voting.ECollecting.Shared.Domain.Entities.Audit;
+
+public class AuditTrailEntryEntity : AuditedEntity
+{
+    public string SourceEntityName { get; set; } = string.Empty;
+
+    public string Action { get; set; } = string.Empty;
+
+    public JsonDocument? RecordBefore { get; set; }
+
+    public JsonDocument? RecordAfter { get; set; }
+
+    public Guid SourceEntityId { get; set; }
+}

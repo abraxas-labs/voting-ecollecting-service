@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Api\Voting.ECollecting.Citizen.Api.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Citizen.Domain\Voting.ECollecting.Citizen.Domain.csproj" />
+  </ItemGroup>
+</Project>

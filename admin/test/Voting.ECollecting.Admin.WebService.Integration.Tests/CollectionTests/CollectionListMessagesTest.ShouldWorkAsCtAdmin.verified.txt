@@ -1,0 +1,38 @@
+﻿{
+  Messages: [
+    {
+      Id: Guid_1,
+      CollectionId: Guid_2,
+      CollectionType: Referendum,
+      CreatedAt: {
+        Seconds: 1578647530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Citizen Creator,
+      Content: Könnten Sie die informelle Vorprüfung durchführen?.
+    },
+    {
+      Id: Guid_3,
+      CollectionId: Guid_2,
+      CollectionType: Referendum,
+      CreatedAt: {
+        Seconds: 1578654730,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      Content: Die informelle Vorprüfung wurde veranlasst.
+    },
+    {
+      Id: Guid_4,
+      CollectionId: Guid_2,
+      CollectionType: Referendum,
+      CreatedAt: {
+        Seconds: 1578658330,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      Content: Die informelle Vorprüfung wurde genehmigt.
+    }
+  ],
+  InformalReviewRequested: false
+}

@@ -1,0 +1,19 @@
+﻿{
+  Role: Owner,
+  CanEdit: false,
+  CanEditSignatureSheetTemplate: false,
+  CanDeleteSignatureSheetTemplate: false,
+  CanGenerateSignatureSheetTemplatePreview: false,
+  CanEditPermissions: false,
+  CanCreateMessages: false,
+  CanSubmit: false,
+  IsSubmitVisible: false,
+  CanFlagForReview: false,
+  IsFlagForReviewVisible: false,
+  CanRegister: false,
+  CanWithdraw: false,
+  CanRequestInformalReview: false,
+  IsRequestInformalReviewVisible: false,
+  CanDownloadElectronicSignaturesProtocol: false,
+  CanEditSubType: false
+}

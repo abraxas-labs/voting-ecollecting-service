@@ -1,0 +1,245 @@
+﻿{
+  Initiatives: [
+    {
+      Id: Guid_1,
+      DomainOfInfluenceType: Ch,
+      Bfs: 1,
+      MinSignatureCount: 100000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Diese Initiative fordert eine bessere Digitalisierung auf Bundesebene.
+Die digitale Transformation soll beschleunigt und der Zugang zu digitalen
+Dienstleistungen verbessert werden.,
+      Collection: {
+        Id: Guid_1,
+        Description: Bundesweite Digitalisierungsinitiative,
+        Type: Initiative,
+        Reason: Digitalisierung für alle!,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/digitalisierungsinitiative.html,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Bündnis für Digitalisierung,
+          StreetOrPostOfficeBox: Waisenhausplatz 21,
+          ZipCode: 3011,
+          Locality: Bern
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: ,
+        DomainOfInfluenceType: Ch,
+        Description: Volksinitiative,
+        MinSignatureCount: 100000,
+        MaxElectronicSignatureCount: 50000
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_3,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 500,
+      Wording: Die Initiative fordert strengere Grenzwerte für Luftschadstoffe und die Förderung des öffentlichen Verkehrs.,
+      Collection: {
+        Id: Guid_3,
+        Description: Initiative für bessere Luftqualität,
+        Type: Initiative,
+        Reason: Reduktion von Feinstaub und Stickoxiden in städtischen Gebieten.,
+        Link: https://www.umwelt-sg.ch/luftqualitaet-initiative,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Schweizer Verkehrsforum,
+          StreetOrPostOfficeBox: Bahnhofstrasse 58,
+          ZipCode: 8001,
+          Locality: Zürich
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      SubType: {
+        Id: Guid_4,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_5,
+      DomainOfInfluenceType: Ch,
+      Bfs: 1,
+      MinSignatureCount: 100000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Die Initiative fordert die Integration digitaler Kompetenzen in den Lehrplan aller Schulen.
+Ziel ist es, Schülerinnen und Schüler optimal auf die Herausforderungen der digitalen Zukunft vorzubereiten.,
+      Collection: {
+        Id: Guid_5,
+        Description: Initiative für digitale Bildung,
+        Type: Initiative,
+        Reason: Digitale Kompetenzen für die nächste Generation stärken!,
+        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/digitalebildung.html,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Bündnis für Digitalisierung,
+          StreetOrPostOfficeBox: Waisenhausplatz 21,
+          ZipCode: 3011,
+          Locality: Bern
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: ,
+        DomainOfInfluenceType: Ch,
+        Description: Volksinitiative,
+        MinSignatureCount: 100000,
+        MaxElectronicSignatureCount: 50000
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_6,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 500,
+      Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
+      Collection: {
+        Id: Guid_6,
+        Description: Motorfahrzeugsteuer-Initiative,
+        Type: Initiative,
+        Reason: Mehr Autos in der Stadt!,
+        Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Schweizer Verkehrsforum,
+          StreetOrPostOfficeBox: Bahnhofstrasse 58,
+          ZipCode: 8001,
+          Locality: Zürich
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      SubType: {
+        Id: Guid_4,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    }
+  ]
+}

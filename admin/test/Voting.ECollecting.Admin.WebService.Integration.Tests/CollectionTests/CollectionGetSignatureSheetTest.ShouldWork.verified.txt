@@ -1,0 +1,27 @@
+﻿{
+  Id: Guid_1,
+  Number: 1,
+  ReceivedAt: {
+    Seconds: 1578575530,
+    Nanos: 200000000
+  },
+  CreatedByName: Test Admin,
+  ModifiedByName: ,
+  Count: {
+    Total: 20,
+    Valid: 1,
+    Invalid: 19
+  },
+  State: Created,
+  MunicipalityName: St. Gallen,
+  Bfs: 3203,
+  UserPermissions: {
+    CanEdit: true,
+    CanDelete: true,
+    CanSubmit: false,
+    CanUnsubmit: false,
+    CanDiscard: false,
+    CanRestore: false,
+    CanConfirm: false
+  }
+}

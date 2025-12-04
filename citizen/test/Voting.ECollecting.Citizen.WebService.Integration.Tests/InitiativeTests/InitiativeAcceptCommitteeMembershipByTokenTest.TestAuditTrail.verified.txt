@@ -1,0 +1,69 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: margarita@example.com,
+        Token: {
+          Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
+        },
+        LastName: Hamrick,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Margarita,
+        SortIndex: 0,
+        DateOfBirth: 1995-12-10,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        PoliticalBfs: 3211,
+        ApprovalState: 1,
+        SignatureType: 0,
+        PoliticalLastName: Hamrick,
+        PoliticalFirstName: Margarita,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: margarita@example.com,
+        LastName: Hamrick,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          ModifiedById: user-id-citizen,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: Test user,
+          ModifiedByEmail: margarita@example.com
+        },
+        FirstName: Margarita,
+        IamUserId: user-id-citizen,
+        SortIndex: 0,
+        DateOfBirth: 1995-12-10,
+        InitiativeId: Guid_2,
+        PoliticalBfs: 3211,
+        ApprovalState: 4,
+        SignatureType: 2,
+        PoliticalLastName: Hamrick,
+        PoliticalFirstName: Margarita,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: user-id-citizen,
+        CreatedByName: Test user,
+        CreatedByEmail: margarita@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

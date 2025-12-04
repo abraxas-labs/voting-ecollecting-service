@@ -1,0 +1,86 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: ,
+        Type: 1,
+        State: 2,
+        Reason: ,
+        Address: {
+          ZipCode: ,
+          Locality: ,
+          IsComplete: false,
+          CommitteeOrPerson: ,
+          StreetOrPostOfficeBox: 
+        },
+        Wording: ,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test user,
+          CreatedByEmail: rudolph.meier@example.com
+        },
+        SubTypeId: Guid_2,
+        Description: Abwasser Initiative,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 100000,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        MaxElectronicSignatureCount: 50000,
+        SignatureSheetTemplateGenerated: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: rudolph.meier@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    },
+    {
+      SourceEntityName: CollectionCounts,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_4,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          CreatedByName: Test user,
+          CreatedByEmail: rudolph.meier@example.com
+        },
+        CollectionId: Guid_1,
+        TotalCitizenCount: 0,
+        ElectronicCitizenCount: 0,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      SourceEntityId: Guid_4,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: rudolph.meier@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_5
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+﻿{
+  permission: {
+    LastName: Muster,
+    FirstName: Hans,
+    Email: hans.muster@example.com,
+    Token: {
+      Value: <url-token>
+    },
+    TokenExpiry: DateTime_1,
+    Accepted: false,
+    State: Pending,
+    IamLastName: ,
+    IamFirstName: ,
+    IamUserId: ,
+    Role: Reader,
+    CollectionId: Guid_1,
+    FullName: Hans Muster,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test user,
+      CreatedByEmail: voting+tester@abraxas.ch,
+      CreatedAt: DateTime_2
+    },
+    Id: Guid_2
+  },
+  sent: [
+    {
+      RecipientEmail: hans.muster@example.com,
+      Subject: E-Collecting: Neue Berechtigung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Neue Berechtigung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><h2>Neue Berechtigung in E-Collecting</h2>
+<p>Hallo,</p>
+<p>
+Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">Kein Zwang gegen Kinder und Jugendliche</a> für Sie hinzugefügt.
+Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
+</p></div>
+</body>
+</html>
+    }
+  ],
+  notifications: [
+    {
+      RecipientEMail: hans.muster@example.com,
+      State: Sent,
+      SentTimestamp: DateTime_2,
+      TemplateBag: {
+        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        RecipientIsCitizen: true,
+        NotificationType: PermissionAdded,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    }
+  ]
+}

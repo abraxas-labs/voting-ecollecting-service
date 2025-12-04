@@ -1,0 +1,25 @@
+﻿{
+  Municipality: {
+    Bfs: 3203,
+    MunicipalityName: St. Gallen,
+    PhysicalCount: {
+      Total: 20,
+      Valid: 17,
+      Invalid: 3
+    },
+    TotalValidCitizenCount: 27,
+    ElectronicCitizenCount: 10,
+    IsLocked: true,
+    SignatureSheetsCount: {
+      TotalSignatureSheetsCount: 8,
+      TotalSubmittedOrConfirmedSignatureSheetsCount: 8
+    }
+  },
+  CollectionCount: {
+    Id: Guid_1,
+    CollectionId: Guid_2,
+    TotalCitizenCount: 4124,
+    HasTotalCitizenCount: true,
+    ElectronicCitizenCount: 61
+  }
+}

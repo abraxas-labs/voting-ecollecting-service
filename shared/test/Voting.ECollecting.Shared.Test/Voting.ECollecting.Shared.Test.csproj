@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\tools\Voting.ECollecting.DataSeeder.Data\Voting.ECollecting.DataSeeder.Data.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Shared.Migrations\Voting.ECollecting.Shared.Migrations.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Voting.Lib.Database" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Verify.SystemJson" Version="1.4.1" />
+  </ItemGroup>
+</Project>

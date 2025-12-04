@@ -1,0 +1,104 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3203,
+        Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+        Type: 1,
+        State: 1,
+        LogoId: Guid_2,
+        Reason: Mehr Platz für Velos!,
+        Address: {
+          ZipCode: 9001-updated,
+          Locality: St.Gallen-updated,
+          IsComplete: true,
+          CommitteeOrPerson: Hans Muster-updated,
+          StreetOrPostOfficeBox: Postfach 12-updated
+        },
+        ImageId: Guid_3,
+        Wording:
+Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
+Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        Description: Stadtweite Veloinfrastruktur,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 1000,
+        DomainOfInfluenceType: 3,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        SignatureSheetTemplateId: Guid_4,
+        MaxElectronicSignatureCount: 500,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3203,
+        Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+        Type: 1,
+        State: 1,
+        LogoId: Guid_2,
+        Reason: Mehr Platz für Velos!,
+        Address: {
+          ZipCode: 9001-updated,
+          Locality: St.Gallen-updated,
+          IsComplete: true,
+          CommitteeOrPerson: Hans Muster-updated,
+          StreetOrPostOfficeBox: Postfach 12-updated
+        },
+        ImageId: Guid_3,
+        Wording: Für mehr gerechtigkeit!-updated,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        Description: foo bar baz-updated,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 1000,
+        DomainOfInfluenceType: 3,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        SignatureSheetTemplateId: Guid_4,
+        MaxElectronicSignatureCount: 500,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_5
+    }
+  ]
+}

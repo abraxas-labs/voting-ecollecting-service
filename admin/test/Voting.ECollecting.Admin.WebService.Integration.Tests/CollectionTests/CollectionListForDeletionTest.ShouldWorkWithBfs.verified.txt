@@ -1,0 +1,189 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch
+    },
+    {
+      DomainOfInfluenceType: Ct
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Decrees: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
+          CollectionStartDate: {
+            Seconds: 1499692330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1531228330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
+                MinSignatureCount: 300,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_2,
+                Description: Referendum gegen die Änderung des Kulturgesetzes,
+                Type: Referendum,
+                Reason: Kulturelle Vielfalt in der Stadt erhalten!,
+                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EndedCameNotAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_3,
+                  CollectionId: Guid_2,
+                  TotalCitizenCount: 432,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 41
+                },
+                Address: {
+                  CommitteeOrPerson: Kulturinitiative Stadt St. Gallen,
+                  StreetOrPostOfficeBox: Gallusstrasse 4,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1499692330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1531228330,
+                  Nanos: 200000000
+                },
+                PeriodState: Expired
+              },
+              Number: 
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 432,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 41
+          },
+          State: EndedCameNotAbout,
+          CameNotAboutReason: MinSignatureCountNotReached,
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 3
+          }
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          Wording:
+Diese Initiative fordert eine nachhaltige Energiepolitik für die Stadt St.Gallen.
+Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden.,
+          Collection: {
+            Id: Guid_4,
+            Description: Stadtweite Energieinitiative,
+            Type: Initiative,
+            Reason: Nachhaltige Energie für St.Gallen!,
+            Link: https://www.stadt.sg.ch/home/energieinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_5,
+              CollectionId: Guid_4,
+              TotalCitizenCount: 1500,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 784
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Energieinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: true,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: MUSG-2025-011,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 7
+          }
+        }
+      ]
+    }
+  ]
+}

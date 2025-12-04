@@ -1,0 +1,19 @@
+﻿{
+  CollectionMunicipalityId: Guid_1,
+  Number: 9,
+  ReceivedAt: DateTime_1,
+  Count: {
+    Invalid: 15,
+    Total: 15,
+    CanAdd: true
+  },
+  State: Created,
+  IsSample: false,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: default user firstname default user lastname,
+    CreatedByEmail: default-user@example.com,
+    CreatedAt: DateTime_2
+  },
+  Id: Guid_2
+}

@@ -1,0 +1,112 @@
+﻿{
+  Initiatives: [
+    {
+      Id: Guid_1,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      MinSignatureCount: 1000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld umfassend zu sanieren und auszubauen.
+Ziel ist es, den steigenden Bedarf an Sport- und Bewegungsflächen für Schulen, Vereine und die Bevölkerung zu decken.
+Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestaltet werden.,
+      Collection: {
+        Id: Guid_1,
+        Description: Sanierung und Ausbau der Sportanlagen Lerchenfeld,
+        Type: Initiative,
+        Reason: Moderne Sportanlagen für Schulen und Vereine!,
+        Link: https://www.stadt.sg.ch/home/lerchenfeld-sportanlagen.html,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Komitee Sportinitiative,
+          StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+          ZipCode: 9000,
+          Locality: St.Gallen
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_2,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      MinSignatureCount: 1000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Diese Initiative fordert mehr Sportanlagen in der Stadt St.Gallen.
+Die Sportinfrastruktur soll ausgebaut und der Zugang zu Sportangeboten
+verbessert werden.,
+      Collection: {
+        Id: Guid_2,
+        Description: Stadtweite Sportinitiative,
+        Type: Initiative,
+        Reason: Mehr Sport für alle!,
+        Link: https://www.stadt.sg.ch/home/sportinitiative.html,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Komitee Sportinitiative,
+          StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+          ZipCode: 9000,
+          Locality: St.Gallen
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    }
+  ]
+}

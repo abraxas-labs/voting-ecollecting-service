@@ -1,0 +1,17 @@
+﻿{
+  ValidationResults: [
+    {
+      Validation: HasDeputyPermissions,
+      IsValid: true
+    },
+    {
+      Validation: GeneralInformationNotNull,
+      IsValid: true
+    },
+    {
+      Validation: DecreeNotNull,
+      IsValid: true
+    }
+  ],
+  IsValid: true
+}

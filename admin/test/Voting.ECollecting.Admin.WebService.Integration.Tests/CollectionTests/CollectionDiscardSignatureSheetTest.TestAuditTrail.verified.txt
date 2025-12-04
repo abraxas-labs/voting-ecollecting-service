@@ -1,0 +1,62 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Count: {
+          Total: 17,
+          Valid: 12,
+          CanAdd: true,
+          Invalid: 5
+        },
+        State: 2,
+        Number: 4,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        AttestedAt: DateTimeOffset_2,
+        ReceivedAt: DateTimeOffset_3,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Count: {
+          Total: 17,
+          Valid: 12,
+          CanAdd: true,
+          Invalid: 5
+        },
+        State: 3,
+        Number: 4,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_4,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        AttestedAt: DateTimeOffset_2,
+        ReceivedAt: DateTimeOffset_3,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch
+    },
+    {
+      DomainOfInfluenceType: Ct
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Initiatives: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
+Parks und Gärten sollen erhalten und neue geschaffen werden.,
+          Collection: {
+            Id: Guid_1,
+            Description: Stadtweite Grünflächen,
+            Type: Initiative,
+            Reason: Mehr Grün in der Stadt!,
+            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_2,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_3,
+              CollectionId: Guid_1,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Grünflächen,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-007,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
+Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+          Collection: {
+            Id: Guid_4,
+            Description: Stadtweite Recyclinginitiative,
+            Type: Initiative,
+            Reason: Mehr Recycling für eine nachhaltige Stadt!,
+            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_5,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_6,
+              CollectionId: Guid_4,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 500
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Recyclinginitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1591794730,
+              Nanos: 200000000
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUSG-2025-008,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        }
+      ]
+    }
+  ]
+}

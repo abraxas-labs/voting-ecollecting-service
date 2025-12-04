@@ -1,0 +1,63 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Mu,
+  Bfs: 3203,
+  MinSignatureCount: 1000,
+  MaxElectronicSignatureCount: 500,
+  Wording:
+Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld zu modernisieren und um zusätzliche Trainings- und Spielflächen zu erweitern.
+Ziel ist es, den wachsenden Anforderungen von Schulen, Sportvereinen und Freizeitsportlern gerecht zu werden.
+Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet werden.,
+  Collection: {
+    Id: Guid_1,
+    Description: Modernisierung und Erweiterung der Sportanlagen Lerchenfeld,
+    Type: Initiative,
+    Reason: Bedarfsgerechte Sportinfrastruktur für Schulen, Vereine und die Bevölkerung,
+    Link: https://www.stadt.sg.ch/leben-in-stgallen/sport/sportanlagen/lerchenfeld.html,
+    Image: {
+      Id: Guid_2,
+      Name: placeholder.png
+    },
+    Logo: {
+      Id: Guid_3,
+      Name: placeholder-logo.png
+    },
+    SignatureSheetTemplateGenerated: true,
+    State: NotPassed,
+    Address: {
+      CommitteeOrPerson: Komitee Sportinitiative,
+      StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+      ZipCode: 9000,
+      Locality: St.Gallen
+    },
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: false,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: false,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: false,
+      CanDeleteAdmissibilityDecision: false,
+      CanEditGeneralInformation: false,
+      CanReturnForCorrection: false
+    }
+  },
+  GovernmentDecisionNumber: 123.4CHESG,
+  AdmissibilityDecisionState: Rejected,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

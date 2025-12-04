@@ -1,0 +1,41 @@
+﻿{
+  PageInfo: {
+    CurrentPage: 1,
+    PageSize: 1,
+    TotalPages: 1,
+    ItemsCount: 1,
+    TotalItemsCount: 1,
+    HasPreviousPage: false,
+    HasNextPage: false
+  },
+  Candidates: [
+    {
+      Person: {
+        RegisterId: Guid_1,
+        IsVotingAllowed: true,
+        IsBirthDateValidForVotingRights: true,
+        IsNationalityValidForVotingRights: true,
+        OfficialName: Golling,
+        FirstName: Peter,
+        DateOfBirth: {
+          Seconds: 1165017600
+        },
+        ResidenceAddressStreet: Tannenstr.,
+        ResidenceAddressHouseNumber: 42
+      },
+      ExistingSignature: {
+        Bfs: 3203,
+        MunicipalityName: St. Gallen,
+        Electronic: true,
+        CollectionDescription: Referendum gegen die Änderung der direkten Bundessteuer,
+        HasSignatureSheetNumber: false,
+        CollectionDateTime: {
+          Seconds: 1578661930,
+          Nanos: 200000000
+        },
+        IsInSameMunicipality: true,
+        IsOnSameSheet: false
+      }
+    }
+  ]
+}

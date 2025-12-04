@@ -1,0 +1,1432 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch,
+      Decrees: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1625922730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20250309/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_2,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Energie,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/energie.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_3,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Kultur,
+          CollectionStartDate: {
+            Seconds: 1589116330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1605013930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240818/kultur.html,
+          PeriodState: Published,
+          Collections: [
+            {
+              Id: Guid_4,
+              Decree: {
+                Id: Guid_3,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Kultur,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 10000
+              },
+              MembersCommittee: Christoph Zimmermann, Präsident Deutscher Ärzteverband Zürich; Claudia Müller, Vorsitzende Greenpeace Schweiz Basel; Tom Wagner, Vorstand Schweizerischer Bauernverband Bern; Sylvia Lang, Sprecherin Globaler Klimafonds Zürich; Richard Huber, Finanzchef Ärzte für den Tierschutz Schweiz; Manuela Fischer, Projektleiterin Naturschutzbund Zürich; Thomas Roth, Koordinator Flüchtlingshilfe Schweiz Genf; Heidi Schmid, Präsidentin Männergesundheitsverein Zürich; Marc Meier, Eventkoordinator Natur- und Klimaschutzorganisation Basel; Daniel Berger, Pressesprecher Sozialfonds Zürich,
+              Collection: {
+                Id: Guid_4,
+                Description: Referendum gegen die Änderung des Kulturgesetzes,
+                Type: Referendum,
+                Reason: Kulturelle Vielfalt erhalten!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240818/kultur.html,
+                SignatureSheetTemplateGenerated: false,
+                State: Withdrawn,
+                Address: {
+                  CommitteeOrPerson: Kulturinitiative Schweiz,
+                  StreetOrPostOfficeBox: Hodlerstrasse 1,
+                  ZipCode: 3011,
+                  Locality: Bern
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1589116330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1605013930,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_5,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+          CollectionStartDate: {
+            Seconds: 1581340330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+          CollectionStartDate: {
+            Seconds: 1575983530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1591794730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 50000,
+          MaxElectronicSignatureCount: 5000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_7,
+              Decree: {
+                Id: Guid_6,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+              Collection: {
+                Id: Guid_7,
+                Description: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+                Type: Referendum,
+                Reason: Keine nationale Steuern!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/nationale-bundessteuer.html,
+                SignatureSheetTemplateGenerated: false,
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_8,
+                  CollectionId: Guid_7,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+                  StreetOrPostOfficeBox: Kramgasse 12,
+                  ZipCode: 3011,
+                  Locality: Bern
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1575983530,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1591794730,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_9,
+              Decree: {
+                Id: Guid_6,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+              Collection: {
+                Id: Guid_9,
+                Description: Referendum gegen die Änderung der direkten Bundessteuer,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit für alle!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_10,
+                  CollectionId: Guid_9,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+                  StreetOrPostOfficeBox: Kramgasse 12,
+                  ZipCode: 3011,
+                  Locality: Bern
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1575983530,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1591794730,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_11,
+              Decree: {
+                Id: Guid_6,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Zentrum für selbstbestimmtes Leben,
+              Collection: {
+                Id: Guid_11,
+                Description: Referendum gegen die Änderung vom 6. Oktober 2024 des Bundesgesetzes über die Invalidenversicherung,
+                Type: Referendum,
+                Reason: Selbstbestimmtes Leben!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20260125/kultur.html,
+                SignatureSheetTemplateGenerated: false,
+                State: PreparingForCollection,
+                Address: {
+                  CommitteeOrPerson: Zentrum für selbstbestimmtes Leben,
+                  StreetOrPostOfficeBox: Schermenweg 5,
+                  ZipCode: 3001,
+                  Locality: Bern
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581340330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_12,
+              Decree: {
+                Id: Guid_6,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Christoph Zimmermann, Präsident Deutscher Ärzteverband Zürich; Claudia Müller, Vorsitzende Greenpeace Schweiz Basel; Tom Wagner, Vorstand Schweizerischer Bauernverband Bern; Sylvia Lang, Sprecherin Globaler Klimafonds Zürich; Richard Huber, Finanzchef Ärzte für den Tierschutz Schweiz; Manuela Fischer, Projektleiterin Naturschutzbund Zürich; Thomas Roth, Koordinator Flüchtlingshilfe Schweiz Genf; Heidi Schmid, Präsidentin Männergesundheitsverein Zürich; Marc Meier, Eventkoordinator Natur- und Klimaschutzorganisation Basel; Daniel Berger, Pressesprecher Sozialfonds Zürich,
+              Collection: {
+                Id: Guid_12,
+                Description: Referendum gegen die Abschaffung des Nachtzug-Angebots (p: Reader),
+                Type: Referendum,
+                Reason: Nachhaltige Mobilität und internationale Zugverbindungen erhalten!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20250914/nachtzug-angebot.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Komitee für nachhaltige Mobilität Schweiz,
+                  StreetOrPostOfficeBox: Bahnhofplatz 1,
+                  ZipCode: 8001,
+                  Locality: Zürich
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581340330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_13,
+              Decree: {
+                Id: Guid_6,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Max Müller, Parteipräsident SP Zürich; Laura Schmid, Vorsitzende Pro Familia Verein Bern; Thomas Keller, Finanzverantwortlicher Greenpeace Schweiz; Anna Meier, Kommunikationsbeauftragte WWF Schweiz; Felix Weber, Projektleiter Klimaschutzverein Basel; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima Zürich; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund Genf,
+              Collection: {
+                Id: Guid_13,
+                Description: Referendum gegen die automatische Amtshilfe in Steuersachen,
+                Type: Referendum,
+                Reason: Steuerautonomie der Schweiz wahren!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für Steuerautonomie,
+                  StreetOrPostOfficeBox: Bundesplatz 19,
+                  ZipCode: 3003,
+                  Locality: Bern
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581340330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_14,
+              Decree: {
+                Id: Guid_6,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Lukas Huber, Präsident Solarenergie Schweiz Zürich; Eva Roth, Vorsitzende Swiss Social Impact Basel; Markus Meier, Kommunikationsbeauftragter Schweizerischer Verkehrsbund Bern; Laura Berger, Projektleiterin Öko-Institut Zürich; Frank Weber, Finanzmanager Stiftung für Nachhaltigkeit Basel; Johanna Fischer, Eventmanagerin Schweizerischer Wanderverband St. Gallen; Raphael Schmid, Vorsitzender Lebenshilfe Schweiz Zürich; Peter Lang, Koordinator Flüchtlingshilfe Schweiz; Sandra Müller, Präsidentin Naturschutzfonds Zürich; Felix Roth, Kommunikationsbeauftragter Schweizer Förderkreis Umweltschutz Basel,
+              Collection: {
+                Id: Guid_14,
+                Description: Referendum gegen die automatische Amtshilfe in Steuersachen,
+                Type: Referendum,
+                Reason: Datenschutz und Bürgerrechte schützen!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Komitee für Datenschutz und Bürgerrechte,
+                  StreetOrPostOfficeBox: Schwarztorstrasse 31,
+                  ZipCode: 3007,
+                  Locality: Bern
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581340330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: true
+          },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false
+          },
+          State: CollectionApplicable
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Decrees: [
+        {
+          Id: Guid_15,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_16,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+          CollectionStartDate: {
+            Seconds: 1581599530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/1231sa/steuern.html,
+          PeriodState: Published,
+          Collections: [
+            {
+              Id: Guid_17,
+              Decree: {
+                Id: Guid_16,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_17,
+                Description: Gerechtigkeit für alle,
+                Type: Referendum,
+                Reason: Gerechtigkeit für alle im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 2,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_18,
+              Decree: {
+                Id: Guid_16,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_18,
+                Description: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen  (p: Reader),
+                Type: Referendum,
+                Reason: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/19880612/krankenversicherung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: PreparingForCollection,
+                Address: {
+                  CommitteeOrPerson: Komitee für wohnortnahe Schulen St. Gallen,
+                  StreetOrPostOfficeBox: Schulweg 12,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_19,
+              Decree: {
+                Id: Guid_16,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_19,
+                Description: Referendum gegen die Kürzung der Kulturförderung (p: Reader),
+                Type: Referendum,
+                Reason: Kulturelle Vielfalt und Angebote im Kanton erhalten!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/kulturfoerderung-referendum.html,
+                SignatureSheetTemplateGenerated: false,
+                State: PreRecorded,
+                Address: {
+                  CommitteeOrPerson: Komitee für Kulturvielfalt St. Gallen,
+                  StreetOrPostOfficeBox: Kulturplatz 7,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581599530,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: CH-123.4568,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_20,
+              Decree: {
+                Id: Guid_16,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_20,
+                Description: Referendum gegen die Schliessung von Quartierschulen (p: Reader),
+                Type: Referendum,
+                Reason: Kurze Schulwege und wohnortnahe Bildung für Kinder sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/quartierschulen-referendum.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Komitee für wohnortnahe Schulen St. Gallen,
+                  StreetOrPostOfficeBox: Schulweg 12,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: true,
+                IsSigned: false,
+                HasIsSigned: false
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: true
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_21,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          CollectionStartDate: {
+            Seconds: 1576242730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_22,
+              Decree: {
+                Id: Guid_21,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_22,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_23,
+                  CollectionId: Guid_22,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 101
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_24,
+              Decree: {
+                Id: Guid_21,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_24,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_25,
+                  CollectionId: Guid_24,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 61
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_26,
+              Decree: {
+                Id: Guid_21,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_26,
+                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Type: Referendum,
+                Reason: Föderalismus wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_27,
+                  CollectionId: Guid_26,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 162
+          },
+          State: CollectionApplicable
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu,
+      Decrees: [
+        {
+          Id: Guid_28,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_29,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über den Ausbau des öffentlichen Nahverkehrs,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240922/nahverkehr-ausbau.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_30,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+          CollectionStartDate: {
+            Seconds: 1581340330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240324/digitales-buergerportal.html,
+          PeriodState: Published,
+          Collections: [
+            {
+              Id: Guid_31,
+              Decree: {
+                Id: Guid_30,
+                Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee:
+Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
+,
+              Collection: {
+                Id: Guid_31,
+                Description: Referendum gegen die Einführung einer Umweltabgabe,
+                Type: Referendum,
+                Reason: Für eine nachhaltige Entwicklung und den Schutz unserer Umwelt!,
+                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240512/umweltabgabe.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_32,
+                  CollectionId: Guid_31,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Initiative für saubere Luft St. Gallen,
+                  StreetOrPostOfficeBox: Umweltstrasse 10,
+                  ZipCode: 9403,
+                  Locality: Goldach
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581340330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_33,
+              Decree: {
+                Id: Guid_30,
+                Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee:
+Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
+,
+              Collection: {
+                Id: Guid_33,
+                Description: Referendum gegen die Einführung einer Autoabgabe,
+                Type: Referendum,
+                Reason: Für eine nachhaltige Entwicklung und den Schutz unserer Umwelt!,
+                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240512/autoabgabe.html,
+                SignatureSheetTemplateGenerated: false,
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_34,
+                  CollectionId: Guid_33,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Initiative für saubere Luft St. Gallen,
+                  StreetOrPostOfficeBox: Umweltstrasse 10,
+                  ZipCode: 9403,
+                  Locality: Goldach
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1581340330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_35,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+          CollectionStartDate: {
+            Seconds: 1575983530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_36,
+              Decree: {
+                Id: Guid_35,
+                Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_36,
+                Description: Referendum gegen die Änderung des Steuergesetzes,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit in der Stadt wahren!,
+                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_37,
+                  CollectionId: Guid_36,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
+                  StreetOrPostOfficeBox: Rathausplatz 1,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1575983530,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_38,
+              Decree: {
+                Id: Guid_35,
+                Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_38,
+                Description: Referendum gegen die Änderung des Finanzgesetzes,
+                Type: Referendum,
+                Reason: Finanzen in der Stadt entlasten!,
+                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/finanzen.html,
+                SignatureSheetTemplateGenerated: false,
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_39,
+                  CollectionId: Guid_38,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
+                  StreetOrPostOfficeBox: Rathausplatz 1,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Reader,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Seconds: 1575983530,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1594386730,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false
+          },
+          State: CollectionApplicable
+        }
+      ]
+    }
+  ]
+}

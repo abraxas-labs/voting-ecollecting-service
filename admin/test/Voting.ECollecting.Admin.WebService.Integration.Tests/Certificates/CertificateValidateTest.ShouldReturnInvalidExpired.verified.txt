@@ -1,0 +1,35 @@
+﻿{
+  state: Error,
+  validations: [
+    {
+      validation: ContainsSingleEntry,
+      state: Ok
+    },
+    {
+      validation: CertificateSelfSigned,
+      state: Ok
+    },
+    {
+      validation: CertificateNotAfter,
+      state: Error
+    },
+    {
+      validation: CACertificateNotAfter,
+      state: Ok
+    },
+    {
+      validation: CertificateChainValidation,
+      state: Error
+    }
+  ],
+  notAfter: 2026-02-08T17:41:58Z,
+  thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985,
+  subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+
+}

@@ -1,0 +1,371 @@
+﻿{
+  Initiatives: [
+    {
+      Id: Guid_1,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_1,
+        Description: Abwasser Initiative,
+        Type: Initiative,
+        Reason: Gewässer vor dem Abwasser schützen,
+        Link: https://sg.ch/abwasser/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Abwasser Initiative,
+          StreetOrPostOfficeBox: Langstrasse 200,
+          ZipCode: 8005,
+          Locality: Zürich
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.4567,
+      AdmissibilityDecisionState: Open,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_3,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_3,
+        Description: Abwasser Initiative 1,
+        Type: Initiative,
+        Reason: Gewässer vor dem Abwasser schützen,
+        Link: https://sg.ch/abwasser/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Abwasser Initiative,
+          StreetOrPostOfficeBox: Langstrasse 200,
+          ZipCode: 8005,
+          Locality: Zürich
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.45610,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_4,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_4,
+        Description: Abwasser Initiative 2,
+        Type: Initiative,
+        Reason: Gewässer vor dem Abwasser schützen,
+        Link: https://sg.ch/abwasser/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Abwasser Initiative,
+          StreetOrPostOfficeBox: Langstrasse 200,
+          ZipCode: 8005,
+          Locality: Zürich
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.45610,
+      AdmissibilityDecisionState: ValidButSubjectToConditions,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_5,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_5,
+        Description: Abwasser Initiative 3,
+        Type: Initiative,
+        Reason: Gewässer vor dem Abwasser schützen,
+        Link: https://sg.ch/abwasser/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Abwasser Initiative,
+          StreetOrPostOfficeBox: Langstrasse 200,
+          ZipCode: 8005,
+          Locality: Zürich
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.45610,
+      AdmissibilityDecisionState: Rejected,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_6,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3213,
+      MinSignatureCount: 500,
+      MaxElectronicSignatureCount: 250,
+      Wording:
+Diese Initiative fordert eine bessere Nutzung der Bodenseenähe in Goldach.
+Die Uferpromenade soll ausgebaut und der Zugang zum See verbessert werden.
+Zudem sollen mehr Freizeitangebote am See geschaffen werden.,
+      Collection: {
+        Id: Guid_6,
+        Description: Goldacher Seenähe,
+        Type: Initiative,
+        Reason: Bessere Nutzung der Bodenseenähe!,
+        Link: https://www.goldach.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        Address: {
+          CommitteeOrPerson: Komitee Seenähe,
+          StreetOrPostOfficeBox: Bodenseestraße 1,
+          ZipCode: 9403,
+          Locality: Goldach
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: false,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: false
+        },
+        CollectionStartDate: {
+          Seconds: 1575983530,
+          Nanos: 200000000
+        },
+        CollectionEndDate: {
+          Seconds: 1591794730,
+          Nanos: 200000000
+        },
+        PeriodState: InCollection
+      },
+      GovernmentDecisionNumber: MUGD-2025-002,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_7,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      MinSignatureCount: 1000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
+Parks und Gärten sollen erhalten und neue geschaffen werden.,
+      Collection: {
+        Id: Guid_7,
+        Description: Stadtweite Grünflächen,
+        Type: Initiative,
+        Reason: Mehr Grün in der Stadt!,
+        Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        Address: {
+          CommitteeOrPerson: Komitee Grünflächen,
+          StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+          ZipCode: 9000,
+          Locality: St.Gallen
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: false,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: false
+        },
+        CollectionStartDate: {
+          Seconds: 1575983530,
+          Nanos: 200000000
+        },
+        CollectionEndDate: {
+          Seconds: 1591794730,
+          Nanos: 200000000
+        },
+        PeriodState: InCollection
+      },
+      GovernmentDecisionNumber: MUSG-2025-007,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    }
+  ]
+}

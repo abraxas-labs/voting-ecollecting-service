@@ -1,0 +1,115 @@
+@startuml
+
+[WebService] <<Voting.ECollecting.Admin.WebService.*>>
+
+[Api] <<Voting.ECollecting.Admin.Api.*>>
+
+[Core] <<Voting.ECollecting.Admin.Core.*>>
+
+[Adapter-Data] <<Voting.ECollecting.Admin.Adapter.Data.*>>
+[Adapter-Hsm] <<Voting.ECollecting.Admin.Adapter.Hsm.*>>
+[Adapter-VotingBasis] <<Voting.ECollecting.Admin.Adapter.VotingBasis.*>>
+[Adapter-VotingStimmregister] <<Voting.ECollecting.Admin.Adapter.VotingStimmregister.*>>
+[Adapter-VotingIam] <<Voting.ECollecting.Admin.Adapter.VotingIam.*>>
+[Adapter-VotingDocument] <<Voting.ECollecting.Admin.Adapter.VotingDocument.*>>
+[Adapter-Notification] <<Voting.ECollecting.Admin.Adapter.Notification.*>>
+
+[Abstractions-Adapter-Data] <<Voting.ECollecting.Admin.Abstractions.Adapter.Data.*>>
+[Abstractions-Adapter-Hsm] <<Voting.ECollecting.Admin.Abstractions.Adapter.Hsm.*>>
+[Abstractions-Adapter-VotingBasis] <<Voting.ECollecting.Admin.Abstractions.Adapter.VotingBasis.*>>
+[Abstractions-Adapter-VotingStimmregister] <<Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister.*>>
+[Abstractions-Adapter-VotingIam] <<Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.*>>
+[Abstractions-Adapter-VotingDocument] <<Voting.ECollecting.Admin.Abstractions.Adapter.VotingDocument.*>>
+[Abstractions-Adapter-Notification] <<Voting.ECollecting.Abstractions.Adapter.Notification.*>>
+
+[Abstractions-Api] <<Voting.ECollecting.Admin.Abstractions.Api.*>>
+[Abstractions-Core] <<Voting.ECollecting.Admin.Abstractions.Core.*>>
+
+[Domain] <<Voting.ECollecting.Admin.Domain.*>>
+[Shared-Domain] <<Voting.ECollecting.Shared.Domain.*>>
+
+[WebService] ----> [Api]
+[WebService] ----> [Core]
+[WebService] -----> [Adapter-Data]
+[WebService] -----> [Adapter-Hsm]
+[WebService] -----> [Adapter-VotingBasis]
+[WebService] -----> [Adapter-VotingStimmregister]
+[WebService] -----> [Adapter-VotingIam]
+[WebService] -----> [Adapter-VotingDocument]
+[WebService] -----> [Adapter-Notification]
+[WebService] ------> [Abstractions-Api]
+[WebService] ------> [Abstractions-Core]
+[WebService] ------> [Abstractions-Adapter-Data]
+[WebService] ------> [Abstractions-Adapter-Hsm]
+[WebService] ------> [Abstractions-Adapter-VotingBasis]
+[WebService] ------> [Abstractions-Adapter-VotingStimmregister]
+[WebService] ------> [Abstractions-Adapter-VotingIam]
+[WebService] ------> [Abstractions-Adapter-VotingDocument]
+[WebService] ------> [Abstractions-Adapter-Notification]
+[WebService] -------> [Domain]
+[WebService] -------> [Shared-Domain]
+
+[Api] ---> [Abstractions-Api]
+[Api] ---> [Abstractions-Core]
+[Api] ---> [Domain]
+[Api] ---> [Shared-Domain]
+
+[Core] ---> [Abstractions-Adapter-Data]
+[Core] ---> [Abstractions-Adapter-Hsm]
+[Core] ---> [Abstractions-Adapter-VotingBasis]
+[Core] ---> [Abstractions-Adapter-VotingStimmregister]
+[Core] ---> [Abstractions-Adapter-VotingIam]
+[Core] ---> [Abstractions-Adapter-VotingDocument]
+[Core] ---> [Abstractions-Core]
+[Core] ---> [Domain]
+[Core] ---> [Shared-Domain]
+
+[Adapter-Data] --> [Abstractions-Adapter-Data]
+[Adapter-Data] --> [Abstractions-Adapter-VotingIam]
+[Adapter-Data] ---> [Domain]
+[Adapter-Data] ---> [Shared-Domain]
+
+[Adapter-Hsm] --> [Abstractions-Adapter-Hsm]
+[Adapter-Hsm] ---> [Domain]
+[Adapter-Hsm] ---> [Shared-Domain]
+
+[Adapter-VotingBasis] --> [Abstractions-Adapter-VotingBasis]
+[Adapter-VotingBasis] ---> [Domain]
+[Adapter-VotingBasis] ---> [Shared-Domain]
+
+[Adapter-VotingStimmregister] --> [Abstractions-Adapter-VotingStimmregister]
+[Adapter-VotingStimmregister] ---> [Domain]
+[Adapter-VotingStimmregister] ---> [Shared-Domain]
+
+[Adapter-VotingIam] --> [Abstractions-Adapter-VotingIam]
+[Adapter-VotingIam] ---> [Domain]
+[Adapter-VotingIam] ---> [Shared-Domain]
+
+[Adapter-VotingDocument] --> [Abstractions-Adapter-VotingDocument]
+[Adapter-VotingDocument] ---> [Domain]
+[Adapter-VotingDocument] ---> [Shared-Domain]
+
+[Adapter-Notification] --> [Abstractions-Adapter-Notification]
+[Adapter-Notification] ---> [Domain]
+[Adapter-Notification] ---> [Shared-Domain]
+
+[Abstractions-Adapter-Data] --> [Domain]
+[Abstractions-Adapter-Data] --> [Shared-Domain]
+[Abstractions-Adapter-Hsm] --> [Domain]
+[Abstractions-Adapter-Hsm] --> [Shared-Domain]
+[Abstractions-Adapter-VotingBasis] --> [Domain]
+[Abstractions-Adapter-VotingBasis] --> [Shared-Domain]
+[Abstractions-Adapter-VotingStimmregister] --> [Domain]
+[Abstractions-Adapter-VotingStimmregister] --> [Shared-Domain]
+[Abstractions-Adapter-VotingIam] --> [Domain]
+[Abstractions-Adapter-VotingIam] --> [Shared-Domain]
+[Abstractions-Adapter-VotingDocument] --> [Domain]
+[Abstractions-Adapter-VotingDocument] --> [Shared-Domain]
+[Abstractions-Adapter-Notification] --> [Domain]
+[Abstractions-Adapter-Notification] --> [Shared-Domain]
+[Abstractions-Core] --> [Domain]
+[Abstractions-Core] --> [Shared-Domain]
+
+[Domain] --> [Shared-Domain]
+
+@enduml

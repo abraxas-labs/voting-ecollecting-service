@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Migrations\Voting.ECollecting.Shared.Migrations.csproj" />
+    <ProjectReference Include="..\..\..\shared\test\Voting.ECollecting.Shared.Test\Voting.ECollecting.Shared.Test.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Domain\Voting.ECollecting.Admin.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.WebService\Voting.ECollecting.Admin.WebService.csproj" />
+  </ItemGroup>
+
+
+</Project>

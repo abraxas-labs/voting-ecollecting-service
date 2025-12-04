@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <PackageReference Include="Voting.Lib.Database.Postgres" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Riok.Mapperly" Version="$(MapperlyVersion)" />
+  </ItemGroup>
+</Project>

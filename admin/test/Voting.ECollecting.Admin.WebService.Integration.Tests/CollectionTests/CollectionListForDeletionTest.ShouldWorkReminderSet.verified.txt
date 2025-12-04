@@ -1,0 +1,272 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch,
+      Decrees: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Krankenversicherung,
+          CollectionStartDate: {
+            Seconds: 1499692330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1531228330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20210307/krankenversicherung.html,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Krankenversicherung,
+                MinSignatureCount: 100000,
+                MaxElectronicSignatureCount: 10000
+              },
+              MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
+              Collection: {
+                Id: Guid_2,
+                Description: Referendum gegen die Änderung der Krankenversicherung,
+                Type: Referendum,
+                Reason: Kostenexplosion verhindern!,
+                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20210307/krankenversicherung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EndedCameAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_3,
+                  CollectionId: Guid_2,
+                  TotalCitizenCount: 121632,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 1610
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für bezahlbare Krankenversicherung,
+                  StreetOrPostOfficeBox: Marktgasse 10,
+                  ZipCode: 3011,
+                  Locality: Bern
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1499692330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1531228330,
+                  Nanos: 200000000
+                },
+                PeriodState: Expired
+              },
+              Number: 
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 121632,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 1610
+          },
+          State: EndedCameAbout,
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 18
+          }
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          Wording:
+Diese Initiative fordert eine bessere Gesundheitsversorgung für alle.
+Die Kosten sollen gerechter verteilt und der Zugang zu medizinischer
+Versorgung verbessert werden.,
+          Collection: {
+            Id: Guid_4,
+            Description: Bundesweite Gesundheitsinitiative,
+            Type: Initiative,
+            Reason: Gesundheit für alle!,
+            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/gesundheitsinitiative.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_5,
+              CollectionId: Guid_4,
+              TotalCitizenCount: 150000,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 8725
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Spitälerverbund,
+              StreetOrPostOfficeBox: Langstrasse 200,
+              ZipCode: 8005,
+              Locality: Zürich
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1547125930,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1565442730,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0015,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 20
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Initiatives: [
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
+
+In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
+im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
+zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
+
+In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
+Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+          Collection: {
+            Id: Guid_6,
+            Description: Freie Schulwahl auf der Oberstufe,
+            Type: Initiative,
+            Reason: Jeder darf wählen an welche Schule er gehen möchte,
+            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_7,
+              CollectionId: Guid_6,
+              TotalCitizenCount: 3487,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 15
+            },
+            Address: {
+              CommitteeOrPerson: Bildungsethik Schweiz,
+              StreetOrPostOfficeBox: Rosenweg 4,
+              ZipCode: 3000,
+              Locality: Bern
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Seconds: 1562764330,
+              Nanos: 200000000
+            },
+            CollectionEndDate: {
+              Seconds: 1575983530,
+              Nanos: 200000000
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: SG-123.4122177,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 15
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu
+    }
+  ]
+}

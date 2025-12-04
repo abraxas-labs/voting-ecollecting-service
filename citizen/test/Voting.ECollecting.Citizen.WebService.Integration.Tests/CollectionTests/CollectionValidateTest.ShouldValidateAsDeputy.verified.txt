@@ -1,0 +1,25 @@
+﻿{
+  ValidationResults: [
+    {
+      Validation: HasDeputyPermissions,
+      IsValid: true
+    },
+    {
+      Validation: GeneralInformationNotNull,
+      IsValid: true
+    },
+    {
+      Validation: CommitteeListUploaded,
+      IsValid: true
+    },
+    {
+      Validation: ApprovedCommitteeMembersMinValid,
+      IsValid: true
+    },
+    {
+      Validation: ApprovedCommitteeMembersMaxValid,
+      IsValid: true
+    }
+  ],
+  IsValid: true
+}

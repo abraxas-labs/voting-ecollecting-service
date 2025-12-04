@@ -1,0 +1,114 @@
+@startuml
+
+[WebService] <<Voting.ECollecting.Citizen.WebService.*>>
+
+[Api] <<Voting.ECollecting.Citizen.Api.*>>
+
+[Core] <<Voting.ECollecting.Citizen.Core.*>>
+
+[Adapter-Data] <<Voting.ECollecting.Citizen.Adapter.Data.*>>
+[Adapter-Hsm] <<Voting.ECollecting.Citizen.Adapter.Hsm.*>>
+[Adapter-VotingStimmregister] <<Voting.ECollecting.Citizen.Adapter.VotingStimmregister.*>>
+[Adapter-Admin] <<Voting.ECollecting.Citizen.Adapter.Admin.*>>
+[Adapter-ELogin] <<Voting.ECollecting.Citizen.Adapter.ELogin.*>>
+[Adapter-CitizenIdP] <<Voting.ECollecting.Citizen.Adapter.CitizenIdP.*>>
+[Adapter-VotingDocument] <<Voting.ECollecting.Citizen.Adapter.VotingDocument.*>>
+[Adapter-Notification] <<Voting.ECollecting.Citizen.Adapter.Notification.*>>
+
+[Abstractions-Adapter-Data] <<Voting.ECollecting.Citizen.Abstractions.Adapter.Data.*>>
+[Abstractions-Adapter-Hsm] <<Voting.ECollecting.Citizen.Abstractions.Adapter.Hsm.*>>
+[Abstractions-Adapter-VotingStimmregister] <<Voting.ECollecting.Citizen.Abstractions.Adapter.VotingStimmregister.*>>
+[Abstractions-Adapter-Admin] <<Voting.ECollecting.Citizen.Abstractions.Adapter.Admin.*>>
+[Abstractions-Adapter-ELogin] <<Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.*>>
+[Abstractions-Adapter-CitizenIdP] <<Voting.ECollecting.Citizen.Abstractions.Adapter.CitizenIdP.*>>
+[Abstractions-Adapter-VotingDocument] <<Voting.ECollecting.Citizen.Abstractions.Adapter.VotingDocument.*>>
+[Abstractions-Adapter-Notification] <<Voting.ECollecting.Abstractions.Adapter.Notification.*>>
+
+[Abstractions-Api] <<Voting.ECollecting.Citizen.Abstractions.Api.*>>
+[Abstractions-Core] <<Voting.ECollecting.Citizen.Abstractions.Core.*>>
+
+[Domain] <<Voting.ECollecting.Citizen.Domain.*>>
+[Shared-Domain] <<Voting.ECollecting.Shared.Domain.*>>
+
+[WebService] ----> [Api]
+[WebService] ----> [Core]
+[WebService] -----> [Adapter-Data]
+[WebService] -----> [Adapter-Hsm]
+[WebService] -----> [Adapter-VotingStimmregister]
+[WebService] -----> [Adapter-Admin]
+[WebService] -----> [Adapter-ELogin]
+[WebService] -----> [Adapter-CitizenIdP]
+[WebService] -----> [Adapter-VotingDocument]
+[WebService] -----> [Adapter-Notification]
+[WebService] ------> [Abstractions-Api]
+[WebService] ------> [Abstractions-Core]
+[WebService] ------> [Abstractions-Adapter-Data]
+[WebService] ------> [Abstractions-Adapter-Hsm]
+[WebService] ------> [Abstractions-Adapter-VotingStimmregister]
+[WebService] ------> [Abstractions-Adapter-Admin]
+[WebService] ------> [Abstractions-Adapter-ELogin]
+[WebService] ------> [Abstractions-Adapter-CitizenIdP]
+[WebService] ------> [Abstractions-Adapter-VotingDocument]
+[WebService] ------> [Abstractions-Adapter-Notification]
+[WebService] -------> [Domain]
+[WebService] -------> [Shared-Domain]
+
+[Api] ---> [Abstractions-Api]
+[Api] ---> [Abstractions-Core]
+[Api] ---> [Domain]
+[Api] ---> [Shared-Domain]
+
+[Core] ---> [Abstractions-Adapter-Data]
+[Core] ---> [Abstractions-Adapter-Hsm]
+[Core] ---> [Abstractions-Adapter-VotingStimmregister]
+[Core] ---> [Abstractions-Adapter-Admin]
+[Core] ---> [Abstractions-Adapter-ELogin]
+[Core] ---> [Abstractions-Adapter-CitizenIdP]
+[Core] ---> [Abstractions-Adapter-VotingDocument]
+[Core] ---> [Abstractions-Core]
+[Core] ---> [Domain]
+[Core] ---> [Shared-Domain]
+
+[Adapter-Data] --> [Abstractions-Adapter-Data]
+[Adapter-Data] --> [Abstractions-Adapter-ELogin]
+[Adapter-Data] ---> [Domain]
+[Adapter-Data] ---> [Shared-Domain]
+
+[Adapter-Hsm] --> [Abstractions-Adapter-Hsm]
+[Adapter-Hsm] ---> [Domain]
+
+[Adapter-VotingStimmregister] --> [Abstractions-Adapter-VotingStimmregister]
+[Adapter-VotingStimmregister] ---> [Domain]
+[Adapter-VotingStimmregister] ---> [Shared-Domain]
+
+[Adapter-Admin] --> [Abstractions-Adapter-Admin]
+
+[Adapter-ELogin] --> [Abstractions-Adapter-ELogin]
+[Adapter-ELogin] ---> [Domain]
+[Adapter-ELogin] ---> [Shared-Domain]
+
+[Adapter-CitizenIdP] --> [Abstractions-Adapter-CitizenIdP]
+[Adapter-CitizenIdP] ---> [Domain]
+
+[Adapter-VotingDocument] --> [Abstractions-Adapter-VotingDocument]
+[Adapter-VotingDocument] ---> [Domain]
+
+[Adapter-Notification] --> [Abstractions-Adapter-Notification]
+[Adapter-Notification] ---> [Domain]
+
+[Abstractions-Adapter-Data] --> [Domain]
+[Abstractions-Adapter-Data] --> [Shared-Domain]
+[Abstractions-Adapter-Hsm] --> [Domain]
+[Abstractions-Adapter-VotingStimmregister] --> [Domain]
+[Abstractions-Adapter-VotingStimmregister] --> [Shared-Domain]
+[Abstractions-Adapter-ELogin] --> [Domain]
+[Abstractions-Adapter-ELogin] --> [Shared-Domain]
+[Abstractions-Adapter-CitizenIdP] --> [Domain]
+[Abstractions-Adapter-VotingDocument] --> [Domain]
+[Abstractions-Adapter-Notification] --> [Domain]
+[Abstractions-Core] --> [Domain]
+[Abstractions-Core] --> [Shared-Domain]
+
+[Domain] --> [Shared-Domain]
+
+@enduml

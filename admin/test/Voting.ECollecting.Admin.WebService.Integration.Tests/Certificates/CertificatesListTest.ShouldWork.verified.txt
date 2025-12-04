@@ -1,0 +1,92 @@
+﻿{
+  Certificates: [
+    {
+      Id: Guid_1,
+      Label: Zert001,
+      Active: false,
+      ImportedAt: {
+        Seconds: 1515589930,
+        Nanos: 200000000
+      },
+      ImportedByName: Test Admin,
+      Info: {
+        NotBefore: {
+          Seconds: 1739036518
+        },
+        NotAfter: {
+          Seconds: 1770572518
+        },
+        Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985,
+        Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+
+      },
+      CaInfo: {
+        NotBefore: {
+          Seconds: 1739036508
+        },
+        NotAfter: {
+          Seconds: 1896716508
+        },
+        Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9,
+        Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col CA-Zertifikat Test
+
+      }
+    },
+    {
+      Id: Guid_2,
+      Label: Zert002,
+      Active: false,
+      ImportedAt: {
+        Seconds: 1484053930,
+        Nanos: 200000000
+      },
+      ImportedByName: Test Admin,
+      Info: {
+        NotBefore: {
+          Seconds: 1739036518
+        },
+        NotAfter: {
+          Seconds: 1770572518
+        },
+        Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985,
+        Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col Backup-Zertifikat Test
+
+      },
+      CaInfo: {
+        NotBefore: {
+          Seconds: 1739036508
+        },
+        NotAfter: {
+          Seconds: 1896716508
+        },
+        Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9,
+        Subject:
+C=CH
+S=St.Gallen
+L=St.Gallen
+O=Staatskanzlei des Kantons St.Gallen
+OU=DfPR
+CN=E-Col CA-Zertifikat Test
+
+      }
+    }
+  ]
+}

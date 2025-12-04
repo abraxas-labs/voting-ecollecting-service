@@ -1,0 +1,11 @@
+﻿{
+  UserPermissions: {
+    CanEdit: false,
+    CanDelete: false,
+    CanSubmit: false,
+    CanUnsubmit: false,
+    CanDiscard: false,
+    CanRestore: true,
+    CanConfirm: false
+  }
+}

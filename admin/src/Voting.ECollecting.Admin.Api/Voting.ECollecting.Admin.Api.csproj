@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="Voting.ECollecting.Admin.Service.Proto" Version="$(VotingECollectingProtoVersion)" />
+    <PackageReference Include="Voting.Lib.Grpc" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.RestValidation" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Voting.Lib.Rest" Version="$(VotingLibVersion)" />
+    <PackageReference Include="Riok.Mapperly" Version="$(MapperlyVersion)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Core\Voting.ECollecting.Admin.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Core\Voting.ECollecting.Admin.Core.csproj" />
+    <ProjectReference Include="..\Voting.ECollecting.Admin.Domain\Voting.ECollecting.Admin.Domain.csproj" />
+  </ItemGroup>
+</Project>

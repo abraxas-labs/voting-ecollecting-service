@@ -1,0 +1,41 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionPermissions,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_1,
+        Role: 1,
+        Email: hans.muster@example.com,
+        State: 1,
+        Token: Scrubbed,
+        LastName: Muster,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test user,
+          CreatedByEmail: voting+tester@abraxas.ch
+        },
+        FirstName: Hans,
+        IamUserId: ,
+        IamLastName: ,
+        TokenExpiry: DateTimeOffset_2,
+        CollectionId: Guid_2,
+        IamFirstName: ,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

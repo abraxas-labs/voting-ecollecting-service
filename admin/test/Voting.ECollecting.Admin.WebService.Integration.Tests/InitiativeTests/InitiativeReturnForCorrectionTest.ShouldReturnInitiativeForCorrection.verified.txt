@@ -1,0 +1,94 @@
+﻿{
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Volksinitiative «50% mehr Kinderabzüge»,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Volksinitiative «50% mehr Kinderabzüge»,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Volksinitiative «50% mehr Kinderabzüge»,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'In Korrektur' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_5
+  },
+  initiative: {
+    MinSignatureCount: 4000,
+    Wording: Diese initiative will mehr kinderabzüge!,
+    SubTypeId: Guid_6,
+    GovernmentDecisionNumber: SG-123.412224,
+    AdmissibilityDecisionState: ValidButSubjectToConditions,
+    LockedFields: {
+      Description: true,
+      Wording: false,
+      CommitteeMembers: true
+    },
+    Description: Volksinitiative «50% mehr Kinderabzüge»,
+    Type: Initiative,
+    Reason: Steuerliche Entlastung von Familien: Kinder- und Betreuungsabzüge,
+    Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4375,
+    LogoId: Guid_7,
+    ImageId: Guid_8,
+    SignatureSheetTemplateGenerated: false,
+    State: ReturnedForCorrection,
+    Address: {
+      CommitteeOrPerson: Pro Familia,
+      StreetOrPostOfficeBox: Rheinstrasse 17,
+      ZipCode: 4058,
+      Locality: Basel,
+      IsComplete: true
+    },
+    IsElectronicSubmission: false,
+    InformalReviewRequested: false,
+    DomainOfInfluenceType: Ct,
+    Bfs: 17,
+    MaxElectronicSignatureCount: 0,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Citizen Creator,
+      CreatedByEmail: citizen-creator@example.com,
+      CreatedAt: DateTime_2,
+      ModifiedById: default-user-id,
+      ModifiedByName: default user firstname default user lastname,
+      ModifiedByEmail: default-user@example.com,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_1
+  }
+}

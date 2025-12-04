@@ -1,0 +1,126 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+        Type: 1,
+        State: 11,
+        LogoId: Guid_2,
+        Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+        Address: {
+          ZipCode: 12345,
+          Locality: Test City,
+          IsComplete: true,
+          CommitteeOrPerson: Test Committee,
+          StreetOrPostOfficeBox: Test Street
+        },
+        ImageId: Guid_3,
+        Wording:
+#2
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+        MacKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Für den öffentlichen Verkehr (2),
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
+        CollectionEndDate: DateTimeOffset_2,
+        MinSignatureCount: 100000,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: CHE-2023-0010,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 10000,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+        Type: 1,
+        State: 11,
+        LogoId: Guid_2,
+        Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+        Address: {
+          ZipCode: 12345,
+          Locality: Test City,
+          IsComplete: true,
+          CommitteeOrPerson: Test Committee,
+          StreetOrPostOfficeBox: Test Street
+        },
+        ImageId: Guid_3,
+        Wording:
+#2
+Die Bundesverfassung wird wie folgt geändert:
+Art. 81a (neu) Öffentlicher Verkehr
+Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+        MacKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_4,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Für den öffentlichen Verkehr (2),
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
+        CollectionEndDate: DateTimeOffset_2,
+        MinSignatureCount: 100000,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: CHE-2023-0010,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 10000,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    }
+  ]
+}

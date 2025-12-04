@@ -1,0 +1,648 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Decrees: [
+        {
+          Id: Guid_1,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
+          CollectionStartDate: {
+            Seconds: 1594386730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1610284330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          PeriodState: Published,
+          UserPermissions: {
+            CanEdit: true,
+            CanFinish: false,
+            CanGenerateDocuments: false,
+            CanAddCollection: false,
+            CanDelete: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_2,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+          CollectionStartDate: {
+            Seconds: 1581599530,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/1231sa/steuern.html,
+          PeriodState: Published,
+          Collections: [
+            {
+              Id: Guid_3,
+              Decree: {
+                Id: Guid_2,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_3,
+                Description: Gerechtigkeit für alle,
+                Type: Referendum,
+                Reason: Gerechtigkeit für alle im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 2,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: true,
+                  CanCreateMessages: true,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                }
+              },
+              Number: 
+            },
+            {
+              Id: Guid_4,
+              Decree: {
+                Id: Guid_2,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_4,
+                Description: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen  (p: Reader),
+                Type: Referendum,
+                Reason: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/19880612/krankenversicherung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: PreparingForCollection,
+                Address: {
+                  CommitteeOrPerson: Komitee für wohnortnahe Schulen St. Gallen,
+                  StreetOrPostOfficeBox: Schulweg 12,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: true,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                }
+              },
+              Number: 
+            },
+            {
+              Id: Guid_5,
+              Decree: {
+                Id: Guid_2,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_5,
+                Description: Referendum gegen die Kürzung der Kulturförderung (p: Reader),
+                Type: Referendum,
+                Reason: Kulturelle Vielfalt und Angebote im Kanton erhalten!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/kulturfoerderung-referendum.html,
+                SignatureSheetTemplateGenerated: false,
+                State: PreRecorded,
+                Address: {
+                  CommitteeOrPerson: Komitee für Kulturvielfalt St. Gallen,
+                  StreetOrPostOfficeBox: Kulturplatz 7,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: false,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: true,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: true,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: true,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1581599530,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: Published
+              },
+              Number: CH-123.4568
+            },
+            {
+              Id: Guid_6,
+              Decree: {
+                Id: Guid_2,
+                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_6,
+                Description: Referendum gegen die Schliessung von Quartierschulen (p: Reader),
+                Type: Referendum,
+                Reason: Kurze Schulwege und wohnortnahe Bildung für Kinder sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/quartierschulen-referendum.html,
+                SignatureSheetTemplateGenerated: false,
+                State: InPreparation,
+                Address: {
+                  CommitteeOrPerson: Komitee für wohnortnahe Schulen St. Gallen,
+                  StreetOrPostOfficeBox: Schulweg 12,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: true,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: true,
+                  CanCreateMessages: true,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                }
+              },
+              Number: 
+            }
+          ],
+          UserPermissions: {
+            CanEdit: true,
+            CanFinish: false,
+            CanGenerateDocuments: false,
+            CanAddCollection: false,
+            CanDelete: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_7,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          CollectionStartDate: {
+            Seconds: 1576242730,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1592053930,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_8,
+              Decree: {
+                Id: Guid_7,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_8,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_9,
+                  CollectionId: Guid_8,
+                  TotalCitizenCount: 4123,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 101
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: true,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: true,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: 
+            },
+            {
+              Id: Guid_10,
+              Decree: {
+                Id: Guid_7,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_10,
+                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Type: Referendum,
+                Reason: Steuergerechtigkeit im Kanton wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_11,
+                  CollectionId: Guid_10,
+                  TotalCitizenCount: 4124,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 61
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: true,
+                  CanGenerateDocuments: true,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: 
+            },
+            {
+              Id: Guid_12,
+              Decree: {
+                Id: Guid_7,
+                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_12,
+                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Type: Referendum,
+                Reason: Föderalismus wahren!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                SignatureSheetTemplateGenerated: false,
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_13,
+                  CollectionId: Guid_12,
+                  TotalCitizenCount: 4124,
+                  HasTotalCitizenCount: true
+                },
+                Address: {
+                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+                  StreetOrPostOfficeBox: Klosterhof 1,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: true,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: true,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1576242730,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1592053930,
+                  Nanos: 200000000
+                },
+                PeriodState: InCollection
+              },
+              Number: 
+            }
+          ],
+          UserPermissions: {
+            CanEdit: false,
+            CanFinish: true,
+            CanGenerateDocuments: true,
+            CanAddCollection: true,
+            CanDelete: false
+          },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 12371,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 162
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_14,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+          CollectionStartDate: {
+            Seconds: 1499692330,
+            Nanos: 200000000
+          },
+          CollectionEndDate: {
+            Seconds: 1531228330,
+            Nanos: 200000000
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_15,
+              Decree: {
+                Id: Guid_14,
+                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_15,
+                Description: Referendum gegen die Änderung des Bildungsgesetzes,
+                Type: Referendum,
+                Reason: Bildungsqualität im Kanton sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: EndedCameAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_16,
+                  CollectionId: Guid_15,
+                  TotalCitizenCount: 3632,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 161
+                },
+                Address: {
+                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
+                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: false,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: true,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                },
+                CollectionStartDate: {
+                  Seconds: 1499692330,
+                  Nanos: 200000000
+                },
+                CollectionEndDate: {
+                  Seconds: 1531228330,
+                  Nanos: 200000000
+                },
+                PeriodState: Expired
+              },
+              Number: 
+            },
+            {
+              Id: Guid_17,
+              Decree: {
+                Id: Guid_14,
+                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                MinSignatureCount: 3000,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_17,
+                Description: Referendum gegen die Änderung des Bildungsgesetzes (withdrawn),
+                Type: Referendum,
+                Reason: Bildungsqualität im Kanton sichern!,
+                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                SignatureSheetTemplateGenerated: false,
+                State: Withdrawn,
+                Address: {
+                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
+                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
+                  ZipCode: 9001,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                UserPermissions: {
+                  CanEdit: true,
+                  IsRequestInformalReviewVisible: false,
+                  CanCreateMessages: false,
+                  CanFinishCorrection: false,
+                  CanSetCollectionPeriod: false,
+                  CanEnable: false,
+                  CanDelete: false,
+                  CanDeleteWithdrawn: true,
+                  CanAddSignatureSheet: false,
+                  CanReadSignatureSheets: false,
+                  CanCheckSamples: false,
+                  CanSubmitSignatureSheets: false,
+                  CanFinish: false,
+                  CanGenerateDocuments: false,
+                  CanEditAdmissibilityDecision: false,
+                  CanDeleteAdmissibilityDecision: false,
+                  CanEditGeneralInformation: false,
+                  CanReturnForCorrection: false
+                }
+              },
+              Number: 
+            }
+          ],
+          UserPermissions: {
+            CanEdit: false,
+            CanFinish: false,
+            CanGenerateDocuments: false,
+            CanAddCollection: false,
+            CanDelete: false
+          },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 3632,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 161
+          },
+          State: EndedCameAbout,
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 5
+          }
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Mu
+    }
+  ]
+}

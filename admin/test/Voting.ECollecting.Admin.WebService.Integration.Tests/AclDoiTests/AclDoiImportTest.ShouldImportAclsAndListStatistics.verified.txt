@@ -1,0 +1,56 @@
+﻿[
+  {
+    SourceSystem: VotingBasis,
+    ImportRecordsCountTotal: 9,
+    DatasetsCountCreated: 9,
+    FinishedDate: DateTime_1,
+    StartedDate: DateTime_1,
+    TotalElapsedMilliseconds: 0.0,
+    HasValidationErrors: true,
+    EntitiesWithValidationErrors: [
+      Guid_1,
+      Guid_2,
+      Guid_3
+    ],
+    ImportStatus: FinishedWithErrors,
+    ImportType: Acl,
+    WorkerName: test-runner,
+    IsLatest: false,
+    AuditInfo: {
+      CreatedById: 514963638398779657,
+      CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      CreatedAt: DateTime_1,
+      ModifiedById: 514963638398779657,
+      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_4
+  },
+  {
+    SourceSystem: VotingBasis,
+    ImportRecordsCountTotal: 4,
+    DatasetsCountCreated: 2,
+    DatasetsCountUpdated: 1,
+    DatasetsCountDeleted: 7,
+    FinishedDate: DateTime_1,
+    StartedDate: DateTime_1,
+    TotalElapsedMilliseconds: 0.0,
+    HasValidationErrors: true,
+    EntitiesWithValidationErrors: [
+      Guid_5
+    ],
+    ImportStatus: FinishedWithErrors,
+    ImportType: Acl,
+    WorkerName: test-runner,
+    IsLatest: true,
+    AuditInfo: {
+      CreatedById: 514963638398779657,
+      CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      CreatedAt: DateTime_1,
+      ModifiedById: 514963638398779657,
+      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_6
+  }
+]

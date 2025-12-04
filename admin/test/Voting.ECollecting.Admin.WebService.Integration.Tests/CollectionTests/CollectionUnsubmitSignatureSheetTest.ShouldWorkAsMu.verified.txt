@@ -1,0 +1,17 @@
+﻿{
+  CollectionCount: {
+    Id: Guid_1,
+    CollectionId: Guid_2,
+    TotalCitizenCount: -50,
+    HasTotalCitizenCount: true
+  },
+  UserPermissions: {
+    CanEdit: false,
+    CanDelete: false,
+    CanSubmit: true,
+    CanUnsubmit: false,
+    CanDiscard: true,
+    CanRestore: false,
+    CanConfirm: false
+  }
+}

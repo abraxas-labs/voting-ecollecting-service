@@ -1,0 +1,34 @@
+﻿{
+  DomainOfInfluences: [
+    {
+      Name: Goldach,
+      Type: Mu,
+      Bfs: 3213,
+      InitiativeMinSignatureCount: 50000,
+      InitiativeMaxElectronicSignaturePercent: 100,
+      ECollectingEnabled: true
+    },
+    {
+      Name: Kanton St.Gallen eidgenössisch,
+      Type: Ch,
+      Bfs: 1,
+      InitiativeMinSignatureCount: 100000,
+      InitiativeMaxElectronicSignaturePercent: 80,
+      ECollectingEnabled: true
+    },
+    {
+      Name: Kanton St.Gallen kantonal,
+      Type: Ct,
+      Bfs: 17,
+      ECollectingEnabled: true
+    },
+    {
+      Name: St.Gallen,
+      Type: Mu,
+      Bfs: 3203,
+      InitiativeMinSignatureCount: 100000,
+      InitiativeMaxElectronicSignaturePercent: 50,
+      ECollectingEnabled: true
+    }
+  ]
+}

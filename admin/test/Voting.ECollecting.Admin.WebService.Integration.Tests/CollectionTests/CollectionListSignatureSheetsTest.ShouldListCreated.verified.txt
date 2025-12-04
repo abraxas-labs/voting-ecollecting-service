@@ -1,0 +1,94 @@
+﻿{
+  PageInfo: {
+    CurrentPage: 1,
+    PageSize: 10,
+    TotalPages: 1,
+    ItemsCount: 3,
+    TotalItemsCount: 3,
+    HasPreviousPage: false,
+    HasNextPage: false
+  },
+  SignatureSheets: [
+    {
+      Id: Guid_1,
+      Number: 1,
+      ReceivedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 20,
+        Valid: 1,
+        Invalid: 19
+      },
+      State: Created,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203,
+      UserPermissions: {
+        CanEdit: true,
+        CanDelete: true,
+        CanSubmit: false,
+        CanUnsubmit: false,
+        CanDiscard: false,
+        CanRestore: false,
+        CanConfirm: false
+      }
+    },
+    {
+      Id: Guid_2,
+      Number: 2,
+      ReceivedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 21,
+        Valid: 1,
+        Invalid: 20
+      },
+      State: Created,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203,
+      UserPermissions: {
+        CanEdit: true,
+        CanDelete: true,
+        CanSubmit: false,
+        CanUnsubmit: false,
+        CanDiscard: false,
+        CanRestore: false,
+        CanConfirm: false
+      }
+    },
+    {
+      Id: Guid_3,
+      Number: 3,
+      ReceivedAt: {
+        Seconds: 1578489130,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: ,
+      Count: {
+        Total: 17,
+        Valid: 12,
+        Invalid: 5
+      },
+      State: Created,
+      MunicipalityName: St. Gallen,
+      Bfs: 3203,
+      UserPermissions: {
+        CanEdit: true,
+        CanDelete: true,
+        CanSubmit: false,
+        CanUnsubmit: false,
+        CanDiscard: false,
+        CanRestore: false,
+        CanConfirm: false
+      }
+    }
+  ]
+}

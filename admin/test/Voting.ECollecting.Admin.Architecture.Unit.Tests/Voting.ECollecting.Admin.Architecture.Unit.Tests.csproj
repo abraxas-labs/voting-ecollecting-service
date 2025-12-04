@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>;CS1591;SA0001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TngTech.ArchUnitNET.xUnit" Version="0.11.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Abstractions.Adapter.Data\Voting.ECollecting.Shared.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Abstractions.Core\Voting.ECollecting.Shared.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Core\Voting.ECollecting.Shared.Core.csproj" />
+    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Domain\Voting.ECollecting.Shared.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Adapter.Data\Voting.ECollecting.Admin.Abstractions.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister\Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Api\Voting.ECollecting.Admin.Abstractions.Api.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Abstractions.Core\Voting.ECollecting.Admin.Abstractions.Core.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Adapter.Data\Voting.ECollecting.Admin.Adapter.Data.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Adapter.VotingStimmregister\Voting.ECollecting.Admin.Adapter.VotingStimmregister.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Api\Voting.ECollecting.Admin.Api.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Core\Voting.ECollecting.Admin.Core.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.Domain\Voting.ECollecting.Admin.Domain.csproj" />
+    <ProjectReference Include="..\..\src\Voting.ECollecting.Admin.WebService\Voting.ECollecting.Admin.WebService.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="solution-architecture.puml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

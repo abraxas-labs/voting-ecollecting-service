@@ -1,0 +1,278 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+        Type: 2,
+        State: 11,
+        LogoId: Guid_2,
+        Number: ,
+        Reason: Steuergerechtigkeit im Kanton wahren!,
+        Address: {
+          ZipCode: 9001,
+          Locality: St.Gallen,
+          IsComplete: true,
+          CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+          StreetOrPostOfficeBox: Klosterhof 1
+        },
+        ImageId: Guid_3,
+        DecreeId: Guid_4,
+        MacKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        EncryptionKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_Encryption12,
+        MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+        CollectionEndDate: DateTimeOffset_2,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        SignatureSheetTemplateId: Guid_5,
+        MaxElectronicSignatureCount: 300,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+        Type: 2,
+        State: 12,
+        LogoId: Guid_2,
+        Number: ,
+        Reason: Steuergerechtigkeit im Kanton wahren!,
+        Address: {
+          ZipCode: 9001,
+          Locality: St.Gallen,
+          IsComplete: true,
+          CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
+          StreetOrPostOfficeBox: Klosterhof 1
+        },
+        ImageId: Guid_3,
+        DecreeId: Guid_4,
+        MacKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_4,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        EncryptionKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_Encryption12,
+        MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+        CollectionEndDate: DateTimeOffset_2,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        SignatureSheetTemplateId: Guid_5,
+        MaxElectronicSignatureCount: 300,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_7,
+        Bfs: 3203,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: St. Gallen,
+        ElectronicCitizenCount: 10
+      },
+      RecordAfter: {
+        Id: Guid_7,
+        Bfs: 3203,
+        IsLocked: true,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_6,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: St. Gallen,
+        ElectronicCitizenCount: 10
+      },
+      SourceEntityId: Guid_7,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_8
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_9,
+        Bfs: 3211,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: Berg (SG),
+        ElectronicCitizenCount: 10
+      },
+      RecordAfter: {
+        Id: Guid_9,
+        Bfs: 3211,
+        IsLocked: true,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_7,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: Berg (SG),
+        ElectronicCitizenCount: 10
+      },
+      SourceEntityId: Guid_9,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_10
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_11,
+        Bfs: 3213,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: Goldach,
+        ElectronicCitizenCount: 10
+      },
+      RecordAfter: {
+        Id: Guid_11,
+        Bfs: 3213,
+        IsLocked: true,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_8,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: Goldach,
+        ElectronicCitizenCount: 10
+      },
+      SourceEntityId: Guid_11,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_4
+      },
+      Id: Guid_12
+    }
+  ]
+}

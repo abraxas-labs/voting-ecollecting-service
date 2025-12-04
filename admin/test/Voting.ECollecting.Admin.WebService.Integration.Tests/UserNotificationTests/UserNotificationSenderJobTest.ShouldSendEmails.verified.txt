@@ -1,0 +1,112 @@
+﻿{
+  sent: [
+    {
+      RecipientEmail: foo@example.com,
+      Subject: E-Collecting: Änderungen in my collection,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neuigkeiten in E-Collecting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Neuigkeiten in E-Collecting</h2>
+    <p>Hallo,</p>
+    <p>im E-Collecting gibt es Neuigkeiten:</p>
+    <ul>
+       <li>
+   <a href="http://localhost:4600/sg/initiatives/Guid_1">my collection</a><br />
+   Es ist eine neue Nachricht verf&#252;gbar<span>.</span>
+</li>
+    </ul>
+  </div>
+</body>
+</html>
+    }
+  ],
+  notifications: [
+    {
+      RecipientEMail: foo@example.com,
+      State: Failed,
+      FailureCounter: 7,
+      LastError: SMTP Failure,
+      TemplateBag: {
+        CollectionName: my collection,
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: foo@example.com,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      FailureCounter: 1,
+      LastError: Unknown Error,
+      TemplateBag: {
+        CollectionName: my collection,
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: foo@example.com,
+      State: Sent,
+      SentTimestamp: DateTime_2,
+      TemplateBag: {
+        CollectionName: my collection,
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    },
+    {
+      RecipientEMail: foo@example.com,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        CollectionName: my collection,
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_5
+    },
+    {
+      RecipientEMail: foo@example.com,
+      State: Failed,
+      FailureCounter: 1,
+      LastError: SMTP Failure,
+      TemplateBag: {
+        CollectionName: my collection,
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_6
+    }
+  ]
+}

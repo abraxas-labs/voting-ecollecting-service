@@ -1,0 +1,27 @@
+﻿{
+  LastName: Huenkeler,
+  FirstName: Peter,
+  Email: peter.huenkeler@example.com,
+  Token: {
+    Value: ut.1-3c9b5b27-c8da-56a3-a19e-99ad8b8fe339
+  },
+  Accepted: false,
+  State: Rejected,
+  IamLastName: Huenkeler,
+  IamFirstName: Peter,
+  IamUserId: user-id-deputy-not-accepted,
+  Role: Deputy,
+  CollectionId: Guid_1,
+  FullName: Peter Huenkeler,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

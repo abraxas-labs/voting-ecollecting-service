@@ -1,0 +1,139 @@
+﻿{
+  member: {
+    InitiativeId: Guid_1,
+    FirstName: Foo (updated),
+    LastName: Bar (updated),
+    PoliticalFirstName: Foo (pol) (updated),
+    PoliticalLastName: Bar (pol) (updated),
+    Bfs: 3213,
+    PoliticalBfs: 3213,
+    PoliticalDuty: Protokollführer (updated),
+    DateOfBirth: Date_1,
+    Email: updated@example.com,
+    MemberSignatureRequested: true,
+    ApprovalState: Requested,
+    Permission: {
+      LastName: Bar (updated),
+      FirstName: Foo (updated),
+      Email: updated@example.com,
+      Token: {
+        Value: <url-token>
+      },
+      TokenExpiry: DateTime_1,
+      Accepted: false,
+      State: Pending,
+      IamLastName: ,
+      IamFirstName: ,
+      IamUserId: ,
+      Role: Deputy,
+      CollectionId: Guid_1,
+      InitiativeCommitteeMemberId: Guid_2,
+      FullName: Foo (updated) Bar (updated),
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_3
+    },
+    Token: {
+      Value: <url-token>
+    },
+    TokenExpiry: DateTime_1,
+    CanEdit: true,
+    CanReset: false,
+    CanVerify: true,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Admin,
+      CreatedByEmail: admin@example.com,
+      CreatedAt: DateTime_2,
+      ModifiedById: default-user-id,
+      ModifiedByName: Test user,
+      ModifiedByEmail: voting+tester@abraxas.ch,
+      ModifiedAt: DateTime_2
+    },
+    Id: Guid_2
+  },
+  sent: [
+    {
+      RecipientEmail: margarita@example.com,
+      Subject: E-Collecting: Neue Berechtigung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Neue Berechtigung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><h2>Neue Berechtigung in E-Collecting</h2>
+<p>Hallo,</p>
+<p>
+Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">Kein Zwang gegen Kinder und Jugendliche</a> für Sie hinzugefügt.
+Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
+</p></div>
+</body>
+</html>
+    },
+    {
+      RecipientEmail: updated@example.com,
+      Subject: E-Collecting: Einladung zum Komiteemitglied,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Einladung zum Komiteemitglied</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><h2>Neue Mitgliedschaft im Initiativkomitee in E-Collecting</h2>
+<p>Hallo,</p>
+<p>
+  Im E-Collecting wurden Sie zum Initiativkomitee von Kein Zwang gegen Kinder und Jugendliche hinzugefügt.
+  Bestätigen Sie die Teilnahme <a href="http://localhost:4700/sg/initiative-committee-membership-approval#token=<url-token>">hier</a>.
+</p>
+</div>
+</body>
+</html>
+    }
+  ]
+}

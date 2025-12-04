@@ -1,0 +1,91 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionSignatureSheets,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Count: {
+          Total: 20,
+          Valid: 1,
+          CanAdd: true,
+          Invalid: 19
+        },
+        State: 1,
+        Number: 1,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        ReceivedAt: DateTimeOffset_2,
+        CollectionMunicipalityId: Guid_2
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Count: {
+          Total: 20,
+          Valid: 0,
+          CanAdd: true,
+          Invalid: 20
+        },
+        State: 1,
+        Number: 1,
+        IsSample: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        ReceivedAt: DateTimeOffset_2,
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    },
+    {
+      SourceEntityName: CollectionCitizens,
+      Action: Deleted,
+      RecordBefore: {
+        Id: Guid_4,
+        Age: 52,
+        Sex: 1,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        SignatureSheetId: Guid_1,
+        CollectionDateTime: DateTimeOffset_1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        CollectionMunicipalityId: Guid_2
+      },
+      SourceEntityId: Guid_4,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_5
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+﻿{
+  CollectionMunicipalityId: Guid_1,
+  Number: 1,
+  ReceivedAt: DateTime_1,
+  Count: {
+    Invalid: 15,
+    Valid: 5,
+    Total: 20,
+    CanAdd: true
+  },
+  State: Created,
+  Citizens: [
+    {
+      CollectionMunicipalityId: Guid_1,
+      Electronic: false,
+      SignatureSheetId: Guid_2,
+      Age: 82,
+      Sex: 1,
+      CollectionDateTime: DateTime_2,
+      Log: {
+        CollectionId: Guid_3,
+        CollectionCitizenId: Guid_4,
+        VotingStimmregisterIdMac: Dijstafa0EjkW5hCQYrPNUGsqid9J+q51P/kWSZBfnY=,
+        IntegritySignatureInfo: {
+          IntegritySignatureKeyId: 
+        },
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_2
+        },
+        Id: Guid_5
+      },
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_4
+    },
+    {
+      CollectionMunicipalityId: Guid_1,
+      Electronic: false,
+      SignatureSheetId: Guid_2,
+      Age: 58,
+      Sex: 2,
+      CollectionDateTime: DateTime_2,
+      Log: {
+        CollectionId: Guid_3,
+        CollectionCitizenId: Guid_6,
+        VotingStimmregisterIdMac: JNW9lLwcj8F5DD+Y/XmlQeOJ5mR379+nvqKoEFpqs5c=,
+        IntegritySignatureInfo: {
+          IntegritySignatureKeyId: 
+        },
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_2
+        },
+        Id: Guid_7
+      },
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_6
+    },
+    {
+      CollectionMunicipalityId: Guid_1,
+      Electronic: false,
+      SignatureSheetId: Guid_2,
+      Age: 70,
+      Sex: 1,
+      CollectionDateTime: DateTime_2,
+      Log: {
+        CollectionId: Guid_3,
+        CollectionCitizenId: Guid_8,
+        VotingStimmregisterIdMac: YQqcQ21Qm6qQv3muP6j2k8em1k4pYhXY1fXqEMb6/Wk=,
+        IntegritySignatureInfo: {
+          IntegritySignatureKeyId: 
+        },
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_2
+        },
+        Id: Guid_9
+      },
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_8
+    },
+    {
+      CollectionMunicipalityId: Guid_1,
+      Electronic: false,
+      SignatureSheetId: Guid_2,
+      Age: 35,
+      Sex: 3,
+      CollectionDateTime: DateTime_2,
+      Log: {
+        CollectionId: Guid_3,
+        CollectionCitizenId: Guid_10,
+        VotingStimmregisterIdMac: zuGdkmO4ExFCaInjpVHevGbh7NXvZKgpiZl/xzV8Y/Y=,
+        IntegritySignatureInfo: {
+          IntegritySignatureKeyId: 
+        },
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_2
+        },
+        Id: Guid_11
+      },
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_10
+    },
+    {
+      CollectionMunicipalityId: Guid_1,
+      Electronic: false,
+      SignatureSheetId: Guid_2,
+      Age: 52,
+      Sex: 1,
+      CollectionDateTime: DateTime_2,
+      Log: {
+        CollectionId: Guid_3,
+        CollectionCitizenId: Guid_12,
+        VotingStimmregisterIdMac: /v+sFmJk3XyjRTWO1gNP7V9yA/B9y4005cCKz5F5TtI=,
+        IntegritySignatureInfo: {
+          IntegritySignatureKeyId: 
+        },
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          CreatedAt: DateTime_2
+        },
+        Id: Guid_13
+      },
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test Admin,
+        CreatedByEmail: admin@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_12
+    }
+  ],
+  IsSample: false,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Admin,
+    CreatedByEmail: admin@example.com,
+    CreatedAt: DateTime_2,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

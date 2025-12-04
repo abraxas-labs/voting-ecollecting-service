@@ -1,0 +1,46 @@
+﻿{
+  MinSignatureCount: 4000,
+  Wording: foo bar baz updated,
+  SubTypeId: Guid_1,
+  GovernmentDecisionNumber: SG-123.412223,
+  AdmissibilityDecisionState: ValidButSubjectToConditions,
+  LockedFields: {
+    Description: true,
+    Wording: false,
+    CommitteeMembers: false
+  },
+  Description: Wohnschutz-Initiative,
+  Type: Initiative,
+  Reason: Trinkwasser muss erhalten bleiben.,
+  Link: https://www.ratsinfo.sg.ch/geschaefte/4754-updated,
+  LogoId: Guid_2,
+  ImageId: Guid_3,
+  SignatureSheetTemplateGenerated: true,
+  State: ReturnedForCorrection,
+  Address: {
+    CommitteeOrPerson: Abwasser Komitee,
+    StreetOrPostOfficeBox: Otmarstrasse,
+    ZipCode: 9000,
+    Locality: St.Gallen,
+    IsComplete: true
+  },
+  IsElectronicSubmission: false,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MaxElectronicSignatureCount: 0,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: default-user-id,
+    ModifiedByName: Test user,
+    ModifiedByEmail: voting+tester@abraxas.ch,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_4
+}

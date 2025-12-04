@@ -1,0 +1,50 @@
+﻿{
+  Id: Guid_1,
+  DomainOfInfluenceType: Ch,
+  Bfs: 1,
+  Wording: ,
+  Collection: {
+    Id: Guid_1,
+    Description: foo bar baz,
+    Type: Initiative,
+    Reason: ,
+    Link: ,
+    SignatureSheetTemplateGenerated: false,
+    State: PreRecorded,
+    Address: {
+      CommitteeOrPerson: ,
+      StreetOrPostOfficeBox: ,
+      ZipCode: ,
+      Locality: 
+    },
+    IsElectronicSubmission: false,
+    InformalReviewRequested: false,
+    UserPermissions: {
+      CanEdit: true,
+      IsRequestInformalReviewVisible: false,
+      CanCreateMessages: true,
+      CanFinishCorrection: false,
+      CanSetCollectionPeriod: true,
+      CanEnable: false,
+      CanDelete: false,
+      CanDeleteWithdrawn: false,
+      CanAddSignatureSheet: false,
+      CanReadSignatureSheets: false,
+      CanCheckSamples: false,
+      CanSubmitSignatureSheets: false,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanEditAdmissibilityDecision: true,
+      CanDeleteAdmissibilityDecision: true,
+      CanEditGeneralInformation: true,
+      CanReturnForCorrection: false
+    }
+  },
+  GovernmentDecisionNumber: 12345,
+  AdmissibilityDecisionState: Open,
+  LockedFields: {
+    Wording: false,
+    Description: false,
+    CommitteeMembers: false
+  }
+}

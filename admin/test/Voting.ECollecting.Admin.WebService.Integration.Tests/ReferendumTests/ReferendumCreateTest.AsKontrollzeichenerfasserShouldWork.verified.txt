@@ -1,0 +1,89 @@
+﻿{
+  MembersCommittee: ,
+  DecreeId: Guid_1,
+  CollectionStartDate: DateTime_1,
+  CollectionEndDate: DateTime_2,
+  Description: Sammlung gegen das Abwassergesetz,
+  Type: Referendum,
+  Reason: ,
+  Link: ,
+  SignatureSheetTemplateGenerated: true,
+  State: PreRecorded,
+  Address: {
+    CommitteeOrPerson: Abwasser Komitee,
+    StreetOrPostOfficeBox: Otmarstrasse,
+    ZipCode: 9000,
+    Locality: St.Gallen,
+    IsComplete: true
+  },
+  Municipalities: [
+    {
+      CollectionId: Guid_2,
+      Bfs: 3203,
+      MunicipalityName: St.Gallen,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_3
+    },
+    {
+      CollectionId: Guid_2,
+      Bfs: 3211,
+      MunicipalityName: Berg SG,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_4
+    },
+    {
+      CollectionId: Guid_2,
+      Bfs: 3213,
+      MunicipalityName: Goldach,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_5
+    }
+  ],
+  IsElectronicSubmission: false,
+  InformalReviewRequested: false,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MaxElectronicSignatureCount: 300,
+  PeriodState: InCollection,
+  SignatureListSubmissionEndDate: DateTime_4,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: default user firstname default user lastname,
+    CreatedByEmail: default-user@example.com,
+    CreatedAt: DateTime_3
+  },
+  Id: Guid_2
+}

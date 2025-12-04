@@ -1,0 +1,207 @@
+﻿{
+  CollectionMunicipalityId: Guid_1,
+  CollectionMunicipality: {
+    Collection: {
+      MinSignatureCount: 4000,
+      Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+      SubTypeId: Guid_2,
+      GovernmentDecisionNumber: SG-123.412210,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Description: false,
+        Wording: false,
+        CommitteeMembers: false
+      },
+      CollectionStartDate: DateTime_1,
+      CollectionEndDate: DateTime_2,
+      Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+      Type: Initiative,
+      Reason: Frauen sollen auch wählen dürfen,
+      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+      LogoId: Guid_3,
+      ImageId: Guid_4,
+      SignatureSheetTemplateGenerated: false,
+      SignatureSheetTemplateId: Guid_5,
+      State: EnabledForCollection,
+      Address: {
+        CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+        StreetOrPostOfficeBox: Bahnhofplatz 6,
+        ZipCode: 2502,
+        Locality: Biel/Bienne,
+        IsComplete: true
+      },
+      Municipalities: [],
+      EncryptionKeyId: KSedVotingECollecting_c11bde2f-443d-4693-bb73-ad67716b449c_Encryption12,
+      MacKeyId: KSedVotingECollecting_c11bde2f-443d-4693-bb73-ad67716b449c_DuplicateDetection128,
+      IsElectronicSubmission: true,
+      InformalReviewRequested: false,
+      CitizenLogs: [
+        {
+          CollectionId: Guid_6,
+          CollectionCitizenId: Guid_7,
+          VotingStimmregisterIdMac: ctbHVtKU1b5splSfjJvSg/ETFSwWqQL+C+25l1BW5DQ=,
+          IntegritySignatureInfo: {
+            IntegritySignatureKeyId: 
+          },
+          AuditInfo: {
+            CreatedById: ,
+            CreatedByName: Citizen,
+            CreatedByEmail: ,
+            CreatedAt: DateTime_3
+          },
+          Id: Guid_8
+        }
+      ],
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MaxElectronicSignatureCount: 1000,
+      PeriodState: InCollection,
+      SignatureListSubmissionEndDate: DateTime_4,
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test Citizen Creator,
+        CreatedByEmail: citizen-creator@example.com,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_6
+    },
+    CollectionId: Guid_6,
+    Bfs: 3203,
+    MunicipalityName: St. Gallen,
+    PhysicalCount: {
+      Invalid: 3,
+      Valid: 17,
+      Total: 20,
+      CanAdd: true
+    },
+    ElectronicCitizenCount: 11,
+    Citizens: [],
+    IsLocked: false,
+    NextSheetNumber: 1,
+    TotalValidCitizenCount: 28,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Admin,
+      CreatedByEmail: admin@example.com,
+      CreatedAt: DateTime_3
+    },
+    Id: Guid_1
+  },
+  Electronic: true,
+  Age: 58,
+  Sex: 2,
+  CollectionDateTime: DateTime_3,
+  Log: {
+    CollectionId: Guid_6,
+    Collection: {
+      MinSignatureCount: 4000,
+      Wording:
+Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
+doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
+Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
+dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
+sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+      SubTypeId: Guid_2,
+      GovernmentDecisionNumber: SG-123.412210,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Description: false,
+        Wording: false,
+        CommitteeMembers: false
+      },
+      CollectionStartDate: DateTime_1,
+      CollectionEndDate: DateTime_2,
+      Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+      Type: Initiative,
+      Reason: Frauen sollen auch wählen dürfen,
+      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+      LogoId: Guid_3,
+      ImageId: Guid_4,
+      SignatureSheetTemplateGenerated: false,
+      SignatureSheetTemplateId: Guid_5,
+      State: EnabledForCollection,
+      Address: {
+        CommitteeOrPerson: Plattform Inklusion & Vielfalt,
+        StreetOrPostOfficeBox: Bahnhofplatz 6,
+        ZipCode: 2502,
+        Locality: Biel/Bienne,
+        IsComplete: true
+      },
+      Municipalities: [
+        {
+          CollectionId: Guid_6,
+          Bfs: 3203,
+          MunicipalityName: St. Gallen,
+          PhysicalCount: {
+            Invalid: 3,
+            Valid: 17,
+            Total: 20,
+            CanAdd: true
+          },
+          ElectronicCitizenCount: 11,
+          Citizens: [],
+          IsLocked: false,
+          NextSheetNumber: 1,
+          TotalValidCitizenCount: 28,
+          AuditInfo: {
+            CreatedById: default-user-id,
+            CreatedByName: Test Admin,
+            CreatedByEmail: admin@example.com,
+            CreatedAt: DateTime_3
+          },
+          Id: Guid_1
+        }
+      ],
+      EncryptionKeyId: KSedVotingECollecting_c11bde2f-443d-4693-bb73-ad67716b449c_Encryption12,
+      MacKeyId: KSedVotingECollecting_c11bde2f-443d-4693-bb73-ad67716b449c_DuplicateDetection128,
+      IsElectronicSubmission: true,
+      InformalReviewRequested: false,
+      CitizenLogs: [],
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MaxElectronicSignatureCount: 1000,
+      PeriodState: InCollection,
+      SignatureListSubmissionEndDate: DateTime_4,
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test Citizen Creator,
+        CreatedByEmail: citizen-creator@example.com,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_6
+    },
+    CollectionCitizenId: Guid_7,
+    VotingStimmregisterIdMac: ctbHVtKU1b5splSfjJvSg/ETFSwWqQL+C+25l1BW5DQ=,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: ,
+      CreatedByName: Citizen,
+      CreatedByEmail: ,
+      CreatedAt: DateTime_3
+    },
+    Id: Guid_8
+  },
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: ,
+    CreatedByName: Citizen,
+    CreatedByEmail: ,
+    CreatedAt: DateTime_3
+  },
+  Id: Guid_7
+}

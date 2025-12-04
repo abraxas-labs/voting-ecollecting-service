@@ -1,0 +1,121 @@
+﻿{
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Stadtweite Gesundheitsinitiative,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Stadtweite Gesundheitsinitiative,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Stadtweite Gesundheitsinitiative,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'Sammlung wird aufgeschaltet' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_5
+  },
+  initiative: {
+    MinSignatureCount: 1000,
+    Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Stadtebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+    GovernmentDecisionNumber: MUSG-2025-005,
+    AdmissibilityDecisionState: Valid,
+    LockedFields: {
+      Description: false,
+      Wording: false,
+      CommitteeMembers: false
+    },
+    CollectionStartDate: DateTime_2,
+    CollectionEndDate: DateTime_3,
+    Description: Stadtweite Gesundheitsinitiative,
+    Type: Initiative,
+    Reason: Gesundheit für alle!,
+    Link: https://www.stadt.sg.ch/home/gesundheitsinitiative.html,
+    LogoId: Guid_6,
+    ImageId: Guid_7,
+    SignatureSheetTemplateGenerated: true,
+    SignatureSheetTemplateId: Guid_8,
+    State: EnabledForCollection,
+    Address: {
+      CommitteeOrPerson: Komitee Gesundheitsinitiative,
+      StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+      ZipCode: 9000,
+      Locality: St.Gallen,
+      IsComplete: true
+    },
+    Municipalities: [
+      {
+        CollectionId: Guid_1,
+        Bfs: 3203,
+        MunicipalityName: St.Gallen,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_9
+      }
+    ],
+    EncryptionKeyId: KVotingECollecting_b2c3d4e5-f6a7-8901-bcde-2345678901fa_Encryption12,
+    MacKeyId: KVotingECollecting_b2c3d4e5-f6a7-8901-bcde-2345678901fa_DuplicateDetection128,
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    DomainOfInfluenceType: Mu,
+    Bfs: 3203,
+    MaxElectronicSignatureCount: 500,
+    PeriodState: Published,
+    SignatureListSubmissionEndDate: DateTime_4,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Citizen Creator,
+      CreatedByEmail: citizen-creator@example.com,
+      CreatedAt: DateTime_5,
+      ModifiedById: default-user-id,
+      ModifiedByName: default user firstname default user lastname,
+      ModifiedByEmail: default-user@example.com,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_1
+  }
+}

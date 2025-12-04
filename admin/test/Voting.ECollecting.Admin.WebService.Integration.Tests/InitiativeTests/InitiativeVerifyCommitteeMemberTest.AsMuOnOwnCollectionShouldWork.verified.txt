@@ -1,0 +1,12 @@
+﻿{
+  LastName: Keller,
+  FirstName: Thomas,
+  DateOfBirth: {
+    Seconds: -467164800
+  },
+  Street: Schulhausgasse,
+  HouseNumber: 7,
+  ZipCode: 9000,
+  Locality: St. Gallen,
+  HasVotingRight: true
+}

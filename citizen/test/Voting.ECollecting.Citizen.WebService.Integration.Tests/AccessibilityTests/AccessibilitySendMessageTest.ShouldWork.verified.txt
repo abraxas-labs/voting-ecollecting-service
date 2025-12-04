@@ -1,0 +1,11 @@
+﻿{
+  RecipientEMail: voting@abraxas.ch,
+  State: Sent,
+  SentTimestamp: DateTime_1,
+  TemplateBag: {
+    CollectionName: ,
+    RecipientIsCitizen: false,
+    NotificationType: AccessibilityMessage
+  },
+  Id: Guid_1
+}

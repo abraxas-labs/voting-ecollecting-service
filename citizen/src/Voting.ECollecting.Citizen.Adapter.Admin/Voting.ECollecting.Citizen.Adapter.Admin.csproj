@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.Admin\Voting.ECollecting.Citizen.Abstractions.Adapter.Admin.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Voting.Lib.Grpc" Version="$(VotingLibVersion)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Release'">
+    <Compile Remove="**\*Mock.cs" />
+  </ItemGroup>
+</Project>

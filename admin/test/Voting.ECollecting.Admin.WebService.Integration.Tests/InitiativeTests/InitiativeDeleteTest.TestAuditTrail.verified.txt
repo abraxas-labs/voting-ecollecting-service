@@ -1,0 +1,71 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Deleted,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/5660,
+        Type: 1,
+        State: 13,
+        LogoId: Guid_2,
+        Reason: SP setzt auf ausser-parlamentarischen Druck: Klimafonds-Initiative Eingereicht,
+        Address: {
+          ZipCode: 4052,
+          Locality: Basel,
+          IsComplete: true,
+          CommitteeOrPerson: Initiative Saubere Energie,
+          StreetOrPostOfficeBox: Aeschenplatz 6
+        },
+        ImageId: Guid_3,
+        Wording:
+Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit einem Volumen von 100 Mio. Franken. Der Fonds wird aus Mitteln des besonderen Eigenkapitals geäufnet. Die Mittel werden verwendet für:
+
+- Massnahmen zur Verminderung der CO2-Emissionen bei Gebäuden durch die Förderungen von CO2-emissionsarmen Heizsystemen und die energetische Sanierung von Gebäudehüllen;
+- den Ausbau der Stromgewinnung durch erneuerbare Energien wie Photovoltaik, Windkraft und Biomasse;
+- gezielte Massnahmen zur Energieverbrauchsreduktion.»,
+        MacKeyId: KSedVotingECollecting_10a2bc83-c30d-4893-bd5d-852c30227e6c_DuplicateDetection128,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Stadt St.Galler Klimafonds,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        EncryptionKeyId: KSedVotingECollecting_10a2bc83-c30d-4893-bd5d-852c30227e6c_Encryption12,
+        CollectionEndDate: DateTimeOffset_2,
+        MinSignatureCount: 4000,
+        CollectionStartDate: DateTimeOffset_3,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        SensitiveDataExpiryDate: 2019-12-31,
+        GovernmentDecisionNumber: SG-123.412214,
+        SignatureSheetTemplateId: Guid_5,
+        AdmissibilityDecisionState: 3,
+        MaxElectronicSignatureCount: 0,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    }
+  ]
+}

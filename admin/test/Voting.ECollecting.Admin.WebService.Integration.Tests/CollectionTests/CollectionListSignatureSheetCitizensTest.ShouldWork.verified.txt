@@ -1,0 +1,17 @@
+﻿{
+  Citizens: [
+    {
+      RegisterId: Guid_1,
+      IsVotingAllowed: true,
+      IsBirthDateValidForVotingRights: true,
+      IsNationalityValidForVotingRights: true,
+      OfficialName: Trautmann,
+      FirstName: Lars,
+      DateOfBirth: {
+        Seconds: -190944000
+      },
+      ResidenceAddressStreet: Vonwilstr.,
+      ResidenceAddressHouseNumber: 29
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+﻿{
+  initiative: {
+    Id: Guid_1,
+    DomainOfInfluenceType: Ct,
+    Bfs: 17,
+    MinSignatureCount: 4000,
+    MaxElectronicSignatureCount: 500,
+    Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+    Collection: {
+      Id: Guid_1,
+      Description: Initiative für nachhaltige Stadtentwicklung,
+      Type: Initiative,
+      Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+      Link: https://www.stadtentwicklung-sg.ch/initiative,
+      Image: {
+        Id: Guid_2,
+        Name: placeholder.png
+      },
+      Logo: {
+        Id: Guid_3,
+        Name: placeholder-logo.png
+      },
+      SignatureSheetTemplateGenerated: true,
+      SignatureSheetTemplate: {
+        Id: Guid_4,
+        Name: placeholder-signatures.pdf
+      },
+      State: NotPassed,
+      Address: {
+        CommitteeOrPerson: Schweizer Verkehrsforum,
+        StreetOrPostOfficeBox: Bahnhofstrasse 58,
+        ZipCode: 8001,
+        Locality: Zürich
+      },
+      IsElectronicSubmission: true,
+      InformalReviewRequested: false,
+      UserPermissions: {
+        CanEdit: true,
+        IsRequestInformalReviewVisible: false,
+        CanCreateMessages: false,
+        CanFinishCorrection: false,
+        CanSetCollectionPeriod: false,
+        CanEnable: false,
+        CanDelete: false,
+        CanDeleteWithdrawn: false,
+        CanAddSignatureSheet: false,
+        CanReadSignatureSheets: false,
+        CanCheckSamples: false,
+        CanSubmitSignatureSheets: false,
+        CanFinish: false,
+        CanGenerateDocuments: false,
+        CanEditAdmissibilityDecision: false,
+        CanDeleteAdmissibilityDecision: false,
+        CanEditGeneralInformation: false,
+        CanReturnForCorrection: false
+      }
+    },
+    SubType: {
+      Id: Guid_5,
+      Bfs: 3200,
+      DomainOfInfluenceType: Ct,
+      Description: Gesetzesinitiative,
+      MinSignatureCount: 6000,
+      MaxElectronicSignatureCount: 3000
+    },
+    GovernmentDecisionNumber: 123CHE2,
+    AdmissibilityDecisionState: Rejected,
+    LockedFields: {
+      Wording: false,
+      Description: false,
+      CommitteeMembers: false
+    }
+  },
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Initiative für nachhaltige Stadtentwicklung,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_6
+    },
+    {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Initiative für nachhaltige Stadtentwicklung,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_7
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Initiative für nachhaltige Stadtentwicklung,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_8
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'Nicht zulässig' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_9
+  }
+}

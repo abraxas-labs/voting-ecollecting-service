@@ -1,0 +1,156 @@
+﻿{
+  userNotifications: [
+    {
+      RecipientEMail: citizen-creator@example.com,
+      TemplateBag: {
+        CollectionName: Kantonale Gesundheitsreform,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Kantonale Gesundheitsreform,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: rudolph.meier@example.com,
+      TemplateBag: {
+        CollectionName: Kantonale Gesundheitsreform,
+        RecipientIsCitizen: true,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    }
+  ],
+  collectionMessage: {
+    CollectionId: Guid_1,
+    Content: Der Status wurde auf 'Sammlung wird aufgeschaltet' geändert.,
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: default user firstname default user lastname,
+      CreatedByEmail: default-user@example.com,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_5
+  },
+  initiative: {
+    MinSignatureCount: 4000,
+    Wording:
+Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
+Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+    SubTypeId: Guid_6,
+    GovernmentDecisionNumber: SG-123.412226,
+    AdmissibilityDecisionState: Valid,
+    LockedFields: {
+      Description: false,
+      Wording: false,
+      CommitteeMembers: false
+    },
+    CollectionStartDate: DateTime_2,
+    CollectionEndDate: DateTime_3,
+    Description: Kantonale Gesundheitsreform,
+    Type: Initiative,
+    Reason: Gesundheit für alle!,
+    Link: https://www.sg.ch/home/gesundheitsreform.html,
+    LogoId: Guid_7,
+    ImageId: Guid_8,
+    SignatureSheetTemplateGenerated: true,
+    SignatureSheetTemplateId: Guid_9,
+    State: EnabledForCollection,
+    Address: {
+      CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
+      StreetOrPostOfficeBox: Burgstrasse 4,
+      ZipCode: 3600,
+      Locality: Thun,
+      IsComplete: true
+    },
+    Municipalities: [
+      {
+        CollectionId: Guid_1,
+        Bfs: 3203,
+        MunicipalityName: St.Gallen,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_10
+      },
+      {
+        CollectionId: Guid_1,
+        Bfs: 3211,
+        MunicipalityName: Berg SG,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_11
+      },
+      {
+        CollectionId: Guid_1,
+        Bfs: 3213,
+        MunicipalityName: Goldach,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_12
+      }
+    ],
+    EncryptionKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_Encryption12,
+    MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
+    IsElectronicSubmission: true,
+    InformalReviewRequested: false,
+    DomainOfInfluenceType: Ct,
+    Bfs: 17,
+    MaxElectronicSignatureCount: 1000,
+    PeriodState: Published,
+    SignatureListSubmissionEndDate: DateTime_4,
+    IntegritySignatureInfo: {
+      IntegritySignatureKeyId: 
+    },
+    AuditInfo: {
+      CreatedById: default-user-id,
+      CreatedByName: Test Citizen Creator,
+      CreatedByEmail: citizen-creator@example.com,
+      CreatedAt: DateTime_5,
+      ModifiedById: default-user-id,
+      ModifiedByName: default user firstname default user lastname,
+      ModifiedByEmail: default-user@example.com,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_1
+  }
+}

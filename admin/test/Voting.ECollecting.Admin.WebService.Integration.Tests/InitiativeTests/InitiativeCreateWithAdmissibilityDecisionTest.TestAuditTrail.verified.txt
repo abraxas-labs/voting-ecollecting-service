@@ -1,0 +1,56 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3203,
+        Link: ,
+        Type: 1,
+        State: 1,
+        Reason: ,
+        Address: {
+          ZipCode: 9001,
+          Locality: St.Gallen,
+          IsComplete: true,
+          CommitteeOrPerson: Hans Muster,
+          StreetOrPostOfficeBox: Postfach 12
+        },
+        Wording: Für mehr gerechtigkeit!,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        Description: foo bar baz,
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 0,
+        DomainOfInfluenceType: 3,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: 12345,
+        AdmissibilityDecisionState: 1,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_2
+    }
+  ]
+}
