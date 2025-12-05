@@ -105,6 +105,9 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Source)]
     internal static partial void MapToDecree(UpdateDecreeRequest request, DomainModels.Decree decree);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    internal static partial CreateDecreeResponse MapToCreateDecreeResponse(DomainModels.Decree decree);
+
     internal static ListDecreesResponse MapToListDecreesResponse(IEnumerable<DomainModels.Decree> decrees)
         => new ListDecreesResponse { Decrees = { MapToDecrees(decrees) } };
 

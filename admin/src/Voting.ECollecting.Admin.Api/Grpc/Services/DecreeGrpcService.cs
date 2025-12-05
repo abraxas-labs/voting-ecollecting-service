@@ -1,7 +1,6 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using Abraxas.Voting.Ecollecting.Shared.V1.Models;
 using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
@@ -26,11 +25,11 @@ public class DecreeGrpcService : DecreeService.DecreeServiceBase
     }
 
     [Stammdatenverwalter]
-    public override async Task<IdValue> Create(CreateDecreeRequest request, ServerCallContext context)
+    public override async Task<CreateDecreeResponse> Create(CreateDecreeRequest request, ServerCallContext context)
     {
         var decree = Mapper.MapToDecree(request);
-        var id = await _decreeService.Create(decree);
-        return new IdValue { Id = id.ToString() };
+        var savedDecree = await _decreeService.Create(decree);
+        return Mapper.MapToCreateDecreeResponse(savedDecree);
     }
 
     [Stammdatenverwalter]

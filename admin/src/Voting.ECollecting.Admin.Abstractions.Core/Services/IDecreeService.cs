@@ -9,7 +9,7 @@ namespace Voting.ECollecting.Admin.Abstractions.Core.Services;
 
 public interface IDecreeService
 {
-    Task<Guid> Create(Decree decree);
+    Task<Decree> Create(Decree decree);
 
     Task<List<Decree>> List();
 

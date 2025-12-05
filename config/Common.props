@@ -13,7 +13,7 @@
     <FileVersion>0.0.0.1</FileVersion>
     <Version>0.0.0.1</Version>
 
-    <VotingECollectingProtoVersion>1.96.0</VotingECollectingProtoVersion>
+    <VotingECollectingProtoVersion>1.96.2</VotingECollectingProtoVersion>
     <VotingBasisServiceProtoVersion>1.129.0</VotingBasisServiceProtoVersion>
     <VotingStimmregisterServiceProtoVersion>3.4.0</VotingStimmregisterServiceProtoVersion>
     <VotingLibVersion>20.5.0</VotingLibVersion>

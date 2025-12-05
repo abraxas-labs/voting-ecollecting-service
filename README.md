@@ -1,6 +1,6 @@
-# VOTING E-Collecting Admin Service (Backend)
+# VOTING E-Collecting Service (Backend)
 
-This repository contains the source code of the backend system of `VOTING E-Collecting Admin`.
+This repository contains the source code of the backend system of `VOTING E-Collecting`.
 
 ## Documentation
 
@@ -12,7 +12,7 @@ Detailed explanations of the changes per release can be found in  [CHANGELOG.md]
 
 ## Code of Conduct
 
-This project uses the [Code of Conduct](./CODE_OF_CONDUCT.md) to define expected conduct in our community for `VOTING E-Collecting Admin`.
+This project uses the [Code of Conduct](./CODE_OF_CONDUCT.md) to define expected conduct in our community for `VOTING E-Collecting`.
 
 ## License
 

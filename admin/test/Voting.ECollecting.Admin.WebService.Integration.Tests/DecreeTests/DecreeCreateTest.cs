@@ -33,7 +33,7 @@ public class DecreeCreateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
         var response = await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
         var decree = await RunOnDb(db => db.Decrees.IgnoreQueryFilters().FirstAsync(x => x.Id == Guid.Parse(response.Id)));
         decree.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
-        await Verify(decree);
+        await Verify(new { response, decree });
     }
 
     [Fact]
@@ -81,7 +81,7 @@ public class DecreeCreateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
         var response = await MuSgStammdatenverwalterClient.CreateAsync(request);
         var decree = await RunOnDb(db => db.Decrees.IgnoreQueryFilters().FirstAsync(x => x.Id == Guid.Parse(response.Id)));
         decree.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
-        await Verify(decree);
+        await Verify(new { response, decree });
     }
 
     [Fact]
@@ -98,7 +98,7 @@ public class DecreeCreateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     {
         await RunInAuditTrailTestScope(async () =>
         {
-            var response = await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
+            await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
             await Verify(await GetAuditTrailEntries());
         });
     }

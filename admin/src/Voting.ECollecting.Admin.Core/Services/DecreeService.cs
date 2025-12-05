@@ -79,7 +79,7 @@ public class DecreeService : IDecreeService
         _userNotificationService = userNotificationService;
     }
 
-    public async Task<Guid> Create(Decree decree)
+    public async Task<Decree> Create(Decree decree)
     {
         await SetBfsAndSignatureCounts(decree);
         decree.State = DecreeState.CollectionApplicable;
@@ -88,7 +88,7 @@ public class DecreeService : IDecreeService
         ValidateDecree(decree);
         _permissionService.SetCreated(decree);
         await _decreeRepository.Create(decree);
-        return decree.Id;
+        return decree;
     }
 
     public async Task<List<Decree>> List()
