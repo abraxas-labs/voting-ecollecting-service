@@ -1,10 +1,11 @@
 ﻿{
   MinSignatureCount: 100000,
   Wording:
-#2
 Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+Art. 68a (neu) – Förderung der Brettspielkultur
+1 Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+2 Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+3 Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
   SubTypeId: Guid_1,
   GovernmentDecisionNumber: CHE-2023-0010,
   AdmissibilityDecisionState: Valid,
@@ -13,12 +14,16 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
     Wording: false,
     CommitteeMembers: false
   },
-  CollectionStartDate: DateTime_1,
-  CollectionEndDate: DateTime_2,
-  Description: Für den öffentlichen Verkehr (2),
+  CollectionStartDate: Date_1,
+  CollectionEndDate: Date_2,
+  Description: Für Schweizer Brettspiele (Brettspiel-Initiative),
   Type: Initiative,
-  Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
-  Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+  Reason:
+Brettspiele fördern Gemeinschaft – doch traditionelle Schweizer Spiele geraten in Vergessenheit. Diese Initiative will Schweizer Brettspielkultur wiederbeleben.
+Brettspiele sind mehr als Zeitvertreib – sie sind Familienerlebnis, Strategietraining und Kulturgut. Mit Förderung traditioneller Spiele wie Eile mit Weile entsteht neues Interesse.
+Die Initiative fordert keine Spielpflicht, sondern Unterstützung für Spieleabende und Turniere. Ein bisschen mehr Brettspiel-Kultur – das bringt Generationen zusammen und fördert soziale Interaktion.
+Denn wer spielt, bleibt geistig fit.,
+  Link: https://www.admin.ch/,
   LogoId: Guid_2,
   ImageId: Guid_3,
   SignatureSheetTemplateGenerated: false,
@@ -39,7 +44,7 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
   Bfs: 1,
   MaxElectronicSignatureCount: 10000,
   PeriodState: InCollection,
-  SignatureListSubmissionEndDate: DateTime_3,
+  SignatureListSubmissionEndDate: DateTime_1,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },
@@ -47,11 +52,11 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
     CreatedById: default-user-id,
     CreatedByName: Test Citizen Creator,
     CreatedByEmail: citizen-creator@example.com,
-    CreatedAt: DateTime_4,
+    CreatedAt: DateTime_2,
     ModifiedById: default-user-id,
     ModifiedByName: default user firstname default user lastname,
     ModifiedByEmail: default-user@example.com,
-    ModifiedAt: DateTime_5
+    ModifiedAt: DateTime_3
   },
   Id: Guid_5
 }

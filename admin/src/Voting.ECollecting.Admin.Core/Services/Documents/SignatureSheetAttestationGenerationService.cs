@@ -45,7 +45,7 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
         ICollection<CollectionSignatureSheetEntity> signatureSheets)
     {
         string collectionTypeName;
-        var referendumNumber = string.Empty;
+        var referendumSecretIdNumber = string.Empty;
 
         switch (collection)
         {
@@ -59,7 +59,7 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
                 break;
             case ReferendumEntity referendum:
                 collectionTypeName = DefaultReferendumCollectionTypeName;
-                referendumNumber = referendum.Number;
+                referendumSecretIdNumber = referendum.SecureIdNumber ?? string.Empty;
                 break;
             default:
                 throw new InvalidOperationException($"Unexpected collection type: {collection.Type}");
@@ -76,8 +76,8 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
         var invalidSignatureCount = signatureSheets.Sum(s => s.Count.Invalid);
         var certificationDate = _timeProvider.GetUtcNowDateTime();
 
-        var collectionPublicationDate = DateTime.MinValue;
-        if (collection.CollectionStartDate?.Date is { } date)
+        var collectionPublicationDate = DateOnly.MinValue;
+        if (collection.CollectionStartDate is { } date)
         {
             // For cantonal collections, the publication date is the day before the collection start date. Otherwise, it is the collection start date.
             collectionPublicationDate = collection.DomainOfInfluenceType == DomainOfInfluenceType.Ct
@@ -97,7 +97,7 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
                 certificationDate,
                 collectionPublicationDate,
                 collectionTypeName,
-                referendumNumber));
+                referendumSecretIdNumber));
     }
 
     // Group signature sheets into unbroken sequences by their Number

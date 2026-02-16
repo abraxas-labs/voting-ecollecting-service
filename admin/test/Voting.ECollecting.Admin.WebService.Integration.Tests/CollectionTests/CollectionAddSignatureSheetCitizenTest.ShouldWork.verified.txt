@@ -2,7 +2,7 @@
   CollectionMunicipality: {
     CollectionId: Guid_1,
     Bfs: 3203,
-    MunicipalityName: St. Gallen,
+    MunicipalityName: St.Gallen,
     PhysicalCount: {
       Invalid: 3,
       Valid: 17,
@@ -92,7 +92,7 @@
   },
   CollectionMunicipalityId: Guid_2,
   Number: 1,
-  ReceivedAt: DateTime_2,
+  ReceivedAt: Date_1,
   Count: {
     Invalid: 18,
     Valid: 2,
@@ -106,7 +106,7 @@
       CollectionMunicipality: {
         CollectionId: Guid_1,
         Bfs: 3203,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         PhysicalCount: {
           Invalid: 3,
           Valid: 17,
@@ -197,7 +197,7 @@
       CollectionMunicipality: {
         CollectionId: Guid_1,
         Bfs: 3203,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         PhysicalCount: {
           Invalid: 3,
           Valid: 17,
@@ -285,6 +285,7 @@
     }
   ],
   IsSample: false,
+  ModifiedBySuperiorAuthority: false,
   AuditInfo: {
     CreatedById: default-user-id,
     CreatedByName: Test Admin,

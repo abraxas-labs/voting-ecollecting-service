@@ -3,7 +3,7 @@
     {
       RecipientEMail: bund+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Für den öffentlichen Veloverkehr,
+        CollectionName: Für die Förderung der guten Laune (Humorinitiative),
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Für den öffentlichen Veloverkehr,
+        CollectionName: Für die Förderung der guten Laune (Humorinitiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Für den öffentlichen Veloverkehr,
+        CollectionName: Für die Förderung der guten Laune (Humorinitiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,

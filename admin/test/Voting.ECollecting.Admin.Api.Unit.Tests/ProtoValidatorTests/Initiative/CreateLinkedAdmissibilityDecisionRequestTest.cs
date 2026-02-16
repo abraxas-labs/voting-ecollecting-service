@@ -3,6 +3,7 @@
 
 using Voting.ECollecting.Proto.Admin.Services.V1.Models;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.Lib.Testing.Utils;
 using Voting.Lib.Testing.Validation;
 
 namespace Voting.ECollecting.Admin.Api.Unit.Tests.ProtoValidatorTests.Initiative;
@@ -12,6 +13,7 @@ public class CreateLinkedAdmissibilityDecisionRequestTest : ProtoValidatorBaseTe
     protected override IEnumerable<CreateLinkedAdmissibilityDecisionRequest> OkMessages()
     {
         yield return NewValidRequest();
+        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateComplexSingleLineText(50));
     }
 
     protected override IEnumerable<CreateLinkedAdmissibilityDecisionRequest> NotOkMessages()
@@ -19,6 +21,7 @@ public class CreateLinkedAdmissibilityDecisionRequestTest : ProtoValidatorBaseTe
         yield return NewValidRequest(x => x.AdmissibilityDecisionState = AdmissibilityDecisionState.Unspecified);
         yield return NewValidRequest(x => x.AdmissibilityDecisionState = (AdmissibilityDecisionState)(-1));
         yield return NewValidRequest(x => x.GovernmentDecisionNumber = string.Empty);
+        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateComplexSingleLineText(51));
         yield return NewValidRequest(x => x.InitiativeId = "foo");
         yield return NewValidRequest(x => x.InitiativeId = string.Empty);
     }

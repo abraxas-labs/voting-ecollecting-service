@@ -14,6 +14,9 @@ namespace Voting.ECollecting.Citizen.Adapter.ELogin;
 
 public class ELoginHandler : JwtBearerHandler
 {
+    // available in JwtRegisteredClaimNames with .net9+
+    private const string JwtEmailVerifiedClaimName = "email_verified";
+
     private readonly IPermissionService _permissionService;
 
     public ELoginHandler(IOptionsMonitor<JwtBearerOptions> options, ILoggerFactory logger, UrlEncoder encoder, IPermissionService permissionService)
@@ -40,10 +43,18 @@ public class ELoginHandler : JwtBearerHandler
         var userFirstName = identity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.GivenName)?.Value ?? string.Empty;
         var userLastName = identity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Surname)?.Value ?? string.Empty;
         var userEmail = identity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value ?? string.Empty;
+        if (!bool.TryParse(
+                identity.Claims.FirstOrDefault(x => x.Type == JwtEmailVerifiedClaimName)?.Value,
+                out var userEmailVerified))
+        {
+            userEmailVerified = false;
+        }
+
         _permissionService.Init(
             sub,
             userName,
             userEmail,
+            userEmailVerified,
             userFirstName,
             userLastName);
         return result;

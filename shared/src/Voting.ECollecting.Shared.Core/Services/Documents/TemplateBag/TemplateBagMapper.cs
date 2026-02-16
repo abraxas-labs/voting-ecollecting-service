@@ -43,14 +43,6 @@ public static partial class TemplateBagMapper
 
     public static partial List<InitiativeCommitteeMemberDataContainer> MapToCommitteeMembers(IEnumerable<InitiativeCommitteeMember> committeeMembers);
 
-    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    [MapperIgnoreTarget(nameof(DomainOfInfluenceDataContainer.DomainOfInfluences))]
-    [MapProperty(nameof(CollectionMunicipalityEntity.MunicipalityName), nameof(DomainOfInfluenceDataContainer.Name))]
-    [MapProperty(nameof(CollectionMunicipalityEntity.ElectronicCitizenCount), nameof(DomainOfInfluenceDataContainer.ValidElectronicSignatureCount))]
-    [MapProperty([nameof(CollectionMunicipalityEntity.PhysicalCount), nameof(CollectionMunicipalityEntity.PhysicalCount.Valid)], nameof(DomainOfInfluenceDataContainer.ValidPhysicalSignatureCount))]
-    [MapProperty([nameof(CollectionMunicipalityEntity.PhysicalCount), nameof(CollectionMunicipalityEntity.PhysicalCount.Invalid)], nameof(DomainOfInfluenceDataContainer.InvalidPhysicalSignatureCount))]
-    public static partial DomainOfInfluenceDataContainer MapToDomainOfInfluenceDataContainer(CollectionMunicipalityEntity municipality);
-
     public static partial string MapToString(DomainOfInfluenceType domainOfInfluenceType);
 
     public static partial List<CollectionPermissionDataContainer> MapToCollectionPermissionDataContainers(IEnumerable<CollectionPermissionEntity> collectionPermissions);
@@ -65,5 +57,10 @@ public static partial class TemplateBagMapper
     private static string MapDate(DateTime? date)
     {
         return date?.ToString("o", CultureInfo.InvariantCulture) ?? DateTime.MinValue.ToString("o", CultureInfo.InvariantCulture);
+    }
+
+    private static string MapDateOnly(DateOnly? date)
+    {
+        return date?.ToString("o", CultureInfo.InvariantCulture) ?? DateOnly.FromDateTime(DateTime.MinValue).ToString("o", CultureInfo.InvariantCulture);
     }
 }

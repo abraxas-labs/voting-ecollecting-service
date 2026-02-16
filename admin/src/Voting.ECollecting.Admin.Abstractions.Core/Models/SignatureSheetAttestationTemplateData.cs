@@ -14,6 +14,6 @@ public record SignatureSheetAttestationTemplateData(
     int ValidSignatureCount,
     int InvalidSignatureCount,
     DateTime CertificationDate,
-    DateTime CollectionStartDate,
+    DateOnly CollectionStartDate,
     string CollectionType,
     string ReferendumNumber);

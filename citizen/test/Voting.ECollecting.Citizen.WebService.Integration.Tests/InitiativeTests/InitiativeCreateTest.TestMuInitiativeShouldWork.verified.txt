@@ -20,6 +20,31 @@
     Locality: ,
     IsComplete: false
   },
+  Permissions: [
+    {
+      LastName: user,
+      FirstName: Test,
+      Email: rudolph.meier@example.com,
+      Accepted: true,
+      State: Accepted,
+      IamLastName: user,
+      IamFirstName: Test,
+      IamUserId: default-user-id,
+      Role: Owner,
+      CollectionId: Guid_1,
+      FullName: Test user,
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: rudolph.meier@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_2
+    }
+  ],
   IsElectronicSubmission: true,
   InformalReviewRequested: false,
   DomainOfInfluenceType: Mu,

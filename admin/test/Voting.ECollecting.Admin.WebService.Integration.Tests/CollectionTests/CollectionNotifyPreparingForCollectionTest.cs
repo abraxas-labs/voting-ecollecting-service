@@ -25,7 +25,7 @@ public class CollectionNotifyPreparingForCollectionTest : BaseGrpcTest<Collectio
     {
         await base.InitializeAsync();
         await MockedDataSeeder.Seed(RunScoped, SeederArgs.Default
-            .WithReferendums(ReferendumsCtStGallen.GuidInPreparingForCollection, ReferendumsCtStGallen.GuidInPaperSubmissionReader)
+            .WithReferendums(ReferendumsCtStGallen.GuidInPreparingForCollection)
             .WithInitiatives(InitiativesCh.GuidPreparingForCollection));
     }
 
@@ -40,7 +40,7 @@ public class CollectionNotifyPreparingForCollectionTest : BaseGrpcTest<Collectio
             .OrderBy(c => c.Description)
             .ToListAsync());
 
-        var now = GetService<TimeProvider>().GetUtcNowDateTime();
+        var now = GetService<TimeProvider>().GetUtcTodayDateOnly();
         foreach (var collection in collections)
         {
             collection.SetPeriodState(now);
@@ -74,26 +74,24 @@ public class CollectionNotifyPreparingForCollectionTest : BaseGrpcTest<Collectio
         collection.EncryptionKeyId.Should().NotBeEmpty();
         collection.MacKeyId.Should().NotBeEmpty();
         collection.State.Should().Be(CollectionState.EnabledForCollection);
-        collection.Municipalities.Should().HaveCount(3);
+        collection.Municipalities.Should().HaveCount(4);
     }
 
     [Fact]
     public async Task ShouldWorkIfCollectionMunicipalitiesAlreadyCreated()
     {
-        var id = ReferendumsCtStGallen.GuidInPaperSubmissionReader;
-
-        await ModifyDbEntities<ReferendumEntity>(
-            x => x.Id == id,
-            x => x.State = CollectionState.PreparingForCollection);
+        var id = ReferendumsCtStGallen.GuidInPreparingForCollection;
 
         await ApiNotifyClient.NotifyPreparingForCollectionAsync(new());
 
         var collection = await RunOnDb(async db =>
-            await db.Collections.Include(x => x.Municipalities).SingleAsync(x => x.Id == id));
+            await db.Collections
+                .Include(x => x.Municipalities)
+                .SingleAsync(x => x.Id == id));
         collection.EncryptionKeyId.Should().NotBeEmpty();
         collection.MacKeyId.Should().NotBeEmpty();
         collection.State.Should().Be(CollectionState.EnabledForCollection);
-        collection.Municipalities.Should().HaveCount(3);
+        collection.Municipalities.Should().HaveCount(4);
     }
 
     [Fact]

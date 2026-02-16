@@ -18,7 +18,8 @@ public record InitiativeCommittee(
 
     public int ApprovedMembersCount
         => _approvedMembersCount ??=
-            CommitteeMembers.Count(x => x.ApprovalState is InitiativeCommitteeMemberApprovalState.Approved or InitiativeCommitteeMemberApprovalState.Signed);
+            CommitteeMembers.Count(x => x.ApprovalState is InitiativeCommitteeMemberApprovalState.Approved
+                or InitiativeCommitteeMemberApprovalState.Signed);
 
     public int TotalMembersCount => CommitteeMembers.Count;
 
@@ -31,4 +32,12 @@ public record InitiativeCommittee(
             _requiredApprovedMembersCount = value;
         }
     }
+
+    public IEnumerable<InitiativeCommitteeMember> ActiveCommitteeMembers => CommitteeMembers.Where(x =>
+        x.ApprovalState is InitiativeCommitteeMemberApprovalState.Requested
+            or InitiativeCommitteeMemberApprovalState.Signed or InitiativeCommitteeMemberApprovalState.Approved);
+
+    public IEnumerable<InitiativeCommitteeMember> RejectedOrExpiredCommitteeMembers => CommitteeMembers
+        .Where(x => x.ApprovalState is InitiativeCommitteeMemberApprovalState.SignatureRejected
+            or InitiativeCommitteeMemberApprovalState.Rejected or InitiativeCommitteeMemberApprovalState.Expired);
 }

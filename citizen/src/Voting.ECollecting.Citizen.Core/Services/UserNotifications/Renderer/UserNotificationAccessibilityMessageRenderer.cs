@@ -35,13 +35,13 @@ public class UserNotificationAccessibilityMessageRenderer : UserNotificationRend
 
         return Html($"""
                       <h2>Feedback Accessibility</h2>
-                      <p>Anrede: {salutation}</p>
-                      <p>Vorname: {(string.IsNullOrEmpty(templateBag.AccessibilityMessage.FirstName) ? Strings.UserNotification_AccessibilityMessage_NoData : EncodeHtml(templateBag.AccessibilityMessage.FirstName))}</p>
-                      <p>Nachname: {(string.IsNullOrEmpty(templateBag.AccessibilityMessage.LastName) ? Strings.UserNotification_AccessibilityMessage_NoData : EncodeHtml(templateBag.AccessibilityMessage.LastName))}</p>
+                      <p>Anrede: {EncodeHtml(salutation)}</p>
+                      <p>Vorname: {EncodeHtml(string.IsNullOrEmpty(templateBag.AccessibilityMessage.FirstName) ? Strings.UserNotification_AccessibilityMessage_NoData : templateBag.AccessibilityMessage.FirstName)}</p>
+                      <p>Nachname: {EncodeHtml(string.IsNullOrEmpty(templateBag.AccessibilityMessage.LastName) ? Strings.UserNotification_AccessibilityMessage_NoData : templateBag.AccessibilityMessage.LastName)}</p>
                       <p>Email: {EncodeHtml(templateBag.AccessibilityMessage.Email)}</p>
-                      <p>Telefon: {(string.IsNullOrEmpty(templateBag.AccessibilityMessage.Phone) ? Strings.UserNotification_AccessibilityMessage_NoData : EncodeHtml(templateBag.AccessibilityMessage.Phone))}</p>
-                      <p>Kategorie: {category}</p>
-                      <p>Meldung: {EncodeHtml(templateBag.AccessibilityMessage.Message)}</p>
+                      <p>Telefon: {EncodeHtml(string.IsNullOrEmpty(templateBag.AccessibilityMessage.Phone) ? Strings.UserNotification_AccessibilityMessage_NoData : templateBag.AccessibilityMessage.Phone)}</p>
+                      <p>Kategorie: {EncodeHtml(category)}</p>
+                      <p>Meldung:<br/><span class="user-text">{EncodeHtml(templateBag.AccessibilityMessage.Message)}</span></p>
                      """);
     }
 }

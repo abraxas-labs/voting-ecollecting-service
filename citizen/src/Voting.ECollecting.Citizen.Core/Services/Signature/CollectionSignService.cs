@@ -62,7 +62,7 @@ public class CollectionSignService
                 seenPersonInfos[(collection.DomainOfInfluenceType.Value, collection.Bfs)] = personInfo;
             }
 
-            collection.IsSigned = collection switch
+            (collection.IsSigned, collection.SignatureType) = collection switch
             {
                 Referendum referendum => await _referendumSignService.IsCollectionSigned(referendum, personInfo),
                 Initiative initiative => await _initiativeSignService.IsCollectionSigned(initiative, personInfo),

@@ -9,6 +9,7 @@ using Voting.ECollecting.Citizen.Abstractions.Adapter.VotingStimmregister;
 using Voting.ECollecting.Citizen.Core.Exceptions;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.Lib.Database.Postgres.Locking;
 using IPermissionService = Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.IPermissionService;
 
@@ -50,18 +51,18 @@ public abstract class CollectionSignBaseService<TEntity>
 
     protected TimeProvider TimeProvider { get; }
 
-    internal async Task<bool> IsCollectionSigned(TEntity collection)
+    internal async Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(TEntity collection)
     {
         var personInfo = await GetPersonInfo(collection);
         if (personInfo == null)
         {
-            return false;
+            return (false, null);
         }
 
         return await IsCollectionSigned(collection, personInfo);
     }
 
-    internal abstract Task<bool> IsCollectionSigned(TEntity collection, IVotingStimmregisterPersonInfo personInfo);
+    internal abstract Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(TEntity collection, IVotingStimmregisterPersonInfo personInfo);
 
     protected async Task Sign(TEntity collection)
     {

@@ -1,0 +1,66 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: CollectionPermissions,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Role: 3,
+        Email: citizen-creator@example.com,
+        State: 2,
+        LastName: Creator,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        FirstName: Citizen,
+        IamUserId: default-user-id,
+        IamLastName: Creator,
+        CollectionId: Guid_2,
+        IamFirstName: Citizen,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Role: 3,
+        Email: creator-updated@example.com,
+        State: 2,
+        LastName: Creator,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: Test user,
+          ModifiedByEmail: creator-updated@example.com
+        },
+        FirstName: Citizen,
+        IamUserId: default-user-id,
+        IamLastName: user,
+        CollectionId: Guid_2,
+        IamFirstName: Test,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: creator-updated@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

@@ -6,20 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 4,
         LogoId: Guid_2,
-        Reason: Mehr Autos in der Stadt!,
+        Reason:
+Lesen bildet – doch gemütliche Leseecken im öffentlichen Raum fehlen. Die «Leseecken-Initiative» will mehr Orte zum Lesen, Schmökern und Verweilen im ganzen Kanton schaffen.
+Eine Leseecke ist mehr als Bücherschrank – sie ist Bildung, Rückzug und Kultur. Mit bequemen Sitzgelegenheiten, Wetterschutz und Buchspenden entstehen kleine Lesepar adiese.
+Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in Bahnhöfen, Parks und Gemeindehäusern. Ein bisschen Zeit zum Lesen – das bereichert den Alltag.,
         Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
+          ZipCode: 9470,
+          Locality: Buchs,
           IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
+          CommitteeOrPerson: Komitee Leseecken-Initiative,
+          StreetOrPostOfficeBox: Buchweg 14
         },
         ImageId: Guid_3,
-        Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 217 (neu) – Förderung öffentlicher Leseecken
+1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -27,7 +35,7 @@
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Motorfahrzeugsteuer-Initiative,
+        Description: Für kantonale Leseecken (Leseecken-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -45,127 +53,34 @@
         GovernmentDecisionNumber: ,
         SignatureSheetTemplateId: Guid_5,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: ,
         SignatureSheetTemplateGenerated: true
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 8,
         LogoId: Guid_2,
-        Reason: Mehr Autos in der Stadt!,
+        Reason:
+Lesen bildet – doch gemütliche Leseecken im öffentlichen Raum fehlen. Die «Leseecken-Initiative» will mehr Orte zum Lesen, Schmökern und Verweilen im ganzen Kanton schaffen.
+Eine Leseecke ist mehr als Bücherschrank – sie ist Bildung, Rückzug und Kultur. Mit bequemen Sitzgelegenheiten, Wetterschutz und Buchspenden entstehen kleine Lesepar adiese.
+Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in Bahnhöfen, Parks und Gemeindehäusern. Ein bisschen Zeit zum Lesen – das bereichert den Alltag.,
         Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
+          ZipCode: 9470,
+          Locality: Buchs,
           IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
+          CommitteeOrPerson: Komitee Leseecken-Initiative,
+          StreetOrPostOfficeBox: Buchweg 14
         },
         ImageId: Guid_3,
-        Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
-        AuditInfo: {
-          CreatedAt: DateTimeOffset_1,
-          CreatedById: default-user-id,
-          CreatedByName: Test Citizen Creator,
-          CreatedByEmail: citizen-creator@example.com
-        },
-        SubTypeId: Guid_4,
-        Description: Motorfahrzeugsteuer-Initiative,
-        LockedFields: {
-          Wording: false,
-          Description: false,
-          CommitteeMembers: false
-        },
-        MinSignatureCount: 4000,
-        DomainOfInfluenceType: 2,
-        IntegritySignatureInfo: {
-          IntegritySignature: ,
-          IntegritySignatureKeyId: ,
-          IntegritySignatureVersion: 0
-        },
-        IsElectronicSubmission: true,
-        InformalReviewRequested: false,
-        GovernmentDecisionNumber: 123,
-        SignatureSheetTemplateId: Guid_5,
-        AdmissibilityDecisionState: 3,
-        MaxElectronicSignatureCount: 500,
-        SignatureSheetTemplateGenerated: true
-      },
-      SourceEntityId: Guid_1,
-      AuditInfo: {
-        CreatedById: default-user-id,
-        CreatedByName: default user firstname default user lastname,
-        CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_1
-      },
-      Id: Guid_6
-    },
-    {
-      SourceEntityName: Collections,
-      Action: Modified,
-      RecordBefore: {
-        Id: Guid_1,
-        Bfs: 17,
-        Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
-        Type: 1,
-        State: 8,
-        LogoId: Guid_2,
-        Reason: Mehr Autos in der Stadt!,
-        Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
-          IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
-        },
-        ImageId: Guid_3,
-        Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
-        AuditInfo: {
-          CreatedAt: DateTimeOffset_1,
-          CreatedById: default-user-id,
-          CreatedByName: Test Citizen Creator,
-          CreatedByEmail: citizen-creator@example.com
-        },
-        SubTypeId: Guid_4,
-        Description: Motorfahrzeugsteuer-Initiative,
-        LockedFields: {
-          Wording: false,
-          Description: false,
-          CommitteeMembers: false
-        },
-        MinSignatureCount: 4000,
-        DomainOfInfluenceType: 2,
-        IntegritySignatureInfo: {
-          IntegritySignature: ,
-          IntegritySignatureKeyId: ,
-          IntegritySignatureVersion: 0
-        },
-        IsElectronicSubmission: true,
-        InformalReviewRequested: false,
-        GovernmentDecisionNumber: 123,
-        SignatureSheetTemplateId: Guid_5,
-        AdmissibilityDecisionState: 3,
-        MaxElectronicSignatureCount: 500,
-        SignatureSheetTemplateGenerated: true
-      },
-      RecordAfter: {
-        Id: Guid_1,
-        Bfs: 17,
-        Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
-        Type: 1,
-        State: 8,
-        LogoId: Guid_2,
-        Reason: Mehr Autos in der Stadt!,
-        Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
-          IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
-        },
-        ImageId: Guid_3,
-        Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 217 (neu) – Förderung öffentlicher Leseecken
+1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -177,7 +92,7 @@
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Motorfahrzeugsteuer-Initiative,
+        Description: Für kantonale Leseecken (Leseecken-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -196,6 +111,7 @@
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: ,
         SignatureSheetTemplateGenerated: true
       },
       SourceEntityId: Guid_1,
@@ -203,9 +119,9 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_2
+        CreatedAt: DateTime_1
       },
-      Id: Guid_7
+      Id: Guid_6
     }
   ]
 }

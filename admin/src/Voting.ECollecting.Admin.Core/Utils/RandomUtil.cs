@@ -7,21 +7,21 @@ namespace Voting.ECollecting.Admin.Core.Utils;
 
 public static class RandomUtil
 {
-    public static string GenerateReferendumNumber(IReadOnlySet<string>? existingNumbers = null)
+    public static string GenerateSecureIdNumber(IReadOnlySet<string>? existingNumbers = null)
     {
         const string chars = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
-        const int size = 8;
+        const int size = 12;
         const int maxIterations = 100;
         for (var i = 0; i < maxIterations; i++)
         {
-            var number = RandomNumberGenerator.GetString(chars.ToCharArray(), size);
-            var exists = existingNumbers?.Any(x => x == number);
+            var number = RandomNumberGenerator.GetString(chars, size);
+            var exists = existingNumbers?.Contains(number);
             if (exists != true)
             {
                 return number;
             }
         }
 
-        throw new InvalidOperationException("Unable to generate a unique referendum number after multiple attempts.");
+        throw new InvalidOperationException("Unable to generate a unique secure id number after multiple attempts.");
     }
 }

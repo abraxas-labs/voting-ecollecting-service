@@ -39,7 +39,7 @@ public class CollectionSetCommitteeAddressTest : BaseGrpcTest<CollectionService.
 
         var collection = await RunOnDb(db =>
             db.Initiatives.SingleAsync(x => x.Id == InitiativesCh.GuidEnabledForCollectionCollectingWithoutAddress));
-        collection.SetPeriodState(MockedClock.UtcNowDate);
+        collection.SetPeriodState(MockedClock.NowDateOnly);
         await Verify(collection);
     }
 

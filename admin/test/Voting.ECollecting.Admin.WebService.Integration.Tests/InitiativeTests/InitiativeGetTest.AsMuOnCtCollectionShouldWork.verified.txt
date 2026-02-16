@@ -5,17 +5,19 @@
   MinSignatureCount: 4000,
   MaxElectronicSignatureCount: 1000,
   Wording:
-Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
-Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
-dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
-
-Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
   Collection: {
     Id: Guid_1,
-    Description: Kein Zwang gegen Kinder und Jugendliche,
+    Description: Für eine tägliche Portion Natur (Frischluftinitiative),
     Type: Initiative,
-    Reason: Kinder müssen geschützt werden!,
-    Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+    Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+    Link: https://www.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -29,12 +31,17 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
       Id: Guid_4,
       Name: placeholder-signatures.pdf
     },
-    State: InPreparation,
+    State: EnabledForCollection,
+    AttestedCollectionCount: {
+      Id: Guid_5,
+      CollectionId: Guid_1,
+      HasTotalCitizenCount: false
+    },
     Address: {
-      CommitteeOrPerson: Forum für Menschenrechte,
-      StreetOrPostOfficeBox: Kramgasse 7,
-      ZipCode: 3011,
-      Locality: Bern
+      CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+      StreetOrPostOfficeBox: Picknickweg 13,
+      ZipCode: 9602,
+      Locality: Bazenheid
     },
     IsElectronicSubmission: true,
     InformalReviewRequested: false,
@@ -57,20 +64,33 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
       CanDeleteAdmissibilityDecision: false,
       CanEditGeneralInformation: false,
       CanReturnForCorrection: false
-    }
+    },
+    CollectionStartDate: {
+      Year: 2019,
+      Month: 12,
+      Day: 10
+    },
+    CollectionEndDate: {
+      Year: 2020,
+      Month: 6,
+      Day: 10
+    },
+    PeriodState: InCollection
   },
   SubType: {
-    Id: Guid_5,
+    Id: Guid_6,
     Bfs: 3200,
     DomainOfInfluenceType: Ct,
-    Description: Gesetzesinitiative,
-    MinSignatureCount: 6000,
-    MaxElectronicSignatureCount: 3000
+    Description: Einheitsinitiative,
+    MinSignatureCount: 4000,
+    MaxElectronicSignatureCount: 2000
   },
-  GovernmentDecisionNumber: ,
+  GovernmentDecisionNumber: SG-123.412210,
+  AdmissibilityDecisionState: Valid,
   LockedFields: {
     Wording: false,
     Description: false,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St. Gallen
 }

@@ -23,6 +23,15 @@ internal static class AclPermissions
         return query.Where(x => x.Bfs != null && permissionService.AclBfsLists.BfsInclChildrenAndParents.Contains(x.Bfs));
     }
 
+    public static IQueryable<T> WhereCanAccessOwnBfsOrChildrenOrParentsInPeriodStateInCollectionOrExpired<T>(
+        this IQueryable<T> query, IPermissionService permissionService)
+        where T : class, IHasBfs, IHasCollectionPeriod
+    {
+        return query.Where(x => x.Bfs != null && (permissionService.AclBfsLists.BfsInclChildren.Contains(x.Bfs) ||
+                                                  (permissionService.AclBfsLists.ParentsBfs.Contains(x.Bfs) &&
+                                                   x.CollectionStartDate <= permissionService.Today)));
+    }
+
     public static bool CanAccessOwnBfsOrChildrenOrParents(IPermissionService permissionService, IHasBfs entity)
         => entity.Bfs != null && permissionService.AclBfsLists.BfsInclChildrenAndParents.Contains(entity.Bfs);
 

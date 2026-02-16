@@ -33,7 +33,7 @@ public class ReferendumUpdateDecreeTest : BaseGrpcTest<ReferendumService.Referen
         await AuthenticatedClient.UpdateDecreeAsync(NewValidRequest());
         var referendum = await RunOnDb(db =>
             db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 
@@ -52,7 +52,7 @@ public class ReferendumUpdateDecreeTest : BaseGrpcTest<ReferendumService.Referen
     {
         await DeputyClient.UpdateDecreeAsync(NewValidRequest());
         var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 
@@ -90,8 +90,13 @@ public class ReferendumUpdateDecreeTest : BaseGrpcTest<ReferendumService.Referen
     [Fact]
     public async Task MoreThanOneReferendumOnDecreePerUserShouldFail()
     {
+        await DeputyClient.CreateAsync(new CreateReferendumRequest
+        {
+            DecreeId = DecreesCtStGallen.IdInCollectionWithoutReferendum,
+            Description = "Sammlung gegen das Abwassergesetz",
+        });
         await AssertStatus(
-            async () => await AuthenticatedClient.UpdateDecreeAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithReferendum)),
+            async () => await DeputyClient.UpdateDecreeAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithoutReferendum)),
             StatusCode.AlreadyExists);
     }
 

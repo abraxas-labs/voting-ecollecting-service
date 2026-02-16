@@ -9,14 +9,13 @@ namespace Voting.ECollecting.Admin.Domain.Queries;
 
 public static class InitiativeQueries
 {
-    public static IQueryable<InitiativeEntity> IncludeUploadedApprovedOrRejectedCommitteeMember(
+    public static IQueryable<InitiativeEntity> IncludeApprovedOrRejectedCommitteeMember(
         this IQueryable<InitiativeEntity> q,
         Guid memberId)
     {
         return q.Include(x => x.CommitteeMembers
             .Where(m =>
                 m.Id == memberId
-                && m.SignatureType == InitiativeCommitteeMemberSignatureType.UploadedSignature
                 && (m.ApprovalState == InitiativeCommitteeMemberApprovalState.Approved
                     || m.ApprovalState == InitiativeCommitteeMemberApprovalState.Rejected)));
     }

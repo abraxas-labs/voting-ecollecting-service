@@ -6,7 +6,7 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/energie.html,
+        Link: https://www.admin.ch/,
         State: 1,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -14,10 +14,10 @@
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Energie,
-        CollectionEndDate: DateTimeOffset_2,
+        Description: Bundesbeschluss über die Einführung von Käsekunde als obligatorisches Schulfach in allen Schweizer Primarschulen zur Förderung kulinarischer Bildung,
+        CollectionEndDate: 2021-01-10,
         MinSignatureCount: 100000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2020-07-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,

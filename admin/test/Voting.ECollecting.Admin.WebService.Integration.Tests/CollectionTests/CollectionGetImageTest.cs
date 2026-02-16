@@ -20,7 +20,7 @@ public class CollectionGetImageTest : BaseRestTest
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesMuStGallen.GuidInPreparation));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting, InitiativesMuStGallen.GuidInPreparation));
     }
 
     [Fact]
@@ -47,8 +47,16 @@ public class CollectionGetImageTest : BaseRestTest
     [Fact]
     public async Task ShouldGetAsMuOnCt()
     {
-        var data = await MuSgStammdatenverwalterClient.GetByteArrayAsync(BuildUrl(InitiativesCtStGallen.IdLegislativeInPreparation));
+        var data = await MuSgStammdatenverwalterClient.GetByteArrayAsync(BuildUrl(InitiativesCtStGallen.IdUnityEnabledForCollectionCollecting));
         data.Should().BeEquivalentTo(Files.PlaceholderPng);
+    }
+
+    [Fact]
+    public async Task ShouldThrowAsMuOnCtInPreparation()
+    {
+        await AssertStatus(
+            async () => await MuSgStammdatenverwalterClient.GetAsync(BuildUrl(InitiativesCtStGallen.IdLegislativeInPreparation)),
+            HttpStatusCode.NotFound);
     }
 
     [Fact]

@@ -41,7 +41,7 @@ public class PermissionService : IPermissionService
 
     public string TenantId => _auth.Tenant.Id;
 
-    public DateTime Now => _timeProvider.GetUtcNowDateTime();
+    public DateOnly Today => _timeProvider.GetUtcTodayDateOnly();
 
     public AclBfsLists AclBfsLists { get; private set; } = AclBfsLists.Empty;
 
@@ -77,7 +77,7 @@ public class PermissionService : IPermissionService
     // if adjusted, check for setProperty calls in db queries.
     public virtual void SetCreated(IAuditedEntity entity)
     {
-        entity.AuditInfo.CreatedAt = Now;
+        entity.AuditInfo.CreatedAt = _timeProvider.GetUtcNowDateTime();
         entity.AuditInfo.CreatedById = UserId;
         entity.AuditInfo.CreatedByName = UserName;
         entity.AuditInfo.CreatedByEmail = UserEmail;
@@ -86,7 +86,7 @@ public class PermissionService : IPermissionService
     // if adjusted, check for setProperty calls in db queries.
     public virtual void SetModified(IAuditedEntity entity)
     {
-        entity.AuditInfo.ModifiedAt = Now;
+        entity.AuditInfo.ModifiedAt = _timeProvider.GetUtcNowDateTime();
         entity.AuditInfo.ModifiedById = UserId;
         entity.AuditInfo.ModifiedByName = UserName;
         entity.AuditInfo.ModifiedByEmail = UserEmail;

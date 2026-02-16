@@ -74,5 +74,17 @@ namespace Voting.ECollecting.Admin.Core.Resources {
                 return ResourceManager.GetString("SecondFactorTransaction.DeleteDecree", resourceCulture);
             }
         }
+        
+        internal static string DomainOfInfluenceName_Ch {
+            get {
+                return ResourceManager.GetString("DomainOfInfluenceName.Ch", resourceCulture);
+            }
+        }
+        
+        internal static string DomainOfInfluenceName_Ct {
+            get {
+                return ResourceManager.GetString("DomainOfInfluenceName.Ct", resourceCulture);
+            }
+        }
     }
 }

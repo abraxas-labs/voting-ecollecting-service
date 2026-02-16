@@ -153,6 +153,7 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment environme
         endpoints.MapGrpcService<InitiativeGrpcService>();
         endpoints.MapGrpcService<ReferendumGrpcService>();
         endpoints.MapGrpcService<AccessibilityGrpcService>();
+        endpoints.MapGrpcService<AuthGrpcService>();
     }
 
     private void ConfigureHealthChecks(IHealthChecksBuilder checks)

@@ -40,6 +40,7 @@ internal readonly struct ExceptionMapping
             ForbiddenException _ => new ExceptionMapping(StatusCode.PermissionDenied, StatusCodes.Status403Forbidden),
             FluentValidation.ValidationException _ => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest),
             EntityNotFoundException _ => new ExceptionMapping(StatusCode.NotFound, StatusCodes.Status404NotFound),
+            DuplicatedGovernmentDecisionNumberException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status409Conflict, true),
             CollectionAlreadyExistsException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
             TooManyCollectionSignatureSheetSamplesException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest, true),
             AddressMissingForAttestException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest, true),

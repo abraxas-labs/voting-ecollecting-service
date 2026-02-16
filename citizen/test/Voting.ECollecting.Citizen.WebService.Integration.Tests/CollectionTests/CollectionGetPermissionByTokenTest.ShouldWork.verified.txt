@@ -1,7 +1,7 @@
 ﻿{
   CollectionId: Guid_1,
   CollectionType: Initiative,
-  CollectionDescription: Kein Zwang gegen Kinder und Jugendliche,
+  CollectionDescription: Für eine tägliche Portion Natur (Frischluftinitiative),
   InvitedByName: Test Citizen Creator,
   LastName: Huenkeler,
   FirstName: Peter,

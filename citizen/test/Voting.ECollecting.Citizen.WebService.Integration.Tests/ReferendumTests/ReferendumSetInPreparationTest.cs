@@ -27,15 +27,15 @@ public class ReferendumSetInPreparationTest : BaseGrpcTest<ReferendumService.Ref
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums);
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidInPaperSubmission));
     }
 
     [Fact]
     public async Task TestShouldWork()
     {
         var response = await _client.SetInPreparationAsync(NewValidRequest());
-        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        var referendum = await RunOnDb(db => db.Referendums.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 
@@ -52,11 +52,11 @@ public class ReferendumSetInPreparationTest : BaseGrpcTest<ReferendumService.Ref
     [Fact]
     public async Task TestInvalidReferendumNumberShouldThrow()
     {
-        var request = NewValidRequest(r => r.ReferendumNumber = "123");
+        var request = NewValidRequest(r => r.SecureIdNumber = "555555555555");
         await AssertStatus(
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.NotFound,
-            $"Referendum with number {request.ReferendumNumber} not found");
+            $"Referendum with number {request.SecureIdNumber} not found");
     }
 
     [Fact]
@@ -69,7 +69,7 @@ public class ReferendumSetInPreparationTest : BaseGrpcTest<ReferendumService.Ref
         await AssertStatus(
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.NotFound,
-            $"Referendum with number {request.ReferendumNumber} not found");
+            $"Referendum with number {request.SecureIdNumber} not found");
     }
 
     [Fact]
@@ -82,7 +82,17 @@ public class ReferendumSetInPreparationTest : BaseGrpcTest<ReferendumService.Ref
         await AssertStatus(
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.AlreadyExists,
-            $"Referendum with number {request.ReferendumNumber} is already in preparation");
+            $"Referendum with number {request.SecureIdNumber} is already in preparation");
+    }
+
+    [Fact]
+    public async Task TestDisabledDomainOfInfluenceTypeShouldThrow()
+    {
+        var request = NewValidRequest(x => x.SecureIdNumber = "AAAAAAAAAAAB");
+        await WithEnabledDomainOfInfluenceTypes([], async () => await AssertStatus(
+            async () => await _client.SetInPreparationAsync(request),
+            StatusCode.NotFound,
+            $"Referendum with number {request.SecureIdNumber} not found"));
     }
 
     [Fact]
@@ -105,7 +115,7 @@ public class ReferendumSetInPreparationTest : BaseGrpcTest<ReferendumService.Ref
     {
         var request = new SetReferendumInPreparationRequest
         {
-            ReferendumNumber = "CH-123.4567",
+            SecureIdNumber = "AAAAAAAAAAAA",
         };
         customizer?.Invoke(request);
         return request;

@@ -6,37 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4751,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 3,
         LogoId: Guid_2,
-        Reason: Gesetzesinitiative <Stopp dem Tierleid -gegen Zäune als Todesfallen für Wildtiere,
+        Reason:
+Grillieren verbindet – doch öffentliche Grillplätze sind rar im Kanton. Die «Grill-Initiative» will mehr Grillstellen in Parks, an Seeufern und Waldlichtungen schaffen.
+Ein Grillplatz ist mehr als Feuerstelle – er ist Begegnung, Genuss und Familienerlebnis. Mit sicheren Feuerstellen, Sitzbänken und Abfallbehältern entstehen beliebte Treffpunkte.
+Die Initiative fordert keine Luxus-Anlagen, sondern einfache, gepflegte Grillstellen, die allen offenstehen. Ein bisschen gemeinsam Grillieren und Geniessen – das macht den Kanton lebenswerter.,
         Address: {
-          ZipCode: 8003,
-          Locality: Zürich,
+          ZipCode: 9325,
+          Locality: Roggwil,
           IsComplete: true,
-          CommitteeOrPerson: Verein Pfote,
-          StreetOrPostOfficeBox: Zentralstrasse 19
+          CommitteeOrPerson: Komitee Grill-Initiative,
+          StreetOrPostOfficeBox: Grillweg 6
         },
         ImageId: Guid_3,
         Wording:
-Der Erlass <Gesetz über die Jagd, den Schutz der wildlebenden Säugetiere und Vögelsowie deren Lebensräume (Jagdgesetz) vom 17. November 1994> wird wie folgt geändert:
-
-Art.41 Anlagenl
-1. (neu) Grundeigentümerinnen und Grundeigentümer beachten bei Zäunen insbesondere:
-    a) Zäune aus Stacheldraht sind verboten.
-    b) Mobile Weidenetze und elektrische Zäune:
-      1. werden sachgerecht erstellt, für Wildtiere gut sichtbar gemacht, unterhalten undregel mässig kontrol liert;
-      2. dürfen nur unter Strom stehen, wenn sich in den eingezäunten Flächen Nutztierebefinden oder um Spezialkulturen oder genutzte Ackerflächen vor Schädigungenzu schützen;
-      3. werden, sofern ungenutzt, innert einem Tag vom Strom genommen.
-    c) Ungenutzte Weidenetze werden innert zweiWochen entfernt.
-    d) Permanente Zäune, die im Wald liegen oder die Zugänglichkeit des Waldeseinschränken,
-       sind grundsätzlich verboten. Ausnahmen sind zulässig,
-       wenn sie imöffentlichen lnteresse liegen und notwendig sind,
-       insbesondere zum Schutzwertvoller Lebensräume von Tieren und Pflanzen,
-       zur Waldverjüngung oder zumSchutz vor Gefahren.
-       Die Zäune werden sachgerecht erstellt, für Wildtiere gutsichtbar gemacht, unterhalten und regelmässig kontrolliert.
-       Nicht mehr genutzteZäune werden innert nützlicher Frist sachgerecht zurückgebaut.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 216 (neu) – Förderung öffentlicher Grillplätze
+1 Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+2 Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+3 Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -44,7 +35,7 @@ Art.41 Anlagenl
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Stopp dem Tierleid – gegen Zäune als Todesfallen für Wildtiere,
+        Description: Für kantonale Grill-Plätze (Grill-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,

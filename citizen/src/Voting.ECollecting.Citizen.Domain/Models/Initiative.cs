@@ -24,5 +24,7 @@ public class Initiative : InitiativeEntity, ICollection
 
     public bool? IsSigned { get; set; }
 
+    public CollectionSignatureType? SignatureType { get; set; }
+
     public IReadOnlySet<string>? SignAcceptedAcrs { get; set; }
 }

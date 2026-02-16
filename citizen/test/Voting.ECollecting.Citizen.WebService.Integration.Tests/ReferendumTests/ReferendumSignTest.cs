@@ -52,7 +52,7 @@ public class ReferendumSignTest : BaseGrpcTest<ReferendumService.ReferendumServi
             .Include(x => x.Log)
             .Include(x => x.CollectionMunicipality!.Collection)
             .SingleAsync(x => x.CollectionMunicipality!.CollectionId == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection));
-        citizenEntry.CollectionMunicipality!.Collection!.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        citizenEntry.CollectionMunicipality!.Collection!.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
 
         var crypto = GetService<ICryptoProvider>();
 
@@ -391,7 +391,7 @@ public class ReferendumSignTest : BaseGrpcTest<ReferendumService.ReferendumServi
     {
         await ModifyDbEntities(
             (ReferendumEntity entity) => entity.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-            e => e.CollectionStartDate = MockedClock.GetDate(1));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
 
         var client = CreateCitizenClient(
             acrValue: CitizenAuthMockDefaults.AcrValue400,

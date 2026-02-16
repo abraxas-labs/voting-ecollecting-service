@@ -3,16 +3,16 @@
 
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
+using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Admin.Domain.Models;
-using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.Lib.Common.Files;
 
 namespace Voting.ECollecting.Admin.Core.Services.Documents;
 
-public class StatisticalDataCsvGenerator : CsvGenerator<StatisticalDataCsvEntry, CollectionBaseEntity>, IStatisticalDataCsvGenerator
+public class StatisticalDataCsvGenerator : CsvGenerator<StatisticalDataCsvEntry, StatisticalDataTemplateData>, IStatisticalDataCsvGenerator
 {
     private readonly TimeProvider _timeProvider;
     private readonly CsvConfig _config;
@@ -30,10 +30,10 @@ public class StatisticalDataCsvGenerator : CsvGenerator<StatisticalDataCsvEntry,
         _collectionCitizenRepository = collectionCitizenRepository;
     }
 
-    public IFile GenerateFile(CollectionBaseEntity collection)
+    public IFile GenerateFile(StatisticalDataTemplateData data)
     {
         var citizens = _collectionCitizenRepository.Query()
-            .Where(x => x.CollectionMunicipality!.CollectionId == collection.Id && (!x.SignatureSheetId.HasValue || x.SignatureSheet!.State >= CollectionSignatureSheetState.Submitted))
+            .Where(x => data.CollectionIds.Contains(x.CollectionMunicipality!.CollectionId) && (!x.SignatureSheetId.HasValue || x.SignatureSheet!.State >= CollectionSignatureSheetState.Submitted))
             .Include(x => x.CollectionMunicipality)
             .Include(x => x.SignatureSheet)
             .OrderBy(x => x.CollectionMunicipality!.MunicipalityName)
@@ -41,7 +41,8 @@ public class StatisticalDataCsvGenerator : CsvGenerator<StatisticalDataCsvEntry,
             .ThenBy(x => x.CollectionDateTime)
             .Select(x => new StatisticalDataCsvEntry
             {
-                CollectionId = collection.Id,
+                CollectionId = x.CollectionMunicipality!.CollectionId,
+                DecreeId = data.DecreeId,
                 Age = x.Age,
                 Sex = x.Sex,
                 Bfs = x.CollectionMunicipality!.Bfs,
@@ -51,8 +52,8 @@ public class StatisticalDataCsvGenerator : CsvGenerator<StatisticalDataCsvEntry,
             })
             .AsAsyncEnumerable();
 
-        return GenerateFile(collection, citizens);
+        return GenerateFile(data, citizens);
     }
 
-    protected override string BuildFileName(CollectionBaseEntity rootEntity) => string.Format(_config.StatisticalDataCsvFileName, rootEntity.Description, _timeProvider.GetSwissDateTime().ToString("yyyy-MM-dd-HHmmss"));
+    protected override string BuildFileName(StatisticalDataTemplateData data) => string.Format(_config.StatisticalDataCsvFileName, data.Description, _timeProvider.GetSwissDateTime().ToString("yyyy-MM-dd-HHmmss"));
 }

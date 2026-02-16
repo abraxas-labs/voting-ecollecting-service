@@ -13,7 +13,7 @@ public class UpdateAdmissibilityDecisionRequestTest : ProtoValidatorBaseTest<Upd
     protected override IEnumerable<UpdateAdmissibilityDecisionRequest> OkMessages()
     {
         yield return NewValidRequest();
-        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateSimpleSingleLineText(50));
+        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateComplexSingleLineText(50));
     }
 
     protected override IEnumerable<UpdateAdmissibilityDecisionRequest> NotOkMessages()
@@ -22,7 +22,7 @@ public class UpdateAdmissibilityDecisionRequestTest : ProtoValidatorBaseTest<Upd
         yield return NewValidRequest(x => x.InitiativeId = string.Empty);
         yield return NewValidRequest(x => x.AdmissibilityDecisionState = AdmissibilityDecisionState.Unspecified);
         yield return NewValidRequest(x => x.AdmissibilityDecisionState = (AdmissibilityDecisionState)(-1));
-        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateSimpleSingleLineText(51));
+        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateComplexSingleLineText(51));
     }
 
     private UpdateAdmissibilityDecisionRequest NewValidRequest(Action<UpdateAdmissibilityDecisionRequest>? customizer = null)

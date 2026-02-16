@@ -5,14 +5,16 @@ using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
+using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
-using Voting.ECollecting.Proto.Admin.Services.V1.Models;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
+using AdmissibilityDecisionState = Voting.ECollecting.Proto.Admin.Services.V1.Models.AdmissibilityDecisionState;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.InitiativeTests;
 
@@ -50,6 +52,30 @@ public class InitiativeCreateLinkedAdmissibilityDecisionTest : BaseGrpcTest<Init
 
         var collectionMessage = await RunOnDb(async db => await db.CollectionMessages.FirstAsync(x => x.CollectionId == InitiativesCtStGallen.GuidLegislativeSubmitted));
         await Verify(new { userNotifications, collectionMessage });
+    }
+
+    [Fact]
+    public async Task ShouldThrowOnDuplicateGovernmentDecisionNumber()
+    {
+        const string existingGdn = "existing-456";
+        await ModifyDbEntities((InitiativeEntity e) => e.Id == InitiativesMuStGallen.GuidSubmitted, x => x.GovernmentDecisionNumber = existingGdn);
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.CreateLinkedAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = existingGdn)),
+            StatusCode.InvalidArgument,
+            nameof(DuplicatedGovernmentDecisionNumberException));
+    }
+
+    [Fact]
+    public async Task ShouldThrowOnDuplicateGovernmentDecisionNumberCaseDifference()
+    {
+        const string existingGdn = "existing-456";
+        await ModifyDbEntities((InitiativeEntity e) => e.Id == InitiativesMuStGallen.GuidSubmitted, x => x.GovernmentDecisionNumber = existingGdn.ToUpperInvariant());
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.CreateLinkedAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = existingGdn)),
+            StatusCode.InvalidArgument,
+            nameof(DuplicatedGovernmentDecisionNumberException));
     }
 
     [Fact]

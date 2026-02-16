@@ -8,6 +8,7 @@ using Voting.ECollecting.Citizen.Adapter.VotingStimmregister;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
+using Voting.ECollecting.Proto.Citizen.Services.V1.Models;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
@@ -78,6 +79,7 @@ public class InitiativeGetTest : BaseGrpcTest<InitiativeService.InitiativeServic
         });
         initiative.Collection.HasIsSigned.Should().BeTrue();
         initiative.Collection.IsSigned.Should().BeFalse();
+        initiative.Collection.SignatureType.Should().Be(CollectionSignatureType.Unspecified);
         await Verify(initiative);
     }
 
@@ -101,6 +103,7 @@ public class InitiativeGetTest : BaseGrpcTest<InitiativeService.InitiativeServic
         });
         initiative.Collection.HasIsSigned.Should().BeTrue();
         initiative.Collection.IsSigned.Should().BeTrue();
+        initiative.Collection.SignatureType.Should().Be(CollectionSignatureType.Electronic);
         await Verify(initiative);
     }
 

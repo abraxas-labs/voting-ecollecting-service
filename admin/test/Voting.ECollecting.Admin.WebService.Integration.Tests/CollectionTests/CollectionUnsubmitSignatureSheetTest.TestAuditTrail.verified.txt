@@ -21,8 +21,9 @@
           CreatedByEmail: admin@example.com
         },
         AttestedAt: DateTimeOffset_2,
-        ReceivedAt: DateTimeOffset_3,
-        CollectionMunicipalityId: Guid_2
+        ReceivedAt: 2020-01-07,
+        CollectionMunicipalityId: Guid_2,
+        ModifiedBySuperiorAuthority: false
       },
       RecordAfter: {
         Id: Guid_1,
@@ -37,7 +38,7 @@
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -46,8 +47,9 @@
           ModifiedByEmail: default-user@example.com
         },
         AttestedAt: DateTimeOffset_2,
-        ReceivedAt: DateTimeOffset_3,
-        CollectionMunicipalityId: Guid_2
+        ReceivedAt: 2020-01-07,
+        CollectionMunicipalityId: Guid_2,
+        ModifiedBySuperiorAuthority: false
       },
       SourceEntityId: Guid_1,
       AuditInfo: {
@@ -79,7 +81,7 @@
           Invalid: 3
         },
         NextSheetNumber: 9,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       RecordAfter: {
@@ -88,7 +90,7 @@
         IsLocked: true,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_4,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -104,7 +106,7 @@
           Invalid: -7
         },
         NextSheetNumber: 9,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       SourceEntityId: Guid_2,
@@ -122,7 +124,7 @@
       RecordBefore: {
         Id: Guid_6,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_6,
+          CreatedAt: DateTimeOffset_5,
           CreatedById: default-user-id,
           CreatedByName: Test Citizen Creator,
           CreatedByEmail: citizen-creator@example.com
@@ -139,8 +141,8 @@
       RecordAfter: {
         Id: Guid_6,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_6,
-          ModifiedAt: DateTimeOffset_7,
+          CreatedAt: DateTimeOffset_5,
+          ModifiedAt: DateTimeOffset_6,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,

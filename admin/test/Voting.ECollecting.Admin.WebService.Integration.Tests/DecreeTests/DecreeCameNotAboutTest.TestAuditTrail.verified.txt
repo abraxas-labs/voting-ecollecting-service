@@ -6,7 +6,7 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        Link: https://www.admin.ch/,
         State: 1,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -14,10 +14,10 @@
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
-        CollectionEndDate: DateTimeOffset_2,
+        Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
+        CollectionEndDate: 2020-06-10,
         MinSignatureCount: 50000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -29,11 +29,11 @@
       RecordAfter: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        Link: https://www.admin.ch/,
         State: 3,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -41,11 +41,11 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
-        CollectionEndDate: DateTimeOffset_2,
+        Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
+        CollectionEndDate: 2020-06-10,
         MinSignatureCount: 50000,
         CameNotAboutReason: 1,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -70,12 +70,15 @@
       RecordBefore: {
         Id: Guid_3,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/nationale-bundessteuer.html,
+        Link: https://www.admin.ch/,
         Type: 2,
         State: 12,
         LogoId: Guid_4,
-        Number: ,
-        Reason: Keine nationale Steuern!,
+        Reason:
+Ein zweites Komitee lehnt die Jodel-Pflicht ab, weil sie unnötige Kosten verursacht.
+Bergführerinnen und Bergführer müssen bereits viele teure Ausbildungen absolvieren – ein Jodel-Zertifikat ist eine finanzielle Mehrbelastung ohne Mehrwert.
+Die Kursgebühren und Prüfungskosten belasten einen ohnehin schon herausfordernden Beruf zusätzlich.
+Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die Überzeugung, dass Kultur nicht auf Kosten der Berufsleute gefördert werden sollte.,
         Address: {
           ZipCode: 3011,
           Locality: Bern,
@@ -87,23 +90,23 @@
         DecreeId: Guid_1,
         MacKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_DuplicateDetection128,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
+          CreatedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           CreatedByName: Test Citizen Creator,
           CreatedByEmail: citizen-creator@example.com
         },
-        Description: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        Description: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
         EncryptionKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_Encryption12,
         MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-10,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         SignatureSheetTemplateId: Guid_6,
         MaxElectronicSignatureCount: 5000,
@@ -112,12 +115,15 @@
       RecordAfter: {
         Id: Guid_3,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/nationale-bundessteuer.html,
+        Link: https://www.admin.ch/,
         Type: 2,
         State: 14,
         LogoId: Guid_4,
-        Number: ,
-        Reason: Keine nationale Steuern!,
+        Reason:
+Ein zweites Komitee lehnt die Jodel-Pflicht ab, weil sie unnötige Kosten verursacht.
+Bergführerinnen und Bergführer müssen bereits viele teure Ausbildungen absolvieren – ein Jodel-Zertifikat ist eine finanzielle Mehrbelastung ohne Mehrwert.
+Die Kursgebühren und Prüfungskosten belasten einen ohnehin schon herausfordernden Beruf zusätzlich.
+Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die Überzeugung, dass Kultur nicht auf Kosten der Berufsleute gefördert werden sollte.,
         Address: {
           ZipCode: 3011,
           Locality: Bern,
@@ -129,8 +135,8 @@
         DecreeId: Guid_1,
         MacKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_DuplicateDetection128,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
-          ModifiedAt: DateTimeOffset_6,
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_4,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -138,18 +144,18 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        Description: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
         EncryptionKeyId: KSedVotingECollecting_47fc39fb-d4a9-4c8d-a970-3dcffc008a71_Encryption12,
         MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-10,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         SignatureSheetTemplateId: Guid_6,
         MaxElectronicSignatureCount: 5000,
@@ -170,40 +176,43 @@
       RecordBefore: {
         Id: Guid_8,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        Link: https://www.admin.ch/,
         Type: 2,
         State: 11,
         LogoId: Guid_9,
-        Number: ,
-        Reason: Steuergerechtigkeit für alle!,
+        Reason:
+Das Parlament hat beschlossen, dass alle Bergführerinnen und Bergführer ein Jodel-Zertifikat erwerben müssen, um alpine Traditionen zu bewahren.
+Das Referendumskomitee hält diese Vorschrift für übertrieben und unpraktisch.
+Bergführen ist eine Sicherheitsfrage, keine Folklore-Veranstaltung. Jodeln ist schön, aber kein Pflichtteil der Ausbildung.
+Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für Professionalität und die Erkenntnis, dass Tradition freiwillig gelebt werden sollte.,
         Address: {
-          ZipCode: 3011,
-          Locality: Bern,
+          ZipCode: 3920,
+          Locality: Zermatt,
           IsComplete: true,
-          CommitteeOrPerson: Komitee für Steuergerechtigkeit,
-          StreetOrPostOfficeBox: Kramgasse 12
+          CommitteeOrPerson: Verband Schweizer Bergführer,
+          StreetOrPostOfficeBox: Postfach 123
         },
         ImageId: Guid_10,
         DecreeId: Guid_1,
         MacKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_DuplicateDetection128,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
+          CreatedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           CreatedByName: Test Citizen Creator,
           CreatedByEmail: citizen-creator@example.com
         },
-        Description: Referendum gegen die Änderung der direkten Bundessteuer,
+        Description: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         EncryptionKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_Encryption12,
         MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-10,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         SignatureSheetTemplateId: Guid_11,
         MaxElectronicSignatureCount: 5000,
@@ -212,25 +221,28 @@
       RecordAfter: {
         Id: Guid_8,
         Bfs: 1,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+        Link: https://www.admin.ch/,
         Type: 2,
         State: 14,
         LogoId: Guid_9,
-        Number: ,
-        Reason: Steuergerechtigkeit für alle!,
+        Reason:
+Das Parlament hat beschlossen, dass alle Bergführerinnen und Bergführer ein Jodel-Zertifikat erwerben müssen, um alpine Traditionen zu bewahren.
+Das Referendumskomitee hält diese Vorschrift für übertrieben und unpraktisch.
+Bergführen ist eine Sicherheitsfrage, keine Folklore-Veranstaltung. Jodeln ist schön, aber kein Pflichtteil der Ausbildung.
+Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für Professionalität und die Erkenntnis, dass Tradition freiwillig gelebt werden sollte.,
         Address: {
-          ZipCode: 3011,
-          Locality: Bern,
+          ZipCode: 3920,
+          Locality: Zermatt,
           IsComplete: true,
-          CommitteeOrPerson: Komitee für Steuergerechtigkeit,
-          StreetOrPostOfficeBox: Kramgasse 12
+          CommitteeOrPerson: Verband Schweizer Bergführer,
+          StreetOrPostOfficeBox: Postfach 123
         },
         ImageId: Guid_10,
         DecreeId: Guid_1,
         MacKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_DuplicateDetection128,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
-          ModifiedAt: DateTimeOffset_7,
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_5,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -238,18 +250,18 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Referendum gegen die Änderung der direkten Bundessteuer,
+        Description: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         EncryptionKeyId: KSedVotingECollecting_96949b79-b2ed-453f-92a1-bc0f874bf8ee_Encryption12,
         MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-10,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         SignatureSheetTemplateId: Guid_11,
         MaxElectronicSignatureCount: 5000,

@@ -1,20 +1,26 @@
 ﻿{
   MinSignatureCount: 1000,
   Wording:
-Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
-Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur
+1 Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
+2 Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
+3 Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
   GovernmentDecisionNumber: ,
   LockedFields: {
     Description: false,
     Wording: false,
     CommitteeMembers: false
   },
-  CollectionStartDate: DateTime_1,
-  CollectionEndDate: DateTime_2,
-  Description: Stadtweite Veloinfrastruktur,
+  CollectionStartDate: Date_1,
+  CollectionEndDate: Date_2,
+  Description: Für gemütliche Treffpunkte in der Stadt (Café-Initiative),
   Type: Initiative,
-  Reason: Mehr Platz für Velos!,
-  Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+  Reason:
+St.Gallen hat eine lebendige Altstadt, doch es fehlt an gemütlichen Plätzen, wo man bei Kaffee und Kuchen verweilen kann. Die «Café-Initiative» will das ändern.
+Ein Café ist mehr als nur eine Tasse Kaffee – es ist ein Treffpunkt, ein Ort für Gespräche, Arbeit oder einfach Entspannung. Mit gemütlichem Ambiente und lokalen Spezialitäten wird daraus ein Stück Lebensqualität.
+Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer gut sitzt und guten Kaffee trinkt, fühlt sich zu Hause – und kommt gerne wieder.,
+  Link: https://www.stadt.sg.ch/,
   LogoId: Guid_1,
   ImageId: Guid_2,
   SignatureSheetTemplateGenerated: false,
@@ -41,7 +47,7 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_5
     }
@@ -54,7 +60,7 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
   Bfs: 3203,
   MaxElectronicSignatureCount: 500,
   PeriodState: Published,
-  SignatureListSubmissionEndDate: DateTime_4,
+  SignatureListSubmissionEndDate: DateTime_2,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },
@@ -62,11 +68,11 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
     CreatedById: default-user-id,
     CreatedByName: Test Citizen Creator,
     CreatedByEmail: citizen-creator@example.com,
-    CreatedAt: DateTime_5,
+    CreatedAt: DateTime_3,
     ModifiedById: default-user-id,
     ModifiedByName: default user firstname default user lastname,
     ModifiedByEmail: default-user@example.com,
-    ModifiedAt: DateTime_3
+    ModifiedAt: DateTime_1
   },
   Id: Guid_4
 }

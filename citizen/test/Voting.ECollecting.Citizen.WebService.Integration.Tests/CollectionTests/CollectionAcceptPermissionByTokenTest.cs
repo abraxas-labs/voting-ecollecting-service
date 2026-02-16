@@ -3,6 +3,7 @@
 
 using Grpc.Core;
 using Microsoft.EntityFrameworkCore;
+using Voting.ECollecting.Citizen.Core.Exceptions;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
@@ -155,6 +156,51 @@ public class CollectionAcceptPermissionByTokenTest : BaseGrpcTest<CollectionServ
                 async () => await client.AcceptPermissionByTokenAsync(NewValidRequest()),
                 StatusCode.NotFound);
         }
+    }
+
+    [Fact]
+    public async Task AcceptInvitationWithExistingPermissionThrows()
+    {
+        var client = CreateCitizenClient(
+            acrValue: CitizenAuthMockDefaults.AcrValue100,
+            email: "peter.huenkeler@example.com");
+
+        // Accept the first permission
+        await client.AcceptPermissionByTokenAsync(NewValidRequest());
+
+        // Create another pending permission (invitation) for the same user on the same collection
+        var newToken = UrlToken.New();
+        var collectionId = InitiativesCtStGallen.GuidLegislativeInPreparation;
+
+        await RunOnDb(async db =>
+        {
+            await db.CollectionPermissions.AddAsync(new CollectionPermissionEntity
+            {
+                Id = Guid.NewGuid(),
+                CollectionId = collectionId,
+                Email = "peter.huenkeler@example.com",
+                FirstName = "Peter",
+                LastName = "Huenkeler",
+                Role = CollectionPermissionRole.Deputy,
+                State = CollectionPermissionState.Pending,
+                Token = newToken,
+                TokenExpiry = DateTime.UtcNow.AddDays(1),
+                AuditInfo = new Voting.ECollecting.Shared.Domain.Entities.Audit.AuditInfo
+                {
+                    CreatedAt = DateTime.UtcNow,
+                    CreatedById = "test",
+                    CreatedByName = "Test User",
+                },
+            });
+            await db.SaveChangesAsync();
+        });
+
+        // Try to accept the second invitation
+        await AssertStatus(
+            async () => await client.AcceptPermissionByTokenAsync(
+                new AcceptCollectionPermissionRequest { Token = newToken }),
+            StatusCode.InvalidArgument,
+            nameof(UserHasAlreadyAPermissionException));
     }
 
     private AcceptCollectionPermissionRequest NewValidRequest()

@@ -7,35 +7,41 @@
           Id: Guid_1,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
           CollectionStartDate: {
-            Seconds: 1576242730,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 13
           },
           CollectionEndDate: {
-            Seconds: 1592053930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 13
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          Link: https://www.sg.ch/,
           PeriodState: InCollection,
           Collections: [
             {
               Id: Guid_2,
               Decree: {
                 Id: Guid_1,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_2,
-                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
-                Reason: Föderalismus wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
                   Id: Guid_3,
@@ -45,12 +51,13 @@
                 AttestedCollectionCount: {
                   Id: Guid_4,
                   CollectionId: Guid_2,
-                  HasTotalCitizenCount: false
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 101
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+                  StreetOrPostOfficeBox: Multergasse 8,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -58,16 +65,17 @@
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
@@ -75,17 +83,21 @@
               Id: Guid_5,
               Decree: {
                 Id: Guid_1,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_5,
-                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
-                Reason: Steuergerechtigkeit im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                Reason:
+Ein zweites Komitee lehnt die obligatorischen Pflanzen-Workshops ab, weil sie gesundheitliche Probleme verursachen können.
+Viele Menschen leiden unter Pollenallergien, Schimmelsporen oder Reaktionen auf bestimmte Pflanzen.
+Zwang zu Grünpflanzen kann Asthma und Allergien verschlimmern.
+Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft und das Recht, allergenfrei zu wohnen.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
                   Id: Guid_6,
@@ -95,13 +107,12 @@
                 AttestedCollectionCount: {
                   Id: Guid_7,
                   CollectionId: Guid_5,
-                  HasTotalCitizenCount: false,
-                  ElectronicCitizenCount: 101
+                  HasTotalCitizenCount: false
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Verein Allergiefreies Wohnen,
+                  StreetOrPostOfficeBox: Rorschacher Strasse 88,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -109,16 +120,17 @@
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
@@ -126,17 +138,21 @@
               Id: Guid_8,
               Decree: {
                 Id: Guid_1,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_8,
-                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
                 Type: Referendum,
-                Reason: Steuergerechtigkeit im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                Reason:
+Ein drittes Komitee lehnt die obligatorischen Workshops ab, weil sie das Budget unnötig belasten.
+Die Kosten für Kursleiter, Räumlichkeiten und Material gehen in die Millionen – Geld, das anderswo fehlt.
+Bildung ist wichtig, aber nicht bei jedem Thema muss der Staat eingreifen.
+Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und die Überzeugung, dass manche Dinge freiwillig besser funktionieren.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
                   Id: Guid_9,
@@ -150,9 +166,9 @@
                   ElectronicCitizenCount: 61
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee Vernünftige Ausgaben,
+                  StreetOrPostOfficeBox: Spisertor 3,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -160,16 +176,17 @@
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
@@ -191,49 +208,62 @@
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
+1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
           Collection: {
             Id: Guid_11,
-            Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
             Type: Initiative,
-            Reason: Frauen sollen auch wählen dürfen,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            Reason:
+St.Gallen ist ein vielfältiger Kanton – vom Bodensee bis zum Toggenburg, von der Stadt bis ins Tal. Doch im Alltag geht das einfache «Grüezi» manchmal im digitalen Rauschen verloren. Diese Initiative will daran erinnern, dass gute Nachbarschaft kein Zufall, sondern ein Stück Lebensqualität ist.
+Sie verpflichtet den Kanton nicht zu neuen Ämtern, sondern zu einer Haltung: Gemeinschaft entsteht dort, wo Menschen einander kennen und helfen. Ob gemeinsames Dorffest, Quartiergarten oder Schneeschaufeln für den Nachbarn – solche kleinen Gesten halten den Kanton zusammen.
+Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage der Herzlichkeit.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
               Id: Guid_12,
               Name: placeholder-signatures.pdf
             },
-            State: EnabledForCollection,
+            State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
               Id: Guid_13,
               CollectionId: Guid_11,
-              HasTotalCitizenCount: false
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 42
             },
             Address: {
-              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-              StreetOrPostOfficeBox: Bahnhofplatz 6,
-              ZipCode: 2502,
-              Locality: Biel/Bienne
+              CommitteeOrPerson: Komitee Barfusspfad-Initiative,
+              StreetOrPostOfficeBox: Pfadweg 20,
+              ZipCode: 9113,
+              Locality: Degersheim
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 11
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 11
             },
             PeriodState: InCollection
           },
-          GovernmentDecisionNumber: SG-123.412210,
+          SubType: {
+            Id: Guid_14,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
+          },
+          GovernmentDecisionNumber: SG-123.412212,
           CommitteeDescription: ,
           LockedFields: {
             Wording: false,
@@ -242,56 +272,66 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
           }
         },
         {
-          Id: Guid_14,
+          Id: Guid_15,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Jugendliche, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
           Collection: {
-            Id: Guid_14,
-            Description: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Id: Guid_15,
+            Description: Für eine tägliche Portion Natur (Frischluftinitiative),
             Type: Initiative,
-            Reason: Frauen sollen auch wählen dürfen,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_15,
+              Id: Guid_16,
               Name: placeholder-signatures.pdf
             },
-            State: SignatureSheetsSubmitted,
+            State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_16,
-              CollectionId: Guid_14,
-              HasTotalCitizenCount: false,
-              ElectronicCitizenCount: 42
+              Id: Guid_17,
+              CollectionId: Guid_15,
+              HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-              StreetOrPostOfficeBox: Bahnhofplatz 6,
-              ZipCode: 2502,
-              Locality: Biel/Bienne
+              CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+              StreetOrPostOfficeBox: Picknickweg 13,
+              ZipCode: 9602,
+              Locality: Bazenheid
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
-          GovernmentDecisionNumber: SG-123.412212,
+          SubType: {
+            Id: Guid_14,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
+          },
+          GovernmentDecisionNumber: SG-123.412210,
           CommitteeDescription: ,
           LockedFields: {
             Wording: false,

@@ -2,8 +2,11 @@
   {
     MinSignatureCount: 100000,
     Wording:
-Alle Arbeitnehmerinnen und Arbeitnehmer haben Anspruch auf bezahlte Ferien von
-jährlich mindestens sechs Wochen.,
+Die Bundesverfassung wird wie folgt geändert:
+Art. 88c (neu) – Förderung von Bergpicknickplätzen
+1 Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+2 Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+3 Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
     SubTypeId: Guid_1,
     GovernmentDecisionNumber: CHE-2023-0007,
     AdmissibilityDecisionState: Valid,
@@ -12,22 +15,26 @@ jährlich mindestens sechs Wochen.,
       Wording: false,
       CommitteeMembers: false
     },
-    CollectionStartDate: DateTime_1,
-    CollectionEndDate: DateTime_2,
-    Description: 6 Wochen Ferien für alle,
+    CollectionStartDate: Date_1,
+    CollectionEndDate: Date_2,
+    Description: Für mehr Picknickplätze in den Bergen (Bergpicknick-Initiative),
     Type: Initiative,
-    Reason: 6 Wochen Ferien für alle,
-    Link: https://www.bk.admin.ch/ch/d/pore/vi/vis362.html,
+    Reason:
+Die Schweizer Berge laden zum Verweilen ein – doch Picknickplätze mit Tischen und Bänken fehlen oft. Diese Initiative will mehr Picknickplätze in Bergregionen schaffen.
+Picknickplätze sind mehr als Sitzgelegenheiten – sie sind Rastorte, Familienziele und Erholungsräume. Mit schöner Aussicht und guter Ausstattung entstehen beliebte Ausflugspunkte.
+Die Initiative fordert keine Luxusanlagen, sondern einfache, gepflegte Plätze an Wanderwegen. Ein bisschen mehr Picknick in den Bergen – das macht Wandern familienfreundlicher.
+Denn wer picknickt, geniesst die Berge bewusst.,
+    Link: https://www.admin.ch/,
     LogoId: Guid_2,
     ImageId: Guid_3,
     SignatureSheetTemplateGenerated: false,
     SignatureSheetTemplateId: Guid_4,
     State: EnabledForCollection,
     Address: {
-      CommitteeOrPerson: Travail Suisse,
-      StreetOrPostOfficeBox:  Postfach 5775,
-      ZipCode: 3001,
-      Locality: Bern,
+      CommitteeOrPerson: Komitee Bergpicknick-Initiative,
+      StreetOrPostOfficeBox: Picknickweg 22,
+      ZipCode: 3818,
+      Locality: Grindelwald,
       IsComplete: true
     },
     Municipalities: [
@@ -44,7 +51,7 @@ jährlich mindestens sechs Wochen.,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_3
+          CreatedAt: DateTime_1
         },
         Id: Guid_6
       },
@@ -61,7 +68,7 @@ jährlich mindestens sechs Wochen.,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_3
+          CreatedAt: DateTime_1
         },
         Id: Guid_7
       },
@@ -78,9 +85,26 @@ jährlich mindestens sechs Wochen.,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_3
+          CreatedAt: DateTime_1
         },
         Id: Guid_8
+      },
+      {
+        CollectionId: Guid_5,
+        Bfs: 3340,
+        MunicipalityName: Rapperswil-Jona,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_9
       }
     ],
     EncryptionKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_Encryption12,
@@ -91,7 +115,7 @@ jährlich mindestens sechs Wochen.,
     Bfs: 1,
     MaxElectronicSignatureCount: 10000,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_4,
+    SignatureListSubmissionEndDate: DateTime_2,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -99,35 +123,38 @@ jährlich mindestens sechs Wochen.,
       CreatedById: default-user-id,
       CreatedByName: Test Citizen Creator,
       CreatedByEmail: citizen-creator@example.com,
-      CreatedAt: DateTime_5
+      CreatedAt: DateTime_3
     },
     Id: Guid_5
   },
   {
     MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-    DecreeId: Guid_9,
-    Number: ,
-    CollectionStartDate: DateTime_6,
-    CollectionEndDate: DateTime_7,
-    Description: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen  (p: Reader),
+    DecreeId: Guid_10,
+    CollectionStartDate: Date_3,
+    CollectionEndDate: Date_4,
+    Description: Referendum gegen das Verbot digitaler Wecker aus Gründen der Barrierefreiheit  (p: Reader),
     Type: Referendum,
-    Reason: Nachtrag zum Gesetz über die Krankenversicherung und gegen den Grossratsbeschluss über die Übernahme der öffentlichen Krankenkassen durch private Krankenkassen,
-    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/19880612/krankenversicherung.html,
-    LogoId: Guid_10,
-    ImageId: Guid_11,
+    Reason:
+Ein drittes Komitee wehrt sich gegen das Wecker-Verbot, weil es Menschen mit Behinderungen benachteiligt.
+Viele digitale Geräte bieten Vibrationsalarm, Lichtsignale oder Sprachausgabe – Funktionen, die analoge Wecker nicht haben.
+Für Menschen mit Hörbeeinträchtigung oder Sehbehinderung sind digitale Hilfsmittel oft unverzichtbar.
+Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und die Erkenntnis, dass Fortschritt auch Teilhabe bedeutet.,
+    Link: https://www.sg.ch/,
+    LogoId: Guid_11,
+    ImageId: Guid_12,
     SignatureSheetTemplateGenerated: false,
-    SignatureSheetTemplateId: Guid_12,
+    SignatureSheetTemplateId: Guid_13,
     State: EnabledForCollection,
     Address: {
-      CommitteeOrPerson: Komitee für wohnortnahe Schulen St. Gallen,
-      StreetOrPostOfficeBox: Schulweg 12,
+      CommitteeOrPerson: Komitee Barrierefreie Technik,
+      StreetOrPostOfficeBox: St. Leonhard-Strasse 40,
       ZipCode: 9000,
       Locality: St.Gallen,
       IsComplete: true
     },
     Municipalities: [
       {
-        CollectionId: Guid_13,
+        CollectionId: Guid_14,
         Bfs: 3203,
         MunicipalityName: St.Gallen,
         PhysicalCount: {
@@ -139,12 +166,12 @@ jährlich mindestens sechs Wochen.,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_3
+          CreatedAt: DateTime_1
         },
-        Id: Guid_14
+        Id: Guid_15
       },
       {
-        CollectionId: Guid_13,
+        CollectionId: Guid_14,
         Bfs: 3211,
         MunicipalityName: Berg SG,
         PhysicalCount: {
@@ -156,12 +183,12 @@ jährlich mindestens sechs Wochen.,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_3
+          CreatedAt: DateTime_1
         },
-        Id: Guid_15
+        Id: Guid_16
       },
       {
-        CollectionId: Guid_13,
+        CollectionId: Guid_14,
         Bfs: 3213,
         MunicipalityName: Goldach,
         PhysicalCount: {
@@ -173,9 +200,26 @@ jährlich mindestens sechs Wochen.,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_3
+          CreatedAt: DateTime_1
         },
-        Id: Guid_16
+        Id: Guid_17
+      },
+      {
+        CollectionId: Guid_14,
+        Bfs: 3340,
+        MunicipalityName: Rapperswil-Jona,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_18
       }
     ],
     EncryptionKeyId: KVotingECollecting_98ee1e73-4866-49ec-87ba-a3fed7924ec4_Encryption12,
@@ -186,7 +230,7 @@ jährlich mindestens sechs Wochen.,
     Bfs: 17,
     MaxElectronicSignatureCount: 300,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_8,
+    SignatureListSubmissionEndDate: DateTime_4,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -194,8 +238,8 @@ jährlich mindestens sechs Wochen.,
       CreatedById: unrelated-citizen,
       CreatedByName: Unrelated ECol Seeder Citizen Creator,
       CreatedByEmail: unrelated-citizen-creator@example.com,
-      CreatedAt: DateTime_9
+      CreatedAt: DateTime_5
     },
-    Id: Guid_13
+    Id: Guid_14
   }
 ]

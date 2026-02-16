@@ -1,13 +1,16 @@
 ﻿{
   member: {
     InitiativeId: Guid_1,
-    SortIndex: 19,
+    SortIndex: 18,
     FirstName: Foo,
     LastName: Bar,
     PoliticalFirstName: Foo (pol),
     PoliticalLastName: Bar (pol),
     Bfs: 3203,
-    PoliticalBfs: 3203,
+    PoliticalResidence: St.Gallen,
+    Street: Bahnhofstrasse,
+    HouseNumber: 1a,
+    ZipCode: 9000,
     PoliticalDuty: Protokollführer,
     DateOfBirth: Date_1,
     Email: foo@example.com,
@@ -17,9 +20,6 @@
       Value: <url-token>
     },
     TokenExpiry: DateTime_1,
-    CanEdit: true,
-    CanReset: false,
-    CanVerify: true,
     AuditInfo: {
       CreatedById: default-user-id,
       CreatedByName: Test user,
@@ -54,13 +54,18 @@
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
   <div class="container"><h2>Neue Mitgliedschaft im Initiativkomitee in E-Collecting</h2>
 <p>Hallo,</p>
 <p>
-  Im E-Collecting wurden Sie zum Initiativkomitee von Kein Zwang gegen Kinder und Jugendliche hinzugefügt.
+  Im E-Collecting wurden Sie zum Initiativkomitee von F&#252;r eine t&#228;gliche Portion Natur (Frischluftinitiative) hinzugefügt.
   Bestätigen Sie die Teilnahme <a href="http://localhost:4700/sg/initiative-committee-membership-approval#token=<url-token>">hier</a>.
 </p>
 <p>
@@ -77,7 +82,7 @@
       State: Sent,
       SentTimestamp: DateTime_2,
       TemplateBag: {
-        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
         RecipientIsCitizen: true,
         NotificationType: CommitteeMembershipAddedWithPermission,
         CollectionId: Guid_1,

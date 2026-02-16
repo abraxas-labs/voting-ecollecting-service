@@ -15,6 +15,8 @@ public interface IPermissionService : Shared.Abstractions.Core.Services.IPermiss
 
     string UserLastName { get; }
 
+    bool UserEmailVerified { get; }
+
     void SetCreated(IAuditedEntity entity);
 
     void SetCreatedWithoutPII(IAuditedEntity entity);
@@ -27,6 +29,7 @@ public interface IPermissionService : Shared.Abstractions.Core.Services.IPermiss
         string userId,
         string userName,
         string userEmail,
+        bool userEmailVerified,
         string userFirstName,
         string userLastName);
 

@@ -39,7 +39,7 @@ public class InitiativeUpdateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     {
         await AuthenticatedClient.UpdateAsync(NewValidRequest());
         var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -70,12 +70,12 @@ public class InitiativeUpdateTest : BaseGrpcTest<InitiativeService.InitiativeSer
         {
             x.Id = InitiativesCtStGallen.IdLegislativeReturnedForCorrection;
             x.SubTypeId = InitiativeModelBuilder.LegislativeId.ToString();
-            x.Description = "Wohnschutz-Initiative";
+            x.Description = "Für kantonale Begegnungsräume (Begegnungs-Initiative)";
             x.Wording = "foo bar baz updated";
         });
         await AuthenticatedClient.UpdateAsync(req);
         var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeReturnedForCorrection));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         initiative.Wording.Should().Be("foo bar baz updated");
         await Verify(initiative);
     }
@@ -85,7 +85,7 @@ public class InitiativeUpdateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     {
         await DeputyClient.UpdateAsync(NewValidRequest());
         var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -144,7 +144,7 @@ public class InitiativeUpdateTest : BaseGrpcTest<InitiativeService.InitiativeSer
         {
             req.Id = InitiativesCtStGallen.IdLegislativeReturnedForCorrection;
             req.SubTypeId = InitiativeModelBuilder.ConstitutionalId.ToString();
-            req.Description = "Wohnschutz-Initiative";
+            req.Description = "Für kantonale Begegnungsräume (Begegnungs-Initiative)";
         });
         await AssertStatus(
             async () => await AuthenticatedClient.UpdateAsync(req),

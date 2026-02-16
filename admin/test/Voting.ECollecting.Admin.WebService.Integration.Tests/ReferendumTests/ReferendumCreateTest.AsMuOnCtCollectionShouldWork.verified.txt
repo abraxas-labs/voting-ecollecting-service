@@ -1,8 +1,8 @@
 ﻿{
   MembersCommittee: ,
   DecreeId: Guid_1,
-  CollectionStartDate: DateTime_1,
-  CollectionEndDate: DateTime_2,
+  CollectionStartDate: Date_1,
+  CollectionEndDate: Date_2,
   Description: Sammlung gegen das Abwassergesetz,
   Type: Referendum,
   Reason: ,
@@ -30,7 +30,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_3
     },
@@ -47,7 +47,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_4
     },
@@ -64,9 +64,26 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_5
+    },
+    {
+      CollectionId: Guid_2,
+      Bfs: 3340,
+      MunicipalityName: Rapperswil-Jona,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
     }
   ],
   IsElectronicSubmission: false,
@@ -75,7 +92,7 @@
   Bfs: 17,
   MaxElectronicSignatureCount: 300,
   PeriodState: InCollection,
-  SignatureListSubmissionEndDate: DateTime_4,
+  SignatureListSubmissionEndDate: DateTime_2,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },
@@ -83,7 +100,7 @@
     CreatedById: default-user-id,
     CreatedByName: default user firstname default user lastname,
     CreatedByEmail: default-user@example.com,
-    CreatedAt: DateTime_3
+    CreatedAt: DateTime_1
   },
   Id: Guid_2
 }

@@ -34,4 +34,9 @@ public enum InitiativeCommitteeMemberApprovalState
     /// Committee member has been rejected by the government admin.
     /// </summary>
     Rejected = 5,
+
+    /// <summary>
+    /// committee member invitation has expired.
+    /// </summary>
+    Expired = 6,
 }

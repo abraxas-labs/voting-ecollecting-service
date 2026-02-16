@@ -9,7 +9,6 @@ using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
-using Voting.ECollecting.Admin.Core.Utils;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
 using Voting.ECollecting.Shared.Domain.Entities;
@@ -68,7 +67,7 @@ public class ReferendumService : IReferendumService
             .GroupBy(x => x.DomainOfInfluenceType)
             .ToDictionaryAsync(x => x.Key, x => x.OrderByDescending(y => y.CollectionStartDate).ToList());
 
-        var now = _timeProvider.GetUtcNowDateTime();
+        var today = _timeProvider.GetUtcTodayDateOnly();
         return Enum.GetValues<DomainOfInfluenceType>()
             .Where(x => x != DomainOfInfluenceType.Unspecified)
             .OrderBy(x => x)
@@ -78,12 +77,12 @@ public class ReferendumService : IReferendumService
 
                 foreach (var decree in decrees)
                 {
-                    _decreeService.SetPeriodStateAndUserPermissions(decree, now);
+                    _decreeService.SetPeriodStateAndUserPermissions(decree, today);
 
                     foreach (var referendum in decree.Referendums)
                     {
                         referendum.Decree = decree;
-                        referendum.SetPeriodState(now);
+                        referendum.SetPeriodState(today);
                         _collectionService.LoadPermission(referendum);
                         _collectionService.SetCollectionCount(referendum);
                     }
@@ -108,7 +107,7 @@ public class ReferendumService : IReferendumService
                                    .FirstOrDefaultAsync(x => x.Id == id)
                                ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
         var referendum = Mapper.MapToReferendum(referendumEntity);
-        referendum.SetPeriodState(_timeProvider.GetUtcNowDateTime());
+        referendum.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(referendum);
         _collectionService.SetCollectionCount(referendum);
         return referendum;
@@ -129,8 +128,6 @@ public class ReferendumService : IReferendumService
             throw new CollectionAlreadyExistsException();
         }
 
-        var existingNumbers = await _referendumRepository.Query().Select(x => x.Number).ToHashSetAsync();
-        var number = RandomUtil.GenerateReferendumNumber(existingNumbers);
         var referendum = new ReferendumEntity
         {
             Description = description,
@@ -141,7 +138,6 @@ public class ReferendumService : IReferendumService
             IsElectronicSubmission = false,
             State = CollectionState.PreRecorded,
             Address = collectionAddress,
-            Number = number,
 
             // decree data
             Bfs = decree.Bfs,
@@ -153,8 +149,7 @@ public class ReferendumService : IReferendumService
 
         _permissionService.SetCreated(referendum);
         _permissionService.SetCreated(referendum.CollectionCount);
-        await _referendumRepository.Create(referendum);
-
+        await _collectionService.CreateWithSecretIdNumber(referendum);
         await _collectionService.PrepareForCollection(referendum);
         await _dataContext.SaveChangesAsync();
 

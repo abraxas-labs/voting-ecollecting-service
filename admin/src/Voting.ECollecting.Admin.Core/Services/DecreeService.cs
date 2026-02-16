@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
+using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Admin.Core.Mappings;
@@ -38,6 +39,7 @@ public class DecreeService : IDecreeService
     private readonly IOfficialJournalPublicationProtocolGenerator _officialJournalPublicationProtocolGenerator;
     private readonly IElectronicSignaturesProtocolGenerator _electronicSignaturesProtocolGenerator;
     private readonly IStatisticalDataCsvGenerator _statisticalDataCsvGenerator;
+    private readonly IStatisticalDataTimeLapseCsvGenerator _statisticalDataTimeLapseCsvGenerator;
     private readonly IPermissionService _permissionService;
     private readonly IDataContext _dataContext;
     private readonly IAccessControlListDoiService _coreAccessControlListDoiService;
@@ -46,6 +48,7 @@ public class DecreeService : IDecreeService
     private readonly ISecondFactorTransactionService _secondFactorTransactionService;
     private readonly CollectionCryptoService _collectionCryptoService;
     private readonly IUserNotificationService _userNotificationService;
+    private readonly AccessControlListDoiService _accessControlListDoiService;
 
     public DecreeService(
         IDecreeRepository decreeRepository,
@@ -57,11 +60,13 @@ public class DecreeService : IDecreeService
         IOfficialJournalPublicationProtocolGenerator officialJournalPublicationProtocolGenerator,
         IElectronicSignaturesProtocolGenerator electronicSignaturesProtocolGenerator,
         IStatisticalDataCsvGenerator statisticalDataCsvGenerator,
+        IStatisticalDataTimeLapseCsvGenerator statisticalDataTimeLapseCsvGenerator,
         IDataContext dataContext,
         IAccessControlListDoiService coreAccessControlListDoiService,
         ISecondFactorTransactionService secondFactorTransactionService,
         CollectionCryptoService collectionCryptoService,
-        IUserNotificationService userNotificationService)
+        IUserNotificationService userNotificationService,
+        AccessControlListDoiService accessControlListDoiService)
     {
         _decreeRepository = decreeRepository;
         _permissionService = permissionService;
@@ -72,11 +77,13 @@ public class DecreeService : IDecreeService
         _officialJournalPublicationProtocolGenerator = officialJournalPublicationProtocolGenerator;
         _electronicSignaturesProtocolGenerator = electronicSignaturesProtocolGenerator;
         _statisticalDataCsvGenerator = statisticalDataCsvGenerator;
+        _statisticalDataTimeLapseCsvGenerator = statisticalDataTimeLapseCsvGenerator;
         _dataContext = dataContext;
         _coreAccessControlListDoiService = coreAccessControlListDoiService;
         _secondFactorTransactionService = secondFactorTransactionService;
         _collectionCryptoService = collectionCryptoService;
         _userNotificationService = userNotificationService;
+        _accessControlListDoiService = accessControlListDoiService;
     }
 
     public async Task<Decree> Create(Decree decree)
@@ -84,10 +91,11 @@ public class DecreeService : IDecreeService
         await SetBfsAndSignatureCounts(decree);
         decree.State = DecreeState.CollectionApplicable;
 
-        SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcNowDateTime());
+        SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcTodayDateOnly());
         ValidateDecree(decree);
         _permissionService.SetCreated(decree);
         await _decreeRepository.Create(decree);
+        decree.DomainOfInfluenceName = await _accessControlListDoiService.LoadDomainOfInfluenceName(decree.DomainOfInfluenceType, decree.Bfs);
         return decree;
     }
 
@@ -102,6 +110,7 @@ public class DecreeService : IDecreeService
             .ThenBy(x => x.Description)
             .ToListAsync();
         var decrees = Mapper.MapToDecrees(decreeEntities);
+        await LoadDomainOfInfluenceNames(decrees);
         SetStates(decrees);
 
         return decrees;
@@ -115,7 +124,7 @@ public class DecreeService : IDecreeService
             ?? throw new EntityNotFoundException(nameof(DecreeEntity), decree.Id);
 
         await SetBfsAndSignatureCounts(decree);
-        SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcNowDateTime());
+        SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcTodayDateOnly());
         if (decree.UserPermissions?.CanEdit != true)
         {
             throw new EntityNotFoundException(nameof(DecreeEntity), decree.Id);
@@ -157,7 +166,7 @@ public class DecreeService : IDecreeService
             .FirstOrDefaultAsync(d => d.Id == id)
             ?? throw new EntityNotFoundException(nameof(DecreeEntity), id);
         var decree = Mapper.MapToDecree(decreeEntity);
-        SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcNowDateTime());
+        SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcTodayDateOnly());
         return decree;
     }
 
@@ -226,12 +235,7 @@ public class DecreeService : IDecreeService
 
         if (!string.IsNullOrEmpty(recipient) && !string.IsNullOrEmpty(decree.Bfs))
         {
-            var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(decree.Bfs);
-            var allCollectionFiles = decree.Collections.Aggregate(
-                AsyncEnumerable.Empty<IFile>(),
-                (current, collection) => current.Concat(_collectionService.GenerateCollectionFiles(collection, accessControlListDoi, null, cancellationToken)));
-
-            var attachment = ZipFile.Create(allCollectionFiles, "archive.zip");
+            var attachment = ZipFile.Create(GenerateFiles(decree, cancellationToken), "archive.zip");
             await _userNotificationService.SendUserNotification(
                 recipient,
                 false,
@@ -260,7 +264,7 @@ public class DecreeService : IDecreeService
                              .AsTracking()
                              .Include(x => x.Collections)
                              .ThenInclude(x => x.Permissions)
-                             .WhereInCollectionOrExpired(_timeProvider.GetUtcNowDateTime())
+                             .WhereInCollectionOrExpired(_timeProvider.GetUtcTodayDateOnly())
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(typeof(InitiativeEntity), id);
 
@@ -323,39 +327,29 @@ public class DecreeService : IDecreeService
                          .FirstOrDefaultAsync(x => x.Id == id, cancellationToken)
                      ?? throw new EntityNotFoundException(typeof(DecreeEntity), id);
 
-        var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(decree.Bfs);
-        foreach (var collection in decree.Collections)
+        await foreach (var file in GenerateFiles(decree, cancellationToken))
         {
-            cancellationToken.ThrowIfCancellationRequested();
-            yield return _statisticalDataCsvGenerator.GenerateFile(collection);
-
-            if (collection.DomainOfInfluenceType is DomainOfInfluenceType.Mu)
-            {
-                continue;
-            }
-
-            yield return await _officialJournalPublicationProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(collection, accessControlListDoi, null), cancellationToken);
-            yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(collection, accessControlListDoi, null), cancellationToken);
+            yield return file;
         }
     }
 
-    internal void SetPeriodStateAndUserPermissions(Decree decree, DateTime utcNow)
+    internal void SetPeriodStateAndUserPermissions(Decree decree, DateOnly today)
     {
-        decree.SetPeriodState(utcNow);
+        decree.SetPeriodState(today);
         decree.UserPermissions = DecreePermissions.Build(_permissionService, decree);
     }
 
     private void SetStates(IEnumerable<Decree> decrees)
     {
-        var utcNow = _timeProvider.GetUtcNowDateTime();
+        var today = _timeProvider.GetUtcTodayDateOnly();
 
         foreach (var decree in decrees)
         {
-            SetPeriodStateAndUserPermissions(decree, utcNow);
+            SetPeriodStateAndUserPermissions(decree, today);
 
             foreach (var referendum in decree.Referendums)
             {
-                referendum.SetPeriodState(utcNow);
+                referendum.SetPeriodState(today);
                 _collectionService.LoadPermission(referendum);
                 _collectionService.SetCollectionCount(referendum);
             }
@@ -364,7 +358,7 @@ public class DecreeService : IDecreeService
 
     private void ValidateDecree(Decree decree)
     {
-        if (decree.CollectionStartDate < _timeProvider.GetUtcNowDateTime())
+        if (decree.CollectionStartDate < _timeProvider.GetUtcTodayDateOnly())
         {
             throw new ValidationException("Start date can't be in the past.");
         }
@@ -413,5 +407,50 @@ public class DecreeService : IDecreeService
         return SecondFactorTransactionActionId.Create(
             SecondFactorTransactionActionTypes.DeleteDecree,
             collection.Id);
+    }
+
+    private async Task LoadDomainOfInfluenceNames(List<Decree> decrees)
+    {
+        var domainOfInfluenceNamesByBfs = await _accessControlListDoiRepository
+            .Query()
+            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == AclDomainOfInfluenceType.Mu)
+            .GroupBy(x => x.Bfs)
+            .ToDictionaryAsync(x => x.Key!, x => x.First().Name);
+        foreach (var decree in decrees)
+        {
+            decree.DomainOfInfluenceName = decree.DomainOfInfluenceType switch
+            {
+                DomainOfInfluenceType.Mu => domainOfInfluenceNamesByBfs[decree.Bfs],
+                DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
+                DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
+                _ => throw new ArgumentOutOfRangeException(nameof(decree.DomainOfInfluenceType)),
+            };
+        }
+    }
+
+    private async IAsyncEnumerable<IFile> GenerateFiles(DecreeEntity decree, [EnumeratorCancellation] CancellationToken cancellationToken)
+    {
+        var collectionIds = decree.Collections.Select(x => x.Id).ToHashSet();
+        yield return _statisticalDataCsvGenerator.GenerateFile(new StatisticalDataTemplateData(collectionIds, decree.Description, decree.Id));
+        yield return await _statisticalDataTimeLapseCsvGenerator.GenerateFile(new StatisticalDataTimeLapseTemplateData(collectionIds, decree.Description));
+        if (decree.DomainOfInfluenceType is DomainOfInfluenceType.Mu)
+        {
+            yield break;
+        }
+
+        var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(decree.Bfs);
+        var templateData = new ECollectingProtocolTemplateData(
+            decree.Collections.Cast<CollectionBaseEntity>().ToList(),
+            accessControlListDoi,
+            decree.Description,
+            decree.DomainOfInfluenceType,
+            true);
+        yield return await _officialJournalPublicationProtocolGenerator.GenerateFileModel(templateData, cancellationToken);
+
+        foreach (var collection in decree.Collections)
+        {
+            cancellationToken.ThrowIfCancellationRequested();
+            yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData([collection], accessControlListDoi, collection.Description, collection.DomainOfInfluenceType!.Value, true), cancellationToken);
+        }
     }
 }

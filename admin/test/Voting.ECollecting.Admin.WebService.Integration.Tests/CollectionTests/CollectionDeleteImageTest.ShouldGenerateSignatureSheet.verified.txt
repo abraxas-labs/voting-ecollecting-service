@@ -1,12 +1,15 @@
 ﻿{
-  Description: Kein Zwang gegen Kinder und Jugendliche,
+  Description: Für eine tägliche Portion Natur (Frischluftinitiative),
   Wording:
-Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
-Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
-dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
-
-Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
-  Reason: Kinder müssen geschützt werden!,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+  Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
   CommitteeMembers: [
     {
       LastName: Huber,
@@ -93,13 +96,13 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
       ApprovalState: Approved
     }
   ],
-  CommitteeName: Forum für Menschenrechte,
-  CommitteeStreet: Kramgasse 7,
-  CommitteeZipCode: 3011,
-  CommitteeLocality: Bern,
-  Website: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+  CommitteeName: Komitee Frischluftinitiative,
+  CommitteeStreet: Naturweg 11,
+  CommitteeZipCode: 9014,
+  CommitteeLocality: St.Gallen,
+  Website: https://www.sg.ch/,
   Logo: iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVR4nO2Y6U7jMBSFef83KJsAAapQSwGx70sFpSDEVtaeZ/HoWLhK0pRFdDRn4Pz4BLHrxL7f9c0yAiAYyDDyrydgYCEQxkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQvALhHS73fD09BT/lvU/PDyE+/v7geMfHx9j/6Dx3+X5+Tm8vLyU9nHevPbr62tpP8exf9B4OSFcbK1WC5VKJZydneX6uJBqtRr7yOzsbLi+vs4Fo/Y2lkxPT4d2uz3U+e3u7sZzr66u9iUR20ZHR2P/xMREODk5yf1me3s7jI2Nxf7x8fF4LmkhDDiDnAKaFcIFz8/PxwUdHByEZrMZJicnw9TUVJTI39Tr9RiQnZ2dcHp6GoVw4e/tps/CjF9ZWenNrShkc3Oz1855p8S5vLyM/YeHh/F4cXExtFqtXuJwHZJCuIUZXAZ5eXm5TwgznW0bGxu9tqOjo9jGv3d3d/H/RqPR6z8/P49tDFbxetxNa2trudJBiaRsfpwTZa+vr/cJ4TkonsmUTS7+jknC45mZmbi2VMrSmLm5OU0hhJnDhaRAZ4Vwu7MtW4LSopeWlmJ5qFQq4fj4OLerGERma/FaHMsEWFhYiMGhiLS7yuZ2c3MTr93pdPqEXF1dxTbKyo6hIJYu3vPS7sj2p13C5JAUUsz8rBAGgG3ZewYDyTYGNdX2VquVOxezkqWr7DrcVZTCUkgZlP7R3MqEcJ5sK94TOK9UtsrKXCqBt7e3FoI39vf34ziWlM88+VjIXypZeLtnpPtCtnx9VcivLFkXFxdDvam32+3cPSOVLwbpq0J+7E2dmcSStLW1FRfDcsJjLuI7j72dTqfvWhxTfE+glEHvLQwg55IkM9t5zJfQH/nYm63nRdJ7BAP70YthvV7PvRhyZw1jbnzKKpsbA132Yshk+ejFcG9vb6gyhi6EO4FBLVL8BMKdVJb1yIgZ9qeT9DmnSPETCXfee9f+7z6dGFgIfhAWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWvwBvp5lf+N7iLMAAAAASUVORK5CYII=,
-  CollectionStartDate: Date_MinValue,
-  CollectionEndDate: Date_MinValue,
+  CollectionStartDate: 0001-01-01,
+  CollectionEndDate: 0001-01-01,
   SignatureListSubmissionEndDate: Date_MinValue
 }

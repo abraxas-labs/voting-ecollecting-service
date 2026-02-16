@@ -10,10 +10,13 @@ namespace Voting.ECollecting.Citizen.Domain.Queries;
 
 public static class CollectionQueries
 {
-    public static IQueryable<T> WhereHasPendingPermission<T>(this IQueryable<T> q, Guid permissionId)
+    public static IQueryable<T> WhereHasPendingOrRejectedOrExpiredPermission<T>(this IQueryable<T> q, Guid permissionId)
         where T : CollectionBaseEntity
     {
-        return q.Where(p => p.Permissions!.Any(x => x.Id == permissionId && x.State == CollectionPermissionState.Pending));
+        return q.Where(p => p.Permissions!.Any(x =>
+            x.Id == permissionId && (x.State == CollectionPermissionState.Pending ||
+                                     x.State == CollectionPermissionState.Rejected ||
+                                     x.State == CollectionPermissionState.Expired)));
     }
 
     public static IQueryable<T> IncludePermission<T>(this IQueryable<T> q, string userId)
@@ -22,10 +25,13 @@ public static class CollectionQueries
         return q.Include(p => p.Permissions!.Where(x => x.IamUserId == userId));
     }
 
-    public static IQueryable<T> IncludePendingPermission<T>(this IQueryable<T> q, Guid permissionId)
+    public static IQueryable<T> IncludePendingOrRejectedOrExpiredPermission<T>(this IQueryable<T> q, Guid permissionId)
         where T : CollectionBaseEntity
     {
-        return q.Include(p => p.Permissions!.Where(x => x.Id == permissionId && x.State == CollectionPermissionState.Pending));
+        return q.Include(p => p.Permissions!.Where(x =>
+            x.Id == permissionId && (x.State == CollectionPermissionState.Pending ||
+                                     x.State == CollectionPermissionState.Rejected ||
+                                     x.State == CollectionPermissionState.Expired)));
     }
 
     public static IIncludableQueryable<TEntity, IEnumerable<CollectionPermissionEntity>> ThenIncludePermission<TEntity, TPreviousProperty>(

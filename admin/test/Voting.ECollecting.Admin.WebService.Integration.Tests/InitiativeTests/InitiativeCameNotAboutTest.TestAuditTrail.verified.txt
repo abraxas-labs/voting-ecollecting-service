@@ -6,23 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
+        Link: https://www.admin.ch/,
         Type: 1,
         State: 12,
         LogoId: Guid_2,
-        Reason: Der Veloverkehr muss nachhaltig finanziert werden!,
+        Reason:
+Die Schweiz hat Preise für Wissenschaft, Architektur und Käse – aber keinen fürs Lachen. Diese Initiative will Humor als Teil der kulturellen Identität stärken.
+Ein verfassungsmässiger Auftrag zur Förderung von Humor bedeutet nicht, dass jede Bundesratssitzung mit einem Witz beginnen muss. Aber er unterstreicht, dass Lachen eine verbindende, friedensfördernde und gesundheitsstärkende Ressource ist.
+Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, die nicht nur effizient, sondern auch herzlich ist – und die über sich selbst lachen kann, ohne das Gesicht zu verlieren.,
         Address: {
-          ZipCode: 9000,
-          Locality: St. Gallen,
+          ZipCode: 8180,
+          Locality: Bülach,
           IsComplete: true,
-          CommitteeOrPerson: Verein Verkehrsschutz,
-          StreetOrPostOfficeBox: Bahnhofstrasse 10
+          CommitteeOrPerson: Komitee Honig-Initiative,
+          StreetOrPostOfficeBox: Bienenweg 19
         },
         ImageId: Guid_3,
         Wording:
 Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+Art. 352 (neu) – Förderung von Humor und guter Laune
+1 Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+2 Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+3 Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
         MacKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -31,16 +36,16 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Für den öffentlichen Veloverkehr,
+        Description: Für die Förderung der guten Laune (Humorinitiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -53,32 +58,38 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 10000,
+        GovernmentDecisionNumberLower: che-2023-0012,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
+        Link: https://www.admin.ch/,
         Type: 1,
         State: 14,
         LogoId: Guid_2,
-        Reason: Der Veloverkehr muss nachhaltig finanziert werden!,
+        Reason:
+Die Schweiz hat Preise für Wissenschaft, Architektur und Käse – aber keinen fürs Lachen. Diese Initiative will Humor als Teil der kulturellen Identität stärken.
+Ein verfassungsmässiger Auftrag zur Förderung von Humor bedeutet nicht, dass jede Bundesratssitzung mit einem Witz beginnen muss. Aber er unterstreicht, dass Lachen eine verbindende, friedensfördernde und gesundheitsstärkende Ressource ist.
+Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, die nicht nur effizient, sondern auch herzlich ist – und die über sich selbst lachen kann, ohne das Gesicht zu verlieren.,
         Address: {
-          ZipCode: 9000,
-          Locality: St. Gallen,
+          ZipCode: 8180,
+          Locality: Bülach,
           IsComplete: true,
-          CommitteeOrPerson: Verein Verkehrsschutz,
-          StreetOrPostOfficeBox: Bahnhofstrasse 10
+          CommitteeOrPerson: Komitee Honig-Initiative,
+          StreetOrPostOfficeBox: Bienenweg 19
         },
         ImageId: Guid_3,
         Wording:
 Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+Art. 352 (neu) – Förderung von Humor und guter Laune
+1 Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+2 Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+3 Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
         MacKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -87,17 +98,17 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Für den öffentlichen Veloverkehr,
+        Description: Für die Förderung der guten Laune (Humorinitiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
         CameNotAboutReason: 2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -111,6 +122,7 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 10000,
+        GovernmentDecisionNumberLower: che-2023-0012,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

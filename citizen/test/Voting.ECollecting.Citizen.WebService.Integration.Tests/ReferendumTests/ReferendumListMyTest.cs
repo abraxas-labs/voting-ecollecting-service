@@ -75,4 +75,14 @@ public class ReferendumListMyTest : BaseGrpcTest<ReferendumService.ReferendumSer
         response.Decrees.Should().BeEmpty();
         response.WithoutDecreeReferendums.Should().BeEmpty();
     }
+
+    [Fact]
+    public async Task TestOnlyCtEnabled()
+    {
+        await WithOnlyCtDomainOfInfluenceTypeEnabled(async () =>
+        {
+            var response = await AuthenticatedClient.ListMyAsync(new ListMyReferendumsRequest());
+            await Verify(response);
+        });
+    }
 }

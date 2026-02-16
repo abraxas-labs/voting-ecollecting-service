@@ -21,7 +21,7 @@ internal static class CollectionPermissions
     public static IQueryable<T> WhereCanRead<T>(this IQueryable<T> query, IPermissionService permissionService)
         where T : CollectionBaseEntity
     {
-        return query.WhereCanAccessOwnBfsOrChildrenOrParents(permissionService);
+        return query.WhereCanAccessOwnBfsOrChildrenOrParentsInPeriodStateInCollectionOrExpired(permissionService);
     }
 
     public static IQueryable<T> WhereCanReadMessages<T>(this IQueryable<T> query, IPermissionService permissionService)
@@ -45,7 +45,7 @@ internal static class CollectionPermissions
     {
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
-            .WhereCanAccessOwnBfsOrChildrenOrParents(permissionService);
+            .WhereCanAccessOwnBfsOrChildrenOrParentsInPeriodStateInCollectionOrExpired(permissionService);
     }
 
     public static IQueryable<T> WhereCanEditCommittee<T>(this IQueryable<T> query, IPermissionService permissionService)
@@ -107,7 +107,7 @@ internal static class CollectionPermissions
         return query
             .WhereHasRole(permissionService, Roles.Kontrollzeichenloescher)
             .WhereCanAccessOwnBfs(permissionService)
-            .Where(x => x.SensitiveDataExpiryDate.HasValue && x.SensitiveDataExpiryDate <= DateOnly.FromDateTime(permissionService.Now))
+            .Where(x => x.SensitiveDataExpiryDate.HasValue && x.SensitiveDataExpiryDate <= permissionService.Today)
             .Where(x => x.State == CollectionState.EndedCameAbout || x.State == CollectionState.EndedCameNotAbout);
     }
 
@@ -117,7 +117,7 @@ internal static class CollectionPermissions
                && AclPermissions.CanAccessOwnBfs(permissionService, collection)
                && collection is InitiativeEntity initiative
                && initiative.SensitiveDataExpiryDate.HasValue
-               && initiative.SensitiveDataExpiryDate <= DateOnly.FromDateTime(permissionService.Now)
+               && initiative.SensitiveDataExpiryDate <= permissionService.Today
                && collection.State is CollectionState.EndedCameAbout or CollectionState.EndedCameNotAbout;
     }
 
@@ -137,7 +137,7 @@ internal static class CollectionPermissions
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
             .WhereIsNotEnded()
-            .WhereInPeriodStateInCollectionOrExpired(permissionService.Now);
+            .WhereInPeriodStateInCollectionOrExpired(permissionService.Today);
     }
 
     private static bool CanSubmitSignatureSheets(IPermissionService permissionService, CollectionBaseEntity collection)
@@ -156,7 +156,7 @@ internal static class CollectionPermissions
         return query
             .WhereHasRole(permissionService, Roles.Kontrollzeichenerfasser)
             .WhereCanAccessOwnMunicipalityBfsInclParents(permissionService)
-            .WhereInPeriodStateInCollectionOrExpired(permissionService.Now);
+            .WhereInPeriodStateInCollectionOrExpired(permissionService.Today);
     }
 
     public static bool CanReadSignatureSheets(IPermissionService permissionService, CollectionBaseEntity collection)
@@ -190,7 +190,7 @@ internal static class CollectionPermissions
         return query
             .WhereHasRole(permissionService, Roles.Kontrollzeichenerfasser)
             .WhereCanAccessOwnMunicipalityBfsInclParents(permissionService)
-            .WhereInPeriodStateInCollectionOrExpired(permissionService.Now);
+            .WhereInPeriodStateInCollectionOrExpired(permissionService.Today);
     }
 
     public static IQueryable<InitiativeEntity> WhereCanFinishCorrection(this IQueryable<InitiativeEntity> query, IPermissionService permissionService)
@@ -199,8 +199,8 @@ internal static class CollectionPermissions
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
             .WhereInState(CollectionState.UnderReview)
-            .Where(x => x.AdmissibilityDecisionState == AdmissibilityDecisionState.Valid)
-            .WhereInPeriodStatePublishedOrUnspecified(permissionService.Now);
+            .Where(x => x.AdmissibilityDecisionState == AdmissibilityDecisionState.Valid || x.AdmissibilityDecisionState == AdmissibilityDecisionState.ValidButSubjectToConditions)
+            .WhereInPeriodStatePublishedOrUnspecified(permissionService.Today);
     }
 
     private static bool CanFinishCorrection(IPermissionService permissionService, CollectionBaseEntity collection)
@@ -210,7 +210,7 @@ internal static class CollectionPermissions
                && collection is InitiativeEntity
                {
                    State: CollectionState.UnderReview,
-                   AdmissibilityDecisionState: AdmissibilityDecisionState.Valid,
+                   AdmissibilityDecisionState: AdmissibilityDecisionState.Valid or AdmissibilityDecisionState.ValidButSubjectToConditions,
                    PeriodState: CollectionPeriodState.Published or CollectionPeriodState.Unspecified,
                };
     }
@@ -247,7 +247,7 @@ internal static class CollectionPermissions
             .Where(x =>
                 x.State == CollectionState.Registered
                 || (x.State == CollectionState.UnderReview && x.AdmissibilityDecisionState == AdmissibilityDecisionState.Valid &&
-                    x.CollectionStartDate <= permissionService.Now && x.CollectionEndDate >= permissionService.Now));
+                    x.CollectionStartDate <= permissionService.Today && x.CollectionEndDate >= permissionService.Today));
     }
 
     private static bool CanEnable(IPermissionService permissionService, CollectionBaseEntity collection)
@@ -347,7 +347,7 @@ internal static class CollectionPermissions
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
-            .WhereInPeriodStatePublishedOrUnspecified(permissionService.Now)
+            .WhereInPeriodStatePublishedOrUnspecified(permissionService.Today)
             .Where(x => x.State == CollectionState.PreRecorded);
     }
 

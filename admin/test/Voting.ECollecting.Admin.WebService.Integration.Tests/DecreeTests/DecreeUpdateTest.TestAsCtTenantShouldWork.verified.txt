@@ -2,8 +2,8 @@
   DomainOfInfluenceType: Ct,
   Bfs: 17,
   Description: Kantonsratsbeschluss Revision Wassergesetz (33-43.34) UPDATED,
-  CollectionStartDate: DateTime_1,
-  CollectionEndDate: DateTime_2,
+  CollectionStartDate: Date_1,
+  CollectionEndDate: Date_2,
   MinSignatureCount: 50000,
   MaxElectronicSignatureCount: 10000,
   Link: https://www.ratsinfo.sg.ch/geschaefte/4754-updated,
@@ -16,11 +16,11 @@
     CreatedById: default-user-id,
     CreatedByName: Test Admin,
     CreatedByEmail: admin@example.com,
-    CreatedAt: DateTime_3,
+    CreatedAt: DateTime_1,
     ModifiedById: default-user-id,
     ModifiedByName: default user firstname default user lastname,
     ModifiedByEmail: default-user@example.com,
-    ModifiedAt: DateTime_3
+    ModifiedAt: DateTime_1
   },
   Id: Guid_1
 }

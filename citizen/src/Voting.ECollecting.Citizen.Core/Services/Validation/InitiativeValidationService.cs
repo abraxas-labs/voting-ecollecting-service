@@ -58,10 +58,6 @@ public class InitiativeValidationService : CollectionValidationService
                 (x.ApprovalState == InitiativeCommitteeMemberApprovalState.Approved ||
                  x.ApprovalState == InitiativeCommitteeMemberApprovalState.Signed));
 
-        var approvedCommitteeMembersMinValid = approvedMembersCount >= requiredApprovedMembersCount;
-        var approvedCommitteeMembersMaxValid = initiative.DomainOfInfluenceType != DomainOfInfluenceType.Ch ||
-                                               approvedMembersCount <= _config.InitiativeCommitteeMaxApprovedMembersCount;
-
         var hasAnyCommitteeMemberUploadedSignature = await _committeeMemberRepository.Query()
             .AnyAsync(x =>
                 x.InitiativeId == initiative.Id &&
@@ -74,10 +70,16 @@ public class InitiativeValidationService : CollectionValidationService
             validationResults.Add(new ValidationResult(DomainEnums.Validation.CommitteeListUploaded, hasCommitteeListsUploaded));
         }
 
+        var approvedCommitteeMembersMinValid = approvedMembersCount >= requiredApprovedMembersCount;
+        if (initiative.DomainOfInfluenceType == DomainOfInfluenceType.Ch)
+        {
+            var approvedCommitteeMembersMaxValid = approvedMembersCount <= _config.InitiativeCommitteeMaxApprovedMembersCount;
+            validationResults.Add(new ValidationResult(DomainEnums.Validation.ApprovedCommitteeMembersMaxValid, approvedCommitteeMembersMaxValid));
+        }
+
         return new ValidationSummary([
             .. validationResults,
             new ValidationResult(DomainEnums.Validation.ApprovedCommitteeMembersMinValid, approvedCommitteeMembersMinValid),
-            new ValidationResult(DomainEnums.Validation.ApprovedCommitteeMembersMaxValid, approvedCommitteeMembersMaxValid),
         ]);
     }
 }

@@ -12,17 +12,20 @@
           Bfs: 17,
           MinSignatureCount: 4000,
           Wording:
-Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit einem Volumen von 100 Mio. Franken. Der Fonds wird aus Mitteln des besonderen Eigenkapitals geäufnet. Die Mittel werden verwendet für:
-
-- Massnahmen zur Verminderung der CO2-Emissionen bei Gebäuden durch die Förderungen von CO2-emissionsarmen Heizsystemen und die energetische Sanierung von Gebäudehüllen;
-- den Ausbau der Stromgewinnung durch erneuerbare Energien wie Photovoltaik, Windkraft und Biomasse;
-- gezielte Massnahmen zur Energieverbrauchsreduktion.»,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 230 (neu) – Förderung von Schmetterlingsgärten
+1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
           Collection: {
             Id: Guid_1,
-            Description: Stadt St.Galler Klimafonds,
+            Description: Für Schmetterlingsgärten (Schmetterling-Initiative),
             Type: Initiative,
-            Reason: SP setzt auf ausser-parlamentarischen Druck: Klimafonds-Initiative Eingereicht,
-            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/5660,
+            Reason:
+Schmetterlinge sind schön und wichtig für die Natur – doch ihre Lebensräume schwinden. Die «Schmetterling-Initiative» will mehr blütenreiche Gärten und Wiesen für Schmetterlinge schaffen.
+Ein Schmetterlingsgarten ist mehr als Blumen – er ist Biodiversität, Farbe und Naturbeobachtung. Mit einheimischen Pflanzen und naturnaher Pflege entstehen Paradiese für Falter.
+Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlingsfreundliche Gärten und Wiesen. Ein bisschen mehr Blüten – das hilft Schmetterlingen und erfreut Menschen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameAbout,
             AttestedCollectionCount: {
@@ -33,10 +36,10 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
               ElectronicCitizenCount: 187
             },
             Address: {
-              CommitteeOrPerson: Initiative Saubere Energie,
-              StreetOrPostOfficeBox: Aeschenplatz 6,
-              ZipCode: 4052,
-              Locality: Basel
+              CommitteeOrPerson: Komitee Schmetterling-Initiative,
+              StreetOrPostOfficeBox: Blütenweg 7,
+              ZipCode: 9524,
+              Locality: Zuzwil
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
@@ -61,12 +64,14 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 1,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -81,7 +86,8 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
             Year: 2019,
             Month: 12,
             Day: 31
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_3,
@@ -92,17 +98,20 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
           Wording: ,
           Collection: {
             Id: Guid_3,
-            Description: Abwasser Initiative,
+            Description: Für mehr Waldspazier-Routen (Kantonswald-Initiative),
             Type: Initiative,
-            Reason: Gewässer vor dem Abwasser schützen,
-            Link: https://sg.ch/abwasser/,
+            Reason:
+St.Gallen hat herrliche Wälder – vom Bodensee bis zum Alpstein. Doch markierte Spazierwege, die zum Entdecken einladen, gibt es zu wenig. Die «Kantonswald-Initiative» will ein Netz einfacher Waldrouten schaffen.
+Waldspazieren ist mehr als Bewegung – es ist Erholung, Naturerlebnis und Entschleunigung. Mit gut beschilderten Wegen und Rastplätzen entstehen Oasen für alle Generationen.
+Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen, die Wald erlebbar machen. Ein bisschen mehr Natur im Alltag – das tut gut und verbindet Mensch und Umwelt.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreRecorded,
             Address: {
-              CommitteeOrPerson: Komitee Abwasser Initiative,
-              StreetOrPostOfficeBox: Langstrasse 200,
-              ZipCode: 8005,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Kantonswald-Initiative,
+              StreetOrPostOfficeBox: Waldweg 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
@@ -133,35 +142,44 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_4,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          Wording: Diese initiative will mehr kinderabzüge!,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 222 (neu) – Förderung kantonaler Wochenmärkte
+1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
           Collection: {
             Id: Guid_4,
-            Description: Volksinitiative «50% mehr Kinderabzüge»,
+            Description: Für kantonale Märkte (Markt-Initiative),
             Type: Initiative,
-            Reason: Steuerliche Entlastung von Familien: Kinder- und Betreuungsabzüge,
-            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4375,
+            Reason:
+W ochenmärkte beleben Städte und Dörfer – doch viele Orte haben keinen Markt mehr. Die «Markt-Initiative» will die Tradition der Wochenmärkte im ganzen Kanton stärken.
+Ein Wochenmarkt ist mehr als Einkauf – er ist Begegnung, regionale Produkte und Lebensqualität. Mit Unterstützung für Marktbetreiber und Standinhaber entstehen lebendige Zentren.
+Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmärkte in allen Regionen. Ein bisschen Markt-Atmosphäre – das stärkt lokale Produzenten und Gemeinschaft.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: UnderReview,
             Address: {
-              CommitteeOrPerson: Pro Familia,
-              StreetOrPostOfficeBox: Rheinstrasse 17,
-              ZipCode: 4058,
-              Locality: Basel
+              CommitteeOrPerson: Komitee Markt-Initiative,
+              StreetOrPostOfficeBox: Marktgasse 8,
+              ZipCode: 9200,
+              Locality: Gossau
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             UserPermissions: {
               CanEdit: true,
               IsRequestInformalReviewVisible: false,
               CanCreateMessages: true,
-              CanFinishCorrection: false,
+              CanFinishCorrection: true,
               CanSetCollectionPeriod: false,
               CanEnable: false,
               CanDelete: false,
@@ -184,7 +202,8 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
             Wording: true,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_5,
@@ -193,79 +212,27 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Das kantonale Baugesetz wird wie folgt ergänzt:
-Für alle Bauprojekte des Kantons ab einem Investitionsvolumen von 2 Mio. Franken sind die wichtigsten Entscheidungsgrundlagen, Kostenpläne und Vergabekriterien öffentlich zugänglich zu machen.
-Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentlicher Mittel zu erhöhen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 215 (neu) – Förderung von Musik im Alltag
+1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
           Collection: {
             Id: Guid_5,
-            Description: Transparenz bei kantonalen Bauprojekten (p: Reader),
+            Description: Für mehr Musik im Alltag (Klang-Initiative) (p: Deputy),
             Type: Initiative,
-            Reason: Kantonale Bauprojekte sollen für die Öffentlichkeit nachvollziehbar sein!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/bauprojekte-transparenz.html,
-            SignatureSheetTemplateGenerated: false,
-            State: PreRecorded,
-            Address: {
-              CommitteeOrPerson: Verein Bauen für Alle,
-              StreetOrPostOfficeBox: Lerchenweg 12,
-              ZipCode: 8400,
-              Locality: Winterthur
-            },
-            IsElectronicSubmission: false,
-            InformalReviewRequested: false,
-            UserPermissions: {
-              CanEdit: true,
-              IsRequestInformalReviewVisible: false,
-              CanCreateMessages: true,
-              CanFinishCorrection: false,
-              CanSetCollectionPeriod: true,
-              CanEnable: false,
-              CanDelete: false,
-              CanDeleteWithdrawn: false,
-              CanAddSignatureSheet: false,
-              CanReadSignatureSheets: false,
-              CanCheckSamples: false,
-              CanSubmitSignatureSheets: false,
-              CanFinish: false,
-              CanGenerateDocuments: false,
-              CanEditAdmissibilityDecision: true,
-              CanDeleteAdmissibilityDecision: true,
-              CanEditGeneralInformation: true,
-              CanReturnForCorrection: false
-            }
-          },
-          GovernmentDecisionNumber: CH-123.4568,
-          AdmissibilityDecisionState: Valid,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_6,
-          DomainOfInfluenceType: Ct,
-          Bfs: 17,
-          MinSignatureCount: 4000,
-          MaxElectronicSignatureCount: 1000,
-          Wording:
-Das kantonale Gesetz über den öffentlichen Verkehr wird wie folgt ergänzt:
-
-Der Kanton fördert den Ausbau und die Nutzung von nachhaltigen Mobilitätsformen wie ÖV, Fahrrad und Carsharing.
-Bis 2030 soll der Anteil des motorisierten Individualverkehrs um 20% reduziert werden.
-Zur Umsetzung werden gezielte Investitionen in Infrastruktur und Sensibilisierungskampagnen getätigt.,
-          Collection: {
-            Id: Guid_6,
-            Description: Initiative für nachhaltige Mobilität (p: Deputy),
-            Type: Initiative,
-            Reason: Förderung von umweltfreundlichen Verkehrsmitteln und Reduktion des CO2-Ausstoßes im Kanton St. Gallen.,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/nachhaltige-mobilitaet.html,
+            Reason:
+Musik verbindet – ob im Chörli, in der Schulband oder beim spontanen «Zäuerle». Die St.Gallerinnen und St.Galler sind kreativ, aber im Alltag bleibt das Musizieren oft hinter Terminen, Lärm und Hektik zurück.
+Diese Initiative verlangt keinen neuen Behördenapparat, sondern ein Bewusstsein: Musik gehört in den Alltag, nicht nur auf die Bühne. Ob Strassenmusikfest, offenes Singen, Jugendband oder Rentnerjazz, gemeinsames Musizieren schafft Freude, baut Brücken und weckt Erinnerungen.
+Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitzuschwingen. Denn ein Kanton, der zusammen singt, streitet weniger laut.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
-              CommitteeOrPerson: Verein Zukunft Mobilität,
-              StreetOrPostOfficeBox: Mobilitätsweg 10,
-              ZipCode: 9000,
-              Locality: St. Gallen
+              CommitteeOrPerson: Komitee Klang-Initiative,
+              StreetOrPostOfficeBox: Klangweg 22,
+              ZipCode: 9400,
+              Locality: Rorschach
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -295,28 +262,32 @@ Zur Umsetzung werden gezielte Investitionen in Infrastruktur und Sensibilisierun
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_7,
+          Id: Guid_6,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording: ,
           Collection: {
-            Id: Guid_7,
-            Description: Seen Initiative,
+            Id: Guid_6,
+            Description: Für kantonale Sternenwanderungen (Sternenhimmel-Initiative),
             Type: Initiative,
-            Reason: Seen vor dem Abwasser schützen,
-            Link: https://sg.ch/seen/,
+            Reason:
+Der Sternenhimmel über St.Gallen ist beeindruckend – doch wenige schauen noch hinauf. Die «Sternenhimmel-Initiative» will regelmässige Sternenwanderungen und Astronomie-Treffs im ganzen Kanton fördern.
+Sternengucken ist mehr als Hobby – es ist Staunen, Entschleunigung und Naturwissenschaft zum Anfassen. Mit einfachen Fernrohren und sachkundiger Begleitung entstehen magische Momente unter freiem Himmel.
+Die Initiative fordert keine Observatorien, sondern unkomplizierte Nachtwanderungen an dunklen Orten. Ein bisschen Himmel beobachten, Sternbilder lernen und gemeinsam staunen – das verbindet Jung und Alt im ganzen Kanton.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreRecorded,
             Address: {
-              CommitteeOrPerson: Komitee Abwasser Initiative,
-              StreetOrPostOfficeBox: Langstrasse 200,
-              ZipCode: 8005,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Sternenhimmel-Initiative,
+              StreetOrPostOfficeBox: Sternenweg 23,
+              ZipCode: 9500,
+              Locality: Wil
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
@@ -341,12 +312,14 @@ Zur Umsetzung werden gezielte Investitionen in Infrastruktur und Sensibilisierun
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             CollectionEndDate: {
-              Seconds: 1586437930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 4,
+              Day: 9
             },
             PeriodState: InCollection
           },
@@ -356,28 +329,32 @@ Zur Umsetzung werden gezielte Investitionen in Infrastruktur und Sensibilisierun
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_8,
+          Id: Guid_7,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording: ,
           Collection: {
-            Id: Guid_8,
-            Description: Abwasser Initiative 1,
+            Id: Guid_7,
+            Description: Für kantonale Brunch-Treffs (Kantons-Brunch-Initiative),
             Type: Initiative,
-            Reason: Gewässer vor dem Abwasser schützen,
-            Link: https://sg.ch/abwasser/,
+            Reason:
+Gemeinsames Brunchen verbindet – doch öffentliche Orte für Sonntagsbrunch fehlen im Kanton. Die «Kantons-Brunch-Initiative» will regelmässige Brunch-Treffs in Parks und Gemeindehäusern fördern.
+Ein Brunch-Treff ist mehr als Essen – er ist Begegnung, Entspannung und Quartierkultur. Mit einfachen Tischen, Sitzbänken und freundlicher Atmosphäre entstehen Treffpunkte für Jung und Alt.
+Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunches, die von Gemeinden oder Vereinen organisiert werden. Ein bisschen gemeinsam Essen, Plaudern und Geniessen – das stärkt den Zusammenhalt im ganzen Kanton.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreRecorded,
             Address: {
-              CommitteeOrPerson: Komitee Abwasser Initiative,
-              StreetOrPostOfficeBox: Langstrasse 200,
-              ZipCode: 8005,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Kantons-Brunch,
+              StreetOrPostOfficeBox: Brunchweg 8,
+              ZipCode: 9320,
+              Locality: Arbon
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
@@ -408,38 +385,45 @@ Zur Umsetzung werden gezielte Investitionen in Infrastruktur und Sensibilisierun
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_9,
+          Id: Guid_8,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Die Bundesverfassung[1] wird wie folgt geändert:
-Art. 93 Abs. 4
-Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebühren. Das Empfangen von Programmen begründet keine Beitragspflicht.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 215 (neu) – Förderung von Musik im Alltag
+1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
           Collection: {
-            Id: Guid_9,
-            Description: Radio und Fernsehen – ohne Billag,
+            Id: Guid_8,
+            Description: Für mehr Musik im Alltag (Klang-Initiative),
             Type: Initiative,
-            Reason: Keine Gebühren mehr für Radio und Fernsehen,
-            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis446t.html,
+            Reason:
+Musik verbindet – ob im Chörli, in der Schulband oder beim spontanen «Zäuerle». Die St.Gallerinnen und St.Galler sind kreativ, aber im Alltag bleibt das Musizieren oft hinter Terminen, Lärm und Hektik zurück.
+Diese Initiative verlangt keinen neuen Behördenapparat, sondern ein Bewusstsein: Musik gehört in den Alltag, nicht nur auf die Bühne.
+Ob Strassenmusikfest, offenes Singen, Jugendband oder Rentnerjazz, gemeinsames Musizieren schafft Freude, baut Brücken und weckt Erinnerungen.
+Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitzuswingen. Denn ein Kanton, der zusammen singt, streitet weniger laut.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_10,
-              CollectionId: Guid_9,
+              Id: Guid_9,
+              CollectionId: Guid_8,
               TotalCitizenCount: 5825,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 487
             },
             Address: {
-              CommitteeOrPerson: Schweizer Medienverband,
-              StreetOrPostOfficeBox: Medienstrasse 22,
-              ZipCode: 8005,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Aussichtsturm-Initiative,
+              StreetOrPostOfficeBox: Turmweg 31,
+              ZipCode: 9056,
+              Locality: Gais
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -464,12 +448,14 @@ Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebü
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             PeriodState: Expired
           },
@@ -479,32 +465,37 @@ Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebü
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_11,
+          Id: Guid_10,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Das Gesetz über das öffentliche Beschaffungswesen wird wie folgt ergänzt:
-Alle vergebenen öffentlichen Aufträge ab einem Wert von 50'000 Franken sind mit den wichtigsten Vergabekriterien und dem Zuschlagsentscheid öffentlich zugänglich zu machen.
-
-Ziel ist es, die Nachvollziehbarkeit und Fairness bei der Vergabe öffentlicher Aufträge zu erhöhen und Korruption vorzubeugen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 214 (neu) – Förderung kantonaler Wandertage
+1 Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.
+2 Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.
+3 Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.,
           Collection: {
-            Id: Guid_11,
-            Description: Mehr Transparenz bei öffentlichen Aufträgen (p: Reader),
+            Id: Guid_10,
+            Description: Für kantonale Wandertage (Wandertag-Initiative) (p: Reader),
             Type: Initiative,
-            Reason: Öffentliche Aufträge sollen nachvollziehbar und fair vergeben werden.,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/mehr-transparenz-oeffentliche-auftraege.html,
+            Reason:
+Wandern verbindet – doch gemeinsame Wandertage für alle fehlen im Kanton. Die «Wandertag-Initiative» will regelmässige kantonale Wandertage mit verschiedenen Routen und Schwierigkeitsgraden fördern.
+Wandern ist mehr als Bewegung – es ist Naturerlebnis, Gemeinschaft und Gesundheitsförderung. Mit gut markierten Routen und geselligen Treffpunkten entstehen Begegnungen zwischen Stadt und Land, Jung und Alt.
+Die Initiative fordert keine Marathon-Wanderungen, sondern einfache Tagestouren für Familien und Senioren. Ein bisschen gemeinsam unterwegs sein – das stärkt Zusammenhalt und Verbundenheit mit der Heimat.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
-              CommitteeOrPerson: Verein Digitale Verantwortung,
-              StreetOrPostOfficeBox: Zentralstrasse 19,
-              ZipCode: 8003,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Wandertag-Initiative,
+              StreetOrPostOfficeBox: Bergweg 33,
+              ZipCode: 9107,
+              Locality: Urnäsch
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: true,
@@ -534,28 +525,37 @@ Ziel ist es, die Nachvollziehbarkeit und Fairness bei der Vergabe öffentlicher 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_12,
+          Id: Guid_11,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 500,
-          Wording: Die Initiative fordert strengere Grenzwerte für Luftschadstoffe und die Förderung des öffentlichen Verkehrs.,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 218 (neu) – Förderung kantonaler Spielplätze
+1 Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
+2 Er kann Gemeinden finanziell und beratend unterstützen.
+3 Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
           Collection: {
-            Id: Guid_12,
-            Description: Initiative für bessere Luftqualität,
+            Id: Guid_11,
+            Description: Für kantonale Spielplätze (Spielplatz-Initiative),
             Type: Initiative,
-            Reason: Reduktion von Feinstaub und Stickoxiden in städtischen Gebieten.,
-            Link: https://www.umwelt-sg.ch/luftqualitaet-initiative,
+            Reason:
+Spielen ist Kinderrecht – doch moderne, sichere Spielplätze fehlen vielerorts. Die «Spielplatz-Initiative» will mehr gut ausgestattete Spielplätze im ganzen Kanton schaffen.
+Ein Spielplatz ist mehr als Rutsche und Schaukel – er ist Bewegung, Kreativität und Begegnung. Mit vielfältigen Spielgeräten und natürlichen Materialien entstehen Abenteuerorte für alle Altersgruppen.
+Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielplätze in Wohnnähe. Ein bisschen mehr Raum zum Spielen – das ist Investition in die Zukunft.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Submitted,
             Address: {
-              CommitteeOrPerson: Schweizer Verkehrsforum,
-              StreetOrPostOfficeBox: Bahnhofstrasse 58,
-              ZipCode: 8001,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Spielplatz-Initiative,
+              StreetOrPostOfficeBox: Spielweg 9,
+              ZipCode: 9443,
+              Locality: Widnau
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -585,30 +585,37 @@ Ziel ist es, die Nachvollziehbarkeit und Fairness bei der Vergabe öffentlicher 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_13,
+          Id: Guid_12,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Am 16. August 2007 wurde die Volksinitiative «Wiedereinführung von Schulnoten ab der 4. Klasse» (nachfolgend Noteninitiative) eingereicht.
-Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis zur 6. Klasse der Primarschule.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 225 (neu) – Förderung kantonaler Panoramawege
+1 Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.
+2 Er kann Gemeinden bei Bau und Beschilderung unterstützen.
+3 Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.,
           Collection: {
-            Id: Guid_13,
-            Description: Wiedereinführung von Schulnoten ab der 4. Klasse,
+            Id: Guid_12,
+            Description: Für kantonale Panoramawege (Panorama-Initiative),
             Type: Initiative,
-            Reason: Die Schülerinnen und Schüler der 1. bis 6. Klasse der Volksschulen von Appenzell Ausserrhoden werden heute nicht mit Noten sondern mit Worten beurteilt.,
-            Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/abgeschlossene-volksinitiativen/,
+            Reason:
+St.Gallen hat atemberaubende Aussichten – doch viele bleiben unentdeckt. Die «Panorama-Initiative» will Panoramawege mit spektakulären Aussichten im ganzen Kanton schaffen.
+Ein Panoramaweg ist mehr als Wanderweg – er ist Inspiration, Naturerlebnis und Stolz auf die Heimat. Mit Aussichtsplattformen und Informationstafeln entstehen unvergessliche Erlebnisse.
+Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schönsten Aussichtspunkten. Ein bisschen Panorama geniessen – das verbindet Menschen mit ihrer Landschaft.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreparingForCollection,
             Address: {
-              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
-              StreetOrPostOfficeBox: Burgstrasse 4,
-              ZipCode: 3600,
-              Locality: Thun
+              CommitteeOrPerson: Komitee Panorama-Initiative,
+              StreetOrPostOfficeBox: Aussichtsweg 19,
+              ZipCode: 9100,
+              Locality: Herisau
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -633,12 +640,14 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1583845930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 3,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1597065130,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Published
           },
@@ -648,28 +657,37 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_14,
+          Id: Guid_13,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 500,
-          Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 217 (neu) – Förderung öffentlicher Leseecken
+1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
           Collection: {
-            Id: Guid_14,
-            Description: Motorfahrzeugsteuer-Initiative,
+            Id: Guid_13,
+            Description: Für kantonale Leseecken (Leseecken-Initiative),
             Type: Initiative,
-            Reason: Mehr Autos in der Stadt!,
-            Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
+            Reason:
+Lesen bildet – doch gemütliche Leseecken im öffentlichen Raum fehlen. Die «Leseecken-Initiative» will mehr Orte zum Lesen, Schmökern und Verweilen im ganzen Kanton schaffen.
+Eine Leseecke ist mehr als Bücherschrank – sie ist Bildung, Rückzug und Kultur. Mit bequemen Sitzgelegenheiten, Wetterschutz und Buchspenden entstehen kleine Lesepar adiese.
+Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in Bahnhöfen, Parks und Gemeindehäusern. Ein bisschen Zeit zum Lesen – das bereichert den Alltag.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Submitted,
             Address: {
-              CommitteeOrPerson: Schweizer Verkehrsforum,
-              StreetOrPostOfficeBox: Bahnhofstrasse 58,
-              ZipCode: 8001,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Leseecken-Initiative,
+              StreetOrPostOfficeBox: Buchweg 14,
+              ZipCode: 9470,
+              Locality: Buchs
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -699,29 +717,38 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_15,
+          Id: Guid_14,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          Wording: Wohnraum für alle,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 221 (neu) – Förderung kantonaler Begegnungsräume
+1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
           Collection: {
-            Id: Guid_15,
-            Description: Wohnschutz-Initiative,
+            Id: Guid_14,
+            Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
             Type: Initiative,
-            Reason: Wir brauchen Wohnraum!,
-            Link: https://www.wohnraum-schuetzen.ch/,
+            Reason:
+Begegnung braucht Raum – doch offene Treffpunkte fehlen vielerorts. Die «Begegnungs-Initiative» will mehr öffentliche Räume schaffen, wo Menschen zusammenkommen können.
+Ein Begegnungsraum ist mehr als ein Saal – er ist Austausch, Kultur und Gemeinschaft. Mit niederschwelligem Zugang und flexibler Nutzung entstehen lebendige Treffpunkte.
+Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Vereine, Gruppen und Nachbarschaften. Ein bisschen Raum für Begegnung – das stärkt den gesellschaftlichen Zusammenhalt.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: ReturnedForCorrection,
             Address: {
-              CommitteeOrPerson: Verein für Wohnschutz,
-              StreetOrPostOfficeBox: Rheinstrasse 17,
-              ZipCode: 4058,
-              Locality: Basel
+              CommitteeOrPerson: Komitee Begegnungs-Initiative,
+              StreetOrPostOfficeBox: Begegnungsweg 12,
+              ZipCode: 9015,
+              Locality: St.Gallen
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             UserPermissions: {
               CanEdit: true,
@@ -750,7 +777,64 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
             Wording: false,
             Description: true,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
+        },
+        {
+          Id: Guid_15,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording: ,
+          Collection: {
+            Id: Guid_15,
+            Description: Für mehr Sonntagskonzerte (Sonntagsmusik-Initiative),
+            Type: Initiative,
+            Reason:
+Sonntagskonzerte in Kirchen und Gemeindehäusern sind Tradition – doch das Angebot wird kleiner. Die «Sonntagsmusik-Initiative» will Live-Musik am Sonntag im ganzen Kanton fördern.
+Sonntagskonzerte sind mehr als Unterhaltung – sie sind Kultur, Gemeinschaft und Entspannung. Mit verschiedenen Musikstilen und niederschwelligem Zugang entstehen musikalische Oasen für alle.
+Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte in bestehenden Räumen. Ein bisschen Live-Musik am Sonntag – das bereichert den Alltag und bringt Menschen zusammen.,
+            Link: https://www.sg.ch/,
+            SignatureSheetTemplateGenerated: false,
+            State: PreRecorded,
+            Address: {
+              CommitteeOrPerson: Komitee Sonntagsmusik,
+              StreetOrPostOfficeBox: Musikgasse 7,
+              ZipCode: 9450,
+              Locality: Altstätten
+            },
+            IsElectronicSubmission: false,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: true,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: true,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: true,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: true,
+              CanDeleteAdmissibilityDecision: true,
+              CanEditGeneralInformation: true,
+              CanReturnForCorrection: false
+            }
+          },
+          GovernmentDecisionNumber: CH-123.45612,
+          AdmissibilityDecisionState: Rejected,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_16,
@@ -761,17 +845,20 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
           Wording: ,
           Collection: {
             Id: Guid_16,
-            Description: Abwasser Initiative 3,
+            Description: Für kantonale Jass-Turniere (Kantons-Jass-Initiative),
             Type: Initiative,
-            Reason: Gewässer vor dem Abwasser schützen,
-            Link: https://sg.ch/abwasser/,
+            Reason:
+Jassen ist Schweizer Tradition – doch organisierte Jass-Turniere für alle fehlen im Kanton. Die «Kantons-Jass-Initiative» will regelmässige Jass-Treffs und Turniere in allen Regionen fördern.
+Jassen ist mehr als Kartenspiel – es ist Geselligkeit, Strategie und Generationenaustausch. Mit einfachen Rahmenbedingungen und freundlicher Atmosphäre entstehen Begegnungsorte für alle Altersgruppen.
+Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Jass-Nachmittage in Gemeindehäusern und Restaurants. Ein bisschen Karten spielen, plaudern und miteinander lachen – das stärkt den Zusammenhalt im Kanton.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreRecorded,
             Address: {
-              CommitteeOrPerson: Komitee Abwasser Initiative,
-              StreetOrPostOfficeBox: Langstrasse 200,
-              ZipCode: 8005,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Kantons-Jass,
+              StreetOrPostOfficeBox: Jassweg 42,
+              ZipCode: 9400,
+              Locality: Rorschach
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
@@ -796,86 +883,43 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
               CanReturnForCorrection: false
             }
           },
-          GovernmentDecisionNumber: CH-123.45610,
-          AdmissibilityDecisionState: Rejected,
+          GovernmentDecisionNumber: CH-123.45611,
+          AdmissibilityDecisionState: ValidButSubjectToConditions,
           LockedFields: {
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_17,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          MaxElectronicSignatureCount: 1000,
-          Wording: ,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
           Collection: {
             Id: Guid_17,
-            Description: Abwasser Initiative 2,
+            Description: Für kantonale Velorouten (Velorouten-Initiative),
             Type: Initiative,
-            Reason: Gewässer vor dem Abwasser schützen,
-            Link: https://sg.ch/abwasser/,
-            SignatureSheetTemplateGenerated: false,
-            State: PreRecorded,
-            Address: {
-              CommitteeOrPerson: Komitee Abwasser Initiative,
-              StreetOrPostOfficeBox: Langstrasse 200,
-              ZipCode: 8005,
-              Locality: Zürich
-            },
-            IsElectronicSubmission: false,
-            InformalReviewRequested: false,
-            UserPermissions: {
-              CanEdit: true,
-              IsRequestInformalReviewVisible: false,
-              CanCreateMessages: true,
-              CanFinishCorrection: false,
-              CanSetCollectionPeriod: true,
-              CanEnable: false,
-              CanDelete: false,
-              CanDeleteWithdrawn: false,
-              CanAddSignatureSheet: false,
-              CanReadSignatureSheets: false,
-              CanCheckSamples: false,
-              CanSubmitSignatureSheets: false,
-              CanFinish: false,
-              CanGenerateDocuments: false,
-              CanEditAdmissibilityDecision: true,
-              CanDeleteAdmissibilityDecision: true,
-              CanEditGeneralInformation: true,
-              CanReturnForCorrection: false
-            }
-          },
-          GovernmentDecisionNumber: CH-123.45610,
-          AdmissibilityDecisionState: ValidButSubjectToConditions,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_18,
-          DomainOfInfluenceType: Ct,
-          Bfs: 17,
-          MinSignatureCount: 4000,
-          MaxElectronicSignatureCount: 500,
-          Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
-          Collection: {
-            Id: Guid_18,
-            Description: Initiative für nachhaltige Stadtentwicklung,
-            Type: Initiative,
-            Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
-            Link: https://www.stadtentwicklung-sg.ch/initiative,
+            Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Submitted,
             Address: {
-              CommitteeOrPerson: Schweizer Verkehrsforum,
-              StreetOrPostOfficeBox: Bahnhofstrasse 58,
-              ZipCode: 8001,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Velorouten-Initiative,
+              StreetOrPostOfficeBox: Veloweg 28,
+              ZipCode: 9220,
+              Locality: Bischofszell
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -906,31 +950,37 @@ Diese beinhaltet im Wesentlichen die Wiedereinführung von Noten von der 4. bis 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_19,
+          Id: Guid_18,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Diese Initiative fordert eine umfassende Bildungsreform auf Kantonsebene.
-Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
-in Schulen voranzutreiben.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 223 (neu) – Förderung kantonaler Volksfeste
+1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
           Collection: {
-            Id: Guid_19,
-            Description: Kantonale Bildungsreform,
+            Id: Guid_18,
+            Description: Für kantonale Volksfeste (Volksfest-Initiative),
             Type: Initiative,
-            Reason: Bildung für die Zukunft!,
-            Link: https://www.sg.ch/home/bildungsreform.html,
+            Reason:
+Volksfeste verbinden – doch grosse gemeinsame Feste fehlen oft. Die «Volksfest-Initiative» will regelmässige kantonale Volksfeste fördern, die alle Regionen einbeziehen.
+Ein Volksfest ist mehr als Unterhaltung – es ist Kultur, Identität und Zusammengehörigkeit. Mit Musik, lokalen Spezialitäten und Attraktionen entstehen unvergessliche Erlebnisse.
+Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, die Traditionen pflegen und neue schaffen. Ein bisschen gemeinsam Feiern – das stärkt das Wir-Gefühl im Kanton.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: ReadyForRegistration,
             Address: {
-              CommitteeOrPerson: Verein Bildung für Alle,
-              StreetOrPostOfficeBox: Lerchenweg 12,
-              ZipCode: 8400,
-              Locality: Winterthur
+              CommitteeOrPerson: Komitee Volksfest-Initiative,
+              StreetOrPostOfficeBox: Festweg 17,
+              ZipCode: 9620,
+              Locality: Lichtensteig
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -961,38 +1011,41 @@ in Schulen voranzutreiben.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_20,
+          Id: Guid_19,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
           Collection: {
-            Id: Guid_20,
-            Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Id: Guid_19,
+            Description: Für eine tägliche Portion Natur (Frischluftinitiative),
             Type: Initiative,
-            Reason: Frauen sollen auch wählen dürfen,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_21,
-              CollectionId: Guid_20,
+              Id: Guid_20,
+              CollectionId: Guid_19,
               HasTotalCitizenCount: true
             },
             Address: {
-              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-              StreetOrPostOfficeBox: Bahnhofplatz 6,
-              ZipCode: 2502,
-              Locality: Biel/Bienne
+              CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+              StreetOrPostOfficeBox: Picknickweg 13,
+              ZipCode: 9602,
+              Locality: Bazenheid
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1017,12 +1070,14 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -1032,43 +1087,44 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_22,
+          Id: Guid_21,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
-
-In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
-im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
-zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
-
-In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
-Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 231 (neu) – Förderung öffentlicher Kräutergärten
+1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
           Collection: {
-            Id: Guid_22,
-            Description: Freie Schulwahl auf der Oberstufe,
+            Id: Guid_21,
+            Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
             Type: Initiative,
-            Reason: Jeder darf wählen an welche Schule er gehen möchte,
-            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            Reason:
+Kräuter sind nützlich und schön – doch Kräutergärten zum Kennenlernen sind rar. Die «Kräutergarten-Initiative» will öffentliche Kräutergärten zum Riechen, Lernen und Ernten schaffen.
+Ein Kräutergarten ist mehr als Beet – er ist Wissen, Duft und alte Tradition. Mit Informationstafeln und vielfältigen Kräutern entstehen Lernorte für alle.
+Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Parks und Schulhöfen, wo jeder ernten darf. Ein bisschen Kräuterwissen – das verbindet mit Natur und Küche.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_23,
-              CollectionId: Guid_22,
+              Id: Guid_22,
+              CollectionId: Guid_21,
               TotalCitizenCount: 3487,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 15
             },
             Address: {
-              CommitteeOrPerson: Bildungsethik Schweiz,
-              StreetOrPostOfficeBox: Rosenweg 4,
-              ZipCode: 3000,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Kräutergarten-Initiative,
+              StreetOrPostOfficeBox: Kräuterweg 16,
+              ZipCode: 9240,
+              Locality: Uzwil
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1093,12 +1149,14 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1562764330,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -1113,30 +1171,37 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
             Year: 2020,
             Month: 1,
             Day: 15
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_24,
+          Id: Guid_23,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
-Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 224 (neu) – Förderung kantonaler Feuerstellen
+1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
           Collection: {
-            Id: Guid_24,
-            Description: Kantonale Gesundheitsreform,
+            Id: Guid_23,
+            Description: Für kantonale Feuerstellen (Feuerstellen-Initiative),
             Type: Initiative,
-            Reason: Gesundheit für alle!,
-            Link: https://www.sg.ch/home/gesundheitsreform.html,
+            Reason:
+Feuer fasziniert – doch sichere Feuerstellen im Öffentlichen Raum sind selten. Die «Feuerstellen-Initiative» will mehr offizielle Feuerstellen in Parks und Erholungsgebieten schaffen.
+Eine Feuerstelle ist mehr als Lagerfeuer – sie ist Gemütlichkeit, Naturerlebnis und Gemeinschaft. Mit sicherer Bauweise und klaren Regeln entstehen beliebte Treffpunkte.
+Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstellen mit Holzvorrat und Sitzgelegenheiten. Ein bisschen Lagerfeuer-Romantik – das bereichert Familienausflüge und Wanderungen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Registered,
             Address: {
-              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
-              StreetOrPostOfficeBox: Burgstrasse 4,
-              ZipCode: 3600,
-              Locality: Thun
+              CommitteeOrPerson: Komitee Feuerstellen-Initiative,
+              StreetOrPostOfficeBox: Feuerweg 25,
+              ZipCode: 9630,
+              Locality: Wattwil
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1167,33 +1232,37 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_25,
+          Id: Guid_24,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
-Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
-dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
-
-Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
           Collection: {
-            Id: Guid_25,
-            Description: Kein Zwang gegen Kinder und Jugendliche,
+            Id: Guid_24,
+            Description: Für eine tägliche Portion Natur (Frischluftinitiative),
             Type: Initiative,
-            Reason: Kinder müssen geschützt werden!,
-            Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+            Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
-              CommitteeOrPerson: Forum für Menschenrechte,
-              StreetOrPostOfficeBox: Kramgasse 7,
-              ZipCode: 3011,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Frischluftinitiative,
+              StreetOrPostOfficeBox: Naturweg 11,
+              ZipCode: 9014,
+              Locality: St.Gallen
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1223,37 +1292,42 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_26,
+          Id: Guid_25,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Die Einheitsinitiative «Behördenlöhne vors Volk» wurde im Februar 2020 von den Stimmberechtigten abgelehnt.
-Im Rahmen des Kantonsratsbeschlusses verlangte der Kantonsrat eine Transparenz-Bestimmung.
-Diese wurde im II. Nachtrag zum Gemeindegesetz formuliert.
-Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürgerschaft gewählten Behördenmitglieder zu veröffentlichen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 226 (neu) – Förderung kantonaler Wanderhütten
+1 Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
+2 Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
+3 Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
           Collection: {
-            Id: Guid_26,
-            Description: Behördenlöhne vors Volk,
+            Id: Guid_25,
+            Description: Für kantonale Wanderhütten (Wanderhütten-Initiative),
             Type: Initiative,
-            Reason: Jeder soll wissen was ein Regierungsrat verdient!,
-            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            Reason:
+Wandern ist beliebt – doch gemütliche Wanderhütten zum Verweilen fehlen oft. Die «Wanderhütten-Initiative» will einfache Hütten als Rastplätze an Wanderwegen schaffen.
+Eine Wanderhütte ist mehr als Unterstand – sie ist Schutz, Rastplatz und Begegnungsort. Mit Bänken, Tisch und vielleicht einem Ofen entstehen kleine Refugien in der Natur.
+Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für Tageswanderer. Ein bisschen Schutz und Rastplatz – das macht Wandern noch schöner.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_27,
-              CollectionId: Guid_26,
+              Id: Guid_26,
+              CollectionId: Guid_25,
               HasTotalCitizenCount: true
             },
             Address: {
-              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
-              StreetOrPostOfficeBox: Burgstrasse 4,
-              ZipCode: 3600,
-              Locality: Thun
+              CommitteeOrPerson: Komitee Wanderhütten-Initiative,
+              StreetOrPostOfficeBox: Hüttenweg 4,
+              ZipCode: 9050,
+              Locality: Appenzell
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1278,12 +1352,14 @@ Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürge
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1583845930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 3,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1597065130,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Published
           },
@@ -1293,36 +1369,37 @@ Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürge
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_28,
+          Id: Guid_27,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Die Unterzeichnenden fordern, dass im Planungs- und Baugesetz folgender Artikel gestrichen wird:
-
-Art. 33 Inhalt Kantonale Sondernutzungspläne werden erlassen für:
-a) Abbaustellen von kantonaler und regionaler Bedeutung;
-b) Deponien von kantonaler und regionaler Bedeutung;
-c) Anlagen zur Gewinnung von Energie;
-d) Anlagen zur Nutzung des Untergrundes;
-e) Strassen und Wasserbauten, soweit sie mit Vorhaben nach Bst. a bis d dieser Bestimmung zusammenhängen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 220 (neu) – Förderung kantonaler Badi-Tage
+1 Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.
+2 Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.
+3 Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.,
           Collection: {
-            Id: Guid_28,
-            Description: Schutz der kommunalen Demokratie,
+            Id: Guid_27,
+            Description: Für kantonale Badi-Tage (Badi-Initiative),
             Type: Initiative,
-            Reason: Die kommunale Demokratie muss geschützt werden!,
-            Link: https://publikationen.sg.ch/ekab/00.149.953/publikation/,
+            Reason:
+Schwimmen ist gesund und macht Spass – doch viele Badis sind teuer oder überfüllt. Die «Badi-Initiative» will mehr Schwimmtage für Familien und Senioren zu günstigen Preisen.
+Ein Badi-Tag ist mehr als Schwimmen – er ist Erholung, Bewegung und Gemeinschaft. Mit speziellen Familien- und Seniorentagen entstehen beliebte Erlebnisse für alle.
+Die Initiative fordert keine Gratis-Eintritt, sondern regelmässige Aktionstage mit reduzierten Preisen. Ein bisschen mehr Badi für alle – das ist Lebensqualität und Gesundheitsförderung.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: NotPassed,
             Address: {
-              CommitteeOrPerson: Forum für Menschenrechte,
-              StreetOrPostOfficeBox: Kramgasse 7,
-              ZipCode: 3011,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Badi-Initiative,
+              StreetOrPostOfficeBox: Badiweg 3,
+              ZipCode: 9326,
+              Locality: Horn
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1353,40 +1430,44 @@ e) Strassen und Wasserbauten, soweit sie mit Vorhaben nach Bst. a bis d dieser B
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_29,
+          Id: Guid_28,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Jugendliche, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
+1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
           Collection: {
-            Id: Guid_29,
-            Description: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Id: Guid_28,
+            Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
             Type: Initiative,
-            Reason: Frauen sollen auch wählen dürfen,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            Reason:
+St.Gallen ist ein vielfältiger Kanton – vom Bodensee bis zum Toggenburg, von der Stadt bis ins Tal. Doch im Alltag geht das einfache «Grüezi» manchmal im digitalen Rauschen verloren. Diese Initiative will daran erinnern, dass gute Nachbarschaft kein Zufall, sondern ein Stück Lebensqualität ist.
+Sie verpflichtet den Kanton nicht zu neuen Ämtern, sondern zu einer Haltung: Gemeinschaft entsteht dort, wo Menschen einander kennen und helfen. Ob gemeinsames Dorffest, Quartiergarten oder Schneeschaufeln für den Nachbarn – solche kleinen Gesten halten den Kanton zusammen.
+Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage der Herzlichkeit.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_30,
-              CollectionId: Guid_29,
+              Id: Guid_29,
+              CollectionId: Guid_28,
               TotalCitizenCount: 100,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 42
             },
             Address: {
-              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-              StreetOrPostOfficeBox: Bahnhofplatz 6,
-              ZipCode: 2502,
-              Locality: Biel/Bienne
+              CommitteeOrPerson: Komitee Barfusspfad-Initiative,
+              StreetOrPostOfficeBox: Pfadweg 20,
+              ZipCode: 9113,
+              Locality: Degersheim
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1411,12 +1492,14 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 11
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 11
             },
             PeriodState: InCollection
           },
@@ -1426,45 +1509,37 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
-          Id: Guid_31,
+          Id: Guid_30,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 10000,
           Wording:
-Der Erlass <Gesetz über die Jagd, den Schutz der wildlebenden Säugetiere und Vögelsowie deren Lebensräume (Jagdgesetz) vom 17. November 1994> wird wie folgt geändert:
-
-Art.41 Anlagenl
-1. (neu) Grundeigentümerinnen und Grundeigentümer beachten bei Zäunen insbesondere:
-    a) Zäune aus Stacheldraht sind verboten.
-    b) Mobile Weidenetze und elektrische Zäune:
-      1. werden sachgerecht erstellt, für Wildtiere gut sichtbar gemacht, unterhalten undregel mässig kontrol liert;
-      2. dürfen nur unter Strom stehen, wenn sich in den eingezäunten Flächen Nutztierebefinden oder um Spezialkulturen oder genutzte Ackerflächen vor Schädigungenzu schützen;
-      3. werden, sofern ungenutzt, innert einem Tag vom Strom genommen.
-    c) Ungenutzte Weidenetze werden innert zweiWochen entfernt.
-    d) Permanente Zäune, die im Wald liegen oder die Zugänglichkeit des Waldeseinschränken,
-       sind grundsätzlich verboten. Ausnahmen sind zulässig,
-       wenn sie imöffentlichen lnteresse liegen und notwendig sind,
-       insbesondere zum Schutzwertvoller Lebensräume von Tieren und Pflanzen,
-       zur Waldverjüngung oder zumSchutz vor Gefahren.
-       Die Zäune werden sachgerecht erstellt, für Wildtiere gutsichtbar gemacht, unterhalten und regelmässig kontrolliert.
-       Nicht mehr genutzteZäune werden innert nützlicher Frist sachgerecht zurückgebaut.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 216 (neu) – Förderung öffentlicher Grillplätze
+1 Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+2 Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+3 Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
           Collection: {
-            Id: Guid_31,
-            Description: Stopp dem Tierleid – gegen Zäune als Todesfallen für Wildtiere,
+            Id: Guid_30,
+            Description: Für kantonale Grill-Plätze (Grill-Initiative),
             Type: Initiative,
-            Reason: Gesetzesinitiative <Stopp dem Tierleid -gegen Zäune als Todesfallen für Wildtiere,
-            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4751,
+            Reason:
+Grillieren verbindet – doch öffentliche Grillplätze sind rar im Kanton. Die «Grill-Initiative» will mehr Grillstellen in Parks, an Seeufern und Waldlichtungen schaffen.
+Ein Grillplatz ist mehr als Feuerstelle – er ist Begegnung, Genuss und Familienerlebnis. Mit sicheren Feuerstellen, Sitzbänken und Abfallbehältern entstehen beliebte Treffpunkte.
+Die Initiative fordert keine Luxus-Anlagen, sondern einfache, gepflegte Grillstellen, die allen offenstehen. Ein bisschen gemeinsam Grillieren und Geniessen – das macht den Kanton lebenswerter.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Withdrawn,
             Address: {
-              CommitteeOrPerson: Verein Pfote,
-              StreetOrPostOfficeBox: Zentralstrasse 19,
-              ZipCode: 8003,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Grill-Initiative,
+              StreetOrPostOfficeBox: Grillweg 6,
+              ZipCode: 9325,
+              Locality: Roggwil
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -1494,7 +1569,8 @@ Art.41 Anlagenl
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ]
     },

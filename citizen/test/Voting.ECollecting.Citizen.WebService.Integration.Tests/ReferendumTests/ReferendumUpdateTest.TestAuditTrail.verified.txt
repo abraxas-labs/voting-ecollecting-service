@@ -6,12 +6,15 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+        Link: https://www.sg.ch/,
         Type: 2,
         State: 2,
         LogoId: Guid_2,
-        Number: ,
-        Reason: Gerechtigkeit für alle im Kanton wahren!,
+        Reason:
+Der Kantonsrat hat beschlossen, digitale Wecker aus Schlafzimmern zu verbannen, um analoges Zeitempfinden und besseren Schlaf zu fördern.
+Das Referendumskomitee findet diese Einmischung in die Privatsphäre unangemessen.
+Wie jemand aufwacht, sollte seine eigene Entscheidung bleiben – ob mit Smartphone, mechanischem Wecker oder Sonnenaufgang.
+Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Technik und das Recht, selbst zu entscheiden, wie man den Tag beginnt.,
         Address: {
           ZipCode: 9000,
           Locality: St.Gallen,
@@ -27,7 +30,7 @@
           CreatedByName: Test Citizen Creator,
           CreatedByEmail: citizen-creator@example.com
         },
-        Description: Gerechtigkeit für alle,
+        Description: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -48,7 +51,6 @@
         Type: 2,
         State: 2,
         LogoId: Guid_2,
-        Number: ,
         Reason: Trinkwasser muss erhalten bleiben.,
         Address: {
           ZipCode: 9000,

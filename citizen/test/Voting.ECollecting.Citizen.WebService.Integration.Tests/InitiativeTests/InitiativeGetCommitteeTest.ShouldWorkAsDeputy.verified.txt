@@ -9,7 +9,7 @@
       Name: committee-list-2.pdf
     }
   ],
-  CommitteeMembers: [
+  ActiveCommitteeMembers: [
     {
       Id: Guid_3,
       FirstName: Margarita,
@@ -21,13 +21,19 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 1,
+      ZipCode: 9305,
       Email: margarita@example.com,
       PoliticalDuty: ,
       MemberSignatureRequested: true,
       ApprovalState: Requested,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: true
+      }
     },
     {
       Id: Guid_4,
@@ -40,57 +46,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 1,
+      ZipCode: 9305,
       Email: lukas.meier@example.com,
       PoliticalDuty: SVP Parteivorstand SG,
       MemberSignatureRequested: false,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
       Id: Guid_5,
-      FirstName: Sara,
-      PoliticalFirstName: Sara,
-      LastName: Schneider,
-      PoliticalLastName: Schneidi,
-      DateOfBirth: {
-        Seconds: 306115200
-      },
-      Bfs: 3203,
-      Residence: St.Gallen,
-      PoliticalBfs: 3203,
-      PoliticalResidence: St.Gallen,
-      Email: sara.schneider@example.com,
-      PoliticalDuty: FDP Parteivorstand SG,
-      MemberSignatureRequested: false,
-      ApprovalState: Rejected,
-      SignatureType: UploadedSignature,
-      CanEdit: false
-    },
-    {
-      Id: Guid_6,
-      FirstName: Yannick,
-      PoliticalFirstName: Yannick,
-      LastName: Brunner,
-      PoliticalLastName: Brunner,
-      DateOfBirth: {
-        Seconds: 699494400
-      },
-      Bfs: 3213,
-      Residence: Goldach,
-      PoliticalBfs: 3211,
-      PoliticalResidence: Berg SG,
-      Email: yannick.brunner@example.com,
-      PoliticalDuty: Gerichtsschreiber,
-      MemberSignatureRequested: true,
-      ApprovalState: Rejected,
-      SignatureType: UploadedSignature,
-      CanEdit: false
-    },
-    {
-      Id: Guid_7,
       FirstName: Elena,
       PoliticalFirstName: Eli,
       LastName: Fischer,
@@ -100,16 +72,22 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 7,
+      ZipCode: 9305,
       Email: elena.fischer@example.com,
       PoliticalDuty: SP Vorstand Wil,
       MemberSignatureRequested: true,
       ApprovalState: Requested,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: true
+      }
     },
     {
-      Id: Guid_8,
+      Id: Guid_6,
       FirstName: Thomas,
       PoliticalFirstName: Thomas,
       LastName: Keller,
@@ -119,17 +97,23 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 12,
+      ZipCode: 9000,
       Email: thomas.keller@example.com,
       PoliticalDuty: GLP Mitglied St.Gallen,
       MemberSignatureRequested: false,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_9,
+      Id: Guid_7,
       FirstName: Julia,
       PoliticalFirstName: Julia,
       LastName: Baumann,
@@ -139,17 +123,23 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Weiherweg,
+      HouseNumber: 1a,
+      ZipCode: 9000,
       Email: julia.baumann@example.com,
       PoliticalDuty: Junge Grüne SG,
       MemberSignatureRequested: false,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_10,
+      Id: Guid_8,
       FirstName: Patrick,
       PoliticalFirstName: Pädu,
       LastName: Huber,
@@ -159,17 +149,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 23,
+      ZipCode: 9305,
       Email: patrick.huber@example.com,
       PoliticalDuty: CVP Vorstand Wil,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_11,
+      Id: Guid_9,
       FirstName: Nina,
       PoliticalFirstName: Nina,
       LastName: Schmid,
@@ -179,17 +175,23 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Marktplatz,
+      HouseNumber: 20,
+      ZipCode: 9000,
       Email: nina.schmid@example.com,
       PoliticalDuty: JUSO Mitglied SG,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: VerifiedIamIdentity,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_12,
+      Id: Guid_10,
       FirstName: Daniel,
       PoliticalFirstName: Dani,
       LastName: Egli,
@@ -199,17 +201,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 90,
+      ZipCode: 9305,
       Email: daniel.egli@example.com,
       PoliticalDuty: EVP Mitglied SG,
       MemberSignatureRequested: false,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_13,
+      Id: Guid_11,
       FirstName: Laura,
       PoliticalFirstName: Laura,
       LastName: Kaiser,
@@ -219,17 +227,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 15,
+      ZipCode: 9305,
       Email: laura.kaiser@example.com,
       PoliticalDuty: GLP Mitglied Wil,
       MemberSignatureRequested: false,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_14,
+      Id: Guid_12,
       FirstName: Martin,
       PoliticalFirstName: Martin,
       LastName: Steiner,
@@ -239,17 +253,23 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Marktplatz,
+      HouseNumber: 1a,
+      ZipCode: 9000,
       Email: martin.steiner@example.com,
       PoliticalDuty: SP Vorstand St.Gallen,
       MemberSignatureRequested: false,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: true
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_15,
+      Id: Guid_13,
       FirstName: Svenja,
       PoliticalFirstName: Svenja,
       LastName: Moser,
@@ -259,17 +279,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Dorfstrasse,
+      HouseNumber: 100,
+      ZipCode: 9305,
       Email: svenja.moser@example.com,
       PoliticalDuty: Junge Mitte SG,
       MemberSignatureRequested: true,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_16,
+      Id: Guid_14,
       FirstName: Tobias,
       PoliticalFirstName: Tobi,
       LastName: Scherrer,
@@ -279,17 +305,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Unterdorfstrasse,
+      HouseNumber: 1b,
+      ZipCode: 9305,
       Email: tobias.scherrer@example.com,
       PoliticalDuty: SVP Mitglied Wil,
       MemberSignatureRequested: true,
       ApprovalState: Signed,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_17,
+      Id: Guid_15,
       FirstName: Carla,
       PoliticalFirstName: Carla,
       LastName: Arnold,
@@ -299,17 +331,23 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 11a,
+      ZipCode: 9000,
       Email: carla.arnold@example.com,
       PoliticalDuty: ,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_18,
+      Id: Guid_16,
       FirstName: Florian,
       PoliticalFirstName: Flo,
       LastName: Brunner,
@@ -319,17 +357,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Unterdorfstrasse,
+      HouseNumber: 12,
+      ZipCode: 9305,
       Email: florian.brunner@example.com,
       PoliticalDuty: SP Mitglied Wil,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_19,
+      Id: Guid_17,
       FirstName: Melanie,
       PoliticalFirstName: Melanie,
       LastName: Gerber,
@@ -339,17 +383,23 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 16a,
+      ZipCode: 9000,
       Email: melanie.gerber@example.com,
       PoliticalDuty: ,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_20,
+      Id: Guid_18,
       FirstName: Andreas,
       PoliticalFirstName: Andi,
       LastName: Keller,
@@ -359,17 +409,23 @@
       },
       Bfs: 3211,
       Residence: Berg SG,
-      PoliticalBfs: 3211,
       PoliticalResidence: Berg SG,
+      Street: Weiherweg,
+      HouseNumber: 12,
+      ZipCode: 9305,
       Email: andreas.keller@example.com,
       PoliticalDuty: ,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     },
     {
-      Id: Guid_21,
+      Id: Guid_19,
       FirstName: Sophia,
       PoliticalFirstName: Sophia,
       LastName: Schwarz,
@@ -379,18 +435,153 @@
       },
       Bfs: 3203,
       Residence: St.Gallen,
-      PoliticalBfs: 3203,
       PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 99a,
+      ZipCode: 9000,
       Email: sophia.schwarz@example.com,
       PoliticalDuty: ,
       MemberSignatureRequested: true,
       ApprovalState: Approved,
       SignatureType: UploadedSignature,
-      CanEdit: false
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
+    },
+    {
+      Id: Guid_20,
+      FirstName: Expired Not Updated,
+      PoliticalFirstName: Expired Not Updated,
+      LastName: Member,
+      PoliticalLastName: Member,
+      DateOfBirth: {
+        Seconds: 315532800
+      },
+      Bfs: 3203,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 50,
+      ZipCode: 9000,
+      Email: expired-not-updated@example.com,
+      PoliticalDuty: ,
+      MemberSignatureRequested: true,
+      ApprovalState: Requested,
+      UserPermissions: {
+        CanEdit: true,
+        CanEditPoliticalDuty: true,
+        CanResend: true
+      }
+    }
+  ],
+  RejectedOrExpiredCommitteeMembers: [
+    {
+      Id: Guid_21,
+      FirstName: Yannick,
+      PoliticalFirstName: Yannick,
+      LastName: Brunner,
+      PoliticalLastName: Brunner,
+      DateOfBirth: {
+        Seconds: 699494400
+      },
+      Bfs: 3213,
+      Residence: Goldach,
+      PoliticalResidence: Berg SG,
+      Street: Seestrasse,
+      HouseNumber: 23,
+      ZipCode: 9403,
+      Email: yannick.brunner@example.com,
+      PoliticalDuty: Gerichtsschreiber,
+      MemberSignatureRequested: true,
+      ApprovalState: Rejected,
+      SignatureType: UploadedSignature,
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
+    },
+    {
+      Id: Guid_22,
+      FirstName: Expired,
+      PoliticalFirstName: Expired,
+      LastName: Member,
+      PoliticalLastName: Member,
+      DateOfBirth: {
+        Seconds: 315532800
+      },
+      Bfs: 3203,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 60,
+      ZipCode: 9000,
+      Email: expired@example.com,
+      PoliticalDuty: ,
+      MemberSignatureRequested: true,
+      ApprovalState: Expired,
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: true
+      }
+    },
+    {
+      Id: Guid_23,
+      FirstName: Signature,
+      PoliticalFirstName: Signature,
+      LastName: Rejected,
+      PoliticalLastName: Rejected,
+      DateOfBirth: {
+        Seconds: 315532800
+      },
+      Bfs: 3203,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 98,
+      ZipCode: 9000,
+      Email: signature.rejected@example.com,
+      PoliticalDuty: ,
+      MemberSignatureRequested: true,
+      ApprovalState: SignatureRejected,
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: true
+      }
+    },
+    {
+      Id: Guid_24,
+      FirstName: Sara,
+      PoliticalFirstName: Sara,
+      LastName: Schneider,
+      PoliticalLastName: Schneidi,
+      DateOfBirth: {
+        Seconds: 306115200
+      },
+      Bfs: 3203,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      Street: Bahnhofstrasse,
+      HouseNumber: 1a,
+      ZipCode: 9000,
+      Email: sara.schneider@example.com,
+      PoliticalDuty: FDP Parteivorstand SG,
+      MemberSignatureRequested: false,
+      ApprovalState: Rejected,
+      SignatureType: UploadedSignature,
+      UserPermissions: {
+        CanEdit: false,
+        CanEditPoliticalDuty: true,
+        CanResend: false
+      }
     }
   ],
   ApprovedMembersCountOk: true,
   ApprovedMembersCount: 15,
-  TotalMembersCount: 19,
+  TotalMembersCount: 22,
   RequiredApprovedMembersCount: 3
 }

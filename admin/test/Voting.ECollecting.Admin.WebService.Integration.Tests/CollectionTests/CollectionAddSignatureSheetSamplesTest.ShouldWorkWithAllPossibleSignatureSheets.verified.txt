@@ -4,8 +4,9 @@
       Id: Guid_1,
       Number: 6,
       ReceivedAt: {
-        Seconds: 1578489130,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 8
       },
       AttestedAt: {
         Seconds: 1578575530,
@@ -18,15 +19,17 @@
         Valid: 25
       },
       State: Submitted,
-      MunicipalityName: Berg (SG),
-      Bfs: 3211
+      MunicipalityName: Berg SG,
+      Bfs: 3211,
+      ModifiedBySuperiorAuthority: false
     },
     {
       Id: Guid_2,
       Number: 7,
       ReceivedAt: {
-        Seconds: 1578402730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 7
       },
       AttestedAt: {
         Seconds: 1578489130,
@@ -40,15 +43,17 @@
         Invalid: 10
       },
       State: Submitted,
-      MunicipalityName: Berg (SG),
-      Bfs: 3211
+      MunicipalityName: Berg SG,
+      Bfs: 3211,
+      ModifiedBySuperiorAuthority: false
     },
     {
       Id: Guid_3,
       Number: 6,
       ReceivedAt: {
-        Seconds: 1578489130,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 8
       },
       AttestedAt: {
         Seconds: 1578575530,
@@ -62,14 +67,16 @@
       },
       State: Submitted,
       MunicipalityName: Goldach,
-      Bfs: 3213
+      Bfs: 3213,
+      ModifiedBySuperiorAuthority: false
     },
     {
       Id: Guid_4,
       Number: 7,
       ReceivedAt: {
-        Seconds: 1578402730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 7
       },
       AttestedAt: {
         Seconds: 1578489130,
@@ -84,14 +91,63 @@
       },
       State: Submitted,
       MunicipalityName: Goldach,
-      Bfs: 3213
+      Bfs: 3213,
+      ModifiedBySuperiorAuthority: false
     },
     {
       Id: Guid_5,
-      Number: 4,
+      Number: 6,
       ReceivedAt: {
+        Year: 2020,
+        Month: 1,
+        Day: 8
+      },
+      AttestedAt: {
+        Seconds: 1578575530,
+        Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 25,
+        Valid: 25
+      },
+      State: Submitted,
+      MunicipalityName: Rapperswil-Jona,
+      Bfs: 3340,
+      ModifiedBySuperiorAuthority: false
+    },
+    {
+      Id: Guid_6,
+      Number: 7,
+      ReceivedAt: {
+        Year: 2020,
+        Month: 1,
+        Day: 7
+      },
+      AttestedAt: {
         Seconds: 1578489130,
         Nanos: 200000000
+      },
+      CreatedByName: Test Admin,
+      ModifiedByName: default user firstname default user lastname,
+      Count: {
+        Total: 60,
+        Valid: 50,
+        Invalid: 10
+      },
+      State: Submitted,
+      MunicipalityName: Rapperswil-Jona,
+      Bfs: 3340,
+      ModifiedBySuperiorAuthority: false
+    },
+    {
+      Id: Guid_7,
+      Number: 4,
+      ReceivedAt: {
+        Year: 2020,
+        Month: 1,
+        Day: 8
       },
       AttestedAt: {
         Seconds: 1578575530,
@@ -105,15 +161,17 @@
         Invalid: 5
       },
       State: Submitted,
-      MunicipalityName: St. Gallen,
-      Bfs: 3203
+      MunicipalityName: St.Gallen,
+      Bfs: 3203,
+      ModifiedBySuperiorAuthority: false
     },
     {
-      Id: Guid_6,
+      Id: Guid_8,
       Number: 5,
       ReceivedAt: {
-        Seconds: 1578489130,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 8
       },
       AttestedAt: {
         Seconds: 1578575530,
@@ -127,15 +185,17 @@
         Invalid: 1
       },
       State: Submitted,
-      MunicipalityName: St. Gallen,
-      Bfs: 3203
+      MunicipalityName: St.Gallen,
+      Bfs: 3203,
+      ModifiedBySuperiorAuthority: false
     },
     {
-      Id: Guid_7,
+      Id: Guid_9,
       Number: 6,
       ReceivedAt: {
-        Seconds: 1578489130,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 8
       },
       AttestedAt: {
         Seconds: 1578575530,
@@ -148,15 +208,17 @@
         Valid: 25
       },
       State: Submitted,
-      MunicipalityName: St. Gallen,
-      Bfs: 3203
+      MunicipalityName: St.Gallen,
+      Bfs: 3203,
+      ModifiedBySuperiorAuthority: false
     },
     {
-      Id: Guid_8,
+      Id: Guid_10,
       Number: 7,
       ReceivedAt: {
-        Seconds: 1578402730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 7
       },
       AttestedAt: {
         Seconds: 1578489130,
@@ -170,8 +232,9 @@
         Invalid: 10
       },
       State: Submitted,
-      MunicipalityName: St. Gallen,
-      Bfs: 3203
+      MunicipalityName: St.Gallen,
+      Bfs: 3203,
+      ModifiedBySuperiorAuthority: false
     }
   ]
 }

@@ -17,9 +17,9 @@ public interface IPermissionService : Shared.Abstractions.Core.Services.IPermiss
     string TenantId { get; }
 
     /// <summary>
-    /// Gets the current timestamp in UTC.
+    /// Gets the current date.
     /// </summary>
-    DateTime Now { get; }
+    DateOnly Today { get; }
 
     /// <summary>
     /// Gets the BFS access control lists for the current user.

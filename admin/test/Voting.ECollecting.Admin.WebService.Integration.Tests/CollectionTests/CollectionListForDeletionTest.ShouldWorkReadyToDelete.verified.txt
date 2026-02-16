@@ -7,48 +7,54 @@
           Id: Guid_1,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Altersvorsorge,
+          Description: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,
           CollectionStartDate: {
-            Seconds: 1468156330,
-            Nanos: 200000000
+            Year: 2016,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1499692330,
-            Nanos: 200000000
+            Year: 2017,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20200927/altersvorsorge.html,
+          Link: https://www.admin.ch/,
           PeriodState: Expired,
           Collections: [
             {
               Id: Guid_2,
               Decree: {
                 Id: Guid_1,
-                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Altersvorsorge,
+                Description: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,
                 MinSignatureCount: 100000,
                 MaxElectronicSignatureCount: 10000
               },
-              MembersCommittee: Max Müller, Präsident SP Zürich; Laura Schmid, Vorsitzende Pro Familia Verein Bern; Thomas Keller, Finanzverantwortlicher Greenpeace Schweiz; Anna Meier, Kommunikationsbeauftragte WWF Schweiz; Felix Weber, Projektleiter Klimaschutzverein Basel; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima Zürich; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund Genf; Jonas Berger, Geschäftsführender Vorstand Junge Grüne Schweiz; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative Basel,
+              MembersCommittee: Hans Schneider, Vorsitzender Pro Senectute Bern; Monika Huber, Präsidentin Schweizerischer Rentnerverband Zürich; Thomas Berger, Finanzverantwortlicher Generationenstiftung Basel; Laura Wagner, Kommunikationsbeauftragte Schweizerischer Gewerkschaftsbund Genf; Felix Fischer, Vorstand Seniorennetzwerk Schweiz Luzern; Susanne Müller, Projektleiterin Altersforschung Zürich; Daniel Weber, Eventkoordinator Seniorengruppe Basel; Claudia Meier, Pressesprecherin Beratung für ältere Menschen Bern; Michael Schmid, Koordinator Rentnerinitiative Zürich; Isabel Keller, Vorstand Schweizerische Stiftung für Alter Genf,
               Collection: {
                 Id: Guid_2,
-                Description: Referendum gegen die Änderung der Altersvorsorge,
+                Description: Referendum gegen obligatorische Schweizerdeutsch-Kurse für Bundesangestellte,
                 Type: Referendum,
-                Reason: Generationengerechtigkeit wahren!,
-                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20200927/altersvorsorge.html,
+                Reason:
+Das Parlament hat beschlossen, dass alle deutschsprachigen Bundesangestellten Schweizerdeutsch-Kurse besuchen müssen, um die nationale Verständigung zu fördern.
+Das Referendumskomitee hält diese Pflicht für diskriminierend und unpraktisch.
+Hochdeutsch ist die Amtssprache, und nicht alle Deutschsprachigen sind in der Schweiz aufgewachsen. Zwangskurse sind kein Integrationsinstrument.
+Dieses Referendum steht für Sprachenfreiheit, Chancengleichheit und die Erkenntnis, dass Dialekt eine Wahl bleiben sollte, kein Zwang.,
+                Link: https://www.admin.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameNotAbout,
                 AttestedCollectionCount: {
                   Id: Guid_3,
                   CollectionId: Guid_2,
-                  TotalCitizenCount: 111432,
+                  TotalCitizenCount: 21632,
                   HasTotalCitizenCount: true,
-                  ElectronicCitizenCount: 1410
+                  ElectronicCitizenCount: 610
                 },
                 Address: {
-                  CommitteeOrPerson: Komitee für eine gerechte Altersvorsorge,
-                  StreetOrPostOfficeBox: Theaterplatz 1,
-                  ZipCode: 3011,
+                  CommitteeOrPerson: Personalverband des Bundes,
+                  StreetOrPostOfficeBox: Monbijoustrasse 61,
+                  ZipCode: 3007,
                   Locality: Bern
                 },
                 IsElectronicSubmission: false,
@@ -74,24 +80,25 @@
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
-                  Seconds: 1468156330,
-                  Nanos: 200000000
+                  Year: 2016,
+                  Month: 7,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1499692330,
-                  Nanos: 200000000
+                  Year: 2017,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: Expired
-              },
-              Number: 
+              }
             }
           ],
           AttestedCollectionCount: {
             Id: Guid_Empty,
             CollectionId: Guid_Empty,
-            TotalCitizenCount: 111432,
+            TotalCitizenCount: 21632,
             HasTotalCitizenCount: true,
-            ElectronicCitizenCount: 1410
+            ElectronicCitizenCount: 610
           },
           State: EndedCameNotAbout,
           CameNotAboutReason: MinSignatureCountNotReached,
@@ -99,7 +106,8 @@
             Year: 2020,
             Month: 1,
             Day: 8
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ],
       Initiatives: [
@@ -110,15 +118,21 @@
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
           Wording:
-Diese Initiative fordert eine nachhaltige Verkehrspolitik auf Bundesebene.
-Der öffentliche Verkehr soll gestärkt und der motorisierte Individualverkehr
-reduziert werden.,
+Die Bundesverfassung wird wie folgt geändert:
+Art. 69d (neu) – Förderung von Volksfesten
+1 Der Bund anerkennt Volksfeste als wichtigen Teil der Schweizer Kultur und unterstützt ihre Durchführung.
+2 Er kann Organisatoren bei der Planung und Finanzierung traditioneller Feste unterstützen.
+3 Der Bund kann Projekte fördern, die Volksfeste als Teil der regionalen Identität stärken.,
           Collection: {
             Id: Guid_4,
-            Description: Bundesweite Verkehrsinitiative,
+            Description: Für Schweizer Volksfeste (Volksfest-Initiative),
             Type: Initiative,
-            Reason: Verkehr muss nachhaltig sein!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/verkehrsinitiative.html,
+            Reason:
+Volksfeste bringen Menschen zusammen – doch traditionelle Feste brauchen Unterstützung. Diese Initiative will Schweizer Volksfeste fördern und bewahren.
+Volksfeste sind mehr als Unterhaltung – sie sind Tradition, Gemeinschaft und Identität. Mit Unterstützung lokaler Organisatoren und Förderung traditioneller Bräuche entstehen lebendige Feste.
+Die Initiative fordert keine neuen Feste, sondern Hilfe beim Erhalt bestehender Traditionen. Ein bisschen mehr Volksfest in der Schweiz – das stärkt regionale Identität und Zusammenhalt.
+Denn wer mitfeiert, gehört dazu.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
@@ -129,10 +143,10 @@ reduziert werden.,
               ElectronicCitizenCount: 587
             },
             Address: {
-              CommitteeOrPerson: Verein Verkehrsschutz,
-              StreetOrPostOfficeBox: Bahnhofstrasse 10,
-              ZipCode: 9000,
-              Locality: St. Gallen
+              CommitteeOrPerson: Komitee Volksfest-Initiative,
+              StreetOrPostOfficeBox: Festplatz 5,
+              ZipCode: 4500,
+              Locality: Solothurn
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -157,12 +171,14 @@ reduziert werden.,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 1,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -177,7 +193,8 @@ reduziert werden.,
             Year: 2020,
             Month: 1,
             Day: 9
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ]
     },
@@ -188,41 +205,47 @@ reduziert werden.,
           Id: Guid_6,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+          Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
           CollectionStartDate: {
-            Seconds: 1499692330,
-            Nanos: 200000000
+            Year: 2017,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1531228330,
-            Nanos: 200000000
+            Year: 2018,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+          Link: https://www.sg.ch/,
           PeriodState: Expired,
           Collections: [
             {
               Id: Guid_7,
               Decree: {
                 Id: Guid_6,
-                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
                 MinSignatureCount: 3000,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_7,
-                Description: Referendum gegen die Änderung des Bildungsgesetzes (withdrawn),
+                Description: Referendum gegen Jodel-Pflicht in Schulen (zurückgezogen),
                 Type: Referendum,
-                Reason: Bildungsqualität im Kanton sichern!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                Reason:
+Ein zweites Komitee hatte sich ebenfalls gegen die Jodel-Pflicht gewehrt, das Referendum aber später zurückgezogen.
+Nach Gesprächen mit dem Kantonsrat wurde ein Kompromiss gefunden: Jodeln bleibt freiwillig, wird aber gefördert.
+Das Komitee war mit dieser Lösung zufrieden und zog das Referendum zurück.
+Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen bringen als Konfrontation.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: Withdrawn,
                 Address: {
-                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
-                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Verein Freiwillige Kultur,
+                  StreetOrPostOfficeBox: St. Jakob-Strasse 55,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -247,24 +270,27 @@ reduziert werden.,
                   CanEditGeneralInformation: false,
                   CanReturnForCorrection: false
                 }
-              },
-              Number: 
+              }
             },
             {
               Id: Guid_8,
               Decree: {
                 Id: Guid_6,
-                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
                 MinSignatureCount: 3000,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_8,
-                Description: Referendum gegen die Änderung des Bildungsgesetzes,
+                Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
                 Type: Referendum,
-                Reason: Bildungsqualität im Kanton sichern!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                Reason:
+Der Kantonsrat hat beschlossen, dass alle Hausnummern im Kanton St.Gallen künftig während der Nacht beleuchtet sein müssen, um Einsatzkräfte besser zu unterstützen.
+Das Referendumskomitee befürwortet den Gedanken der Sicherheit, hält aber eine Pflichtbeleuchtung für übertrieben und zu energieintensiv.
+Reflektierende Hausnummern wären effizienter und umweltfreundlicher.
+Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünftige Regulierung – im Sinne eines hellen Verstandes statt heller Hausnummern.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
@@ -275,9 +301,9 @@ reduziert werden.,
                   ElectronicCitizenCount: 161
                 },
                 Address: {
-                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
-                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee Freie Bildungswahl,
+                  StreetOrPostOfficeBox: Oberstrasse 17,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -303,16 +329,17 @@ reduziert werden.,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
-                  Seconds: 1499692330,
-                  Nanos: 200000000
+                  Year: 2017,
+                  Month: 7,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1531228330,
-                  Nanos: 200000000
+                  Year: 2018,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: Expired
-              },
-              Number: 
+              }
             }
           ],
           AttestedCollectionCount: {
@@ -327,7 +354,8 @@ reduziert werden.,
             Year: 2020,
             Month: 1,
             Day: 5
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ],
       Initiatives: [
@@ -337,17 +365,20 @@ reduziert werden.,
           Bfs: 17,
           MinSignatureCount: 4000,
           Wording:
-Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit einem Volumen von 100 Mio. Franken. Der Fonds wird aus Mitteln des besonderen Eigenkapitals geäufnet. Die Mittel werden verwendet für:
-
-- Massnahmen zur Verminderung der CO2-Emissionen bei Gebäuden durch die Förderungen von CO2-emissionsarmen Heizsystemen und die energetische Sanierung von Gebäudehüllen;
-- den Ausbau der Stromgewinnung durch erneuerbare Energien wie Photovoltaik, Windkraft und Biomasse;
-- gezielte Massnahmen zur Energieverbrauchsreduktion.»,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 230 (neu) – Förderung von Schmetterlingsgärten
+1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
           Collection: {
             Id: Guid_10,
-            Description: Stadt St.Galler Klimafonds,
+            Description: Für Schmetterlingsgärten (Schmetterling-Initiative),
             Type: Initiative,
-            Reason: SP setzt auf ausser-parlamentarischen Druck: Klimafonds-Initiative Eingereicht,
-            Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/5660,
+            Reason:
+Schmetterlinge sind schön und wichtig für die Natur – doch ihre Lebensräume schwinden. Die «Schmetterling-Initiative» will mehr blütenreiche Gärten und Wiesen für Schmetterlinge schaffen.
+Ein Schmetterlingsgarten ist mehr als Blumen – er ist Biodiversität, Farbe und Naturbeobachtung. Mit einheimischen Pflanzen und naturnaher Pflege entstehen Paradiese für Falter.
+Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlingsfreundliche Gärten und Wiesen. Ein bisschen mehr Blüten – das hilft Schmetterlingen und erfreut Menschen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameAbout,
             AttestedCollectionCount: {
@@ -358,10 +389,10 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
               ElectronicCitizenCount: 187
             },
             Address: {
-              CommitteeOrPerson: Initiative Saubere Energie,
-              StreetOrPostOfficeBox: Aeschenplatz 6,
-              ZipCode: 4052,
-              Locality: Basel
+              CommitteeOrPerson: Komitee Schmetterling-Initiative,
+              StreetOrPostOfficeBox: Blütenweg 7,
+              ZipCode: 9524,
+              Locality: Zuzwil
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
@@ -386,12 +417,14 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 1,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -406,7 +439,8 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
             Year: 2019,
             Month: 12,
             Day: 31
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ]
     },

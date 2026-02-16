@@ -28,7 +28,7 @@ public static class CollectionQueries
         this IQueryable<T> query,
         CollectionPeriodState periodState,
         bool requireEnabledForCollection,
-        DateTime utcNow)
+        DateOnly today)
         where T : CollectionBaseEntity
     {
         if (requireEnabledForCollection)
@@ -38,9 +38,9 @@ public static class CollectionQueries
 
         return periodState switch
         {
-            CollectionPeriodState.Published => query.Where(x => x.CollectionStartDate > utcNow),
-            CollectionPeriodState.InCollection => query.Where(x => x.CollectionStartDate <= utcNow && x.CollectionEndDate >= utcNow),
-            CollectionPeriodState.Expired => query.Where(x => x.CollectionEndDate < utcNow),
+            CollectionPeriodState.Published => query.Where(x => x.CollectionStartDate > today),
+            CollectionPeriodState.InCollection => query.Where(x => x.CollectionStartDate <= today && x.CollectionEndDate >= today),
+            CollectionPeriodState.Expired => query.Where(x => x.CollectionEndDate < today),
             CollectionPeriodState.Unspecified => query.Where(x => x.CollectionStartDate.HasValue && x.CollectionEndDate.HasValue),
             _ => throw new ArgumentOutOfRangeException(nameof(periodState), periodState, null),
         };
@@ -52,16 +52,16 @@ public static class CollectionQueries
         return query.Where(x => !x.CollectionStartDate.HasValue || !x.CollectionEndDate.HasValue);
     }
 
-    public static IQueryable<T> WhereInPeriodStatePublishedOrUnspecified<T>(this IQueryable<T> query, DateTime utcNow)
+    public static IQueryable<T> WhereInPeriodStatePublishedOrUnspecified<T>(this IQueryable<T> query, DateOnly today)
         where T : CollectionBaseEntity
     {
-        return query.Where(x => !x.CollectionStartDate.HasValue || x.CollectionStartDate > utcNow);
+        return query.Where(x => !x.CollectionStartDate.HasValue || x.CollectionStartDate > today);
     }
 
-    public static IQueryable<T> WhereInPeriodStateInCollectionOrExpired<T>(this IQueryable<T> query, DateTime utcNow)
+    public static IQueryable<T> WhereInPeriodStateInCollectionOrExpired<T>(this IQueryable<T> query, DateOnly today)
         where T : CollectionBaseEntity
     {
-        return query.Where(x => x.CollectionStartDate <= utcNow);
+        return query.Where(x => x.CollectionStartDate <= today);
     }
 
     public static IQueryable<T> WhereInState<T>(this IQueryable<T> q, CollectionState state)

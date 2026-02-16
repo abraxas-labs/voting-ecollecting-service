@@ -324,7 +324,14 @@ public class CollectionFilesService : ICollectionFilesService
                 .FirstOrDefaultAsync(x => x.Id == ((InitiativeEntity)collection).SubTypeId, cancellationToken);
         }
 
-        return await _electronicSignaturesProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(collection, accessControlListDoi, subType), cancellationToken);
+        var templateData = new ECollectingProtocolTemplateData(
+            [collection],
+            accessControlListDoi,
+            collection.Description,
+            collection.DomainOfInfluenceType!.Value,
+            collection.Type == CollectionType.Referendum,
+            subType);
+        return await _electronicSignaturesProtocolGenerator.GenerateFileModel(templateData, cancellationToken);
     }
 
     internal async Task GenerateSignatureSheetTemplate(CollectionBaseEntity collection)

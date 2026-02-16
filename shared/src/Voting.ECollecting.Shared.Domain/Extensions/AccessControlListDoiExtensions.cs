@@ -43,4 +43,18 @@ public static class AccessControlListDoiExtensions
             }
         }
     }
+
+    public static IEnumerable<AccessControlListDoiEntity> GetFlattenParents(this AccessControlListDoiEntity acl)
+    {
+        while (true)
+        {
+            if (acl.Parent == null)
+            {
+                yield break;
+            }
+
+            yield return acl.Parent;
+            acl = acl.Parent;
+        }
+    }
 }

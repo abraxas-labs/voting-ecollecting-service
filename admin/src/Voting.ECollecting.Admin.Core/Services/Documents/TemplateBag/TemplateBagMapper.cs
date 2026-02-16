@@ -37,4 +37,9 @@ public static partial class TemplateBagMapper
     {
         return date.ToString("o", CultureInfo.InvariantCulture);
     }
+
+    private static string MapDateOnly(DateOnly date)
+    {
+        return date.ToString("o", CultureInfo.InvariantCulture);
+    }
 }

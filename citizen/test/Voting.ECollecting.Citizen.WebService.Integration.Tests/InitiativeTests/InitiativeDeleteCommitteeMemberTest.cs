@@ -46,9 +46,9 @@ public class InitiativeDeleteCommitteeMemberTest : BaseGrpcTest<InitiativeServic
 
         // sort indexes should be consecutive
         var sortIndexes = await RunOnDb(db => db.InitiativeCommitteeMembers
-            .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation)
+            .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation && x.SortIndex != null)
             .OrderBy(x => x.SortIndex)
-            .Select(x => x.SortIndex)
+            .Select(x => x.SortIndex!.Value)
             .ToListAsync());
 
         var i = 0;
@@ -66,13 +66,13 @@ public class InitiativeDeleteCommitteeMemberTest : BaseGrpcTest<InitiativeServic
         {
             await AuthenticatedClient.DeleteCommitteeMemberAsync(NewValidRequest());
             var result = await GetAuditTrailEntries();
-            result.AuditTrailEntries.Count.Should().Be(20);
+            result.AuditTrailEntries.Count.Should().Be(19);
             result.AuditTrailEntries.Count(e => e.SourceEntityName == "Collections" && e.Action == "Modified")
                 .Should().Be(1);
             result.AuditTrailEntries.Count(e => e.SourceEntityName == "InitiativeCommitteeMembers" && e.Action == "Deleted")
                 .Should().Be(1);
             result.AuditTrailEntries.Count(e => e.SourceEntityName == "InitiativeCommitteeMembers" && e.Action == "Modified")
-                .Should().Be(18);
+                .Should().Be(17);
         });
     }
 

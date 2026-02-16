@@ -2,11 +2,11 @@
 // For license information see LICENSE file
 
 using FluentAssertions;
-using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
+using Voting.ECollecting.Admin.WebService.Integration.Tests.Mocks;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
@@ -80,7 +80,7 @@ public class CollectionAddSignatureSheetTest : BaseGrpcTest<CollectionSignatureS
             {
                 CollectionId = ReferendumsCtStGallen.IdInCollectionEnabledForCollection,
             });
-        var id = await MuGoldachKontrollzeichenerfasserClient.AddAsync(NewValidRequest(number.Number));
+        var id = await MuGoldachKontrollzeichenerfasserClient.AddAsync(NewValidRequest(x => x.Number = number.Number));
         var created = await RunOnDb(db => db.CollectionSignatureSheets.Include(x => x.CollectionMunicipality).FirstAsync(x => x.Id == Guid.Parse(id.Id)));
         created.CollectionMunicipality!.Bfs.Should().Be(Bfs.MunicipalityGoldach);
     }
@@ -97,7 +97,7 @@ public class CollectionAddSignatureSheetTest : BaseGrpcTest<CollectionSignatureS
     public async Task NotReservedNumberShouldThrow()
     {
         await AssertStatus(
-            async () => await MuSgKontrollzeichenerfasserClient.AddAsync(NewValidRequest(20)),
+            async () => await MuSgKontrollzeichenerfasserClient.AddAsync(NewValidRequest(x => x.Number = 20)),
             StatusCode.InvalidArgument,
             "ValidationException: Cannot use a number higher than the current counter");
     }
@@ -106,7 +106,7 @@ public class CollectionAddSignatureSheetTest : BaseGrpcTest<CollectionSignatureS
     public async Task AlreadyUsedNumberShouldThrow()
     {
         await AssertStatus(
-            async () => await MuSgKontrollzeichenerfasserClient.AddAsync(NewValidRequest(8)),
+            async () => await MuSgKontrollzeichenerfasserClient.AddAsync(NewValidRequest(x => x.Number = 8)),
             StatusCode.InvalidArgument,
             "ValidationException: The number is already in use");
     }
@@ -116,7 +116,7 @@ public class CollectionAddSignatureSheetTest : BaseGrpcTest<CollectionSignatureS
     {
         await ModifyDbEntities(
             (ReferendumEntity e) => e.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-            e => e.CollectionStartDate = MockedClock.GetDate(1));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
         await AssertStatus(
             async () => await MuSgKontrollzeichenerfasserClient.AddAsync(NewValidRequest()),
             StatusCode.NotFound);
@@ -133,6 +133,15 @@ public class CollectionAddSignatureSheetTest : BaseGrpcTest<CollectionSignatureS
             StatusCode.NotFound);
     }
 
+    [Fact]
+    public async Task ReceivedAtInFutureShouldThrow()
+    {
+        await AssertStatus(
+            async () => await MuSgKontrollzeichenerfasserClient.AddAsync(NewValidRequest(x => x.ReceivedAt = MockedClock.GetDate(1).ToProtoDate())),
+            StatusCode.InvalidArgument,
+            "Received at date can't be in the future.");
+    }
+
     protected override async Task AuthorizationTestCall(GrpcChannel channel)
     {
         await new CollectionSignatureSheetService.CollectionSignatureSheetServiceClient(channel)
@@ -144,14 +153,17 @@ public class CollectionAddSignatureSheetTest : BaseGrpcTest<CollectionSignatureS
         yield return Roles.Kontrollzeichenerfasser;
     }
 
-    private static AddSignatureSheetRequest NewValidRequest(int number = 9)
+    private static AddSignatureSheetRequest NewValidRequest(Action<AddSignatureSheetRequest>? customizer = null)
     {
-        return new AddSignatureSheetRequest
+        var req = new AddSignatureSheetRequest
         {
             CollectionId = ReferendumsCtStGallen.IdInCollectionEnabledForCollection,
-            Number = number,
-            ReceivedAt = DateTime.SpecifyKind(new DateTime(2025, 5, 2), DateTimeKind.Utc).ToTimestamp(),
+            Number = 9,
+            ReceivedAt = MockedClock.NowDateOnly.ToProtoDate(),
             SignatureCountTotal = 15,
         };
+
+        customizer?.Invoke(req);
+        return req;
     }
 }

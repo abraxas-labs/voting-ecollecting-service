@@ -9,5 +9,5 @@ public class InitiativeCommitteeMember : InitiativeCommitteeMemberEntity
 {
     public string Residence { get; set; } = string.Empty;
 
-    public string PoliticalResidence { get; set; } = string.Empty;
+    public InitiativeCommitteeMemberUserPermissions? UserPermissions { get; set; }
 }

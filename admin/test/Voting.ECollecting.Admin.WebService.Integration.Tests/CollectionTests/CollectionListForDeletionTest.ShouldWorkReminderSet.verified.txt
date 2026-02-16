@@ -7,35 +7,41 @@
           Id: Guid_1,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Krankenversicherung,
+          Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
           CollectionStartDate: {
-            Seconds: 1499692330,
-            Nanos: 200000000
+            Year: 2017,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1531228330,
-            Nanos: 200000000
+            Year: 2018,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20210307/krankenversicherung.html,
+          Link: https://www.admin.ch/,
           PeriodState: Expired,
           Collections: [
             {
               Id: Guid_2,
               Decree: {
                 Id: Guid_1,
-                Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Krankenversicherung,
+                Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
                 MinSignatureCount: 100000,
                 MaxElectronicSignatureCount: 10000
               },
               MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
               Collection: {
                 Id: Guid_2,
-                Description: Referendum gegen die Änderung der Krankenversicherung,
+                Description: Referendum gegen die obligatorische tägliche Schokoladen-Pause in allen Unternehmen,
                 Type: Referendum,
-                Reason: Kostenexplosion verhindern!,
-                Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20210307/krankenversicherung.html,
+                Reason:
+Das Parlament hat beschlossen, dass alle Schweizer Unternehmen eine 15-minütige Schokoladen-Pause einführen müssen, um die Produktivität zu steigern.
+Das Referendumskomitee findet diese Vorschrift bevormundend und unpraktisch.
+Nicht alle mögen Schokolade, manche vertragen sie nicht, und viele Betriebe haben bereits eigene Pausenregelungen.
+Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und die Überzeugung, dass der Staat nicht jede Pause regulieren sollte.,
+                Link: https://www.admin.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
@@ -46,12 +52,12 @@
                   ElectronicCitizenCount: 1610
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für bezahlbare Krankenversicherung,
-                  StreetOrPostOfficeBox: Marktgasse 10,
-                  ZipCode: 3011,
-                  Locality: Bern
+                  CommitteeOrPerson: Verband Schweizer Arbeitgeber,
+                  StreetOrPostOfficeBox: Hegibachstrasse 47,
+                  ZipCode: 8032,
+                  Locality: Zürich
                 },
-                IsElectronicSubmission: false,
+                IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 UserPermissions: {
                   CanEdit: false,
@@ -74,16 +80,17 @@
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
-                  Seconds: 1499692330,
-                  Nanos: 200000000
+                  Year: 2017,
+                  Month: 7,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1531228330,
-                  Nanos: 200000000
+                  Year: 2018,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: Expired
-              },
-              Number: 
+              }
             }
           ],
           AttestedCollectionCount: {
@@ -98,7 +105,8 @@
             Year: 2020,
             Month: 1,
             Day: 18
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ],
       Initiatives: [
@@ -108,15 +116,21 @@
           Bfs: 1,
           MinSignatureCount: 100000,
           Wording:
-Diese Initiative fordert eine bessere Gesundheitsversorgung für alle.
-Die Kosten sollen gerechter verteilt und der Zugang zu medizinischer
-Versorgung verbessert werden.,
+Die Bundesverfassung wird wie folgt geändert:
+Art. 78d (neu) – Schutz alpiner Pflanzen
+1 Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.
+2 Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.
+3 Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.,
           Collection: {
             Id: Guid_4,
-            Description: Bundesweite Gesundheitsinitiative,
+            Description: Für den Schutz von Bergblumen (Bergblumen-Initiative),
             Type: Initiative,
-            Reason: Gesundheit für alle!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/gesundheitsinitiative.html,
+            Reason:
+Schweizer Bergblumen sind einzigartig – doch viele Arten sind bedroht. Diese Initiative will den Schutz alpiner Pflanzen stärken und Förderung der Artenvielfalt erreichen.
+Bergblumen sind mehr als Dekoration – sie sind Ökosystem, Naturschönheit und Touristenattraktion. Mit Schutzmassnahmen und Bildungsprojekten entstehen gesunde Lebensraüme.
+Die Initiative fordert keine Betretungsverbote, sondern achtsamen Umgang mit der Natur. Ein bisschen mehr Schutz für Bergblumen – das bewahrt Biodiversität und alpine Schönheit.
+Denn wer Blumen schützt, schützt die Berge.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameAbout,
             AttestedCollectionCount: {
@@ -127,96 +141,10 @@ Versorgung verbessert werden.,
               ElectronicCitizenCount: 8725
             },
             Address: {
-              CommitteeOrPerson: Komitee Spitälerverbund,
-              StreetOrPostOfficeBox: Langstrasse 200,
-              ZipCode: 8005,
-              Locality: Zürich
-            },
-            IsElectronicSubmission: false,
-            InformalReviewRequested: false,
-            UserPermissions: {
-              CanEdit: false,
-              IsRequestInformalReviewVisible: false,
-              CanCreateMessages: false,
-              CanFinishCorrection: false,
-              CanSetCollectionPeriod: false,
-              CanEnable: false,
-              CanDelete: false,
-              CanDeleteWithdrawn: false,
-              CanAddSignatureSheet: false,
-              CanReadSignatureSheets: false,
-              CanCheckSamples: false,
-              CanSubmitSignatureSheets: false,
-              CanFinish: false,
-              CanGenerateDocuments: false,
-              CanEditAdmissibilityDecision: false,
-              CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
-              CanReturnForCorrection: false
-            },
-            CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
-            },
-            PeriodState: Expired
-          },
-          GovernmentDecisionNumber: CHE-2023-0015,
-          AdmissibilityDecisionState: Valid,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          },
-          SensitiveDataExpiryDate: {
-            Year: 2020,
-            Month: 1,
-            Day: 20
-          }
-        }
-      ]
-    },
-    {
-      DomainOfInfluenceType: Ct,
-      Initiatives: [
-        {
-          Id: Guid_6,
-          DomainOfInfluenceType: Ct,
-          Bfs: 17,
-          MinSignatureCount: 4000,
-          MaxElectronicSignatureCount: 1000,
-          Wording:
-Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
-
-In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
-im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
-zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
-
-In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
-Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
-          Collection: {
-            Id: Guid_6,
-            Description: Freie Schulwahl auf der Oberstufe,
-            Type: Initiative,
-            Reason: Jeder darf wählen an welche Schule er gehen möchte,
-            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
-            SignatureSheetTemplateGenerated: false,
-            State: EndedCameNotAbout,
-            AttestedCollectionCount: {
-              Id: Guid_7,
-              CollectionId: Guid_6,
-              TotalCitizenCount: 3487,
-              HasTotalCitizenCount: true,
-              ElectronicCitizenCount: 15
-            },
-            Address: {
-              CommitteeOrPerson: Bildungsethik Schweiz,
-              StreetOrPostOfficeBox: Rosenweg 4,
-              ZipCode: 3000,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Bergblumen-Initiative,
+              StreetOrPostOfficeBox: Blumenweg 31,
+              ZipCode: 7000,
+              Locality: Chur
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
@@ -241,12 +169,103 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1562764330,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 1,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
+            },
+            PeriodState: Expired
+          },
+          GovernmentDecisionNumber: CHE-2023-0015,
+          AdmissibilityDecisionState: Valid,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          },
+          SensitiveDataExpiryDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 20
+          },
+          DomainOfInfluenceName: 
+        }
+      ]
+    },
+    {
+      DomainOfInfluenceType: Ct,
+      Initiatives: [
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 231 (neu) – Förderung öffentlicher Kräutergärten
+1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          Collection: {
+            Id: Guid_6,
+            Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
+            Type: Initiative,
+            Reason:
+Kräuter sind nützlich und schön – doch Kräutergärten zum Kennenlernen sind rar. Die «Kräutergarten-Initiative» will öffentliche Kräutergärten zum Riechen, Lernen und Ernten schaffen.
+Ein Kräutergarten ist mehr als Beet – er ist Wissen, Duft und alte Tradition. Mit Informationstafeln und vielfältigen Kräutern entstehen Lernorte für alle.
+Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Parks und Schulhöfen, wo jeder ernten darf. Ein bisschen Kräuterwissen – das verbindet mit Natur und Küche.,
+            Link: https://www.sg.ch/,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_7,
+              CollectionId: Guid_6,
+              TotalCitizenCount: 3487,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 15
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Kräutergarten-Initiative,
+              StreetOrPostOfficeBox: Kräuterweg 16,
+              ZipCode: 9240,
+              Locality: Uzwil
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            UserPermissions: {
+              CanEdit: false,
+              IsRequestInformalReviewVisible: false,
+              CanCreateMessages: false,
+              CanFinishCorrection: false,
+              CanSetCollectionPeriod: false,
+              CanEnable: false,
+              CanDelete: false,
+              CanDeleteWithdrawn: false,
+              CanAddSignatureSheet: false,
+              CanReadSignatureSheets: false,
+              CanCheckSamples: false,
+              CanSubmitSignatureSheets: false,
+              CanFinish: false,
+              CanGenerateDocuments: false,
+              CanEditAdmissibilityDecision: false,
+              CanDeleteAdmissibilityDecision: false,
+              CanEditGeneralInformation: false,
+              CanReturnForCorrection: false
+            },
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 7,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -261,7 +280,8 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
             Year: 2020,
             Month: 1,
             Day: 15
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ]
     },

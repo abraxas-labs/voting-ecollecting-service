@@ -5,13 +5,13 @@
       IsVotingAllowed: true,
       IsBirthDateValidForVotingRights: true,
       IsNationalityValidForVotingRights: true,
-      OfficialName: Trautmann,
-      FirstName: Lars,
+      OfficialName: Ziegler,
+      FirstName: Juliana,
       DateOfBirth: {
-        Seconds: -190944000
+        Seconds: -790732800
       },
-      ResidenceAddressStreet: Vonwilstr.,
-      ResidenceAddressHouseNumber: 29
+      ResidenceAddressStreet: Kreuzbühlstr.,
+      ResidenceAddressHouseNumber: 35
     }
   ]
 }

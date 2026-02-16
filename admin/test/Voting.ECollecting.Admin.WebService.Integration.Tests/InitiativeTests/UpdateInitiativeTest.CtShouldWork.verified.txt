@@ -9,8 +9,11 @@
     Id: Guid_1,
     Description: foo bar baz-updated,
     Type: Initiative,
-    Reason: Gewässer vor dem Abwasser schützen,
-    Link: https://sg.ch/abwasser/,
+    Reason:
+St.Gallen hat herrliche Wälder – vom Bodensee bis zum Alpstein. Doch markierte Spazierwege, die zum Entdecken einladen, gibt es zu wenig. Die «Kantonswald-Initiative» will ein Netz einfacher Waldrouten schaffen.
+Waldspazieren ist mehr als Bewegung – es ist Erholung, Naturerlebnis und Entschleunigung. Mit gut beschilderten Wegen und Rastplätzen entstehen Oasen für alle Generationen.
+Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen, die Wald erlebbar machen. Ein bisschen mehr Natur im Alltag – das tut gut und verbindet Mensch und Umwelt.,
+    Link: https://www.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -68,5 +71,6 @@
     Wording: false,
     Description: false,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St. Gallen
 }

@@ -4,11 +4,11 @@
     Collection: {
       MinSignatureCount: 4000,
       Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
       SubTypeId: Guid_2,
       GovernmentDecisionNumber: SG-123.412210,
       AdmissibilityDecisionState: Valid,
@@ -17,22 +17,24 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
         Wording: false,
         CommitteeMembers: false
       },
-      CollectionStartDate: DateTime_1,
-      CollectionEndDate: DateTime_2,
-      Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+      CollectionStartDate: Date_1,
+      CollectionEndDate: Date_2,
+      Description: Für eine tägliche Portion Natur (Frischluftinitiative),
       Type: Initiative,
-      Reason: Frauen sollen auch wählen dürfen,
-      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+      Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+      Link: https://www.sg.ch/,
       LogoId: Guid_3,
       ImageId: Guid_4,
       SignatureSheetTemplateGenerated: false,
       SignatureSheetTemplateId: Guid_5,
       State: EnabledForCollection,
       Address: {
-        CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-        StreetOrPostOfficeBox: Bahnhofplatz 6,
-        ZipCode: 2502,
-        Locality: Biel/Bienne,
+        CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+        StreetOrPostOfficeBox: Picknickweg 13,
+        ZipCode: 9602,
+        Locality: Bazenheid,
         IsComplete: true
       },
       Municipalities: [],
@@ -52,7 +54,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
             CreatedById: ,
             CreatedByName: Citizen,
             CreatedByEmail: ,
-            CreatedAt: DateTime_3
+            CreatedAt: DateTime_1
           },
           Id: Guid_8
         }
@@ -61,7 +63,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
       Bfs: 17,
       MaxElectronicSignatureCount: 1000,
       PeriodState: InCollection,
-      SignatureListSubmissionEndDate: DateTime_4,
+      SignatureListSubmissionEndDate: DateTime_2,
       IntegritySignatureInfo: {
         IntegritySignatureKeyId: 
       },
@@ -69,13 +71,13 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
         CreatedById: default-user-id,
         CreatedByName: Test Citizen Creator,
         CreatedByEmail: citizen-creator@example.com,
-        CreatedAt: DateTime_5
+        CreatedAt: DateTime_3
       },
       Id: Guid_6
     },
     CollectionId: Guid_6,
     Bfs: 3203,
-    MunicipalityName: St. Gallen,
+    MunicipalityName: St.Gallen,
     PhysicalCount: {
       Invalid: 3,
       Valid: 17,
@@ -91,24 +93,24 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
       CreatedById: default-user-id,
       CreatedByName: Test Admin,
       CreatedByEmail: admin@example.com,
-      CreatedAt: DateTime_3
+      CreatedAt: DateTime_1
     },
     Id: Guid_1
   },
   Electronic: true,
   Age: 58,
   Sex: 2,
-  CollectionDateTime: DateTime_3,
+  CollectionDateTime: DateTime_1,
   Log: {
     CollectionId: Guid_6,
     Collection: {
       MinSignatureCount: 4000,
       Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
       SubTypeId: Guid_2,
       GovernmentDecisionNumber: SG-123.412210,
       AdmissibilityDecisionState: Valid,
@@ -117,29 +119,31 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
         Wording: false,
         CommitteeMembers: false
       },
-      CollectionStartDate: DateTime_1,
-      CollectionEndDate: DateTime_2,
-      Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+      CollectionStartDate: Date_1,
+      CollectionEndDate: Date_2,
+      Description: Für eine tägliche Portion Natur (Frischluftinitiative),
       Type: Initiative,
-      Reason: Frauen sollen auch wählen dürfen,
-      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+      Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+      Link: https://www.sg.ch/,
       LogoId: Guid_3,
       ImageId: Guid_4,
       SignatureSheetTemplateGenerated: false,
       SignatureSheetTemplateId: Guid_5,
       State: EnabledForCollection,
       Address: {
-        CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-        StreetOrPostOfficeBox: Bahnhofplatz 6,
-        ZipCode: 2502,
-        Locality: Biel/Bienne,
+        CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+        StreetOrPostOfficeBox: Picknickweg 13,
+        ZipCode: 9602,
+        Locality: Bazenheid,
         IsComplete: true
       },
       Municipalities: [
         {
           CollectionId: Guid_6,
           Bfs: 3203,
-          MunicipalityName: St. Gallen,
+          MunicipalityName: St.Gallen,
           PhysicalCount: {
             Invalid: 3,
             Valid: 17,
@@ -155,7 +159,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
             CreatedById: default-user-id,
             CreatedByName: Test Admin,
             CreatedByEmail: admin@example.com,
-            CreatedAt: DateTime_3
+            CreatedAt: DateTime_1
           },
           Id: Guid_1
         }
@@ -169,7 +173,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
       Bfs: 17,
       MaxElectronicSignatureCount: 1000,
       PeriodState: InCollection,
-      SignatureListSubmissionEndDate: DateTime_4,
+      SignatureListSubmissionEndDate: DateTime_2,
       IntegritySignatureInfo: {
         IntegritySignatureKeyId: 
       },
@@ -177,7 +181,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
         CreatedById: default-user-id,
         CreatedByName: Test Citizen Creator,
         CreatedByEmail: citizen-creator@example.com,
-        CreatedAt: DateTime_5
+        CreatedAt: DateTime_3
       },
       Id: Guid_6
     },
@@ -190,7 +194,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
       CreatedById: ,
       CreatedByName: Citizen,
       CreatedByEmail: ,
-      CreatedAt: DateTime_3
+      CreatedAt: DateTime_1
     },
     Id: Guid_8
   },
@@ -201,7 +205,7 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
     CreatedById: ,
     CreatedByName: Citizen,
     CreatedByEmail: ,
-    CreatedAt: DateTime_3
+    CreatedAt: DateTime_1
   },
   Id: Guid_7
 }

@@ -5,6 +5,7 @@ using FluentAssertions;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.DecreeTests;
@@ -33,7 +34,7 @@ public class DecreeGetDocumentsTest : BaseRestTest
             async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(DecreesCh.IdInCollection)),
             "export.zip");
 
-        resp.Count.Should().Be(6);
+        resp.Count.Should().Be(5);
         await Verify(resp);
     }
 
@@ -45,6 +46,21 @@ public class DecreeGetDocumentsTest : BaseRestTest
             "export.zip");
 
         resp.Should().HaveCount(2);
+    }
+
+    [Fact]
+    public async Task ShouldGetWithReachedMaxElectronicSignatureCount()
+    {
+        await ModifyDbEntities<ReferendumEntity>(
+            x => x.DecreeId == DecreesCh.GuidInCollection,
+            x => x.MaxElectronicSignatureCount = 2);
+
+        var resp = await AssertZipDownloadAsStringEntries(
+            async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(DecreesCh.IdInCollection)),
+            "export.zip");
+
+        resp.Count.Should().Be(5);
+        await Verify(resp);
     }
 
     protected override Task<HttpResponseMessage> AuthorizationTestCall(HttpClient httpClient)

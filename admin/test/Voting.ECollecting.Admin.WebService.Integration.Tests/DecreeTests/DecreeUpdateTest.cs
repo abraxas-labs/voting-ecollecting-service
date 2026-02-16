@@ -2,7 +2,7 @@
 // For license information see LICENSE file
 
 using System.ComponentModel.DataAnnotations;
-using Google.Protobuf.WellKnownTypes;
+using Abraxas.Voting.Ecollecting.Shared.V1.Models;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
@@ -34,7 +34,7 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     {
         await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest());
         var decree = await RunOnDb(db => db.Decrees.FirstAsync(x => x.Id == DecreesCtStGallen.GuidFutureNoReferendum));
-        decree.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        decree.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(decree);
     }
 
@@ -79,7 +79,7 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     public async Task TestAsCtTenantWhenInvalidStartDateShouldThrow()
     {
         var request = NewValidRequest(r =>
-            r.CollectionStartDate = new DateTime(2000, 05, 05, 0, 0, 0, DateTimeKind.Utc).ToTimestamp());
+            r.CollectionStartDate = new Date { Day = 05, Month = 05, Year = 2000 });
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.UpdateAsync(request),
             StatusCode.NotFound);
@@ -89,7 +89,7 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     public async Task TestAsCtTenantWhenInvalidEndDateShouldThrow()
     {
         var request = NewValidRequest(r =>
-            r.CollectionEndDate = new DateTime(2024, 05, 05, 0, 0, 0, DateTimeKind.Utc).ToTimestamp());
+            r.CollectionEndDate = new Date { Day = 05, Month = 05, Year = 2024 });
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.UpdateAsync(request),
             StatusCode.InvalidArgument);
@@ -114,7 +114,7 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
         });
         await MuSgStammdatenverwalterClient.UpdateAsync(request);
         var decree = await RunOnDb(db => db.Decrees.FirstAsync(x => x.Id == DecreesMuStGallen.GuidFutureNoReferendum));
-        decree.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        decree.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(decree);
     }
 
@@ -181,8 +181,8 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
             Id = DecreesCtStGallen.IdFutureNoReferendum,
             DomainOfInfluenceType = DomainOfInfluenceType.Ct,
             Description = "Kantonsratsbeschluss Revision Wassergesetz (33-43.34) UPDATED",
-            CollectionStartDate = new DateTime(2024, 05, 05, 0, 0, 0, DateTimeKind.Utc).ToTimestamp(),
-            CollectionEndDate = new DateTime(2024, 07, 05, 0, 0, 0, DateTimeKind.Utc).ToTimestamp(),
+            CollectionStartDate = new Date { Day = 05, Month = 05, Year = 2024 },
+            CollectionEndDate = new Date { Day = 05, Month = 07, Year = 2024 },
             Link = "https://www.ratsinfo.sg.ch/geschaefte/4754-updated",
         };
         customizer?.Invoke(request);

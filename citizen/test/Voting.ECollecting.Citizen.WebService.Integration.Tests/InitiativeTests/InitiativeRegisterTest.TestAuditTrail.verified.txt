@@ -6,23 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/home/bildungsreform.html,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 8,
         LogoId: Guid_2,
-        Reason: Bildung für die Zukunft!,
+        Reason:
+Volksfeste verbinden – doch grosse gemeinsame Feste fehlen oft. Die «Volksfest-Initiative» will regelmässige kantonale Volksfeste fördern, die alle Regionen einbeziehen.
+Ein Volksfest ist mehr als Unterhaltung – es ist Kultur, Identität und Zusammengehörigkeit. Mit Musik, lokalen Spezialitäten und Attraktionen entstehen unvergessliche Erlebnisse.
+Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, die Traditionen pflegen und neue schaffen. Ein bisschen gemeinsam Feiern – das stärkt das Wir-Gefühl im Kanton.,
         Address: {
-          ZipCode: 8400,
-          Locality: Winterthur,
+          ZipCode: 9620,
+          Locality: Lichtensteig,
           IsComplete: true,
-          CommitteeOrPerson: Verein Bildung für Alle,
-          StreetOrPostOfficeBox: Lerchenweg 12
+          CommitteeOrPerson: Komitee Volksfest-Initiative,
+          StreetOrPostOfficeBox: Festweg 17
         },
         ImageId: Guid_3,
         Wording:
-Diese Initiative fordert eine umfassende Bildungsreform auf Kantonsebene.
-Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
-in Schulen voranzutreiben.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 223 (neu) – Förderung kantonaler Volksfeste
+1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -30,7 +35,7 @@ in Schulen voranzutreiben.,
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Kantonale Bildungsreform,
+        Description: Für kantonale Volksfeste (Volksfest-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -49,28 +54,34 @@ in Schulen voranzutreiben.,
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: sg-123.412225,
         SignatureSheetTemplateGenerated: true
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/home/bildungsreform.html,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 9,
         LogoId: Guid_2,
-        Reason: Bildung für die Zukunft!,
+        Reason:
+Volksfeste verbinden – doch grosse gemeinsame Feste fehlen oft. Die «Volksfest-Initiative» will regelmässige kantonale Volksfeste fördern, die alle Regionen einbeziehen.
+Ein Volksfest ist mehr als Unterhaltung – es ist Kultur, Identität und Zusammengehörigkeit. Mit Musik, lokalen Spezialitäten und Attraktionen entstehen unvergessliche Erlebnisse.
+Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, die Traditionen pflegen und neue schaffen. Ein bisschen gemeinsam Feiern – das stärkt das Wir-Gefühl im Kanton.,
         Address: {
-          ZipCode: 8400,
-          Locality: Winterthur,
+          ZipCode: 9620,
+          Locality: Lichtensteig,
           IsComplete: true,
-          CommitteeOrPerson: Verein Bildung für Alle,
-          StreetOrPostOfficeBox: Lerchenweg 12
+          CommitteeOrPerson: Komitee Volksfest-Initiative,
+          StreetOrPostOfficeBox: Festweg 17
         },
         ImageId: Guid_3,
         Wording:
-Diese Initiative fordert eine umfassende Bildungsreform auf Kantonsebene.
-Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
-in Schulen voranzutreiben.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 223 (neu) – Förderung kantonaler Volksfeste
+1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -82,7 +93,7 @@ in Schulen voranzutreiben.,
           ModifiedByEmail: voting+tester@abraxas.ch
         },
         SubTypeId: Guid_4,
-        Description: Kantonale Bildungsreform,
+        Description: Für kantonale Volksfeste (Volksfest-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -101,6 +112,7 @@ in Schulen voranzutreiben.,
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: sg-123.412225,
         SignatureSheetTemplateGenerated: true
       },
       SourceEntityId: Guid_1,

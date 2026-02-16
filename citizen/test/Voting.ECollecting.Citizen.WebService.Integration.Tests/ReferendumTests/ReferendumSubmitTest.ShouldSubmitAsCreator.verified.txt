@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Gerechtigkeit für alle,
+        CollectionName: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: kanton+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Gerechtigkeit für alle,
+        CollectionName: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Gerechtigkeit für alle,
+        CollectionName: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,

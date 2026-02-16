@@ -15,9 +15,9 @@
           CreatedByEmail: default-user@example.com
         },
         Description: Kantonsratsbeschluss Revision Wassergesetz (33-43.34),
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2024-07-05,
         MinSignatureCount: 50000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2024-05-05,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,

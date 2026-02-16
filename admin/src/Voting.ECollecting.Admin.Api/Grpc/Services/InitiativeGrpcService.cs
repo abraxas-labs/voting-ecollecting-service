@@ -68,8 +68,8 @@ public class InitiativeGrpcService : InitiativeService.InitiativeServiceBase
     {
         await _initiativeService.SetCollectionPeriod(
             GuidParser.Parse(request.Id),
-            request.CollectionStartDate.ToDateTime(),
-            request.CollectionEndDate.ToDateTime());
+            Mapper.MapToDateOnly(request.CollectionStartDate),
+            Mapper.MapToDateOnly(request.CollectionEndDate));
         return ProtobufEmpty.Instance;
     }
 
@@ -78,8 +78,8 @@ public class InitiativeGrpcService : InitiativeService.InitiativeServiceBase
     {
         await _initiativeService.Enable(
             GuidParser.Parse(request.Id),
-            request.CollectionStartDate?.ToDateTime(),
-            request.CollectionEndDate?.ToDateTime());
+            Mapper.MapToNullableDateOnly(request.CollectionStartDate),
+            Mapper.MapToNullableDateOnly(request.CollectionEndDate));
         return ProtobufEmpty.Instance;
     }
 

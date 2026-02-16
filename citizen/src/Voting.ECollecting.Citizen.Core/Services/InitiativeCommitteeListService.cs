@@ -124,7 +124,7 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
     public async Task<FileEntity> GetCommitteeList(Guid initiativeId, Guid fileId)
     {
         return await _initiativeRepository.Query()
-                   .WhereCanRead(_permissionService)
+                   .WhereCanWrite(_permissionService)
                    .Where(x => x.Id == initiativeId)
                    .Include(x => x.CommitteeLists).ThenInclude(x => x.Content)
                    .SelectMany(x => x.CommitteeLists)
@@ -135,11 +135,11 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
     public async Task<Stream> GetCommitteeListTemplate(Guid initiativeId, CancellationToken ct)
     {
         var initiative = await _initiativeRepository.Query()
-                             .WhereCanRead(_permissionService)
-                             .WhereInPreparationOrReturnedForCorrection()
+                             .WhereCanWrite(_permissionService)
                              .Where(x => x.Id == initiativeId)
                              .Include(x => x.CommitteeMembers.Where(y =>
                                  y.ApprovalState == InitiativeCommitteeMemberApprovalState.Requested ||
+                                 y.ApprovalState == InitiativeCommitteeMemberApprovalState.Expired ||
                                  y.ApprovalState == InitiativeCommitteeMemberApprovalState.Signed ||
                                  y.ApprovalState == InitiativeCommitteeMemberApprovalState.Approved))
                              .Include(x => x.Permissions!.Where(y =>
@@ -160,6 +160,7 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
                              .Where(x => x.Id == initiativeId)
                              .Include(x => x.CommitteeMembers.Where(y =>
                                  y.ApprovalState == InitiativeCommitteeMemberApprovalState.Requested ||
+                                 y.ApprovalState == InitiativeCommitteeMemberApprovalState.Expired ||
                                  y.ApprovalState == InitiativeCommitteeMemberApprovalState.Signed ||
                                  y.ApprovalState == InitiativeCommitteeMemberApprovalState.Approved))
                              .Include(x => x.Permissions!.Where(y =>
@@ -231,7 +232,8 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
 
         var committeeMembers = initiative.CommitteeMembers
             .Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs))
-            .OrderBy(x => x.SortIndex);
+            .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName);
 
         return new CommitteeListTemplateData(
             initiative,

@@ -13,6 +13,7 @@ using DomainModels = Voting.ECollecting.Citizen.Domain.Models;
 using ProtoCitizenModels = Voting.ECollecting.Proto.Citizen.Services.V1.Models;
 using ProtoSharedEnums = Voting.ECollecting.Proto.Shared.V1.Enums;
 using SharedDomainModels = Voting.ECollecting.Shared.Domain.Models;
+using SharedProtoModels = Abraxas.Voting.Ecollecting.Shared.V1.Models;
 
 namespace Voting.ECollecting.Citizen.Api.Grpc.Mappings;
 
@@ -44,7 +45,7 @@ internal static partial class Mapper
         => new ListInitiativeSubTypesResponse { SubTypes = { MapInitiativeSubTypes(subTypes) } };
 
     internal static ListCollectionPermissionsResponse MapToListCollectionPermissionsResponse(
-        IEnumerable<CollectionPermissionEntity> permissions)
+        IEnumerable<DomainModels.CollectionPermission> permissions)
         => new ListCollectionPermissionsResponse { Permissions = { MapCollectionPermissions(permissions) } };
 
     internal static partial GetPendingCollectionPermissionResponse MapToGetCollectionPermissionResponse(
@@ -123,6 +124,7 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.UserPermissions))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.IsSigned))]
+    [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.SignatureType))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.AttestedCollectionCount))]
     private static partial ProtoCitizenModels.Collection MapToReferendumCollection(ReferendumEntity referendum);
 
@@ -138,6 +140,7 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.UserPermissions))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.IsSigned))]
+    [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.SignatureType))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.AttestedCollectionCount))]
     private static partial ProtoCitizenModels.Collection MapToInitiativeCollection(InitiativeEntity initiative);
 
@@ -187,10 +190,10 @@ internal static partial class Mapper
     [MapperIgnoreSource(nameof(InitiativeSubTypeEntity.Bfs))]
     private static partial ProtoCitizenModels.InitiativeSubType MapInitiativeSubType(InitiativeSubTypeEntity subType);
 
-    private static partial IEnumerable<ProtoCitizenModels.CollectionPermission> MapCollectionPermissions(IEnumerable<CollectionPermissionEntity> permissions);
+    private static partial IEnumerable<ProtoCitizenModels.CollectionPermission> MapCollectionPermissions(IEnumerable<DomainModels.CollectionPermission> permissions);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    private static partial ProtoCitizenModels.CollectionPermission MapCollectionPermission(CollectionPermissionEntity permission);
+    private static partial ProtoCitizenModels.CollectionPermission MapCollectionPermission(DomainModels.CollectionPermission permission);
 
     [MapPropertyFromSource(nameof(ProtoCitizenModels.Initiative.Collection))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Initiative.CommitteeDescription))]
@@ -203,6 +206,7 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.UserPermissions))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.IsSigned))]
+    [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.SignatureType))]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.AttestedCollectionCount))]
     private static partial ProtoCitizenModels.Collection MapCollection(CollectionBaseEntity collection);
 
@@ -212,14 +216,20 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial ProtoCitizenModels.SimpleDecree MapToSimpleDecree(DecreeEntity decree);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial ProtoCitizenModels.InitiativeCommitteeMemberUserPermissions MapInitiativeCommitteeMemberUserPermissions(SharedDomainModels.InitiativeCommitteeMemberUserPermissions userPermissions);
+
     private static Timestamp MapToDateTime(DateTime dateTime)
     {
         return dateTime.ToTimestamp();
     }
 
-    private static DateOnly MapToDateOnly(Timestamp timestamp)
+    private static DateOnly MapToDateOnlyFromTimestamp(Timestamp timestamp)
         => DateOnly.FromDateTime(timestamp.ToDateTime());
 
     private static Timestamp MapToTimestamp(DateOnly date)
         => date.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc).ToTimestamp();
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial SharedProtoModels.Date MapToDate(DateOnly date);
 }

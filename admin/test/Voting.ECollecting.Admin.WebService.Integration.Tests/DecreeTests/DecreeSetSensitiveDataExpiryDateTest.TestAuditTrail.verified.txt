@@ -6,7 +6,7 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+        Link: https://www.sg.ch/,
         State: 2,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -14,10 +14,10 @@
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
-        CollectionEndDate: DateTimeOffset_2,
+        Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+        CollectionEndDate: 2018-07-10,
         MinSignatureCount: 3000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2017-07-10,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -30,11 +30,11 @@
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+        Link: https://www.sg.ch/,
         State: 2,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -42,10 +42,10 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
-        CollectionEndDate: DateTimeOffset_2,
+        Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+        CollectionEndDate: 2018-07-10,
         MinSignatureCount: 3000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2017-07-10,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,

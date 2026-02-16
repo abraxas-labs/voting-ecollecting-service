@@ -27,9 +27,9 @@ public interface ICollectionSignatureSheetService
 
     Task TryReleaseNumber(Guid collectionId, int number);
 
-    Task<CollectionSignatureSheetEntity> Add(Guid collectionId, int number, DateTime receivedAt, int signatureCountTotal);
+    Task<CollectionSignatureSheetEntity> Add(Guid collectionId, int number, DateOnly receivedAt, int signatureCountTotal);
 
-    Task Update(Guid collectionId, Guid sheetId, DateTime receivedAt, int signatureCountTotal);
+    Task Update(Guid collectionId, Guid sheetId, DateOnly receivedAt, int signatureCountTotal);
 
     Task<Stream> Attest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds);
 

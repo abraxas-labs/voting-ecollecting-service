@@ -26,10 +26,11 @@
         },
         Description: foo bar baz,
         LockedFields: {
-          Wording: false,
-          Description: false,
+          Wording: true,
+          Description: true,
           CommitteeMembers: false
         },
+        SecureIdNumber: Scrubbed,
         MinSignatureCount: 0,
         DomainOfInfluenceType: 3,
         IntegritySignatureInfo: {

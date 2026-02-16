@@ -6,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Shared.Domain.Enums;
-using Voting.ECollecting.Shared.Domain.Extensions;
 using Voting.ECollecting.Shared.Test.MockedData;
 using Voting.ECollecting.Shared.Test.Utils;
 
@@ -40,10 +39,9 @@ public class InitiativeGetCommitteeListTemplateTest : BaseRestTest
     }
 
     [Fact]
-    public async Task ShouldGetAsReader()
+    public Task GetAsReaderShouldFail()
     {
-        var resp = await DeputyClient.GetStringAsync(BuildUrl());
-        await VerifyJson(resp);
+        return AssertStatus(async () => await ReaderClient.GetAsync(BuildUrl()), HttpStatusCode.NotFound);
     }
 
     [Fact]
@@ -80,12 +78,9 @@ public class InitiativeGetCommitteeListTemplateTest : BaseRestTest
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
             .ExecuteUpdateAsync(x => x.SetProperty(y => y.State, state)));
 
-        var expectedStatus = state.InPreparationOrReturnForCorrection()
-            ? HttpStatusCode.OK
-            : HttpStatusCode.NotFound;
         await AssertStatus(
             async () => await AuthenticatedClient.GetAsync(BuildUrl()),
-            expectedStatus);
+            HttpStatusCode.OK);
     }
 
     private static string BuildUrl(string id = InitiativesCtStGallen.IdLegislativeInPreparation)

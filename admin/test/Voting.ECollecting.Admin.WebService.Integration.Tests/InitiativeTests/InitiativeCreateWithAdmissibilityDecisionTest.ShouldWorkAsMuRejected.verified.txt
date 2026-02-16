@@ -43,8 +43,9 @@
   GovernmentDecisionNumber: 12345,
   AdmissibilityDecisionState: Rejected,
   LockedFields: {
-    Wording: false,
-    Description: false,
+    Wording: true,
+    Description: true,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St.Gallen
 }

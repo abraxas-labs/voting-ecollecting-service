@@ -21,9 +21,9 @@ public class UpdateInitiativeRequestTest : ProtoValidatorBaseTest<UpdateInitiati
         yield return NewValidRequest(x => x.Reason = RandomStringUtil.GenerateComplexMultiLineText(1));
         yield return NewValidRequest(x => x.Reason = RandomStringUtil.GenerateComplexMultiLineText(10_000));
         yield return NewValidRequest(x => x.Reason = string.Empty);
-        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateComplexSingleLineText(1));
-        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateComplexSingleLineText(2_000));
         yield return NewValidRequest(x => x.Link = string.Empty);
+        yield return NewValidRequest(x => x.Link = "https://example.com");
+        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateHttpsUrl(2_000));
     }
 
     protected override IEnumerable<UpdateInitiativeRequest> NotOkMessages()
@@ -38,8 +38,9 @@ public class UpdateInitiativeRequestTest : ProtoValidatorBaseTest<UpdateInitiati
         yield return NewValidRequest(x => x.Wording = RandomStringUtil.GenerateComplexMultiLineText(10_001));
         yield return NewValidRequest(x => x.Reason = RandomStringUtil.GenerateComplexMultiLineText(10_001));
         yield return NewValidRequest(x => x.Address = null);
-        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateComplexSingleLineText(2_001));
-        yield return NewValidRequest(x => x.Link = "Te\nst");
+        yield return NewValidRequest(x => x.Link = "http://example.com");
+        yield return NewValidRequest(x => x.Link = "https://example\n.com");
+        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateHttpsUrl(2_001));
     }
 
     private static UpdateInitiativeRequest NewValidRequest(Action<UpdateInitiativeRequest>? customizer = null)

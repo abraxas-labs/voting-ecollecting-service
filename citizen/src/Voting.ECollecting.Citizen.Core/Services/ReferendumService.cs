@@ -65,12 +65,24 @@ public class ReferendumService : IReferendumService
 
     public async Task<Guid> Create(string description, Guid? decreeId)
     {
+        var ownerPermission = new CollectionPermissionEntity
+        {
+            FirstName = _permissionService.UserFirstName,
+            LastName = _permissionService.UserLastName,
+            IamFirstName = _permissionService.UserFirstName,
+            IamLastName = _permissionService.UserLastName,
+            IamUserId = _permissionService.UserId,
+            Email = _permissionService.UserEmail!,
+            Role = CollectionPermissionRole.Owner,
+            State = CollectionPermissionState.Accepted,
+        };
         var referendum = new ReferendumEntity
         {
             Description = description,
             DecreeId = decreeId,
             CollectionCount = new CollectionCountEntity(),
             SignatureSheetTemplateGenerated = true,
+            Permissions = [ownerPermission],
         };
 
         await ValidateReferendum(referendum);
@@ -83,29 +95,48 @@ public class ReferendumService : IReferendumService
 
         _permissionService.SetCreated(referendum);
         _permissionService.SetCreated(referendum.CollectionCount);
+        _permissionService.SetCreated(ownerPermission);
         await _referendumRepository.Create(referendum);
         return referendum.Id;
     }
 
-    public async Task<Guid> SetInPreparation(string referendumNumber)
+    public async Task<Guid> SetInPreparation(string secureIdNumber)
     {
-        var existingReferendum = await _referendumRepository.Query()
-            .Where(x => x.Number.Equals(referendumNumber) && !x.IsElectronicSubmission)
+        var referendum = await _referendumRepository.Query()
+            .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes)
+            .Where(x => secureIdNumber.Equals(x.SecureIdNumber) && !x.IsElectronicSubmission)
             .FirstOrDefaultAsync()
-            ?? throw new ReferendumNotFoundException(referendumNumber);
+            ?? throw new ReferendumNotFoundException(secureIdNumber);
 
-        await _referendumRepository.AuditedUpdate(existingReferendum, () =>
-        {
-            _permissionService.SetCreated(existingReferendum);
-
-            if (existingReferendum.State != CollectionState.PreRecorded)
+        await _referendumRepository.AuditedUpdate(
+            referendum,
+            () =>
             {
-                throw new ReferendumAlreadyInPreparationException(referendumNumber);
-            }
+                _permissionService.SetCreated(referendum);
+                var ownerPermission = new CollectionPermissionEntity
+                {
+                    FirstName = _permissionService.UserFirstName,
+                    LastName = _permissionService.UserLastName,
+                    IamFirstName = _permissionService.UserFirstName,
+                    IamLastName = _permissionService.UserLastName,
+                    IamUserId = _permissionService.UserId,
+                    Email = _permissionService.UserEmail!,
+                    Role = CollectionPermissionRole.Owner,
+                    State = CollectionPermissionState.Accepted,
+                };
+                _permissionService.SetCreated(ownerPermission);
+                referendum.Permissions ??= [];
+                referendum.Permissions.Add(ownerPermission);
 
-            existingReferendum.State = CollectionState.InPreparation;
-        });
-        return existingReferendum.Id;
+                if (referendum.State != CollectionState.PreRecorded)
+                {
+                    throw new ReferendumAlreadyInPreparationException(secureIdNumber);
+                }
+
+                referendum.State = CollectionState.InPreparation;
+            },
+            2); // permission and collection
+        return referendum.Id;
     }
 
     public async Task<Referendum> Get(
@@ -119,7 +150,7 @@ public class ReferendumService : IReferendumService
             query = query
                 .AsNoTrackingWithIdentityResolution()
                 .AsSplitQuery()
-                .Include(x => x.Decree!.Collections);
+                .Include(x => x.Decree!.Collections.Where(y => y.State != CollectionState.InPreparation && y.State != CollectionState.PreparingForCollection));
         }
         else
         {
@@ -139,13 +170,13 @@ public class ReferendumService : IReferendumService
             .FirstOrDefaultAsync(x => x.Id == id) ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
 
         var referendum = Mapper.MapToReferendum(referendumEntity);
-        referendum.SetPeriodState(_timeProvider.GetUtcNowDateTime());
+        referendum.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(referendum);
         _collectionService.SetCollectionCount(referendum);
 
         if (includeIsSigned)
         {
-            (referendum.IsSigned, referendum.IsDecreeSigned) = await _referendumSignService.IsReferendumOrDecreeSigned(referendum);
+            (referendum.IsSigned, referendum.IsDecreeSigned, referendum.SignatureType) = await _referendumSignService.IsReferendumOrDecreeSigned(referendum);
             referendum.SignAcceptedAcrs = _config.Acr.SignCollection;
         }
 
@@ -206,6 +237,7 @@ public class ReferendumService : IReferendumService
     {
         var decreeEntities = await _decreeRepository.Query()
             .WhereCanReadAnyCollection(_permissionService)
+            .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes)
             .IncludeReadableCollections(_permissionService.UserId)
             .Include(x => x.Collections)
             .ThenIncludePermission(_permissionService.UserId)
@@ -236,7 +268,7 @@ public class ReferendumService : IReferendumService
         var referendumsWithoutDecree = Mapper.MapToReferendums(referendumEntities);
         foreach (var referendum in referendumsWithoutDecree)
         {
-            referendum.SetPeriodState(_timeProvider.GetUtcNowDateTime());
+            referendum.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
             _collectionService.LoadPermission(referendum);
             _collectionService.SetCollectionCount(referendum);
         }
@@ -248,7 +280,7 @@ public class ReferendumService : IReferendumService
     {
         var query = _decreeRepository
             .Query()
-            .WhereInCollectionOrPublished(_timeProvider.GetUtcNowDateTime())
+            .WhereInCollectionOrPublished(_timeProvider.GetUtcTodayDateOnly())
             .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes);
 
         if (doiTypes?.Count > 0)
@@ -338,14 +370,14 @@ public class ReferendumService : IReferendumService
 
     private void SetDomainData(IEnumerable<Decree> decrees)
     {
-        var utcNow = _timeProvider.GetUtcNowDateTime();
+        var today = _timeProvider.GetUtcTodayDateOnly();
         foreach (var decree in decrees)
         {
-            decree.SetPeriodState(utcNow);
+            decree.SetPeriodState(today);
 
             foreach (var referendum in decree.Referendums)
             {
-                referendum.SetPeriodState(utcNow);
+                referendum.SetPeriodState(today);
                 _collectionService.LoadPermission(referendum);
                 _collectionService.SetCollectionCount(referendum);
             }

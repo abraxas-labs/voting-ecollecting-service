@@ -4,41 +4,47 @@
       Id: Guid_1,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
-      Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Kultur,
+      Description: Bundesbeschluss über die Einrichtung von ausgewiesenen Alphorn-Übungszonen in allen Gemeinden über 5000 Einwohner zur Förderung traditioneller Musikkultur,
       CollectionStartDate: {
-        Seconds: 1589116330,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 5,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1605013930,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 11,
+        Day: 10
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240818/kultur.html,
+      Link: https://www.admin.ch/,
       PeriodState: Published,
       Collections: [
         {
           Id: Guid_2,
           Decree: {
             Id: Guid_1,
-            Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Kultur,
+            Description: Bundesbeschluss über die Einrichtung von ausgewiesenen Alphorn-Übungszonen in allen Gemeinden über 5000 Einwohner zur Förderung traditioneller Musikkultur,
             PeriodState: Published,
             MaxElectronicSignatureCount: 10000
           },
           MembersCommittee: Christoph Zimmermann, Präsident Deutscher Ärzteverband Zürich; Claudia Müller, Vorsitzende Greenpeace Schweiz Basel; Tom Wagner, Vorstand Schweizerischer Bauernverband Bern; Sylvia Lang, Sprecherin Globaler Klimafonds Zürich; Richard Huber, Finanzchef Ärzte für den Tierschutz Schweiz; Manuela Fischer, Projektleiterin Naturschutzbund Zürich; Thomas Roth, Koordinator Flüchtlingshilfe Schweiz Genf; Heidi Schmid, Präsidentin Männergesundheitsverein Zürich; Marc Meier, Eventkoordinator Natur- und Klimaschutzorganisation Basel; Daniel Berger, Pressesprecher Sozialfonds Zürich,
           Collection: {
             Id: Guid_2,
-            Description: Referendum gegen die Änderung des Kulturgesetzes,
+            Description: Referendum gegen Alphorn-Übungszonen in allen Gemeinden (zurückgezogen),
             Type: Referendum,
-            Reason: Kulturelle Vielfalt erhalten!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240818/kultur.html,
+            Reason:
+Das Parlament hat beschlossen, dass alle Gemeinden über 5000 Einwohner Alphorn-Übungszonen einrichten müssen.
+Das Referendumskomitee wehrte sich gegen diese Vorschrift, zog das Referendum aber zurück, nachdem ein Kompromiss gefunden wurde.
+Alphorn-Zonen bleiben freiwillig, werden aber vom Bund finanziell unterstützt.
+Dieser Entscheid zeigt, dass Dialog und Kompromissbereitschaft zu Lösungen führen, die allen gerecht werden.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: Withdrawn,
             Address: {
-              CommitteeOrPerson: Kulturinitiative Schweiz,
-              StreetOrPostOfficeBox: Hodlerstrasse 1,
-              ZipCode: 3011,
+              CommitteeOrPerson: Verein Tradition mit Augenmass,
+              StreetOrPostOfficeBox: Kirchenfeldstrasse 5,
+              ZipCode: 3005,
               Locality: Bern
             },
             UserPermissions: {
@@ -58,23 +64,25 @@
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1589116330,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 5,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1605013930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 11,
+              Day: 10
             },
             PeriodState: Published
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -85,40 +93,46 @@
       Id: Guid_3,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
-      Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+      Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
       CollectionStartDate: {
-        Seconds: 1581599530,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 2,
+        Day: 13
       },
       CollectionEndDate: {
-        Seconds: 1592053930,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 6,
+        Day: 13
       },
       MinSignatureCount: 3000,
       MaxElectronicSignatureCount: 300,
-      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/1231sa/steuern.html,
+      Link: https://www.sg.ch/,
       PeriodState: Published,
       Collections: [
         {
           Id: Guid_4,
           Decree: {
             Id: Guid_3,
-            Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+            Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
             PeriodState: Published,
             MaxElectronicSignatureCount: 300
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
             Id: Guid_4,
-            Description: Gerechtigkeit für alle,
+            Description: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
             Type: Referendum,
-            Reason: Gerechtigkeit für alle im Kanton wahren!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+            Reason:
+Der Kantonsrat hat beschlossen, digitale Wecker aus Schlafzimmern zu verbannen, um analoges Zeitempfinden und besseren Schlaf zu fördern.
+Das Referendumskomitee findet diese Einmischung in die Privatsphäre unangemessen.
+Wie jemand aufwacht, sollte seine eigene Entscheidung bleiben – ob mit Smartphone, mechanischem Wecker oder Sonnenaufgang.
+Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Technik und das Recht, selbst zu entscheiden, wie man den Tag beginnt.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
-              CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
-              StreetOrPostOfficeBox: Klosterhof 2,
+              CommitteeOrPerson: Komitee Freie Zeitwahl,
+              StreetOrPostOfficeBox: Neugasse 11,
               ZipCode: 9000,
               Locality: St.Gallen
             },
@@ -139,14 +153,14 @@
               CanRequestInformalReview: true,
               IsRequestInformalReviewVisible: true,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -157,35 +171,41 @@
       Id: Guid_5,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
-      Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+      Description: Bundesbeschluss über die Pflicht zur Beschilderung aller Wanderwege mit QR-Codes für digitale Höhenmessung und GPS-Tracking,
       CollectionStartDate: {
-        Seconds: 1581340330,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 2,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1594386730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+      Link: https://www.admin.ch/,
       PeriodState: Published,
       Collections: [
         {
           Id: Guid_6,
           Decree: {
             Id: Guid_5,
-            Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+            Description: Bundesbeschluss über die Pflicht zur Beschilderung aller Wanderwege mit QR-Codes für digitale Höhenmessung und GPS-Tracking,
             PeriodState: Published,
             MaxElectronicSignatureCount: 10000
           },
           MembersCommittee: Zentrum für selbstbestimmtes Leben,
           Collection: {
             Id: Guid_6,
-            Description: Referendum gegen die Änderung vom 6. Oktober 2024 des Bundesgesetzes über die Invalidenversicherung,
+            Description: Referendum gegen teure Wanderweg-Digitalisierung auf Kosten der Steuerzahlenden,
             Type: Referendum,
-            Reason: Selbstbestimmtes Leben!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20260125/kultur.html,
+            Reason:
+Ein viertes Komitee lehnt die QR-Code-Pflicht aus finanziellen Gründen ab.
+Die Installation und Wartung tausender digitaler Schilder kostet Millionen, die besser in Wegunterhalt und Sicherheit investiert wären.
+Die bisherigen Schilder funktionieren einwandfrei – warum also Steuergelder verschwenden?
+Dieses Referendum steht für Sparsamkeit, Prioritätensetzung und vernünftigen Umgang mit öffentlichen Mitteln.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreparingForCollection,
             Address: {
@@ -211,23 +231,14 @@
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1581340330,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
-            },
-            PeriodState: Published
+            HasIsSigned: false
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
@@ -235,24 +246,28 @@
           Id: Guid_7,
           Decree: {
             Id: Guid_5,
-            Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+            Description: Bundesbeschluss über die Pflicht zur Beschilderung aller Wanderwege mit QR-Codes für digitale Höhenmessung und GPS-Tracking,
             PeriodState: Published,
             MaxElectronicSignatureCount: 10000
           },
-          MembersCommittee: Max Müller, Parteipräsident SP Zürich; Laura Schmid, Vorsitzende Pro Familia Verein Bern; Thomas Keller, Finanzverantwortlicher Greenpeace Schweiz; Anna Meier, Kommunikationsbeauftragte WWF Schweiz; Felix Weber, Projektleiter Klimaschutzverein Basel; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima Zürich; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund Genf,
+          MembersCommittee: Max Müller, Parteipäsident SP Zürich; Laura Schmid, Vorsitzende Pro Familia Verein Bern; Thomas Keller, Finanzverantwortlicher Greenpeace Schweiz; Anna Meier, Kommunikationsbeauftragte WWF Schweiz; Felix Weber, Projektleiter Klimaschutzverein Basel; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima Zürich; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund Genf,
           Collection: {
             Id: Guid_7,
-            Description: Referendum gegen die automatische Amtshilfe in Steuersachen,
+            Description: Referendum gegen die Pflicht zu QR-Codes auf allen Wanderwegen,
             Type: Referendum,
-            Reason: Steuerautonomie der Schweiz wahren!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+            Reason:
+Das Parlament hat beschlossen, dass alle Wanderwege mit QR-Codes ausgestattet werden müssen, um Höhenprofile und GPS-Daten digital bereitzustellen.
+Das Referendumskomitee hält diese Digitalisierung für übertrieben und kontraproduktiv.
+Wandern bedeutet Natur erleben, nicht ständig aufs Smartphone schauen. Die traditionelle Wanderkarte funktioniert seit Jahrzehnten bestens.
+Dieses Referendum steht für analoge Freiheit, Datenschutz und die Überzeugung, dass nicht alles vernetzt sein muss.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
-              CommitteeOrPerson: Aktionskomitee für Steuerautonomie,
-              StreetOrPostOfficeBox: Bundesplatz 19,
-              ZipCode: 3003,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Naturnahe Wanderkultur,
+              StreetOrPostOfficeBox: Alpweg 44,
+              ZipCode: 3800,
+              Locality: Interlaken
             },
             UserPermissions: {
               Role: Owner,
@@ -267,27 +282,18 @@
               CanFlagForReview: false,
               IsFlagForReviewVisible: false,
               CanRegister: false,
-              CanWithdraw: false,
+              CanWithdraw: true,
               CanRequestInformalReview: true,
               IsRequestInformalReviewVisible: true,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1581340330,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
-            },
-            PeriodState: Published
+            HasIsSigned: false
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
@@ -295,24 +301,28 @@
           Id: Guid_8,
           Decree: {
             Id: Guid_5,
-            Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+            Description: Bundesbeschluss über die Pflicht zur Beschilderung aller Wanderwege mit QR-Codes für digitale Höhenmessung und GPS-Tracking,
             PeriodState: Published,
             MaxElectronicSignatureCount: 10000
           },
           MembersCommittee: Lukas Huber, Präsident Solarenergie Schweiz Zürich; Eva Roth, Vorsitzende Swiss Social Impact Basel; Markus Meier, Kommunikationsbeauftragter Schweizerischer Verkehrsbund Bern; Laura Berger, Projektleiterin Öko-Institut Zürich; Frank Weber, Finanzmanager Stiftung für Nachhaltigkeit Basel; Johanna Fischer, Eventmanagerin Schweizerischer Wanderverband St. Gallen; Raphael Schmid, Vorsitzender Lebenshilfe Schweiz Zürich; Peter Lang, Koordinator Flüchtlingshilfe Schweiz; Sandra Müller, Präsidentin Naturschutzfonds Zürich; Felix Roth, Kommunikationsbeauftragter Schweizer Förderkreis Umweltschutz Basel,
           Collection: {
             Id: Guid_8,
-            Description: Referendum gegen die automatische Amtshilfe in Steuersachen,
+            Description: Referendum gegen digitale Wanderschilder aus Gründen der Generationengerechtigkeit,
             Type: Referendum,
-            Reason: Datenschutz und Bürgerrechte schützen!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+            Reason:
+Ein drittes Komitee lehnt die QR-Code-Pflicht ab, weil sie ältere Menschen benachteiligt.
+Nicht alle haben ein Smartphone oder können QR-Codes scannen – die klassische Beschilderung ist inklusiv und funktioniert für alle.
+Wandern soll für alle Generationen zugänglich bleiben, nicht nur für Digital Natives.
+Dieses Referendum steht für Chancengleichheit, Generationengerechtigkeit und die Überzeugung, dass Technik unterstützen, aber nicht ausschliessen soll.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
-              CommitteeOrPerson: Komitee für Datenschutz und Bürgerrechte,
-              StreetOrPostOfficeBox: Schwarztorstrasse 31,
-              ZipCode: 3007,
-              Locality: Bern
+              CommitteeOrPerson: Seniorenverband Schweizer Alpen,
+              StreetOrPostOfficeBox: Hauptgasse 88,
+              ZipCode: 3600,
+              Locality: Thun
             },
             UserPermissions: {
               Role: Owner,
@@ -327,27 +337,18 @@
               CanFlagForReview: false,
               IsFlagForReviewVisible: false,
               CanRegister: false,
-              CanWithdraw: false,
+              CanWithdraw: true,
               CanRequestInformalReview: true,
               IsRequestInformalReviewVisible: true,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1581340330,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
-            },
-            PeriodState: Published
+            HasIsSigned: false
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -358,25 +359,27 @@
       Id: Guid_9,
       DomainOfInfluenceType: Mu,
       Bfs: 3213,
-      Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+      Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
       CollectionStartDate: {
-        Seconds: 1581340330,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 2,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1594386730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 300,
       MaxElectronicSignatureCount: 30,
-      Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240324/digitales-buergerportal.html,
+      Link: https://www.goldach.ch/,
       PeriodState: Published,
       Collections: [
         {
           Id: Guid_10,
           Decree: {
             Id: Guid_9,
-            Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+            Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
             PeriodState: Published,
             MaxElectronicSignatureCount: 30
           },
@@ -385,10 +388,14 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
 ,
           Collection: {
             Id: Guid_10,
-            Description: Referendum gegen die Einführung einer Umweltabgabe,
+            Description: Referendum gegen die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung,
             Type: Referendum,
-            Reason: Für eine nachhaltige Entwicklung und den Schutz unserer Umwelt!,
-            Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240512/umweltabgabe.html,
+            Reason:
+Der Gemeinderat hat beschlossen, alle Trinkwasserbrunnen in öffentlichen Parks durch smarte Brunnen mit Sensor-Aktivierung, automatischer Temperaturanpassung und digitalem Display zu ersetzen.
+Das Referendumskomitee findet diese Technologisierung übertrieben. Ein normaler Brunnen funktioniert seit Jahrhunderten zuverlässig – warum muss jetzt alles smart sein?
+Zudem können Kinder nicht mehr spielerisch den Hebel drücken, sondern müssen auf Sensoren warten. Das nimmt den Brunnen ihre Lebendigkeit.
+Dieses Referendum steht für einfache Lösungen, mechanische Zuverlässigkeit und das gute alte Wasserplätschern ohne digitale Schnickschnack.,
+            Link: https://www.goldach.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
@@ -397,8 +404,8 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Initiative für saubere Luft St. Gallen,
-              StreetOrPostOfficeBox: Umweltstrasse 10,
+              CommitteeOrPerson: Komitee Einfache Brunnen,
+              StreetOrPostOfficeBox: Brunnenweg 3,
               ZipCode: 9403,
               Locality: Goldach
             },
@@ -419,23 +426,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1581340330,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 2,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Published
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
@@ -443,7 +452,7 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
           Id: Guid_12,
           Decree: {
             Id: Guid_9,
-            Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+            Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
             PeriodState: Published,
             MaxElectronicSignatureCount: 30
           },
@@ -452,10 +461,14 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
 ,
           Collection: {
             Id: Guid_12,
-            Description: Referendum gegen die Einführung einer Autoabgabe,
+            Description: Referendum gegen die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung (zweites Komitee),
             Type: Referendum,
-            Reason: Für eine nachhaltige Entwicklung und den Schutz unserer Umwelt!,
-            Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240512/autoabgabe.html,
+            Reason:
+Der Gemeinderat hat beschlossen, alle Trinkwasserbrunnen in öffentlichen Parks durch smarte Brunnen mit Sensor-Aktivierung zu ersetzen.
+Dieses zweite Referendumskomitee teilt die Bedenken des ersten Komitees und ergänzt: Die hohen Kosten für Installation und Wartung stehen in keinem Verhältnis zum Nutzen.
+Zudem sind die Sensoren anfällig für Defekte, besonders im Winter. Ein einfacher mechanischer Hebel ist robuster und kostengünstiger.
+Dieses Referendum steht für Sparsamkeit, Nachhaltigkeit und bewährte Technik statt teurer Spielereien.,
+            Link: https://www.goldach.ch/,
             SignatureSheetTemplateGenerated: false,
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
@@ -464,8 +477,8 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Initiative für saubere Luft St. Gallen,
-              StreetOrPostOfficeBox: Umweltstrasse 10,
+              CommitteeOrPerson: Komitee Traditionelle Brunnen,
+              StreetOrPostOfficeBox: Wasserweg 7,
               ZipCode: 9403,
               Locality: Goldach
             },
@@ -486,23 +499,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1581340330,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 2,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Published
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -518,35 +533,41 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       Id: Guid_14,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
-      Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+      Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
       CollectionStartDate: {
-        Seconds: 1576242730,
-        Nanos: 200000000
+        Year: 2019,
+        Month: 12,
+        Day: 13
       },
       CollectionEndDate: {
-        Seconds: 1592053930,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 6,
+        Day: 13
       },
       MinSignatureCount: 3000,
       MaxElectronicSignatureCount: 300,
-      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+      Link: https://www.sg.ch/,
       PeriodState: InCollection,
       Collections: [
         {
           Id: Guid_15,
           Decree: {
             Id: Guid_14,
-            Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+            Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 300
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
             Id: Guid_15,
-            Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+            Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
             Type: Referendum,
-            Reason: Steuergerechtigkeit im Kanton wahren!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+            Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
@@ -556,9 +577,9 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               ElectronicCitizenCount: 101
             },
             Address: {
-              CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-              StreetOrPostOfficeBox: Klosterhof 1,
-              ZipCode: 9001,
+              CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+              StreetOrPostOfficeBox: Multergasse 8,
+              ZipCode: 9000,
               Locality: St.Gallen
             },
             UserPermissions: {
@@ -578,23 +599,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1576242730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 13
             },
             CollectionEndDate: {
-              Seconds: 1592053930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 13
             },
             PeriodState: InCollection
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
@@ -602,29 +625,104 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
           Id: Guid_17,
           Decree: {
             Id: Guid_14,
-            Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+            Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 300
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
             Id: Guid_17,
-            Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+            Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
             Type: Referendum,
-            Reason: Steuergerechtigkeit im Kanton wahren!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+            Reason:
+Ein zweites Komitee lehnt die obligatorischen Pflanzen-Workshops ab, weil sie gesundheitliche Probleme verursachen können.
+Viele Menschen leiden unter Pollenallergien, Schimmelsporen oder Reaktionen auf bestimmte Pflanzen.
+Zwang zu Grünpflanzen kann Asthma und Allergien verschlimmern.
+Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft und das Recht, allergenfrei zu wohnen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
-            State: SignatureSheetsSubmitted,
+            State: EnabledForCollection,
             AttestedCollectionCount: {
               Id: Guid_18,
               CollectionId: Guid_17,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Verein Allergiefreies Wohnen,
+              StreetOrPostOfficeBox: Rorschacher Strasse 88,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            UserPermissions: {
+              Role: Owner,
+              CanEdit: false,
+              CanEditSignatureSheetTemplate: true,
+              CanDeleteSignatureSheetTemplate: false,
+              CanGenerateSignatureSheetTemplatePreview: true,
+              CanEditPermissions: true,
+              CanCreateMessages: true,
+              CanSubmit: false,
+              IsSubmitVisible: false,
+              CanFlagForReview: false,
+              IsFlagForReviewVisible: false,
+              CanRegister: false,
+              CanWithdraw: false,
+              CanRequestInformalReview: false,
+              IsRequestInformalReviewVisible: false,
+              CanDownloadElectronicSignaturesProtocol: false,
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 12,
+              Day: 13
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 13
+            },
+            PeriodState: InCollection
+          },
+          IsOtherReferendumOfSameDecreeSigned: false,
+          HasIsOtherReferendumOfSameDecreeSigned: false
+        },
+        {
+          Id: Guid_19,
+          Decree: {
+            Id: Guid_14,
+            Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
+            PeriodState: InCollection,
+            MaxElectronicSignatureCount: 300
+          },
+          MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+          Collection: {
+            Id: Guid_19,
+            Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
+            Type: Referendum,
+            Reason:
+Ein drittes Komitee lehnt die obligatorischen Workshops ab, weil sie das Budget unnötig belasten.
+Die Kosten für Kursleiter, Räumlichkeiten und Material gehen in die Millionen – Geld, das anderswo fehlt.
+Bildung ist wichtig, aber nicht bei jedem Thema muss der Staat eingreifen.
+Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und die Überzeugung, dass manche Dinge freiwillig besser funktionieren.,
+            Link: https://www.sg.ch/,
+            SignatureSheetTemplateGenerated: false,
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_20,
+              CollectionId: Guid_19,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 61
             },
             Address: {
-              CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-              StreetOrPostOfficeBox: Klosterhof 1,
-              ZipCode: 9001,
+              CommitteeOrPerson: Komitee Vernünftige Ausgaben,
+              StreetOrPostOfficeBox: Spisertor 3,
+              ZipCode: 9000,
               Locality: St.Gallen
             },
             UserPermissions: {
@@ -644,88 +742,80 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: true,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1576242730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 13
             },
             CollectionEndDate: {
-              Seconds: 1592053930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 13
             },
             PeriodState: InCollection
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
         {
-          Id: Guid_19,
+          Id: Guid_21,
           Decree: {
             Id: Guid_14,
-            Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+            Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 300
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
-            Id: Guid_19,
-            Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+            Id: Guid_21,
+            Description: Referendum gegen Pflanzen-Workshops, die Kakteen ausgrenzen,
             Type: Referendum,
-            Reason: Föderalismus wahren!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+            Reason:
+Ein viertes Komitee lehnt die obligatorischen Workshops ab, weil sie Kakteen ausgrenzen.
+Die starre Struktur der Präsenzworkshops ignoriert die speziellen Bedürfnisse unserer dornigen Mitbewohner, die durch ihre sesshafte Natur und ihr langsames Tempo systematisch benachteiligt werden.
+Eine inklusive Diskussionskultur darf nicht an der Stachelobergrenze enden, sondern muss auch non-verbale, xerophyte Lebensformen vollumfänglich integrieren.
+Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unzumutbare Ausgrenzung.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
-            State: EnabledForCollection,
-            AttestedCollectionCount: {
-              Id: Guid_20,
-              CollectionId: Guid_19,
-              HasTotalCitizenCount: false
-            },
+            State: InPreparation,
             Address: {
-              CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-              StreetOrPostOfficeBox: Klosterhof 1,
-              ZipCode: 9001,
+              CommitteeOrPerson: Komitee Kakteen,
+              StreetOrPostOfficeBox: Otmarstrasse 17,
+              ZipCode: 9000,
               Locality: St.Gallen
             },
             UserPermissions: {
               Role: Owner,
-              CanEdit: false,
+              CanEdit: true,
               CanEditSignatureSheetTemplate: true,
-              CanDeleteSignatureSheetTemplate: false,
+              CanDeleteSignatureSheetTemplate: true,
               CanGenerateSignatureSheetTemplatePreview: true,
               CanEditPermissions: true,
               CanCreateMessages: true,
-              CanSubmit: false,
-              IsSubmitVisible: false,
+              CanSubmit: true,
+              IsSubmitVisible: true,
               CanFlagForReview: false,
               IsFlagForReviewVisible: false,
               CanRegister: false,
-              CanWithdraw: false,
-              CanRequestInformalReview: false,
-              IsRequestInformalReviewVisible: false,
+              CanWithdraw: true,
+              CanRequestInformalReview: true,
+              IsRequestInformalReviewVisible: true,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1576242730,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1592053930,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
+            HasIsSigned: false
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -739,48 +829,54 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       State: CollectionApplicable
     },
     {
-      Id: Guid_21,
+      Id: Guid_22,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
-      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+      Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
       CollectionStartDate: {
-        Seconds: 1575983530,
-        Nanos: 200000000
+        Year: 2019,
+        Month: 12,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1594386730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 300,
       MaxElectronicSignatureCount: 30,
-      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+      Link: https://www.stadt.sg.ch/,
       PeriodState: InCollection,
       Collections: [
         {
-          Id: Guid_22,
+          Id: Guid_23,
           Decree: {
-            Id: Guid_21,
-            Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+            Id: Guid_22,
+            Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 30
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
-            Id: Guid_22,
-            Description: Referendum gegen die Änderung des Steuergesetzes,
+            Id: Guid_23,
+            Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
             Type: Referendum,
-            Reason: Steuergerechtigkeit in der Stadt wahren!,
-            Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+            Reason:
+Der Stadtrat hat beschlossen, in allen Bibliotheken gemütliche Café-Ecken mit Kaninchen, Meerschweinchen und Katzen einzurichten, um gestressten Leserinnen und Lesern Entspannung zu bieten.
+Das Referendumskomitee findet Tierliebe zwar wichtig, befürchtet aber Allergien, Hygiene-Probleme und Ablenkung vom eigentlichen Zweck einer Bibliothek.
+Bücher und Tiere vertragen sich nicht immer gut – manche Katze bevorzugt das Schlafen auf dem Lexikon.
+Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Schutz von Allergikerinnen und Allergikern – Tiere gehören in den Zoo, nicht ins Regal.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_23,
-              CollectionId: Guid_22,
+              Id: Guid_24,
+              CollectionId: Guid_23,
               HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
-              StreetOrPostOfficeBox: Rathausplatz 1,
+              CommitteeOrPerson: Komitee Stille Bibliotheken,
+              StreetOrPostOfficeBox: Vadianstrasse 15,
               ZipCode: 9000,
               Locality: St.Gallen
             },
@@ -801,51 +897,57 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 7,
+              Day: 10
             },
             PeriodState: InCollection
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
         {
-          Id: Guid_24,
+          Id: Guid_25,
           Decree: {
-            Id: Guid_21,
-            Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+            Id: Guid_22,
+            Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 30
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
-            Id: Guid_24,
-            Description: Referendum gegen die Änderung des Finanzgesetzes,
+            Id: Guid_25,
+            Description: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
             Type: Referendum,
-            Reason: Finanzen in der Stadt entlasten!,
-            Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/finanzen.html,
+            Reason:
+Ein weiteres Komitee hat sich formiert, weil auch es die Tierpläne in den Bibliotheken für problematisch hält – allerdings aus anderen Gründen.
+Eine Bibliothek ist laut, hektisch und kein artgerechter Lebensraum.
+Ausserdem entstehen zusätzliche Kosten für Futter, Pflege, Tierarzt und Versicherung – Geld, das besser in neue Bücher investiert wäre.
+Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit und die Vorstellung, dass Bibliotheken Orte des Wissens bleiben sollten – nicht Streichelzoos.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_25,
-              CollectionId: Guid_24,
+              Id: Guid_26,
+              CollectionId: Guid_25,
               HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
-              StreetOrPostOfficeBox: Rathausplatz 1,
+              CommitteeOrPerson: Verein Tierwohl und Buchkultur,
+              StreetOrPostOfficeBox: Museumstrasse 8,
               ZipCode: 9000,
               Locality: St.Gallen
             },
@@ -866,23 +968,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1594386730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 7,
+              Day: 10
             },
             PeriodState: InCollection
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -895,44 +999,51 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       State: CollectionApplicable
     },
     {
-      Id: Guid_26,
+      Id: Guid_27,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
-      Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+      Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
       CollectionStartDate: {
-        Seconds: 1575983530,
-        Nanos: 200000000
+        Year: 2019,
+        Month: 12,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1591794730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 6,
+        Day: 10
       },
       MinSignatureCount: 50000,
       MaxElectronicSignatureCount: 5000,
-      Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+      Link: https://www.admin.ch/,
       PeriodState: InCollection,
       Collections: [
         {
-          Id: Guid_27,
+          Id: Guid_28,
           Decree: {
-            Id: Guid_26,
-            Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+            Id: Guid_27,
+            Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 5000
           },
           MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
           Collection: {
-            Id: Guid_27,
-            Description: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+            Id: Guid_28,
+            Description: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
             Type: Referendum,
-            Reason: Keine nationale Steuern!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/nationale-bundessteuer.html,
+            Reason:
+Ein zweites Komitee lehnt die Jodel-Pflicht ab, weil sie unnötige Kosten verursacht.
+Bergführerinnen und Bergführer müssen bereits viele teure Ausbildungen absolvieren – ein Jodel-Zertifikat ist eine finanzielle Mehrbelastung ohne Mehrwert.
+Die Kursgebühren und Prüfungskosten belasten einen ohnehin schon herausfordernden Beruf zusätzlich.
+Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die Überzeugung, dass Kultur nicht auf Kosten der Berufsleute gefördert werden sollte.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_28,
-              CollectionId: Guid_27,
-              HasTotalCitizenCount: false
+              Id: Guid_29,
+              CollectionId: Guid_28,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 2
             },
             Address: {
               CommitteeOrPerson: Komitee für Steuergerechtigkeit,
@@ -957,53 +1068,60 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: true,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
         {
-          Id: Guid_29,
+          Id: Guid_30,
           Decree: {
-            Id: Guid_26,
-            Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+            Id: Guid_27,
+            Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
             PeriodState: InCollection,
             MaxElectronicSignatureCount: 5000
           },
           MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
           Collection: {
-            Id: Guid_29,
-            Description: Referendum gegen die Änderung der direkten Bundessteuer,
+            Id: Guid_30,
+            Description: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
             Type: Referendum,
-            Reason: Steuergerechtigkeit für alle!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+            Reason:
+Das Parlament hat beschlossen, dass alle Bergführerinnen und Bergführer ein Jodel-Zertifikat erwerben müssen, um alpine Traditionen zu bewahren.
+Das Referendumskomitee hält diese Vorschrift für übertrieben und unpraktisch.
+Bergführen ist eine Sicherheitsfrage, keine Folklore-Veranstaltung. Jodeln ist schön, aber kein Pflichtteil der Ausbildung.
+Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für Professionalität und die Erkenntnis, dass Tradition freiwillig gelebt werden sollte.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_30,
-              CollectionId: Guid_29,
-              HasTotalCitizenCount: false
+              Id: Guid_31,
+              CollectionId: Guid_30,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 2
             },
             Address: {
-              CommitteeOrPerson: Komitee für Steuergerechtigkeit,
-              StreetOrPostOfficeBox: Kramgasse 12,
-              ZipCode: 3011,
-              Locality: Bern
+              CommitteeOrPerson: Verband Schweizer Bergführer,
+              StreetOrPostOfficeBox: Postfach 123,
+              ZipCode: 3920,
+              Locality: Zermatt
             },
             UserPermissions: {
               Role: Owner,
@@ -1022,23 +1140,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -1046,49 +1166,56 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       AttestedCollectionCount: {
         Id: Guid_Empty,
         CollectionId: Guid_Empty,
-        HasTotalCitizenCount: false
+        HasTotalCitizenCount: false,
+        ElectronicCitizenCount: 4
       },
       State: CollectionApplicable
     },
     {
-      Id: Guid_31,
+      Id: Guid_32,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
-      Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Forschung,
+      Description: Bundesbeschluss über die Einführung eines eidgenössischen Fondue-Diploms für alle Restaurants, die Käsefondue anbieten, zur Qualitätssicherung,
       CollectionStartDate: {
-        Seconds: 1531228330,
-        Nanos: 200000000
+        Year: 2018,
+        Month: 7,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1562764330,
-        Nanos: 200000000
+        Year: 2019,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20220925/forschung.html,
+      Link: https://www.admin.ch/,
       PeriodState: Expired,
       Collections: [
         {
-          Id: Guid_32,
+          Id: Guid_33,
           Decree: {
-            Id: Guid_31,
-            Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Forschung,
+            Id: Guid_32,
+            Description: Bundesbeschluss über die Einführung eines eidgenössischen Fondue-Diploms für alle Restaurants, die Käsefondue anbieten, zur Qualitätssicherung,
             PeriodState: Expired,
             MaxElectronicSignatureCount: 10000
           },
           MembersCommittee: Lukas Huber, Präsident Solarenergie Schweiz Zürich; Eva Roth, Vorsitzende Swiss Social Impact Basel; Markus Meier, Kommunikationsbeauftragter Schweizerischer Verkehrsbund Bern; Laura Berger, Projektleiterin Öko-Institut Zürich; Frank Weber, Finanzmanager Stiftung für Nachhaltigkeit Basel; Johanna Fischer, Eventmanagerin Schweizerischer Wanderverband St. Gallen; Raphael Schmid, Vorsitzender Lebenshilfe Schweiz Zürich; Peter Lang, Koordinator Flüchtlingshilfe Schweiz; Sandra Müller, Präsidentin Naturschutzfonds Zürich; Felix Roth, Kommunikationsbeauftragter Schweizer Förderkreis Umweltschutz Basel,
           Collection: {
-            Id: Guid_32,
-            Description: Referendum gegen die Änderung des Forschungsgesetzes,
+            Id: Guid_33,
+            Description: Referendum gegen das eidgenössische Fondue-Diplom für Restaurants (zurückgezogen),
             Type: Referendum,
-            Reason: Forschungsfreiheit wahren!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20220925/forschung.html,
+            Reason:
+Das Parlament hat beschlossen, dass alle Restaurants, die Fondue anbieten, ein eidgenössisches Diplom benötigen.
+Das Referendumskomitee lehnte diese Bürokratie ab, zog das Referendum aber zurück, nachdem das Diplom auf freiwilliger Basis eingeführt wurde.
+Qualität soll sich durch Geschmack beweisen, nicht durch Zertifikate.
+Dieser Kompromiss zeigt, dass staatliche Regulierung und unternehmerische Freiheit vereinbar sind.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: Withdrawn,
             Address: {
-              CommitteeOrPerson: Forschungsinitiative Schweiz,
-              StreetOrPostOfficeBox: Länggassstrasse 49,
-              ZipCode: 3012,
+              CommitteeOrPerson: Verband Schweizer Gastronomen,
+              StreetOrPostOfficeBox: Monbijoustrasse 130,
+              ZipCode: 3007,
               Locality: Bern
             },
             UserPermissions: {
@@ -1108,23 +1235,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1531228330,
-              Nanos: 200000000
+              Year: 2018,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1562764330,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Expired
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -1132,28 +1261,30 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       State: CollectionApplicable
     },
     {
-      Id: Guid_33,
+      Id: Guid_34,
       DomainOfInfluenceType: Mu,
       Bfs: 3213,
-      Description: Gemeinderatsbeschluss über die Sanierung des Gemeindeparks,
+      Description: Gemeinderatsbeschluss über das Verbot von Gartenzwergen in öffentlichen Grünanlagen wegen nicht zeitgemässer Ästhetik,
       CollectionStartDate: {
-        Seconds: 1499692330,
-        Nanos: 200000000
+        Year: 2017,
+        Month: 7,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1531228330,
-        Nanos: 200000000
+        Year: 2018,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 300,
       MaxElectronicSignatureCount: 30,
-      Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20210307/gemeindepark-sanierung.html,
+      Link: https://www.goldach.ch/,
       PeriodState: Expired,
       Collections: [
         {
-          Id: Guid_34,
+          Id: Guid_35,
           Decree: {
-            Id: Guid_33,
-            Description: Gemeinderatsbeschluss über die Sanierung des Gemeindeparks,
+            Id: Guid_34,
+            Description: Gemeinderatsbeschluss über das Verbot von Gartenzwergen in öffentlichen Grünanlagen wegen nicht zeitgemässer Ästhetik,
             PeriodState: Expired,
             MaxElectronicSignatureCount: 30,
             CameNotAboutReason: NoSignatureSheetUploaded
@@ -1162,23 +1293,27 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
 Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
 ,
           Collection: {
-            Id: Guid_34,
-            Description: Referendum gegen die Kürzung der Bildungsbudgets,
+            Id: Guid_35,
+            Description: Referendum gegen das Verbot von Gartenzwergen in öffentlichen Grünanlagen,
             Type: Referendum,
-            Reason: Bildung ist unsere Zukunft – keine Einsparungen auf Kosten der Schüler!,
-            Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+            Reason:
+Der Gemeinderat hat beschlossen, Gartenzwerge aus allen öffentlichen Grünanlagen zu verbannen, weil sie nicht mehr zeitgemäss seien und das ästhetische Gesamtbild störten.
+Das Referendumskomitee findet diese Entscheidung humorlos und autoritär. Gartenzwerge sind Teil der Volkskultur und bringen Farbe und Fröhlichkeit in die Parks.
+Wer entscheidet, was zeitgemäss ist? Kunst ist vielfältig, und manch einer lächelt über einen gut platzierten Zwerg mit Schubkarre.
+Dieses Referendum steht für Toleranz, Humor und das Recht auf ein bisschen Kitsch im öffentlichen Raum – gegen graue Einförmigkeit.,
+            Link: https://www.goldach.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_35,
-              CollectionId: Guid_34,
+              Id: Guid_36,
+              CollectionId: Guid_35,
               TotalCitizenCount: 432,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 41
             },
             Address: {
-              CommitteeOrPerson: Komitee für starke Schulen St. Gallen,
-              StreetOrPostOfficeBox: Bildungsweg 5,
+              CommitteeOrPerson: Verein Rettet unsere Gartenzwerge,
+              StreetOrPostOfficeBox: Zwergenweg 12,
               ZipCode: 9403,
               Locality: Goldach
             },
@@ -1199,23 +1334,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1499692330,
-              Nanos: 200000000
+              Year: 2017,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1531228330,
-              Nanos: 200000000
+              Year: 2018,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Expired
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -1231,51 +1368,57 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       CameNotAboutReason: NoSignatureSheetUploaded
     },
     {
-      Id: Guid_36,
+      Id: Guid_37,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
-      Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+      Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
       CollectionStartDate: {
-        Seconds: 1499692330,
-        Nanos: 200000000
+        Year: 2017,
+        Month: 7,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1531228330,
-        Nanos: 200000000
+        Year: 2018,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 3000,
       MaxElectronicSignatureCount: 300,
-      Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+      Link: https://www.sg.ch/,
       PeriodState: Expired,
       Collections: [
         {
-          Id: Guid_37,
+          Id: Guid_38,
           Decree: {
-            Id: Guid_36,
-            Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+            Id: Guid_37,
+            Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
             PeriodState: Expired,
             MaxElectronicSignatureCount: 300
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
-            Id: Guid_37,
-            Description: Referendum gegen die Änderung des Bildungsgesetzes,
+            Id: Guid_38,
+            Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
             Type: Referendum,
-            Reason: Bildungsqualität im Kanton sichern!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+            Reason:
+Der Kantonsrat hat beschlossen, dass alle Hausnummern im Kanton St.Gallen künftig während der Nacht beleuchtet sein müssen, um Einsatzkräfte besser zu unterstützen.
+Das Referendumskomitee befürwortet den Gedanken der Sicherheit, hält aber eine Pflichtbeleuchtung für übertrieben und zu energieintensiv.
+Reflektierende Hausnummern wären effizienter und umweltfreundlicher.
+Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünftige Regulierung – im Sinne eines hellen Verstandes statt heller Hausnummern.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameAbout,
             AttestedCollectionCount: {
-              Id: Guid_38,
-              CollectionId: Guid_37,
+              Id: Guid_39,
+              CollectionId: Guid_38,
               TotalCitizenCount: 3632,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 161
             },
             Address: {
-              CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
-              StreetOrPostOfficeBox: Bahnhofstrasse 10,
-              ZipCode: 9001,
+              CommitteeOrPerson: Komitee Freie Bildungswahl,
+              StreetOrPostOfficeBox: Oberstrasse 17,
+              ZipCode: 9000,
               Locality: St.Gallen
             },
             UserPermissions: {
@@ -1295,228 +1438,52 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: true,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1499692330,
-              Nanos: 200000000
+              Year: 2017,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1531228330,
-              Nanos: 200000000
+              Year: 2018,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Expired
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         },
         {
-          Id: Guid_39,
+          Id: Guid_40,
           Decree: {
-            Id: Guid_36,
-            Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+            Id: Guid_37,
+            Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
             PeriodState: Expired,
             MaxElectronicSignatureCount: 300
           },
           MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
           Collection: {
-            Id: Guid_39,
-            Description: Referendum gegen die Änderung des Bildungsgesetzes (withdrawn),
+            Id: Guid_40,
+            Description: Referendum gegen Jodel-Pflicht in Schulen (zurückgezogen),
             Type: Referendum,
-            Reason: Bildungsqualität im Kanton sichern!,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+            Reason:
+Ein zweites Komitee hatte sich ebenfalls gegen die Jodel-Pflicht gewehrt, das Referendum aber später zurückgezogen.
+Nach Gesprächen mit dem Kantonsrat wurde ein Kompromiss gefunden: Jodeln bleibt freiwillig, wird aber gefördert.
+Das Komitee war mit dieser Lösung zufrieden und zog das Referendum zurück.
+Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen bringen als Konfrontation.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: Withdrawn,
             Address: {
-              CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
-              StreetOrPostOfficeBox: Bahnhofstrasse 10,
-              ZipCode: 9001,
-              Locality: St.Gallen
-            },
-            UserPermissions: {
-              Role: Owner,
-              CanEdit: false,
-              CanEditSignatureSheetTemplate: false,
-              CanDeleteSignatureSheetTemplate: false,
-              CanGenerateSignatureSheetTemplatePreview: false,
-              CanEditPermissions: false,
-              CanCreateMessages: false,
-              CanSubmit: false,
-              IsSubmitVisible: false,
-              CanFlagForReview: false,
-              IsFlagForReviewVisible: false,
-              CanRegister: false,
-              CanWithdraw: false,
-              CanRequestInformalReview: false,
-              IsRequestInformalReviewVisible: false,
-              CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false
-          },
-          Number: ,
-          IsOtherReferendumOfSameDecreeSigned: false,
-          HasIsOtherReferendumOfSameDecreeSigned: false
-        }
-      ],
-      AttestedCollectionCount: {
-        Id: Guid_Empty,
-        CollectionId: Guid_Empty,
-        TotalCitizenCount: 3632,
-        HasTotalCitizenCount: true,
-        ElectronicCitizenCount: 161
-      },
-      State: EndedCameAbout
-    },
-    {
-      Id: Guid_40,
-      DomainOfInfluenceType: Ch,
-      Bfs: 1,
-      Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Krankenversicherung,
-      CollectionStartDate: {
-        Seconds: 1499692330,
-        Nanos: 200000000
-      },
-      CollectionEndDate: {
-        Seconds: 1531228330,
-        Nanos: 200000000
-      },
-      MinSignatureCount: 100000,
-      MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20210307/krankenversicherung.html,
-      PeriodState: Expired,
-      Collections: [
-        {
-          Id: Guid_41,
-          Decree: {
-            Id: Guid_40,
-            Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Krankenversicherung,
-            PeriodState: Expired,
-            MaxElectronicSignatureCount: 10000
-          },
-          MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
-          Collection: {
-            Id: Guid_41,
-            Description: Referendum gegen die Änderung der Krankenversicherung,
-            Type: Referendum,
-            Reason: Kostenexplosion verhindern!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20210307/krankenversicherung.html,
-            SignatureSheetTemplateGenerated: false,
-            State: EndedCameAbout,
-            AttestedCollectionCount: {
-              Id: Guid_42,
-              CollectionId: Guid_41,
-              TotalCitizenCount: 121632,
-              HasTotalCitizenCount: true,
-              ElectronicCitizenCount: 1610
-            },
-            Address: {
-              CommitteeOrPerson: Aktionskomitee für bezahlbare Krankenversicherung,
-              StreetOrPostOfficeBox: Marktgasse 10,
-              ZipCode: 3011,
-              Locality: Bern
-            },
-            UserPermissions: {
-              Role: Owner,
-              CanEdit: false,
-              CanEditSignatureSheetTemplate: false,
-              CanDeleteSignatureSheetTemplate: false,
-              CanGenerateSignatureSheetTemplatePreview: false,
-              CanEditPermissions: false,
-              CanCreateMessages: false,
-              CanSubmit: false,
-              IsSubmitVisible: false,
-              CanFlagForReview: false,
-              IsFlagForReviewVisible: false,
-              CanRegister: false,
-              CanWithdraw: false,
-              CanRequestInformalReview: false,
-              IsRequestInformalReviewVisible: false,
-              CanDownloadElectronicSignaturesProtocol: true,
-              CanEditSubType: false
-            },
-            IsElectronicSubmission: false,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1499692330,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1531228330,
-              Nanos: 200000000
-            },
-            PeriodState: Expired
-          },
-          Number: ,
-          IsOtherReferendumOfSameDecreeSigned: false,
-          HasIsOtherReferendumOfSameDecreeSigned: false
-        }
-      ],
-      AttestedCollectionCount: {
-        Id: Guid_Empty,
-        CollectionId: Guid_Empty,
-        TotalCitizenCount: 121632,
-        HasTotalCitizenCount: true,
-        ElectronicCitizenCount: 1610
-      },
-      State: EndedCameAbout
-    },
-    {
-      Id: Guid_43,
-      DomainOfInfluenceType: Mu,
-      Bfs: 3203,
-      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
-      CollectionStartDate: {
-        Seconds: 1499692330,
-        Nanos: 200000000
-      },
-      CollectionEndDate: {
-        Seconds: 1531228330,
-        Nanos: 200000000
-      },
-      MinSignatureCount: 300,
-      MaxElectronicSignatureCount: 30,
-      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
-      PeriodState: Expired,
-      Collections: [
-        {
-          Id: Guid_44,
-          Decree: {
-            Id: Guid_43,
-            Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
-            PeriodState: Expired,
-            MaxElectronicSignatureCount: 30,
-            CameNotAboutReason: MinSignatureCountNotReached
-          },
-          MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-          Collection: {
-            Id: Guid_44,
-            Description: Referendum gegen die Änderung des Kulturgesetzes,
-            Type: Referendum,
-            Reason: Kulturelle Vielfalt in der Stadt erhalten!,
-            Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
-            SignatureSheetTemplateGenerated: false,
-            State: EndedCameNotAbout,
-            AttestedCollectionCount: {
-              Id: Guid_45,
-              CollectionId: Guid_44,
-              TotalCitizenCount: 432,
-              HasTotalCitizenCount: true,
-              ElectronicCitizenCount: 41
-            },
-            Address: {
-              CommitteeOrPerson: Kulturinitiative Stadt St. Gallen,
-              StreetOrPostOfficeBox: Gallusstrasse 4,
+              CommitteeOrPerson: Verein Freiwillige Kultur,
+              StreetOrPostOfficeBox: St. Jakob-Strasse 55,
               ZipCode: 9000,
               Locality: St.Gallen
             },
@@ -1537,23 +1504,221 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: false,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false
+          },
+          IsOtherReferendumOfSameDecreeSigned: false,
+          HasIsOtherReferendumOfSameDecreeSigned: false
+        }
+      ],
+      AttestedCollectionCount: {
+        Id: Guid_Empty,
+        CollectionId: Guid_Empty,
+        TotalCitizenCount: 3632,
+        HasTotalCitizenCount: true,
+        ElectronicCitizenCount: 161
+      },
+      State: EndedCameAbout
+    },
+    {
+      Id: Guid_41,
+      DomainOfInfluenceType: Ch,
+      Bfs: 1,
+      Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
+      CollectionStartDate: {
+        Year: 2017,
+        Month: 7,
+        Day: 10
+      },
+      CollectionEndDate: {
+        Year: 2018,
+        Month: 7,
+        Day: 10
+      },
+      MinSignatureCount: 100000,
+      MaxElectronicSignatureCount: 10000,
+      Link: https://www.admin.ch/,
+      PeriodState: Expired,
+      Collections: [
+        {
+          Id: Guid_42,
+          Decree: {
+            Id: Guid_41,
+            Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
+            PeriodState: Expired,
+            MaxElectronicSignatureCount: 10000
+          },
+          MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
+          Collection: {
+            Id: Guid_42,
+            Description: Referendum gegen die obligatorische tägliche Schokoladen-Pause in allen Unternehmen,
+            Type: Referendum,
+            Reason:
+Das Parlament hat beschlossen, dass alle Schweizer Unternehmen eine 15-minütige Schokoladen-Pause einführen müssen, um die Produktivität zu steigern.
+Das Referendumskomitee findet diese Vorschrift bevormundend und unpraktisch.
+Nicht alle mögen Schokolade, manche vertragen sie nicht, und viele Betriebe haben bereits eigene Pausenregelungen.
+Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und die Überzeugung, dass der Staat nicht jede Pause regulieren sollte.,
+            Link: https://www.admin.ch/,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_43,
+              CollectionId: Guid_42,
+              TotalCitizenCount: 121632,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 1610
+            },
+            Address: {
+              CommitteeOrPerson: Verband Schweizer Arbeitgeber,
+              StreetOrPostOfficeBox: Hegibachstrasse 47,
+              ZipCode: 8032,
+              Locality: Zürich
+            },
+            UserPermissions: {
+              Role: Owner,
+              CanEdit: false,
+              CanEditSignatureSheetTemplate: false,
+              CanDeleteSignatureSheetTemplate: false,
+              CanGenerateSignatureSheetTemplatePreview: false,
+              CanEditPermissions: false,
+              CanCreateMessages: false,
+              CanSubmit: false,
+              IsSubmitVisible: false,
+              CanFlagForReview: false,
+              IsFlagForReviewVisible: false,
+              CanRegister: false,
+              CanWithdraw: false,
+              CanRequestInformalReview: false,
+              IsRequestInformalReviewVisible: false,
+              CanDownloadElectronicSignaturesProtocol: true,
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2017,
+              Month: 7,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2018,
+              Month: 7,
+              Day: 10
+            },
+            PeriodState: Expired
+          },
+          IsOtherReferendumOfSameDecreeSigned: false,
+          HasIsOtherReferendumOfSameDecreeSigned: false
+        }
+      ],
+      AttestedCollectionCount: {
+        Id: Guid_Empty,
+        CollectionId: Guid_Empty,
+        TotalCitizenCount: 121632,
+        HasTotalCitizenCount: true,
+        ElectronicCitizenCount: 1610
+      },
+      State: EndedCameAbout
+    },
+    {
+      Id: Guid_44,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3203,
+      Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
+      CollectionStartDate: {
+        Year: 2017,
+        Month: 7,
+        Day: 10
+      },
+      CollectionEndDate: {
+        Year: 2018,
+        Month: 7,
+        Day: 10
+      },
+      MinSignatureCount: 300,
+      MaxElectronicSignatureCount: 30,
+      Link: https://www.stadt.sg.ch/,
+      PeriodState: Expired,
+      Collections: [
+        {
+          Id: Guid_45,
+          Decree: {
+            Id: Guid_44,
+            Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
+            PeriodState: Expired,
+            MaxElectronicSignatureCount: 30,
+            CameNotAboutReason: MinSignatureCountNotReached
+          },
+          MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+          Collection: {
+            Id: Guid_45,
+            Description: Referendum gegen das Verbot von Bubble Tea in städtischen Schulen und Kindergärten,
+            Type: Referendum,
+            Reason:
+Der Stadtrat hat beschlossen, Bubble Tea aus Schulen und Kindergärten zu verbannen, weil er zu viel Zucker und bedenkliche Farbstoffe enthalte.
+Das Referendumskomitee findet, dass Verbote nicht der richtige Weg sind – Aufklärung und Eigenverantwortung sind wichtiger.
+Bubble Tea ist ein Trend, kein Gift, und Kinder sollen lernen, bewusst damit umzugehen, statt ihn heimlich zu konsumieren.
+Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof und dafür, dass auch Perlen im Tee eine Existenzberechtigung haben.,
+            Link: https://www.stadt.sg.ch/,
+            SignatureSheetTemplateGenerated: false,
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_46,
+              CollectionId: Guid_45,
+              TotalCitizenCount: 432,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 41
+            },
+            Address: {
+              CommitteeOrPerson: Initiative Freie Getränkewahl,
+              StreetOrPostOfficeBox: Bohl 2,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            UserPermissions: {
+              Role: Owner,
+              CanEdit: false,
+              CanEditSignatureSheetTemplate: false,
+              CanDeleteSignatureSheetTemplate: false,
+              CanGenerateSignatureSheetTemplatePreview: false,
+              CanEditPermissions: false,
+              CanCreateMessages: false,
+              CanSubmit: false,
+              IsSubmitVisible: false,
+              CanFlagForReview: false,
+              IsFlagForReviewVisible: false,
+              CanRegister: false,
+              CanWithdraw: false,
+              CanRequestInformalReview: false,
+              IsRequestInformalReviewVisible: false,
+              CanDownloadElectronicSignaturesProtocol: false,
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1499692330,
-              Nanos: 200000000
+              Year: 2017,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1531228330,
-              Nanos: 200000000
+              Year: 2018,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Expired
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -1569,52 +1734,58 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       CameNotAboutReason: MinSignatureCountNotReached
     },
     {
-      Id: Guid_46,
+      Id: Guid_47,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
-      Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Altersvorsorge,
+      Description: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,
       CollectionStartDate: {
-        Seconds: 1468156330,
-        Nanos: 200000000
+        Year: 2016,
+        Month: 7,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1499692330,
-        Nanos: 200000000
+        Year: 2017,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20200927/altersvorsorge.html,
+      Link: https://www.admin.ch/,
       PeriodState: Expired,
       Collections: [
         {
-          Id: Guid_47,
+          Id: Guid_48,
           Decree: {
-            Id: Guid_46,
-            Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Altersvorsorge,
+            Id: Guid_47,
+            Description: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,
             PeriodState: Expired,
             MaxElectronicSignatureCount: 10000,
             CameNotAboutReason: MinSignatureCountNotReached
           },
-          MembersCommittee: Max Müller, Präsident SP Zürich; Laura Schmid, Vorsitzende Pro Familia Verein Bern; Thomas Keller, Finanzverantwortlicher Greenpeace Schweiz; Anna Meier, Kommunikationsbeauftragte WWF Schweiz; Felix Weber, Projektleiter Klimaschutzverein Basel; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima Zürich; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund Genf; Jonas Berger, Geschäftsführender Vorstand Junge Grüne Schweiz; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative Basel,
+          MembersCommittee: Hans Schneider, Vorsitzender Pro Senectute Bern; Monika Huber, Präsidentin Schweizerischer Rentnerverband Zürich; Thomas Berger, Finanzverantwortlicher Generationenstiftung Basel; Laura Wagner, Kommunikationsbeauftragte Schweizerischer Gewerkschaftsbund Genf; Felix Fischer, Vorstand Seniorennetzwerk Schweiz Luzern; Susanne Müller, Projektleiterin Altersforschung Zürich; Daniel Weber, Eventkoordinator Seniorengruppe Basel; Claudia Meier, Pressesprecherin Beratung für ältere Menschen Bern; Michael Schmid, Koordinator Rentnerinitiative Zürich; Isabel Keller, Vorstand Schweizerische Stiftung für Alter Genf,
           Collection: {
-            Id: Guid_47,
-            Description: Referendum gegen die Änderung der Altersvorsorge,
+            Id: Guid_48,
+            Description: Referendum gegen obligatorische Schweizerdeutsch-Kurse für Bundesangestellte,
             Type: Referendum,
-            Reason: Generationengerechtigkeit wahren!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20200927/altersvorsorge.html,
+            Reason:
+Das Parlament hat beschlossen, dass alle deutschsprachigen Bundesangestellten Schweizerdeutsch-Kurse besuchen müssen, um die nationale Verständigung zu fördern.
+Das Referendumskomitee hält diese Pflicht für diskriminierend und unpraktisch.
+Hochdeutsch ist die Amtssprache, und nicht alle Deutschsprachigen sind in der Schweiz aufgewachsen. Zwangskurse sind kein Integrationsinstrument.
+Dieses Referendum steht für Sprachenfreiheit, Chancengleichheit und die Erkenntnis, dass Dialekt eine Wahl bleiben sollte, kein Zwang.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_48,
-              CollectionId: Guid_47,
-              TotalCitizenCount: 111432,
+              Id: Guid_49,
+              CollectionId: Guid_48,
+              TotalCitizenCount: 21632,
               HasTotalCitizenCount: true,
-              ElectronicCitizenCount: 1410
+              ElectronicCitizenCount: 610
             },
             Address: {
-              CommitteeOrPerson: Komitee für eine gerechte Altersvorsorge,
-              StreetOrPostOfficeBox: Theaterplatz 1,
-              ZipCode: 3011,
+              CommitteeOrPerson: Personalverband des Bundes,
+              StreetOrPostOfficeBox: Monbijoustrasse 61,
+              ZipCode: 3007,
               Locality: Bern
             },
             UserPermissions: {
@@ -1634,23 +1805,25 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
               CanRequestInformalReview: false,
               IsRequestInformalReviewVisible: false,
               CanDownloadElectronicSignaturesProtocol: true,
-              CanEditSubType: false
+              CanEditSubType: false,
+              CanDownloadCommitteeList: true
             },
             IsElectronicSubmission: false,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1468156330,
-              Nanos: 200000000
+              Year: 2016,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1499692330,
-              Nanos: 200000000
+              Year: 2017,
+              Month: 7,
+              Day: 10
             },
             PeriodState: Expired
           },
-          Number: ,
           IsOtherReferendumOfSameDecreeSigned: false,
           HasIsOtherReferendumOfSameDecreeSigned: false
         }
@@ -1658,9 +1831,9 @@ Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach
       AttestedCollectionCount: {
         Id: Guid_Empty,
         CollectionId: Guid_Empty,
-        TotalCitizenCount: 111432,
+        TotalCitizenCount: 21632,
         HasTotalCitizenCount: true,
-        ElectronicCitizenCount: 1410
+        ElectronicCitizenCount: 610
       },
       State: EndedCameNotAbout,
       CameNotAboutReason: MinSignatureCountNotReached

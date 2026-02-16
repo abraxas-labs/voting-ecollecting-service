@@ -1,7 +1,6 @@
 ﻿{
   MembersCommittee: Heinz Müller, Präsident SP St. Gallen,
   DecreeId: Guid_1,
-  Number: ,
   Description: Gegen das Schmutzwassergsetz,
   Type: Referendum,
   Reason: Trinkwasser muss erhalten bleiben.,

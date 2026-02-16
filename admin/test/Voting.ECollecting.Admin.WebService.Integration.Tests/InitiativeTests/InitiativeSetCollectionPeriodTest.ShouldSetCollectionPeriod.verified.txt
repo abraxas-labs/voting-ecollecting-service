@@ -9,22 +9,25 @@
     Wording: false,
     CommitteeMembers: false
   },
-  CollectionStartDate: DateTime_1,
-  CollectionEndDate: DateTime_2,
-  Description: Abwasser Initiative,
+  CollectionStartDate: Date_1,
+  CollectionEndDate: Date_2,
+  Description: Für mehr Waldspazier-Routen (Kantonswald-Initiative),
   Type: Initiative,
-  Reason: Gewässer vor dem Abwasser schützen,
-  Link: https://sg.ch/abwasser/,
+  Reason:
+St.Gallen hat herrliche Wälder – vom Bodensee bis zum Alpstein. Doch markierte Spazierwege, die zum Entdecken einladen, gibt es zu wenig. Die «Kantonswald-Initiative» will ein Netz einfacher Waldrouten schaffen.
+Waldspazieren ist mehr als Bewegung – es ist Erholung, Naturerlebnis und Entschleunigung. Mit gut beschilderten Wegen und Rastplätzen entstehen Oasen für alle Generationen.
+Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen, die Wald erlebbar machen. Ein bisschen mehr Natur im Alltag – das tut gut und verbindet Mensch und Umwelt.,
+  Link: https://www.sg.ch/,
   LogoId: Guid_2,
   ImageId: Guid_3,
   SignatureSheetTemplateGenerated: false,
   SignatureSheetTemplateId: Guid_4,
   State: PreRecorded,
   Address: {
-    CommitteeOrPerson: Komitee Abwasser Initiative,
-    StreetOrPostOfficeBox: Langstrasse 200,
-    ZipCode: 8005,
-    Locality: Zürich,
+    CommitteeOrPerson: Komitee Kantonswald-Initiative,
+    StreetOrPostOfficeBox: Waldweg 15,
+    ZipCode: 9000,
+    Locality: St.Gallen,
     IsComplete: true
   },
   Municipalities: [
@@ -41,7 +44,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_6
     },
@@ -58,7 +61,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_7
     },
@@ -75,9 +78,26 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_1
       },
       Id: Guid_8
+    },
+    {
+      CollectionId: Guid_5,
+      Bfs: 3340,
+      MunicipalityName: Rapperswil-Jona,
+      PhysicalCount: {
+        CanAdd: false
+      },
+      IsLocked: false,
+      NextSheetNumber: 1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_9
     }
   ],
   EncryptionKeyId: KVotingECollecting_111adb3f-c0e8-48b5-bf98-765192abb1da_Encryption12,
@@ -88,7 +108,7 @@
   Bfs: 17,
   MaxElectronicSignatureCount: 1000,
   PeriodState: Published,
-  SignatureListSubmissionEndDate: DateTime_4,
+  SignatureListSubmissionEndDate: DateTime_2,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },
@@ -96,11 +116,11 @@
     CreatedById: unrelated-admin,
     CreatedByName: Unrelated ECol Seeder Admin Creator,
     CreatedByEmail: unrelated-admin-creator@example.com,
-    CreatedAt: DateTime_5,
+    CreatedAt: DateTime_3,
     ModifiedById: default-user-id,
     ModifiedByName: default user firstname default user lastname,
     ModifiedByEmail: default-user@example.com,
-    ModifiedAt: DateTime_3
+    ModifiedAt: DateTime_1
   },
   Id: Guid_5
 }

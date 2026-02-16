@@ -7,14 +7,20 @@
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
       Wording:
-Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
-Parks und Gärten sollen erhalten und neue geschaffen werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
+1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
       Collection: {
         Id: Guid_1,
-        Description: Stadtweite Grünflächen,
+        Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
         Type: Initiative,
-        Reason: Mehr Grün in der Stadt!,
-        Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+        Reason:
+St. Gallen ist die Rosenstadt – und was wäre eine Rosenstadt ohne Blütenpracht? Diese Initiative will sicherstellen, dass die Stadt auch künftig farbig, lebendig und bienenfreundlich bleibt.
+Ob Blumenkisten an Geländern, Wildblumenstreifen am Strassenrand oder Schulprojekte mit Insektenhotels – kleine grüne Gesten schaffen grosses Wohlbefinden. Die Initiative verlangt keine teuren Anlagen, sondern ein bewusstes Augenmerk auf Natur im Alltag.
+Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht nur schön fürs Auge – es ist gut fürs Klima, für die Bienen und für die Seele.,
+        Link: https://www.stadt.sg.ch/,
         SignatureSheetTemplateGenerated: false,
         State: EnabledForCollection,
         Address: {
@@ -46,12 +52,14 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
           CanReturnForCorrection: false
         },
         CollectionStartDate: {
-          Seconds: 1575983530,
-          Nanos: 200000000
+          Year: 2019,
+          Month: 12,
+          Day: 10
         },
         CollectionEndDate: {
-          Seconds: 1591794730,
-          Nanos: 200000000
+          Year: 2020,
+          Month: 6,
+          Day: 10
         },
         PeriodState: InCollection
       },
@@ -61,7 +69,8 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: St.Gallen
     }
   ]
 }

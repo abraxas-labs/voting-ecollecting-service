@@ -6,6 +6,7 @@ using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
+using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Admin.Core.Exceptions;
@@ -38,6 +39,7 @@ public class InitiativeService : IInitiativeService
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
     private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
     private readonly IStatisticalDataCsvGenerator _statisticalDataCsvGenerator;
+    private readonly IStatisticalDataTimeLapseCsvGenerator _statisticalDataTimeLapseCsvGenerator;
     private readonly IAccessControlListDoiService _coreAccessControlListDoiService;
     private readonly IOfficialJournalPublicationProtocolGenerator _officialJournalPublicationProtocolGenerator;
     private readonly IElectronicSignaturesProtocolGenerator _electronicSignaturesProtocolGenerator;
@@ -47,6 +49,7 @@ public class InitiativeService : IInitiativeService
     private readonly IPermissionService _permissionService;
     private readonly ISecondFactorTransactionService _secondFactorTransactionService;
     private readonly CollectionCryptoService _collectionCryptoService;
+    private readonly AccessControlListDoiService _accessControlListDoiService;
     private readonly IUserNotificationService _userNotificationService;
 
     public InitiativeService(
@@ -60,10 +63,12 @@ public class InitiativeService : IInitiativeService
         IElectronicSignaturesProtocolGenerator electronicSignaturesProtocolGenerator,
         IAccessControlListDoiRepository accessControlListDoiRepository,
         IStatisticalDataCsvGenerator statisticalDataCsvGenerator,
+        IStatisticalDataTimeLapseCsvGenerator statisticalDataTimeLapseCsvGenerator,
         IAccessControlListDoiService coreAccessControlListDoiService,
         ISecondFactorTransactionService secondFactorTransactionService,
         IUserNotificationService userNotificationService,
-        CollectionCryptoService collectionCryptoService)
+        CollectionCryptoService collectionCryptoService,
+        AccessControlListDoiService accessControlListDoiService)
     {
         _initiativeRepository = initiativeRepository;
         _timeProvider = timeProvider;
@@ -75,10 +80,12 @@ public class InitiativeService : IInitiativeService
         _electronicSignaturesProtocolGenerator = electronicSignaturesProtocolGenerator;
         _accessControlListDoiRepository = accessControlListDoiRepository;
         _statisticalDataCsvGenerator = statisticalDataCsvGenerator;
+        _statisticalDataTimeLapseCsvGenerator = statisticalDataTimeLapseCsvGenerator;
         _coreAccessControlListDoiService = coreAccessControlListDoiService;
         _secondFactorTransactionService = secondFactorTransactionService;
         _userNotificationService = userNotificationService;
         _collectionCryptoService = collectionCryptoService;
+        _accessControlListDoiService = accessControlListDoiService;
     }
 
     public Task<List<InitiativeSubTypeEntity>> ListSubTypes()
@@ -92,7 +99,7 @@ public class InitiativeService : IInitiativeService
     public async Task<IReadOnlyDictionary<DomainOfInfluenceType, List<Initiative>>> ListByDoiType(
         IReadOnlySet<DomainOfInfluenceType>? doiTypes, string? bfs)
     {
-        var now = _timeProvider.GetUtcNow();
+        var today = _timeProvider.GetUtcTodayDateOnly();
         var query = _initiativeRepository.Query()
             .WhereCanRead(_permissionService)
             .Where(x => x.DomainOfInfluenceType.HasValue);
@@ -115,7 +122,7 @@ public class InitiativeService : IInitiativeService
             // sort by closest expiration,
             // expired after non-expired.
             .OrderBy(x => x.DomainOfInfluenceType)
-            .ThenBy(x => x.CollectionEndDate < now)
+            .ThenBy(x => x.CollectionEndDate < today)
             .ThenBy(x => x.CollectionEndDate)
             .ThenBy(x => x.Description)
             .GroupBy(x => x.DomainOfInfluenceType)
@@ -127,7 +134,7 @@ public class InitiativeService : IInitiativeService
             .ToDictionary(x => x, x =>
             {
                 var initiatives = Mapper.MapToInitiatives(initiativesByDoiTypes.GetValueOrDefault(x) ?? []);
-                initiatives.SetPeriodStates(_timeProvider.GetUtcNowDateTime());
+                initiatives.SetPeriodStates(today);
 
                 foreach (var initiative in initiatives)
                 {
@@ -154,9 +161,10 @@ public class InitiativeService : IInitiativeService
                                    .FirstOrDefaultAsync(x => x.Id == id)
                                ?? throw new EntityNotFoundException(nameof(InitiativeEntity), id);
         var initiative = Mapper.MapToInitiative(initiativeEntity);
-        initiative.SetPeriodState(_timeProvider.GetUtcNowDateTime());
+        initiative.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(initiative);
         _collectionService.SetCollectionCount(initiative);
+        initiative.DomainOfInfluenceName = await _accessControlListDoiService.LoadDomainOfInfluenceName(initiative.DomainOfInfluenceType!.Value, initiative.Bfs!);
         return initiative;
     }
 
@@ -181,9 +189,8 @@ public class InitiativeService : IInitiativeService
         await transaction.CommitAsync();
     }
 
-    public async Task SetCollectionPeriod(Guid id, DateTime collectionStartDate, DateTime collectionEndDate)
+    public async Task SetCollectionPeriod(Guid id, DateOnly collectionStartDate, DateOnly collectionEndDate)
     {
-        var utcNow = _timeProvider.GetUtcNowDateTime();
         var initiative = await _initiativeRepository.Query()
                              .WhereCanSetCollectionPeriod(_permissionService)
                              .AsTracking()
@@ -191,7 +198,7 @@ public class InitiativeService : IInitiativeService
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), id);
 
-        EnsureValidCollectionDates(utcNow, collectionStartDate, collectionEndDate);
+        EnsureValidCollectionDates(_timeProvider.GetUtcTodayDateOnly(), collectionStartDate, collectionEndDate);
 
         initiative.CollectionStartDate = collectionStartDate;
         initiative.CollectionEndDate = collectionEndDate;
@@ -202,11 +209,10 @@ public class InitiativeService : IInitiativeService
         await _dataContext.SaveChangesAsync();
     }
 
-    public async Task Enable(Guid id, DateTime? collectionStartDate, DateTime? collectionEndDate)
+    public async Task Enable(Guid id, DateOnly? collectionStartDate, DateOnly? collectionEndDate)
     {
         await using var transaction = await _dataContext.BeginTransaction();
 
-        var utcNow = _timeProvider.GetUtcNowDateTime();
         var initiative = await _initiativeRepository.Query()
                              .WhereCanEnable(_permissionService)
                              .AsTracking()
@@ -217,7 +223,7 @@ public class InitiativeService : IInitiativeService
         initiative.State = CollectionState.PreparingForCollection;
         if (initiative.IsElectronicSubmission)
         {
-            EnsureValidCollectionDates(utcNow, collectionStartDate, collectionEndDate);
+            EnsureValidCollectionDates(_timeProvider.GetUtcTodayDateOnly(), collectionStartDate, collectionEndDate);
 
             initiative.CollectionStartDate = collectionStartDate;
             initiative.CollectionEndDate = collectionEndDate;
@@ -305,17 +311,10 @@ public class InitiativeService : IInitiativeService
                          .FirstOrDefaultAsync(x => x.Id == id, cancellationToken)
                      ?? throw new EntityNotFoundException(typeof(InitiativeEntity), id);
 
-        yield return _statisticalDataCsvGenerator.GenerateFile(initiative);
-
-        if (initiative.DomainOfInfluenceType is DomainOfInfluenceType.Mu)
+        await foreach (var file in GenerateFiles(initiative, cancellationToken))
         {
-            yield break;
+            yield return file;
         }
-
-        var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(initiative.Bfs!);
-        var subType = await _initiativeSubTypeRepository.Query().FirstOrDefaultAsync(x => x.Id == initiative.SubTypeId, cancellationToken);
-        yield return await _officialJournalPublicationProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(initiative, accessControlListDoi, subType), cancellationToken);
-        yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(initiative, accessControlListDoi, subType), cancellationToken);
     }
 
     public async Task ReturnForCorrection(Guid id, InitiativeLockedFields? lockedFields)
@@ -373,15 +372,7 @@ public class InitiativeService : IInitiativeService
 
         if (!string.IsNullOrEmpty(recipient) && !string.IsNullOrEmpty(collection.Bfs))
         {
-            var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(collection.Bfs);
-            InitiativeSubTypeEntity? subType = null;
-            if (collection.SubTypeId is not null)
-            {
-                subType = await _initiativeSubTypeRepository.Query()
-                    .FirstOrDefaultAsync(x => x.Id == collection.SubTypeId, cancellationToken);
-            }
-
-            var attachment = ZipFile.Create(_collectionService.GenerateCollectionFiles(collection, accessControlListDoi, subType, cancellationToken), "archive.zip");
+            var attachment = ZipFile.Create(GenerateFiles(collection, cancellationToken), "archive.zip");
             await _userNotificationService.SendUserNotification(
                 recipient,
                 false,
@@ -475,7 +466,7 @@ public class InitiativeService : IInitiativeService
         }
     }
 
-    private void EnsureValidCollectionDates(DateTime utcNow, DateTime? collectionStartDate, DateTime? collectionEndDate)
+    private void EnsureValidCollectionDates(DateOnly utcNow, DateOnly? collectionStartDate, DateOnly? collectionEndDate)
     {
         if (!collectionStartDate.HasValue)
         {
@@ -521,5 +512,35 @@ public class InitiativeService : IInitiativeService
         return SecondFactorTransactionActionId.Create(
             SecondFactorTransactionActionTypes.DeleteInitiative,
             collection.Id);
+    }
+
+    private async IAsyncEnumerable<IFile> GenerateFiles(
+        InitiativeEntity initiative,
+        [EnumeratorCancellation] CancellationToken cancellationToken)
+    {
+        yield return _statisticalDataCsvGenerator.GenerateFile(new StatisticalDataTemplateData([initiative.Id], initiative.Description));
+        yield return await _statisticalDataTimeLapseCsvGenerator.GenerateFile(new StatisticalDataTimeLapseTemplateData([initiative.Id], initiative.Description));
+        if (initiative.DomainOfInfluenceType is DomainOfInfluenceType.Mu)
+        {
+            yield break;
+        }
+
+        InitiativeSubTypeEntity? subType = null;
+        if (initiative.SubTypeId is not null)
+        {
+            subType = await _initiativeSubTypeRepository.Query()
+                .FirstOrDefaultAsync(x => x.Id == initiative.SubTypeId, cancellationToken);
+        }
+
+        var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(initiative.Bfs!);
+        var templateData = new ECollectingProtocolTemplateData(
+            [initiative],
+            accessControlListDoi,
+            initiative.Description,
+            initiative.DomainOfInfluenceType!.Value,
+            false,
+            subType);
+        yield return await _officialJournalPublicationProtocolGenerator.GenerateFileModel(templateData, cancellationToken);
+        yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(templateData, cancellationToken);
     }
 }

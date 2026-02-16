@@ -34,8 +34,8 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     public async Task TestShouldWork()
     {
         var response = await _client.CreateAsync(NewValidRequest());
-        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        var referendum = await RunOnDb(db => db.Referendums.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 
@@ -53,9 +53,9 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     public async Task TestShouldWorkWithDecreeId()
     {
         var response = await _client.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdFutureNoReferendum));
-        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        var referendum = await RunOnDb(db => db.Referendums.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
         referendum.DecreeId.Should().Be(DecreesCtStGallen.IdFutureNoReferendum);
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 
@@ -71,8 +71,9 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     [Fact]
     public async Task MoreThanOneReferendumOnDecreePerUserShouldThrow()
     {
+        await _client.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithoutReferendum));
         await AssertStatus(
-            async () => await _client.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithReferendum)),
+            async () => await _client.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithoutReferendum)),
             StatusCode.AlreadyExists);
     }
 

@@ -32,7 +32,7 @@
     <p>im E-Collecting gibt es Neuigkeiten:</p>
     <ul>
        <li>
-   <a href="http://localhost:5001/initiatives/fd680937-4b7a-46d9-87ef-51540a40aa85">example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</a><br />
+   <a href="http://localhost:5001/initiatives/fd680937-4b7a-46d9-87ef-51540a40aa85?showChat=true">example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</a><br />
    Es ist eine neue Nachricht verf&#252;gbar<span>.</span>
 </li>
     </ul>

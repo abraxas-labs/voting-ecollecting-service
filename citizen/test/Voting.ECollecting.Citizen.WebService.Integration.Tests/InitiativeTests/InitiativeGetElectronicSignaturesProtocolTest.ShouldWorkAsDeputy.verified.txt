@@ -1,20 +1,20 @@
 ﻿{
   DomainOfInfluenceType: Ct,
   CollectionType: Einheitsinitiative,
-  CollectionDescription: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
+  CollectionDescription: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
   TotalValidElectronicSignatureCount: 42,
   TotalValidPhysicalSignatureCount: 58,
-  TotalInvalidPhysicalSignatureCount: 9,
+  TotalInvalidPhysicalSignatureCount: 12,
   TotalSignatureCount: 100,
   DomainOfInfluences: [
     {
       Name: Bezirk St.Gallen,
-      ValidElectronicSignatureCount: 30,
-      ValidPhysicalSignatureCount: 51,
-      InvalidPhysicalSignatureCount: 9,
+      ValidElectronicSignatureCount: 40,
+      ValidPhysicalSignatureCount: 68,
+      InvalidPhysicalSignatureCount: 12,
       DomainOfInfluences: [
         {
-          Name: St. Gallen,
+          Name: St.Gallen,
           ValidElectronicSignatureCount: 10,
           ValidPhysicalSignatureCount: 17,
           InvalidPhysicalSignatureCount: 3
@@ -26,7 +26,13 @@
           InvalidPhysicalSignatureCount: 3
         },
         {
-          Name: Berg (SG),
+          Name: Berg SG,
+          ValidElectronicSignatureCount: 10,
+          ValidPhysicalSignatureCount: 17,
+          InvalidPhysicalSignatureCount: 3
+        },
+        {
+          Name: Rapperswil-Jona,
           ValidElectronicSignatureCount: 10,
           ValidPhysicalSignatureCount: 17,
           InvalidPhysicalSignatureCount: 3

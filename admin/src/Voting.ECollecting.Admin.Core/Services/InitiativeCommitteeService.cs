@@ -23,6 +23,7 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
 {
     private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
     private readonly IInitiativeRepository _initiativeRepository;
+    private readonly IInitiativeCommitteeMemberRepository _committeeMemberRepository;
     private readonly CoreAppConfig _config;
     private readonly IDataContext _dataContext;
     private readonly IPermissionService _permissionService;
@@ -32,6 +33,7 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
     public InitiativeCommitteeService(
         IAccessControlListDoiRepository accessControlListDoiRepository,
         IInitiativeRepository initiativeRepository,
+        IInitiativeCommitteeMemberRepository committeeMemberRepository,
         CoreAppConfig config,
         IDataContext dataContext,
         IPermissionService permissionService,
@@ -40,6 +42,7 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
     {
         _accessControlListDoiRepository = accessControlListDoiRepository;
         _initiativeRepository = initiativeRepository;
+        _committeeMemberRepository = committeeMemberRepository;
         _config = config;
         _dataContext = dataContext;
         _permissionService = permissionService;
@@ -60,11 +63,15 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
                             .AsSplitQuery()
                             .Include(x => x.CommitteeMembers)
                             .ThenInclude(m => m.Permission)
+                            .Include(x => x.CommitteeMembers)
+                            .ThenInclude(m => m.Initiative)
                             .Where(x => x.Id == initiativeId)
                             .Select(x => new InitiativeCommittee(
                                 x.Bfs!,
                                 x.CommitteeLists.OrderByDescending(y => y.AuditInfo.CreatedAt).ToList(),
-                                x.CommitteeMembers.OrderBy(y => y.SortIndex).Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs)).ToList()))
+                                x.CommitteeMembers.OrderBy(y => y.SortIndex)
+                                    .ThenBy(y => y.PoliticalLastName)
+                                    .Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs)).ToList()))
                             .FirstOrDefaultAsync()
                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
         committee.RequiredApprovedMembersCount = await _accessControlListDoiRepository.Query()
@@ -72,6 +79,7 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
                                                      .Select(x => x.ECollectingInitiativeNumberOfMembersCommittee)
                                                      .FirstOrDefaultAsync()
                                                  ?? _config.InitiativeCommitteeMinApprovedMembersCount;
+        SetUserPermissions(committee);
         return committee;
     }
 
@@ -91,13 +99,23 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
         var initiative = await _initiativeRepository.Query()
                              .WhereCanEditCommittee(_permissionService)
                              .AsTracking()
-                             .IncludeUploadedApprovedOrRejectedCommitteeMember(id)
+                             .IncludeApprovedOrRejectedCommitteeMember(id)
                              .FirstOrDefaultAsync(x => x.Id == initiativeId)
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
         var member = initiative.CommitteeMembers.FirstOrDefault()
                      ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
 
         member.ApprovalState = InitiativeCommitteeMemberApprovalState.Requested;
+
+        if (!member.SortIndex.HasValue)
+        {
+            var currentMaxIndex = await _committeeMemberRepository.Query()
+                .Where(x => x.InitiativeId == initiativeId)
+                .MaxAsync(x => x.SortIndex) ?? -1;
+
+            member.SortIndex = currentMaxIndex + 1;
+        }
+
         _permissionService.SetModified(member);
         await _dataContext.SaveChangesAsync();
     }
@@ -147,8 +165,29 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
         var member = initiative.CommitteeMembers.FirstOrDefault()
                      ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
 
+        if (member.SortIndex.HasValue)
+        {
+            await _committeeMemberRepository.AuditedUpdateRange(
+                q => q.Where(x => x.InitiativeId == initiativeId && x.SortIndex > member.SortIndex).OrderBy(y => y.SortIndex),
+                x => --x.SortIndex);
+            member.SortIndex = null;
+        }
+
         member.ApprovalState = InitiativeCommitteeMemberApprovalState.Rejected;
         _permissionService.SetModified(member);
         await _dataContext.SaveChangesAsync();
+    }
+
+    private void SetUserPermissions(InitiativeCommittee committee)
+    {
+        foreach (var member in committee.CommitteeMembers)
+        {
+            SetUserPermissions(member);
+        }
+    }
+
+    private void SetUserPermissions(InitiativeCommitteeMember member)
+    {
+        member.UserPermissions = Shared.Core.Permissions.InitiativeCommitteeMemberPermissions.Build(member);
     }
 }

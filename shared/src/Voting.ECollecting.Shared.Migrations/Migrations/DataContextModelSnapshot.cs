@@ -192,11 +192,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Property<string>("Bfs")
                         .HasColumnType("text");
 
-                    b.Property<DateTime?>("CollectionEndDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly?>("CollectionEndDate")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime?>("CollectionStartDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly?>("CollectionStartDate")
+                        .HasColumnType("date");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -234,6 +234,9 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("SecureIdNumber")
+                        .HasColumnType("text");
+
                     b.Property<bool>("SignatureSheetTemplateGenerated")
                         .HasColumnType("boolean");
 
@@ -254,10 +257,17 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("LogoId")
                         .IsUnique();
 
+                    b.HasIndex("SecureIdNumber")
+                        .IsUnique()
+                        .HasFilter("\"SecureIdNumber\" IS NOT NULL");
+
                     b.HasIndex("SignatureSheetTemplateId")
                         .IsUnique();
 
-                    b.ToTable("Collections");
+                    b.ToTable("Collections", t =>
+                        {
+                            t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", "\"IsElectronicSubmission\" OR (\n   \"SecureIdNumber\" IS NOT NULL\n   AND \"SecureIdNumber\" <> ''\n)");
+                        });
 
                     b.HasDiscriminator<int>("Type").HasValue(0);
 
@@ -457,11 +467,19 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CollectionId")
+                        .IsUnique()
+                        .HasDatabaseName("IX_CollectionPermissions_Owner")
+                        .HasFilter("\"Role\" = 3");
+
                     b.HasIndex("InitiativeCommitteeMemberId")
                         .IsUnique();
 
-                    b.HasIndex("CollectionId", "Email")
-                        .IsUnique();
+                    b.HasIndex("State");
+
+                    b.HasIndex("CollectionId", "IamUserId")
+                        .IsUnique()
+                        .HasFilter("\"IamUserId\" <> ''");
 
                     b.ToTable("CollectionPermissions");
                 });
@@ -482,11 +500,14 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Property<bool>("IsSample")
                         .HasColumnType("boolean");
 
+                    b.Property<bool>("ModifiedBySuperiorAuthority")
+                        .HasColumnType("boolean");
+
                     b.Property<int>("Number")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("ReceivedAt")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("ReceivedAt")
+                        .HasColumnType("date");
 
                     b.Property<int>("State")
                         .HasColumnType("integer");
@@ -512,11 +533,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Property<int?>("CameNotAboutReason")
                         .HasColumnType("integer");
 
-                    b.Property<DateTime>("CollectionEndDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("CollectionEndDate")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("CollectionStartDate")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("CollectionStartDate")
+                        .HasColumnType("date");
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -724,6 +745,10 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("HouseNumber")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("IamUserId")
                         .HasColumnType("text");
 
@@ -737,10 +762,6 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Property<bool>("MemberSignatureRequested")
                         .HasColumnType("boolean");
 
-                    b.Property<string>("PoliticalBfs")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<string>("PoliticalDuty")
                         .HasColumnType("text");
 
@@ -752,14 +773,22 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("PoliticalResidence")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<Guid?>("SignatureFileId")
                         .HasColumnType("uuid");
 
                     b.Property<int>("SignatureType")
                         .HasColumnType("integer");
 
-                    b.Property<int>("SortIndex")
+                    b.Property<int?>("SortIndex")
                         .HasColumnType("integer");
+
+                    b.Property<string>("Street")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.Property<string>("Token")
                         .HasColumnType("text");
@@ -767,7 +796,13 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Property<DateTime?>("TokenExpiry")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("ZipCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ApprovalState");
 
                     b.HasIndex("SignatureFileId")
                         .IsUnique();
@@ -921,6 +956,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("GovernmentDecisionNumberLower")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("text")
+                        .HasComputedColumnSql("lower(\"GovernmentDecisionNumber\")", true);
+
                     b.Property<int>("MinSignatureCount")
                         .HasColumnType("integer");
 
@@ -934,7 +974,16 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.HasIndex("GovernmentDecisionNumberLower")
+                        .IsUnique()
+                        .HasFilter("\"GovernmentDecisionNumber\" <> ''");
+
                     b.HasIndex("SubTypeId");
+
+                    b.ToTable(t =>
+                        {
+                            t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", "\"IsElectronicSubmission\" OR (\n   \"SecureIdNumber\" IS NOT NULL\n   AND \"SecureIdNumber\" <> ''\n)");
+                        });
 
                     b.HasDiscriminator().HasValue(1);
                 });
@@ -950,11 +999,12 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("Number")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.HasIndex("DecreeId");
+
+                    b.ToTable(t =>
+                        {
+                            t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", "\"IsElectronicSubmission\" OR (\n   \"SecureIdNumber\" IS NOT NULL\n   AND \"SecureIdNumber\" <> ''\n)");
+                        });
 
                     b.HasDiscriminator().HasValue(2);
                 });

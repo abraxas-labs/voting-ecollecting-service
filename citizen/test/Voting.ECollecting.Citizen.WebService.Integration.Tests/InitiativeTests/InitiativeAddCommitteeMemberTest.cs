@@ -29,7 +29,9 @@ public class InitiativeAddCommitteeMemberTest : BaseGrpcTest<InitiativeService.I
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidLegislativeReturnedForCorrection));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(
+            InitiativesCtStGallen.GuidLegislativeInPreparation,
+            InitiativesCtStGallen.GuidLegislativeReturnedForCorrection));
     }
 
     [Fact]
@@ -54,9 +56,9 @@ public class InitiativeAddCommitteeMemberTest : BaseGrpcTest<InitiativeService.I
 
         // sort indexes should be consecutive
         var sortIndexes = await RunOnDb(db => db.InitiativeCommitteeMembers
-            .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation)
+            .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation && x.SortIndex != null)
             .OrderBy(x => x.SortIndex)
-            .Select(x => x.SortIndex)
+            .Select(x => x.SortIndex!.Value)
             .ToListAsync());
 
         var i = 0;
@@ -109,7 +111,7 @@ public class InitiativeAddCommitteeMemberTest : BaseGrpcTest<InitiativeService.I
         req.Role = CollectionPermissionRole.Owner;
         await AssertStatus(
             async () => await AuthenticatedClient.AddCommitteeMemberAsync(req),
-            StatusCode.InvalidArgument);
+            StatusCode.AlreadyExists);
     }
 
     [Fact]
@@ -155,16 +157,6 @@ public class InitiativeAddCommitteeMemberTest : BaseGrpcTest<InitiativeService.I
             .UserNotifications
             .AnyAsync());
         hasNotifications.Should().BeFalse();
-    }
-
-    [Fact]
-    public async Task ShouldThrowWithApprovalOnPaper()
-    {
-        var req = NewValidRequest();
-        req.InitiativeId = InitiativesCtStGallen.IdLegislativeReturnedForCorrection;
-        await AssertStatus(
-            async () => await AuthenticatedClient.AddCommitteeMemberAsync(req),
-            StatusCode.InvalidArgument);
     }
 
     [Fact]
@@ -282,8 +274,11 @@ public class InitiativeAddCommitteeMemberTest : BaseGrpcTest<InitiativeService.I
             InitiativeId = InitiativesCtStGallen.IdLegislativeInPreparation,
             RequestMemberSignature = true,
             PoliticalDuty = "Protokollführer",
-            PoliticalBfs = Bfs.MunicipalityStGallen,
+            PoliticalResidence = Bfs.GetName(Bfs.MunicipalityStGallen),
             Bfs = Bfs.MunicipalityStGallen,
+            Street = "Bahnhofstrasse",
+            HouseNumber = "1a",
+            ZipCode = "9000",
             Role = CollectionPermissionRole.Deputy,
         };
 

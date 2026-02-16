@@ -7,11 +7,11 @@ namespace Voting.ECollecting.Shared.Domain.Extensions;
 
 public static class InitiativeExtensions
 {
-    public static void SetPeriodStates(this IEnumerable<InitiativeEntity> initiatives, DateTime utcNow)
+    public static void SetPeriodStates(this IEnumerable<InitiativeEntity> initiatives, DateOnly today)
     {
         foreach (var initiative in initiatives)
         {
-            initiative.SetPeriodState(utcNow);
+            initiative.SetPeriodState(today);
         }
     }
 }

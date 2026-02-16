@@ -92,7 +92,7 @@ public class CollectionTryReleaseSignatureSheetNumber : BaseGrpcTest<CollectionS
     {
         await ModifyDbEntities(
             (ReferendumEntity e) => e.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-            e => e.CollectionStartDate = MockedClock.GetDate(1));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
         await AssertStatus(
             async () => await MuSgKontrollzeichenerfasserClient.TryReleaseNumberAsync(NewValidRequest()),
             StatusCode.NotFound);

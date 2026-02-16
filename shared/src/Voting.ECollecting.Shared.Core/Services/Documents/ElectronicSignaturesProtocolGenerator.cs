@@ -29,5 +29,5 @@ public class ElectronicSignaturesProtocolGenerator :
         => DataContainerBuilder.BuildProtocolDataContainer(data);
 
     protected override string BuildFileName(ECollectingProtocolTemplateData data)
-        => $"{data.Collection.Description}_{_config.ElectronicSignaturesProtocolFileName}";
+        => $"{data.Description}_{_config.ElectronicSignaturesProtocolFileName}";
 }

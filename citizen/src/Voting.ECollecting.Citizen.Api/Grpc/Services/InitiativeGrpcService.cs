@@ -69,7 +69,7 @@ public class InitiativeGrpcService : InitiativeService.InitiativeServiceBase
         SetInitiativeInPreparationRequest request,
         ServerCallContext context)
     {
-        var id = await _initiativeService.SetInPreparation(request.GovernmentDecisionNumber);
+        var id = await _initiativeService.SetInPreparation(request.SecureIdNumber);
         return new IdValue { Id = id.ToString() };
     }
 
@@ -145,6 +145,16 @@ public class InitiativeGrpcService : InitiativeService.InitiativeServiceBase
         await _initiativeCommitteeMemberService.UpdateCommitteeMember(
             member,
             role == CollectionPermissionRole.Unspecified ? null : role);
+        return ProtobufEmpty.Instance;
+    }
+
+    public override async Task<Empty> UpdateCommitteeMemberPoliticalDuty(
+        UpdateCommitteeMemberPoliticalDutyRequest request,
+        ServerCallContext context)
+    {
+        var id = Guid.Parse(request.Id);
+        var initiativeId = Guid.Parse(request.InitiativeId);
+        await _initiativeCommitteeMemberService.UpdateCommitteeMemberPoliticalDuty(initiativeId, id, request.PoliticalDuty);
         return ProtobufEmpty.Instance;
     }
 

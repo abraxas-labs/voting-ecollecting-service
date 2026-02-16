@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Gesundheitsinitiative,
+        CollectionName: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Gesundheitsinitiative,
+        CollectionName: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Stadtweite Gesundheitsinitiative,
+        CollectionName: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -48,8 +48,11 @@
   initiative: {
     MinSignatureCount: 1000,
     Wording:
-Diese Initiative fordert eine Reform des Gesundheitssystems auf Stadtebene.
-Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen
+1 Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
+2 Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
+3 Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
     GovernmentDecisionNumber: MUSG-2025-005,
     AdmissibilityDecisionState: Valid,
     LockedFields: {
@@ -57,12 +60,15 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
       Wording: false,
       CommitteeMembers: false
     },
-    CollectionStartDate: DateTime_2,
-    CollectionEndDate: DateTime_3,
-    Description: Stadtweite Gesundheitsinitiative,
+    CollectionStartDate: Date_1,
+    CollectionEndDate: Date_2,
+    Description: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
     Type: Initiative,
-    Reason: Gesundheit für alle!,
-    Link: https://www.stadt.sg.ch/home/gesundheitsinitiative.html,
+    Reason:
+In vielen Quartieren kennen sich die Menschen kaum noch – Nachbarschaftsfeste könnten das ändern. Die «Nachbarschaftsfeste-Initiative» will mehr Gemeinschaft im Quartier.
+Ein Nachbarschaftsfest ist mehr als Grillieren und Musik – es ist ein Ort für Kennenlernen, Austausch und Zusammenhalt. Mit einfachen Mitteln entsteht ein Stück Heimat vor der Haustür.
+Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassenfeste, die von Anwohnern selbst organisiert werden. Ein bisschen Feiern, Plaudern und Nachbarschaft leben – das stärkt den Zusammenhalt in der Stadt.,
+    Link: https://www.stadt.sg.ch/,
     LogoId: Guid_6,
     ImageId: Guid_7,
     SignatureSheetTemplateGenerated: true,
@@ -102,7 +108,7 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
     Bfs: 3203,
     MaxElectronicSignatureCount: 500,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_4,
+    SignatureListSubmissionEndDate: DateTime_2,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -110,7 +116,7 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
       CreatedById: default-user-id,
       CreatedByName: Test Citizen Creator,
       CreatedByEmail: citizen-creator@example.com,
-      CreatedAt: DateTime_5,
+      CreatedAt: DateTime_3,
       ModifiedById: default-user-id,
       ModifiedByName: default user firstname default user lastname,
       ModifiedByEmail: default-user@example.com,

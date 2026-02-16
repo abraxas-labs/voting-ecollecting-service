@@ -8,31 +8,177 @@
     },
     {
       DomainOfInfluenceType: Mu,
-      Initiatives: [
+      Referendums: [
         {
           Id: Guid_1,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
+          CollectionStartDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 7,
+            Day: 10
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_2,
+                Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
+                Type: Referendum,
+                Reason:
+Der Stadtrat hat beschlossen, in allen Bibliotheken gemütliche Café-Ecken mit Kaninchen, Meerschweinchen und Katzen einzurichten, um gestressten Leserinnen und Lesern Entspannung zu bieten.
+Das Referendumskomitee findet Tierliebe zwar wichtig, befürchtet aber Allergien, Hygiene-Probleme und Ablenkung vom eigentlichen Zweck einer Bibliothek.
+Bücher und Tiere vertragen sich nicht immer gut – manche Katze bevorzugt das Schlafen auf dem Lexikon.
+Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Schutz von Allergikerinnen und Allergikern – Tiere gehören in den Zoo, nicht ins Regal.,
+                Link: https://www.stadt.sg.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_3,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_4,
+                  CollectionId: Guid_2,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee Stille Bibliotheken,
+                  StreetOrPostOfficeBox: Vadianstrasse 15,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: InCollection
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_5,
+              Decree: {
+                Id: Guid_1,
+                Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_5,
+                Description: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
+                Type: Referendum,
+                Reason:
+Ein weiteres Komitee hat sich formiert, weil auch es die Tierpläne in den Bibliotheken für problematisch hält – allerdings aus anderen Gründen.
+Eine Bibliothek ist laut, hektisch und kein artgerechter Lebensraum.
+Ausserdem entstehen zusätzliche Kosten für Futter, Pflege, Tierarzt und Versicherung – Geld, das besser in neue Bücher investiert wäre.
+Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit und die Vorstellung, dass Bibliotheken Orte des Wissens bleiben sollten – nicht Streichelzoos.,
+                Link: https://www.stadt.sg.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_6,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_7,
+                  CollectionId: Guid_5,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Verein Tierwohl und Buchkultur,
+                  StreetOrPostOfficeBox: Museumstrasse 8,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: InCollection
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false
+          },
+          State: CollectionApplicable
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_8,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
-Parks und Gärten sollen erhalten und neue geschaffen werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
+1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
           Collection: {
-            Id: Guid_1,
-            Description: Stadtweite Grünflächen,
+            Id: Guid_8,
+            Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
             Type: Initiative,
-            Reason: Mehr Grün in der Stadt!,
-            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            Reason:
+St. Gallen ist die Rosenstadt – und was wäre eine Rosenstadt ohne Blütenpracht? Diese Initiative will sicherstellen, dass die Stadt auch künftig farbig, lebendig und bienenfreundlich bleibt.
+Ob Blumenkisten an Geländern, Wildblumenstreifen am Strassenrand oder Schulprojekte mit Insektenhotels – kleine grüne Gesten schaffen grosses Wohlbefinden. Die Initiative verlangt keine teuren Anlagen, sondern ein bewusstes Augenmerk auf Natur im Alltag.
+Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht nur schön fürs Auge – es ist gut fürs Klima, für die Bienen und für die Seele.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_2,
+              Id: Guid_9,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_3,
-              CollectionId: Guid_1,
+              Id: Guid_10,
+              CollectionId: Guid_8,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -46,12 +192,14 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -64,29 +212,35 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
           }
         },
         {
-          Id: Guid_4,
+          Id: Guid_11,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
-Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten
+1 Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
+2 Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
+3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
           Collection: {
-            Id: Guid_4,
-            Description: Stadtweite Recyclinginitiative,
+            Id: Guid_11,
+            Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),
             Type: Initiative,
-            Reason: Mehr Recycling für eine nachhaltige Stadt!,
-            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            Reason:
+Wer durch St. Gallen spaziert, weiss: Aussicht gibt es genug, aber oft keinen Platz zum Hinsetzen. Die «Bänkli-Initiative» will das ändern.
+Ein gut platziertes Bänkli ist mehr als eine Sitzgelegenheit – es ist ein Treffpunkt, ein Ort für Gespräche, Nachdenken oder einfach Durchatmen. Mit Blick auf See, Schloss oder Sonnenuntergang wird daraus ein Stück Alltagskultur.
+Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer gut sitzt, denkt konstruktiver – und bleibt vielleicht ein bisschen länger.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_5,
+              Id: Guid_12,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_6,
-              CollectionId: Guid_4,
+              Id: Guid_13,
+              CollectionId: Guid_11,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 500
             },
@@ -101,12 +255,14 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },

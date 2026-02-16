@@ -100,7 +100,7 @@ public class CollectionCreatePermissionTest : BaseGrpcTest<CollectionService.Col
     {
         await AssertStatus(
             async () => await AuthenticatedClient.CreatePermissionAsync(NewValidRequest(r => r.Role = CollectionPermissionRole.Owner)),
-            StatusCode.InvalidArgument);
+            StatusCode.AlreadyExists);
     }
 
     [Fact]

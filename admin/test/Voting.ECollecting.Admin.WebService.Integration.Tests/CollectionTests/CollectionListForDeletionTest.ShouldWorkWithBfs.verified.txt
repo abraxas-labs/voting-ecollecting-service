@@ -13,35 +13,41 @@
           Id: Guid_1,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
-          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
+          Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
           CollectionStartDate: {
-            Seconds: 1499692330,
-            Nanos: 200000000
+            Year: 2017,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1531228330,
-            Nanos: 200000000
+            Year: 2018,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 300,
           MaxElectronicSignatureCount: 30,
-          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
+          Link: https://www.stadt.sg.ch/,
           PeriodState: Expired,
           Collections: [
             {
               Id: Guid_2,
               Decree: {
                 Id: Guid_1,
-                Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
+                Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
                 MinSignatureCount: 300,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_2,
-                Description: Referendum gegen die Änderung des Kulturgesetzes,
+                Description: Referendum gegen das Verbot von Bubble Tea in städtischen Schulen und Kindergärten,
                 Type: Referendum,
-                Reason: Kulturelle Vielfalt in der Stadt erhalten!,
-                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
+                Reason:
+Der Stadtrat hat beschlossen, Bubble Tea aus Schulen und Kindergärten zu verbannen, weil er zu viel Zucker und bedenkliche Farbstoffe enthalte.
+Das Referendumskomitee findet, dass Verbote nicht der richtige Weg sind – Aufklärung und Eigenverantwortung sind wichtiger.
+Bubble Tea ist ein Trend, kein Gift, und Kinder sollen lernen, bewusst damit umzugehen, statt ihn heimlich zu konsumieren.
+Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof und dafür, dass auch Perlen im Tee eine Existenzberechtigung haben.,
+                Link: https://www.stadt.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameNotAbout,
                 AttestedCollectionCount: {
@@ -52,8 +58,8 @@
                   ElectronicCitizenCount: 41
                 },
                 Address: {
-                  CommitteeOrPerson: Kulturinitiative Stadt St. Gallen,
-                  StreetOrPostOfficeBox: Gallusstrasse 4,
+                  CommitteeOrPerson: Initiative Freie Getränkewahl,
+                  StreetOrPostOfficeBox: Bohl 2,
                   ZipCode: 9000,
                   Locality: St.Gallen
                 },
@@ -80,16 +86,17 @@
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
-                  Seconds: 1499692330,
-                  Nanos: 200000000
+                  Year: 2017,
+                  Month: 7,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1531228330,
-                  Nanos: 200000000
+                  Year: 2018,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: Expired
-              },
-              Number: 
+              }
             }
           ],
           AttestedCollectionCount: {
@@ -105,7 +112,8 @@
             Year: 2020,
             Month: 1,
             Day: 3
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ],
       Initiatives: [
@@ -115,14 +123,20 @@
           Bfs: 3203,
           MinSignatureCount: 1000,
           Wording:
-Diese Initiative fordert eine nachhaltige Energiepolitik für die Stadt St.Gallen.
-Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 114 (neu) – Förderung temporärer Spielstrassen
+1 Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.
+2 Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.
+3 Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.,
           Collection: {
             Id: Guid_4,
-            Description: Stadtweite Energieinitiative,
+            Description: Für mehr Spielstrassen (Spielstrassen-Initiative),
             Type: Initiative,
-            Reason: Nachhaltige Energie für St.Gallen!,
-            Link: https://www.stadt.sg.ch/home/energieinitiative.html,
+            Reason:
+Kinder brauchen Platz zum Spielen – doch Strassen sind oft zu gefährlich. Die «Spielstrassen-Initiative» will mehr temporäre Spielstrassen in Wohnquartieren.
+Spielstrassen sind mehr als gesperrte Strassen – sie sind Freiheit, Bewegung und Nachbarschaft. An Nachmittagen oder Wochenenden entsteht ein sicherer Raum für Kinder.
+Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte Spielstrassen mit einfachen Regeln. Ein bisschen strassenfrei spielen – das gibt Kindern Raum und belebt Quartiere.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameAbout,
             AttestedCollectionCount: {
@@ -161,12 +175,14 @@ Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 1,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -181,7 +197,8 @@ Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden
             Year: 2020,
             Month: 1,
             Day: 7
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ]
     }

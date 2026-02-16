@@ -3,12 +3,15 @@
 
 using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
+using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
+using Voting.ECollecting.Admin.Core.Resources;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
 using Voting.ECollecting.Shared.Domain.Entities;
@@ -20,12 +23,15 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDecisionService
 {
+    private const string GovernmentDecisionNumberUniqueConstraintName = "IX_Collections_GovernmentDecisionNumberLower";
+
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IPermissionService _permissionService;
     private readonly TimeProvider _timeProvider;
     private readonly CollectionService _collectionService;
     private readonly IDataContext _dataContext;
     private readonly InitiativeService _initiativeService;
+    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
 
     public InitiativeAdmissibilityDecisionService(
         IInitiativeRepository initiativeRepository,
@@ -33,7 +39,8 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         TimeProvider timeProvider,
         CollectionService collectionService,
         IDataContext dataContext,
-        InitiativeService initiativeService)
+        InitiativeService initiativeService,
+        IAccessControlListDoiRepository accessControlListDoiRepository)
     {
         _initiativeRepository = initiativeRepository;
         _permissionService = permissionService;
@@ -41,6 +48,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         _collectionService = collectionService;
         _dataContext = dataContext;
         _initiativeService = initiativeService;
+        _accessControlListDoiRepository = accessControlListDoiRepository;
     }
 
     public async Task<List<Initiative>> ListEligibleForAdmissibilityDecision()
@@ -52,7 +60,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
             .OrderBy(x => x.Description)
             .ToListAsync();
         var initiatives = Mapper.MapToInitiatives(entities);
-        initiatives.SetPeriodStates(_timeProvider.GetUtcNowDateTime());
+        initiatives.SetPeriodStates(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermissions(initiatives);
         return initiatives;
     }
@@ -68,17 +76,18 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
             .ThenBy(x => x.Description)
             .ToListAsync();
         var initiatives = Mapper.MapToInitiatives(entities);
-        initiatives.SetPeriodStates(_timeProvider.GetUtcNowDateTime());
+        initiatives.SetPeriodStates(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermissions(initiatives);
+        await LoadDomainOfInfluenceNames(initiatives);
         return initiatives;
     }
 
     public async Task DeleteAdmissibilityDecision(Guid id)
     {
         var collection = await _initiativeRepository.Query()
-            .WhereCanDeleteAdmissibilityDecision(_permissionService)
-            .FirstOrDefaultAsync(x => x.Id == id)
-            ?? throw new EntityNotFoundException(nameof(InitiativeEntity), id);
+                             .WhereCanDeleteAdmissibilityDecision(_permissionService)
+                             .FirstOrDefaultAsync(x => x.Id == id)
+                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), id);
 
         await _initiativeRepository.AuditedDelete(collection);
     }
@@ -95,11 +104,18 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
                              .FirstOrDefaultAsync(x => x.Id == initiativeId)
                          ?? throw new EntityNotFoundException(typeof(InitiativeEntity), initiativeId);
 
-        initiative.AdmissibilityDecisionState = state;
-        initiative.GovernmentDecisionNumber = governmentDecisionNumber;
-        await SetState(initiative, state);
-        _permissionService.SetModified(initiative);
-        await _dataContext.SaveChangesAsync();
+        try
+        {
+            initiative.AdmissibilityDecisionState = state;
+            initiative.GovernmentDecisionNumber = governmentDecisionNumber;
+            _permissionService.SetModified(initiative);
+            await SetState(initiative, state);
+            await _dataContext.SaveChangesAsync();
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: GovernmentDecisionNumberUniqueConstraintName })
+        {
+            throw new DuplicatedGovernmentDecisionNumberException(initiative.GovernmentDecisionNumber);
+        }
     }
 
     public async Task<Guid> CreateWithAdmissibilityDecision(CreateInitiativeParams reqParams)
@@ -115,11 +131,20 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
             AdmissibilityDecisionState = reqParams.AdmissibilityDecisionState,
             State = CollectionState.PreRecorded,
             IsElectronicSubmission = false,
+            LockedFields = new InitiativeLockedFields { Description = true, Wording = true, },
         };
 
         await _initiativeService.ValidateGeneralInformation(initiative);
         _permissionService.SetCreated(initiative);
-        await _initiativeRepository.Create(initiative);
+        try
+        {
+            await _collectionService.CreateWithSecretIdNumber(initiative);
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: GovernmentDecisionNumberUniqueConstraintName })
+        {
+            throw new DuplicatedGovernmentDecisionNumberException(initiative.GovernmentDecisionNumber);
+        }
+
         return initiative.Id;
     }
 
@@ -155,7 +180,16 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
 
         initiative.AdmissibilityDecisionState = state;
         _permissionService.SetModified(initiative);
-        await _dataContext.SaveChangesAsync();
+
+        try
+        {
+            await _dataContext.SaveChangesAsync();
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: GovernmentDecisionNumberUniqueConstraintName })
+        {
+            throw new DuplicatedGovernmentDecisionNumberException(initiative.GovernmentDecisionNumber);
+        }
+
         await transaction.CommitAsync();
     }
 
@@ -174,6 +208,25 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         if (originalState != initiative.State)
         {
             await _collectionService.AddStateChangedMessage(initiative);
+        }
+    }
+
+    private async Task LoadDomainOfInfluenceNames(List<Initiative> initiatives)
+    {
+        var domainOfInfluenceNamesByBfs = await _accessControlListDoiRepository
+            .Query()
+            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == AclDomainOfInfluenceType.Mu)
+            .GroupBy(x => x.Bfs)
+            .ToDictionaryAsync(x => x.Key!, x => x.First().Name);
+        foreach (var initiative in initiatives)
+        {
+            initiative.DomainOfInfluenceName = initiative.DomainOfInfluenceType switch
+            {
+                DomainOfInfluenceType.Mu => domainOfInfluenceNamesByBfs[initiative.Bfs!],
+                DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
+                DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
+                _ => throw new ArgumentOutOfRangeException(nameof(initiative.DomainOfInfluenceType)),
+            };
         }
     }
 }

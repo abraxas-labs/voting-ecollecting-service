@@ -10,6 +10,8 @@ public interface ICollection
 {
     bool? IsSigned { get; set; }
 
+    CollectionSignatureType? SignatureType { get; set; }
+
     DomainOfInfluenceType? DomainOfInfluenceType { get; set; }
 
     CollectionUserPermissions? UserPermissions { get; set; }

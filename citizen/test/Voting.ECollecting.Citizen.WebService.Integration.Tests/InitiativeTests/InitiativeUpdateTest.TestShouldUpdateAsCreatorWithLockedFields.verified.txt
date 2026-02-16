@@ -9,7 +9,7 @@
     Wording: false,
     CommitteeMembers: false
   },
-  Description: Wohnschutz-Initiative,
+  Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
   Type: Initiative,
   Reason: Trinkwasser muss erhalten bleiben.,
   Link: https://www.ratsinfo.sg.ch/geschaefte/4754-updated,
@@ -24,7 +24,7 @@
     Locality: St.Gallen,
     IsComplete: true
   },
-  IsElectronicSubmission: false,
+  IsElectronicSubmission: true,
   InformalReviewRequested: false,
   DomainOfInfluenceType: Ct,
   Bfs: 17,

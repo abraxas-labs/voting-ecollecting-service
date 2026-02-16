@@ -3,6 +3,7 @@
 
 using System.Runtime.CompilerServices;
 using Voting.ECollecting.Shared.Domain.Entities;
+using ProtoModels = Voting.ECollecting.Proto.Admin.Services.V1.Models;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests;
 
@@ -16,6 +17,8 @@ public static class ModuleInitializer
 
         // not deterministic
         VerifierSettings.IgnoreMember<CollectionCitizenLogEntity>(x => x.VotingStimmregisterIdEncrypted);
+        VerifierSettings.IgnoreMember<CollectionBaseEntity>(x => x.SecureIdNumber);
+        VerifierSettings.IgnoreMember<ProtoModels.Collection>(x => x.SecureIdNumber);
 
         // verify the record json objects of the audit trail (required for dynamic json objects).
         VerifySystemJson.Initialize();

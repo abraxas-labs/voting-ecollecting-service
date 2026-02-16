@@ -6,7 +6,7 @@ using Voting.ECollecting.Shared.Domain.Enums;
 
 namespace Voting.ECollecting.Shared.Domain.Entities;
 
-public class DecreeEntity : IntegritySignatureEntity, IHasBfs
+public class DecreeEntity : IntegritySignatureEntity, IHasBfs, IHasCollectionPeriod
 {
     private CollectionPeriodState? _periodState;
 
@@ -16,9 +16,13 @@ public class DecreeEntity : IntegritySignatureEntity, IHasBfs
 
     public string Description { get; set; } = string.Empty;
 
-    public DateTime CollectionStartDate { get; set; }
+    public DateOnly CollectionStartDate { get; set; }
 
-    public DateTime CollectionEndDate { get; set; }
+    DateOnly? IHasCollectionPeriod.CollectionStartDate => CollectionStartDate;
+
+    public DateOnly CollectionEndDate { get; set; }
+
+    DateOnly? IHasCollectionPeriod.CollectionEndDate => CollectionEndDate;
 
     public int MinSignatureCount { get; set; }
 
@@ -38,13 +42,13 @@ public class DecreeEntity : IntegritySignatureEntity, IHasBfs
 
     public DateOnly? SensitiveDataExpiryDate { get; set; }
 
-    public void SetPeriodState(DateTime utcNow)
+    public void SetPeriodState(DateOnly today)
     {
-        if (CollectionStartDate > utcNow)
+        if (CollectionStartDate > today)
         {
             _periodState = CollectionPeriodState.Published;
         }
-        else if (CollectionStartDate <= utcNow && CollectionEndDate >= utcNow)
+        else if (CollectionStartDate <= today && CollectionEndDate >= today)
         {
             _periodState = CollectionPeriodState.InCollection;
         }

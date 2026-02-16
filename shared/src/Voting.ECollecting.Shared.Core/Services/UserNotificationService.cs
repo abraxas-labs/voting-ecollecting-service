@@ -151,16 +151,11 @@ public class UserNotificationService : IUserNotificationService
             }
         }
 
-        if (collection.AuditInfo.CreatedByEmail != null)
-        {
-            recipients.Add((collection.AuditInfo.CreatedByEmail, true));
-        }
-
         Debug.Assert(collection.Permissions != null, "Collection permissions need to be loaded to send notifications");
-        var deputies = collection.Permissions!.Where(x => x is { Accepted: true, Role: CollectionPermissionRole.Deputy });
-        foreach (var deputy in deputies)
+        var recipientPermissions = collection.Permissions!.Where(x => x is { Accepted: true, Role: CollectionPermissionRole.Owner or CollectionPermissionRole.Deputy });
+        foreach (var recipientPermission in recipientPermissions)
         {
-            recipients.Add((deputy.Email, true));
+            recipients.Add((recipientPermission.Email, true));
         }
 
         if (_permissionService.UserEmail != null)

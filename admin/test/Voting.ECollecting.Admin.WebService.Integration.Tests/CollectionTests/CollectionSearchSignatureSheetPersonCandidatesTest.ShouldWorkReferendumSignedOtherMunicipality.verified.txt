@@ -27,7 +27,7 @@
         Bfs: 3213,
         MunicipalityName: Goldach,
         Electronic: false,
-        CollectionDescription: Referendum gegen die Änderung der direkten Bundessteuer,
+        CollectionDescription: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         SignatureSheetNumber: 2,
         HasSignatureSheetNumber: true,
         CollectionDateTime: {

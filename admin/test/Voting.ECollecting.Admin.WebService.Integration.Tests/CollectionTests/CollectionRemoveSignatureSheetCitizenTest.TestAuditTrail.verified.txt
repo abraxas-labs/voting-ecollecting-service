@@ -20,8 +20,9 @@
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        ReceivedAt: DateTimeOffset_2,
-        CollectionMunicipalityId: Guid_2
+        ReceivedAt: 2020-01-09,
+        CollectionMunicipalityId: Guid_2,
+        ModifiedBySuperiorAuthority: false
       },
       RecordAfter: {
         Id: Guid_1,
@@ -36,7 +37,7 @@
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -44,8 +45,9 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        ReceivedAt: DateTimeOffset_2,
-        CollectionMunicipalityId: Guid_2
+        ReceivedAt: 2020-01-09,
+        CollectionMunicipalityId: Guid_2,
+        ModifiedBySuperiorAuthority: false
       },
       SourceEntityId: Guid_1,
       AuditInfo: {

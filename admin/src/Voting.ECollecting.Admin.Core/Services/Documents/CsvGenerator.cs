@@ -19,5 +19,10 @@ public abstract class CsvGenerator<TEntity, TRootEntity>
         return new PipedFile((w, ct) => _csvService.Render(w, records, ct), BuildFileName(rootEntity), "text/csv");
     }
 
+    protected IFile GenerateFile(TRootEntity rootEntity, IEnumerable<TEntity> records)
+    {
+        return new PipedFile((w, ct) => _csvService.Render(w, records, ct), BuildFileName(rootEntity), "text/csv");
+    }
+
     protected abstract string BuildFileName(TRootEntity rootEntity);
 }

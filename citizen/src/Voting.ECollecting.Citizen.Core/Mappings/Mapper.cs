@@ -19,6 +19,7 @@ internal static partial class Mapper
 
     [MapperIgnoreTarget(nameof(Initiative.UserPermissions))]
     [MapperIgnoreTarget(nameof(Initiative.IsSigned))]
+    [MapperIgnoreTarget(nameof(Initiative.SignatureType))]
     [MapperIgnoreTarget(nameof(Initiative.SignAcceptedAcrs))]
     [MapperIgnoreTarget(nameof(Initiative.CommitteeDescription))]
     [MapperIgnoreTarget(nameof(Initiative.AttestedCollectionCount))]
@@ -45,6 +46,7 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapperIgnoreTarget(nameof(Referendum.UserPermissions))]
     [MapperIgnoreTarget(nameof(Referendum.IsSigned))]
+    [MapperIgnoreTarget(nameof(Referendum.SignatureType))]
     [MapperIgnoreTarget(nameof(Referendum.SignAcceptedAcrs))]
     [MapperIgnoreTarget(nameof(Referendum.IsDecreeSigned))]
     [MapperIgnoreTarget(nameof(Referendum.AttestedCollectionCount))]
@@ -55,6 +57,7 @@ internal static partial class Mapper
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMemberEntity.Initiative))]
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMemberEntity.Id))]
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMemberEntity.Permission))]
+    [MapperIgnoreTarget(nameof(InitiativeCommitteeMemberEntity.SortIndex))]
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     internal static partial void ApplyUpdate(
         InitiativeCommitteeMemberEntity member,
@@ -80,8 +83,10 @@ internal static partial class Mapper
     internal static partial IEnumerable<AclDomainOfInfluenceType> MapToAclDoiTypes(IEnumerable<DomainOfInfluenceType> doiTypes);
 
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.Residence))]
-    [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.PoliticalResidence))]
+    [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.UserPermissions))]
     internal static partial InitiativeCommitteeMember MapToInitiativeCommitteeMember(InitiativeCommitteeMemberEntity initiativeCommitteeMember);
+
+    internal static partial List<CollectionPermission> MapToCollectionPermissions(IEnumerable<CollectionPermissionEntity> collectionPermissionEntities);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapProperty(nameof(AccessControlListDoiEntity.ECollectingInitiativeMinSignatureCount), nameof(DomainOfInfluence.InitiativeMinSignatureCount))]
@@ -99,4 +104,7 @@ internal static partial class Mapper
     [MapProperty(nameof(DecreeEntity.Collections), nameof(Decree.Referendums))]
     [MapperIgnoreTarget(nameof(Initiative.UserPermissions))]
     private static partial Decree MapToDecreeInternal(DecreeEntity decreeEntity);
+
+    [MapperIgnoreTarget(nameof(Initiative.UserPermissions))]
+    private static partial CollectionPermission MapToCollectionPermission(CollectionPermissionEntity collectionPermissionEntity);
 }

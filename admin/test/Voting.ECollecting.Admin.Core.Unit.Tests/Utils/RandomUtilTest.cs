@@ -11,7 +11,7 @@ public class RandomUtilTest
     [Fact]
     public void ShouldReturn()
     {
-        RandomUtil.GenerateReferendumNumber().Length.Should().Be(8);
+        RandomUtil.GenerateSecureIdNumber().Length.Should().Be(12);
     }
 
     [Fact]
@@ -20,7 +20,7 @@ public class RandomUtilTest
         var chars = "10IO".ToCharArray();
         for (var i = 0; i < 100; i++)
         {
-            var randomString = RandomUtil.GenerateReferendumNumber();
+            var randomString = RandomUtil.GenerateSecureIdNumber();
             foreach (var c in randomString)
             {
                 chars.Should().NotContain(c);
@@ -31,16 +31,16 @@ public class RandomUtilTest
     [Fact]
     public void ShouldReturnRandomString()
     {
-        var random1 = RandomUtil.GenerateReferendumNumber();
-        var random2 = RandomUtil.GenerateReferendumNumber();
+        var random1 = RandomUtil.GenerateSecureIdNumber();
+        var random2 = RandomUtil.GenerateSecureIdNumber();
         random1.Equals(random2).Should().BeFalse();
     }
 
     [Fact]
     public void ShouldReturnNoExistingString()
     {
-        var existingNumber = RandomUtil.GenerateReferendumNumber();
-        var random = RandomUtil.GenerateReferendumNumber(new HashSet<string> { existingNumber });
+        var existingNumber = RandomUtil.GenerateSecureIdNumber();
+        var random = RandomUtil.GenerateSecureIdNumber(new HashSet<string> { existingNumber });
         random.Equals(existingNumber).Should().BeFalse();
     }
 }

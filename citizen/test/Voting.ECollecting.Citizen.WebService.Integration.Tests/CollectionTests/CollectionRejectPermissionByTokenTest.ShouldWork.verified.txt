@@ -3,7 +3,7 @@
   FirstName: Peter,
   Email: peter.huenkeler@example.com,
   Token: {
-    Value: ut.1-3c9b5b27-c8da-56a3-a19e-99ad8b8fe339
+    Value: ut.1-69162454-66d4-51e6-9974-c1578c8c08dc
   },
   Accepted: false,
   State: Rejected,

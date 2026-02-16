@@ -20,10 +20,10 @@ public class UpdateReferendumRequestTest : ProtoValidatorBaseTest<UpdateReferend
         yield return NewValidRequest(x => x.Reason = RandomStringUtil.GenerateComplexMultiLineText(10_000));
         yield return NewValidRequest(x => x.MembersCommittee = string.Empty);
         yield return NewValidRequest(x => x.MembersCommittee = RandomStringUtil.GenerateComplexMultiLineText(1));
-        yield return NewValidRequest(x => x.MembersCommittee = RandomStringUtil.GenerateComplexMultiLineText(1_000));
+        yield return NewValidRequest(x => x.MembersCommittee = RandomStringUtil.GenerateComplexMultiLineText(2_000));
         yield return NewValidRequest(x => x.Link = string.Empty);
-        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateComplexSingleLineText(1));
-        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateComplexSingleLineText(2_000));
+        yield return NewValidRequest(x => x.Link = "https://example.com");
+        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateHttpsUrl(2_000));
     }
 
     protected override IEnumerable<UpdateReferendumRequest> NotOkMessages()
@@ -34,10 +34,11 @@ public class UpdateReferendumRequestTest : ProtoValidatorBaseTest<UpdateReferend
         yield return NewValidRequest(x => x.Description = RandomStringUtil.GenerateSimpleSingleLineText(201));
         yield return NewValidRequest(x => x.Description = "Te\nst");
         yield return NewValidRequest(x => x.Reason = RandomStringUtil.GenerateComplexMultiLineText(10_001));
-        yield return NewValidRequest(x => x.MembersCommittee = RandomStringUtil.GenerateComplexMultiLineText(1_001));
+        yield return NewValidRequest(x => x.MembersCommittee = RandomStringUtil.GenerateComplexMultiLineText(2_001));
         yield return NewValidRequest(x => x.Address = null);
-        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateSimpleSingleLineText(2_001));
-        yield return NewValidRequest(x => x.Link = "Te\nst");
+        yield return NewValidRequest(x => x.Link = "http://example.com");
+        yield return NewValidRequest(x => x.Link = "https://example\n.com");
+        yield return NewValidRequest(x => x.Link = RandomStringUtil.GenerateHttpsUrl(2_001));
     }
 
     private UpdateReferendumRequest NewValidRequest(Action<UpdateReferendumRequest>? customizer = null)

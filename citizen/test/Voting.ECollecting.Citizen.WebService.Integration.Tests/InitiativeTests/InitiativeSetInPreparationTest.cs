@@ -27,15 +27,15 @@ public class InitiativeSetInPreparationTest : BaseGrpcTest<InitiativeService.Ini
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidLegislativeInPaperSubmission, InitiativesCtStGallen.GuidLegislativeInPaperSubmissionReader));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidLegislativeInPaperSubmission));
     }
 
     [Fact]
     public async Task TestShouldWork()
     {
         var response = await _client.SetInPreparationAsync(NewValidRequest());
-        var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        var initiative = await RunOnDb(db => db.Initiatives.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -50,13 +50,13 @@ public class InitiativeSetInPreparationTest : BaseGrpcTest<InitiativeService.Ini
     }
 
     [Fact]
-    public async Task TestInvalidGovernmentDecisionNumberShouldThrow()
+    public async Task TestInvalidSecureIdNumberShouldThrow()
     {
-        var request = NewValidRequest(r => r.GovernmentDecisionNumber = "123");
+        var request = NewValidRequest(r => r.SecureIdNumber = "555555555555");
         await AssertStatus(
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.NotFound,
-            $"Initiative with government decision number {request.GovernmentDecisionNumber} not found");
+            $"Initiative with number {request.SecureIdNumber} not found");
     }
 
     [Fact]
@@ -69,7 +69,7 @@ public class InitiativeSetInPreparationTest : BaseGrpcTest<InitiativeService.Ini
         await AssertStatus(
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.NotFound,
-            $"Initiative with government decision number {request.GovernmentDecisionNumber} not found");
+            $"Initiative with number {request.SecureIdNumber} not found");
     }
 
     [Fact]
@@ -78,14 +78,11 @@ public class InitiativeSetInPreparationTest : BaseGrpcTest<InitiativeService.Ini
         await ModifyDbEntities<InitiativeEntity>(
             x => x.Id == InitiativesCtStGallen.GuidLegislativeInPaperSubmission,
             x => x.State = CollectionState.InPreparation);
-        await ModifyDbEntities<InitiativeEntity>(
-            x => x.Id == InitiativesCtStGallen.GuidLegislativeInPaperSubmissionReader,
-            x => x.State = CollectionState.InPreparation);
         var request = NewValidRequest();
         await AssertStatus(
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.AlreadyExists,
-            $"Initiative with government decision number {request.GovernmentDecisionNumber} is already in preparation");
+            $"Initiative with number {request.SecureIdNumber} is already in preparation");
     }
 
     [Fact]
@@ -99,6 +96,16 @@ public class InitiativeSetInPreparationTest : BaseGrpcTest<InitiativeService.Ini
             async () => await _client.SetInPreparationAsync(request),
             StatusCode.InvalidArgument,
             "Initiative admissibility decision state cannot be rejected");
+    }
+
+    [Fact]
+    public async Task TestDisabledDomainOfInfluenceTypeShouldThrow()
+    {
+        var request = NewValidRequest();
+        await WithEnabledDomainOfInfluenceTypes([], async () => await AssertStatus(
+            async () => await _client.SetInPreparationAsync(request),
+            StatusCode.NotFound,
+            $"Initiative with number {request.SecureIdNumber} not found"));
     }
 
     [Fact]
@@ -121,7 +128,7 @@ public class InitiativeSetInPreparationTest : BaseGrpcTest<InitiativeService.Ini
     {
         var request = new SetInitiativeInPreparationRequest
         {
-            GovernmentDecisionNumber = "CH-123.4567",
+            SecureIdNumber = "AAAAAAAXXAAA",
         };
         customizer?.Invoke(request);
         return request;

@@ -1,0 +1,1169 @@
+﻿{
+  Initiatives: [
+    {
+      Id: Guid_1,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 222 (neu) – Förderung kantonaler Wochenmärkte
+1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+      Collection: {
+        Id: Guid_1,
+        Description: Für kantonale Märkte (Markt-Initiative),
+        Type: Initiative,
+        Reason:
+W ochenmärkte beleben Städte und Dörfer – doch viele Orte haben keinen Markt mehr. Die «Markt-Initiative» will die Tradition der Wochenmärkte im ganzen Kanton stärken.
+Ein Wochenmarkt ist mehr als Einkauf – er ist Begegnung, regionale Produkte und Lebensqualität. Mit Unterstützung für Marktbetreiber und Standinhaber entstehen lebendige Zentren.
+Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmärkte in allen Regionen. Ein bisschen Markt-Atmosphäre – das stärkt lokale Produzenten und Gemeinschaft.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: UnderReview,
+        Address: {
+          CommitteeOrPerson: Komitee Markt-Initiative,
+          StreetOrPostOfficeBox: Marktgasse 8,
+          ZipCode: 9200,
+          Locality: Gossau
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: true,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: SG-123.412224,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: true,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_2,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 218 (neu) – Förderung kantonaler Spielplätze
+1 Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
+2 Er kann Gemeinden finanziell und beratend unterstützen.
+3 Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+      Collection: {
+        Id: Guid_2,
+        Description: Für kantonale Spielplätze (Spielplatz-Initiative),
+        Type: Initiative,
+        Reason:
+Spielen ist Kinderrecht – doch moderne, sichere Spielplätze fehlen vielerorts. Die «Spielplatz-Initiative» will mehr gut ausgestattete Spielplätze im ganzen Kanton schaffen.
+Ein Spielplatz ist mehr als Rutsche und Schaukel – er ist Bewegung, Kreativität und Begegnung. Mit vielfältigen Spielgeräten und natürlichen Materialien entstehen Abenteuerorte für alle Altersgruppen.
+Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielplätze in Wohnnähe. Ein bisschen mehr Raum zum Spielen – das ist Investition in die Zukunft.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Komitee Spielplatz-Initiative,
+          StreetOrPostOfficeBox: Spielweg 9,
+          ZipCode: 9443,
+          Locality: Widnau
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: true,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: ,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_3,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 217 (neu) – Förderung öffentlicher Leseecken
+1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+      Collection: {
+        Id: Guid_3,
+        Description: Für kantonale Leseecken (Leseecken-Initiative),
+        Type: Initiative,
+        Reason:
+Lesen bildet – doch gemütliche Leseecken im öffentlichen Raum fehlen. Die «Leseecken-Initiative» will mehr Orte zum Lesen, Schmökern und Verweilen im ganzen Kanton schaffen.
+Eine Leseecke ist mehr als Bücherschrank – sie ist Bildung, Rückzug und Kultur. Mit bequemen Sitzgelegenheiten, Wetterschutz und Buchspenden entstehen kleine Lesepar adiese.
+Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in Bahnhöfen, Parks und Gemeindehäusern. Ein bisschen Zeit zum Lesen – das bereichert den Alltag.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Komitee Leseecken-Initiative,
+          StreetOrPostOfficeBox: Buchweg 14,
+          ZipCode: 9470,
+          Locality: Buchs
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: true,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: ,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_4,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 221 (neu) – Förderung kantonaler Begegnungsräume
+1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+      Collection: {
+        Id: Guid_4,
+        Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
+        Type: Initiative,
+        Reason:
+Begegnung braucht Raum – doch offene Treffpunkte fehlen vielerorts. Die «Begegnungs-Initiative» will mehr öffentliche Räume schaffen, wo Menschen zusammenkommen können.
+Ein Begegnungsraum ist mehr als ein Saal – er ist Austausch, Kultur und Gemeinschaft. Mit niederschwelligem Zugang und flexibler Nutzung entstehen lebendige Treffpunkte.
+Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Vereine, Gruppen und Nachbarschaften. Ein bisschen Raum für Begegnung – das stärkt den gesellschaftlichen Zusammenhalt.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: ReturnedForCorrection,
+        Address: {
+          CommitteeOrPerson: Komitee Begegnungs-Initiative,
+          StreetOrPostOfficeBox: Begegnungsweg 12,
+          ZipCode: 9015,
+          Locality: St.Gallen
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: true,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: true,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: true,
+          IsFlagForReviewVisible: true,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: SG-123.412223,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: true,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_5,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+      Collection: {
+        Id: Guid_5,
+        Description: Für kantonale Velorouten (Velorouten-Initiative),
+        Type: Initiative,
+        Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Komitee Velorouten-Initiative,
+          StreetOrPostOfficeBox: Veloweg 28,
+          ZipCode: 9220,
+          Locality: Bischofszell
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: 123CHE2,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_6,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+      Collection: {
+        Id: Guid_6,
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+        Type: Initiative,
+        Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: InPreparation,
+        Address: {
+          CommitteeOrPerson: Komitee Frischluftinitiative,
+          StreetOrPostOfficeBox: Naturweg 11,
+          ZipCode: 9014,
+          Locality: St.Gallen
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: true,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: true,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: true,
+          IsSubmitVisible: true,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: true,
+          CanRequestInformalReview: true,
+          IsRequestInformalReviewVisible: true,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: true,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: ,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_7,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 220 (neu) – Förderung kantonaler Badi-Tage
+1 Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.
+2 Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.
+3 Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.,
+      Collection: {
+        Id: Guid_7,
+        Description: Für kantonale Badi-Tage (Badi-Initiative),
+        Type: Initiative,
+        Reason:
+Schwimmen ist gesund und macht Spass – doch viele Badis sind teuer oder überfüllt. Die «Badi-Initiative» will mehr Schwimmtage für Familien und Senioren zu günstigen Preisen.
+Ein Badi-Tag ist mehr als Schwimmen – er ist Erholung, Bewegung und Gemeinschaft. Mit speziellen Familien- und Seniorentagen entstehen beliebte Erlebnisse für alle.
+Die Initiative fordert keine Gratis-Eintritt, sondern regelmässige Aktionstage mit reduzierten Preisen. Ein bisschen mehr Badi für alle – das ist Lebensqualität und Gesundheitsförderung.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: NotPassed,
+        Address: {
+          CommitteeOrPerson: Komitee Badi-Initiative,
+          StreetOrPostOfficeBox: Badiweg 3,
+          ZipCode: 9326,
+          Locality: Horn
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: false,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: false,
+          CanEditPermissions: false,
+          CanCreateMessages: false,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: SG-123.412222,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_8,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 215 (neu) – Förderung von Musik im Alltag
+1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+      Collection: {
+        Id: Guid_8,
+        Description: Für mehr Musik im Alltag (Klang-Initiative),
+        Type: Initiative,
+        Reason:
+Musik verbindet – ob im Chörli, in der Schulband oder beim spontanen «Zäuerle». Die St.Gallerinnen und St.Galler sind kreativ, aber im Alltag bleibt das Musizieren oft hinter Terminen, Lärm und Hektik zurück.
+Diese Initiative verlangt keinen neuen Behördenapparat, sondern ein Bewusstsein: Musik gehört in den Alltag, nicht nur auf die Bühne.
+Ob Strassenmusikfest, offenes Singen, Jugendband oder Rentnerjazz, gemeinsames Musizieren schafft Freude, baut Brücken und weckt Erinnerungen.
+Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitzuswingen. Denn ein Kanton, der zusammen singt, streitet weniger laut.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        AttestedCollectionCount: {
+          Id: Guid_9,
+          CollectionId: Guid_8,
+          HasTotalCitizenCount: false,
+          ElectronicCitizenCount: 487
+        },
+        Address: {
+          CommitteeOrPerson: Komitee Aussichtsturm-Initiative,
+          StreetOrPostOfficeBox: Turmweg 31,
+          ZipCode: 9056,
+          Locality: Gais
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2019,
+          Month: 8,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2020,
+          Month: 1,
+          Day: 9
+        },
+        PeriodState: Expired
+      },
+      GovernmentDecisionNumber: SG-123.412211,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_10,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 225 (neu) – Förderung kantonaler Panoramawege
+1 Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.
+2 Er kann Gemeinden bei Bau und Beschilderung unterstützen.
+3 Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.,
+      Collection: {
+        Id: Guid_10,
+        Description: Für kantonale Panoramawege (Panorama-Initiative),
+        Type: Initiative,
+        Reason:
+St.Gallen hat atemberaubende Aussichten – doch viele bleiben unentdeckt. Die «Panorama-Initiative» will Panoramawege mit spektakulären Aussichten im ganzen Kanton schaffen.
+Ein Panoramaweg ist mehr als Wanderweg – er ist Inspiration, Naturerlebnis und Stolz auf die Heimat. Mit Aussichtsplattformen und Informationstafeln entstehen unvergessliche Erlebnisse.
+Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schönsten Aussichtspunkten. Ein bisschen Panorama geniessen – das verbindet Menschen mit ihrer Landschaft.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreparingForCollection,
+        Address: {
+          CommitteeOrPerson: Komitee Panorama-Initiative,
+          StreetOrPostOfficeBox: Aussichtsweg 19,
+          ZipCode: 9100,
+          Locality: Herisau
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2020,
+          Month: 3,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 10
+        },
+        PeriodState: Published
+      },
+      GovernmentDecisionNumber: SG-123.412227,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_11,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 223 (neu) – Förderung kantonaler Volksfeste
+1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+      Collection: {
+        Id: Guid_11,
+        Description: Für kantonale Volksfeste (Volksfest-Initiative),
+        Type: Initiative,
+        Reason:
+Volksfeste verbinden – doch grosse gemeinsame Feste fehlen oft. Die «Volksfest-Initiative» will regelmässige kantonale Volksfeste fördern, die alle Regionen einbeziehen.
+Ein Volksfest ist mehr als Unterhaltung – es ist Kultur, Identität und Zusammengehörigkeit. Mit Musik, lokalen Spezialitäten und Attraktionen entstehen unvergessliche Erlebnisse.
+Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, die Traditionen pflegen und neue schaffen. Ein bisschen gemeinsam Feiern – das stärkt das Wir-Gefühl im Kanton.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: ReadyForRegistration,
+        Address: {
+          CommitteeOrPerson: Komitee Volksfest-Initiative,
+          StreetOrPostOfficeBox: Festweg 17,
+          ZipCode: 9620,
+          Locality: Lichtensteig
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: true,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: SG-123.412225,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_12,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+      Collection: {
+        Id: Guid_12,
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+        Type: Initiative,
+        Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        AttestedCollectionCount: {
+          Id: Guid_13,
+          CollectionId: Guid_12,
+          HasTotalCitizenCount: false
+        },
+        Address: {
+          CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+          StreetOrPostOfficeBox: Picknickweg 13,
+          ZipCode: 9602,
+          Locality: Bazenheid
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 10
+        },
+        PeriodState: InCollection
+      },
+      GovernmentDecisionNumber: SG-123.412210,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_14,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 224 (neu) – Förderung kantonaler Feuerstellen
+1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+      Collection: {
+        Id: Guid_14,
+        Description: Für kantonale Feuerstellen (Feuerstellen-Initiative),
+        Type: Initiative,
+        Reason:
+Feuer fasziniert – doch sichere Feuerstellen im Öffentlichen Raum sind selten. Die «Feuerstellen-Initiative» will mehr offizielle Feuerstellen in Parks und Erholungsgebieten schaffen.
+Eine Feuerstelle ist mehr als Lagerfeuer – sie ist Gemütlichkeit, Naturerlebnis und Gemeinschaft. Mit sicherer Bauweise und klaren Regeln entstehen beliebte Treffpunkte.
+Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstellen mit Holzvorrat und Sitzgelegenheiten. Ein bisschen Lagerfeuer-Romantik – das bereichert Familienausflüge und Wanderungen.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: Registered,
+        Address: {
+          CommitteeOrPerson: Komitee Feuerstellen-Initiative,
+          StreetOrPostOfficeBox: Feuerweg 25,
+          ZipCode: 9630,
+          Locality: Wattwil
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: SG-123.412226,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_15,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 226 (neu) – Förderung kantonaler Wanderhütten
+1 Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
+2 Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
+3 Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
+      Collection: {
+        Id: Guid_15,
+        Description: Für kantonale Wanderhütten (Wanderhütten-Initiative),
+        Type: Initiative,
+        Reason:
+Wandern ist beliebt – doch gemütliche Wanderhütten zum Verweilen fehlen oft. Die «Wanderhütten-Initiative» will einfache Hütten als Rastplätze an Wanderwegen schaffen.
+Eine Wanderhütte ist mehr als Unterstand – sie ist Schutz, Rastplatz und Begegnungsort. Mit Bänken, Tisch und vielleicht einem Ofen entstehen kleine Refugien in der Natur.
+Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für Tageswanderer. Ein bisschen Schutz und Rastplatz – das macht Wandern noch schöner.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        AttestedCollectionCount: {
+          Id: Guid_16,
+          CollectionId: Guid_15,
+          HasTotalCitizenCount: false
+        },
+        Address: {
+          CommitteeOrPerson: Komitee Wanderhütten-Initiative,
+          StreetOrPostOfficeBox: Hüttenweg 4,
+          ZipCode: 9050,
+          Locality: Appenzell
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: true,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: true,
+          CanEditPermissions: true,
+          CanCreateMessages: true,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2020,
+          Month: 3,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 10
+        },
+        PeriodState: Published
+      },
+      GovernmentDecisionNumber: SG-123.412229,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_17,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
+1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+      Collection: {
+        Id: Guid_17,
+        Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
+        Type: Initiative,
+        Reason:
+St.Gallen ist ein vielfältiger Kanton – vom Bodensee bis zum Toggenburg, von der Stadt bis ins Tal. Doch im Alltag geht das einfache «Grüezi» manchmal im digitalen Rauschen verloren. Diese Initiative will daran erinnern, dass gute Nachbarschaft kein Zufall, sondern ein Stück Lebensqualität ist.
+Sie verpflichtet den Kanton nicht zu neuen Ämtern, sondern zu einer Haltung: Gemeinschaft entsteht dort, wo Menschen einander kennen und helfen. Ob gemeinsames Dorffest, Quartiergarten oder Schneeschaufeln für den Nachbarn – solche kleinen Gesten halten den Kanton zusammen.
+Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage der Herzlichkeit.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: SignatureSheetsSubmitted,
+        AttestedCollectionCount: {
+          Id: Guid_18,
+          CollectionId: Guid_17,
+          HasTotalCitizenCount: false,
+          ElectronicCitizenCount: 42
+        },
+        Address: {
+          CommitteeOrPerson: Komitee Barfusspfad-Initiative,
+          StreetOrPostOfficeBox: Pfadweg 20,
+          ZipCode: 9113,
+          Locality: Degersheim
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: false,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: false,
+          CanEditPermissions: false,
+          CanCreateMessages: false,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: true,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 11
+        },
+        CollectionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 11
+        },
+        PeriodState: InCollection
+      },
+      GovernmentDecisionNumber: SG-123.412212,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_19,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 231 (neu) – Förderung öffentlicher Kräutergärten
+1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+      Collection: {
+        Id: Guid_19,
+        Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
+        Type: Initiative,
+        Reason:
+Kräuter sind nützlich und schön – doch Kräutergärten zum Kennenlernen sind rar. Die «Kräutergarten-Initiative» will öffentliche Kräutergärten zum Riechen, Lernen und Ernten schaffen.
+Ein Kräutergarten ist mehr als Beet – er ist Wissen, Duft und alte Tradition. Mit Informationstafeln und vielfältigen Kräutern entstehen Lernorte für alle.
+Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Parks und Schulhöfen, wo jeder ernten darf. Ein bisschen Kräuterwissen – das verbindet mit Natur und Küche.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EndedCameNotAbout,
+        AttestedCollectionCount: {
+          Id: Guid_20,
+          CollectionId: Guid_19,
+          TotalCitizenCount: 3487,
+          HasTotalCitizenCount: true,
+          ElectronicCitizenCount: 15
+        },
+        Address: {
+          CommitteeOrPerson: Komitee Kräutergarten-Initiative,
+          StreetOrPostOfficeBox: Kräuterweg 16,
+          ZipCode: 9240,
+          Locality: Uzwil
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: false,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: false,
+          CanEditPermissions: false,
+          CanCreateMessages: false,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: true,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2019,
+          Month: 7,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 10
+        },
+        PeriodState: Expired
+      },
+      GovernmentDecisionNumber: SG-123.4122177,
+      CommitteeDescription: ,
+      CameNotAboutReason: MinSignatureCountNotReached,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_21,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 230 (neu) – Förderung von Schmetterlingsgärten
+1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+      Collection: {
+        Id: Guid_21,
+        Description: Für Schmetterlingsgärten (Schmetterling-Initiative),
+        Type: Initiative,
+        Reason:
+Schmetterlinge sind schön und wichtig für die Natur – doch ihre Lebensräume schwinden. Die «Schmetterling-Initiative» will mehr blütenreiche Gärten und Wiesen für Schmetterlinge schaffen.
+Ein Schmetterlingsgarten ist mehr als Blumen – er ist Biodiversität, Farbe und Naturbeobachtung. Mit einheimischen Pflanzen und naturnaher Pflege entstehen Paradiese für Falter.
+Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlingsfreundliche Gärten und Wiesen. Ein bisschen mehr Blüten – das hilft Schmetterlingen und erfreut Menschen.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EndedCameAbout,
+        AttestedCollectionCount: {
+          Id: Guid_22,
+          CollectionId: Guid_21,
+          TotalCitizenCount: 4629,
+          HasTotalCitizenCount: true,
+          ElectronicCitizenCount: 187
+        },
+        Address: {
+          CommitteeOrPerson: Komitee Schmetterling-Initiative,
+          StreetOrPostOfficeBox: Blütenweg 7,
+          ZipCode: 9524,
+          Locality: Zuzwil
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: false,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: false,
+          CanEditPermissions: false,
+          CanCreateMessages: false,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: true,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false,
+        CollectionStartDate: {
+          Year: 2019,
+          Month: 1,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2019,
+          Month: 8,
+          Day: 10
+        },
+        PeriodState: Expired
+      },
+      GovernmentDecisionNumber: SG-123.412214,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    },
+    {
+      Id: Guid_23,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 10000,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 216 (neu) – Förderung öffentlicher Grillplätze
+1 Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+2 Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+3 Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+      Collection: {
+        Id: Guid_23,
+        Description: Für kantonale Grill-Plätze (Grill-Initiative),
+        Type: Initiative,
+        Reason:
+Grillieren verbindet – doch öffentliche Grillplätze sind rar im Kanton. Die «Grill-Initiative» will mehr Grillstellen in Parks, an Seeufern und Waldlichtungen schaffen.
+Ein Grillplatz ist mehr als Feuerstelle – er ist Begegnung, Genuss und Familienerlebnis. Mit sicheren Feuerstellen, Sitzbänken und Abfallbehältern entstehen beliebte Treffpunkte.
+Die Initiative fordert keine Luxus-Anlagen, sondern einfache, gepflegte Grillstellen, die allen offenstehen. Ein bisschen gemeinsam Grillieren und Geniessen – das macht den Kanton lebenswerter.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: Withdrawn,
+        Address: {
+          CommitteeOrPerson: Komitee Grill-Initiative,
+          StreetOrPostOfficeBox: Grillweg 6,
+          ZipCode: 9325,
+          Locality: Roggwil
+        },
+        UserPermissions: {
+          Role: Owner,
+          CanEdit: false,
+          CanEditSignatureSheetTemplate: false,
+          CanDeleteSignatureSheetTemplate: false,
+          CanGenerateSignatureSheetTemplatePreview: false,
+          CanEditPermissions: false,
+          CanCreateMessages: false,
+          CanSubmit: false,
+          IsSubmitVisible: false,
+          CanFlagForReview: false,
+          IsFlagForReviewVisible: false,
+          CanRegister: false,
+          CanWithdraw: false,
+          CanRequestInformalReview: false,
+          IsRequestInformalReviewVisible: false,
+          CanDownloadElectronicSignaturesProtocol: false,
+          CanEditSubType: false,
+          CanDownloadCommitteeList: true
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        IsSigned: false,
+        HasIsSigned: false
+      },
+      GovernmentDecisionNumber: ,
+      CommitteeDescription: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      }
+    }
+  ]
+}

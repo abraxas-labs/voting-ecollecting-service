@@ -1,7 +1,6 @@
 ﻿{
   MembersCommittee: ,
   DecreeId: Guid_1,
-  Number: ,
   Description: Sammlung gegen das Abwassergesetz,
   Type: Referendum,
   Reason: ,
@@ -15,6 +14,31 @@
     Locality: ,
     IsComplete: false
   },
+  Permissions: [
+    {
+      LastName: user,
+      FirstName: Test,
+      Email: rudolph.meier@example.com,
+      Accepted: true,
+      State: Accepted,
+      IamLastName: user,
+      IamFirstName: Test,
+      IamUserId: default-user-id,
+      Role: Owner,
+      CollectionId: Guid_2,
+      FullName: Test user,
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: rudolph.meier@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ],
   IsElectronicSubmission: true,
   InformalReviewRequested: false,
   DomainOfInfluenceType: Ct,

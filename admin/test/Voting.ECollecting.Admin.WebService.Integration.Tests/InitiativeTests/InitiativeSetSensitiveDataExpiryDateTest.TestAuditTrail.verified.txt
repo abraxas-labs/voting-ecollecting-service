@@ -6,28 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 14,
         LogoId: Guid_2,
-        Reason: Jeder darf wählen an welche Schule er gehen möchte,
+        Reason:
+Kräuter sind nützlich und schön – doch Kräutergärten zum Kennenlernen sind rar. Die «Kräutergarten-Initiative» will öffentliche Kräutergärten zum Riechen, Lernen und Ernten schaffen.
+Ein Kräutergarten ist mehr als Beet – er ist Wissen, Duft und alte Tradition. Mit Informationstafeln und vielfältigen Kräutern entstehen Lernorte für alle.
+Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Parks und Schulhöfen, wo jeder ernten darf. Ein bisschen Kräuterwissen – das verbindet mit Natur und Küche.,
         Address: {
-          ZipCode: 3000,
-          Locality: Bern,
+          ZipCode: 9240,
+          Locality: Uzwil,
           IsComplete: true,
-          CommitteeOrPerson: Bildungsethik Schweiz,
-          StreetOrPostOfficeBox: Rosenweg 4
+          CommitteeOrPerson: Komitee Kräutergarten-Initiative,
+          StreetOrPostOfficeBox: Kräuterweg 16
         },
         ImageId: Guid_3,
         Wording:
-Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
-
-In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
-im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
-zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
-
-In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
-Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 231 (neu) – Förderung öffentlicher Kräutergärten
+1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
         MacKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -36,17 +36,17 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Freie Schulwahl auf der Oberstufe,
+        Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2019-12-10,
         MinSignatureCount: 4000,
         CameNotAboutReason: 1,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-07-10,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -60,37 +60,38 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: sg-123.4122177,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 14,
         LogoId: Guid_2,
-        Reason: Jeder darf wählen an welche Schule er gehen möchte,
+        Reason:
+Kräuter sind nützlich und schön – doch Kräutergärten zum Kennenlernen sind rar. Die «Kräutergarten-Initiative» will öffentliche Kräutergärten zum Riechen, Lernen und Ernten schaffen.
+Ein Kräutergarten ist mehr als Beet – er ist Wissen, Duft und alte Tradition. Mit Informationstafeln und vielfältigen Kräutern entstehen Lernorte für alle.
+Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Parks und Schulhöfen, wo jeder ernten darf. Ein bisschen Kräuterwissen – das verbindet mit Natur und Küche.,
         Address: {
-          ZipCode: 3000,
-          Locality: Bern,
+          ZipCode: 9240,
+          Locality: Uzwil,
           IsComplete: true,
-          CommitteeOrPerson: Bildungsethik Schweiz,
-          StreetOrPostOfficeBox: Rosenweg 4
+          CommitteeOrPerson: Komitee Kräutergarten-Initiative,
+          StreetOrPostOfficeBox: Kräuterweg 16
         },
         ImageId: Guid_3,
         Wording:
-Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
-
-In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
-im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
-zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
-
-In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
-Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 231 (neu) – Förderung öffentlicher Kräutergärten
+1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
         MacKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -99,17 +100,17 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Freie Schulwahl auf der Oberstufe,
+        Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2019-12-10,
         MinSignatureCount: 4000,
         CameNotAboutReason: 1,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-07-10,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -123,6 +124,7 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: sg-123.4122177,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

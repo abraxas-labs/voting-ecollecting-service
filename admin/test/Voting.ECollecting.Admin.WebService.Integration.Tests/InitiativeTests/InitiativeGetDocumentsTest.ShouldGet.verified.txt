@@ -1,10 +1,23 @@
 ﻿{
-  Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten_Amtsblattpublikation.pdf: {"DomainOfInfluenceType":"Ct","CollectionType":"Einheitsinitiative","CollectionDescription":"Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten","TotalValidElectronicSignatureCount":42,"TotalValidPhysicalSignatureCount":58,"TotalInvalidPhysicalSignatureCount":9,"TotalSignatureCount":100,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":30,"ValidPhysicalSignatureCount":51,"InvalidPhysicalSignatureCount":9,"DomainOfInfluences":[{"Name":"St. Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg (SG)","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
-  Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten_Elektronische_Unterschriften.pdf: {"DomainOfInfluenceType":"Ct","CollectionType":"Einheitsinitiative","CollectionDescription":"Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten","TotalValidElectronicSignatureCount":42,"TotalValidPhysicalSignatureCount":58,"TotalInvalidPhysicalSignatureCount":9,"TotalSignatureCount":100,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":30,"ValidPhysicalSignatureCount":51,"InvalidPhysicalSignatureCount":9,"DomainOfInfluences":[{"Name":"St. Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg (SG)","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
-  Statistikdaten_Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten_2020-01-10-141210.csv:
-ID_Unterschriftensammlung;Datum elektr. Unterzeichnung;Uhrzeit elektr. Unterzeichnung;Datum Eingang physische Unterschrift bei der Gemeinde;BFS Gemeinde;Name der Gemeinde;Geschlecht;Alter
-f5929816-20df-401e-9072-71d1f46af228;10.01.2020;13:12;;3213;Goldach;F;23
-f5929816-20df-401e-9072-71d1f46af228;10.01.2020;13:12;;3203;St. Gallen;M;50
-f5929816-20df-401e-9072-71d1f46af228;;;08.01.2020;3203;St. Gallen;F;46
+  Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative)_Amtsblattpublikation.pdf: {"DomainOfInfluenceType":"Ct","CollectionType":"Einheitsinitiative","CollectionDescription":"F\u00FCr mehr nachbarschaftlichen Zusammenhalt (Gr\u00FCezi-Initiative)","TotalValidElectronicSignatureCount":42,"TotalValidPhysicalSignatureCount":58,"TotalInvalidPhysicalSignatureCount":12,"TotalSignatureCount":100,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":40,"ValidPhysicalSignatureCount":68,"InvalidPhysicalSignatureCount":12,"DomainOfInfluences":[{"Name":"St.Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg SG","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Rapperswil-Jona","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
+  Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative)_Elektronische_Unterschriften.pdf: {"DomainOfInfluenceType":"Ct","CollectionType":"Einheitsinitiative","CollectionDescription":"F\u00FCr mehr nachbarschaftlichen Zusammenhalt (Gr\u00FCezi-Initiative)","TotalValidElectronicSignatureCount":42,"TotalValidPhysicalSignatureCount":58,"TotalInvalidPhysicalSignatureCount":12,"TotalSignatureCount":100,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":40,"ValidPhysicalSignatureCount":68,"InvalidPhysicalSignatureCount":12,"DomainOfInfluences":[{"Name":"St.Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg SG","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Rapperswil-Jona","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
+  Statistikdaten_Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative)_2020-01-10-141210.csv:
+ID_Unterschriftensammlung;ID_Erlass;Datum elektr. Unterzeichnung;Uhrzeit elektr. Unterzeichnung;Datum Eingang physische Unterschrift bei der Gemeinde;BFS Gemeinde;Name der Gemeinde;Geschlecht;Alter
+f5929816-20df-401e-9072-71d1f46af228;;10.01.2020;13:12;;3213;Goldach;F;23
+f5929816-20df-401e-9072-71d1f46af228;;10.01.2020;13:12;;3203;St.Gallen;M;50
+f5929816-20df-401e-9072-71d1f46af228;;;;08.01.2020;3203;St.Gallen;F;46
+,
+  Statistikdaten_Zeitverlauf_Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative)_2020-01-10-141210.csv:
+Gemeinde;Tag;Anzahl elektronisch gültige;Anzahl physisch gültige;Anzahl physisch ungültige;Uhrzeit Max. elektr. Unterschriften erreicht
+Berg SG;07.01.2020;0;50;10;
+Goldach;07.01.2020;0;50;10;
+Rapperswil-Jona;07.01.2020;0;50;10;
+St.Gallen;07.01.2020;0;50;10;
+Berg SG;08.01.2020;0;75;10;
+Goldach;08.01.2020;0;75;10;
+Rapperswil-Jona;08.01.2020;0;75;10;
+St.Gallen;08.01.2020;0;75;10;
+Goldach;10.01.2020;1;75;10;
+St.Gallen;10.01.2020;1;75;10;
 
 }

@@ -15,7 +15,7 @@ public interface IInitiativeService
 
     Task<Guid> Create(DomainOfInfluenceType domainOfInfluenceType, string description, Guid? subTypeId, string bfs);
 
-    Task<Guid> SetInPreparation(string governmentDecisionNumber);
+    Task<Guid> SetInPreparation(string secureIdNumber);
 
     Task<Initiative> Get(
         Guid id,

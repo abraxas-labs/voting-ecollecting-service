@@ -23,7 +23,7 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidInPreparation, ReferendumsMuStGallen.GuidInCollectionActive));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidInPreparation, ReferendumsCtStGallen.GuidInCollectionEnabledForCollection, ReferendumsMuStGallen.GuidInCollectionActive));
     }
 
     [Fact]
@@ -43,7 +43,7 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
     [Fact]
     public async Task AsMuOnCtCollectionShouldWork()
     {
-        var messages = await MuSgStammdatenverwalterClient.GetAsync(NewValidRequest());
+        var messages = await MuSgStammdatenverwalterClient.GetAsync(NewValidRequest(x => x.Id = ReferendumsCtStGallen.IdInCollectionEnabledForCollection));
         await Verify(messages);
     }
 
@@ -62,6 +62,14 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
         var req = NewValidRequest(x => x.Id = ReferendumsMuStGallen.IdInCollectionActive);
         var resp = await CtSgStammdatenverwalterClient.GetAsync(req);
         resp.Id.Should().Be(ReferendumsMuStGallen.IdInCollectionActive);
+    }
+
+    [Fact]
+    public async Task AsMuOnOnCtCollectionInPreparationShouldThrow()
+    {
+        await AssertStatus(
+            async () => await MuSgStammdatenverwalterClient.GetAsync(NewValidRequest()),
+            StatusCode.NotFound);
     }
 
     [Fact]

@@ -34,7 +34,7 @@ public class ReferendumUpdateTest : BaseGrpcTest<ReferendumService.ReferendumSer
         await AuthenticatedClient.UpdateAsync(NewValidRequest());
         var referendum = await RunOnDb(db =>
             db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 
@@ -53,7 +53,7 @@ public class ReferendumUpdateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     {
         await DeputyClient.UpdateAsync(NewValidRequest());
         var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum);
     }
 

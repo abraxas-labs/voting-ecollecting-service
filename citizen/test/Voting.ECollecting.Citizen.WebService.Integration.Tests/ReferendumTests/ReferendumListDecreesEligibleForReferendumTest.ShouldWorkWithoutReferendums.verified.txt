@@ -7,18 +7,20 @@
           Id: Guid_1,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Verkehrsinfrastruktur,
+          Description: Bundesbeschluss über die Standardisierung der Kuhglocken-Lautstärke auf maximal 85 Dezibel zum Schutz des Gehörs von Mensch und Tier,
           CollectionStartDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1625922730,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20250309/verkehr.html,
+          Link: https://www.admin.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -30,18 +32,20 @@
           Id: Guid_2,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Energie,
+          Description: Bundesbeschluss über die Einführung von Käsekunde als obligatorisches Schulfach in allen Schweizer Primarschulen zur Förderung kulinarischer Bildung,
           CollectionStartDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/energie.html,
+          Link: https://www.admin.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -53,18 +57,20 @@
           Id: Guid_3,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die Kultur,
+          Description: Bundesbeschluss über die Einrichtung von ausgewiesenen Alphorn-Übungszonen in allen Gemeinden über 5000 Einwohner zur Förderung traditioneller Musikkultur,
           CollectionStartDate: {
-            Seconds: 1589116330,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 5,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1605013930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 11,
+            Day: 10
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240818/kultur.html,
+          Link: https://www.admin.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: false,
@@ -76,18 +82,20 @@
           Id: Guid_4,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Genehmigung und die Umsetzung des Abkommens zwischen der Schweiz und der EU über die automatische Amtshilfe in Steuersachen,
+          Description: Bundesbeschluss über die Pflicht zur Beschilderung aller Wanderwege mit QR-Codes für digitale Höhenmessung und GPS-Tracking,
           CollectionStartDate: {
-            Seconds: 1581340330,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 2,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/automatische-amtshilfe.html,
+          Link: https://www.admin.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -99,18 +107,20 @@
           Id: Guid_5,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
-          Description: Bundesbeschluss über die Änderung des Bundesgesetzes über die direkte Bundessteuer,
+          Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
           CollectionStartDate: {
-            Seconds: 1575983530,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1591794730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 10
           },
           MinSignatureCount: 50000,
           MaxElectronicSignatureCount: 5000,
-          Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240303/direkte-bundessteuer.html,
+          Link: https://www.admin.ch/,
           PeriodState: InCollection,
           UserPermissions: {
             CanCreateReferendum: false,
@@ -127,18 +137,20 @@
           Id: Guid_6,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
+          Description: Kantonsratsbeschluss über die Pflicht zur Installation von Windklangspiel an allen Balkonen zur Förderung harmonischer Klangkultur im Kanton,
           CollectionStartDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          Link: https://www.sg.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -150,22 +162,24 @@
           Id: Guid_7,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+          Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
           CollectionStartDate: {
-            Seconds: 1581599530,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 2,
+            Day: 13
           },
           CollectionEndDate: {
-            Seconds: 1592053930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 13
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/1231sa/steuern.html,
+          Link: https://www.sg.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: false,
-            HasMaximumReferendumsBeenReached: true
+            HasMaximumReferendumsBeenReached: false
           },
           State: CollectionApplicable
         },
@@ -173,18 +187,45 @@
           Id: Guid_8,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
           CollectionStartDate: {
-            Seconds: 1576242730,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 13
           },
           CollectionEndDate: {
-            Seconds: 1592053930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 13
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          Link: https://www.sg.ch/,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: true
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_9,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
+          CollectionStartDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 13
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 6,
+            Day: 13
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/,
           PeriodState: InCollection,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -198,44 +239,23 @@
       DomainOfInfluenceType: Mu,
       Decrees: [
         {
-          Id: Guid_9,
-          DomainOfInfluenceType: Mu,
-          Bfs: 3213,
-          Description: Gemeinderatsbeschluss über den Ausbau des öffentlichen Nahverkehrs,
-          CollectionStartDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
-          },
-          CollectionEndDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
-          },
-          MinSignatureCount: 300,
-          MaxElectronicSignatureCount: 30,
-          Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240922/nahverkehr-ausbau.html,
-          PeriodState: Published,
-          UserPermissions: {
-            CanCreateReferendum: true,
-            HasMaximumReferendumsBeenReached: false
-          },
-          State: CollectionApplicable
-        },
-        {
           Id: Guid_10,
           DomainOfInfluenceType: Mu,
-          Bfs: 3203,
-          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Verkehrsinfrastruktur,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über die Ausstattung aller Parkbänke mit integrierten Lautsprechern für sanfte Hintergrundmusik,
           CollectionStartDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           MinSignatureCount: 300,
           MaxElectronicSignatureCount: 30,
-          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          Link: https://www.goldach.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -246,19 +266,46 @@
         {
           Id: Guid_11,
           DomainOfInfluenceType: Mu,
-          Bfs: 3213,
-          Description: Gemeinderatsbeschluss über die Einführung eines digitalen Bürgerportals,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Anbringung von QR-Codes auf allen öffentlichen Kunstwerken und Graffiti-Wänden für digitale Künstlerprofile und Audioguides,
           CollectionStartDate: {
-            Seconds: 1581340330,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           MinSignatureCount: 300,
           MaxElectronicSignatureCount: 30,
-          Link: https://www.goldach.ch/politik-verwaltung/abstimmungen-wahlen/20240324/digitales-buergerportal.html,
+          Link: https://www.stadt.sg.ch/,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_12,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
+          CollectionStartDate: {
+            Year: 2020,
+            Month: 2,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 7,
+            Day: 10
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: false,
@@ -267,21 +314,23 @@
           State: CollectionApplicable
         },
         {
-          Id: Guid_12,
+          Id: Guid_13,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
-          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+          Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
           CollectionStartDate: {
-            Seconds: 1575983530,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 300,
           MaxElectronicSignatureCount: 30,
-          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          Link: https://www.stadt.sg.ch/,
           PeriodState: InCollection,
           UserPermissions: {
             CanCreateReferendum: false,

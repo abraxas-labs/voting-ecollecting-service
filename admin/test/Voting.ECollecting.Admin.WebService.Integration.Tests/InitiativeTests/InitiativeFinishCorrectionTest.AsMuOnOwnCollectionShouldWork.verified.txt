@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Verkehrsberuhigung,
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Verkehrsberuhigung,
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Stadtweite Verkehrsberuhigung,
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,

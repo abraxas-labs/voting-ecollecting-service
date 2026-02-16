@@ -16,15 +16,17 @@ public class InitiativeModelBuilder : IEntityTypeConfiguration<InitiativeEntity>
     public static readonly Guid UnityId = Guid.Parse("abd22fb4-f5d9-463b-8605-edfc0d93a6a3");
     public static readonly Guid FederalId = Guid.Parse("d0c38ef9-0619-4fdc-a859-237bf6f6d1d3");
 
+    private const string GovernmentDecisionNumberLowerPropertyName = "GovernmentDecisionNumberLower";
+
     public void Configure(EntityTypeBuilder<InitiativeEntity> builder)
     {
-        builder
-            .Property(x => x.CollectionStartDate)
-            .HasUtcConversion();
+        builder.Property<string>(GovernmentDecisionNumberLowerPropertyName)
+            .HasComputedColumnSql($"lower(\"{nameof(InitiativeEntity.GovernmentDecisionNumber)}\")", stored: true);
 
         builder
-            .Property(x => x.CollectionEndDate)
-            .HasUtcConversion();
+            .HasIndex(GovernmentDecisionNumberLowerPropertyName)
+            .IsUnique()
+            .HasFilter($"\"{nameof(InitiativeEntity.GovernmentDecisionNumber)}\" <> ''");
 
         builder
             .HasOne(x => x.SubType)

@@ -2,11 +2,11 @@
 // For license information see LICENSE file
 
 using FluentAssertions;
-using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
+using Voting.ECollecting.Admin.WebService.Integration.Tests.Mocks;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
@@ -41,7 +41,7 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
             .Include(x => x.Municipalities!.OrderBy(y => y.Bfs))
             .FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeRegistered));
         initiative.State.Should().Be(CollectionState.EnabledForCollection);
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesCtStGallen.GuidLegislativeRegistered)
@@ -61,7 +61,7 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
             .Include(x => x.Municipalities!.OrderBy(y => y.Bfs))
             .FirstAsync(x => x.Id == InitiativesMuStGallen.GuidRegistered));
         initiative.State.Should().Be(CollectionState.EnabledForCollection);
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesMuStGallen.GuidRegistered)
@@ -80,22 +80,17 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
             x =>
             {
                 x.AdmissibilityDecisionState = AdmissibilityDecisionState.Valid;
-                x.CollectionStartDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(-1);
-                x.CollectionEndDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(30);
+                x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(-1);
+                x.CollectionEndDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(30);
             });
 
-        await CtSgStammdatenverwalterClient.EnableAsync(NewValidRequest(x =>
-        {
-            x.Id = InitiativesCtStGallen.IdLegislativeUnderReview;
-            x.CollectionStartDate = null;
-            x.CollectionEndDate = null;
-        }));
+        await CtSgStammdatenverwalterClient.EnableAsync(NewValidRequest(x => x.Id = InitiativesCtStGallen.IdLegislativeUnderReview));
 
         var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.Municipalities!.OrderBy(y => y.Bfs))
             .FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeUnderReview));
         initiative.State.Should().Be(CollectionState.EnabledForCollection);
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesCtStGallen.GuidLegislativeUnderReview)
@@ -114,8 +109,8 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
             x =>
             {
                 x.AdmissibilityDecisionState = AdmissibilityDecisionState.Valid;
-                x.CollectionStartDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(5);
-                x.CollectionEndDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(30);
+                x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(5);
+                x.CollectionEndDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(30);
             });
 
         await AssertStatus(
@@ -136,8 +131,8 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
             x =>
             {
                 x.AdmissibilityDecisionState = AdmissibilityDecisionState.ValidButSubjectToConditions;
-                x.CollectionStartDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(-1);
-                x.CollectionEndDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(30);
+                x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(-1);
+                x.CollectionEndDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(30);
             });
 
         await AssertStatus(
@@ -170,7 +165,7 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public async Task ShouldFailForCollectionStartDateInPast()
     {
         await AssertStatus(
-            async () => await CtSgStammdatenverwalterClient.EnableAsync(NewValidRequest(x => x.CollectionStartDate = Timestamp.FromDateTime(GetService<TimeProvider>().GetUtcNowDateTime().AddDays(-1)))),
+            async () => await CtSgStammdatenverwalterClient.EnableAsync(NewValidRequest(x => x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(-1).ToProtoDate())),
             StatusCode.InvalidArgument);
     }
 
@@ -180,8 +175,8 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.EnableAsync(NewValidRequest(x =>
             {
-                x.CollectionStartDate = MockedClock.GetTimestampDate();
-                x.CollectionEndDate = MockedClock.GetTimestampDate(-1);
+                x.CollectionStartDate = MockedClock.GetDate().ToProtoDate();
+                x.CollectionEndDate = MockedClock.GetDate(-1).ToProtoDate();
             })),
             StatusCode.InvalidArgument);
     }
@@ -266,8 +261,8 @@ public class InitiativeEnableTest : BaseGrpcTest<InitiativeService.InitiativeSer
         var request = new EnableInitiativeRequest
         {
             Id = InitiativesCtStGallen.IdLegislativeRegistered,
-            CollectionStartDate = MockedClock.GetTimestampDate(10),
-            CollectionEndDate = MockedClock.GetTimestampDate(50),
+            CollectionStartDate = MockedClock.GetDate(10).ToProtoDate(),
+            CollectionEndDate = MockedClock.GetDate(50).ToProtoDate(),
         };
         customizer?.Invoke(request);
         return request;

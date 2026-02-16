@@ -6,20 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.stadtentwicklung-sg.ch/initiative,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 4,
         LogoId: Guid_2,
-        Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+        Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
         Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
+          ZipCode: 9220,
+          Locality: Bischofszell,
           IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
+          CommitteeOrPerson: Komitee Velorouten-Initiative,
+          StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -27,7 +35,7 @@
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Initiative für nachhaltige Stadtentwicklung,
+        Description: Für kantonale Velorouten (Velorouten-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -46,25 +54,34 @@
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 1,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: 123che2,
         SignatureSheetTemplateGenerated: true
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.stadtentwicklung-sg.ch/initiative,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 5,
         LogoId: Guid_2,
-        Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+        Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
         Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
+          ZipCode: 9220,
+          Locality: Bischofszell,
           IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
+          CommitteeOrPerson: Komitee Velorouten-Initiative,
+          StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -72,7 +89,7 @@
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Initiative für nachhaltige Stadtentwicklung,
+        Description: Für kantonale Velorouten (Velorouten-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -91,6 +108,7 @@
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 1,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: 123che2,
         SignatureSheetTemplateGenerated: true
       },
       SourceEntityId: Guid_1,
@@ -108,20 +126,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.stadtentwicklung-sg.ch/initiative,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 5,
         LogoId: Guid_2,
-        Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+        Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
         Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
+          ZipCode: 9220,
+          Locality: Bischofszell,
           IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
+          CommitteeOrPerson: Komitee Velorouten-Initiative,
+          StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -129,7 +155,7 @@
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Initiative für nachhaltige Stadtentwicklung,
+        Description: Für kantonale Velorouten (Velorouten-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -148,25 +174,34 @@
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 1,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: 123che2,
         SignatureSheetTemplateGenerated: true
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.stadtentwicklung-sg.ch/initiative,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 5,
         LogoId: Guid_2,
-        Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
+        Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
         Address: {
-          ZipCode: 8001,
-          Locality: Zürich,
+          ZipCode: 9220,
+          Locality: Bischofszell,
           IsComplete: true,
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58
+          CommitteeOrPerson: Komitee Velorouten-Initiative,
+          StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -178,7 +213,7 @@
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Initiative für nachhaltige Stadtentwicklung,
+        Description: Für kantonale Velorouten (Velorouten-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -197,6 +232,7 @@
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 4,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: 123che2,
         SignatureSheetTemplateGenerated: true
       },
       SourceEntityId: Guid_1,

@@ -5,7 +5,10 @@
   PoliticalFirstName: Margarita,
   PoliticalLastName: Hamrick,
   Bfs: 3211,
-  PoliticalBfs: 3211,
+  PoliticalResidence: Berg SG,
+  Street: Dorfstrasse,
+  HouseNumber: 1,
+  ZipCode: 9305,
   DateOfBirth: Date_1,
   Email: margarita@example.com,
   MemberSignatureRequested: true,
@@ -13,9 +16,6 @@
   Token: {
     Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
   },
-  CanEdit: false,
-  CanReset: false,
-  CanVerify: false,
   AuditInfo: {
     CreatedById: default-user-id,
     CreatedByName: Test Admin,

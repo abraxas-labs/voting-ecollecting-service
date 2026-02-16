@@ -13,4 +13,5 @@ public enum CollectionSignatureSheetSort
     CountTotal,
     CountValid,
     CountInvalid,
+    State,
 }

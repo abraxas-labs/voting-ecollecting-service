@@ -217,14 +217,11 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     internal static partial RestoreSignatureSheetResponse MapToRestoreSignatureSheetResponse(DomainModels.SignatureSheetStateChangeResult result);
 
-    internal static DateOnly MapToDateOnly(Timestamp timestamp)
-        => DateOnly.FromDateTime(MapToDateTime(timestamp));
+    internal static DateOnly? MapToNullableDateOnly(SharedProtoModels.Date? date)
+        => date == null ? null : new DateOnly(date.Year, date.Month, date.Day);
 
     internal static DateOnly MapToDateOnly(SharedProtoModels.Date date)
         => new DateOnly(date.Year, date.Month, date.Day);
-
-    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    internal static partial SharedProtoModels.Date MapToDate(DateOnly date);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     internal static partial ConfirmSignatureSheetResponse MapToConfirmSignatureSheetResponse(DomainModels.SignatureSheetConfirmResult result);
@@ -234,6 +231,9 @@ internal static partial class Mapper
 
     internal static AddSignatureSheetSamplesResponse MapToAddSignatureSheetSamplesResponse(IEnumerable<CollectionSignatureSheetEntity> sheets)
         => new AddSignatureSheetSamplesResponse { SignatureSheets = { MapToCollectionSignatureSheets(sheets) } };
+
+    private static DateOnly MapToDateOnly(Timestamp timestamp)
+        => DateOnly.FromDateTime(MapToDateTime(timestamp));
 
     private static partial IEnumerable<ProtoAdminModels.CollectionsGroup> MapToCollectionsGroup(
         IReadOnlyDictionary<DomainEnums.DomainOfInfluenceType, DomainModels.CollectionsGroup> groups);
@@ -339,6 +339,7 @@ internal static partial class Mapper
     private static partial ProtoAdminModels.Collection MapToReferendumCollection(DomainModels.Referendum referendum);
 
     [MapPropertyFromSource(nameof(ProtoAdminModels.Initiative.Collection))]
+    [MapperIgnoreTarget(nameof(ProtoAdminModels.Initiative.DomainOfInfluenceName))]
     private static partial ProtoAdminModels.Initiative MapToInitiative(InitiativeEntity initiativeEntity);
 
     [MapPropertyFromSource(nameof(ProtoAdminModels.Referendum.Collection))]
@@ -389,6 +390,9 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial ProtoAdminModels.SimpleDecree MapToSimpleDecree(DecreeEntity decree);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial ProtoAdminModels.InitiativeCommitteeMemberUserPermissions MapInitiativeCommitteeMemberUserPermissions(SharedDomainModels.InitiativeCommitteeMemberUserPermissions userPermissions);
+
     private static DateTime MapToDateTime(Timestamp timestamp)
     {
         return timestamp.ToDateTime();
@@ -423,4 +427,7 @@ internal static partial class Mapper
             ? null
             : Guid.Parse(v);
     }
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial SharedProtoModels.Date MapToDate(DateOnly date);
 }

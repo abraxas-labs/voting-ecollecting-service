@@ -1,10 +1,16 @@
 ﻿{
   MembersCommittee: ,
-  Number: CH-123.4567,
-  Description: Gegen das Abwassergsetz,
+  DecreeId: Guid_1,
+  CollectionStartDate: Date_1,
+  CollectionEndDate: Date_2,
+  Description: Referendum gegen die Pflicht zu mindestens einer Bergwanderung pro Monat,
   Type: Referendum,
-  Reason: Wir möchten keine dreckigen Gewässer in unserem Kanton!,
-  Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+  Reason:
+Der Kantonsrat möchte die Gesundheit fördern, doch eine monatliche Wander-Pflicht geht zu weit.
+Nicht alle haben Zeit, Kondition oder Interesse an Bergtouren – Zwang ist der falsche Weg.
+Freiwilligkeit und Motivation führen weiter als Vorschriften.
+Dieses Referendum steht für Freiheit, individuelle Lebensgestaltung und das Recht, auch mal zu Hause zu bleiben.,
+  Link: https://www.sg.ch/,
   SignatureSheetTemplateGenerated: false,
   State: InPreparation,
   Address: {
@@ -14,8 +20,41 @@
     Locality: ,
     IsComplete: false
   },
+  Permissions: [
+    {
+      LastName: user,
+      FirstName: Test,
+      Email: rudolph.meier@example.com,
+      Accepted: true,
+      State: Accepted,
+      IamLastName: user,
+      IamFirstName: Test,
+      IamUserId: default-user-id,
+      Role: Owner,
+      CollectionId: Guid_2,
+      FullName: Test user,
+      IntegritySignatureInfo: {
+        IntegritySignatureKeyId: 
+      },
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: rudolph.meier@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ],
+  EncryptionKeyId: KSedVotingECollecting_4dc2333c-41ce-4e65-a1b1-13068c22c4b2_Encryption12,
+  MacKeyId: KSedVotingECollecting_4dc2333c-41ce-4e65-a1b1-13068c22c4b2_DuplicateDetection128,
   IsElectronicSubmission: false,
   InformalReviewRequested: false,
+  DomainOfInfluenceType: Ct,
+  Bfs: 17,
+  MaxElectronicSignatureCount: 300,
+  SecureIdNumber: AAAAAAAAAAAA,
+  PeriodState: InCollection,
+  SignatureListSubmissionEndDate: DateTime_2,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },
@@ -25,5 +64,5 @@
     CreatedByEmail: rudolph.meier@example.com,
     CreatedAt: DateTime_1
   },
-  Id: Guid_1
+  Id: Guid_2
 }

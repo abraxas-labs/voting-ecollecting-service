@@ -23,6 +23,7 @@ internal static partial class Mapper
 
     [MapperIgnoreTarget(nameof(Decree.UserPermissions))]
     [MapProperty(nameof(DecreeEntity.Collections), nameof(Decree.Referendums))]
+    [MapperIgnoreTarget(nameof(Initiative.DomainOfInfluenceName))]
     internal static partial Decree MapToDecree(DecreeEntity decreeEntity);
 
     [MapperIgnoreTarget(nameof(CollectionSignatureSheet.UserPermissions))]
@@ -61,12 +62,13 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapperIgnoreTarget(nameof(Initiative.UserPermissions))]
     [MapperIgnoreTarget(nameof(Initiative.AttestedCollectionCount))]
+    [MapperIgnoreTarget(nameof(Initiative.DomainOfInfluenceName))]
     internal static partial Initiative MapToInitiative(InitiativeEntity initiativeEntity);
 
     internal static partial List<CollectionPermission> MapToCollectionPermissions(IEnumerable<CollectionPermissionEntity> collectionPermissionEntities);
 
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.Residence))]
-    [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.PoliticalResidence))]
+    [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.UserPermissions))]
     internal static partial InitiativeCommitteeMember MapToInitiativeCommitteeMember(InitiativeCommitteeMemberEntity initiativeCommitteeMember);
 
     internal static partial IEnumerable<AclDomainOfInfluenceType> MapToAclDoiTypes(IEnumerable<DomainOfInfluenceType> doiTypes);

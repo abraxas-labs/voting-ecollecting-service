@@ -1,9 +1,21 @@
 ﻿{
   DomainOfInfluenceType: Ct,
   CollectionType: Gesetzesinitiative,
-  CollectionDescription: Kein Zwang gegen Kinder und Jugendliche,
+  CollectionDescription: Für eine tägliche Portion Natur (Frischluftinitiative),
   MinimumNumberOfCommitteeMembers: 3,
   CommitteeMembers: [
+    {
+      LastName: Member,
+      PoliticalLastName: Member,
+      FirstName: Expired,
+      PoliticalFirstName: Expired,
+      DayOfBirth: 1,
+      MonthOfBirth: 1,
+      YearOfBirth: 1980,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      ApprovalState: Expired
+    },
     {
       LastName: Hamrick,
       PoliticalLastName: Hamrick,
@@ -207,6 +219,18 @@
       Residence: St.Gallen,
       PoliticalResidence: St.Gallen,
       ApprovalState: Approved
+    },
+    {
+      LastName: Member,
+      PoliticalLastName: Member,
+      FirstName: Expired Not Updated,
+      PoliticalFirstName: Expired Not Updated,
+      DayOfBirth: 1,
+      MonthOfBirth: 1,
+      YearOfBirth: 1980,
+      Residence: St.Gallen,
+      PoliticalResidence: St.Gallen,
+      ApprovalState: Requested
     }
   ],
   CollectionOwner: {

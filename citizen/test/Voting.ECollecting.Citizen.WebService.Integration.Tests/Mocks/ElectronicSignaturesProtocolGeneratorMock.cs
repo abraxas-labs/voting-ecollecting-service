@@ -17,5 +17,5 @@ public class ElectronicSignaturesProtocolGeneratorMock(IDmDocDataSerializer dmDo
         => DataContainerBuilder.BuildProtocolDataContainer(data);
 
     protected override string BuildFileName(ECollectingProtocolTemplateData data)
-        => $"{data.Collection.Description}_{config.ElectronicSignaturesProtocolFileName}";
+        => $"{data.Description}_{config.ElectronicSignaturesProtocolFileName}";
 }

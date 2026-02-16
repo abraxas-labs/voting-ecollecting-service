@@ -20,7 +20,7 @@ public class CreateInitiativeWithAdmissibilityDecisionRequestTest : ProtoValidat
         yield return NewValidRequest(x => x.Wording = string.Empty);
         yield return NewValidRequest(x => x.Description = RandomStringUtil.GenerateComplexSingleLineText(200));
         yield return NewValidRequest(x => x.Wording = RandomStringUtil.GenerateComplexMultiLineText(10_000));
-        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateSimpleSingleLineText(50));
+        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateComplexSingleLineText(50));
     }
 
     protected override IEnumerable<CreateInitiativeWithAdmissibilityDecisionRequest> NotOkMessages()
@@ -33,7 +33,7 @@ public class CreateInitiativeWithAdmissibilityDecisionRequestTest : ProtoValidat
         yield return NewValidRequest(x => x.Description = RandomStringUtil.GenerateComplexSingleLineText(201));
         yield return NewValidRequest(x => x.Wording = RandomStringUtil.GenerateComplexMultiLineText(10_001));
         yield return NewValidRequest(x => x.GovernmentDecisionNumber = string.Empty);
-        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateSimpleSingleLineText(51));
+        yield return NewValidRequest(x => x.GovernmentDecisionNumber = RandomStringUtil.GenerateComplexSingleLineText(51));
         yield return NewValidRequest(x => x.AdmissibilityDecisionState = AdmissibilityDecisionState.Unspecified);
         yield return NewValidRequest(x => x.AdmissibilityDecisionState = (AdmissibilityDecisionState)(-1));
     }

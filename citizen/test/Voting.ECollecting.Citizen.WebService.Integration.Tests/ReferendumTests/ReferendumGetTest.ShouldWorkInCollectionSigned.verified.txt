@@ -2,17 +2,21 @@
   Id: Guid_1,
   Decree: {
     Id: Guid_2,
-    Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+    Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
     PeriodState: InCollection,
     MaxElectronicSignatureCount: 300
   },
   MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
   Collection: {
     Id: Guid_1,
-    Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+    Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
     Type: Referendum,
-    Reason: Steuergerechtigkeit im Kanton wahren!,
-    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+    Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
+    Link: https://www.sg.ch/,
     Image: {
       Id: Guid_3,
       Name: placeholder.png
@@ -34,30 +38,32 @@
       ElectronicCitizenCount: 102
     },
     Address: {
-      CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-      StreetOrPostOfficeBox: Klosterhof 1,
-      ZipCode: 9001,
+      CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+      StreetOrPostOfficeBox: Multergasse 8,
+      ZipCode: 9000,
       Locality: St.Gallen
     },
     IsElectronicSubmission: true,
     InformalReviewRequested: false,
     IsSigned: true,
     HasIsSigned: true,
+    SignatureType: Electronic,
     SignAcceptedAcrs: [
       urn:qa.agov.ch:names:tc:ac:classes:400,
       urn:qa.agov.ch:names:tc:ac:classes:500
     ],
     CollectionStartDate: {
-      Seconds: 1576242730,
-      Nanos: 200000000
+      Year: 2019,
+      Month: 12,
+      Day: 13
     },
     CollectionEndDate: {
-      Seconds: 1592053930,
-      Nanos: 200000000
+      Year: 2020,
+      Month: 6,
+      Day: 13
     },
     PeriodState: InCollection
   },
-  Number: ,
   IsOtherReferendumOfSameDecreeSigned: false,
   HasIsOtherReferendumOfSameDecreeSigned: true
 }

@@ -15,6 +15,14 @@
       ECollectingEnabled: true
     },
     {
+      Name: Rapperswil-Jona,
+      Type: Mu,
+      Bfs: 3340,
+      InitiativeMinSignatureCount: 50000,
+      InitiativeMaxElectronicSignaturePercent: 100,
+      ECollectingEnabled: true
+    },
+    {
       Name: St.Gallen,
       Type: Mu,
       Bfs: 3203,

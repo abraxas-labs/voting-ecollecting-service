@@ -10,6 +10,9 @@ public class StatisticalDataCsvEntry
     [Name("ID_Unterschriftensammlung")]
     public Guid CollectionId { get; set; }
 
+    [Name("ID_Erlass")]
+    public Guid? DecreeId { get; set; }
+
     [Name("Datum elektr. Unterzeichnung")]
     public string ElectronicSignatureDateFormatted => ElectronicSignatureDate?.ToString("dd.MM.yyyy") ?? string.Empty;
 
@@ -35,7 +38,7 @@ public class StatisticalDataCsvEntry
     public DateTime? ElectronicSignatureDate { get; set; }
 
     [Ignore]
-    public DateTime? PhysicalReceivedAt { get; set; }
+    public DateOnly? PhysicalReceivedAt { get; set; }
 
     [Ignore]
     public int Sex { get; set; }

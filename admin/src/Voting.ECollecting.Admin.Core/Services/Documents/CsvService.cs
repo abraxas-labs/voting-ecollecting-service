@@ -21,6 +21,14 @@ public class CsvService
         await csvWriter.WriteRecordsAsync(records, ct);
     }
 
+    public async Task Render<TRow>(PipeWriter writer, IEnumerable<TRow> records, CancellationToken ct = default)
+    {
+        // use utf8 with bom (excel requires bom)
+        await using var streamWriter = new StreamWriter(writer.AsStream(), Encoding.UTF8);
+        await using var csvWriter = new CsvWriter(streamWriter, _csvConfiguration);
+        await csvWriter.WriteRecordsAsync(records, ct);
+    }
+
     private static CsvConfiguration NewCsvConfig() =>
         new CsvConfiguration(CultureInfo.InvariantCulture)
         {

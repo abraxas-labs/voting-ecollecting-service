@@ -20,7 +20,7 @@ public class InitiativeUpdateCommitteeMemberSortTest : BaseGrpcTest<InitiativeSe
 {
     private static readonly Guid _id = InitiativeCommitteeMembers.BuildGuid(
         InitiativesCtStGallen.GuidLegislativeInPreparation,
-        "sara.schneider@example.com");
+        "elena.fischer@example.com");
 
     public InitiativeUpdateCommitteeMemberSortTest(TestApplicationFactory factory)
         : base(factory)
@@ -30,7 +30,7 @@ public class InitiativeUpdateCommitteeMemberSortTest : BaseGrpcTest<InitiativeSe
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidLegislativeReadyForRegistration));
     }
 
     [Fact]
@@ -41,6 +41,7 @@ public class InitiativeUpdateCommitteeMemberSortTest : BaseGrpcTest<InitiativeSe
         var sortedMembers = await RunOnDb(db => db.InitiativeCommitteeMembers
             .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation)
             .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName)
             .Select(x => new { x.Email, x.SortIndex })
             .ToListAsync());
         await Verify(sortedMembers);
@@ -71,6 +72,7 @@ public class InitiativeUpdateCommitteeMemberSortTest : BaseGrpcTest<InitiativeSe
         var sortedMembers = await RunOnDb(db => db.InitiativeCommitteeMembers
             .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation)
             .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName)
             .Select(x => new { x.Email, x.SortIndex })
             .ToListAsync());
         await Verify(sortedMembers);
@@ -84,6 +86,7 @@ public class InitiativeUpdateCommitteeMemberSortTest : BaseGrpcTest<InitiativeSe
         var sortedMembers = await RunOnDb(db => db.InitiativeCommitteeMembers
             .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeInPreparation)
             .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName)
             .Select(x => new { x.Email, x.SortIndex })
             .ToListAsync());
         await Verify(sortedMembers);
@@ -139,6 +142,28 @@ public class InitiativeUpdateCommitteeMemberSortTest : BaseGrpcTest<InitiativeSe
             async () => await AuthenticatedClient.UpdateCommitteeMemberSortAsync(req),
             StatusCode.InvalidArgument,
             "Cannot edit locked field CommitteeMembers");
+    }
+
+    [Fact]
+    public async Task ShouldNotAffectOtherInitiatives()
+    {
+        var otherMembersBeforeSort = await RunOnDb(db => db.InitiativeCommitteeMembers
+            .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeReadyForRegistration)
+            .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName)
+            .Select(x => new { x.Email, x.SortIndex })
+            .ToListAsync());
+
+        await AuthenticatedClient.UpdateCommitteeMemberSortAsync(NewValidRequest());
+
+        var otherMembersAfterSort = await RunOnDb(db => db.InitiativeCommitteeMembers
+            .Where(x => x.InitiativeId == InitiativesCtStGallen.GuidLegislativeReadyForRegistration)
+            .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName)
+            .Select(x => new { x.Email, x.SortIndex })
+            .ToListAsync());
+
+        otherMembersBeforeSort.Should().BeEquivalentTo(otherMembersAfterSort);
     }
 
     [Theory]

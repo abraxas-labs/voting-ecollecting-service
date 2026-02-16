@@ -2,8 +2,9 @@
   Id: Guid_1,
   Number: 1,
   ReceivedAt: {
-    Seconds: 1578575530,
-    Nanos: 200000000
+    Year: 2020,
+    Month: 1,
+    Day: 9
   },
   CreatedByName: Test Admin,
   ModifiedByName: ,
@@ -13,7 +14,7 @@
     Invalid: 19
   },
   State: Created,
-  MunicipalityName: St. Gallen,
+  MunicipalityName: St.Gallen,
   Bfs: 3203,
   UserPermissions: {
     CanEdit: true,
@@ -23,5 +24,6 @@
     CanDiscard: false,
     CanRestore: false,
     CanConfirm: false
-  }
+  },
+  ModifiedBySuperiorAuthority: false
 }

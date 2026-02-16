@@ -13,7 +13,7 @@ public class InitiativeCommitteeMemberEntity : AuditedEntity, IAuditTrailTracked
 
     public InitiativeEntity? Initiative { get; set; }
 
-    public int SortIndex { get; set; }
+    public int? SortIndex { get; set; }
 
     public string FirstName { get; set; } = string.Empty;
 
@@ -25,7 +25,13 @@ public class InitiativeCommitteeMemberEntity : AuditedEntity, IAuditTrailTracked
 
     public string Bfs { get; set; } = string.Empty;
 
-    public string PoliticalBfs { get; set; } = string.Empty;
+    public string PoliticalResidence { get; set; } = string.Empty;
+
+    public string Street { get; set; } = string.Empty;
+
+    public string HouseNumber { get; set; } = string.Empty;
+
+    public string ZipCode { get; set; } = string.Empty;
 
     public string? PoliticalDuty { get; set; }
 
@@ -50,26 +56,6 @@ public class InitiativeCommitteeMemberEntity : AuditedEntity, IAuditTrailTracked
     public Guid? SignatureFileId { get; set; }
 
     public FileEntity? SignatureFile { get; set; }
-
-    /// <summary>
-    /// Gets a value indicating whether this membership is editable.
-    /// True if:
-    /// the approval state is still requested
-    /// or the signature was provided directly by
-    /// the editor of the membership (not the member himself)
-    /// by uploading the signature list.
-    /// </summary>
-    public bool CanEdit
-        => ApprovalState == InitiativeCommitteeMemberApprovalState.Requested
-           || (ApprovalState == InitiativeCommitteeMemberApprovalState.Signed
-               && !MemberSignatureRequested
-               && SignatureType == InitiativeCommitteeMemberSignatureType.UploadedSignature);
-
-    public bool CanReset => SignatureType == InitiativeCommitteeMemberSignatureType.UploadedSignature &&
-                            ApprovalState is InitiativeCommitteeMemberApprovalState.Approved or InitiativeCommitteeMemberApprovalState.Rejected;
-
-    public bool CanVerify => ApprovalState is InitiativeCommitteeMemberApprovalState.Requested
-        or InitiativeCommitteeMemberApprovalState.Signed;
 
     public void SetInitialValues()
     {

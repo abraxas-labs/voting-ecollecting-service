@@ -11,7 +11,7 @@ public interface IReferendumService
 {
     Task<Guid> Create(string description, Guid? decreeId);
 
-    Task<Guid> SetInPreparation(string referendumNumber);
+    Task<Guid> SetInPreparation(string secureIdNumber);
 
     Task<Referendum> Get(Guid id, bool includeIsSigned = false);
 

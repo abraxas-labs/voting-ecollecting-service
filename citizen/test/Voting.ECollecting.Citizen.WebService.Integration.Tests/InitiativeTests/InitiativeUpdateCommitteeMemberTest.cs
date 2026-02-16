@@ -166,7 +166,7 @@ public class InitiativeUpdateCommitteeMemberTest : BaseGrpcTest<InitiativeServic
         req.Role = CollectionPermissionRole.Owner;
         await AssertStatus(
             async () => await AuthenticatedClient.UpdateCommitteeMemberAsync(req),
-            StatusCode.InvalidArgument);
+            StatusCode.AlreadyExists);
     }
 
     [Fact]
@@ -346,8 +346,11 @@ public class InitiativeUpdateCommitteeMemberTest : BaseGrpcTest<InitiativeServic
             InitiativeId = InitiativesCtStGallen.IdLegislativeInPreparation,
             RequestMemberSignature = true,
             PoliticalDuty = "Protokollführer (updated)",
-            PoliticalBfs = Bfs.MunicipalityGoldach,
+            PoliticalResidence = Bfs.GetName(Bfs.MunicipalityGoldach),
             Bfs = Bfs.MunicipalityGoldach,
+            Street = "Bahnhofstrasse (updated)",
+            HouseNumber = "2a",
+            ZipCode = "9001",
             Role = CollectionPermissionRole.Unspecified,
         };
     }

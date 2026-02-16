@@ -78,7 +78,9 @@ public class CollectionWithdrawTest : BaseGrpcTest<CollectionService.CollectionS
     {
         await RunOnDb(db => db.Initiatives
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .ExecuteUpdateAsync(x => x.SetProperty(y => y.IsElectronicSubmission, false)));
+            .ExecuteUpdateAsync(x => x
+                .SetProperty(y => y.IsElectronicSubmission, false)
+                .SetProperty(y => y.SecureIdNumber, "XXXXXXXXXXXX")));
         await AssertStatus(
             async () => await AuthenticatedClient.WithdrawAsync(NewValidRequest()),
             StatusCode.NotFound);

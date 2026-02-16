@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Verkehrsberuhigung,
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Verkehrsberuhigung,
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Stadtweite Verkehrsberuhigung,
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -48,9 +48,11 @@
   initiative: {
     MinSignatureCount: 1000,
     Wording:
-Diese Initiative fordert eine Verkehrsberuhigung in der Stadt St.Gallen.
-Tempo 30 soll in Wohnquartieren eingeführt und die Sicherheit für
-Fussgänger und Velofahrer verbessert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen
+1 Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
+2 Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
+3 Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
     GovernmentDecisionNumber: MUSG-2025-003,
     AdmissibilityDecisionState: ValidButSubjectToConditions,
     LockedFields: {
@@ -58,10 +60,13 @@ Fussgänger und Velofahrer verbessert werden.,
       Wording: false,
       CommitteeMembers: true
     },
-    Description: Stadtweite Verkehrsberuhigung,
+    Description: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
     Type: Initiative,
-    Reason: Sicherere Strassen für alle!,
-    Link: https://www.stadt.sg.ch/home/verkehrsberuhigung.html,
+    Reason:
+St.Gallen ist hundefreundlich – doch eingezäunte Flächen, wo Hunde frei toben können, gibt es kaum. Die «Hundepark-Initiative» will das ändern.
+Ein Hundepark ist mehr als eine Wiese – es ist ein Treffpunkt für Hundebesitzer, ein Ort zum Spielen und Sozialisieren. Mit Hindernissen, Schatten und Sitzgelegenheiten wird daraus ein Paradies für Vierbeiner.
+Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegte Parks in verschiedenen Quartieren. Ein bisschen Auslauf ohne Leine – das macht Hunde glücklich und Hundebesitzer entspannt.,
+    Link: https://www.stadt.sg.ch/,
     LogoId: Guid_6,
     ImageId: Guid_7,
     SignatureSheetTemplateGenerated: false,
@@ -74,7 +79,7 @@ Fussgänger und Velofahrer verbessert werden.,
       Locality: St.Gallen,
       IsComplete: true
     },
-    IsElectronicSubmission: false,
+    IsElectronicSubmission: true,
     InformalReviewRequested: false,
     DomainOfInfluenceType: Mu,
     Bfs: 3203,

@@ -2,17 +2,21 @@
   Id: Guid_1,
   Decree: {
     Id: Guid_2,
-    Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+    Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
     MinSignatureCount: 3000,
     MaxElectronicSignatureCount: 300
   },
   MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
   Collection: {
     Id: Guid_1,
-    Description: Gerechtigkeit für alle,
+    Description: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
     Type: Referendum,
-    Reason: Gerechtigkeit für alle im Kanton wahren!,
-    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+    Reason:
+Der Kantonsrat hat beschlossen, digitale Wecker aus Schlafzimmern zu verbannen, um analoges Zeitempfinden und besseren Schlaf zu fördern.
+Das Referendumskomitee findet diese Einmischung in die Privatsphäre unangemessen.
+Wie jemand aufwacht, sollte seine eigene Entscheidung bleiben – ob mit Smartphone, mechanischem Wecker oder Sonnenaufgang.
+Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Technik und das Recht, selbst zu entscheiden, wie man den Tag beginnt.,
+    Link: https://www.sg.ch/,
     Image: {
       Id: Guid_3,
       Name: placeholder.png
@@ -28,8 +32,8 @@
     },
     State: InPreparation,
     Address: {
-      CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
-      StreetOrPostOfficeBox: Klosterhof 2,
+      CommitteeOrPerson: Komitee Freie Zeitwahl,
+      StreetOrPostOfficeBox: Neugasse 11,
       ZipCode: 9000,
       Locality: St.Gallen
     },
@@ -55,6 +59,5 @@
       CanEditGeneralInformation: false,
       CanReturnForCorrection: false
     }
-  },
-  Number: 
+  }
 }

@@ -24,6 +24,7 @@ public static class CollectionSignatureSheetQueries
             CollectionSignatureSheetSort.CountTotal => q.OrderBy(x => x.Count.Valid + x.Count.Invalid, direction),
             CollectionSignatureSheetSort.CountValid => q.OrderBy(x => x.Count.Valid, direction),
             CollectionSignatureSheetSort.CountInvalid => q.OrderBy(x => x.Count.Invalid, direction),
+            CollectionSignatureSheetSort.State => q.OrderBy(x => x.State, direction),
             _ => throw new ArgumentOutOfRangeException(nameof(sort), sort, null),
         };
     }

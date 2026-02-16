@@ -11,6 +11,7 @@ using Voting.ECollecting.Shared.Abstractions.Core.Services.Signature;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using IPermissionService = Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.IPermissionService;
 
@@ -55,7 +56,7 @@ public class InitiativeSignService : CollectionSignBaseService<InitiativeEntity>
         await using var transaction = await _dataContext.BeginTransaction();
 
         var initiative = await _initiativeRepository.Query()
-                             .WhereInPeriodState(CollectionPeriodState.InCollection, true, TimeProvider.GetUtcNowDateTime())
+                             .WhereInPeriodState(CollectionPeriodState.InCollection, true, TimeProvider.GetUtcTodayDateOnly())
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), id);
 
@@ -63,7 +64,7 @@ public class InitiativeSignService : CollectionSignBaseService<InitiativeEntity>
         await transaction.CommitAsync();
     }
 
-    internal override Task<bool> IsCollectionSigned(InitiativeEntity initiative, IVotingStimmregisterPersonInfo personInfo)
+    internal override Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(InitiativeEntity initiative, IVotingStimmregisterPersonInfo personInfo)
         => _signService.IsCollectionSigned(initiative, personInfo);
 
     protected override Task LockAndEnsureCanSign(InitiativeEntity collection, IVotingStimmregisterPersonInfo personInfo, byte[] mac)

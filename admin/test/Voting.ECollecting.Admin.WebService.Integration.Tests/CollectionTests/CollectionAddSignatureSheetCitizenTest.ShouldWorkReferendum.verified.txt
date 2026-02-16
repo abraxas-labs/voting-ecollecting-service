@@ -2,7 +2,7 @@
   CollectionMunicipality: {
     CollectionId: Guid_1,
     Bfs: 3203,
-    MunicipalityName: St. Gallen,
+    MunicipalityName: St.Gallen,
     PhysicalCount: {
       Invalid: 3,
       Valid: 17,
@@ -49,13 +49,13 @@
         CollectionMunicipalityId: Guid_2,
         Electronic: false,
         SignatureSheetId: Guid_3,
-        Age: 52,
-        Sex: 1,
+        Age: 42,
+        Sex: 2,
         CollectionDateTime: DateTime_1,
         Log: {
           CollectionId: Guid_1,
           CollectionCitizenId: Guid_6,
-          VotingStimmregisterIdMac: /v+sFmJk3XyjRTWO1gNP7V9yA/B9y4005cCKz5F5TtI=,
+          VotingStimmregisterIdMac: 8AmlwCbIK7cKu4sZ5zYcaqWCFOHma1PVcx9KPy/Hjxk=,
           IntegritySignatureInfo: {
             IntegritySignatureKeyId: 
           },
@@ -92,7 +92,7 @@
   },
   CollectionMunicipalityId: Guid_2,
   Number: 1,
-  ReceivedAt: DateTime_2,
+  ReceivedAt: Date_1,
   Count: {
     Invalid: 18,
     Valid: 2,
@@ -106,7 +106,7 @@
       CollectionMunicipality: {
         CollectionId: Guid_1,
         Bfs: 3203,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         PhysicalCount: {
           Invalid: 3,
           Valid: 17,
@@ -120,13 +120,13 @@
             CollectionMunicipalityId: Guid_2,
             Electronic: false,
             SignatureSheetId: Guid_3,
-            Age: 52,
-            Sex: 1,
+            Age: 42,
+            Sex: 2,
             CollectionDateTime: DateTime_1,
             Log: {
               CollectionId: Guid_1,
               CollectionCitizenId: Guid_6,
-              VotingStimmregisterIdMac: /v+sFmJk3XyjRTWO1gNP7V9yA/B9y4005cCKz5F5TtI=,
+              VotingStimmregisterIdMac: 8AmlwCbIK7cKu4sZ5zYcaqWCFOHma1PVcx9KPy/Hjxk=,
               IntegritySignatureInfo: {
                 IntegritySignatureKeyId: 
               },
@@ -197,7 +197,7 @@
       CollectionMunicipality: {
         CollectionId: Guid_1,
         Bfs: 3203,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         PhysicalCount: {
           Invalid: 3,
           Valid: 17,
@@ -254,13 +254,13 @@
       },
       Electronic: false,
       SignatureSheetId: Guid_3,
-      Age: 52,
-      Sex: 1,
+      Age: 42,
+      Sex: 2,
       CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_1,
         CollectionCitizenId: Guid_6,
-        VotingStimmregisterIdMac: /v+sFmJk3XyjRTWO1gNP7V9yA/B9y4005cCKz5F5TtI=,
+        VotingStimmregisterIdMac: 8AmlwCbIK7cKu4sZ5zYcaqWCFOHma1PVcx9KPy/Hjxk=,
         IntegritySignatureInfo: {
           IntegritySignatureKeyId: 
         },
@@ -285,6 +285,7 @@
     }
   ],
   IsSample: false,
+  ModifiedBySuperiorAuthority: false,
   AuditInfo: {
     CreatedById: default-user-id,
     CreatedByName: Test Admin,

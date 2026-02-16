@@ -6,20 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.wohnraum-schuetzen.ch/,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 6,
         LogoId: Guid_2,
-        Reason: Wir brauchen Wohnraum!,
+        Reason:
+Begegnung braucht Raum – doch offene Treffpunkte fehlen vielerorts. Die «Begegnungs-Initiative» will mehr öffentliche Räume schaffen, wo Menschen zusammenkommen können.
+Ein Begegnungsraum ist mehr als ein Saal – er ist Austausch, Kultur und Gemeinschaft. Mit niederschwelligem Zugang und flexibler Nutzung entstehen lebendige Treffpunkte.
+Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Vereine, Gruppen und Nachbarschaften. Ein bisschen Raum für Begegnung – das stärkt den gesellschaftlichen Zusammenhalt.,
         Address: {
-          ZipCode: 4058,
-          Locality: Basel,
+          ZipCode: 9015,
+          Locality: St.Gallen,
           IsComplete: true,
-          CommitteeOrPerson: Verein für Wohnschutz,
-          StreetOrPostOfficeBox: Rheinstrasse 17
+          CommitteeOrPerson: Komitee Begegnungs-Initiative,
+          StreetOrPostOfficeBox: Begegnungsweg 12
         },
         ImageId: Guid_3,
-        Wording: Wohnraum für alle,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 221 (neu) – Förderung kantonaler Begegnungsräume
+1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -27,7 +35,7 @@
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Wohnschutz-Initiative,
+        Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
         LockedFields: {
           Wording: false,
           Description: true,
@@ -40,31 +48,40 @@
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         GovernmentDecisionNumber: SG-123.412223,
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 2,
         MaxElectronicSignatureCount: 0,
+        GovernmentDecisionNumberLower: sg-123.412223,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.wohnraum-schuetzen.ch/,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 7,
         LogoId: Guid_2,
-        Reason: Wir brauchen Wohnraum!,
+        Reason:
+Begegnung braucht Raum – doch offene Treffpunkte fehlen vielerorts. Die «Begegnungs-Initiative» will mehr öffentliche Räume schaffen, wo Menschen zusammenkommen können.
+Ein Begegnungsraum ist mehr als ein Saal – er ist Austausch, Kultur und Gemeinschaft. Mit niederschwelligem Zugang und flexibler Nutzung entstehen lebendige Treffpunkte.
+Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Vereine, Gruppen und Nachbarschaften. Ein bisschen Raum für Begegnung – das stärkt den gesellschaftlichen Zusammenhalt.,
         Address: {
-          ZipCode: 4058,
-          Locality: Basel,
+          ZipCode: 9015,
+          Locality: St.Gallen,
           IsComplete: true,
-          CommitteeOrPerson: Verein für Wohnschutz,
-          StreetOrPostOfficeBox: Rheinstrasse 17
+          CommitteeOrPerson: Komitee Begegnungs-Initiative,
+          StreetOrPostOfficeBox: Begegnungsweg 12
         },
         ImageId: Guid_3,
-        Wording: Wohnraum für alle,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 221 (neu) – Förderung kantonaler Begegnungsräume
+1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -76,7 +93,7 @@
           ModifiedByEmail: voting+tester@abraxas.ch
         },
         SubTypeId: Guid_4,
-        Description: Wohnschutz-Initiative,
+        Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
         LockedFields: {
           Wording: false,
           Description: true,
@@ -89,12 +106,13 @@
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         GovernmentDecisionNumber: SG-123.412223,
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 2,
         MaxElectronicSignatureCount: 0,
+        GovernmentDecisionNumberLower: sg-123.412223,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

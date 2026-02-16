@@ -15,15 +15,20 @@
           Bfs: 3203,
           MinSignatureCount: 1000,
           Wording:
-Diese Initiative fordert eine Verkehrsberuhigung in der Stadt St.Gallen.
-Tempo 30 soll in Wohnquartieren eingeführt und die Sicherheit für
-Fussgänger und Velofahrer verbessert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen
+1 Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
+2 Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
+3 Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
           Collection: {
             Id: Guid_1,
-            Description: Stadtweite Verkehrsberuhigung,
+            Description: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
             Type: Initiative,
-            Reason: Sicherere Strassen für alle!,
-            Link: https://www.stadt.sg.ch/home/verkehrsberuhigung.html,
+            Reason:
+St.Gallen ist hundefreundlich – doch eingezäunte Flächen, wo Hunde frei toben können, gibt es kaum. Die «Hundepark-Initiative» will das ändern.
+Ein Hundepark ist mehr als eine Wiese – es ist ein Treffpunkt für Hundebesitzer, ein Ort zum Spielen und Sozialisieren. Mit Hindernissen, Schatten und Sitzgelegenheiten wird daraus ein Paradies für Vierbeiner.
+Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegte Parks in verschiedenen Quartieren. Ein bisschen Auslauf ohne Leine – das macht Hunde glücklich und Hundebesitzer entspannt.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: UnderReview,
             Address: {
@@ -32,7 +37,7 @@ Fussgänger und Velofahrer verbessert werden.,
               ZipCode: 9000,
               Locality: St.Gallen
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             UserPermissions: {
               CanEdit: true,
@@ -61,7 +66,8 @@ Fussgänger und Velofahrer verbessert werden.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_2,
@@ -70,14 +76,20 @@ Fussgänger und Velofahrer verbessert werden.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr bezahlbaren Wohnraum in der Stadt St.Gallen.
-Die Stadt soll mehr günstige Wohnungen bauen und den Mieterschutz stärken.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten
+1 Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.
+2 Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.
+3 Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.,
           Collection: {
             Id: Guid_2,
-            Description: Stadtweite Wohninitiative,
+            Description: Für urbanes Gärtnern in der Stadt (Stadtgarten-Initiative),
             Type: Initiative,
-            Reason: Wohnraum für alle!,
-            Link: https://www.stadt.sg.ch/home/wohninitiative.html,
+            Reason:
+Urbane Gärten sind im Trend – doch in St.Gallen gibt es noch wenig Raum dafür. Die «Stadtgarten-Initiative» will mehr Flächen für gemeinsames Gärtnern schaffen.
+Ein Stadtgarten ist mehr als Gemüsebeet – es ist ein Ort der Begegnung, des Lernens und der Naturverbundenheit. Mit Hochbeeten, Kräuterspiralen und Gemeinschaftsprojekten entsteht ein Stück grüne Oase.
+Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gärten in Quartieren. Ein bisschen Säen, Pflanzen und Ernten mitten in der Stadt – das ist gut für Mensch und Natur.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: NotPassed,
             Address: {
@@ -115,7 +127,8 @@ Die Stadt soll mehr günstige Wohnungen bauen und den Mieterschutz stärken.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_3,
@@ -123,15 +136,20 @@ Die Stadt soll mehr günstige Wohnungen bauen und den Mieterschutz stärken.,
           Bfs: 3203,
           MinSignatureCount: 1000,
           Wording:
-Diese Initiative fordert eine Verbesserung der Schulinfrastruktur in der
-Stadt St.Gallen. Die Schulen sollen modernisiert und die Klassengrössen
-reduziert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 105 (neu) – Förderung kostenloser Stadtführungen
+1 Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.
+2 Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.
+3 Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.,
           Collection: {
             Id: Guid_3,
-            Description: Stadtweite Schulinitiative,
+            Description: Für kostenlose Stadtführungen (Stadtführungen-Initiative),
             Type: Initiative,
-            Reason: Bessere Schulen für unsere Kinder!,
-            Link: https://www.stadt.sg.ch/home/schulinitiative.html,
+            Reason:
+St.Gallen hat eine reiche Geschichte und viele schöne Ecken – doch regelmässige, kostenlose Stadtführungen gibt es kaum. Die «Stadtführungen-Initiative» will das ändern.
+Stadtführungen sind mehr als Tourismusangebot – sie sind Bildung, Identität und Stolz auf die eigene Stadt. Mit spannenden Geschichten und versteckten Orten entsteht ein neuer Blick auf St.Gallen.
+Die Initiative fordert keine professionellen Touristenprogramme, sondern regelmässige, offene Führungen von Freiwilligen oder Stadtführern. Wer seine Stadt kennt, schätzt sie mehr – und zeigt sie gerne her.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: ReturnedForCorrection,
             Address: {
@@ -140,7 +158,7 @@ reduziert werden.,
               ZipCode: 9000,
               Locality: St.Gallen
             },
-            IsElectronicSubmission: false,
+            IsElectronicSubmission: true,
             InformalReviewRequested: false,
             UserPermissions: {
               CanEdit: true,
@@ -169,7 +187,8 @@ reduziert werden.,
             Wording: false,
             Description: true,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_4,
@@ -178,15 +197,20 @@ reduziert werden.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld umfassend zu sanieren und auszubauen.
-Ziel ist es, den steigenden Bedarf an Sport- und Bewegungsflächen für Schulen, Vereine und die Bevölkerung zu decken.
-Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestaltet werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur
+1 Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
+2 Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
+3 Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
           Collection: {
             Id: Guid_4,
-            Description: Sanierung und Ausbau der Sportanlagen Lerchenfeld,
+            Description: Für lebendige Marktplätze (Marktplatz-Initiative),
             Type: Initiative,
-            Reason: Moderne Sportanlagen für Schulen und Vereine!,
-            Link: https://www.stadt.sg.ch/home/lerchenfeld-sportanlagen.html,
+            Reason:
+St.Gallen hat schöne Plätze, doch regelmässige Märkte mit frischen, lokalen Produkten fehlen oft. Die «Marktplatz-Initiative» will mehr Leben in die Stadt bringen.
+Ein Wochenmarkt ist mehr als Gemüse und Käse – es ist ein Ort der Begegnung, des Austauschs und der regionalen Vielfalt. Mit Blumen, Backwaren und Handwerk entsteht ein Stück Marktkultur.
+Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut organisierte Märkte auf öffentlichen Plätzen. Frische Produkte, freundliche Gesichter und ein bisschen Marktflair – das tut der Stadt gut.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Submitted,
             Address: {
@@ -223,7 +247,8 @@ Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestalt
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_5,
@@ -232,14 +257,20 @@ Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestalt
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Diese Initiative fordert mehr Parkplätze in der Stadt St.Gallen.
-Die Parkplatzsituation soll verbessert und neue Parkhäuser gebaut werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten
+1 Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.
+2 Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.
+3 Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.,
           Collection: {
             Id: Guid_5,
-            Description: Stadtweite Parkplatzinitiative,
+            Description: Für mehr Picknickplätze in der Stadt (Picknick-Initiative),
             Type: Initiative,
-            Reason: Mehr Parkplätze in der Stadt!,
-            Link: https://www.stadt.sg.ch/home/parkplatzinitiative.html,
+            Reason:
+Wer im Sommer durch St.Gallen spaziert, sucht oft vergeblich nach einem schönen Ort zum Picknicken. Die «Picknick-Initiative» will das ändern.
+Ein Picknickplatz ist mehr als eine Wiese mit Tisch – es ist ein Ort für Familien, Freunde und spontane Pausen im Grünen. Mit Schatten, Sitzgelegenheiten und vielleicht einem Grillplatz wird daraus ein Stück Sommerglück.
+Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze in Parks und Grünanlagen. Ein bisschen mehr Raum zum Verweilen macht die Stadt lebenswerter – für Sandwich, Sonnenschein und gute Laune.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Withdrawn,
             Address: {
@@ -276,7 +307,8 @@ Die Parkplatzsituation soll verbessert und neue Parkhäuser gebaut werden.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_6,
@@ -285,15 +317,19 @@ Die Parkplatzsituation soll verbessert und neue Parkhäuser gebaut werden.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Das Baugesetz der Stadt St.Gallen wird wie folgt ergänzt:
-Für alle städtischen Bauprojekte ab einem Investitionsvolumen von 1 Mio. Franken sind die wichtigsten Entscheidungsgrundlagen, Kostenpläne und Vergabekriterien öffentlich zugänglich zu machen.
-Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentlicher Mittel zu erhöhen.,
+Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen
+1 Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.
+2 Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.
+3 Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.,
           Collection: {
             Id: Guid_6,
-            Description: Transparenz bei öffentlichen Bauprojekten (p: Reader),
+            Description: Für mehr Trinkbrunnen (Trinkbrunnen-Initiative) (p: Reader),
             Type: Initiative,
-            Reason: Bürgerinnen und Bürger sollen über städtische Bauprojekte besser informiert werden!,
-            Link: https://www.stadt.sg.ch/home/bauprojekte-transparenz.html,
+            Reason:
+Im Sommer suchen alle nach Trinkwasser – doch öffentliche Brunnen sind rar. Die «Trinkbrunnen-Initiative» will mehr Trinkbrunnen in der Stadt.
+Ein Trinkbrunnen ist mehr als Leitungswasser – er ist Erfrischung, Nachhaltigkeit und Service. Mit guter Erreichbarkeit und modernem Design entsteht ein Netz für durstfreie Wege.
+Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trinkstellen in Parks, Plätzen und Quartieren. Ein bisschen kühles Wasser – das ist Service, Umweltschutz und Lebensqualität.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
@@ -330,7 +366,8 @@ Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentliche
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_7,
@@ -339,14 +376,20 @@ Ziel ist es, Transparenz und Nachvollziehbarkeit bei der Verwendung öffentliche
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr Unterstützung für kulturelle Veranstaltungen
-in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 115 (neu) – Förderung kreativer Fenstergestaltung
+1 Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.
+2 Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.
+3 Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.,
           Collection: {
             Id: Guid_7,
-            Description: Stadtweite Kulturinitiative,
+            Description: Für offene Fenster zur Strasse (Offene-Fenster-Initiative),
             Type: Initiative,
-            Reason: Kultur für alle!,
-            Link: https://www.stadt.sg.ch/home/kulturinitiative.html,
+            Reason:
+Manche Strassen wirken trist – geschlossene Fenster und leere Fassaden. Die «Offene-Fenster-Initiative» will Bürger ermutigen, ihre Fenster zu schmücken und zu beleben.
+Offene, dekorierte Fenster sind mehr als Deko – sie sind Lebendigkeit, Gastfreundschaft und Identität. Mit Blumen, Kunst oder Lichtern entsteht ein farbiges Stadtbild.
+Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung für kreative Fenstergestaltung. Ein bisschen Farbe und Leben an den Fassaden – das macht Strassen schöner und einladender.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
@@ -385,12 +428,14 @@ in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1562764330,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -405,7 +450,8 @@ in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
             Year: 2020,
             Month: 1,
             Day: 21
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_9,
@@ -414,14 +460,20 @@ in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
-Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst
+1 Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
+2 Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
+3 Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
           Collection: {
             Id: Guid_9,
-            Description: Stadtweite Veloinfrastruktur,
+            Description: Für mehr Farbe in der Stadt (Street-Art-Initiative),
             Type: Initiative,
-            Reason: Mehr Platz für Velos!,
-            Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+            Reason:
+Graue Wände gibt es in St.Gallen genug – doch künstlerische Wandgestaltung ist selten. Die «Street-Art-Initiative» will mehr Farbe und Kreativität in den öffentlichen Raum bringen.
+Street-Art ist mehr als Graffiti – es ist Kunst, Ausdruck und Identität. Mit bunten Murals und kreativen Gestaltungen werden graue Ecken zu Hinguckern, die die Stadt lebendig machen.
+Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Konzept: geprüfte Flächen, lokale Künstler und Projekte, die St.Gallen bunter und einzigartiger machen.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: InPreparation,
             Address: {
@@ -458,7 +510,8 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_10,
@@ -467,15 +520,20 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr Sportanlagen in der Stadt St.Gallen.
-Die Sportinfrastruktur soll ausgebaut und der Zugang zu Sportangeboten
-verbessert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen
+1 Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
+2 Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
+3 Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
           Collection: {
             Id: Guid_10,
-            Description: Stadtweite Sportinitiative,
+            Description: Für gemütliche Leseorte in der Stadt (Bibliothek-Initiative),
             Type: Initiative,
-            Reason: Mehr Sport für alle!,
-            Link: https://www.stadt.sg.ch/home/sportinitiative.html,
+            Reason:
+St.Gallen hat eine schöne Stadtbibliothek – doch Leseorte im öffentlichen Raum fehlen. Die «Bibliothek-Initiative» will mehr gemütliche Plätze zum Schmökern schaffen.
+Ein Leseort ist mehr als ein Bücherregal – es ist ein Ort der Ruhe, Inspiration und des Lernens. Mit bequemen Sitzgelegenheiten und offenen Bücherschränken entsteht ein Stück Kultur im Alltag.
+Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende Lesezonen in Parks, an Plätzen oder in Quartiern. Wer liest, lernt – und eine Stadt, die Lesen fördert, investiert in Bildung und Wohlbefinden.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Submitted,
             Address: {
@@ -512,7 +570,8 @@ verbessert werden.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_11,
@@ -520,13 +579,21 @@ verbessert werden.,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording: Diese Initiative fordert strengere Friedhofauflagen in der Stadt St.Gallen.,
+          Wording:
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 113 (neu) – Förderung offener Gärten
+1 Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.
+2 Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.
+3 Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.,
           Collection: {
             Id: Guid_11,
-            Description: Stadtweite Friedhofsinitiative,
+            Description: Für offene Gärten (Offene-Gärten-Initiative),
             Type: Initiative,
-            Reason: Friedhof schützen für zukünftige Generationen!,
-            Link: https://www.stadt.sg.ch/home/friedhofsinitiative.html,
+            Reason:
+Private Gärten sind oft schön – aber niemand sieht sie. Die «Offene-Gärten-Initiative» will einen jährlichen Tag, an dem Gartenbesitzer ihre Gärten öffnen können.
+Offene Gärten sind mehr als Blumenbeete – sie sind Inspiration, Austausch und Gemeinschaft. Mit freiwilliger Teilnahme entsteht ein buntes Gartenfest für alle.
+Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenliebhaber, die ihre Leidenschaft teilen wollen. Ein bisschen Grün zeigen – das verbindet und inspiriert.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
@@ -565,12 +632,14 @@ verbessert werden.,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             PeriodState: Expired
           },
@@ -580,7 +649,8 @@ verbessert werden.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_13,
@@ -588,14 +658,20 @@ verbessert werden.,
           Bfs: 3203,
           MinSignatureCount: 1000,
           Wording:
-Diese Initiative fordert eine nachhaltige Energiepolitik für die Stadt St.Gallen.
-Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 114 (neu) – Förderung temporärer Spielstrassen
+1 Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.
+2 Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.
+3 Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.,
           Collection: {
             Id: Guid_13,
-            Description: Stadtweite Energieinitiative,
+            Description: Für mehr Spielstrassen (Spielstrassen-Initiative),
             Type: Initiative,
-            Reason: Nachhaltige Energie für St.Gallen!,
-            Link: https://www.stadt.sg.ch/home/energieinitiative.html,
+            Reason:
+Kinder brauchen Platz zum Spielen – doch Strassen sind oft zu gefährlich. Die «Spielstrassen-Initiative» will mehr temporäre Spielstrassen in Wohnquartieren.
+Spielstrassen sind mehr als gesperrte Strassen – sie sind Freiheit, Bewegung und Nachbarschaft. An Nachmittagen oder Wochenenden entsteht ein sicherer Raum für Kinder.
+Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte Spielstrassen mit einfachen Regeln. Ein bisschen strassenfrei spielen – das gibt Kindern Raum und belebt Quartiere.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EndedCameAbout,
             AttestedCollectionCount: {
@@ -634,12 +710,14 @@ Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 1,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Expired
           },
@@ -654,7 +732,8 @@ Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden
             Year: 2020,
             Month: 1,
             Day: 7
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_15,
@@ -663,14 +742,20 @@ Erneuerbare Energien sollen gefördert und der Energieverbrauch reduziert werden
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
-Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur
+1 Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
+2 Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
+3 Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
           Collection: {
             Id: Guid_15,
-            Description: Stadtweite Veloinfrastruktur,
+            Description: Für gemütliche Treffpunkte in der Stadt (Café-Initiative),
             Type: Initiative,
-            Reason: Mehr Platz für Velos!,
-            Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+            Reason:
+St.Gallen hat eine lebendige Altstadt, doch es fehlt an gemütlichen Plätzen, wo man bei Kaffee und Kuchen verweilen kann. Die «Café-Initiative» will das ändern.
+Ein Café ist mehr als nur eine Tasse Kaffee – es ist ein Treffpunkt, ein Ort für Gespräche, Arbeit oder einfach Entspannung. Mit gemütlichem Ambiente und lokalen Spezialitäten wird daraus ein Stück Lebensqualität.
+Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer gut sitzt und guten Kaffee trinkt, fühlt sich zu Hause – und kommt gerne wieder.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreRecorded,
             Address: {
@@ -707,7 +792,8 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_16,
@@ -716,15 +802,20 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld zu modernisieren und um zusätzliche Trainings- und Spielflächen zu erweitern.
-Ziel ist es, den wachsenden Anforderungen von Schulen, Sportvereinen und Freizeitsportlern gerecht zu werden.
-Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 103 (neu) – Förderung von Musik im öffentlichen Raum
+1 Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
+2 Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
+3 Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
           Collection: {
             Id: Guid_16,
-            Description: Modernisierung und Erweiterung der Sportanlagen Lerchenfeld,
+            Description: Für mehr Musik im öffentlichen Raum (Musikbrunnen-Initiative),
             Type: Initiative,
-            Reason: Bedarfsgerechte Sportinfrastruktur für Schulen, Vereine und die Bevölkerung,
-            Link: https://www.stadt.sg.ch/leben-in-stgallen/sport/sportanlagen/lerchenfeld.html,
+            Reason:
+In vielen Städten gibt es Brunnen mit Musik oder Orte für Strassenmusik – in St.Gallen könnte es davon mehr geben. Die «Musikbrunnen-Initiative» will die Stadt klingender machen.
+Musik im öffentlichen Raum ist mehr als Unterhaltung – sie schafft Atmosphäre, bringt Menschen zusammen und macht Orte lebendig. Mit kleinen Bühnen oder Musikinstallationen entsteht Kultur für alle.
+Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spontan entstehen kann. Ein bisschen Melodie zwischen Einkauf und Spaziergang – das macht das Stadtleben bunter.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Submitted,
             Address: {
@@ -762,7 +853,8 @@ Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet 
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_17,
@@ -771,15 +863,20 @@ Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet 
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert eine umfassende Bildungsreform auf Stadtebene.
-Ziel ist es, die Bildungschancen zu verbessern und die Digitalisierung
-in Schulen voranzutreiben.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport
+1 Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.
+2 Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.
+3 Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.,
           Collection: {
             Id: Guid_17,
-            Description: Stadtweite Bildungsinitiative,
+            Description: Für mehr Skateboard-Anlagen (Skateboard-Initiative),
             Type: Initiative,
-            Reason: Bildung für die Zukunft!,
-            Link: https://www.stadt.sg.ch/home/bildungsinitiative.html,
+            Reason:
+Skateboarding ist Sport, Kultur und Lifestyle – doch moderne Skate-Anlagen fehlen in St.Gallen. Die «Skateboard-Initiative» will Jugendlichen mehr Raum für ihren Sport geben.
+Ein Skatepark ist mehr als Rampen und Rails – es ist ein Treffpunkt, ein Ort für Bewegung und Kreativität. Mit verschiedenen Elementen und sicherer Gestaltung entsteht ein Hotspot für die Szene.
+Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von Anfängern und Profis genutzt werden können. Ein bisschen mehr Rollsport in der Stadt – das ist gut für Fitness, Zusammenhalt und urbane Kultur.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: ReadyForRegistration,
             Address: {
@@ -817,7 +914,8 @@ in Schulen voranzutreiben.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_18,
@@ -826,14 +924,20 @@ in Schulen voranzutreiben.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert eine Reform des Gesundheitssystems auf Stadtebene.
-Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen
+1 Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
+2 Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
+3 Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
           Collection: {
             Id: Guid_18,
-            Description: Stadtweite Gesundheitsinitiative,
+            Description: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
             Type: Initiative,
-            Reason: Gesundheit für alle!,
-            Link: https://www.stadt.sg.ch/home/gesundheitsinitiative.html,
+            Reason:
+In vielen Quartieren kennen sich die Menschen kaum noch – Nachbarschaftsfeste könnten das ändern. Die «Nachbarschaftsfeste-Initiative» will mehr Gemeinschaft im Quartier.
+Ein Nachbarschaftsfest ist mehr als Grillieren und Musik – es ist ein Ort für Kennenlernen, Austausch und Zusammenhalt. Mit einfachen Mitteln entsteht ein Stück Heimat vor der Haustür.
+Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassenfeste, die von Anwohnern selbst organisiert werden. Ein bisschen Feiern, Plaudern und Nachbarschaft leben – das stärkt den Zusammenhalt in der Stadt.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: true,
             State: Registered,
             Address: {
@@ -871,7 +975,8 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_19,
@@ -880,14 +985,20 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
-Parks und Gärten sollen erhalten und neue geschaffen werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
+1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
           Collection: {
             Id: Guid_19,
-            Description: Stadtweite Grünflächen,
+            Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
             Type: Initiative,
-            Reason: Mehr Grün in der Stadt!,
-            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            Reason:
+St. Gallen ist die Rosenstadt – und was wäre eine Rosenstadt ohne Blütenpracht? Diese Initiative will sicherstellen, dass die Stadt auch künftig farbig, lebendig und bienenfreundlich bleibt.
+Ob Blumenkisten an Geländern, Wildblumenstreifen am Strassenrand oder Schulprojekte mit Insektenhotels – kleine grüne Gesten schaffen grosses Wohlbefinden. Die Initiative verlangt keine teuren Anlagen, sondern ein bewusstes Augenmerk auf Natur im Alltag.
+Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht nur schön fürs Auge – es ist gut fürs Klima, für die Bienen und für die Seele.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
@@ -924,12 +1035,14 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -939,7 +1052,8 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_21,
@@ -948,14 +1062,20 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
-Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten
+1 Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
+2 Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
+3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
           Collection: {
             Id: Guid_21,
-            Description: Stadtweite Recyclinginitiative,
+            Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),
             Type: Initiative,
-            Reason: Mehr Recycling für eine nachhaltige Stadt!,
-            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            Reason:
+Wer durch St. Gallen spaziert, weiss: Aussicht gibt es genug, aber oft keinen Platz zum Hinsetzen. Die «Bänkli-Initiative» will das ändern.
+Ein gut platziertes Bänkli ist mehr als eine Sitzgelegenheit – es ist ein Treffpunkt, ein Ort für Gespräche, Nachdenken oder einfach Durchatmen. Mit Blick auf See, Schloss oder Sonnenuntergang wird daraus ein Stück Alltagskultur.
+Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer gut sitzt, denkt konstruktiver – und bleibt vielleicht ein bisschen länger.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
@@ -993,12 +1113,14 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -1008,7 +1130,8 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_23,
@@ -1017,14 +1140,20 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert strengere Umweltauflagen in der Stadt St.Gallen.
-Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 112 (neu) – Förderung öffentlicher Lesecken
+1 Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.
+2 Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.
+3 Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.,
           Collection: {
             Id: Guid_23,
-            Description: Stadtweite Umweltinitiative,
+            Description: Für mehr Lesecken (Lesecken-Initiative),
             Type: Initiative,
-            Reason: Umwelt schützen für zukünftige Generationen!,
-            Link: https://www.stadt.sg.ch/home/umweltinitiative.html,
+            Reason:
+Lesen im Öffentlichen Raum ist rar – kleine Lesecken mit Bücherschränken und Sitzplätzen fehlen. Die «Lesecken-Initiative» will mehr Orte zum Lesen und Tauschen schaffen.
+Eine Lesecke ist mehr als ein Bücherschrank – sie ist Bildung, Begegnung und Kultur. Mit gemütlichen Sitzplätzen und Wetterschutz entsteht ein Ort zum Verweilen und Schmökern.
+Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Leseoasen in Quartieren, Parks und auf Plätzen. Ein bisschen Literatur im Alltag – das bereichert und verbindet.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: EnabledForCollection,
             AttestedCollectionCount: {
@@ -1063,12 +1192,14 @@ Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             PeriodState: Expired
           },
@@ -1078,7 +1209,8 @@ Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         },
         {
           Id: Guid_25,
@@ -1087,14 +1219,20 @@ Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Gestützt auf Art. 10 der Gemeindeordnung stellen die unterzeichnenden
-Stimmberechtigten der Stadt St.Gallen folgendes Initiativbegehren (Zonenplaninitiative):,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen
+1 Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.
+2 Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.
+3 Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.,
           Collection: {
             Id: Guid_25,
-            Description: Für lebendige Quartiere – Wiesli retten (Wiesli-Initiative),
+            Description: Für mehr Waldspielplätze (Stadtwälder-Initiative),
             Type: Initiative,
-            Reason: Wiesli retten!,
-            Link: https://www.stadt.sg.ch/home/verwaltung-politik/demokratie-politik/stadtparlament/wiesli-initiative.html,
+            Reason:
+St.Gallen liegt am Waldrand – doch Waldspielplätze, wo Kinder im Grünen toben können, gibt es kaum. Die «Stadtwälder-Initiative» will das ändern.
+Ein Waldspielplatz ist mehr als Schaukel und Rutsche – es ist Naturerlebnis, Abenteuer und Lernort. Mit Balancierstationen, Klettergerüsten und natürlichen Materialien entsteht ein Stück Wildnis im Alltag.
+Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielplätze am Waldrand oder in Parks. Ein bisschen Wald, Bewegung und frische Luft – das tut Kindern gut und stärkt die Verbindung zur Natur.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             State: PreparingForCollection,
             Address: {
@@ -1126,12 +1264,14 @@ Stimmberechtigten der Stadt St.Gallen folgendes Initiativbegehren (Zonenplaninit
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -1141,7 +1281,8 @@ Stimmberechtigten der Stadt St.Gallen folgendes Initiativbegehren (Zonenplaninit
             Wording: false,
             Description: false,
             CommitteeMembers: false
-          }
+          },
+          DomainOfInfluenceName: 
         }
       ]
     }

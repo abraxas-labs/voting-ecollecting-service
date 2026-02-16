@@ -1,10 +1,10 @@
 ﻿{
   userNotifications: [
     {
-      RecipientEMail: citizen-creator@example.com,
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Motorfahrzeugsteuer-Initiative,
-        RecipientIsCitizen: true,
+        CollectionName: Für kantonale Leseecken (Leseecken-Initiative),
+        RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -12,26 +12,15 @@
       Id: Guid_2
     },
     {
-      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
-      TemplateBag: {
-        CollectionName: Motorfahrzeugsteuer-Initiative,
-        RecipientIsCitizen: false,
-        NotificationType: StateChanged,
-        CollectionId: Guid_1,
-        CollectionType: Initiative
-      },
-      Id: Guid_3
-    },
-    {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Motorfahrzeugsteuer-Initiative,
+        CollectionName: Für kantonale Leseecken (Leseecken-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_4
+      Id: Guid_3
     }
   ],
   collectionMessage: {
@@ -43,6 +32,6 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_4
   }
 }

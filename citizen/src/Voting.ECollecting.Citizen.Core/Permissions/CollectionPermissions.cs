@@ -238,6 +238,16 @@ internal static class CollectionPermissions
         => CanEdit(collection)
            && collection is InitiativeEntity { AdmissibilityDecisionState: null or AdmissibilityDecisionState.Unspecified };
 
+    public static IQueryable<T> WhereCanEditCommitteeMemberPoliticalDuty<T>(
+        this IQueryable<T> queryable,
+        IPermissionService permissionService)
+        where T : CollectionBaseEntity
+    {
+        return queryable
+            .WhereCanWrite(permissionService)
+            .WhereIsNotEndedAndNotAborted();
+    }
+
     public static CollectionUserPermissions? Build<T>(
         IPermissionService permissionService,
         T collection,
@@ -277,7 +287,8 @@ internal static class CollectionPermissions
             CanRequestInformalReview(collection),
             IsRequestInformalReviewVisible(collection),
             CanGetElectronicSignaturesProtocol(collection),
-            CanEditSubType(collection));
+            CanEditSubType(collection),
+            true);
     }
 
     private static CollectionPermissionRole GetRole(IPermissionService permissionService, CollectionBaseEntity collection)

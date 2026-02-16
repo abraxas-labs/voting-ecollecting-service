@@ -9,7 +9,6 @@
         Link: ,
         Type: 2,
         State: 1,
-        Number: Scrubbed,
         Reason: ,
         Address: {
           ZipCode: 9000,
@@ -27,10 +26,11 @@
           CreatedByEmail: default-user@example.com
         },
         Description: Sammlung gegen das Abwassergesetz,
+        SecureIdNumber: Scrubbed,
         EncryptionKeyId: Scrubbed,
         MembersCommittee: ,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-13,
+        CollectionStartDate: 2019-12-13,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -57,7 +57,7 @@
       RecordAfter: {
         Id: Guid_4,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_4,
+          CreatedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -89,7 +89,6 @@
         Link: ,
         Type: 2,
         State: 1,
-        Number: Scrubbed,
         Reason: ,
         Address: {
           ZipCode: 9000,
@@ -107,10 +106,11 @@
           CreatedByEmail: default-user@example.com
         },
         Description: Sammlung gegen das Abwassergesetz,
+        SecureIdNumber: Scrubbed,
         EncryptionKeyId: Scrubbed,
         MembersCommittee: ,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-13,
+        CollectionStartDate: 2019-12-13,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -128,7 +128,6 @@
         Link: ,
         Type: 2,
         State: 1,
-        Number: Scrubbed,
         Reason: ,
         Address: {
           ZipCode: 9000,
@@ -146,10 +145,11 @@
           CreatedByEmail: default-user@example.com
         },
         Description: Sammlung gegen das Abwassergesetz,
+        SecureIdNumber: Scrubbed,
         EncryptionKeyId: Scrubbed,
         MembersCommittee: ,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-13,
+        CollectionStartDate: 2019-12-13,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -178,7 +178,7 @@
         Bfs: 3203,
         IsLocked: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
+          CreatedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -211,7 +211,7 @@
         Bfs: 3211,
         IsLocked: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_6,
+          CreatedAt: DateTimeOffset_4,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -244,7 +244,7 @@
         Bfs: 3213,
         IsLocked: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_7,
+          CreatedAt: DateTimeOffset_5,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -268,6 +268,39 @@
         CreatedAt: DateTime_6
       },
       Id: Guid_12
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Added,
+      RecordAfter: {
+        Id: Guid_13,
+        Bfs: 3340,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_6,
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 0,
+          Valid: 0,
+          CanAdd: false,
+          Invalid: 0
+        },
+        NextSheetNumber: 1,
+        MunicipalityName: Rapperswil-Jona,
+        ElectronicCitizenCount: 0
+      },
+      SourceEntityId: Guid_13,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_7
+      },
+      Id: Guid_14
     }
   ]
 }

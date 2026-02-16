@@ -5,15 +5,20 @@
   MinSignatureCount: 1000,
   MaxElectronicSignatureCount: 500,
   Wording:
-Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld zu modernisieren und um zusätzliche Trainings- und Spielflächen zu erweitern.
-Ziel ist es, den wachsenden Anforderungen von Schulen, Sportvereinen und Freizeitsportlern gerecht zu werden.
-Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 103 (neu) – Förderung von Musik im öffentlichen Raum
+1 Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
+2 Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
+3 Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
   Collection: {
     Id: Guid_1,
-    Description: Modernisierung und Erweiterung der Sportanlagen Lerchenfeld,
+    Description: Für mehr Musik im öffentlichen Raum (Musikbrunnen-Initiative),
     Type: Initiative,
-    Reason: Bedarfsgerechte Sportinfrastruktur für Schulen, Vereine und die Bevölkerung,
-    Link: https://www.stadt.sg.ch/leben-in-stgallen/sport/sportanlagen/lerchenfeld.html,
+    Reason:
+In vielen Städten gibt es Brunnen mit Musik oder Orte für Strassenmusik – in St.Gallen könnte es davon mehr geben. Die «Musikbrunnen-Initiative» will die Stadt klingender machen.
+Musik im öffentlichen Raum ist mehr als Unterhaltung – sie schafft Atmosphäre, bringt Menschen zusammen und macht Orte lebendig. Mit kleinen Bühnen oder Musikinstallationen entsteht Kultur für alle.
+Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spontan entstehen kann. Ein bisschen Melodie zwischen Einkauf und Spaziergang – das macht das Stadtleben bunter.,
+    Link: https://www.stadt.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -59,5 +64,6 @@ Die Anlagen sollen barrierefrei, energieeffizient und multifunktional gestaltet 
     Wording: false,
     Description: false,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St.Gallen
 }

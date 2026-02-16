@@ -27,7 +27,7 @@ internal static class DecreePermissions
     public static IQueryable<DecreeEntity> WhereCanReadOnReferendums(this IQueryable<DecreeEntity> query, IPermissionService permissionService)
     {
         return query
-            .WhereCanAccessOwnBfsOrChildrenOrParents(permissionService);
+            .WhereCanAccessOwnBfsOrChildrenOrParentsInPeriodStateInCollectionOrExpired(permissionService);
     }
 
     public static IQueryable<DecreeEntity> WhereCanEdit(this IQueryable<DecreeEntity> query, IPermissionService permissionService)
@@ -35,7 +35,7 @@ internal static class DecreePermissions
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
-            .WhereInPeriodState(CollectionPeriodState.Published, permissionService.Now);
+            .WhereInPeriodState(CollectionPeriodState.Published, permissionService.Today);
     }
 
     private static bool CanEdit(IPermissionService permissionService, DecreeEntity decree)
@@ -52,8 +52,9 @@ internal static class DecreePermissions
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
-            .WhereInCollectionOrExpired(permissionService.Now)
-            .WhereInState(DecreeState.CollectionApplicable);
+            .WhereInCollectionOrExpired(permissionService.Today)
+            .WhereInState(DecreeState.CollectionApplicable)
+            .Where(x => x.Collections.Count > 0);
     }
 
     private static bool CanFinish(IPermissionService permissionService, DecreeEntity decree)
@@ -61,7 +62,8 @@ internal static class DecreePermissions
         return AclPermissions.HasRole(permissionService, Roles.Stammdatenverwalter)
                && AclPermissions.CanAccessOwnBfs(permissionService, decree)
                && decree.PeriodState is CollectionPeriodState.InCollection or CollectionPeriodState.Expired
-               && decree.State is DecreeState.CollectionApplicable;
+               && decree.State is DecreeState.CollectionApplicable
+               && decree.Collections.Count > 0;
     }
 
     public static IQueryable<DecreeEntity> WhereCanGenerateDocuments(
@@ -71,8 +73,9 @@ internal static class DecreePermissions
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
-            .WhereInCollectionOrExpired(permissionService.Now)
-            .Where(x => x.State == DecreeState.CollectionApplicable);
+            .WhereInCollectionOrExpired(permissionService.Today)
+            .Where(x => x.State == DecreeState.CollectionApplicable)
+            .Where(x => x.Collections.Count > 0);
     }
 
     private static bool CanGenerateDocuments(IPermissionService permissionService, DecreeEntity decree)
@@ -80,7 +83,8 @@ internal static class DecreePermissions
         return AclPermissions.HasRole(permissionService, Roles.Stammdatenverwalter)
                && AclPermissions.CanAccessOwnBfs(permissionService, decree)
                && decree.PeriodState is CollectionPeriodState.InCollection or CollectionPeriodState.Expired
-               && decree.State is DecreeState.CollectionApplicable;
+               && decree.State is DecreeState.CollectionApplicable
+               && decree.Collections.Count > 0;
     }
 
     public static IQueryable<DecreeEntity> WhereCanAddCollection(
@@ -90,7 +94,7 @@ internal static class DecreePermissions
         return query
             .WhereHasAnyRole(permissionService, [Roles.Stammdatenverwalter, Roles.Kontrollzeichenerfasser])
             .WhereCanAccessOwnBfsOrChildrenOrParents(permissionService)
-            .WhereInPeriodState(CollectionPeriodState.InCollection, permissionService.Now);
+            .WhereInPeriodState(CollectionPeriodState.InCollection, permissionService.Today);
     }
 
     private static bool CanAddCollection(IPermissionService permissionService, DecreeEntity decree)
@@ -113,7 +117,7 @@ internal static class DecreePermissions
         return query
             .WhereHasRole(permissionService, Roles.Kontrollzeichenloescher)
             .WhereCanAccessOwnBfs(permissionService)
-            .Where(x => x.SensitiveDataExpiryDate.HasValue && x.SensitiveDataExpiryDate <= DateOnly.FromDateTime(permissionService.Now))
+            .Where(x => x.SensitiveDataExpiryDate.HasValue && x.SensitiveDataExpiryDate <= permissionService.Today)
             .Where(x => x.State == DecreeState.EndedCameAbout || x.State == DecreeState.EndedCameNotAbout);
     }
 
@@ -122,7 +126,7 @@ internal static class DecreePermissions
         return AclPermissions.HasRole(permissionService, Roles.Kontrollzeichenloescher)
                && AclPermissions.CanAccessOwnBfs(permissionService, decree)
                && decree.SensitiveDataExpiryDate.HasValue
-               && decree.SensitiveDataExpiryDate <= DateOnly.FromDateTime(permissionService.Now)
+               && decree.SensitiveDataExpiryDate <= permissionService.Today
                && decree.State is DecreeState.EndedCameAbout or DecreeState.EndedCameNotAbout;
     }
 

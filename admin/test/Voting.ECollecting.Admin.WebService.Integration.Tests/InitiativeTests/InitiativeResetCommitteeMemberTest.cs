@@ -26,6 +26,10 @@ public class InitiativeResetCommitteeMemberTest : BaseGrpcTest<InitiativeService
         InitiativesMuStGallen.GuidInPreparation,
         "patrick.huber@example.com");
 
+    private readonly Guid _idRejectedCommitteeMemberCt = InitiativeCommitteeMembers.BuildGuid(
+        InitiativesCtStGallen.GuidLegislativeInPreparation,
+        "sara.schneider@example.com");
+
     public InitiativeResetCommitteeMemberTest(TestApplicationFactory factory)
         : base(factory)
     {
@@ -43,6 +47,15 @@ public class InitiativeResetCommitteeMemberTest : BaseGrpcTest<InitiativeService
         await CtSgStammdatenverwalterClient.ResetCommitteeMemberAsync(NewValidRequest());
         var member = await RunOnDb(db => db.InitiativeCommitteeMembers
             .FirstAsync(x => x.Id == _idCommitteeMemberCt));
+        await Verify(member);
+    }
+
+    [Fact]
+    public async Task ShouldResetRejectedCommitteeMember()
+    {
+        await CtSgStammdatenverwalterClient.ResetCommitteeMemberAsync(NewValidRequest(x => x.Id = _idRejectedCommitteeMemberCt.ToString()));
+        var member = await RunOnDb(db => db.InitiativeCommitteeMembers
+            .FirstAsync(x => x.Id == _idRejectedCommitteeMemberCt));
         await Verify(member);
     }
 

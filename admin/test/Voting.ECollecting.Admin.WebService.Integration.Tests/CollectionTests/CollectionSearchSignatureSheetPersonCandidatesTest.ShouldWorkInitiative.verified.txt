@@ -25,9 +25,9 @@
       },
       ExistingSignature: {
         Bfs: 3203,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         Electronic: false,
-        CollectionDescription: Für den öffentlichen Verkehr,
+        CollectionDescription: Für mehr Gelassenheit im öffentlichen Leben (Entschleunigungs-Initiative),
         SignatureSheetNumber: 1,
         HasSignatureSheetNumber: true,
         CollectionDateTime: {

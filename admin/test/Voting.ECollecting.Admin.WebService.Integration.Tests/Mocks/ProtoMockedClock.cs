@@ -12,6 +12,11 @@ internal static class ProtoMockedClock
         return new Date { Year = date.Year, Month = date.Month, Day = date.Day, };
     }
 
+    public static Date ToProtoDate(this DateOnly date)
+    {
+        return new Date { Year = date.Year, Month = date.Month, Day = date.Day, };
+    }
+
     public static DateOnly ToDate(this Date date)
         => new DateOnly(date.Year, date.Month, date.Day);
 }

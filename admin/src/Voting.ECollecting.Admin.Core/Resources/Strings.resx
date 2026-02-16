@@ -20,7 +20,7 @@
   </resheader>
 
   <data name="UserNotification.LogoDeleted" xml:space="preserve">
-    <value>Das Bild wurde von der Oberbehörde gelöscht</value>
+    <value>Das Logo wurde von der Oberbehörde gelöscht</value>
   </data>
   <data name="UserNotification.ImageDeleted" xml:space="preserve">
     <value>Das Bild wurde von der Oberbehörde gelöscht</value>
@@ -33,5 +33,11 @@
   </data>
   <data name="SecondFactorTransaction.DeleteDecree" xml:space="preserve">
     <value>Kontrollzeichen löschen</value>
+  </data>
+  <data name="DomainOfInfluenceName.Ch" xml:space="preserve">
+    <value>Schweiz</value>
+  </data>
+  <data name="DomainOfInfluenceName.Ct" xml:space="preserve">
+    <value>St. Gallen</value>
   </data>
 </root>

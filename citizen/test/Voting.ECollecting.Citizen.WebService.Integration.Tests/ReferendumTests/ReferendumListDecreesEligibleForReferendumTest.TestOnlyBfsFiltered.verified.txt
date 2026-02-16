@@ -13,18 +13,20 @@
           Id: Guid_1,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
-          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Verkehrsinfrastruktur,
+          Description: Gemeinderatsbeschluss über die Anbringung von QR-Codes auf allen öffentlichen Kunstwerken und Graffiti-Wänden für digitale Künstlerprofile und Audioguides,
           CollectionStartDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           MinSignatureCount: 300,
           MaxElectronicSignatureCount: 30,
-          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          Link: https://www.stadt.sg.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -36,35 +38,41 @@
           Id: Guid_2,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
-          Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+          Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
           CollectionStartDate: {
-            Seconds: 1575983530,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 300,
           MaxElectronicSignatureCount: 30,
-          Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          Link: https://www.stadt.sg.ch/,
           PeriodState: InCollection,
           Collections: [
             {
               Id: Guid_3,
               Decree: {
                 Id: Guid_2,
-                Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+                Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_3,
-                Description: Referendum gegen die Änderung des Steuergesetzes,
+                Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
                 Type: Referendum,
-                Reason: Steuergerechtigkeit in der Stadt wahren!,
-                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                Reason:
+Der Stadtrat hat beschlossen, in allen Bibliotheken gemütliche Café-Ecken mit Kaninchen, Meerschweinchen und Katzen einzurichten, um gestressten Leserinnen und Lesern Entspannung zu bieten.
+Das Referendumskomitee findet Tierliebe zwar wichtig, befürchtet aber Allergien, Hygiene-Probleme und Ablenkung vom eigentlichen Zweck einer Bibliothek.
+Bücher und Tiere vertragen sich nicht immer gut – manche Katze bevorzugt das Schlafen auf dem Lexikon.
+Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Schutz von Allergikerinnen und Allergikern – Tiere gehören in den Zoo, nicht ins Regal.,
+                Link: https://www.stadt.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
@@ -73,8 +81,8 @@
                   HasTotalCitizenCount: false
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
-                  StreetOrPostOfficeBox: Rathausplatz 1,
+                  CommitteeOrPerson: Komitee Stille Bibliotheken,
+                  StreetOrPostOfficeBox: Vadianstrasse 15,
                   ZipCode: 9000,
                   Locality: St.Gallen
                 },
@@ -95,23 +103,25 @@
                   CanRequestInformalReview: false,
                   IsRequestInformalReviewVisible: false,
                   CanDownloadElectronicSignaturesProtocol: false,
-                  CanEditSubType: false
+                  CanEditSubType: false,
+                  CanDownloadCommitteeList: true
                 },
-                IsElectronicSubmission: false,
+                IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1575983530,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1594386730,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
@@ -119,17 +129,21 @@
               Id: Guid_5,
               Decree: {
                 Id: Guid_2,
-                Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+                Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_5,
-                Description: Referendum gegen die Änderung des Finanzgesetzes,
+                Description: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
                 Type: Referendum,
-                Reason: Finanzen in der Stadt entlasten!,
-                Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/finanzen.html,
+                Reason:
+Ein weiteres Komitee hat sich formiert, weil auch es die Tierpläne in den Bibliotheken für problematisch hält – allerdings aus anderen Gründen.
+Eine Bibliothek ist laut, hektisch und kein artgerechter Lebensraum.
+Ausserdem entstehen zusätzliche Kosten für Futter, Pflege, Tierarzt und Versicherung – Geld, das besser in neue Bücher investiert wäre.
+Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit und die Vorstellung, dass Bibliotheken Orte des Wissens bleiben sollten – nicht Streichelzoos.,
+                Link: https://www.stadt.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
@@ -138,8 +152,8 @@
                   HasTotalCitizenCount: false
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
-                  StreetOrPostOfficeBox: Rathausplatz 1,
+                  CommitteeOrPerson: Verein Tierwohl und Buchkultur,
+                  StreetOrPostOfficeBox: Museumstrasse 8,
                   ZipCode: 9000,
                   Locality: St.Gallen
                 },
@@ -160,23 +174,25 @@
                   CanRequestInformalReview: false,
                   IsRequestInformalReviewVisible: false,
                   CanDownloadElectronicSignaturesProtocol: false,
-                  CanEditSubType: false
+                  CanEditSubType: false,
+                  CanDownloadCommitteeList: true
                 },
-                IsElectronicSubmission: false,
+                IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1575983530,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1594386730,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             }

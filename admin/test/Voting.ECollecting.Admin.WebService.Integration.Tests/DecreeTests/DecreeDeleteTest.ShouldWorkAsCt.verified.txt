@@ -1,14 +1,14 @@
 ﻿[
   {
     RecipientEmail: kanton+staatskanzlei@abraxas.ch,
-    Subject: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung gelöscht,
+    Subject: Kantonsratsbeschluss über die Beleuchtung von Hausnummern gelöscht,
     HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kantonsratsbeschluss &#252;ber die &#196;nderung des Kantonsgesetzes &#252;ber die Bildung gel&#246;scht</title>
+  <title>Kantonsratsbeschluss &#252;ber die Beleuchtung von Hausnummern gel&#246;scht</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,10 +24,15 @@
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
-  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde der Erlass <strong>Kantonsratsbeschluss &#252;ber die &#196;nderung des Kantonsgesetzes &#252;ber die Bildung</strong> gelöscht.</p></div>
+  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde der Erlass <strong>Kantonsratsbeschluss &#252;ber die Beleuchtung von Hausnummern</strong> gelöscht.</p></div>
 </body>
 </html>,
     Attachments: [

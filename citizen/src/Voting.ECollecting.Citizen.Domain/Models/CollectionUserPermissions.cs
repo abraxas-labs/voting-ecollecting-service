@@ -22,10 +22,12 @@ public record CollectionUserPermissions(
     bool CanRequestInformalReview,
     bool IsRequestInformalReviewVisible,
     bool CanDownloadElectronicSignaturesProtocol,
-    bool CanEditSubType)
+    bool CanEditSubType,
+    bool CanDownloadCommitteeList)
 {
     public static readonly CollectionUserPermissions ReadOnly = new(
         CollectionPermissionRole.Reader,
+        false,
         false,
         false,
         false,

@@ -19,4 +19,6 @@ public class Initiative : InitiativeEntity, ICollection
 
     // use another name to ensure this never gets mapped automatically by accident.
     public NullableCollectionCount? AttestedCollectionCount { get; set; }
+
+    public string DomainOfInfluenceName { get; set; } = string.Empty;
 }

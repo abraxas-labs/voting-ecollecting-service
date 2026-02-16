@@ -21,7 +21,7 @@
           Invalid: 3
         },
         NextSheetNumber: 1,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       RecordAfter: {
@@ -46,7 +46,7 @@
           Invalid: 3
         },
         NextSheetNumber: 1,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       SourceEntityId: Guid_1,

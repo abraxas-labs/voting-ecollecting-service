@@ -94,7 +94,7 @@ public class CollectionSignatureSheetGrpcService : CollectionSignatureSheetServi
         var id = await _collectionSignatureSheetService.Add(
             GuidParser.Parse(request.CollectionId),
             request.Number,
-            request.ReceivedAt.ToDateTime(),
+            Mapper.MapToDateOnly(request.ReceivedAt),
             request.SignatureCountTotal);
         return Mapper.MapToIdValue(id);
     }
@@ -107,7 +107,7 @@ public class CollectionSignatureSheetGrpcService : CollectionSignatureSheetServi
         await _collectionSignatureSheetService.Update(
             GuidParser.Parse(request.CollectionId),
             GuidParser.Parse(request.SignatureSheetId),
-            request.ReceivedAt.ToDateTime(),
+            Mapper.MapToDateOnly(request.ReceivedAt),
             request.SignatureCountTotal);
         return ProtobufEmpty.Instance;
     }

@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -13,7 +13,7 @@
     {
       RecipientEMail: kanton+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -23,7 +23,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -37,7 +37,7 @@
     AuditInfo: {
       CreatedById: user-id-deputy,
       CreatedByName: Test user,
-      CreatedByEmail: voting+tester@abraxas.ch,
+      CreatedByEmail: rudolph.meier@example.com,
       CreatedAt: DateTime_1
     },
     Id: Guid_5

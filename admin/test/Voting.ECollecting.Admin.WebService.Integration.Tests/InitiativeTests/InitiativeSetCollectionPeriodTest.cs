@@ -2,11 +2,11 @@
 // For license information see LICENSE file
 
 using FluentAssertions;
-using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
+using Voting.ECollecting.Admin.WebService.Integration.Tests.Mocks;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
@@ -42,12 +42,12 @@ public class InitiativeSetCollectionPeriodTest : BaseGrpcTest<InitiativeService.
             .Include(x => x.Municipalities!.OrderBy(y => y.Bfs))
             .FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPaperSubmission));
         initiative.State.Should().Be(CollectionState.PreRecorded);
-        initiative.CollectionStartDate.Should().Be(req.CollectionStartDate.ToDateTime());
-        initiative.CollectionEndDate.Should().Be(req.CollectionEndDate.ToDateTime());
+        initiative.CollectionStartDate.Should().Be(req.CollectionStartDate.ToDate());
+        initiative.CollectionEndDate.Should().Be(req.CollectionEndDate.ToDate());
         initiative.MacKeyId.Should().NotBeNullOrEmpty();
         initiative.EncryptionKeyId.Should().NotBeNullOrEmpty();
 
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -71,12 +71,12 @@ public class InitiativeSetCollectionPeriodTest : BaseGrpcTest<InitiativeService.
             .Include(x => x.Municipalities!.OrderBy(y => y.Bfs))
             .FirstAsync(x => x.Id == InitiativesMuStGallen.GuidPreRecorded));
         initiative.State.Should().Be(CollectionState.PreRecorded);
-        initiative.CollectionStartDate.Should().Be(req.CollectionStartDate.ToDateTime());
-        initiative.CollectionEndDate.Should().Be(req.CollectionEndDate.ToDateTime());
+        initiative.CollectionStartDate.Should().Be(req.CollectionStartDate.ToDate());
+        initiative.CollectionEndDate.Should().Be(req.CollectionEndDate.ToDate());
         initiative.MacKeyId.Should().NotBeNullOrEmpty();
         initiative.EncryptionKeyId.Should().NotBeNullOrEmpty();
 
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -84,7 +84,7 @@ public class InitiativeSetCollectionPeriodTest : BaseGrpcTest<InitiativeService.
     public async Task CollectionStartDateInPastShouldFail()
     {
         await AssertStatus(
-            async () => await CtSgStammdatenverwalterClient.SetCollectionPeriodAsync(NewValidRequest(x => x.CollectionStartDate = Timestamp.FromDateTime(GetService<TimeProvider>().GetUtcNowDateTime().AddDays(-1)))),
+            async () => await CtSgStammdatenverwalterClient.SetCollectionPeriodAsync(NewValidRequest(x => x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(-1).ToProtoDate())),
             StatusCode.InvalidArgument);
     }
 
@@ -94,8 +94,8 @@ public class InitiativeSetCollectionPeriodTest : BaseGrpcTest<InitiativeService.
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.SetCollectionPeriodAsync(NewValidRequest(x =>
             {
-                x.CollectionStartDate = MockedClock.GetTimestampDate();
-                x.CollectionEndDate = MockedClock.GetTimestampDate(-1);
+                x.CollectionStartDate = MockedClock.GetDate().ToProtoDate();
+                x.CollectionEndDate = MockedClock.GetDate(-1).ToProtoDate();
             })),
             StatusCode.InvalidArgument);
     }
@@ -145,8 +145,8 @@ public class InitiativeSetCollectionPeriodTest : BaseGrpcTest<InitiativeService.
             x => x.Id == InitiativesCtStGallen.GuidLegislativeInPaperSubmission,
             x =>
             {
-                x.CollectionStartDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(1);
-                x.CollectionEndDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(31);
+                x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(1);
+                x.CollectionEndDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(31);
             });
 
         await AssertStatus(
@@ -198,8 +198,8 @@ public class InitiativeSetCollectionPeriodTest : BaseGrpcTest<InitiativeService.
         var request = new SetCollectionPeriodInitiativeRequest
         {
             Id = InitiativesCtStGallen.IdLegislativeInPaperSubmission,
-            CollectionStartDate = MockedClock.GetTimestampDate(10),
-            CollectionEndDate = MockedClock.GetTimestampDate(50),
+            CollectionStartDate = MockedClock.GetDate(10).ToProtoDate(),
+            CollectionEndDate = MockedClock.GetDate(50).ToProtoDate(),
         };
         customizer?.Invoke(request);
         return request;

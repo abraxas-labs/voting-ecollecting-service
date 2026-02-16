@@ -333,7 +333,7 @@ public class CollectionAddSignatureSheetCitizenTest : BaseGrpcTest<CollectionSig
         var req = NewValidInitiativeRequest();
         await ModifyDbEntities<InitiativeEntity>(
             x => x.Id == Guid.Parse(req.CollectionId),
-            x => x.CollectionStartDate = MockedClock.GetDate(1));
+            x => x.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
         await AssertStatus(
             async () => await MuSgKontrollzeichenerfasserClient.AddCitizenAsync(req),
             StatusCode.NotFound);

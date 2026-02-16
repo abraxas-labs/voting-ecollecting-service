@@ -9,8 +9,11 @@
     Id: Guid_1,
     Description: foo bar baz-updated,
     Type: Initiative,
-    Reason: Mehr Platz für Velos!,
-    Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+    Reason:
+St.Gallen hat eine lebendige Altstadt, doch es fehlt an gemütlichen Plätzen, wo man bei Kaffee und Kuchen verweilen kann. Die «Café-Initiative» will das ändern.
+Ein Café ist mehr als nur eine Tasse Kaffee – es ist ein Treffpunkt, ein Ort für Gespräche, Arbeit oder einfach Entspannung. Mit gemütlichem Ambiente und lokalen Spezialitäten wird daraus ein Stück Lebensqualität.
+Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer gut sitzt und guten Kaffee trinkt, fühlt sich zu Hause – und kommt gerne wieder.,
+    Link: https://www.stadt.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -59,5 +62,6 @@
     Wording: false,
     Description: false,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St.Gallen
 }

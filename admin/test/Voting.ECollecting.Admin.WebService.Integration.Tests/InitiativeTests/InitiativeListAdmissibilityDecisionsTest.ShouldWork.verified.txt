@@ -9,17 +9,212 @@
       Wording: ,
       Collection: {
         Id: Guid_1,
-        Description: Abwasser Initiative,
+        Description: Für kantonale Brunch-Treffs (Kantons-Brunch-Initiative),
         Type: Initiative,
-        Reason: Gewässer vor dem Abwasser schützen,
-        Link: https://sg.ch/abwasser/,
+        Reason:
+Gemeinsames Brunchen verbindet – doch öffentliche Orte für Sonntagsbrunch fehlen im Kanton. Die «Kantons-Brunch-Initiative» will regelmässige Brunch-Treffs in Parks und Gemeindehäusern fördern.
+Ein Brunch-Treff ist mehr als Essen – er ist Begegnung, Entspannung und Quartierkultur. Mit einfachen Tischen, Sitzbänken und freundlicher Atmosphäre entstehen Treffpunkte für Jung und Alt.
+Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunches, die von Gemeinden oder Vereinen organisiert werden. Ein bisschen gemeinsam Essen, Plaudern und Geniessen – das stärkt den Zusammenhalt im ganzen Kanton.,
+        Link: https://www.sg.ch/,
         SignatureSheetTemplateGenerated: false,
         State: PreRecorded,
         Address: {
-          CommitteeOrPerson: Komitee Abwasser Initiative,
-          StreetOrPostOfficeBox: Langstrasse 200,
-          ZipCode: 8005,
-          Locality: Zürich
+          CommitteeOrPerson: Komitee Kantons-Brunch,
+          StreetOrPostOfficeBox: Brunchweg 8,
+          ZipCode: 9320,
+          Locality: Arbon
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.45610,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      },
+      DomainOfInfluenceName: St. Gallen
+    },
+    {
+      Id: Guid_3,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_3,
+        Description: Für kantonale Jass-Turniere (Kantons-Jass-Initiative),
+        Type: Initiative,
+        Reason:
+Jassen ist Schweizer Tradition – doch organisierte Jass-Turniere für alle fehlen im Kanton. Die «Kantons-Jass-Initiative» will regelmässige Jass-Treffs und Turniere in allen Regionen fördern.
+Jassen ist mehr als Kartenspiel – es ist Geselligkeit, Strategie und Generationenaustausch. Mit einfachen Rahmenbedingungen und freundlicher Atmosphäre entstehen Begegnungsorte für alle Altersgruppen.
+Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Jass-Nachmittage in Gemeindehäusern und Restaurants. Ein bisschen Karten spielen, plaudern und miteinander lachen – das stärkt den Zusammenhalt im Kanton.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Kantons-Jass,
+          StreetOrPostOfficeBox: Jassweg 42,
+          ZipCode: 9400,
+          Locality: Rorschach
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.45611,
+      AdmissibilityDecisionState: ValidButSubjectToConditions,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      },
+      DomainOfInfluenceName: St. Gallen
+    },
+    {
+      Id: Guid_4,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_4,
+        Description: Für mehr Sonntagskonzerte (Sonntagsmusik-Initiative),
+        Type: Initiative,
+        Reason:
+Sonntagskonzerte in Kirchen und Gemeindehäusern sind Tradition – doch das Angebot wird kleiner. Die «Sonntagsmusik-Initiative» will Live-Musik am Sonntag im ganzen Kanton fördern.
+Sonntagskonzerte sind mehr als Unterhaltung – sie sind Kultur, Gemeinschaft und Entspannung. Mit verschiedenen Musikstilen und niederschwelligem Zugang entstehen musikalische Oasen für alle.
+Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte in bestehenden Räumen. Ein bisschen Live-Musik am Sonntag – das bereichert den Alltag und bringt Menschen zusammen.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Sonntagsmusik,
+          StreetOrPostOfficeBox: Musikgasse 7,
+          ZipCode: 9450,
+          Locality: Altstätten
+        },
+        IsElectronicSubmission: false,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: true,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: true,
+          CanDeleteAdmissibilityDecision: true,
+          CanEditGeneralInformation: true,
+          CanReturnForCorrection: false
+        }
+      },
+      SubType: {
+        Id: Guid_2,
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
+      },
+      GovernmentDecisionNumber: CH-123.45612,
+      AdmissibilityDecisionState: Rejected,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      },
+      DomainOfInfluenceName: St. Gallen
+    },
+    {
+      Id: Guid_5,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 1000,
+      Wording: ,
+      Collection: {
+        Id: Guid_5,
+        Description: Für mehr Waldspazier-Routen (Kantonswald-Initiative),
+        Type: Initiative,
+        Reason:
+St.Gallen hat herrliche Wälder – vom Bodensee bis zum Alpstein. Doch markierte Spazierwege, die zum Entdecken einladen, gibt es zu wenig. Die «Kantonswald-Initiative» will ein Netz einfacher Waldrouten schaffen.
+Waldspazieren ist mehr als Bewegung – es ist Erholung, Naturerlebnis und Entschleunigung. Mit gut beschilderten Wegen und Rastplätzen entstehen Oasen für alle Generationen.
+Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen, die Wald erlebbar machen. Ein bisschen mehr Natur im Alltag – das tut gut und verbindet Mensch und Umwelt.,
+        Link: https://www.sg.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: PreRecorded,
+        Address: {
+          CommitteeOrPerson: Komitee Kantonswald-Initiative,
+          StreetOrPostOfficeBox: Waldweg 15,
+          ZipCode: 9000,
+          Locality: St.Gallen
         },
         IsElectronicSubmission: false,
         InformalReviewRequested: false,
@@ -58,267 +253,30 @@
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
-    },
-    {
-      Id: Guid_3,
-      DomainOfInfluenceType: Ct,
-      Bfs: 17,
-      MinSignatureCount: 4000,
-      MaxElectronicSignatureCount: 1000,
-      Wording: ,
-      Collection: {
-        Id: Guid_3,
-        Description: Abwasser Initiative 1,
-        Type: Initiative,
-        Reason: Gewässer vor dem Abwasser schützen,
-        Link: https://sg.ch/abwasser/,
-        SignatureSheetTemplateGenerated: false,
-        State: PreRecorded,
-        Address: {
-          CommitteeOrPerson: Komitee Abwasser Initiative,
-          StreetOrPostOfficeBox: Langstrasse 200,
-          ZipCode: 8005,
-          Locality: Zürich
-        },
-        IsElectronicSubmission: false,
-        InformalReviewRequested: false,
-        UserPermissions: {
-          CanEdit: true,
-          IsRequestInformalReviewVisible: false,
-          CanCreateMessages: true,
-          CanFinishCorrection: false,
-          CanSetCollectionPeriod: true,
-          CanEnable: false,
-          CanDelete: false,
-          CanDeleteWithdrawn: false,
-          CanAddSignatureSheet: false,
-          CanReadSignatureSheets: false,
-          CanCheckSamples: false,
-          CanSubmitSignatureSheets: false,
-          CanFinish: false,
-          CanGenerateDocuments: false,
-          CanEditAdmissibilityDecision: true,
-          CanDeleteAdmissibilityDecision: true,
-          CanEditGeneralInformation: true,
-          CanReturnForCorrection: false
-        }
       },
-      SubType: {
-        Id: Guid_2,
-        Bfs: 3200,
-        DomainOfInfluenceType: Ct,
-        Description: Gesetzesinitiative,
-        MinSignatureCount: 6000,
-        MaxElectronicSignatureCount: 3000
-      },
-      GovernmentDecisionNumber: CH-123.45610,
-      AdmissibilityDecisionState: Valid,
-      LockedFields: {
-        Wording: false,
-        Description: false,
-        CommitteeMembers: false
-      }
-    },
-    {
-      Id: Guid_4,
-      DomainOfInfluenceType: Ct,
-      Bfs: 17,
-      MinSignatureCount: 4000,
-      MaxElectronicSignatureCount: 1000,
-      Wording: ,
-      Collection: {
-        Id: Guid_4,
-        Description: Abwasser Initiative 2,
-        Type: Initiative,
-        Reason: Gewässer vor dem Abwasser schützen,
-        Link: https://sg.ch/abwasser/,
-        SignatureSheetTemplateGenerated: false,
-        State: PreRecorded,
-        Address: {
-          CommitteeOrPerson: Komitee Abwasser Initiative,
-          StreetOrPostOfficeBox: Langstrasse 200,
-          ZipCode: 8005,
-          Locality: Zürich
-        },
-        IsElectronicSubmission: false,
-        InformalReviewRequested: false,
-        UserPermissions: {
-          CanEdit: true,
-          IsRequestInformalReviewVisible: false,
-          CanCreateMessages: true,
-          CanFinishCorrection: false,
-          CanSetCollectionPeriod: true,
-          CanEnable: false,
-          CanDelete: false,
-          CanDeleteWithdrawn: false,
-          CanAddSignatureSheet: false,
-          CanReadSignatureSheets: false,
-          CanCheckSamples: false,
-          CanSubmitSignatureSheets: false,
-          CanFinish: false,
-          CanGenerateDocuments: false,
-          CanEditAdmissibilityDecision: true,
-          CanDeleteAdmissibilityDecision: true,
-          CanEditGeneralInformation: true,
-          CanReturnForCorrection: false
-        }
-      },
-      SubType: {
-        Id: Guid_2,
-        Bfs: 3200,
-        DomainOfInfluenceType: Ct,
-        Description: Gesetzesinitiative,
-        MinSignatureCount: 6000,
-        MaxElectronicSignatureCount: 3000
-      },
-      GovernmentDecisionNumber: CH-123.45610,
-      AdmissibilityDecisionState: ValidButSubjectToConditions,
-      LockedFields: {
-        Wording: false,
-        Description: false,
-        CommitteeMembers: false
-      }
-    },
-    {
-      Id: Guid_5,
-      DomainOfInfluenceType: Ct,
-      Bfs: 17,
-      MinSignatureCount: 4000,
-      MaxElectronicSignatureCount: 1000,
-      Wording: ,
-      Collection: {
-        Id: Guid_5,
-        Description: Abwasser Initiative 3,
-        Type: Initiative,
-        Reason: Gewässer vor dem Abwasser schützen,
-        Link: https://sg.ch/abwasser/,
-        SignatureSheetTemplateGenerated: false,
-        State: PreRecorded,
-        Address: {
-          CommitteeOrPerson: Komitee Abwasser Initiative,
-          StreetOrPostOfficeBox: Langstrasse 200,
-          ZipCode: 8005,
-          Locality: Zürich
-        },
-        IsElectronicSubmission: false,
-        InformalReviewRequested: false,
-        UserPermissions: {
-          CanEdit: true,
-          IsRequestInformalReviewVisible: false,
-          CanCreateMessages: true,
-          CanFinishCorrection: false,
-          CanSetCollectionPeriod: true,
-          CanEnable: false,
-          CanDelete: false,
-          CanDeleteWithdrawn: false,
-          CanAddSignatureSheet: false,
-          CanReadSignatureSheets: false,
-          CanCheckSamples: false,
-          CanSubmitSignatureSheets: false,
-          CanFinish: false,
-          CanGenerateDocuments: false,
-          CanEditAdmissibilityDecision: true,
-          CanDeleteAdmissibilityDecision: true,
-          CanEditGeneralInformation: true,
-          CanReturnForCorrection: false
-        }
-      },
-      SubType: {
-        Id: Guid_2,
-        Bfs: 3200,
-        DomainOfInfluenceType: Ct,
-        Description: Gesetzesinitiative,
-        MinSignatureCount: 6000,
-        MaxElectronicSignatureCount: 3000
-      },
-      GovernmentDecisionNumber: CH-123.45610,
-      AdmissibilityDecisionState: Rejected,
-      LockedFields: {
-        Wording: false,
-        Description: false,
-        CommitteeMembers: false
-      }
+      DomainOfInfluenceName: St. Gallen
     },
     {
       Id: Guid_6,
-      DomainOfInfluenceType: Mu,
-      Bfs: 3213,
-      MinSignatureCount: 500,
-      MaxElectronicSignatureCount: 250,
-      Wording:
-Diese Initiative fordert eine bessere Nutzung der Bodenseenähe in Goldach.
-Die Uferpromenade soll ausgebaut und der Zugang zum See verbessert werden.
-Zudem sollen mehr Freizeitangebote am See geschaffen werden.,
-      Collection: {
-        Id: Guid_6,
-        Description: Goldacher Seenähe,
-        Type: Initiative,
-        Reason: Bessere Nutzung der Bodenseenähe!,
-        Link: https://www.goldach.ch/,
-        SignatureSheetTemplateGenerated: false,
-        State: EnabledForCollection,
-        Address: {
-          CommitteeOrPerson: Komitee Seenähe,
-          StreetOrPostOfficeBox: Bodenseestraße 1,
-          ZipCode: 9403,
-          Locality: Goldach
-        },
-        IsElectronicSubmission: true,
-        InformalReviewRequested: false,
-        UserPermissions: {
-          CanEdit: true,
-          IsRequestInformalReviewVisible: false,
-          CanCreateMessages: false,
-          CanFinishCorrection: false,
-          CanSetCollectionPeriod: false,
-          CanEnable: false,
-          CanDelete: false,
-          CanDeleteWithdrawn: false,
-          CanAddSignatureSheet: false,
-          CanReadSignatureSheets: false,
-          CanCheckSamples: false,
-          CanSubmitSignatureSheets: false,
-          CanFinish: false,
-          CanGenerateDocuments: false,
-          CanEditAdmissibilityDecision: false,
-          CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
-          CanReturnForCorrection: false
-        },
-        CollectionStartDate: {
-          Seconds: 1575983530,
-          Nanos: 200000000
-        },
-        CollectionEndDate: {
-          Seconds: 1591794730,
-          Nanos: 200000000
-        },
-        PeriodState: InCollection
-      },
-      GovernmentDecisionNumber: MUGD-2025-002,
-      AdmissibilityDecisionState: Valid,
-      LockedFields: {
-        Wording: false,
-        Description: false,
-        CommitteeMembers: false
-      }
-    },
-    {
-      Id: Guid_7,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
       Wording:
-Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
-Parks und Gärten sollen erhalten und neue geschaffen werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
+1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
       Collection: {
-        Id: Guid_7,
-        Description: Stadtweite Grünflächen,
+        Id: Guid_6,
+        Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
         Type: Initiative,
-        Reason: Mehr Grün in der Stadt!,
-        Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+        Reason:
+St. Gallen ist die Rosenstadt – und was wäre eine Rosenstadt ohne Blütenpracht? Diese Initiative will sicherstellen, dass die Stadt auch künftig farbig, lebendig und bienenfreundlich bleibt.
+Ob Blumenkisten an Geländern, Wildblumenstreifen am Strassenrand oder Schulprojekte mit Insektenhotels – kleine grüne Gesten schaffen grosses Wohlbefinden. Die Initiative verlangt keine teuren Anlagen, sondern ein bewusstes Augenmerk auf Natur im Alltag.
+Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht nur schön fürs Auge – es ist gut fürs Klima, für die Bienen und für die Seele.,
+        Link: https://www.stadt.sg.ch/,
         SignatureSheetTemplateGenerated: false,
         State: EnabledForCollection,
         Address: {
@@ -350,12 +308,14 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
           CanReturnForCorrection: false
         },
         CollectionStartDate: {
-          Seconds: 1575983530,
-          Nanos: 200000000
+          Year: 2019,
+          Month: 12,
+          Day: 10
         },
         CollectionEndDate: {
-          Seconds: 1591794730,
-          Nanos: 200000000
+          Year: 2020,
+          Month: 6,
+          Day: 10
         },
         PeriodState: InCollection
       },
@@ -365,7 +325,80 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: St.Gallen
+    },
+    {
+      Id: Guid_7,
+      DomainOfInfluenceType: Mu,
+      Bfs: 3213,
+      MinSignatureCount: 500,
+      MaxElectronicSignatureCount: 250,
+      Wording:
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen
+1 Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.
+2 Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.
+3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.,
+      Collection: {
+        Id: Guid_7,
+        Description: Für plätscherndes Wasser im Dorf (Brunnen-Initiative),
+        Type: Initiative,
+        Reason:
+Goldach liegt am Bodensee – doch im Ortskern fehlt es an kleinen Wasserstellen, wo man sich im Sommer erfrischen oder einfach dem Plätschern lauschen kann. Diese Initiative will das ändern.
+Brunnen sind mehr als Wasserquelle – sie sind Treffpunkt, Kinderspielplatz und Oase an heissen Tagen. Ein Dorfbrunnen mit frischem Wasser lädt zum Verweilen ein und gibt dem Zentrum Leben.
+Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepflegte Brunnen an zentralen Orten. Ein bisschen Plätschern zwischen See und Dorf tut gut – für Kinder, Hunde und alle, die eine Abkühlung suchen.,
+        Link: https://www.goldach.ch/,
+        SignatureSheetTemplateGenerated: false,
+        State: EnabledForCollection,
+        Address: {
+          CommitteeOrPerson: Komitee Seenähe,
+          StreetOrPostOfficeBox: Bodenseestrasse 1,
+          ZipCode: 9403,
+          Locality: Goldach
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: false,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: false
+        },
+        CollectionStartDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 10
+        },
+        CollectionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 10
+        },
+        PeriodState: InCollection
+      },
+      GovernmentDecisionNumber: MUGD-2025-002,
+      AdmissibilityDecisionState: Valid,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      },
+      DomainOfInfluenceName: Goldach
     }
   ]
 }

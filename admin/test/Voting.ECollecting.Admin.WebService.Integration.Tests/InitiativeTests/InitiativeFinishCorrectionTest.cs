@@ -34,7 +34,7 @@ public class InitiativeFinishCorrectionTest : BaseGrpcTest<InitiativeService.Ini
             x =>
             {
                 x.AdmissibilityDecisionState = AdmissibilityDecisionState.Valid;
-                x.CollectionStartDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(4);
+                x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(4);
             });
     }
 
@@ -109,11 +109,11 @@ public class InitiativeFinishCorrectionTest : BaseGrpcTest<InitiativeService.Ini
     }
 
     [Fact]
-    public async Task AdmissibilityDecisionStateNotValidShouldFail()
+    public async Task AdmissibilityDecisionStateNotValidOrValidButSubjectToConditionsShouldFail()
     {
         await ModifyDbEntities<InitiativeEntity>(
             x => x.Id == InitiativesCtStGallen.GuidLegislativeUnderReview,
-            x => x.AdmissibilityDecisionState = AdmissibilityDecisionState.ValidButSubjectToConditions);
+            x => x.AdmissibilityDecisionState = AdmissibilityDecisionState.Rejected);
 
         var req = NewValidRequest();
         await AssertStatus(
@@ -126,7 +126,7 @@ public class InitiativeFinishCorrectionTest : BaseGrpcTest<InitiativeService.Ini
     {
         await ModifyDbEntities<InitiativeEntity>(
             x => x.Id == InitiativesCtStGallen.GuidLegislativeUnderReview,
-            x => x.CollectionStartDate = GetService<TimeProvider>().GetUtcNowDateTime().AddDays(-1));
+            x => x.CollectionStartDate = GetService<TimeProvider>().GetUtcTodayDateOnly().AddDays(-1));
 
         var req = NewValidRequest();
         await AssertStatus(

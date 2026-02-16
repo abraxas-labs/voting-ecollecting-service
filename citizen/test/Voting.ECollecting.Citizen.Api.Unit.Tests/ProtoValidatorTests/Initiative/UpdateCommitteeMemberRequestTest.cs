@@ -22,7 +22,10 @@ public class UpdateCommitteeMemberRequestTest : ProtoValidatorBaseTest<UpdateCom
         yield return NewValidRequest(x => x.PoliticalFirstName = RandomStringUtil.GenerateComplexSingleLineText(100));
         yield return NewValidRequest(x => x.PoliticalLastName = RandomStringUtil.GenerateComplexSingleLineText(100));
         yield return NewValidRequest(x => x.Bfs = RandomStringUtil.GenerateAlphanumericWhitespace(8));
-        yield return NewValidRequest(x => x.PoliticalBfs = RandomStringUtil.GenerateAlphanumericWhitespace(8));
+        yield return NewValidRequest(x => x.PoliticalResidence = RandomStringUtil.GenerateComplexSingleLineText(100));
+        yield return NewValidRequest(x => x.Street = RandomStringUtil.GenerateComplexSingleLineText(150));
+        yield return NewValidRequest(x => x.HouseNumber = RandomStringUtil.GenerateAlphanumericWhitespace(30));
+        yield return NewValidRequest(x => x.ZipCode = RandomStringUtil.GenerateComplexSingleLineText(15));
     }
 
     protected override IEnumerable<UpdateCommitteeMemberRequest> NotOkMessages()
@@ -42,9 +45,15 @@ public class UpdateCommitteeMemberRequestTest : ProtoValidatorBaseTest<UpdateCom
         yield return NewValidRequest(x => x.DateOfBirth = null);
         yield return NewValidRequest(x => x.Bfs = string.Empty);
         yield return NewValidRequest(x => x.Bfs = RandomStringUtil.GenerateAlphanumericWhitespace(9));
-        yield return NewValidRequest(x => x.PoliticalBfs = string.Empty);
-        yield return NewValidRequest(x => x.PoliticalBfs = RandomStringUtil.GenerateAlphanumericWhitespace(9));
+        yield return NewValidRequest(x => x.PoliticalResidence = string.Empty);
+        yield return NewValidRequest(x => x.PoliticalResidence = RandomStringUtil.GenerateComplexSingleLineText(101));
         yield return NewValidRequest(x => x.Email = "foo");
+        yield return NewValidRequest(x => x.Street = string.Empty);
+        yield return NewValidRequest(x => x.Street = RandomStringUtil.GenerateComplexSingleLineText(151));
+        yield return NewValidRequest(x => x.HouseNumber = string.Empty);
+        yield return NewValidRequest(x => x.HouseNumber = RandomStringUtil.GenerateAlphanumericWhitespace(31));
+        yield return NewValidRequest(x => x.ZipCode = string.Empty);
+        yield return NewValidRequest(x => x.ZipCode = RandomStringUtil.GenerateComplexSingleLineText(16));
     }
 
     private UpdateCommitteeMemberRequest NewValidRequest(Action<UpdateCommitteeMemberRequest>? customizer = null)
@@ -61,8 +70,11 @@ public class UpdateCommitteeMemberRequestTest : ProtoValidatorBaseTest<UpdateCom
             DateOfBirth = MockedClock.GetTimestamp(-55 * 365),
             RequestMemberSignature = true,
             PoliticalDuty = "Protokollführer",
-            PoliticalBfs = "3203",
+            PoliticalResidence = "St. Gallen",
             Bfs = "3203",
+            Street = "Bahnhofstrasse",
+            HouseNumber = "1a",
+            ZipCode = "9000",
             Role = CollectionPermissionRole.Deputy,
         };
 

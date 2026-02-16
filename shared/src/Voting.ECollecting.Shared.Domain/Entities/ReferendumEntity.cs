@@ -14,11 +14,9 @@ public class ReferendumEntity : CollectionBaseEntity
     /// </summary>
     public DecreeEntity? Decree { get; set; }
 
-    public string Number { get; set; } = string.Empty;
-
-    public override void SetPeriodState(DateTime utcNow)
+    public override void SetPeriodState(DateOnly today)
     {
-        base.SetPeriodState(utcNow);
-        Decree?.SetPeriodState(utcNow);
+        base.SetPeriodState(today);
+        Decree?.SetPeriodState(today);
     }
 }

@@ -51,7 +51,7 @@ public class CollectionListTest : BaseGrpcTest<CollectionService.CollectionServi
                 (CitizenAuthMockDefaults.UserSocialSecurityNumberHeaderName, VotingStimmregisterAdapterMock.VotingRightPerson12Ssn)
             ]));
 
-        await initiativeCitizenClient.SignAsync(new SignInitiativeRequest() { Id = InitiativesCtStGallen.IdUnityEnabledForCollectionCollecting });
+        await initiativeCitizenClient.SignAsync(new SignInitiativeRequest { Id = InitiativesCtStGallen.IdUnityEnabledForCollectionCollecting });
 
         var client = CreateCitizenClient(
             acrValue: CitizenAuthMockDefaults.AcrValue400,

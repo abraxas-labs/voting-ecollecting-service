@@ -6,25 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/5660,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 13,
         LogoId: Guid_2,
-        Reason: SP setzt auf ausser-parlamentarischen Druck: Klimafonds-Initiative Eingereicht,
+        Reason:
+Schmetterlinge sind schön und wichtig für die Natur – doch ihre Lebensräume schwinden. Die «Schmetterling-Initiative» will mehr blütenreiche Gärten und Wiesen für Schmetterlinge schaffen.
+Ein Schmetterlingsgarten ist mehr als Blumen – er ist Biodiversität, Farbe und Naturbeobachtung. Mit einheimischen Pflanzen und naturnaher Pflege entstehen Paradiese für Falter.
+Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlingsfreundliche Gärten und Wiesen. Ein bisschen mehr Blüten – das hilft Schmetterlingen und erfreut Menschen.,
         Address: {
-          ZipCode: 4052,
-          Locality: Basel,
+          ZipCode: 9524,
+          Locality: Zuzwil,
           IsComplete: true,
-          CommitteeOrPerson: Initiative Saubere Energie,
-          StreetOrPostOfficeBox: Aeschenplatz 6
+          CommitteeOrPerson: Komitee Schmetterling-Initiative,
+          StreetOrPostOfficeBox: Blütenweg 7
         },
         ImageId: Guid_3,
         Wording:
-Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit einem Volumen von 100 Mio. Franken. Der Fonds wird aus Mitteln des besonderen Eigenkapitals geäufnet. Die Mittel werden verwendet für:
-
-- Massnahmen zur Verminderung der CO2-Emissionen bei Gebäuden durch die Förderungen von CO2-emissionsarmen Heizsystemen und die energetische Sanierung von Gebäudehüllen;
-- den Ausbau der Stromgewinnung durch erneuerbare Energien wie Photovoltaik, Windkraft und Biomasse;
-- gezielte Massnahmen zur Energieverbrauchsreduktion.»,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 230 (neu) – Förderung von Schmetterlingsgärten
+1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
         MacKeyId: KSedVotingECollecting_10a2bc83-c30d-4893-bd5d-852c30227e6c_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -33,16 +36,17 @@ Der Kantonsrat schafft die gesetzlichen Grundlagen für einen Klimafonds mit ein
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Stadt St.Galler Klimafonds,
+        Description: Für Schmetterlingsgärten (Schmetterling-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
+        SecureIdNumber: AAAAAAAAAAA5,
         EncryptionKeyId: KSedVotingECollecting_10a2bc83-c30d-4893-bd5d-852c30227e6c_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2019-08-10,
         MinSignatureCount: 4000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-01-10,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,

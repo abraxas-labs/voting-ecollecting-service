@@ -8,6 +8,4 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Repositories;
 
 public abstract class HasAuditTrailTrackedEntityRepository<TAuditTrailTrackedEntity>(DataContext context)
     : Shared.Adapter.Data.Repositories.HasAuditTrailTrackedEntityRepository<DataContext, TAuditTrailTrackedEntity>(context)
-    where TAuditTrailTrackedEntity : BaseEntity, IAuditTrailTrackedEntity, new()
-{
-}
+    where TAuditTrailTrackedEntity : BaseEntity, IAuditTrailTrackedEntity, new();

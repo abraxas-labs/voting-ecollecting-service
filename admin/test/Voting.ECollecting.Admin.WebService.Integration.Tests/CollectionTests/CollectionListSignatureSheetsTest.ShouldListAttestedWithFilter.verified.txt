@@ -13,8 +13,9 @@
       Id: Guid_1,
       Number: 7,
       ReceivedAt: {
-        Seconds: 1578402730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 7
       },
       AttestedAt: {
         Seconds: 1578489130,
@@ -28,7 +29,7 @@
         Invalid: 10
       },
       State: Submitted,
-      MunicipalityName: St. Gallen,
+      MunicipalityName: St.Gallen,
       Bfs: 3203,
       UserPermissions: {
         CanEdit: false,
@@ -38,14 +39,16 @@
         CanDiscard: false,
         CanRestore: false,
         CanConfirm: false
-      }
+      },
+      ModifiedBySuperiorAuthority: false
     },
     {
       Id: Guid_2,
       Number: 8,
       ReceivedAt: {
-        Seconds: 1578316330,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 1,
+        Day: 6
       },
       AttestedAt: {
         Seconds: 1578402730,
@@ -59,7 +62,7 @@
         Invalid: 1
       },
       State: NotSubmitted,
-      MunicipalityName: St. Gallen,
+      MunicipalityName: St.Gallen,
       Bfs: 3203,
       UserPermissions: {
         CanEdit: false,
@@ -69,7 +72,8 @@
         CanDiscard: false,
         CanRestore: false,
         CanConfirm: false
-      }
+      },
+      ModifiedBySuperiorAuthority: false
     }
   ]
 }

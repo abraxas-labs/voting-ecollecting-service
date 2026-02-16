@@ -6,6 +6,7 @@ using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
+using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
@@ -118,6 +119,30 @@ public class InitiativeUpdateAdmissibilityDecisionTest : BaseGrpcTest<Initiative
             async () => await MuSgStammdatenverwalterClient.UpdateAdmissibilityDecisionAsync(req),
             StatusCode.InvalidArgument,
             "Cannot update to Open state.");
+    }
+
+    [Fact]
+    public async Task ShouldThrowOnDuplicateGovernmentDecisionNumber()
+    {
+        const string existingGdn = "existing-123";
+        await ModifyDbEntities((InitiativeEntity e) => e.Id == InitiativesCtStGallen.GuidLegislativeUnderReview, x => x.GovernmentDecisionNumber = existingGdn);
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.UpdateAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = existingGdn)),
+            StatusCode.InvalidArgument,
+            nameof(DuplicatedGovernmentDecisionNumberException));
+    }
+
+    [Fact]
+    public async Task ShouldThrowOnDuplicateGovernmentDecisionNumberCaseInsensitive()
+    {
+        const string existingGdn = "existing-123";
+        await ModifyDbEntities((InitiativeEntity e) => e.Id == InitiativesCtStGallen.GuidLegislativeUnderReview, x => x.GovernmentDecisionNumber = existingGdn.ToUpperInvariant());
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.UpdateAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = existingGdn)),
+            StatusCode.InvalidArgument,
+            nameof(DuplicatedGovernmentDecisionNumberException));
     }
 
     [Fact]

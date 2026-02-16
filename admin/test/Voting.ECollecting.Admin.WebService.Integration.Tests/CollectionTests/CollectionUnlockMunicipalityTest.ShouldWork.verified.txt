@@ -1,7 +1,7 @@
 ﻿{
   CollectionId: Guid_1,
   Bfs: 3203,
-  MunicipalityName: St. Gallen,
+  MunicipalityName: St.Gallen,
   PhysicalCount: {
     Invalid: 3,
     Valid: 17,

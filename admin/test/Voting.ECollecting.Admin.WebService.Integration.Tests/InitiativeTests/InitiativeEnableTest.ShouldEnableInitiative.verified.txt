@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Kantonale Gesundheitsreform,
+        CollectionName: Für kantonale Feuerstellen (Feuerstellen-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: kanton+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Kantonale Gesundheitsreform,
+        CollectionName: Für kantonale Feuerstellen (Feuerstellen-Initiative),
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Kantonale Gesundheitsreform,
+        CollectionName: Für kantonale Feuerstellen (Feuerstellen-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -48,8 +48,11 @@
   initiative: {
     MinSignatureCount: 4000,
     Wording:
-Diese Initiative fordert eine Reform des Gesundheitssystems auf Kantonsebene.
-Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 224 (neu) – Förderung kantonaler Feuerstellen
+1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
     SubTypeId: Guid_6,
     GovernmentDecisionNumber: SG-123.412226,
     AdmissibilityDecisionState: Valid,
@@ -58,22 +61,25 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
       Wording: false,
       CommitteeMembers: false
     },
-    CollectionStartDate: DateTime_2,
-    CollectionEndDate: DateTime_3,
-    Description: Kantonale Gesundheitsreform,
+    CollectionStartDate: Date_1,
+    CollectionEndDate: Date_2,
+    Description: Für kantonale Feuerstellen (Feuerstellen-Initiative),
     Type: Initiative,
-    Reason: Gesundheit für alle!,
-    Link: https://www.sg.ch/home/gesundheitsreform.html,
+    Reason:
+Feuer fasziniert – doch sichere Feuerstellen im Öffentlichen Raum sind selten. Die «Feuerstellen-Initiative» will mehr offizielle Feuerstellen in Parks und Erholungsgebieten schaffen.
+Eine Feuerstelle ist mehr als Lagerfeuer – sie ist Gemütlichkeit, Naturerlebnis und Gemeinschaft. Mit sicherer Bauweise und klaren Regeln entstehen beliebte Treffpunkte.
+Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstellen mit Holzvorrat und Sitzgelegenheiten. Ein bisschen Lagerfeuer-Romantik – das bereichert Familienausflüge und Wanderungen.,
+    Link: https://www.sg.ch/,
     LogoId: Guid_7,
     ImageId: Guid_8,
     SignatureSheetTemplateGenerated: true,
     SignatureSheetTemplateId: Guid_9,
     State: EnabledForCollection,
     Address: {
-      CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
-      StreetOrPostOfficeBox: Burgstrasse 4,
-      ZipCode: 3600,
-      Locality: Thun,
+      CommitteeOrPerson: Komitee Feuerstellen-Initiative,
+      StreetOrPostOfficeBox: Feuerweg 25,
+      ZipCode: 9630,
+      Locality: Wattwil,
       IsComplete: true
     },
     Municipalities: [
@@ -127,6 +133,23 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
           CreatedAt: DateTime_1
         },
         Id: Guid_12
+      },
+      {
+        CollectionId: Guid_1,
+        Bfs: 3340,
+        MunicipalityName: Rapperswil-Jona,
+        PhysicalCount: {
+          CanAdd: false
+        },
+        IsLocked: false,
+        NextSheetNumber: 1,
+        AuditInfo: {
+          CreatedById: default-user-id,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_13
       }
     ],
     EncryptionKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_Encryption12,
@@ -137,7 +160,7 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
     Bfs: 17,
     MaxElectronicSignatureCount: 1000,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_4,
+    SignatureListSubmissionEndDate: DateTime_2,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -145,7 +168,7 @@ Ziel ist es, die Gesundheitsversorgung zu verbessern und die Kosten zu senken.,
       CreatedById: default-user-id,
       CreatedByName: Test Citizen Creator,
       CreatedByEmail: citizen-creator@example.com,
-      CreatedAt: DateTime_5,
+      CreatedAt: DateTime_3,
       ModifiedById: default-user-id,
       ModifiedByName: default user firstname default user lastname,
       ModifiedByEmail: default-user@example.com,

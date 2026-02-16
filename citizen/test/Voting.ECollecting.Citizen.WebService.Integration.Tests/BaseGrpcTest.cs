@@ -38,10 +38,10 @@ public abstract class BaseGrpcTest<TService> : GrpcApiBaseTest<TestApplicationFa
         _client = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: false)));
         _authenticatedClient = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: true)));
         _authenticatedNoPermissionClient = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: true, userId: CitizenAuthMockDefaults.NoPermissionUserId)));
-        _deputyClient = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: true, userId: CitizenAuthMockDefaults.DeputyUserId)));
-        _deputyNotAcceptedClient = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: true, userId: CitizenAuthMockDefaults.DeputyNotAcceptedUserId)));
-        _readerClient = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: true, userId: CitizenAuthMockDefaults.ReaderUserId)));
-        _readerNotAcceptedClient = new Lazy<TService>(() => CreateService(CreateGrpcChannel(authorize: true, userId: CitizenAuthMockDefaults.ReaderNotAcceptedUserId)));
+        _deputyClient = new Lazy<TService>(() => CreateCitizenClient(userId: CitizenAuthMockDefaults.DeputyUserId, acrValue: CitizenAuthMockDefaults.AcrValue100));
+        _deputyNotAcceptedClient = new Lazy<TService>(() => CreateCitizenClient(userId: CitizenAuthMockDefaults.DeputyNotAcceptedUserId, acrValue: CitizenAuthMockDefaults.AcrValue100));
+        _readerClient = new Lazy<TService>(() => CreateCitizenClient(userId: CitizenAuthMockDefaults.ReaderUserId, acrValue: CitizenAuthMockDefaults.AcrValue100));
+        _readerNotAcceptedClient = new Lazy<TService>(() => CreateCitizenClient(userId: CitizenAuthMockDefaults.ReaderNotAcceptedUserId, acrValue: CitizenAuthMockDefaults.AcrValue100));
     }
 
     protected TService Client => _client.Value;
@@ -64,6 +64,7 @@ public abstract class BaseGrpcTest<TService> : GrpcApiBaseTest<TestApplicationFa
         string userId = CitizenAuthMockDefaults.CitizenUserId,
         string acrValue = "",
         string email = CitizenAuthMockDefaults.UserCitizenTestEMail,
+        bool emailVerified = true,
         string ssn = "")
     {
         return CreateService(Factory.CreateGrpcChannel(
@@ -74,6 +75,7 @@ public abstract class BaseGrpcTest<TService> : GrpcApiBaseTest<TestApplicationFa
             [
                 (CitizenAuthMockDefaults.UserAcrHeaderName, acrValue),
                 (CitizenAuthMockDefaults.UserEMailHeaderName, email),
+                (CitizenAuthMockDefaults.UserEmailVerifiedHeaderName, emailVerified.ToString()),
                 (CitizenAuthMockDefaults.UserSocialSecurityNumberHeaderName, ssn)
             ]));
     }

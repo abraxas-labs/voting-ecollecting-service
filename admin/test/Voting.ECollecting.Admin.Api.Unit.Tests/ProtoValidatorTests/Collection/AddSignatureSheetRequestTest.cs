@@ -1,7 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using Google.Protobuf.WellKnownTypes;
+using Abraxas.Voting.Ecollecting.Shared.V1.Models;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.Lib.Testing.Validation;
 
@@ -31,7 +31,7 @@ public class AddSignatureSheetRequestTest : ProtoValidatorBaseTest<AddSignatureS
         {
             CollectionId = "96095807-d16d-4eca-a4f6-e92ecb1b31d5",
             Number = 10,
-            ReceivedAt = DateTime.SpecifyKind(new DateTime(2025, 3, 5), DateTimeKind.Utc).ToTimestamp(),
+            ReceivedAt = new Date { Day = 10, Month = 12, Year = 2020, },
             SignatureCountTotal = 100,
         };
 

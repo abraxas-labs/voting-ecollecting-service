@@ -17,7 +17,7 @@ public class CollectionSignatureSheetEntity : AuditedEntity, IAuditTrailTrackedE
     /// <summary>
     /// Gets or sets the date the signature sheet was received ("Eingangsdatum").
     /// </summary>
-    public DateTime ReceivedAt { get; set; }
+    public DateOnly ReceivedAt { get; set; }
 
     public DateTime? AttestedAt { get; set; }
 
@@ -28,4 +28,6 @@ public class CollectionSignatureSheetEntity : AuditedEntity, IAuditTrailTrackedE
     public ICollection<CollectionCitizenEntity> Citizens { get; set; } = [];
 
     public bool IsSample { get; set; }
+
+    public bool ModifiedBySuperiorAuthority { get; set; }
 }

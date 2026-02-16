@@ -3,7 +3,7 @@
     {
       RecipientEMail: bund+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Bundesweite Klimainitiative,
+        CollectionName: Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative),
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -13,7 +13,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Bundesweite Klimainitiative,
+        CollectionName: Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -23,7 +23,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Bundesweite Klimainitiative,
+        CollectionName: Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -37,7 +37,7 @@
     AuditInfo: {
       CreatedById: user-id-deputy,
       CreatedByName: Test user,
-      CreatedByEmail: voting+tester@abraxas.ch,
+      CreatedByEmail: rudolph.meier@example.com,
       CreatedAt: DateTime_1
     },
     Id: Guid_5

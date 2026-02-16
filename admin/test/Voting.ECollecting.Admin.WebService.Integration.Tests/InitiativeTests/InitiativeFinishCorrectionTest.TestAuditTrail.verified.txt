@@ -6,20 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4375,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 7,
         LogoId: Guid_2,
-        Reason: Steuerliche Entlastung von Familien: Kinder- und Betreuungsabzüge,
+        Reason:
+W ochenmärkte beleben Städte und Dörfer – doch viele Orte haben keinen Markt mehr. Die «Markt-Initiative» will die Tradition der Wochenmärkte im ganzen Kanton stärken.
+Ein Wochenmarkt ist mehr als Einkauf – er ist Begegnung, regionale Produkte und Lebensqualität. Mit Unterstützung für Marktbetreiber und Standinhaber entstehen lebendige Zentren.
+Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmärkte in allen Regionen. Ein bisschen Markt-Atmosphäre – das stärkt lokale Produzenten und Gemeinschaft.,
         Address: {
-          ZipCode: 4058,
-          Locality: Basel,
+          ZipCode: 9200,
+          Locality: Gossau,
           IsComplete: true,
-          CommitteeOrPerson: Pro Familia,
-          StreetOrPostOfficeBox: Rheinstrasse 17
+          CommitteeOrPerson: Komitee Markt-Initiative,
+          StreetOrPostOfficeBox: Marktgasse 8
         },
         ImageId: Guid_3,
-        Wording: Diese initiative will mehr kinderabzüge!,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 222 (neu) – Förderung kantonaler Wochenmärkte
+1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -27,47 +35,56 @@
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Volksinitiative «50% mehr Kinderabzüge»,
+        Description: Für kantonale Märkte (Markt-Initiative),
         LockedFields: {
           Wording: true,
           Description: false,
           CommitteeMembers: false
         },
         MinSignatureCount: 4000,
-        CollectionStartDate: DateTimeOffset_2,
+        CollectionStartDate: 2020-01-14,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         GovernmentDecisionNumber: SG-123.412224,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 0,
+        GovernmentDecisionNumberLower: sg-123.412224,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.ratsinfo.sg.ch/gremium/468/geschaefte/4375,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 8,
         LogoId: Guid_2,
-        Reason: Steuerliche Entlastung von Familien: Kinder- und Betreuungsabzüge,
+        Reason:
+W ochenmärkte beleben Städte und Dörfer – doch viele Orte haben keinen Markt mehr. Die «Markt-Initiative» will die Tradition der Wochenmärkte im ganzen Kanton stärken.
+Ein Wochenmarkt ist mehr als Einkauf – er ist Begegnung, regionale Produkte und Lebensqualität. Mit Unterstützung für Marktbetreiber und Standinhaber entstehen lebendige Zentren.
+Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmärkte in allen Regionen. Ein bisschen Markt-Atmosphäre – das stärkt lokale Produzenten und Gemeinschaft.,
         Address: {
-          ZipCode: 4058,
-          Locality: Basel,
+          ZipCode: 9200,
+          Locality: Gossau,
           IsComplete: true,
-          CommitteeOrPerson: Pro Familia,
-          StreetOrPostOfficeBox: Rheinstrasse 17
+          CommitteeOrPerson: Komitee Markt-Initiative,
+          StreetOrPostOfficeBox: Marktgasse 8
         },
         ImageId: Guid_3,
-        Wording: Diese initiative will mehr kinderabzüge!,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 222 (neu) – Förderung kantonaler Wochenmärkte
+1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -76,25 +93,26 @@
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Volksinitiative «50% mehr Kinderabzüge»,
+        Description: Für kantonale Märkte (Markt-Initiative),
         LockedFields: {
           Wording: true,
           Description: false,
           CommitteeMembers: false
         },
         MinSignatureCount: 4000,
-        CollectionStartDate: DateTimeOffset_2,
+        CollectionStartDate: 2020-01-14,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
           IntegritySignatureKeyId: ,
           IntegritySignatureVersion: 0
         },
-        IsElectronicSubmission: false,
+        IsElectronicSubmission: true,
         InformalReviewRequested: false,
         GovernmentDecisionNumber: SG-123.412224,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 0,
+        GovernmentDecisionNumberLower: sg-123.412224,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

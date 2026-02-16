@@ -39,7 +39,7 @@ public class InitiativeCameAboutTest : BaseGrpcTest<InitiativeService.Initiative
         var initiative = await RunOnDb(db => db.Initiatives
             .FirstAsync(x => x.Id == InitiativesCh.GuidSignatureSheetsSubmitted));
         initiative.State.Should().Be(CollectionState.EndedCameAbout);
-        initiative.SensitiveDataExpiryDate.Should().Be(DateOnly.FromDateTime(MockedClock.GetDate(365)));
+        initiative.SensitiveDataExpiryDate.Should().Be(MockedClock.NowDateOnly.AddDays(365));
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesCh.GuidSignatureSheetsSubmitted)
@@ -58,7 +58,7 @@ public class InitiativeCameAboutTest : BaseGrpcTest<InitiativeService.Initiative
         var initiative = await RunOnDb(db => db.Initiatives
             .FirstAsync(x => x.Id == InitiativesMuStGallen.GuidSignatureSheetsSubmitted));
         initiative.State.Should().Be(CollectionState.EndedCameAbout);
-        initiative.SensitiveDataExpiryDate.Should().Be(DateOnly.FromDateTime(MockedClock.GetDate(365)));
+        initiative.SensitiveDataExpiryDate.Should().Be(MockedClock.NowDateOnly.AddDays(365));
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesMuStGallen.GuidSignatureSheetsSubmitted)

@@ -117,7 +117,7 @@ public class UpdateInitiativeTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public async Task CtDuplicateShouldThrow()
     {
         await AssertStatus(
-            async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = "Abwasser Initiative 1")),
+            async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = "Für kantonale Brunch-Treffs (Kantons-Brunch-Initiative)")),
             StatusCode.FailedPrecondition,
             nameof(CollectionAlreadyExistsException));
     }

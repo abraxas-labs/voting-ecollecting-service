@@ -6,18 +6,21 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+        Link: https://www.sg.ch/,
         Type: 2,
         State: 11,
         LogoId: Guid_2,
-        Number: ,
-        Reason: Steuergerechtigkeit im Kanton wahren!,
+        Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
         Address: {
-          ZipCode: 9001,
+          ZipCode: 9000,
           Locality: St.Gallen,
           IsComplete: true,
-          CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-          StreetOrPostOfficeBox: Klosterhof 1
+          CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+          StreetOrPostOfficeBox: Multergasse 8
         },
         ImageId: Guid_3,
         DecreeId: Guid_4,
@@ -28,11 +31,11 @@
           CreatedByName: Test Citizen Creator,
           CreatedByEmail: citizen-creator@example.com
         },
-        Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
         EncryptionKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_Encryption12,
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-13,
+        CollectionStartDate: 2019-12-13,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -48,25 +51,28 @@
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+        Link: https://www.sg.ch/,
         Type: 2,
         State: 12,
         LogoId: Guid_2,
-        Number: ,
-        Reason: Steuergerechtigkeit im Kanton wahren!,
+        Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
         Address: {
-          ZipCode: 9001,
+          ZipCode: 9000,
           Locality: St.Gallen,
           IsComplete: true,
-          CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-          StreetOrPostOfficeBox: Klosterhof 1
+          CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+          StreetOrPostOfficeBox: Multergasse 8
         },
         ImageId: Guid_3,
         DecreeId: Guid_4,
         MacKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -74,11 +80,11 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+        Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
         EncryptionKeyId: KSedVotingECollecting_0b194542-0975-43fb-bdeb-6d875eae85bb_Encryption12,
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-        CollectionEndDate: DateTimeOffset_2,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionEndDate: 2020-06-13,
+        CollectionStartDate: 2019-12-13,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -108,7 +114,7 @@
         Bfs: 3203,
         IsLocked: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
+          CreatedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
@@ -121,7 +127,7 @@
           Invalid: 3
         },
         NextSheetNumber: 9,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       RecordAfter: {
@@ -129,8 +135,8 @@
         Bfs: 3203,
         IsLocked: true,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
-          ModifiedAt: DateTimeOffset_6,
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_4,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -146,7 +152,7 @@
           Invalid: 3
         },
         NextSheetNumber: 9,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       SourceEntityId: Guid_7,
@@ -166,7 +172,7 @@
         Bfs: 3211,
         IsLocked: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
+          CreatedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
@@ -179,7 +185,7 @@
           Invalid: 3
         },
         NextSheetNumber: 9,
-        MunicipalityName: Berg (SG),
+        MunicipalityName: Berg SG,
         ElectronicCitizenCount: 10
       },
       RecordAfter: {
@@ -187,8 +193,8 @@
         Bfs: 3211,
         IsLocked: true,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
-          ModifiedAt: DateTimeOffset_7,
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_5,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -204,7 +210,7 @@
           Invalid: 3
         },
         NextSheetNumber: 9,
-        MunicipalityName: Berg (SG),
+        MunicipalityName: Berg SG,
         ElectronicCitizenCount: 10
       },
       SourceEntityId: Guid_9,
@@ -224,7 +230,7 @@
         Bfs: 3213,
         IsLocked: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
+          CreatedAt: DateTimeOffset_3,
           CreatedById: default-user-id,
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
@@ -245,8 +251,8 @@
         Bfs: 3213,
         IsLocked: true,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_5,
-          ModifiedAt: DateTimeOffset_8,
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_6,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -273,6 +279,64 @@
         CreatedAt: DateTime_4
       },
       Id: Guid_12
+    },
+    {
+      SourceEntityName: CollectionMunicipalities,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_13,
+        Bfs: 3340,
+        IsLocked: false,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: Rapperswil-Jona,
+        ElectronicCitizenCount: 10
+      },
+      RecordAfter: {
+        Id: Guid_13,
+        Bfs: 3340,
+        IsLocked: true,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_7,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        CollectionId: Guid_1,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: Rapperswil-Jona,
+        ElectronicCitizenCount: 10
+      },
+      SourceEntityId: Guid_13,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_14
     }
   ]
 }

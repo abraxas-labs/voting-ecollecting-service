@@ -6,25 +6,28 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 2,
         LogoId: Guid_2,
-        Reason: Kinder müssen geschützt werden!,
+        Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
         Address: {
-          ZipCode: 3011,
-          Locality: Bern,
+          ZipCode: 9014,
+          Locality: St.Gallen,
           IsComplete: true,
-          CommitteeOrPerson: Forum für Menschenrechte,
-          StreetOrPostOfficeBox: Kramgasse 7
+          CommitteeOrPerson: Komitee Frischluftinitiative,
+          StreetOrPostOfficeBox: Naturweg 11
         },
         ImageId: Guid_3,
         Wording:
-Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
-Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
-dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
-
-Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -32,7 +35,7 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Kein Zwang gegen Kinder und Jugendliche,
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -50,29 +53,33 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
         GovernmentDecisionNumber: ,
         SignatureSheetTemplateId: Guid_5,
         MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: ,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://ar.ch/verwaltung/kantonskanzlei/rechtsdienst/politische-rechte/volksinitiativen/haengige-volksinitiativen/,
+        Link: https://www.sg.ch/,
         Type: 1,
         State: 2,
-        Reason: Kinder müssen geschützt werden!,
+        Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
         Address: {
-          ZipCode: 3011,
-          Locality: Bern,
+          ZipCode: 9014,
+          Locality: St.Gallen,
           IsComplete: true,
-          CommitteeOrPerson: Forum für Menschenrechte,
-          StreetOrPostOfficeBox: Kramgasse 7
+          CommitteeOrPerson: Komitee Frischluftinitiative,
+          StreetOrPostOfficeBox: Naturweg 11
         },
         ImageId: Guid_3,
         Wording:
-Das Gesetz, welches die Bildung und Erziehung in der Volksschule regelt, wird um folgenden Inhalt ergänzt:
-Massnahmen, die Kinder und Jugendliche betreffen, insbesondere das Tragen von Masken, Testen, medizinische Untersuchungen und Impfungen,
-dürfen nicht propagiert und nicht ohne die Zustimmung der Eltern oder anderer Erziehungsberechtigter angeordnet werden.
-
-Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu keinen Benachteiligungen führen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -84,7 +91,7 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Kein Zwang gegen Kinder und Jugendliche,
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
         LockedFields: {
           Wording: false,
           Description: false,
@@ -102,6 +109,7 @@ Eine fehlende Zustimmung der Eltern oder anderer Erziehungsberechtigter darf zu 
         GovernmentDecisionNumber: ,
         SignatureSheetTemplateId: Guid_5,
         MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: ,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

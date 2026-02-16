@@ -25,6 +25,16 @@ public class CoreAppConfig
     public UserNotificationsJobConfig UserNotificationsJob { get; set; } = new();
 
     /// <summary>
+    /// Gets or sets the initiative committee member expiry job config.
+    /// </summary>
+    public InitiativeCommitteeMemberExpiryJobConfig InitiativeCommitteeMemberExpiryJob { get; set; } = new();
+
+    /// <summary>
+    /// Gets or sets the collection permission expiry job config.
+    /// </summary>
+    public CollectionPermissionExpiryJobConfig CollectionPermissionExpiryJob { get; set; } = new();
+
+    /// <summary>
     /// Gets or sets public urls.
     /// </summary>
     public UrlConfig Urls { get; set; } = new();

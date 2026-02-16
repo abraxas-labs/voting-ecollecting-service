@@ -16,7 +16,7 @@ public abstract class HasAuditTrailTrackedEntityRepository<TDbContext, TAuditTra
     where TDbContext : DbContext
     where TAuditTrailTrackedEntity : BaseEntity, IAuditTrailTrackedEntity, new()
 {
-    public async Task AuditedUpdateRange(
+    public async Task<int> AuditedUpdateRange(
         Func<IQueryable<TAuditTrailTrackedEntity>, IQueryable<TAuditTrailTrackedEntity>> predicate,
         Action<TAuditTrailTrackedEntity> updateAction)
     {
@@ -36,6 +36,7 @@ public abstract class HasAuditTrailTrackedEntityRepository<TDbContext, TAuditTra
         }
 
         await SaveChangesAndHandleTransaction(transaction, entities.Count * 2);
+        return entities.Count;
     }
 
     public async Task AuditedUpdateRange(
@@ -59,7 +60,8 @@ public abstract class HasAuditTrailTrackedEntityRepository<TDbContext, TAuditTra
 
     public async Task AuditedUpdate(
         TAuditTrailTrackedEntity originalValue,
-        Action updateAction)
+        Action updateAction,
+        int expectedAffectedEntities = 1)
     {
         await using var transaction = await BeginTransactionIfNotActive();
 
@@ -69,7 +71,7 @@ public abstract class HasAuditTrailTrackedEntityRepository<TDbContext, TAuditTra
         updateAction();
         SetEntityState(originalValue, EntityState.Modified);
 
-        await SaveChangesAndHandleTransaction(transaction, 2);
+        await SaveChangesAndHandleTransaction(transaction, 2 * expectedAffectedEntities);
     }
 
     public async Task AuditedUpdate(
@@ -87,7 +89,7 @@ public abstract class HasAuditTrailTrackedEntityRepository<TDbContext, TAuditTra
         await SaveChangesAndHandleTransaction(transaction, 2);
     }
 
-    public async Task AuditedDeleteRange(
+    public async Task<int> AuditedDeleteRange(
         Func<IQueryable<TAuditTrailTrackedEntity>, IQueryable<TAuditTrailTrackedEntity>> predicate)
     {
         await using var transaction = await BeginTransactionIfNotActive();
@@ -102,6 +104,7 @@ public abstract class HasAuditTrailTrackedEntityRepository<TDbContext, TAuditTra
         }
 
         await SaveChangesAndHandleTransaction(transaction, entities.Count * 2);
+        return entities.Count;
     }
 
     public async Task AuditedDelete(TAuditTrailTrackedEntity originalValue)

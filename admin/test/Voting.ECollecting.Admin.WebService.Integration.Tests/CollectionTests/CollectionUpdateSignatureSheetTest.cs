@@ -2,11 +2,11 @@
 // For license information see LICENSE file
 
 using System.ComponentModel.DataAnnotations;
-using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
+using Voting.ECollecting.Admin.WebService.Integration.Tests.Mocks;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
@@ -127,7 +127,7 @@ public class CollectionUpdateSignatureSheetTest : BaseGrpcTest<CollectionSignatu
     {
         await ModifyDbEntities(
             (ReferendumEntity e) => e.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-            e => e.CollectionStartDate = MockedClock.GetDate(1));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
         await AssertStatus(
             async () => await MuSgKontrollzeichenerfasserClient.UpdateAsync(NewValidRequest()),
             StatusCode.NotFound);
@@ -142,6 +142,15 @@ public class CollectionUpdateSignatureSheetTest : BaseGrpcTest<CollectionSignatu
         await AssertStatus(
             async () => await MuSgKontrollzeichenerfasserClient.UpdateAsync(NewValidRequest()),
             StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task ReceivedAtInFutureShouldThrow()
+    {
+        await AssertStatus(
+            async () => await MuSgKontrollzeichenerfasserClient.UpdateAsync(NewValidRequest(x => x.ReceivedAt = MockedClock.GetDate(1).ToProtoDate())),
+            StatusCode.InvalidArgument,
+            "Received at date can't be in the future.");
     }
 
     protected override async Task AuthorizationTestCall(GrpcChannel channel)
@@ -161,7 +170,7 @@ public class CollectionUpdateSignatureSheetTest : BaseGrpcTest<CollectionSignatu
         {
             CollectionId = ReferendumsCtStGallen.IdInCollectionEnabledForCollection,
             SignatureSheetId = _sheet1Id.ToString(),
-            ReceivedAt = DateTime.SpecifyKind(new DateTime(2025, 4, 2), DateTimeKind.Utc).ToTimestamp(),
+            ReceivedAt = MockedClock.GetDate(-1).ToProtoDate(),
             SignatureCountTotal = 20,
         };
         customizer?.Invoke(req);

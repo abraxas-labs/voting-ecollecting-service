@@ -10,6 +10,8 @@
         Token: {
           Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
         },
+        Street: Dorfstrasse,
+        ZipCode: 9305,
         LastName: Hamrick,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -20,19 +22,22 @@
         FirstName: Margarita,
         SortIndex: 0,
         DateOfBirth: 1995-12-10,
+        HouseNumber: 1,
         TokenExpiry: DateTimeOffset_2,
         InitiativeId: Guid_2,
-        PoliticalBfs: 3211,
         ApprovalState: 1,
         SignatureType: 0,
         PoliticalLastName: Hamrick,
         PoliticalFirstName: Margarita,
+        PoliticalResidence: Berg SG,
         MemberSignatureRequested: true
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 3211,
         Email: margarita@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
         LastName: Hamrick,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -48,12 +53,13 @@
         IamUserId: user-id-citizen,
         SortIndex: 0,
         DateOfBirth: 1995-12-10,
+        HouseNumber: 1,
         InitiativeId: Guid_2,
-        PoliticalBfs: 3211,
         ApprovalState: 4,
         SignatureType: 2,
         PoliticalLastName: Hamrick,
         PoliticalFirstName: Margarita,
+        PoliticalResidence: Berg SG,
         MemberSignatureRequested: true
       },
       SourceEntityId: Guid_1,

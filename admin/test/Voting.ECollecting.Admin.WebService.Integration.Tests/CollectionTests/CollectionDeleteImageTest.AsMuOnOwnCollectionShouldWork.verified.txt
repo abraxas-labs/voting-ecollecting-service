@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Veloinfrastruktur,
+        CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -13,7 +13,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Stadtweite Veloinfrastruktur,
+        CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
         CollectionType: Initiative
@@ -23,7 +23,7 @@
     {
       RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Stadtweite Veloinfrastruktur,
+        CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
         CollectionType: Initiative

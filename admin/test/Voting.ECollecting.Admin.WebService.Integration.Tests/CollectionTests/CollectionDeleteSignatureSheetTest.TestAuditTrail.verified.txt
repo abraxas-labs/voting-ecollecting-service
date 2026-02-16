@@ -20,8 +20,9 @@
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        ReceivedAt: DateTimeOffset_2,
-        CollectionMunicipalityId: Guid_2
+        ReceivedAt: 2020-01-09,
+        CollectionMunicipalityId: Guid_2,
+        ModifiedBySuperiorAuthority: false
       },
       SourceEntityId: Guid_1,
       AuditInfo: {

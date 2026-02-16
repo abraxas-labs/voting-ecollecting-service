@@ -7,15 +7,20 @@
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
       Wording:
-Die Stadt St.Gallen wird beauftragt, die Sportanlagen Lerchenfeld umfassend zu sanieren und auszubauen.
-Ziel ist es, den steigenden Bedarf an Sport- und Bewegungsflächen für Schulen, Vereine und die Bevölkerung zu decken.
-Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestaltet werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen
+1 Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
+2 Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
+3 Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
       Collection: {
         Id: Guid_1,
-        Description: Sanierung und Ausbau der Sportanlagen Lerchenfeld,
+        Description: Für gemütliche Leseorte in der Stadt (Bibliothek-Initiative),
         Type: Initiative,
-        Reason: Moderne Sportanlagen für Schulen und Vereine!,
-        Link: https://www.stadt.sg.ch/home/lerchenfeld-sportanlagen.html,
+        Reason:
+St.Gallen hat eine schöne Stadtbibliothek – doch Leseorte im öffentlichen Raum fehlen. Die «Bibliothek-Initiative» will mehr gemütliche Plätze zum Schmökern schaffen.
+Ein Leseort ist mehr als ein Bücherregal – es ist ein Ort der Ruhe, Inspiration und des Lernens. Mit bequemen Sitzgelegenheiten und offenen Bücherschränken entsteht ein Stück Kultur im Alltag.
+Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende Lesezonen in Parks, an Plätzen oder in Quartiern. Wer liest, lernt – und eine Stadt, die Lesen fördert, investiert in Bildung und Wohlbefinden.,
+        Link: https://www.stadt.sg.ch/,
         SignatureSheetTemplateGenerated: true,
         State: Submitted,
         Address: {
@@ -52,7 +57,8 @@ Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestalt
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: 
     },
     {
       Id: Guid_2,
@@ -61,15 +67,20 @@ Die Anlagen sollen barrierefrei, energieeffizient und vielseitig nutzbar gestalt
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
       Wording:
-Diese Initiative fordert mehr Sportanlagen in der Stadt St.Gallen.
-Die Sportinfrastruktur soll ausgebaut und der Zugang zu Sportangeboten
-verbessert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur
+1 Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
+2 Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
+3 Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
       Collection: {
         Id: Guid_2,
-        Description: Stadtweite Sportinitiative,
+        Description: Für lebendige Marktplätze (Marktplatz-Initiative),
         Type: Initiative,
-        Reason: Mehr Sport für alle!,
-        Link: https://www.stadt.sg.ch/home/sportinitiative.html,
+        Reason:
+St.Gallen hat schöne Plätze, doch regelmässige Märkte mit frischen, lokalen Produkten fehlen oft. Die «Marktplatz-Initiative» will mehr Leben in die Stadt bringen.
+Ein Wochenmarkt ist mehr als Gemüse und Käse – es ist ein Ort der Begegnung, des Austauschs und der regionalen Vielfalt. Mit Blumen, Backwaren und Handwerk entsteht ein Stück Marktkultur.
+Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut organisierte Märkte auf öffentlichen Plätzen. Frische Produkte, freundliche Gesichter und ein bisschen Marktflair – das tut der Stadt gut.,
+        Link: https://www.stadt.sg.ch/,
         SignatureSheetTemplateGenerated: true,
         State: Submitted,
         Address: {
@@ -106,7 +117,8 @@ verbessert werden.,
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: 
     }
   ]
 }

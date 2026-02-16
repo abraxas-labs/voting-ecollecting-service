@@ -14,7 +14,6 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
     {
         var member = Mapper.MapToInitiativeCommitteeMember(memberEntity);
         member.Residence = domainOfInfluencesByBfs.GetValueOrDefault(memberEntity.Bfs)?.Name ?? string.Empty;
-        member.PoliticalResidence = domainOfInfluencesByBfs.GetValueOrDefault(memberEntity.PoliticalBfs)?.Name ?? string.Empty;
         return member;
     }
 }

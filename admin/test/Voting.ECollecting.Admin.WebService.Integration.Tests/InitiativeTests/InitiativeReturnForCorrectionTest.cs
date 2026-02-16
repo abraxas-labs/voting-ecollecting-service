@@ -38,7 +38,7 @@ public class InitiativeReturnForCorrectionTest : BaseGrpcTest<InitiativeService.
         var initiative = await RunOnDb(db => db.Initiatives
             .FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeUnderReview));
         initiative.State.Should().Be(CollectionState.ReturnedForCorrection);
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesCtStGallen.GuidLegislativeUnderReview)
@@ -67,7 +67,7 @@ public class InitiativeReturnForCorrectionTest : BaseGrpcTest<InitiativeService.
         var initiative = await RunOnDb(db => db.Initiatives
             .FirstAsync(x => x.Id == InitiativesMuStGallen.GuidUnderReview));
         initiative.State.Should().Be(CollectionState.ReturnedForCorrection);
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == InitiativesMuStGallen.GuidUnderReview)

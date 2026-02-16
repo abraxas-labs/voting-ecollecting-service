@@ -6,11 +6,15 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+        Link: https://www.admin.ch/,
         Type: 1,
         State: 11,
         LogoId: Guid_2,
-        Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+        Reason:
+Brettspiele fördern Gemeinschaft – doch traditionelle Schweizer Spiele geraten in Vergessenheit. Diese Initiative will Schweizer Brettspielkultur wiederbeleben.
+Brettspiele sind mehr als Zeitvertreib – sie sind Familienerlebnis, Strategietraining und Kulturgut. Mit Förderung traditioneller Spiele wie Eile mit Weile entsteht neues Interesse.
+Die Initiative fordert keine Spielpflicht, sondern Unterstützung für Spieleabende und Turniere. Ein bisschen mehr Brettspiel-Kultur – das bringt Generationen zusammen und fördert soziale Interaktion.
+Denn wer spielt, bleibt geistig fit.,
         Address: {
           ZipCode: 12345,
           Locality: Test City,
@@ -20,10 +24,11 @@
         },
         ImageId: Guid_3,
         Wording:
-#2
 Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+Art. 68a (neu) – Förderung der Brettspielkultur
+1 Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+2 Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+3 Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
         MacKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -32,16 +37,16 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
           CreatedByEmail: citizen-creator@example.com
         },
         SubTypeId: Guid_4,
-        Description: Für den öffentlichen Verkehr (2),
+        Description: Für Schweizer Brettspiele (Brettspiel-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -54,16 +59,21 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 10000,
+        GovernmentDecisionNumberLower: che-2023-0010,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
+        Link: https://www.admin.ch/,
         Type: 1,
         State: 11,
         LogoId: Guid_2,
-        Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
+        Reason:
+Brettspiele fördern Gemeinschaft – doch traditionelle Schweizer Spiele geraten in Vergessenheit. Diese Initiative will Schweizer Brettspielkultur wiederbeleben.
+Brettspiele sind mehr als Zeitvertreib – sie sind Familienerlebnis, Strategietraining und Kulturgut. Mit Förderung traditioneller Spiele wie Eile mit Weile entsteht neues Interesse.
+Die Initiative fordert keine Spielpflicht, sondern Unterstützung für Spieleabende und Turniere. Ein bisschen mehr Brettspiel-Kultur – das bringt Generationen zusammen und fördert soziale Interaktion.
+Denn wer spielt, bleibt geistig fit.,
         Address: {
           ZipCode: 12345,
           Locality: Test City,
@@ -73,14 +83,15 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
         },
         ImageId: Guid_3,
         Wording:
-#2
 Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
+Art. 68a (neu) – Förderung der Brettspielkultur
+1 Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+2 Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+3 Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
         MacKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_4,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
@@ -89,16 +100,16 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
           ModifiedByEmail: default-user@example.com
         },
         SubTypeId: Guid_4,
-        Description: Für den öffentlichen Verkehr (2),
+        Description: Für Schweizer Brettspiele (Brettspiel-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
-        CollectionEndDate: DateTimeOffset_2,
+        CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
-        CollectionStartDate: DateTimeOffset_3,
+        CollectionStartDate: 2019-12-10,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -111,6 +122,7 @@ Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf 
         SignatureSheetTemplateId: Guid_5,
         AdmissibilityDecisionState: 3,
         MaxElectronicSignatureCount: 10000,
+        GovernmentDecisionNumberLower: che-2023-0010,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

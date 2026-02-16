@@ -6,7 +6,7 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 17,
-        Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+        Link: https://www.sg.ch/,
         State: 1,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -18,10 +18,10 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
-        CollectionEndDate: DateTimeOffset_3,
+        Description: Kantonsratsbeschluss über die Pflicht zur Installation von Windklangspiel an allen Balkonen zur Förderung harmonischer Klangkultur im Kanton,
+        CollectionEndDate: 2021-01-10,
         MinSignatureCount: 3000,
-        CollectionStartDate: DateTimeOffset_4,
+        CollectionStartDate: 2020-07-10,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -46,9 +46,9 @@
           ModifiedByEmail: default-user@example.com
         },
         Description: Kantonsratsbeschluss Revision Wassergesetz (33-43.34) UPDATED,
-        CollectionEndDate: DateTimeOffset_5,
+        CollectionEndDate: 2024-07-05,
         MinSignatureCount: 50000,
-        CollectionStartDate: DateTimeOffset_6,
+        CollectionStartDate: 2024-05-05,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
           IntegritySignature: ,

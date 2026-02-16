@@ -46,8 +46,5 @@ public class AuditInfo
     /// <summary>
     /// Gets or sets the timestamp when the last modification of this entity happened.
     /// </summary>
-    public DateTime? ModifiedAt { get; set; } = null!;
-
-    public AuditInfo Clone()
-        => (AuditInfo)MemberwiseClone();
+    public DateTime? ModifiedAt { get; set; }
 }

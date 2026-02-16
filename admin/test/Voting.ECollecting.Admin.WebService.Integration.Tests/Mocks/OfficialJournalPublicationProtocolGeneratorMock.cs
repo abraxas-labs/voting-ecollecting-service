@@ -17,5 +17,5 @@ public class OfficialJournalPublicationProtocolGeneratorMock(IDmDocDataSerialize
         => DataContainerBuilder.BuildProtocolDataContainer(data);
 
     protected override string BuildFileName(ECollectingProtocolTemplateData data)
-        => $"{data.Collection.Description}_{config.OfficialJournalPublicationProtocolFileName}";
+        => $"{data.Description}_{config.OfficialJournalPublicationProtocolFileName}";
 }

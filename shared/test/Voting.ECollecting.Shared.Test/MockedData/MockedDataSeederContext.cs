@@ -11,5 +11,6 @@ public static class MockedDataSeederContext
     public static readonly SeederContext Default = new(
         MockedUserContext.Default,
         MockedTenantContext.Default,
-        MockedClock.UtcNowDate);
+        MockedClock.UtcNowDate,
+        MockedClock.NowDateOnly);
 }

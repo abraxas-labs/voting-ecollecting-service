@@ -15,5 +15,6 @@
   CanRequestInformalReview: false,
   IsRequestInformalReviewVisible: false,
   CanDownloadElectronicSignaturesProtocol: false,
-  CanEditSubType: true
+  CanEditSubType: true,
+  CanDownloadCommitteeList: true
 }

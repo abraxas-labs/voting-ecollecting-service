@@ -27,5 +27,9 @@ public class InitiativeCommitteeMemberModelBuilder : IEntityTypeConfiguration<In
 
         builder.Property(x => x.Token)
             .HasConversion<string?>(x => x, x => x!);
+
+        builder.Property(x => x.TokenExpiry).HasUtcConversion();
+
+        builder.HasIndex(x => x.ApprovalState);
     }
 }

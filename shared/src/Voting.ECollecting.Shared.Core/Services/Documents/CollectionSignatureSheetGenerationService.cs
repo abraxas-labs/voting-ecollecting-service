@@ -55,7 +55,8 @@ public abstract class CollectionSignatureSheetGenerationService(
         var committeeMembers = initiative.CommitteeMembers
             .Select(x => initiativeCommitteeService.EnrichCommitteeMember(x, domainOfInfluencesByBfs))
             .Where(x => x.ApprovalState == InitiativeCommitteeMemberApprovalState.Approved)
-            .OrderBy(x => x.SortIndex);
+            .OrderBy(x => x.SortIndex)
+            .ThenBy(x => x.PoliticalLastName);
 
         return await initiativeSignatureSheetTemplateGenerator.GenerateFile(new InitiativeTemplateData(initiative, committeeMembers));
     }

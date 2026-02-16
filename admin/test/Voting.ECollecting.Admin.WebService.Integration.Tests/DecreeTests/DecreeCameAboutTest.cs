@@ -40,7 +40,7 @@ public class DecreeCameAboutTest : BaseGrpcTest<DecreeService.DecreeServiceClien
             .Include(x => x.Collections)
             .FirstAsync(x => x.Id == DecreesCh.GuidInCollection));
         decree.State.Should().Be(DecreeState.EndedCameAbout);
-        decree.SensitiveDataExpiryDate.Should().Be(DateOnly.FromDateTime(MockedClock.GetDate(365)));
+        decree.SensitiveDataExpiryDate.Should().Be(MockedClock.NowDateOnly.AddDays(365));
         decree.Collections.Should().AllSatisfy(x => x.State.Should().Be(CollectionState.EndedCameAbout));
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
@@ -61,7 +61,7 @@ public class DecreeCameAboutTest : BaseGrpcTest<DecreeService.DecreeServiceClien
             .Include(x => x.Collections)
             .FirstAsync(x => x.Id == DecreesMuStGallen.GuidInCollectionWithReferendum));
         decree.State.Should().Be(DecreeState.EndedCameAbout);
-        decree.SensitiveDataExpiryDate.Should().Be(DateOnly.FromDateTime(MockedClock.GetDate(365)));
+        decree.SensitiveDataExpiryDate.Should().Be(MockedClock.NowDateOnly.AddDays(365));
         decree.Collections.Should().AllSatisfy(x => x.State.Should().Be(CollectionState.EndedCameAbout));
 
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
@@ -110,7 +110,7 @@ public class DecreeCameAboutTest : BaseGrpcTest<DecreeService.DecreeServiceClien
     {
         await ModifyDbEntities<DecreeEntity>(
             e => e.Id == DecreesCh.GuidInCollection,
-            e => e.CollectionStartDate = MockedClock.UtcNowDate.AddDays(2));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(2));
 
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.CameAboutAsync(NewValidRequest()),

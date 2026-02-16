@@ -5,6 +5,7 @@ using FluentAssertions;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.InitiativeTests;
@@ -33,7 +34,7 @@ public class InitiativeGetDocumentsTest : BaseRestTest
             async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(InitiativesCtStGallen.IdUnitySignatureSheetsSubmitted)),
             "export.zip");
 
-        resp.Count.Should().Be(3);
+        resp.Count.Should().Be(4);
         await Verify(resp);
     }
 
@@ -44,7 +45,22 @@ public class InitiativeGetDocumentsTest : BaseRestTest
             async () => await MuSgStammdatenverwalterClient.GetAsync(BuildUrl(InitiativesMuStGallen.IdSignatureSheetsSubmitted)),
             "export.zip");
 
-        resp.Should().HaveCount(1);
+        resp.Should().HaveCount(2);
+    }
+
+    [Fact]
+    public async Task ShouldGetWithReachedMaxElectronicSignatureCount()
+    {
+        await ModifyDbEntities<InitiativeEntity>(
+            x => x.Id == InitiativesMuStGallen.GuidSignatureSheetsSubmitted,
+            x => x.MaxElectronicSignatureCount = 2);
+
+        var resp = await AssertZipDownloadAsStringEntries(
+            async () => await MuSgStammdatenverwalterClient.GetAsync(BuildUrl(InitiativesMuStGallen.IdSignatureSheetsSubmitted)),
+            "export.zip");
+
+        resp.Count.Should().Be(2);
+        await Verify(resp);
     }
 
     protected override Task<HttpResponseMessage> AuthorizationTestCall(HttpClient httpClient)

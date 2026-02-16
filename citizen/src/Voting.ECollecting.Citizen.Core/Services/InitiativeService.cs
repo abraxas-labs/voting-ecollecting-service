@@ -68,6 +68,7 @@ public class InitiativeService : IInitiativeService
     {
         var entities = await _initiativeRepository.Query()
             .WhereCanRead(_permissionService)
+            .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes)
             .IncludePermission(_permissionService.UserId)
             .Include(x => x.CollectionCount)
             .OrderByDescending(x => x.AuditInfo.CreatedAt)
@@ -88,6 +89,17 @@ public class InitiativeService : IInitiativeService
 
     public async Task<Guid> Create(DomainOfInfluenceType domainOfInfluenceType, string description, Guid? subTypeId, string bfs)
     {
+        var ownerPermission = new CollectionPermissionEntity
+        {
+            FirstName = _permissionService.UserFirstName,
+            LastName = _permissionService.UserLastName,
+            IamFirstName = _permissionService.UserFirstName,
+            IamLastName = _permissionService.UserLastName,
+            IamUserId = _permissionService.UserId,
+            Email = _permissionService.UserEmail!,
+            Role = CollectionPermissionRole.Owner,
+            State = CollectionPermissionState.Accepted,
+        };
         var initiative = new InitiativeEntity
         {
             DomainOfInfluenceType = domainOfInfluenceType,
@@ -96,6 +108,7 @@ public class InitiativeService : IInitiativeService
             Bfs = bfs,
             CollectionCount = new CollectionCountEntity(),
             SignatureSheetTemplateGenerated = true,
+            Permissions = [ownerPermission],
         };
 
         ValidateInitiative(initiative);
@@ -143,20 +156,22 @@ public class InitiativeService : IInitiativeService
 
         _permissionService.SetCreated(initiative);
         _permissionService.SetCreated(initiative.CollectionCount);
+        _permissionService.SetCreated(ownerPermission);
         await _initiativeRepository.Create(initiative);
         return initiative.Id;
     }
 
-    public async Task<Guid> SetInPreparation(string governmentDecisionNumber)
+    public async Task<Guid> SetInPreparation(string secureIdNumber)
     {
         var existingInitiative = await _initiativeRepository.Query()
-            .Where(x => x.GovernmentDecisionNumber.Equals(governmentDecisionNumber) && x.AdmissibilityDecisionState != null)
+            .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes)
+            .Where(x => secureIdNumber.Equals(x.SecureIdNumber) && x.AdmissibilityDecisionState != null)
             .FirstOrDefaultAsync()
-            ?? throw new InitiativeNotFoundException(governmentDecisionNumber);
+            ?? throw new InitiativeNotFoundException(secureIdNumber);
 
         if (existingInitiative.State != CollectionState.PreRecorded)
         {
-            throw new InitiativeAlreadyInPreparationException(governmentDecisionNumber);
+            throw new InitiativeAlreadyInPreparationException(secureIdNumber);
         }
 
         if (existingInitiative.AdmissibilityDecisionState is AdmissibilityDecisionState.Rejected)
@@ -209,7 +224,7 @@ public class InitiativeService : IInitiativeService
 
         if (includeIsSigned)
         {
-            initiative.IsSigned = await _initiativeSignatureService.IsCollectionSigned(initiative);
+            (initiative.IsSigned, initiative.SignatureType) = await _initiativeSignatureService.IsCollectionSigned(initiative);
             initiative.SignAcceptedAcrs = _config.Acr.SignCollection;
         }
 
@@ -369,16 +384,16 @@ public class InitiativeService : IInitiativeService
 
     private void SetStatesAndPermissions(IEnumerable<Initiative> initiatives)
     {
-        var utcNow = _timeProvider.GetUtcNowDateTime();
+        var today = _timeProvider.GetUtcTodayDateOnly();
         foreach (var initiative in initiatives)
         {
-            SetStateAndPermission(initiative, utcNow);
+            SetStateAndPermission(initiative, today);
         }
     }
 
-    private void SetStateAndPermission(Initiative initiative, DateTime? utcNow = null)
+    private void SetStateAndPermission(Initiative initiative, DateOnly? today = null)
     {
-        initiative.SetPeriodState(utcNow ?? _timeProvider.GetUtcNowDateTime());
+        initiative.SetPeriodState(today ?? _timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(initiative);
         _collectionService.SetCollectionCount(initiative);
     }
@@ -411,12 +426,8 @@ public class InitiativeService : IInitiativeService
                 sb.Append(')');
             }
 
-            if (domainOfInfluencesByBfs.TryGetValue(member.PoliticalBfs, out var domainOfInfluence))
-            {
-                sb.Append(", ");
-                sb.Append(domainOfInfluence.Name);
-            }
-
+            sb.Append(", ");
+            sb.Append(member.PoliticalResidence);
             sb.Append("; ");
         }
 

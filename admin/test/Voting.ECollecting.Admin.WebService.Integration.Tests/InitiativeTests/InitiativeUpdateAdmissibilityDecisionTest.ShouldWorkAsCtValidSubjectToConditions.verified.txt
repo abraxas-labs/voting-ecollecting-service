@@ -4,13 +4,21 @@
   Bfs: 17,
   MinSignatureCount: 4000,
   MaxElectronicSignatureCount: 500,
-  Wording: Die Initiative fordert mehr Parks, Fahrradwege und emissionsfreie Zonen in der Stadt.,
+  Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 219 (neu) – Förderung kantonaler Velorouten
+1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
   Collection: {
     Id: Guid_1,
-    Description: Initiative für nachhaltige Stadtentwicklung,
+    Description: Für kantonale Velorouten (Velorouten-Initiative),
     Type: Initiative,
-    Reason: Förderung von Grünflächen und nachhaltiger Mobilität in urbanen Gebieten.,
-    Link: https://www.stadtentwicklung-sg.ch/initiative,
+    Reason:
+Velofahren ist gesund und umweltfreundlich – doch durchgehende Velorouten fehlen im Kanton. Die «Velorouten-Initiative» will ein Netz sicherer, durchgängiger Velowege schaffen.
+Eine Veloroute ist mehr als Streifen auf der Strasse – sie ist Mobilität, Freiheit und Klimaschutz. Mit guter Beschilderung und sicherer Führung entstehen attraktive Verbindungen.
+Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowege zwischen Gemeinden. Ein bisschen mehr Veloverkehr – das ist gut für Gesundheit und Umwelt.,
+    Link: https://www.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -26,10 +34,10 @@
     },
     State: Submitted,
     Address: {
-      CommitteeOrPerson: Schweizer Verkehrsforum,
-      StreetOrPostOfficeBox: Bahnhofstrasse 58,
-      ZipCode: 8001,
-      Locality: Zürich
+      CommitteeOrPerson: Komitee Velorouten-Initiative,
+      StreetOrPostOfficeBox: Veloweg 28,
+      ZipCode: 9220,
+      Locality: Bischofszell
     },
     IsElectronicSubmission: true,
     InformalReviewRequested: false,
@@ -68,5 +76,6 @@
     Wording: false,
     Description: false,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St. Gallen
 }

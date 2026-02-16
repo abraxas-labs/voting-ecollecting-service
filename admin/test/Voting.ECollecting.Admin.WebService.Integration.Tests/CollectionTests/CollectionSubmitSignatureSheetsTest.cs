@@ -102,7 +102,7 @@ public class CollectionSubmitSignatureSheetsTest : BaseGrpcTest<CollectionServic
 
             var result = await GetAuditTrailEntries();
             result.AuditTrailEntries.Count(e => e.SourceEntityName == "CollectionSignatureSheets" && e.Action == "Deleted")
-                .Should().Be(9);
+                .Should().Be(12);
 
             result = new AuditTrailEntriesResult(
                 result.AuditTrailEntries.Where(e => !(e.SourceEntityName == "CollectionSignatureSheets" && e.Action == "Deleted"))
@@ -197,7 +197,7 @@ public class CollectionSubmitSignatureSheetsTest : BaseGrpcTest<CollectionServic
     {
         await ModifyDbEntities<ReferendumEntity>(
             e => e.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-            e => e.CollectionStartDate = MockedClock.UtcNowDate.AddDays(2));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(2));
 
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.SubmitSignatureSheetsAsync(NewValidRequest()),

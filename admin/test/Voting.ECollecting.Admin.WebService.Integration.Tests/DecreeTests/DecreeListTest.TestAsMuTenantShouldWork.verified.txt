@@ -4,18 +4,20 @@
       Id: Guid_1,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
-      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Verkehrsinfrastruktur,
+      Description: Gemeinderatsbeschluss über die Anbringung von QR-Codes auf allen öffentlichen Kunstwerken und Graffiti-Wänden für digitale Künstlerprofile und Audioguides,
       CollectionStartDate: {
-        Seconds: 1594386730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 7,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1610284330,
-        Nanos: 200000000
+        Year: 2021,
+        Month: 1,
+        Day: 10
       },
       MinSignatureCount: 300,
       MaxElectronicSignatureCount: 30,
-      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+      Link: https://www.stadt.sg.ch/,
       PeriodState: Published,
       UserPermissions: {
         CanEdit: true,
@@ -24,50 +26,56 @@
         CanAddCollection: false,
         CanDelete: false
       },
-      State: CollectionApplicable
+      State: CollectionApplicable,
+      DomainOfInfluenceName: St.Gallen
     },
     {
       Id: Guid_2,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
-      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+      Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
       CollectionStartDate: {
-        Seconds: 1575983530,
-        Nanos: 200000000
+        Year: 2019,
+        Month: 12,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1594386730,
-        Nanos: 200000000
+        Year: 2020,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 300,
       MaxElectronicSignatureCount: 30,
-      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+      Link: https://www.stadt.sg.ch/,
       PeriodState: InCollection,
       UserPermissions: {
         CanEdit: false,
-        CanFinish: true,
-        CanGenerateDocuments: true,
+        CanFinish: false,
+        CanGenerateDocuments: false,
         CanAddCollection: true,
         CanDelete: false
       },
-      State: CollectionApplicable
+      State: CollectionApplicable,
+      DomainOfInfluenceName: St.Gallen
     },
     {
       Id: Guid_3,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
-      Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Kultur,
+      Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
       CollectionStartDate: {
-        Seconds: 1499692330,
-        Nanos: 200000000
+        Year: 2017,
+        Month: 7,
+        Day: 10
       },
       CollectionEndDate: {
-        Seconds: 1531228330,
-        Nanos: 200000000
+        Year: 2018,
+        Month: 7,
+        Day: 10
       },
       MinSignatureCount: 300,
       MaxElectronicSignatureCount: 30,
-      Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/kultur.html,
+      Link: https://www.stadt.sg.ch/,
       PeriodState: Expired,
       UserPermissions: {
         CanEdit: false,
@@ -82,7 +90,8 @@
         Year: 2020,
         Month: 1,
         Day: 3
-      }
+      },
+      DomainOfInfluenceName: St.Gallen
     }
   ]
 }

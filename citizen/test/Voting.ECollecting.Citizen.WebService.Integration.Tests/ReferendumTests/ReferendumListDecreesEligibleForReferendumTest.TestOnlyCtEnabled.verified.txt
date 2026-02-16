@@ -7,18 +7,20 @@
           Id: Guid_1,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Verkehrsinfrastruktur,
+          Description: Kantonsratsbeschluss über die Pflicht zur Installation von Windklangspiel an allen Balkonen zur Förderung harmonischer Klangkultur im Kanton,
           CollectionStartDate: {
-            Seconds: 1594386730,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1610284330,
-            Nanos: 200000000
+            Year: 2021,
+            Month: 1,
+            Day: 10
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240922/verkehr.html,
+          Link: https://www.sg.ch/,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -30,40 +32,46 @@
           Id: Guid_2,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+          Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
           CollectionStartDate: {
-            Seconds: 1581599530,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 2,
+            Day: 13
           },
           CollectionEndDate: {
-            Seconds: 1592053930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 13
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/1231sa/steuern.html,
+          Link: https://www.sg.ch/,
           PeriodState: Published,
           Collections: [
             {
               Id: Guid_3,
               Decree: {
                 Id: Guid_2,
-                Description: Kantonsratsbeschluss über die Abschaffung der kostenfreien Schule,
+                Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
                 PeriodState: Published,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_3,
-                Description: Gerechtigkeit für alle,
+                Description: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
                 Type: Referendum,
-                Reason: Gerechtigkeit für alle im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/555456/steuern.html,
+                Reason:
+Der Kantonsrat hat beschlossen, digitale Wecker aus Schlafzimmern zu verbannen, um analoges Zeitempfinden und besseren Schlaf zu fördern.
+Das Referendumskomitee findet diese Einmischung in die Privatsphäre unangemessen.
+Wie jemand aufwacht, sollte seine eigene Entscheidung bleiben – ob mit Smartphone, mechanischem Wecker oder Sonnenaufgang.
+Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Technik und das Recht, selbst zu entscheiden, wie man den Tag beginnt.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: InPreparation,
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für Fairness im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 2,
+                  CommitteeOrPerson: Komitee Freie Zeitwahl,
+                  StreetOrPostOfficeBox: Neugasse 11,
                   ZipCode: 9000,
                   Locality: St.Gallen
                 },
@@ -84,21 +92,21 @@
                   CanRequestInformalReview: true,
                   IsRequestInformalReviewVisible: true,
                   CanDownloadElectronicSignaturesProtocol: false,
-                  CanEditSubType: false
+                  CanEditSubType: false,
+                  CanDownloadCommitteeList: true
                 },
                 IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 IsSigned: false,
                 HasIsSigned: false
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
           ],
           UserPermissions: {
             CanCreateReferendum: false,
-            HasMaximumReferendumsBeenReached: true
+            HasMaximumReferendumsBeenReached: false
           },
           State: CollectionApplicable
         },
@@ -106,35 +114,41 @@
           Id: Guid_4,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
           CollectionStartDate: {
-            Seconds: 1576242730,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 13
           },
           CollectionEndDate: {
-            Seconds: 1592053930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 13
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          Link: https://www.sg.ch/,
           PeriodState: InCollection,
           Collections: [
             {
               Id: Guid_5,
               Decree: {
                 Id: Guid_4,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_5,
-                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
-                Reason: Steuergerechtigkeit im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+                Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
@@ -144,26 +158,47 @@
                   ElectronicCitizenCount: 101
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+                  StreetOrPostOfficeBox: Multergasse 8,
+                  ZipCode: 9000,
                   Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Owner,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: true,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: true,
+                  CanEditPermissions: true,
+                  CanCreateMessages: true,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false,
+                  CanDownloadCommitteeList: true
                 },
                 IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
@@ -171,46 +206,70 @@
               Id: Guid_7,
               Decree: {
                 Id: Guid_4,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_7,
-                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
-                Reason: Steuergerechtigkeit im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                Reason:
+Ein zweites Komitee lehnt die obligatorischen Pflanzen-Workshops ab, weil sie gesundheitliche Probleme verursachen können.
+Viele Menschen leiden unter Pollenallergien, Schimmelsporen oder Reaktionen auf bestimmte Pflanzen.
+Zwang zu Grünpflanzen kann Asthma und Allergien verschlimmern.
+Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft und das Recht, allergenfrei zu wohnen.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
-                State: SignatureSheetsSubmitted,
+                State: EnabledForCollection,
                 AttestedCollectionCount: {
                   Id: Guid_8,
                   CollectionId: Guid_7,
-                  HasTotalCitizenCount: false,
-                  ElectronicCitizenCount: 61
+                  HasTotalCitizenCount: false
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Verein Allergiefreies Wohnen,
+                  StreetOrPostOfficeBox: Rorschacher Strasse 88,
+                  ZipCode: 9000,
                   Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Owner,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: true,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: true,
+                  CanEditPermissions: true,
+                  CanCreateMessages: true,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: false,
+                  CanEditSubType: false,
+                  CanDownloadCommitteeList: true
                 },
                 IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
@@ -218,58 +277,109 @@
               Id: Guid_9,
               Decree: {
                 Id: Guid_4,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
                 Id: Guid_9,
-                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
                 Type: Referendum,
-                Reason: Föderalismus wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                Reason:
+Ein drittes Komitee lehnt die obligatorischen Workshops ab, weil sie das Budget unnötig belasten.
+Die Kosten für Kursleiter, Räumlichkeiten und Material gehen in die Millionen – Geld, das anderswo fehlt.
+Bildung ist wichtig, aber nicht bei jedem Thema muss der Staat eingreifen.
+Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und die Überzeugung, dass manche Dinge freiwillig besser funktionieren.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
-                State: EnabledForCollection,
+                State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
                   Id: Guid_10,
                   CollectionId: Guid_9,
-                  HasTotalCitizenCount: false
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 61
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee Vernünftige Ausgaben,
+                  StreetOrPostOfficeBox: Spisertor 3,
+                  ZipCode: 9000,
                   Locality: St.Gallen
+                },
+                UserPermissions: {
+                  Role: Owner,
+                  CanEdit: false,
+                  CanEditSignatureSheetTemplate: false,
+                  CanDeleteSignatureSheetTemplate: false,
+                  CanGenerateSignatureSheetTemplatePreview: false,
+                  CanEditPermissions: false,
+                  CanCreateMessages: false,
+                  CanSubmit: false,
+                  IsSubmitVisible: false,
+                  CanFlagForReview: false,
+                  IsFlagForReviewVisible: false,
+                  CanRegister: false,
+                  CanWithdraw: false,
+                  CanRequestInformalReview: false,
+                  IsRequestInformalReviewVisible: false,
+                  CanDownloadElectronicSignaturesProtocol: true,
+                  CanEditSubType: false,
+                  CanDownloadCommitteeList: true
                 },
                 IsElectronicSubmission: true,
                 InformalReviewRequested: false,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
           ],
           UserPermissions: {
             CanCreateReferendum: true,
-            HasMaximumReferendumsBeenReached: false
+            HasMaximumReferendumsBeenReached: true
           },
           AttestedCollectionCount: {
             Id: Guid_Empty,
             CollectionId: Guid_Empty,
             HasTotalCitizenCount: false,
             ElectronicCitizenCount: 162
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_11,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
+          CollectionStartDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 13
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 6,
+            Day: 13
+          },
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300,
+          Link: https://www.sg.ch/,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
           },
           State: CollectionApplicable
         }

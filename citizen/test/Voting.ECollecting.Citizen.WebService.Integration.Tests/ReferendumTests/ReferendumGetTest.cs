@@ -8,6 +8,7 @@ using Voting.ECollecting.Citizen.Adapter.VotingStimmregister;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
+using Voting.ECollecting.Proto.Citizen.Services.V1.Models;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
@@ -97,6 +98,7 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
         });
         referendum.Collection.HasIsSigned.Should().BeTrue();
         referendum.Collection.IsSigned.Should().BeFalse();
+        referendum.Collection.SignatureType.Should().Be(CollectionSignatureType.Unspecified);
         await Verify(referendum);
     }
 
@@ -119,6 +121,7 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
         });
         referendum.Collection.HasIsSigned.Should().BeTrue();
         referendum.Collection.IsSigned.Should().BeTrue();
+        referendum.Collection.SignatureType.Should().Be(CollectionSignatureType.Electronic);
         referendum.HasIsOtherReferendumOfSameDecreeSigned.Should().BeTrue();
         referendum.IsOtherReferendumOfSameDecreeSigned.Should().BeFalse();
         await Verify(referendum);
@@ -143,8 +146,29 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
         });
         referendum.Collection.HasIsSigned.Should().BeTrue();
         referendum.Collection.IsSigned.Should().BeFalse();
+        referendum.Collection.SignatureType.Should().Be(CollectionSignatureType.Unspecified);
         referendum.HasIsOtherReferendumOfSameDecreeSigned.Should().BeTrue();
         referendum.IsOtherReferendumOfSameDecreeSigned.Should().BeTrue();
+        await Verify(referendum);
+    }
+
+    [Fact]
+    public async Task ShouldWorkWithOtherReferendumInPreparation()
+    {
+        var client = CreateCitizenClient(
+            acrValue: CitizenAuthMockDefaults.AcrValue400,
+            ssn: VotingStimmregisterAdapterMock.VotingRightPerson12Ssn);
+
+        var referendum = await client.GetAsync(new GetReferendumRequest
+        {
+            Id = ReferendumsCtStGallen.IdInCollectionEnabledForCollection,
+            IncludeIsSigned = true,
+        });
+        referendum.Collection.HasIsSigned.Should().BeTrue();
+        referendum.Collection.IsSigned.Should().BeFalse();
+        referendum.Collection.SignatureType.Should().Be(CollectionSignatureType.Unspecified);
+        referendum.HasIsOtherReferendumOfSameDecreeSigned.Should().BeTrue();
+        referendum.IsOtherReferendumOfSameDecreeSigned.Should().BeFalse();
         await Verify(referendum);
     }
 

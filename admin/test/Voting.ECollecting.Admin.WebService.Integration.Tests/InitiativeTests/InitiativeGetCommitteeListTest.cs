@@ -16,6 +16,10 @@ public class InitiativeGetCommitteeListTest : BaseRestTest
         InitiativesCtStGallen.GuidLegislativeInPreparation,
         "committee-list-1.pdf").ToString();
 
+    private readonly string _idCommitteeListCtEnabledForCollection = Files.BuildGuid(
+        InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
+        "committee-list-1.pdf").ToString();
+
     private readonly string _idCommitteeListMu = Files.BuildGuid(
         InitiativesMuStGallen.GuidInPreparation,
         "committee-list-1.pdf").ToString();
@@ -28,7 +32,7 @@ public class InitiativeGetCommitteeListTest : BaseRestTest
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesMuStGallen.GuidInPreparation));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting, InitiativesMuStGallen.GuidInPreparation));
     }
 
     [Fact]
@@ -41,7 +45,7 @@ public class InitiativeGetCommitteeListTest : BaseRestTest
     [Fact]
     public async Task AsMuOnCtInitiativeShouldWork()
     {
-        var data = await MuSgStammdatenverwalterClient.GetByteArrayAsync(BuildUrl(InitiativesCtStGallen.IdLegislativeInPreparation, _idCommitteeListCt));
+        var data = await MuSgStammdatenverwalterClient.GetByteArrayAsync(BuildUrl(InitiativesCtStGallen.IdUnityEnabledForCollectionCollecting, _idCommitteeListCtEnabledForCollection));
         data.Should().BeEquivalentTo(Files.PlaceholderCommitteeListPdf);
     }
 
@@ -57,6 +61,14 @@ public class InitiativeGetCommitteeListTest : BaseRestTest
     {
         await AssertStatus(
             async () => await MuGoldachStammdatenverwalterClient.GetAsync(BuildUrl(InitiativesMuStGallen.IdInPreparation, _idCommitteeListMu)),
+            HttpStatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task AsMuOnOnCtCollectionInPreparationShouldThrow()
+    {
+        await AssertStatus(
+            async () => await MuSgStammdatenverwalterClient.GetAsync(BuildUrl(InitiativesCtStGallen.IdLegislativeInPreparation, _idCommitteeListCt)),
             HttpStatusCode.NotFound);
     }
 

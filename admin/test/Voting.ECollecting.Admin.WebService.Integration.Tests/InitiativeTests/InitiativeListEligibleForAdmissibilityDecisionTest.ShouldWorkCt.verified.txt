@@ -2,27 +2,32 @@
   Initiatives: [
     {
       Id: Guid_1,
-      DomainOfInfluenceType: Ch,
-      Bfs: 1,
-      MinSignatureCount: 100000,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
+      MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
       Wording:
-Diese Initiative fordert eine bessere Digitalisierung auf Bundesebene.
-Die digitale Transformation soll beschleunigt und der Zugang zu digitalen
-Dienstleistungen verbessert werden.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 217 (neu) – Förderung öffentlicher Leseecken
+1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
       Collection: {
         Id: Guid_1,
-        Description: Bundesweite Digitalisierungsinitiative,
+        Description: Für kantonale Leseecken (Leseecken-Initiative),
         Type: Initiative,
-        Reason: Digitalisierung für alle!,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/digitalisierungsinitiative.html,
+        Reason:
+Lesen bildet – doch gemütliche Leseecken im öffentlichen Raum fehlen. Die «Leseecken-Initiative» will mehr Orte zum Lesen, Schmökern und Verweilen im ganzen Kanton schaffen.
+Eine Leseecke ist mehr als Bücherschrank – sie ist Bildung, Rückzug und Kultur. Mit bequemen Sitzgelegenheiten, Wetterschutz und Buchspenden entstehen kleine Lesepar adiese.
+Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in Bahnhöfen, Parks und Gemeindehäusern. Ein bisschen Zeit zum Lesen – das bereichert den Alltag.,
+        Link: https://www.sg.ch/,
         SignatureSheetTemplateGenerated: true,
         State: Submitted,
         Address: {
-          CommitteeOrPerson: Bündnis für Digitalisierung,
-          StreetOrPostOfficeBox: Waisenhausplatz 21,
-          ZipCode: 3011,
-          Locality: Bern
+          CommitteeOrPerson: Komitee Leseecken-Initiative,
+          StreetOrPostOfficeBox: Buchweg 14,
+          ZipCode: 9470,
+          Locality: Buchs
         },
         IsElectronicSubmission: true,
         InformalReviewRequested: false,
@@ -49,18 +54,19 @@ Dienstleistungen verbessert werden.,
       },
       SubType: {
         Id: Guid_2,
-        Bfs: ,
-        DomainOfInfluenceType: Ch,
-        Description: Volksinitiative,
-        MinSignatureCount: 100000,
-        MaxElectronicSignatureCount: 50000
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
       },
       GovernmentDecisionNumber: ,
       LockedFields: {
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: 
     },
     {
       Id: Guid_3,
@@ -68,81 +74,28 @@ Dienstleistungen verbessert werden.,
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
-      Wording: Die Initiative fordert strengere Grenzwerte für Luftschadstoffe und die Förderung des öffentlichen Verkehrs.,
+      Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 218 (neu) – Förderung kantonaler Spielplätze
+1 Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
+2 Er kann Gemeinden finanziell und beratend unterstützen.
+3 Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
       Collection: {
         Id: Guid_3,
-        Description: Initiative für bessere Luftqualität,
+        Description: Für kantonale Spielplätze (Spielplatz-Initiative),
         Type: Initiative,
-        Reason: Reduktion von Feinstaub und Stickoxiden in städtischen Gebieten.,
-        Link: https://www.umwelt-sg.ch/luftqualitaet-initiative,
+        Reason:
+Spielen ist Kinderrecht – doch moderne, sichere Spielplätze fehlen vielerorts. Die «Spielplatz-Initiative» will mehr gut ausgestattete Spielplätze im ganzen Kanton schaffen.
+Ein Spielplatz ist mehr als Rutsche und Schaukel – er ist Bewegung, Kreativität und Begegnung. Mit vielfältigen Spielgeräten und natürlichen Materialien entstehen Abenteuerorte für alle Altersgruppen.
+Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielplätze in Wohnnähe. Ein bisschen mehr Raum zum Spielen – das ist Investition in die Zukunft.,
+        Link: https://www.sg.ch/,
         SignatureSheetTemplateGenerated: true,
         State: Submitted,
         Address: {
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58,
-          ZipCode: 8001,
-          Locality: Zürich
-        },
-        IsElectronicSubmission: true,
-        InformalReviewRequested: false,
-        UserPermissions: {
-          CanEdit: true,
-          IsRequestInformalReviewVisible: false,
-          CanCreateMessages: true,
-          CanFinishCorrection: false,
-          CanSetCollectionPeriod: false,
-          CanEnable: false,
-          CanDelete: false,
-          CanDeleteWithdrawn: false,
-          CanAddSignatureSheet: false,
-          CanReadSignatureSheets: false,
-          CanCheckSamples: false,
-          CanSubmitSignatureSheets: false,
-          CanFinish: false,
-          CanGenerateDocuments: false,
-          CanEditAdmissibilityDecision: false,
-          CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
-          CanReturnForCorrection: true
-        }
-      },
-      SubType: {
-        Id: Guid_4,
-        Bfs: 3200,
-        DomainOfInfluenceType: Ct,
-        Description: Gesetzesinitiative,
-        MinSignatureCount: 6000,
-        MaxElectronicSignatureCount: 3000
-      },
-      GovernmentDecisionNumber: ,
-      LockedFields: {
-        Wording: false,
-        Description: false,
-        CommitteeMembers: false
-      }
-    },
-    {
-      Id: Guid_5,
-      DomainOfInfluenceType: Ch,
-      Bfs: 1,
-      MinSignatureCount: 100000,
-      MaxElectronicSignatureCount: 500,
-      Wording:
-Die Initiative fordert die Integration digitaler Kompetenzen in den Lehrplan aller Schulen.
-Ziel ist es, Schülerinnen und Schüler optimal auf die Herausforderungen der digitalen Zukunft vorzubereiten.,
-      Collection: {
-        Id: Guid_5,
-        Description: Initiative für digitale Bildung,
-        Type: Initiative,
-        Reason: Digitale Kompetenzen für die nächste Generation stärken!,
-        Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20240922/digitalebildung.html,
-        SignatureSheetTemplateGenerated: true,
-        State: Submitted,
-        Address: {
-          CommitteeOrPerson: Bündnis für Digitalisierung,
-          StreetOrPostOfficeBox: Waisenhausplatz 21,
-          ZipCode: 3011,
-          Locality: Bern
+          CommitteeOrPerson: Komitee Spielplatz-Initiative,
+          StreetOrPostOfficeBox: Spielweg 9,
+          ZipCode: 9443,
+          Locality: Widnau
         },
         IsElectronicSubmission: true,
         InformalReviewRequested: false,
@@ -169,39 +122,49 @@ Ziel ist es, Schülerinnen und Schüler optimal auf die Herausforderungen der di
       },
       SubType: {
         Id: Guid_2,
-        Bfs: ,
-        DomainOfInfluenceType: Ch,
-        Description: Volksinitiative,
-        MinSignatureCount: 100000,
-        MaxElectronicSignatureCount: 50000
+        Bfs: 3200,
+        DomainOfInfluenceType: Ct,
+        Description: Gesetzesinitiative,
+        MinSignatureCount: 6000,
+        MaxElectronicSignatureCount: 3000
       },
       GovernmentDecisionNumber: ,
       LockedFields: {
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: 
     },
     {
-      Id: Guid_6,
-      DomainOfInfluenceType: Ct,
-      Bfs: 17,
-      MinSignatureCount: 4000,
+      Id: Guid_4,
+      DomainOfInfluenceType: Ch,
+      Bfs: 1,
+      MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 500,
-      Wording: Um von A nach B zu kommen sollen mehr Autos in die Stadt, dazu soll die Motorfahrzeugssteuer reduziert werden.,
+      Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 69b (neu) – Förderung der Jodel-Kultur
+1 Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.
+2 Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.
+3 Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.,
       Collection: {
-        Id: Guid_6,
-        Description: Motorfahrzeugsteuer-Initiative,
+        Id: Guid_4,
+        Description: Für mehr Jodel-Festivals (Jodel-Initiative),
         Type: Initiative,
-        Reason: Mehr Autos in der Stadt!,
-        Link: https://www.tcs.ch/de/testberichte-ratgeber/ratgeber/umwelt-mobilitaet/motorfahrzeugsteuer.php,
+        Reason:
+Jodeln ist Schweizer Tradition – doch Jodel-Festivals und Jodlervereine brauchen Unterstützung. Diese Initiative will die Jodel-Kultur wiederbeleben und fördern.
+Jodeln ist mehr als Gesang – es ist Brauchtum, Gemeinschaft und alpine Identität. Mit Jodel-Festivals und Förderung junger Jodler entsteht ein lebendiges Netzwerk.
+Die Initiative fordert keine Jodel-Pflicht an Schulen, sondern Unterstützung für Vereine und Veranstaltungen. Ein bisschen mehr Jodeln in der Schweiz – das pflegt Traditionen und bringt Menschen zusammen.
+Denn wer jodelt, singt von den Bergen.,
+        Link: https://www.admin.ch/,
         SignatureSheetTemplateGenerated: true,
         State: Submitted,
         Address: {
-          CommitteeOrPerson: Schweizer Verkehrsforum,
-          StreetOrPostOfficeBox: Bahnhofstrasse 58,
-          ZipCode: 8001,
-          Locality: Zürich
+          CommitteeOrPerson: Komitee Jodel-Initiative,
+          StreetOrPostOfficeBox: Alpweg 33,
+          ZipCode: 6390,
+          Locality: Engelberg
         },
         IsElectronicSubmission: true,
         InformalReviewRequested: false,
@@ -227,19 +190,89 @@ Ziel ist es, Schülerinnen und Schüler optimal auf die Herausforderungen der di
         }
       },
       SubType: {
-        Id: Guid_4,
-        Bfs: 3200,
-        DomainOfInfluenceType: Ct,
-        Description: Gesetzesinitiative,
-        MinSignatureCount: 6000,
-        MaxElectronicSignatureCount: 3000
+        Id: Guid_5,
+        Bfs: ,
+        DomainOfInfluenceType: Ch,
+        Description: Volksinitiative,
+        MinSignatureCount: 100000,
+        MaxElectronicSignatureCount: 50000
       },
       GovernmentDecisionNumber: ,
       LockedFields: {
         Wording: false,
         Description: false,
         CommitteeMembers: false
-      }
+      },
+      DomainOfInfluenceName: 
+    },
+    {
+      Id: Guid_6,
+      DomainOfInfluenceType: Ch,
+      Bfs: 1,
+      MinSignatureCount: 100000,
+      MaxElectronicSignatureCount: 500,
+      Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 69a (neu) – Förderung der Schokoladenkultur
+1 Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.
+2 Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.
+3 Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.,
+      Collection: {
+        Id: Guid_6,
+        Description: Für Schweizer Schokolade als Kulturgut (Schokolade-Initiative),
+        Type: Initiative,
+        Reason:
+Schweizer Schokolade ist weltberühmt – doch ihre Bedeutung als Kulturgut wird oft unterschätzt. Diese Initiative will Schokolade als immaterielles Kulturerbe anerkennen und fördern.
+Schokolade ist mehr als Süsses – sie ist Handwerk, Tradition und Lebensfreude. Mit Unterstützung lokaler Chocolatiers und Schokoladenmuseen entsteht ein Stück kulinarische Identität.
+Die Initiative fordert keine Schokoladen-Pflicht, sondern Wertschätzung für das Handwerk und die Tradition. Ein bisschen mehr Schokolade im Leben – das macht glücklich und stärkt die Schweizer Marke.
+Denn gute Schokolade verbindet Generationen.,
+        Link: https://www.admin.ch/,
+        SignatureSheetTemplateGenerated: true,
+        State: Submitted,
+        Address: {
+          CommitteeOrPerson: Komitee Schokolade-Initiative,
+          StreetOrPostOfficeBox: Schokoladenweg 7,
+          ZipCode: 1815,
+          Locality: Clarens
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        UserPermissions: {
+          CanEdit: true,
+          IsRequestInformalReviewVisible: false,
+          CanCreateMessages: true,
+          CanFinishCorrection: false,
+          CanSetCollectionPeriod: false,
+          CanEnable: false,
+          CanDelete: false,
+          CanDeleteWithdrawn: false,
+          CanAddSignatureSheet: false,
+          CanReadSignatureSheets: false,
+          CanCheckSamples: false,
+          CanSubmitSignatureSheets: false,
+          CanFinish: false,
+          CanGenerateDocuments: false,
+          CanEditAdmissibilityDecision: false,
+          CanDeleteAdmissibilityDecision: false,
+          CanEditGeneralInformation: false,
+          CanReturnForCorrection: true
+        }
+      },
+      SubType: {
+        Id: Guid_5,
+        Bfs: ,
+        DomainOfInfluenceType: Ch,
+        Description: Volksinitiative,
+        MinSignatureCount: 100000,
+        MaxElectronicSignatureCount: 50000
+      },
+      GovernmentDecisionNumber: ,
+      LockedFields: {
+        Wording: false,
+        Description: false,
+        CommitteeMembers: false
+      },
+      DomainOfInfluenceName: 
     }
   ]
 }

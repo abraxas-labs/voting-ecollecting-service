@@ -1,7 +1,7 @@
 ﻿{
   CollectionMunicipalityId: Guid_1,
   Number: 1,
-  ReceivedAt: DateTime_1,
+  ReceivedAt: Date_1,
   Count: {
     Invalid: 15,
     Valid: 5,
@@ -16,7 +16,7 @@
       SignatureSheetId: Guid_2,
       Age: 52,
       Sex: 1,
-      CollectionDateTime: DateTime_2,
+      CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_4,
@@ -28,7 +28,7 @@
           CreatedById: default-user-id,
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com,
-          CreatedAt: DateTime_2
+          CreatedAt: DateTime_1
         },
         Id: Guid_5
       },
@@ -39,7 +39,7 @@
         CreatedById: default-user-id,
         CreatedByName: Test Admin,
         CreatedByEmail: admin@example.com,
-        CreatedAt: DateTime_2
+        CreatedAt: DateTime_1
       },
       Id: Guid_4
     },
@@ -49,7 +49,7 @@
       SignatureSheetId: Guid_2,
       Age: 82,
       Sex: 1,
-      CollectionDateTime: DateTime_2,
+      CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_6,
@@ -61,7 +61,7 @@
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_2
+          CreatedAt: DateTime_1
         },
         Id: Guid_7
       },
@@ -72,7 +72,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_2
+        CreatedAt: DateTime_1
       },
       Id: Guid_6
     },
@@ -82,7 +82,7 @@
       SignatureSheetId: Guid_2,
       Age: 70,
       Sex: 1,
-      CollectionDateTime: DateTime_2,
+      CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_8,
@@ -94,7 +94,7 @@
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_2
+          CreatedAt: DateTime_1
         },
         Id: Guid_9
       },
@@ -105,7 +105,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_2
+        CreatedAt: DateTime_1
       },
       Id: Guid_8
     },
@@ -115,7 +115,7 @@
       SignatureSheetId: Guid_2,
       Age: 35,
       Sex: 3,
-      CollectionDateTime: DateTime_2,
+      CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_10,
@@ -127,7 +127,7 @@
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_2
+          CreatedAt: DateTime_1
         },
         Id: Guid_11
       },
@@ -138,7 +138,7 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_2
+        CreatedAt: DateTime_1
       },
       Id: Guid_10
     },
@@ -148,7 +148,7 @@
       SignatureSheetId: Guid_2,
       Age: 58,
       Sex: 2,
-      CollectionDateTime: DateTime_2,
+      CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_12,
@@ -160,7 +160,7 @@
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com,
-          CreatedAt: DateTime_2
+          CreatedAt: DateTime_1
         },
         Id: Guid_13
       },
@@ -171,21 +171,22 @@
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
         CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_2
+        CreatedAt: DateTime_1
       },
       Id: Guid_12
     }
   ],
   IsSample: false,
+  ModifiedBySuperiorAuthority: false,
   AuditInfo: {
     CreatedById: default-user-id,
     CreatedByName: Test Admin,
     CreatedByEmail: admin@example.com,
-    CreatedAt: DateTime_2,
+    CreatedAt: DateTime_1,
     ModifiedById: default-user-id,
     ModifiedByName: default user firstname default user lastname,
     ModifiedByEmail: default-user@example.com,
-    ModifiedAt: DateTime_2
+    ModifiedAt: DateTime_1
   },
   Id: Guid_2
 }

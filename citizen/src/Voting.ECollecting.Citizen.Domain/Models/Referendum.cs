@@ -15,6 +15,8 @@ public class Referendum : ReferendumEntity, ICollection
 
     public bool? IsSigned { get; set; }
 
+    public CollectionSignatureType? SignatureType { get; set; }
+
     public bool? IsDecreeSigned { get; set; }
 
     public bool? IsOtherReferendumOfSameDecreeSigned =>

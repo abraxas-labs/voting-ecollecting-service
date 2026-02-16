@@ -11,6 +11,7 @@ using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using IPermissionService = Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.IPermissionService;
 using SharedIReferendumSignService = Voting.ECollecting.Shared.Abstractions.Core.Services.Signature.IReferendumSignService;
@@ -57,8 +58,8 @@ public class ReferendumSignService : CollectionSignBaseService<ReferendumEntity>
 
         var referendum = await _referendumRepository.Query()
                              .AsNoTrackingWithIdentityResolution()
-                             .Include(x => x.Decree!.Collections) // load other collections to check existing signature on same decree
-                             .WhereInPeriodState(CollectionPeriodState.InCollection, true, TimeProvider.GetUtcNowDateTime())
+                             .Include(x => x.Decree!.Collections.Where(y => y.State != CollectionState.InPreparation && y.State != CollectionState.PreparingForCollection)) // load other collections to check existing signature on same decree
+                             .WhereInPeriodState(CollectionPeriodState.InCollection, true, TimeProvider.GetUtcTodayDateOnly())
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
 
@@ -66,15 +67,15 @@ public class ReferendumSignService : CollectionSignBaseService<ReferendumEntity>
         await transaction.CommitAsync();
     }
 
-    internal override Task<bool> IsCollectionSigned(ReferendumEntity referendum, IVotingStimmregisterPersonInfo personInfo)
+    internal override Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(ReferendumEntity referendum, IVotingStimmregisterPersonInfo personInfo)
         => _signService.IsCollectionSigned(referendum, personInfo);
 
-    internal async Task<(bool? IsSigned, bool? IsDecreeSigned)> IsReferendumOrDecreeSigned(ReferendumEntity referendum)
+    internal async Task<(bool? IsSigned, bool? IsDecreeSigned, CollectionSignatureType? SignatureType)> IsReferendumOrDecreeSigned(ReferendumEntity referendum)
     {
         var personInfo = await GetPersonInfo(referendum);
         if (personInfo == null)
         {
-            return (false, false);
+            return (false, false, null);
         }
 
         return await _signService.IsReferendumOrDecreeSigned(referendum, personInfo);

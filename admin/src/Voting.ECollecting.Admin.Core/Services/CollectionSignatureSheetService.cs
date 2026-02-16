@@ -187,9 +187,15 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         await transaction.CommitAsync();
     }
 
-    public async Task<CollectionSignatureSheetEntity> Add(Guid collectionId, int number, DateTime receivedAt, int signatureCountTotal)
+    public async Task<CollectionSignatureSheetEntity> Add(Guid collectionId, int number, DateOnly receivedAt, int signatureCountTotal)
     {
         await EnsureCanEditSignatureSheets(collectionId);
+
+        if (receivedAt > _timeProvider.GetUtcTodayDateOnly())
+        {
+            throw new ValidationException("Received at date can't be in the future.");
+        }
+
         var bfs = await _accessControlListDoiRepository.GetSingleBfsForDoiType(_permissionService.AclBfsLists, AclDomainOfInfluenceType.Mu);
         var collectionMunicipality = await _collectionMunicipalityRepository.Query().FirstAsync(x => x.Bfs == bfs && x.CollectionId == collectionId);
         await using var transaction = await _dataContext.BeginTransaction();
@@ -227,9 +233,14 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         return newEntity;
     }
 
-    public async Task Update(Guid collectionId, Guid sheetId, DateTime receivedAt, int signatureCountTotal)
+    public async Task Update(Guid collectionId, Guid sheetId, DateOnly receivedAt, int signatureCountTotal)
     {
         await EnsureCanEditSignatureSheets(collectionId);
+
+        if (receivedAt > _timeProvider.GetUtcTodayDateOnly())
+        {
+            throw new ValidationException("Received at date can't be in the future.");
+        }
 
         var sheet = await _signatureSheetRepository
             .Query()
@@ -335,7 +346,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             .IncludeMunicipalities(_permissionService.AclBfsLists)
             .FirstOrDefaultAsync(x => x.Id == collectionId, cancellationToken)
             ?? throw new EntityNotFoundException(nameof(CollectionBaseEntity), new { collectionType, collectionId });
-        collection.SetPeriodState(_permissionService.Now);
+        collection.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
 
         if (!CollectionPermissions.CanEditSignatureSheets(_permissionService, collection) && !CollectionPermissions.CanCheckSamples(_permissionService, collection))
         {
@@ -357,7 +368,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         filter = filter with
         {
             Bfs = sheet.CollectionMunicipality!.Bfs,
-            ActualityDate = sheet.ReceivedAt,
+            ActualityDate = sheet.ReceivedAt.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc),
         };
         var people = await _stimmregister.ListPersonInfos(filter, pageable, cancellationToken);
         var candidates = people.Items.ConvertAll(x => new CollectionSignatureSheetCandidate(x));
@@ -391,7 +402,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         var decryptionTasks = sheet.Citizens
             .Select(citizen => _cryptoService.DecryptStimmregisterId(sheet.CollectionMunicipality!.Collection!, citizen.Log!.VotingStimmregisterIdEncrypted));
         var decryptedIds = await Task.WhenAll(decryptionTasks);
-        var citizens = await _stimmregister.GetPersonInfos(sheet.CollectionMunicipality!.Bfs, decryptedIds.ToHashSet(), sheet.ReceivedAt);
+        var citizens = await _stimmregister.GetPersonInfos(sheet.CollectionMunicipality!.Bfs, decryptedIds.ToHashSet(), sheet.ReceivedAt.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc));
         return citizens
             .OrderBy(x => x.OfficialName)
             .ThenBy(x => x.FirstName)
@@ -421,7 +432,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             throw new ValidationException("The signature sheet is full.");
         }
 
-        var personInfo = await _stimmregister.GetPersonInfo(sheet.CollectionMunicipality!.Bfs, personRegisterId, sheet.ReceivedAt);
+        var personInfo = await _stimmregister.GetPersonInfo(sheet.CollectionMunicipality!.Bfs, personRegisterId, sheet.ReceivedAt.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc));
         if (!personInfo.IsVotingAllowed)
         {
             throw new ValidationException("The person does not have the right to vote");
@@ -610,7 +621,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         var previousValidCount = sheet.Count.Valid;
         var newValidCount = previousValidCount - request.RemovedPersonRegisterIds.Count + request.AddedPersonRegisterIds.Count;
 
-        var personInfos = await _stimmregister.GetPersonInfos(sheet.CollectionMunicipality!.Bfs, request.AddedPersonRegisterIds, sheet.ReceivedAt);
+        var personInfos = await _stimmregister.GetPersonInfos(sheet.CollectionMunicipality!.Bfs, request.AddedPersonRegisterIds, sheet.ReceivedAt.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc));
         EnsureConfirmRequestIsValid(request, newValidCount, personInfos);
 
         await using var transaction = await _dataContext.BeginTransaction();
@@ -630,6 +641,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             sheet.State = CollectionSignatureSheetState.Confirmed;
             sheet.Count.Valid = newValidCount;
             sheet.Count.Invalid = newInvalidCount;
+            sheet.ModifiedBySuperiorAuthority = true;
             _permissionService.SetModified(sheet);
         });
 
@@ -724,7 +736,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
                              .Query()
                              .FirstOrDefaultAsync(x => x.Id == collectionId)
                          ?? throw new EntityNotFoundException(nameof(CollectionBaseEntity), collectionId);
-        collection.SetPeriodState(_permissionService.Now);
+        collection.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
 
         if (CollectionPermissions.CanReadSignatureSheets(_permissionService, collection) || CollectionPermissions.CanCheckSamples(_permissionService, collection))
         {
@@ -751,7 +763,11 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         return collectionType switch
         {
             CollectionType.Initiative => _initiativeRepository.Query(),
-            CollectionType.Referendum => _referendumRepository.Query().AsSplitQuery().AsNoTrackingWithIdentityResolution().Include(x => x.Decree!.Collections),
+            CollectionType.Referendum => _referendumRepository.Query()
+                .AsSplitQuery()
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.Decree!.Collections
+                    .Where(y => y.State != CollectionState.InPreparation && y.State != CollectionState.PreparingForCollection)),
             _ => throw new ArgumentOutOfRangeException(nameof(collectionType), collectionType, "Unknown collection type"),
         };
     }

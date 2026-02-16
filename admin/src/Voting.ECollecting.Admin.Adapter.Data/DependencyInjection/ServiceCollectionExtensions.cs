@@ -76,6 +76,7 @@ public static class ServiceCollectionExtensions
             .AddScoped<IFileRepository, FileRepository>()
             .AddScoped<ICollectionMunicipalityRepository, CollectionMunicipalityRepository>()
             .AddScoped<ICollectionCountRepository, CollectionCountRepository>()
+            .AddScoped<IInitiativeCommitteeMemberRepository, InitiativeCommitteeMemberRepository>()
             .AddScoped<Shared.Adapter.Data.Builders.IAuditTrailEntryBuilder, AuditTrailEntryBuilder>()
             .AddVotingLibDatabase<DataContext>();
     }

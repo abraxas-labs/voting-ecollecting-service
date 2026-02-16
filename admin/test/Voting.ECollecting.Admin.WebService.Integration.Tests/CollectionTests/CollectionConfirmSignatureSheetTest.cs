@@ -77,6 +77,7 @@ public class CollectionConfirmSignatureSheetTest : BaseGrpcTest<CollectionSignat
         var sheet = await RunOnDb(db => db.CollectionSignatureSheets
             .SingleAsync(x => x.Id == _sheetCtSgId));
         sheet.State.Should().Be(CollectionSignatureSheetState.Confirmed);
+        sheet.ModifiedBySuperiorAuthority.Should().BeTrue();
 
         var collectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
             .SingleAsync(x => x.Id == _municipalityCtSgId));
@@ -164,6 +165,7 @@ public class CollectionConfirmSignatureSheetTest : BaseGrpcTest<CollectionSignat
             .SingleAsync(x => x.Id == _sheetCtSgId));
 
         sheet.State.Should().Be(CollectionSignatureSheetState.Confirmed);
+        sheet.ModifiedBySuperiorAuthority.Should().BeFalse();
     }
 
     [Fact]

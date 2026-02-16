@@ -33,8 +33,8 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public async Task TestChInitiativeShouldWork()
     {
         var response = await _client.CreateAsync(NewValidChRequest());
-        var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        var initiative = await RunOnDb(db => db.Initiatives.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -52,8 +52,8 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public async Task TestCtInitiativeShouldWork()
     {
         var response = await _client.CreateAsync(NewValidCtRequest());
-        var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        var initiative = await RunOnDb(db => db.Initiatives.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 
@@ -61,8 +61,8 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public async Task TestMuInitiativeShouldWork()
     {
         var response = await _client.CreateAsync(NewValidMuRequest());
-        var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        var initiative = await RunOnDb(db => db.Initiatives.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
     }
 

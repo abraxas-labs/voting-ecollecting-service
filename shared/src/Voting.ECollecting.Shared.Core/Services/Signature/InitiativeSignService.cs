@@ -7,6 +7,7 @@ using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Abstractions.Core.Services.Signature;
 using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using Voting.Lib.Database.Postgres.Locking;
 
@@ -59,10 +60,26 @@ public class InitiativeSignService : ISignService<InitiativeEntity>
         }
     }
 
-    public async Task<bool> IsCollectionSigned(InitiativeEntity collection, IVotingStimmregisterPersonInfo personInfo)
+    public async Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(InitiativeEntity collection, IVotingStimmregisterPersonInfo personInfo)
     {
         var mac = await _cryptoService.StimmregisterIdHmac(collection, personInfo.RegisterId);
-        return await IsSigned(collection.Id, mac);
+        return await IsSignedWithSignatureType(collection.Id, mac);
+    }
+
+    private async Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsSignedWithSignatureType(Guid collectionId, byte[] personCollectionMac)
+    {
+        var citizen = await _logRepository
+            .Query()
+            .WhereIsSigned(collectionId, personCollectionMac)
+            .Select(x => x.CollectionCitizen)
+            .FirstOrDefaultAsync();
+
+        if (citizen == null)
+        {
+            return (false, null);
+        }
+
+        return (true, citizen.SignatureSheetId.HasValue ? CollectionSignatureType.Physical : CollectionSignatureType.Electronic);
     }
 
     private async Task<bool> IsSigned(Guid collectionId, byte[] personCollectionMac)

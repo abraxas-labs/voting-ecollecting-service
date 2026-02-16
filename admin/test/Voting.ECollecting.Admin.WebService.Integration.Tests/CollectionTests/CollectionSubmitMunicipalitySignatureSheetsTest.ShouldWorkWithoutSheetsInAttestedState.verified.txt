@@ -1,7 +1,7 @@
 ﻿{
   Municipality: {
     Bfs: 3203,
-    MunicipalityName: St. Gallen,
+    MunicipalityName: St.Gallen,
     PhysicalCount: {
       Total: 20,
       Valid: 17,

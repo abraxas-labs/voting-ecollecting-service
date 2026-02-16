@@ -55,7 +55,7 @@ public class InitiativeSignTest : BaseGrpcTest<InitiativeService.InitiativeServi
 
         if (citizenEntry.CollectionMunicipality!.Collection is InitiativeEntity initiative)
         {
-            initiative.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+            initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         }
 
         var crypto = GetService<ICryptoProvider>();
@@ -264,7 +264,7 @@ public class InitiativeSignTest : BaseGrpcTest<InitiativeService.InitiativeServi
     {
         await ModifyDbEntities(
             (InitiativeEntity entity) => entity.Id == InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
-            e => e.CollectionStartDate = MockedClock.GetDate(1));
+            e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
 
         var client = CreateCitizenClient(
             acrValue: CitizenAuthMockDefaults.AcrValue400,

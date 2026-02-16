@@ -37,4 +37,6 @@ public class Decree : DecreeEntity
             });
         }
     }
+
+    public string DomainOfInfluenceName { get; set; } = string.Empty;
 }

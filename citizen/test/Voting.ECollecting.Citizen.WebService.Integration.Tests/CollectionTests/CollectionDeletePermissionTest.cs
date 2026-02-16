@@ -20,9 +20,14 @@ namespace Voting.ECollecting.Citizen.WebService.Integration.Tests.CollectionTest
 public class CollectionDeletePermissionTest : BaseGrpcTest<CollectionService.CollectionServiceClient>
 {
     private static readonly Guid _permissionId = CollectionPermissions.BuildGuid(
-            InitiativesCtStGallen.GuidLegislativeInPreparation,
-            true,
-            CollectionPermissionRole.Deputy);
+        InitiativesCtStGallen.GuidLegislativeInPreparation,
+        true,
+        CollectionPermissionRole.Deputy);
+
+    private static readonly Guid _readerPermissionId = CollectionPermissions.BuildGuid(
+        InitiativesCtStGallen.GuidLegislativeInPreparation,
+        true,
+        CollectionPermissionRole.Reader);
 
     public CollectionDeletePermissionTest(TestApplicationFactory factory)
         : base(factory)
@@ -56,8 +61,8 @@ public class CollectionDeletePermissionTest : BaseGrpcTest<CollectionService.Col
     [Fact]
     public async Task ShouldWorkAsDeputy()
     {
-        await DeputyClient.DeletePermissionAsync(NewValidRequest());
-        var permission = await RunOnDb(db => db.CollectionPermissions.FirstOrDefaultAsync(x => x.Id == _permissionId));
+        await DeputyClient.DeletePermissionAsync(NewValidRequest(x => x.Id = _readerPermissionId.ToString()));
+        var permission = await RunOnDb(db => db.CollectionPermissions.FirstOrDefaultAsync(x => x.Id == _readerPermissionId));
         permission.Should().BeNull();
     }
 

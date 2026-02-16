@@ -52,13 +52,18 @@
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
   <div class="container"><h2>Neue Berechtigung in E-Collecting</h2>
 <p>Hallo,</p>
 <p>
-Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">Kein Zwang gegen Kinder und Jugendliche</a> für Sie hinzugefügt.
+Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">F&#252;r eine t&#228;gliche Portion Natur (Frischluftinitiative)</a> für Sie hinzugefügt.
 Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
 </p></div>
 </body>
@@ -71,7 +76,7 @@ Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-tok
       State: Sent,
       SentTimestamp: DateTime_2,
       TemplateBag: {
-        CollectionName: Kein Zwang gegen Kinder und Jugendliche,
+        CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
         RecipientIsCitizen: true,
         NotificationType: PermissionAdded,
         CollectionId: Guid_1,

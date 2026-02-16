@@ -37,7 +37,8 @@ public class UrlConfig
             _ => throw new ArgumentOutOfRangeException(nameof(collectionType), collectionType, null),
         };
 
-        return BuildUrl(isCitizen, segment, id.ToString());
+        var url = BuildUrl(isCitizen, segment, id.ToString());
+        return isCitizen ? url + "?showChat=true" : url;
     }
 
     private string BuildUrl(bool isCitizen, params string[] pathSegments)

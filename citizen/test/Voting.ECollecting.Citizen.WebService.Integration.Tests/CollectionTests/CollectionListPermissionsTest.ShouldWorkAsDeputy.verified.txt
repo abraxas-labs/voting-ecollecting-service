@@ -10,7 +10,10 @@
       Role: Reader,
       IamLastName: Gruen,
       IamFirstName: Jessica,
-      IamUserId: user-id-reader-not-accepted
+      IamUserId: user-id-reader-not-accepted,
+      UserPermissions: {
+        CanResend: true
+      }
     },
     {
       Id: Guid_3,
@@ -22,7 +25,10 @@
       Role: Deputy,
       IamLastName: Huenkeler,
       IamFirstName: Peter,
-      IamUserId: user-id-deputy-not-accepted
+      IamUserId: user-id-deputy-not-accepted,
+      UserPermissions: {
+        CanResend: true
+      }
     },
     {
       Id: Guid_4,
@@ -34,7 +40,10 @@
       Role: Deputy,
       IamLastName: Meier,
       IamFirstName: Rudolph,
-      IamUserId: user-id-deputy
+      IamUserId: user-id-deputy,
+      UserPermissions: {
+        CanResend: false
+      }
     },
     {
       Id: Guid_5,
@@ -46,7 +55,40 @@
       Role: Reader,
       IamLastName: Mueller,
       IamFirstName: Jeanine,
-      IamUserId: user-id-reader
+      IamUserId: user-id-reader,
+      UserPermissions: {
+        CanResend: false
+      }
+    },
+    {
+      Id: Guid_6,
+      CollectionId: Guid_2,
+      LastName: Permission,
+      FirstName: Expired,
+      Email: expired@example.com,
+      State: Expired,
+      Role: Reader,
+      IamLastName: Permission,
+      IamFirstName: Expired,
+      IamUserId: expired-iam-id,
+      UserPermissions: {
+        CanResend: true
+      }
+    },
+    {
+      Id: Guid_7,
+      CollectionId: Guid_2,
+      LastName: Permission,
+      FirstName: Expired Not Updated,
+      Email: expired-not-updated@example.com,
+      State: Pending,
+      Role: Reader,
+      IamLastName: Permission,
+      IamFirstName: Expired Not Updated,
+      IamUserId: expired-not-updated-iam-id,
+      UserPermissions: {
+        CanResend: true
+      }
     }
   ]
 }

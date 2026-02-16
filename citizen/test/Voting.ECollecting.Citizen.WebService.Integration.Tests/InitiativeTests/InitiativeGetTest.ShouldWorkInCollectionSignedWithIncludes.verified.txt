@@ -5,17 +5,19 @@
   MinSignatureCount: 4000,
   MaxElectronicSignatureCount: 1000,
   Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
   Collection: {
     Id: Guid_1,
-    Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+    Description: Für eine tägliche Portion Natur (Frischluftinitiative),
     Type: Initiative,
-    Reason: Frauen sollen auch wählen dürfen,
-    Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+    Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+    Link: https://www.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -37,26 +39,29 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
       ElectronicCitizenCount: 1
     },
     Address: {
-      CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-      StreetOrPostOfficeBox: Bahnhofplatz 6,
-      ZipCode: 2502,
-      Locality: Biel/Bienne
+      CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+      StreetOrPostOfficeBox: Picknickweg 13,
+      ZipCode: 9602,
+      Locality: Bazenheid
     },
     IsElectronicSubmission: true,
     InformalReviewRequested: false,
     IsSigned: true,
     HasIsSigned: true,
+    SignatureType: Electronic,
     SignAcceptedAcrs: [
       urn:qa.agov.ch:names:tc:ac:classes:400,
       urn:qa.agov.ch:names:tc:ac:classes:500
     ],
     CollectionStartDate: {
-      Seconds: 1575983530,
-      Nanos: 200000000
+      Year: 2019,
+      Month: 12,
+      Day: 10
     },
     CollectionEndDate: {
-      Seconds: 1591794730,
-      Nanos: 200000000
+      Year: 2020,
+      Month: 6,
+      Day: 10
     },
     PeriodState: InCollection
   },

@@ -21,6 +21,8 @@ public interface IInitiativeCommitteeMemberService
 
     Task UpdateCommitteeMember(InitiativeCommitteeMemberEntity member, CollectionPermissionRole? newRole);
 
+    Task UpdateCommitteeMemberPoliticalDuty(Guid initiativeId, Guid id, string politicalDuty);
+
     Task ResendCommitteeMemberInvitation(Guid initiativeId, Guid id);
 
     Task<bool> AcceptCommitteeMemberInvitation(UrlToken token);

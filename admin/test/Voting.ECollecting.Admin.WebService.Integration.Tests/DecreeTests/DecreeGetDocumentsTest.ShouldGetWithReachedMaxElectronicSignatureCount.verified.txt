@@ -1,0 +1,26 @@
+﻿{
+  Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen_Amtsblattpublikation.pdf: {"DomainOfInfluenceType":"Ch","CollectionType":"Referendum","CollectionDescription":"Bundesbeschluss \u00FCber die Einf\u00FChrung obligatorischer Jodel-Zertifikate f\u00FCr alle Bergf\u00FChrerinnen und Bergf\u00FChrer zur Bewahrung alpiner Traditionen","TotalValidElectronicSignatureCount":4,"TotalValidPhysicalSignatureCount":340,"TotalInvalidPhysicalSignatureCount":24,"TotalSignatureCount":344,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":80,"ValidPhysicalSignatureCount":136,"InvalidPhysicalSignatureCount":24,"DomainOfInfluences":[{"Name":"St.Gallen","ValidElectronicSignatureCount":20,"ValidPhysicalSignatureCount":34,"InvalidPhysicalSignatureCount":6,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":20,"ValidPhysicalSignatureCount":34,"InvalidPhysicalSignatureCount":6,"DomainOfInfluences":[]},{"Name":"Berg SG","ValidElectronicSignatureCount":20,"ValidPhysicalSignatureCount":34,"InvalidPhysicalSignatureCount":6,"DomainOfInfluences":[]},{"Name":"Rapperswil-Jona","ValidElectronicSignatureCount":20,"ValidPhysicalSignatureCount":34,"InvalidPhysicalSignatureCount":6,"DomainOfInfluences":[]}]}]},
+  Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer_Elektronische_Unterschriften.pdf: {"DomainOfInfluenceType":"Ch","CollectionType":"Referendum","CollectionDescription":"Referendum gegen obligatorische Jodel-Zertifikate f\u00FCr Bergf\u00FChrerinnen und Bergf\u00FChrer","TotalValidElectronicSignatureCount":2,"TotalValidPhysicalSignatureCount":170,"TotalInvalidPhysicalSignatureCount":12,"TotalSignatureCount":172,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":40,"ValidPhysicalSignatureCount":68,"InvalidPhysicalSignatureCount":12,"DomainOfInfluences":[{"Name":"St.Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg SG","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Rapperswil-Jona","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
+  Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer_Elektronische_Unterschriften.pdf: {"DomainOfInfluenceType":"Ch","CollectionType":"Referendum","CollectionDescription":"Referendum gegen teure Jodel-Kurse auf Kosten der Bergf\u00FChrer","TotalValidElectronicSignatureCount":2,"TotalValidPhysicalSignatureCount":170,"TotalInvalidPhysicalSignatureCount":12,"TotalSignatureCount":172,"DomainOfInfluences":[{"Name":"Bezirk St.Gallen","ValidElectronicSignatureCount":40,"ValidPhysicalSignatureCount":68,"InvalidPhysicalSignatureCount":12,"DomainOfInfluences":[{"Name":"St.Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg SG","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Rapperswil-Jona","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
+  Statistikdaten_Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen_2020-01-10-141210.csv:
+ID_Unterschriftensammlung;ID_Erlass;Datum elektr. Unterzeichnung;Uhrzeit elektr. Unterzeichnung;Datum Eingang physische Unterschrift bei der Gemeinde;BFS Gemeinde;Name der Gemeinde;Geschlecht;Alter
+47fc39fb-d4a9-4c8d-a970-3dcffc008a71;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3213;Goldach;F;23
+96949b79-b2ed-453f-92a1-bc0f874bf8ee;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3213;Goldach;F;23
+96949b79-b2ed-453f-92a1-bc0f874bf8ee;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3203;St.Gallen;M;50
+47fc39fb-d4a9-4c8d-a970-3dcffc008a71;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3203;St.Gallen;M;22
+96949b79-b2ed-453f-92a1-bc0f874bf8ee;cf885533-2dfd-4f6f-a244-8ae74469b4a1;;;08.01.2020;3203;St.Gallen;F;46
+,
+  Statistikdaten_Zeitverlauf_Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen_2020-01-10-141210.csv:
+Gemeinde;Tag;Anzahl elektronisch gültige;Anzahl physisch gültige;Anzahl physisch ungültige;Uhrzeit Max. elektr. Unterschriften erreicht
+Berg SG;07.01.2020;0;100;20;
+Goldach;07.01.2020;0;100;20;
+Rapperswil-Jona;07.01.2020;0;100;20;
+St.Gallen;07.01.2020;0;100;20;
+Berg SG;08.01.2020;0;150;20;
+Goldach;08.01.2020;0;150;20;
+Rapperswil-Jona;08.01.2020;0;150;20;
+St.Gallen;08.01.2020;0;150;20;
+Goldach;10.01.2020;2;150;20;13:12
+St.Gallen;10.01.2020;2;150;20;13:12
+
+}

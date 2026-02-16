@@ -9,20 +9,23 @@
     Wording: false,
     CommitteeMembers: false
   },
-  Description: Abwasser Initiative,
+  Description: Für mehr Waldspazier-Routen (Kantonswald-Initiative),
   Type: Initiative,
-  Reason: Gewässer vor dem Abwasser schützen,
-  Link: https://sg.ch/abwasser/,
+  Reason:
+St.Gallen hat herrliche Wälder – vom Bodensee bis zum Alpstein. Doch markierte Spazierwege, die zum Entdecken einladen, gibt es zu wenig. Die «Kantonswald-Initiative» will ein Netz einfacher Waldrouten schaffen.
+Waldspazieren ist mehr als Bewegung – es ist Erholung, Naturerlebnis und Entschleunigung. Mit gut beschilderten Wegen und Rastplätzen entstehen Oasen für alle Generationen.
+Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen, die Wald erlebbar machen. Ein bisschen mehr Natur im Alltag – das tut gut und verbindet Mensch und Umwelt.,
+  Link: https://www.sg.ch/,
   LogoId: Guid_2,
   ImageId: Guid_3,
   SignatureSheetTemplateGenerated: false,
   SignatureSheetTemplateId: Guid_4,
   State: InPreparation,
   Address: {
-    CommitteeOrPerson: Komitee Abwasser Initiative,
-    StreetOrPostOfficeBox: Langstrasse 200,
-    ZipCode: 8005,
-    Locality: Zürich,
+    CommitteeOrPerson: Komitee Kantonswald-Initiative,
+    StreetOrPostOfficeBox: Waldweg 15,
+    ZipCode: 9000,
+    Locality: St.Gallen,
     IsComplete: true
   },
   IsElectronicSubmission: true,
@@ -30,6 +33,7 @@
   DomainOfInfluenceType: Ct,
   Bfs: 17,
   MaxElectronicSignatureCount: 1000,
+  SecureIdNumber: AAAAAAAXXAAA,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },

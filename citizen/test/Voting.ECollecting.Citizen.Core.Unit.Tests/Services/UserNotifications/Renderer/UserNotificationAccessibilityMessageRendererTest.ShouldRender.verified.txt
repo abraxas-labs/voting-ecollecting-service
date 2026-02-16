@@ -23,6 +23,11 @@
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
@@ -33,7 +38,7 @@
  <p>Email: petra<span>.</span>muster<span>@</span>example<span>.</span>com</p>
  <p>Telefon: 071 123 45 67</p>
  <p>Kategorie: Optimierungsvorschlag</p>
- <p>Meldung: Test</p></div>
+ <p>Meldung:<br/><span class="user-text">Test</span></p></div>
 </body>
 </html>
 }

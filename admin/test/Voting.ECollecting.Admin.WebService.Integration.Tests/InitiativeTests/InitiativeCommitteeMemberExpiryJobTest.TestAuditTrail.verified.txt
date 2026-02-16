@@ -1,0 +1,1079 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3203,
+        Email: thomas.keller@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Keller,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Thomas,
+        SortIndex: 3,
+        DateOfBirth: 1955-03-14,
+        HouseNumber: 12,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: GLP Mitglied St.Gallen,
+        SignatureType: 1,
+        PoliticalLastName: Keller,
+        PoliticalFirstName: Thomas,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3203,
+        Email: thomas.keller@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Keller,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Thomas,
+        SortIndex: 2,
+        DateOfBirth: 1955-03-14,
+        HouseNumber: 12,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: GLP Mitglied St.Gallen,
+        SignatureType: 1,
+        PoliticalLastName: Keller,
+        PoliticalFirstName: Thomas,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_4,
+        Bfs: 3203,
+        Email: julia.baumann@example.com,
+        Street: Weiherweg,
+        ZipCode: 9000,
+        LastName: Baumann,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Julia,
+        SortIndex: 4,
+        DateOfBirth: 1990-02-18,
+        HouseNumber: 1a,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: Junge Grüne SG,
+        SignatureType: 1,
+        PoliticalLastName: Baumann,
+        PoliticalFirstName: Julia,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: false
+      },
+      RecordAfter: {
+        Id: Guid_4,
+        Bfs: 3203,
+        Email: julia.baumann@example.com,
+        Street: Weiherweg,
+        ZipCode: 9000,
+        LastName: Baumann,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Julia,
+        SortIndex: 3,
+        DateOfBirth: 1990-02-18,
+        HouseNumber: 1a,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: Junge Grüne SG,
+        SignatureType: 1,
+        PoliticalLastName: Baumann,
+        PoliticalFirstName: Julia,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: false
+      },
+      SourceEntityId: Guid_4,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_5
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_6,
+        Bfs: 3211,
+        Email: patrick.huber@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Huber,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Patrick,
+        SortIndex: 5,
+        DateOfBirth: 1982-08-09,
+        HouseNumber: 23,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        PoliticalDuty: CVP Vorstand Wil,
+        SignatureType: 1,
+        PoliticalLastName: Huber,
+        PoliticalFirstName: Pädu,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_6,
+        Bfs: 3211,
+        Email: patrick.huber@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Huber,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Patrick,
+        SortIndex: 4,
+        DateOfBirth: 1982-08-09,
+        HouseNumber: 23,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        PoliticalDuty: CVP Vorstand Wil,
+        SignatureType: 1,
+        PoliticalLastName: Huber,
+        PoliticalFirstName: Pädu,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_6,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_3
+      },
+      Id: Guid_7
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_8,
+        Bfs: 3203,
+        Email: nina.schmid@example.com,
+        Street: Marktplatz,
+        ZipCode: 9000,
+        LastName: Schmid,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Nina,
+        SortIndex: 6,
+        DateOfBirth: 1997-06-12,
+        HouseNumber: 20,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        PoliticalDuty: JUSO Mitglied SG,
+        SignatureType: 2,
+        PoliticalLastName: Schmid,
+        PoliticalFirstName: Nina,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_8,
+        Bfs: 3203,
+        Email: nina.schmid@example.com,
+        Street: Marktplatz,
+        ZipCode: 9000,
+        LastName: Schmid,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Nina,
+        SortIndex: 5,
+        DateOfBirth: 1997-06-12,
+        HouseNumber: 20,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        PoliticalDuty: JUSO Mitglied SG,
+        SignatureType: 2,
+        PoliticalLastName: Schmid,
+        PoliticalFirstName: Nina,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_8,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_4
+      },
+      Id: Guid_9
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_10,
+        Bfs: 3211,
+        Email: daniel.egli@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Egli,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Daniel,
+        SortIndex: 7,
+        DateOfBirth: 1980-04-21,
+        HouseNumber: 90,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: EVP Mitglied SG,
+        SignatureType: 1,
+        PoliticalLastName: Egli,
+        PoliticalFirstName: Dani,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: false
+      },
+      RecordAfter: {
+        Id: Guid_10,
+        Bfs: 3211,
+        Email: daniel.egli@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Egli,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Daniel,
+        SortIndex: 6,
+        DateOfBirth: 1980-04-21,
+        HouseNumber: 90,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: EVP Mitglied SG,
+        SignatureType: 1,
+        PoliticalLastName: Egli,
+        PoliticalFirstName: Dani,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: false
+      },
+      SourceEntityId: Guid_10,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_5
+      },
+      Id: Guid_11
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_12,
+        Bfs: 3211,
+        Email: laura.kaiser@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Kaiser,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Laura,
+        SortIndex: 8,
+        DateOfBirth: 1993-10-03,
+        HouseNumber: 15,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: GLP Mitglied Wil,
+        SignatureType: 1,
+        PoliticalLastName: Kaiser,
+        PoliticalFirstName: Laura,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: false
+      },
+      RecordAfter: {
+        Id: Guid_12,
+        Bfs: 3211,
+        Email: laura.kaiser@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Kaiser,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Laura,
+        SortIndex: 7,
+        DateOfBirth: 1993-10-03,
+        HouseNumber: 15,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: GLP Mitglied Wil,
+        SignatureType: 1,
+        PoliticalLastName: Kaiser,
+        PoliticalFirstName: Laura,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: false
+      },
+      SourceEntityId: Guid_12,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_6
+      },
+      Id: Guid_13
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_14,
+        Bfs: 3203,
+        Email: martin.steiner@example.com,
+        Street: Marktplatz,
+        ZipCode: 9000,
+        LastName: Steiner,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Martin,
+        SortIndex: 9,
+        DateOfBirth: 1972-12-15,
+        HouseNumber: 1a,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: SP Vorstand St.Gallen,
+        SignatureType: 1,
+        PoliticalLastName: Steiner,
+        PoliticalFirstName: Martin,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: false
+      },
+      RecordAfter: {
+        Id: Guid_14,
+        Bfs: 3203,
+        Email: martin.steiner@example.com,
+        Street: Marktplatz,
+        ZipCode: 9000,
+        LastName: Steiner,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Martin,
+        SortIndex: 8,
+        DateOfBirth: 1972-12-15,
+        HouseNumber: 1a,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: SP Vorstand St.Gallen,
+        SignatureType: 1,
+        PoliticalLastName: Steiner,
+        PoliticalFirstName: Martin,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: false
+      },
+      SourceEntityId: Guid_14,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_7
+      },
+      Id: Guid_15
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_16,
+        Bfs: 3211,
+        Email: svenja.moser@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Moser,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Svenja,
+        SortIndex: 10,
+        DateOfBirth: 1998-01-27,
+        HouseNumber: 100,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: Junge Mitte SG,
+        SignatureType: 1,
+        PoliticalLastName: Moser,
+        PoliticalFirstName: Svenja,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_16,
+        Bfs: 3211,
+        Email: svenja.moser@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Moser,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Svenja,
+        SortIndex: 9,
+        DateOfBirth: 1998-01-27,
+        HouseNumber: 100,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: Junge Mitte SG,
+        SignatureType: 1,
+        PoliticalLastName: Moser,
+        PoliticalFirstName: Svenja,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_16,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_8
+      },
+      Id: Guid_17
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_18,
+        Bfs: 3211,
+        Email: tobias.scherrer@example.com,
+        Street: Unterdorfstrasse,
+        ZipCode: 9305,
+        LastName: Scherrer,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Tobias,
+        SortIndex: 11,
+        DateOfBirth: 1986-11-08,
+        HouseNumber: 1b,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: SVP Mitglied Wil,
+        SignatureType: 1,
+        PoliticalLastName: Scherrer,
+        PoliticalFirstName: Tobi,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_18,
+        Bfs: 3211,
+        Email: tobias.scherrer@example.com,
+        Street: Unterdorfstrasse,
+        ZipCode: 9305,
+        LastName: Scherrer,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Tobias,
+        SortIndex: 10,
+        DateOfBirth: 1986-11-08,
+        HouseNumber: 1b,
+        InitiativeId: Guid_2,
+        ApprovalState: 2,
+        PoliticalDuty: SVP Mitglied Wil,
+        SignatureType: 1,
+        PoliticalLastName: Scherrer,
+        PoliticalFirstName: Tobi,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_18,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_9
+      },
+      Id: Guid_19
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_20,
+        Bfs: 3203,
+        Email: carla.arnold@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Arnold,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Carla,
+        SortIndex: 12,
+        DateOfBirth: 1994-08-19,
+        HouseNumber: 11a,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Arnold,
+        PoliticalFirstName: Carla,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_20,
+        Bfs: 3203,
+        Email: carla.arnold@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Arnold,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Carla,
+        SortIndex: 11,
+        DateOfBirth: 1994-08-19,
+        HouseNumber: 11a,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Arnold,
+        PoliticalFirstName: Carla,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_20,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_10
+      },
+      Id: Guid_21
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_22,
+        Bfs: 3211,
+        Email: florian.brunner@example.com,
+        Street: Unterdorfstrasse,
+        ZipCode: 9305,
+        LastName: Brunner,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Florian,
+        SortIndex: 13,
+        DateOfBirth: 1983-03-14,
+        HouseNumber: 12,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        PoliticalDuty: SP Mitglied Wil,
+        SignatureType: 1,
+        PoliticalLastName: Brunner,
+        PoliticalFirstName: Flo,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_22,
+        Bfs: 3211,
+        Email: florian.brunner@example.com,
+        Street: Unterdorfstrasse,
+        ZipCode: 9305,
+        LastName: Brunner,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Florian,
+        SortIndex: 12,
+        DateOfBirth: 1983-03-14,
+        HouseNumber: 12,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        PoliticalDuty: SP Mitglied Wil,
+        SignatureType: 1,
+        PoliticalLastName: Brunner,
+        PoliticalFirstName: Flo,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_22,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_11
+      },
+      Id: Guid_23
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_24,
+        Bfs: 3203,
+        Email: melanie.gerber@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Gerber,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Melanie,
+        SortIndex: 14,
+        DateOfBirth: 1991-12-22,
+        HouseNumber: 16a,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Gerber,
+        PoliticalFirstName: Melanie,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_24,
+        Bfs: 3203,
+        Email: melanie.gerber@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Gerber,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Melanie,
+        SortIndex: 13,
+        DateOfBirth: 1991-12-22,
+        HouseNumber: 16a,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Gerber,
+        PoliticalFirstName: Melanie,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_24,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_12
+      },
+      Id: Guid_25
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_26,
+        Bfs: 3211,
+        Email: andreas.keller@example.com,
+        Street: Weiherweg,
+        ZipCode: 9305,
+        LastName: Keller,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Andreas,
+        SortIndex: 15,
+        DateOfBirth: 1978-06-06,
+        HouseNumber: 12,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Keller,
+        PoliticalFirstName: Andi,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_26,
+        Bfs: 3211,
+        Email: andreas.keller@example.com,
+        Street: Weiherweg,
+        ZipCode: 9305,
+        LastName: Keller,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Andreas,
+        SortIndex: 14,
+        DateOfBirth: 1978-06-06,
+        HouseNumber: 12,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Keller,
+        PoliticalFirstName: Andi,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_26,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_13
+      },
+      Id: Guid_27
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_28,
+        Bfs: 3203,
+        Email: sophia.schwarz@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Schwarz,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Sophia,
+        SortIndex: 16,
+        DateOfBirth: 1996-04-17,
+        HouseNumber: 99a,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Schwarz,
+        PoliticalFirstName: Sophia,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_28,
+        Bfs: 3203,
+        Email: sophia.schwarz@example.com,
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Schwarz,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Sophia,
+        SortIndex: 15,
+        DateOfBirth: 1996-04-17,
+        HouseNumber: 99a,
+        InitiativeId: Guid_2,
+        ApprovalState: 4,
+        SignatureType: 1,
+        PoliticalLastName: Schwarz,
+        PoliticalFirstName: Sophia,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_28,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_14
+      },
+      Id: Guid_29
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_30,
+        Bfs: 3203,
+        Email: expired-not-updated@example.com,
+        Token: {
+          Value: ut.1-b49c0396-0323-569f-a31d-105d6c99c17b
+        },
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Member,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Expired Not Updated,
+        SortIndex: 17,
+        DateOfBirth: 1980-01-01,
+        HouseNumber: 50,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 1,
+        SignatureType: 0,
+        PoliticalLastName: Member,
+        PoliticalFirstName: Expired Not Updated,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_30,
+        Bfs: 3203,
+        Email: expired-not-updated@example.com,
+        Token: {
+          Value: ut.1-b49c0396-0323-569f-a31d-105d6c99c17b
+        },
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Member,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Expired Not Updated,
+        SortIndex: 16,
+        DateOfBirth: 1980-01-01,
+        HouseNumber: 50,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 1,
+        SignatureType: 0,
+        PoliticalLastName: Member,
+        PoliticalFirstName: Expired Not Updated,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_30,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_15
+      },
+      Id: Guid_31
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_30,
+        Bfs: 3203,
+        Email: expired-not-updated@example.com,
+        Token: {
+          Value: ut.1-b49c0396-0323-569f-a31d-105d6c99c17b
+        },
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Member,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Expired Not Updated,
+        SortIndex: 16,
+        DateOfBirth: 1980-01-01,
+        HouseNumber: 50,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 1,
+        SignatureType: 0,
+        PoliticalLastName: Member,
+        PoliticalFirstName: Expired Not Updated,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_30,
+        Bfs: 3203,
+        Email: expired-not-updated@example.com,
+        Token: {
+          Value: ut.1-b49c0396-0323-569f-a31d-105d6c99c17b
+        },
+        Street: Bahnhofstrasse,
+        ZipCode: 9000,
+        LastName: Member,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Expired Not Updated,
+        DateOfBirth: 1980-01-01,
+        HouseNumber: 50,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 6,
+        SignatureType: 0,
+        PoliticalLastName: Member,
+        PoliticalFirstName: Expired Not Updated,
+        PoliticalResidence: St.Gallen,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_30,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_16
+      },
+      Id: Guid_32
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_33,
+        Bfs: 3211,
+        Email: elena.fischer@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Fischer,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Elena,
+        SortIndex: 2,
+        DateOfBirth: 1985-07-30,
+        HouseNumber: 7,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 1,
+        PoliticalDuty: SP Vorstand Wil,
+        SignatureType: 0,
+        PoliticalLastName: Fischer,
+        PoliticalFirstName: Eli,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_33,
+        Bfs: 3211,
+        Email: elena.fischer@example.com,
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Fischer,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Elena,
+        DateOfBirth: 1985-07-30,
+        HouseNumber: 7,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 6,
+        PoliticalDuty: SP Vorstand Wil,
+        SignatureType: 0,
+        PoliticalLastName: Fischer,
+        PoliticalFirstName: Eli,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_33,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_17
+      },
+      Id: Guid_34
+    }
+  ]
+}

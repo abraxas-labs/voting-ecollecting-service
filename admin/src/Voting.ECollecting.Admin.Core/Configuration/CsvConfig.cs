@@ -6,4 +6,6 @@ namespace Voting.ECollecting.Admin.Core.Configuration;
 public class CsvConfig
 {
     public string StatisticalDataCsvFileName { get; set; } = "Statistikdaten_{0}_{1}.csv";
+
+    public string StatisticalDataTimeLapseCsvFileName { get; set; } = "Statistikdaten_Zeitverlauf_{0}_{1}.csv";
 }

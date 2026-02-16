@@ -53,6 +53,8 @@ public static class ServiceCollectionExtensions
             .AddScoped<IReferendumService, ReferendumService>()
             .AddScoped<IInitiativeCommitteeService, InitiativeCommitteeService>()
             .AddScoped<IInitiativeAdmissibilityDecisionService, InitiativeAdmissibilityDecisionService>()
+            .AddCronJob<InitiativeCommitteeMemberExpiryJob>(config.InitiativeCommitteeMemberExpiryJob)
+            .AddCronJob<CollectionPermissionExpiryJob>(config.CollectionPermissionExpiryJob)
             .AddCronJob<UserNotificationSenderJob>(config.UserNotificationsJob)
             .AddScoped<GroupedUserNotificationRenderer>()
             .AddScoped<ISignatureSheetAttestationGenerator, SignatureSheetAttestationGenerator>()
@@ -65,7 +67,8 @@ public static class ServiceCollectionExtensions
             .AddSystemTimeProvider()
             .AddSingleton(config.Csv)
             .AddScoped<CsvService>()
-            .AddScoped<IStatisticalDataCsvGenerator, StatisticalDataCsvGenerator>();
+            .AddScoped<IStatisticalDataCsvGenerator, StatisticalDataCsvGenerator>()
+            .AddScoped<IStatisticalDataTimeLapseCsvGenerator, StatisticalDataTimeLapseCsvGenerator>();
 
         if (config.Kms.EnableMock)
         {

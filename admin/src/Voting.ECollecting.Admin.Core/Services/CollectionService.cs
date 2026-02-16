@@ -2,24 +2,24 @@
 // For license information see LICENSE file
 
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.CompilerServices;
+using System.Diagnostics;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
-using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
 using Voting.ECollecting.Admin.Core.Services.Crypto;
+using Voting.ECollecting.Admin.Core.Utils;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
-using Voting.ECollecting.Shared.Abstractions.Core.Services.Documents;
+using Voting.ECollecting.Shared.Core.Resources;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Extensions;
 using Voting.ECollecting.Shared.Domain.Models;
-using Voting.Lib.Common.Files;
 using ICollection = Voting.ECollecting.Admin.Domain.Models.ICollection;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 
@@ -27,6 +27,9 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class CollectionService : ICollectionService
 {
+    private const string SecureIdNumberUniqueConstraintName = "IX_Collections_SecureIdNumber";
+    private const int MaxSecretIdNumbersRetries = 10;
+
     private readonly ICollectionMessageRepository _messageRepository;
     private readonly IPermissionService _permissionService;
     private readonly IUserNotificationService _userNotificationService;
@@ -40,9 +43,6 @@ public class CollectionService : ICollectionService
     private readonly AccessControlListDoiService _accessControlListDoiService;
     private readonly IDecreeRepository _decreeRepository;
     private readonly IInitiativeRepository _initiativeRepository;
-    private readonly IOfficialJournalPublicationProtocolGenerator _officialJournalPublicationProtocolGenerator;
-    private readonly IElectronicSignaturesProtocolGenerator _electronicSignaturesProtocolGenerator;
-    private readonly IStatisticalDataCsvGenerator _statisticalDataCsvGenerator;
     private readonly ICollectionSignatureSheetRepository _collectionSignatureSheetRepository;
 
     public CollectionService(
@@ -59,9 +59,6 @@ public class CollectionService : ICollectionService
         AccessControlListDoiService accessControlListDoiService,
         IDecreeRepository decreeRepository,
         IInitiativeRepository initiativeRepository,
-        IOfficialJournalPublicationProtocolGenerator officialJournalPublicationProtocolGenerator,
-        IElectronicSignaturesProtocolGenerator electronicSignaturesProtocolGenerator,
-        IStatisticalDataCsvGenerator statisticalDataCsvGenerator,
         ICollectionSignatureSheetRepository collectionSignatureSheetRepository)
     {
         _messageRepository = messageRepository;
@@ -77,9 +74,6 @@ public class CollectionService : ICollectionService
         _accessControlListDoiService = accessControlListDoiService;
         _decreeRepository = decreeRepository;
         _initiativeRepository = initiativeRepository;
-        _officialJournalPublicationProtocolGenerator = officialJournalPublicationProtocolGenerator;
-        _electronicSignaturesProtocolGenerator = electronicSignaturesProtocolGenerator;
-        _statisticalDataCsvGenerator = statisticalDataCsvGenerator;
         _collectionSignatureSheetRepository = collectionSignatureSheetRepository;
     }
 
@@ -181,7 +175,7 @@ public class CollectionService : ICollectionService
         _permissionService.SetModified(collection);
         await _db.SaveChangesAsync();
 
-        var msg = await AddMessage(collection.Id, Shared.Core.Resources.Strings.UserNotification_InformalReviewWithdrawn);
+        var msg = await AddMessage(collection.Id, Strings.UserNotification_InformalReviewWithdrawn);
 
         await transaction.CommitAsync();
         return msg;
@@ -237,7 +231,7 @@ public class CollectionService : ICollectionService
         await AddStateChangedMessage(collection);
 
         await transaction.CommitAsync();
-        collection.SetPeriodState(_timeProvider.GetUtcNowDateTime());
+        collection.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         return CollectionPermissions.Build(_permissionService, collection);
     }
 
@@ -260,6 +254,31 @@ public class CollectionService : ICollectionService
         _permissionService.SetModified(collection);
         await _db.SaveChangesAsync();
         await transaction.CommitAsync();
+    }
+
+    internal async Task CreateWithSecretIdNumber(CollectionBaseEntity collection)
+    {
+        Debug.Assert(!collection.IsElectronicSubmission, "Secret id numbers are only used for paper collections");
+
+        // instead of prefetching all used number we rely on the database to enforce uniqueness
+        // a collision is very unlikely anyway, but if it happens, we just retry with another number.
+        var usedSecretIdNumbers = new HashSet<string>();
+        for (var i = 0; i < MaxSecretIdNumbersRetries; i++)
+        {
+            collection.SecureIdNumber = RandomUtil.GenerateSecureIdNumber(usedSecretIdNumbers);
+
+            try
+            {
+                await _collectionRepository.Create(collection);
+                return;
+            }
+            catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: SecureIdNumberUniqueConstraintName })
+            {
+                usedSecretIdNumbers.Add(collection.SecureIdNumber!);
+            }
+        }
+
+        throw new InvalidOperationException("Could not create unique secret id number");
     }
 
     internal void LoadPermissions<T>(IEnumerable<T> collections)
@@ -368,28 +387,12 @@ public class CollectionService : ICollectionService
         return true;
     }
 
-    internal async IAsyncEnumerable<IFile> GenerateCollectionFiles(
-        CollectionBaseEntity collection,
-        AccessControlListDoiEntity accessControlListDoi,
-        InitiativeSubTypeEntity? initiativeSubType,
-        [EnumeratorCancellation] CancellationToken cancellationToken)
-    {
-        yield return _statisticalDataCsvGenerator.GenerateFile(collection);
-        if (collection.DomainOfInfluenceType is DomainOfInfluenceType.Mu)
-        {
-            yield break;
-        }
-
-        yield return await _officialJournalPublicationProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(collection, accessControlListDoi, initiativeSubType), cancellationToken);
-        yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData(collection, accessControlListDoi, initiativeSubType), cancellationToken);
-    }
-
     private CollectionMessageEntity CreateCollectionMessageEntity(CollectionBaseEntity collection)
     {
         var key = $"{collection.State.GetType().Name}.{collection.State.ToString()}";
-        var localizedStateValue = Shared.Core.Resources.Strings.ResourceManager.GetString(key);
+        var localizedStateValue = Strings.ResourceManager.GetString(key);
 
-        var content = string.Format(Shared.Core.Resources.Strings.UserNotification_StateChanged, localizedStateValue);
+        var content = string.Format(Strings.UserNotification_StateChanged, localizedStateValue);
         var msg = new CollectionMessageEntity { Content = content, CollectionId = collection.Id };
         _permissionService.SetCreated(msg);
         return msg;
@@ -405,8 +408,7 @@ public class CollectionService : ICollectionService
 
     private async Task<Dictionary<DomainOfInfluenceType, List<Decree>>> LoadDecreesForDeletionByDoiType(IReadOnlySet<DomainOfInfluenceType>? doiTypes, string? bfs, CollectionControlSignFilter filter)
     {
-        var now = _timeProvider.GetUtcNowDateTime();
-        var nowDate = DateOnly.FromDateTime(now);
+        var today = _timeProvider.GetUtcTodayDateOnly();
         var decreeQuery = _decreeRepository.Query();
 
         if (doiTypes?.Count > 0)
@@ -422,8 +424,8 @@ public class CollectionService : ICollectionService
         var decreeEntities = await decreeQuery
             .WhereCanAccessOwnBfs(_permissionService)
             .Where(x => filter == CollectionControlSignFilter.ReadyToDelete
-                ? x.SensitiveDataExpiryDate <= nowDate
-                : x.SensitiveDataExpiryDate > nowDate)
+                ? x.SensitiveDataExpiryDate <= today
+                : x.SensitiveDataExpiryDate > today)
             .Include(x => x.Collections
                 .OrderByDescending(y => y.CollectionEndDate).ThenBy(y => y.Description))
             .Include(x => x.Collections)
@@ -436,11 +438,11 @@ public class CollectionService : ICollectionService
             x => Mapper.MapToDecrees(x.Value));
         foreach (var decree in decrees.Values.SelectMany(x => x))
         {
-            decree.SetPeriodState(now);
+            decree.SetPeriodState(today);
 
             foreach (var referendum in decree.Referendums)
             {
-                referendum.SetPeriodState(now);
+                referendum.SetPeriodState(today);
                 LoadPermission(referendum);
                 SetCollectionCount(referendum);
             }
@@ -454,15 +456,14 @@ public class CollectionService : ICollectionService
         string? bfs,
         CollectionControlSignFilter filter)
     {
-        var now = _timeProvider.GetUtcNowDateTime();
-        var nowDate = DateOnly.FromDateTime(now);
+        var today = _timeProvider.GetUtcTodayDateOnly();
         var initiativeQuery = _initiativeRepository
             .Query()
             .Include(x => x.CollectionCount)
             .WhereCanSetSensitiveDataExpiryDate(_permissionService)
             .Where(x => filter == CollectionControlSignFilter.ReadyToDelete
-                ? x.SensitiveDataExpiryDate <= nowDate
-                : x.SensitiveDataExpiryDate > nowDate);
+                ? x.SensitiveDataExpiryDate <= today
+                : x.SensitiveDataExpiryDate > today);
 
         if (doiTypes?.Count > 0)
         {
@@ -483,7 +484,7 @@ public class CollectionService : ICollectionService
             x => Mapper.MapToInitiatives(x.Value));
         foreach (var initiative in initiatives.Values.SelectMany(x => x))
         {
-            initiative.SetPeriodState(now);
+            initiative.SetPeriodState(today);
             LoadPermission(initiative);
             SetCollectionCount(initiative);
         }

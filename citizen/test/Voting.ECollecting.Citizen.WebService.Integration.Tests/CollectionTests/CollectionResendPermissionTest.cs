@@ -167,7 +167,7 @@ public class CollectionResendPermissionTest : BaseGrpcTest<CollectionService.Col
             e => e.Id == _permissionId,
             e => e.State = state);
 
-        if (state == CollectionPermissionState.Pending)
+        if (state is CollectionPermissionState.Pending or CollectionPermissionState.Rejected or CollectionPermissionState.Expired)
         {
             await AuthenticatedClient.ResendPermissionAsync(NewValidRequest());
         }

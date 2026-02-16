@@ -11,6 +11,6 @@ namespace Voting.ECollecting.Shared.Core.Mappings;
 internal static partial class Mapper
 {
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.Residence))]
-    [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.PoliticalResidence))]
+    [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.UserPermissions))]
     internal static partial InitiativeCommitteeMember MapToInitiativeCommitteeMember(InitiativeCommitteeMemberEntity initiativeCommitteeMember);
 }

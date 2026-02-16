@@ -29,6 +29,8 @@ public class PermissionService : IPermissionService
 
     public string UserEmail { get; private set; } = string.Empty;
 
+    public bool UserEmailVerified { get; private set; }
+
     public string UserFirstName { get; private set; } = string.Empty;
 
     public string UserLastName { get; private set; } = string.Empty;
@@ -68,6 +70,7 @@ public class PermissionService : IPermissionService
         string userId,
         string userName,
         string userEmail,
+        bool userEmailVerified,
         string userFirstName,
         string userLastName)
     {
@@ -75,13 +78,14 @@ public class PermissionService : IPermissionService
         UserId = userId;
         UserName = userName;
         UserEmail = userEmail;
+        UserEmailVerified = userEmailVerified;
         UserFirstName = userFirstName;
         UserLastName = userLastName;
     }
 
     public void RequireEmail(string email)
     {
-        if (!string.Equals(email, UserEmail, StringComparison.Ordinal))
+        if (!UserEmailVerified || !string.Equals(email, UserEmail, StringComparison.Ordinal))
         {
             throw new EmailDoesNotMatchException();
         }

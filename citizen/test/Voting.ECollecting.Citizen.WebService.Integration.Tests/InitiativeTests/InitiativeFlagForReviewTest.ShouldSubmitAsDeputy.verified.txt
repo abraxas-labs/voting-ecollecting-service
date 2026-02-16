@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Wohnschutz-Initiative,
+        CollectionName: Für kantonale Begegnungsräume (Begegnungs-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: kanton+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Wohnschutz-Initiative,
+        CollectionName: Für kantonale Begegnungsräume (Begegnungs-Initiative),
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Wohnschutz-Initiative,
+        CollectionName: Für kantonale Begegnungsräume (Begegnungs-Initiative),
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -40,7 +40,7 @@
     AuditInfo: {
       CreatedById: user-id-deputy,
       CreatedByName: Test user,
-      CreatedByEmail: voting+tester@abraxas.ch,
+      CreatedByEmail: rudolph.meier@example.com,
       CreatedAt: DateTime_1
     },
     Id: Guid_5

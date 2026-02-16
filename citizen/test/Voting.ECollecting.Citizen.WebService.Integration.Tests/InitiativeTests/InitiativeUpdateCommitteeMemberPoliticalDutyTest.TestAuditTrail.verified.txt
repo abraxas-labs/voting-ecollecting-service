@@ -1,0 +1,201 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/,
+        Type: 1,
+        State: 2,
+        LogoId: Guid_2,
+        Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
+        Address: {
+          ZipCode: 9014,
+          Locality: St.Gallen,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Frischluftinitiative,
+          StreetOrPostOfficeBox: Naturweg 11
+        },
+        ImageId: Guid_3,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 4000,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        SignatureSheetTemplateId: Guid_5,
+        MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: ,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 17,
+        Link: https://www.sg.ch/,
+        Type: 1,
+        State: 2,
+        LogoId: Guid_2,
+        Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.
+Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- und Erholungsräumen erleichtern. Behörden und Schulen sollen, wo möglich, Aktivitäten gelegentlich im Freien durchführen.,
+        Address: {
+          ZipCode: 9014,
+          Locality: St.Gallen,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Frischluftinitiative,
+          StreetOrPostOfficeBox: Naturweg 11
+        },
+        ImageId: Guid_3,
+        Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: Test user,
+          ModifiedByEmail: voting+tester@abraxas.ch
+        },
+        SubTypeId: Guid_4,
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 4000,
+        DomainOfInfluenceType: 2,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        SignatureSheetTemplateId: Guid_5,
+        MaxElectronicSignatureCount: 1000,
+        GovernmentDecisionNumberLower: ,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    },
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_7,
+        Bfs: 3211,
+        Email: margarita@example.com,
+        Token: {
+          Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
+        },
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Hamrick,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Margarita,
+        SortIndex: 0,
+        DateOfBirth: 1995-12-10,
+        HouseNumber: 1,
+        TokenExpiry: DateTimeOffset_4,
+        InitiativeId: Guid_1,
+        ApprovalState: 1,
+        SignatureType: 0,
+        PoliticalLastName: Hamrick,
+        PoliticalFirstName: Margarita,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_7,
+        Bfs: 3211,
+        Email: margarita@example.com,
+        Token: {
+          Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
+        },
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Hamrick,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_3,
+          ModifiedAt: DateTimeOffset_5,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: Test user,
+          ModifiedByEmail: voting+tester@abraxas.ch
+        },
+        FirstName: Margarita,
+        SortIndex: 0,
+        DateOfBirth: 1995-12-10,
+        HouseNumber: 1,
+        TokenExpiry: DateTimeOffset_4,
+        InitiativeId: Guid_1,
+        ApprovalState: 1,
+        PoliticalDuty: Protokollführer (updated),
+        SignatureType: 0,
+        PoliticalLastName: Hamrick,
+        PoliticalFirstName: Margarita,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_7,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test user,
+        CreatedByEmail: voting+tester@abraxas.ch,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_8
+    }
+  ]
+}

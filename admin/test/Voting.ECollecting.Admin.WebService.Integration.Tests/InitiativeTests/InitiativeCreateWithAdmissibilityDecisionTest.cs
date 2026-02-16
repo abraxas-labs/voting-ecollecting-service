@@ -10,6 +10,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
 using Voting.ECollecting.Shared.Test.MockedData;
 using AdmissibilityDecisionState = Voting.ECollecting.Proto.Admin.Services.V1.Models.AdmissibilityDecisionState;
@@ -30,7 +31,9 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         await base.InitializeAsync();
         await MockedDataSeeder.Seed(
             RunScoped,
-            SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeSubmitted));
+            SeederArgs.Initiatives.WithInitiatives(
+                InitiativesCtStGallen.GuidLegislativeSubmitted,
+                InitiativesMuStGallen.GuidSubmitted));
     }
 
     [Fact]
@@ -39,6 +42,7 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         var id = await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest());
         var initiative = await MuSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = id.Id });
         initiative.Collection.State.Should().Be(CollectionState.PreRecorded);
+        initiative.Collection.SecureIdNumber.Should().NotBeNullOrEmpty();
         await Verify(initiative);
     }
 
@@ -49,6 +53,7 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         var id = await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(req);
         var initiative = await MuSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = id.Id });
         initiative.Collection.State.Should().Be(CollectionState.PreRecorded);
+        initiative.Collection.SecureIdNumber.Should().NotBeNullOrEmpty();
         await Verify(initiative);
     }
 
@@ -76,8 +81,33 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         var id = await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest(x => x.AdmissibilityDecisionState = AdmissibilityDecisionState.Rejected));
         var initiative = await MuSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = id.Id });
         initiative.Collection.State.Should().Be(CollectionState.PreRecorded);
+        initiative.Collection.SecureIdNumber.Should().NotBeNullOrEmpty();
         initiative.AdmissibilityDecisionState.Should().Be(AdmissibilityDecisionState.Rejected);
         await Verify(initiative);
+    }
+
+    [Fact]
+    public async Task ShouldThrowOnDuplicateGovernmentDecisionNumber()
+    {
+        const string existingGdn = "existing-789";
+        await ModifyDbEntities((InitiativeEntity e) => e.Id == InitiativesMuStGallen.GuidSubmitted, x => x.GovernmentDecisionNumber = existingGdn);
+
+        await AssertStatus(
+            async () => await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = existingGdn)),
+            StatusCode.InvalidArgument,
+            nameof(DuplicatedGovernmentDecisionNumberException));
+    }
+
+    [Fact]
+    public async Task ShouldThrowOnDuplicateGovernmentDecisionNumberCaseInsensitive()
+    {
+        const string existingGdn = "existing-789";
+        await ModifyDbEntities((InitiativeEntity e) => e.Id == InitiativesMuStGallen.GuidSubmitted, x => x.GovernmentDecisionNumber = existingGdn.ToUpperInvariant());
+
+        await AssertStatus(
+            async () => await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = existingGdn)),
+            StatusCode.InvalidArgument,
+            nameof(DuplicatedGovernmentDecisionNumberException));
     }
 
     [Fact]
@@ -90,6 +120,7 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         }));
         var initiative = await CtSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = id.Id });
         initiative.Collection.State.Should().Be(CollectionState.PreRecorded);
+        initiative.Collection.SecureIdNumber.Should().NotBeNullOrEmpty();
         await Verify(initiative);
     }
 
@@ -135,6 +166,7 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         var id = await CtSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest(x => x.DomainOfInfluenceType = DomainOfInfluenceType.Ch));
         var initiative = await CtSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = id.Id });
         initiative.Collection.State.Should().Be(CollectionState.PreRecorded);
+        initiative.Collection.SecureIdNumber.Should().NotBeNullOrEmpty();
         await Verify(initiative);
     }
 
@@ -149,6 +181,7 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         }));
         var initiative = await CtSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = id.Id });
         initiative.Collection.State.Should().Be(CollectionState.PreRecorded);
+        initiative.Collection.SecureIdNumber.Should().NotBeNullOrEmpty();
         await Verify(initiative);
     }
 
@@ -168,7 +201,8 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
         await RunInAuditTrailTestScope(async () =>
         {
             await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest());
-            await Verify(await GetAuditTrailEntries());
+            await Verify(await GetAuditTrailEntries())
+                .ScrubMember(nameof(CollectionBaseEntity.SecureIdNumber));
         });
     }
 

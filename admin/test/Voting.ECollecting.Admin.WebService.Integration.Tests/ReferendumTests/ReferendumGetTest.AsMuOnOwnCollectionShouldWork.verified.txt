@@ -2,17 +2,21 @@
   Id: Guid_1,
   Decree: {
     Id: Guid_2,
-    Description: Gemeinderatsbeschluss über die Änderung des Gemeindegesetzes über die Steuern,
+    Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
     MinSignatureCount: 300,
     MaxElectronicSignatureCount: 30
   },
   MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
   Collection: {
     Id: Guid_1,
-    Description: Referendum gegen die Änderung des Steuergesetzes,
+    Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
     Type: Referendum,
-    Reason: Steuergerechtigkeit in der Stadt wahren!,
-    Link: https://www.stadt.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+    Reason:
+Der Stadtrat hat beschlossen, in allen Bibliotheken gemütliche Café-Ecken mit Kaninchen, Meerschweinchen und Katzen einzurichten, um gestressten Leserinnen und Lesern Entspannung zu bieten.
+Das Referendumskomitee findet Tierliebe zwar wichtig, befürchtet aber Allergien, Hygiene-Probleme und Ablenkung vom eigentlichen Zweck einer Bibliothek.
+Bücher und Tiere vertragen sich nicht immer gut – manche Katze bevorzugt das Schlafen auf dem Lexikon.
+Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Schutz von Allergikerinnen und Allergikern – Tiere gehören in den Zoo, nicht ins Regal.,
+    Link: https://www.stadt.sg.ch/,
     Image: {
       Id: Guid_3,
       Name: placeholder.png
@@ -33,12 +37,12 @@
       HasTotalCitizenCount: true
     },
     Address: {
-      CommitteeOrPerson: Aktionskomitee für faire Steuern in der Stadt,
-      StreetOrPostOfficeBox: Rathausplatz 1,
+      CommitteeOrPerson: Komitee Stille Bibliotheken,
+      StreetOrPostOfficeBox: Vadianstrasse 15,
       ZipCode: 9000,
       Locality: St.Gallen
     },
-    IsElectronicSubmission: false,
+    IsElectronicSubmission: true,
     InformalReviewRequested: false,
     UserPermissions: {
       CanEdit: true,
@@ -61,14 +65,15 @@
       CanReturnForCorrection: false
     },
     CollectionStartDate: {
-      Seconds: 1575983530,
-      Nanos: 200000000
+      Year: 2019,
+      Month: 12,
+      Day: 10
     },
     CollectionEndDate: {
-      Seconds: 1594386730,
-      Nanos: 200000000
+      Year: 2020,
+      Month: 7,
+      Day: 10
     },
     PeriodState: InCollection
-  },
-  Number: 
+  }
 }

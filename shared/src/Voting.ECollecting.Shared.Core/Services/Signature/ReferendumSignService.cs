@@ -8,6 +8,7 @@ using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Abstractions.Core.Services.Signature;
 using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using Voting.Lib.Database.Postgres.Locking;
 
@@ -75,22 +76,39 @@ public class ReferendumSignService : IReferendumSignService
         }
     }
 
-    public async Task<(bool IsCollectionSigned, bool IsDecreeSigned)> IsReferendumOrDecreeSigned(
+    public async Task<(bool IsCollectionSigned, bool IsDecreeSigned, CollectionSignatureType? SignatureType)> IsReferendumOrDecreeSigned(
         ReferendumEntity referendum,
         IVotingStimmregisterPersonInfo personInfo)
     {
-        if (await IsCollectionSigned(referendum, personInfo))
+        var (isSigned, signatureType) = await IsCollectionSigned(referendum, personInfo);
+        if (isSigned)
         {
-            return (true, true);
+            return (true, true, signatureType);
         }
 
-        return (false, await IsOtherReferendumOfDecreeSigned(referendum, personInfo));
+        return (false, await IsOtherReferendumOfDecreeSigned(referendum, personInfo), null);
     }
 
-    public async Task<bool> IsCollectionSigned(ReferendumEntity referendum, IVotingStimmregisterPersonInfo personInfo)
+    public async Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(ReferendumEntity referendum, IVotingStimmregisterPersonInfo personInfo)
     {
         var registerIdMac = await _cryptoService.StimmregisterIdHmac(referendum, personInfo.RegisterId);
-        return await IsSigned(referendum.Id, registerIdMac);
+        return await IsSignedWithSignatureType(referendum.Id, registerIdMac);
+    }
+
+    private async Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsSignedWithSignatureType(Guid collectionId, byte[] personCollectionMac)
+    {
+        var citizen = await _logRepository
+            .Query()
+            .WhereIsSigned(collectionId, personCollectionMac)
+            .Select(x => x.CollectionCitizen)
+            .FirstOrDefaultAsync();
+
+        if (citizen == null)
+        {
+            return (false, null);
+        }
+
+        return (true, citizen.SignatureSheetId.HasValue ? CollectionSignatureType.Physical : CollectionSignatureType.Electronic);
     }
 
     private async Task<bool> IsSigned(Guid referendumId, byte[] personCollectionMac)
@@ -122,7 +140,8 @@ public class ReferendumSignService : IReferendumSignService
                 continue;
             }
 
-            if (await IsCollectionSigned(otherReferendum, personInfo))
+            var registerIdMac = await _cryptoService.StimmregisterIdHmac(otherReferendum, personInfo.RegisterId);
+            if (await IsSigned(otherReferendum.Id, registerIdMac))
             {
                 return true;
             }

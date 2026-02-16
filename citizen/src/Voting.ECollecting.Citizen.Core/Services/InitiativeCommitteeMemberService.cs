@@ -80,11 +80,15 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
                             .AsSplitQuery()
                             .Include(x => x.CommitteeMembers)
                             .ThenInclude(m => m.Permission)
+                            .Include(x => x.CommitteeMembers)
+                            .ThenInclude(m => m.Initiative)
                             .Where(x => x.Id == initiativeId)
                             .Select(x => new InitiativeCommittee(
                                 x.Bfs!,
                                 x.CommitteeLists.OrderByDescending(y => y.AuditInfo.CreatedAt).ToList(),
-                                x.CommitteeMembers.OrderBy(y => y.SortIndex).Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs)).ToList()))
+                                x.CommitteeMembers.OrderBy(y => y.SortIndex)
+                                    .ThenBy(y => y.PoliticalLastName)
+                                    .Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs)).ToList()))
                             .FirstOrDefaultAsync()
                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
         committee.RequiredApprovedMembersCount = await _accessControlListDoiRepository.Query()
@@ -92,6 +96,7 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
                                                      .Select(x => x.ECollectingInitiativeNumberOfMembersCommittee)
                                                      .FirstOrDefaultAsync()
                                                  ?? _config.InitiativeCommitteeMinApprovedMembersCount;
+        SetUserPermissions(committee);
         return committee;
     }
 
@@ -128,7 +133,7 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
 
         var currentMaxIndex = await _committeeMemberRepository.Query()
             .Where(x => x.InitiativeId == member.InitiativeId)
-            .MaxAsync(x => (int?)x.SortIndex)
+            .MaxAsync(x => x.SortIndex)
             ?? -1;
         member.SortIndex = currentMaxIndex + 1;
         _permissionService.SetCreated(member);
@@ -186,39 +191,71 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
                 "Cannot request member signature if initiative is not submitted electronically.");
         }
 
-        var existingMember = await _committeeMemberRepository.Query()
+        var existingMemberEntity = await _committeeMemberRepository.Query()
                                  .AsTracking()
                                  .Where(x => x.Id == member.Id && x.InitiativeId == member.InitiativeId)
                                  .Include(x => x.Permission)
+                                 .Include(x => x.Initiative)
                                  .FirstOrDefaultAsync()
                              ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { member.InitiativeId, member.Id });
 
-        if (!existingMember.CanEdit)
+        var existingMember = Mapper.MapToInitiativeCommitteeMember(existingMemberEntity);
+        SetUserPermissions(existingMember);
+
+        if (existingMember.UserPermissions?.CanEdit != true)
         {
             throw new ValidationException("Cannot edit approved or rejected member.");
         }
 
-        var roleEdited = newRole != existingMember.Permission?.Role;
-        var emailEdited = !string.Equals(existingMember.Email, member.Email, StringComparison.Ordinal);
-        var memberSignatureRequestedEdited = existingMember.MemberSignatureRequested != member.MemberSignatureRequested;
+        var roleEdited = newRole != existingMemberEntity.Permission?.Role;
+        var emailEdited = !string.Equals(existingMemberEntity.Email, member.Email, StringComparison.Ordinal);
+        var memberSignatureRequestedEdited = existingMemberEntity.MemberSignatureRequested != member.MemberSignatureRequested;
 
-        Mapper.ApplyUpdate(member, existingMember);
+        Mapper.ApplyUpdate(member, existingMemberEntity);
         if (emailEdited || roleEdited || memberSignatureRequestedEdited)
         {
-            existingMember.SetToken(_timeProvider.GetUtcNowDateTime() + _config.InitiativeCommitteeMemberTokenLifetime);
+            existingMemberEntity.SetToken(_timeProvider.GetUtcNowDateTime() + _config.InitiativeCommitteeMemberTokenLifetime);
         }
 
         _permissionService.SetModified(initiative);
-        _permissionService.SetModified(existingMember);
+        _permissionService.SetModified(existingMemberEntity);
         await _dataContext.SaveChangesAsync();
 
-        await UpdateCommitteeMemberPermission(initiative, existingMember, newRole, emailEdited);
+        await UpdateCommitteeMemberPermission(initiative, existingMemberEntity, newRole, emailEdited);
 
         await SendCommitteeMemberAddedNotification(
             initiative,
-            existingMember,
+            existingMemberEntity,
             roleEdited,
             emailEdited || memberSignatureRequestedEdited);
+        await transaction.CommitAsync();
+    }
+
+    public async Task UpdateCommitteeMemberPoliticalDuty(Guid initiativeId, Guid id, string politicalDuty)
+    {
+        await using var transaction = await _dataContext.BeginTransaction();
+
+        var initiative = await _initiativeRepository.Query()
+                             .WhereCanEditCommitteeMemberPoliticalDuty(_permissionService)
+                             .AsTracking()
+                             .FirstOrDefaultAsync(x => x.Id == initiativeId)
+                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
+
+        if (initiative.LockedFields.CommitteeMembers)
+        {
+            throw new CannotEditLockedFieldException(nameof(initiative.CommitteeMembers));
+        }
+
+        var existingMemberEntity = await _committeeMemberRepository.Query()
+                                       .AsTracking()
+                                       .Where(x => x.Id == id && x.InitiativeId == initiativeId)
+                                       .FirstOrDefaultAsync()
+                                   ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
+
+        existingMemberEntity.PoliticalDuty = politicalDuty;
+        _permissionService.SetModified(existingMemberEntity);
+        _permissionService.SetModified(initiative);
+        await _dataContext.SaveChangesAsync();
         await transaction.CommitAsync();
     }
 
@@ -242,13 +279,13 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
 
         var indexToRemove = await _committeeMemberRepository.Query()
             .Where(x => x.InitiativeId == initiativeId && x.Id == id)
-            .Select(x => (int?)x.SortIndex)
+            .Select(x => x.SortIndex)
             .FirstOrDefaultAsync()
             ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
         await _committeeMemberRepository.AuditedDeleteRange(q => q.Where(x => x.Id == id));
 
         await _committeeMemberRepository.AuditedUpdateRange(
-            q => q.Where(x => x.InitiativeId == initiativeId && x.SortIndex > indexToRemove),
+            q => q.Where(x => x.InitiativeId == initiativeId && x.SortIndex > indexToRemove).OrderBy(y => y.SortIndex),
             x => --x.SortIndex);
 
         await transaction.CommitAsync();
@@ -274,7 +311,7 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
 
         var oldIndex = await _committeeMemberRepository.Query()
             .Where(x => x.InitiativeId == initiativeId && x.Id == id)
-            .Select(x => (int?)x.SortIndex)
+            .Select(x => x.SortIndex)
             .FirstOrDefaultAsync()
             ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
 
@@ -295,14 +332,14 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
         {
             // Shift up members between newIndex and oldIndex
             await _committeeMemberRepository.AuditedUpdateRange(
-                q => q.Where(e => e.Id != id && e.SortIndex >= newIndex && e.SortIndex < oldIndex).OrderBy(e => e.SortIndex),
+                q => q.Where(e => e.InitiativeId == initiativeId && e.Id != id && e.SortIndex >= newIndex && e.SortIndex < oldIndex).OrderBy(e => e.SortIndex),
                 e => ++e.SortIndex);
         }
         else
         {
             // Shift down members between oldIndex and newIndex
             await _committeeMemberRepository.AuditedUpdateRange(
-                q => q.Where(e => e.Id != id && e.SortIndex <= newIndex && e.SortIndex > oldIndex).OrderBy(e => e.SortIndex),
+                q => q.Where(e => e.InitiativeId == initiativeId && e.Id != id && e.SortIndex <= newIndex && e.SortIndex > oldIndex).OrderBy(e => e.SortIndex),
                 e => --e.SortIndex);
         }
 
@@ -318,7 +355,7 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
         var initiative = await _initiativeRepository.Query()
                              .WhereCanEdit(_permissionService)
                              .AsTracking()
-                             .IncludeRequestedCommitteeMember(id)
+                             .IncludeRequestedOrSignatureRejectedOrExpiredCommitteeMember(id)
                              .FirstOrDefaultAsync(x => x.Id == initiativeId)
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
 
@@ -331,6 +368,16 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
             ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
 
         member.SetToken(_timeProvider.GetUtcNowDateTime() + _config.InitiativeCommitteeMemberTokenLifetime);
+        member.ApprovalState = InitiativeCommitteeMemberApprovalState.Requested;
+        if (!member.SortIndex.HasValue)
+        {
+            var currentMaxIndex = await _committeeMemberRepository.Query()
+                .Where(x => x.InitiativeId == initiativeId)
+                .MaxAsync(x => x.SortIndex) ?? -1;
+
+            member.SortIndex = currentMaxIndex + 1;
+        }
+
         await _dataContext.SaveChangesAsync();
 
         await SendCommitteeMemberAddedNotification(initiative, member);
@@ -412,6 +459,14 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
                 .AnyAsync(x => x.Id == member.InitiativeId))
         {
             throw new EntityNotFoundException(nameof(InitiativeEntity), member.InitiativeId);
+        }
+
+        if (member.SortIndex.HasValue)
+        {
+            await _committeeMemberRepository.AuditedUpdateRange(
+                q => q.Where(x => x.InitiativeId == member.InitiativeId && x.SortIndex > member.SortIndex).OrderBy(y => y.SortIndex),
+                x => --x.SortIndex);
+            member.SortIndex = null;
         }
 
         member.ApprovalState = InitiativeCommitteeMemberApprovalState.SignatureRejected;
@@ -521,5 +576,18 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
             userSocialSecurityNumber,
             member.Initiative!.DomainOfInfluenceType!.Value,
             member.Initiative!.Bfs!);
+    }
+
+    private void SetUserPermissions(InitiativeCommittee committee)
+    {
+        foreach (var member in committee.CommitteeMembers)
+        {
+            SetUserPermissions(member);
+        }
+    }
+
+    private void SetUserPermissions(InitiativeCommitteeMember member)
+    {
+        member.UserPermissions = Shared.Core.Permissions.InitiativeCommitteeMemberPermissions.Build(member);
     }
 }

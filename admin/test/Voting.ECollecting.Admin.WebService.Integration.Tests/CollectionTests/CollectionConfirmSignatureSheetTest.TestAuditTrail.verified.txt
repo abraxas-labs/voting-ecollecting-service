@@ -21,7 +21,7 @@
           Invalid: 3
         },
         NextSheetNumber: 9,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       RecordAfter: {
@@ -46,7 +46,7 @@
           Invalid: 32
         },
         NextSheetNumber: 9,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
       SourceEntityId: Guid_1,
@@ -129,8 +129,9 @@
           CreatedByEmail: admin@example.com
         },
         AttestedAt: DateTimeOffset_5,
-        ReceivedAt: DateTimeOffset_6,
-        CollectionMunicipalityId: Guid_1
+        ReceivedAt: 2020-01-08,
+        CollectionMunicipalityId: Guid_1,
+        ModifiedBySuperiorAuthority: false
       },
       RecordAfter: {
         Id: Guid_6,
@@ -145,7 +146,7 @@
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_7,
+          ModifiedAt: DateTimeOffset_6,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -154,8 +155,9 @@
           ModifiedByEmail: default-user@example.com
         },
         AttestedAt: DateTimeOffset_5,
-        ReceivedAt: DateTimeOffset_6,
-        CollectionMunicipalityId: Guid_1
+        ReceivedAt: 2020-01-08,
+        CollectionMunicipalityId: Guid_1,
+        ModifiedBySuperiorAuthority: true
       },
       SourceEntityId: Guid_6,
       AuditInfo: {
@@ -205,7 +207,7 @@
         Age: 82,
         Sex: 1,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_8,
+          CreatedAt: DateTimeOffset_7,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -236,7 +238,7 @@
         Age: 70,
         Sex: 1,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_9,
+          CreatedAt: DateTimeOffset_8,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -267,7 +269,7 @@
       RecordAfter: {
         Id: Guid_14,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_10,
+          CreatedAt: DateTimeOffset_9,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com
@@ -297,7 +299,7 @@
       RecordAfter: {
         Id: Guid_16,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_11,
+          CreatedAt: DateTimeOffset_10,
           CreatedById: default-user-id,
           CreatedByName: default user firstname default user lastname,
           CreatedByEmail: default-user@example.com

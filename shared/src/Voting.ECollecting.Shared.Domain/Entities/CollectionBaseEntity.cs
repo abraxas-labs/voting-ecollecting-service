@@ -6,16 +6,16 @@ using Voting.ECollecting.Shared.Domain.Enums;
 
 namespace Voting.ECollecting.Shared.Domain.Entities;
 
-public class CollectionBaseEntity : IntegritySignatureEntity, IHasBfs
+public class CollectionBaseEntity : IntegritySignatureEntity, IHasBfs, IHasCollectionPeriod
 {
     // The signature list submission end date is 3 days before the collection end date.
     private const int SignatureListSubmissionOffsetInDays = -3;
 
     private CollectionPeriodState? _periodState;
 
-    public DateTime? CollectionStartDate { get; set; }
+    public DateOnly? CollectionStartDate { get; set; }
 
-    public DateTime? CollectionEndDate { get; set; }
+    public DateOnly? CollectionEndDate { get; set; }
 
     public string Description { get; set; } = string.Empty;
 
@@ -71,12 +71,18 @@ public class CollectionBaseEntity : IntegritySignatureEntity, IHasBfs
     // This can be nullable, since a referendum may not be assigned to a decree.
     public int? MaxElectronicSignatureCount { get; set; }
 
+    /// <summary>
+    /// Gets or sets a public but secure identification number for this collection.
+    /// Secure in the sense that it is not easily guessable and can be used for public identification.
+    /// </summary>
+    public string? SecureIdNumber { get; set; }
+
     public CollectionPeriodState PeriodState => _periodState ?? throw new InvalidOperationException("State not initialized.");
 
     // The signature list submission end date is a defined amount of days before the collection end date.
-    public DateTime? SignatureListSubmissionEndDate => CollectionEndDate?.Date.AddDays(SignatureListSubmissionOffsetInDays);
+    public DateTime? SignatureListSubmissionEndDate => CollectionEndDate?.AddDays(SignatureListSubmissionOffsetInDays).ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc);
 
-    public virtual void SetPeriodState(DateTime utcNow)
+    public virtual void SetPeriodState(DateOnly today)
     {
         if (!CollectionStartDate.HasValue || !CollectionEndDate.HasValue)
         {
@@ -84,11 +90,11 @@ public class CollectionBaseEntity : IntegritySignatureEntity, IHasBfs
             return;
         }
 
-        if (CollectionStartDate > utcNow)
+        if (CollectionStartDate > today)
         {
             _periodState = CollectionPeriodState.Published;
         }
-        else if (CollectionStartDate <= utcNow && CollectionEndDate >= utcNow)
+        else if (CollectionStartDate <= today && CollectionEndDate >= today)
         {
             _periodState = CollectionPeriodState.InCollection;
         }

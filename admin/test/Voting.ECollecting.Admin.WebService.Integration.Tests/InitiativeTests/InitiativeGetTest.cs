@@ -22,7 +22,7 @@ public class InitiativeGetTest : BaseGrpcTest<InitiativeService.InitiativeServic
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesMuStGallen.GuidInPreparation));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCtStGallen.GuidLegislativeInPreparation, InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting, InitiativesMuStGallen.GuidInPreparation));
     }
 
     [Fact]
@@ -42,7 +42,7 @@ public class InitiativeGetTest : BaseGrpcTest<InitiativeService.InitiativeServic
     [Fact]
     public async Task AsMuOnCtCollectionShouldWork()
     {
-        var initiative = await MuSgStammdatenverwalterClient.GetAsync(NewValidRequest());
+        var initiative = await MuSgStammdatenverwalterClient.GetAsync(NewValidRequest(x => x.Id = InitiativesCtStGallen.IdUnityEnabledForCollectionCollecting));
         await Verify(initiative);
     }
 
@@ -58,6 +58,14 @@ public class InitiativeGetTest : BaseGrpcTest<InitiativeService.InitiativeServic
     {
         await AssertStatus(
             async () => await MuGoldachStammdatenverwalterClient.GetAsync(NewValidRequest(x => x.Id = InitiativesMuStGallen.IdInPreparation)),
+            StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task AsMuOnOnCtCollectionInPreparationShouldThrow()
+    {
+        await AssertStatus(
+            async () => await MuSgStammdatenverwalterClient.GetAsync(NewValidRequest()),
             StatusCode.NotFound);
     }
 

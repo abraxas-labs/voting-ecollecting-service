@@ -15,10 +15,6 @@
     {
       Validation: ApprovedCommitteeMembersMinValid,
       IsValid: true
-    },
-    {
-      Validation: ApprovedCommitteeMembersMaxValid,
-      IsValid: true
     }
   ],
   IsValid: true

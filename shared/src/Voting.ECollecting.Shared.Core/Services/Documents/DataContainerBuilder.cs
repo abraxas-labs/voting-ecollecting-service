@@ -2,7 +2,6 @@
 // For license information see LICENSE file
 
 using Voting.ECollecting.Shared.Core.Services.Documents.TemplateBag;
-using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Extensions;
 using Voting.ECollecting.Shared.Domain.Models;
@@ -16,19 +15,22 @@ public static class DataContainerBuilder
 
     public static ECollectingProtocolDataContainer BuildProtocolDataContainer(ECollectingProtocolTemplateData data)
     {
-        var totalValidPhysicalSignatureCount = data.Collection.CollectionCount!.TotalCitizenCount -
-                                               data.Collection.CollectionCount.ElectronicCitizenCount;
-        var totalInvalidPhysicalSignatureCount = data.Collection.Municipalities!.Sum(x => x.PhysicalCount.Invalid);
-        var collectionTypeName = GetCollectionTypeName(data.Collection, data.SubType);
+        var totalCitizenCount = data.Collections.Sum(x => x.CollectionCount!.TotalCitizenCount);
+        var electronicCitizenCount = data.Collections.Sum(x => x.CollectionCount!.ElectronicCitizenCount);
+        var totalValidPhysicalSignatureCount = totalCitizenCount - electronicCitizenCount;
+        var totalInvalidPhysicalSignatureCount = data.Collections.SelectMany(x => x.Municipalities!).Sum(x => x.PhysicalCount.Invalid);
+        var collectionTypeName = data.IsDecree
+            ? DefaultReferendumCollectionTypeName
+            : data.SubType?.Description ?? DefaultInitiativeCollectionTypeName;
         var domainOfInfluenceDataContainers = BuildDomainOfInfluenceDataContainers(data);
         return new ECollectingProtocolDataContainer(
-            TemplateBagMapper.MapToString(data.Collection.DomainOfInfluenceType!.Value),
+            TemplateBagMapper.MapToString(data.DomainOfInfluenceType),
             collectionTypeName,
-            data.Collection.Description,
-            data.Collection.CollectionCount.ElectronicCitizenCount,
+            data.Description,
+            electronicCitizenCount,
             totalValidPhysicalSignatureCount,
             totalInvalidPhysicalSignatureCount,
-            data.Collection.CollectionCount.TotalCitizenCount,
+            totalCitizenCount,
             domainOfInfluenceDataContainers);
     }
 
@@ -36,7 +38,7 @@ public static class DataContainerBuilder
     {
         return new CommitteeListTemplateBag(
             TemplateBagMapper.MapToString(data.Initiative.DomainOfInfluenceType!.Value),
-            GetCollectionTypeName(data.Initiative, data.SubType),
+            data.SubType?.Description ?? DefaultInitiativeCollectionTypeName,
             data.Initiative.Description,
             data.RequiredApprovedMembersCount,
             TemplateBagMapper.MapToCommitteeMembers(data.CommitteeMembers),
@@ -47,7 +49,10 @@ public static class DataContainerBuilder
     private static List<DomainOfInfluenceDataContainer> BuildDomainOfInfluenceDataContainers(
         ECollectingProtocolTemplateData data)
     {
-        var collectionMunicipalityByBfs = data.Collection.Municipalities!.ToDictionary(x => x.Bfs);
+        var collectionMunicipalitiesByBfs = data.Collections
+            .SelectMany(x => x.Municipalities!)
+            .GroupBy(x => x.Bfs)
+            .ToDictionary(x => x.Key, x => x.ToList());
         var doiMunicipalitiesByParent = data.AccessControlListDoi.GetFlattenChildren()
             .Where(x => x is { Type: AclDomainOfInfluenceType.Mu, Parent: not null })
             .GroupBy(x => x.Parent!)
@@ -57,22 +62,31 @@ public static class DataContainerBuilder
         var domainOfInfluenceDataContainers = new List<DomainOfInfluenceDataContainer>();
         foreach (var (parent, doiMunicipalities) in doiMunicipalitiesByParent)
         {
-            var validElectronicSignatureCount = 0;
-            var validPhysicalSignatureCount = 0;
-            var invalidPhysicalSignatureCount = 0;
+            var totalValidElectronicSignatureCount = 0;
+            var totalValidPhysicalSignatureCount = 0;
+            var totalInvalidPhysicalSignatureCount = 0;
             var muDomainOfInfluenceDataContainers = new List<DomainOfInfluenceDataContainer>();
             foreach (var bfs in doiMunicipalities.OrderBy(x => x.SortNumber).Select(x => x.Bfs))
             {
-                if (string.IsNullOrEmpty(bfs) || !collectionMunicipalityByBfs.TryGetValue(bfs, out var municipality))
+                if (string.IsNullOrEmpty(bfs) || !collectionMunicipalitiesByBfs.TryGetValue(bfs, out var municipalities) || municipalities.Count == 0)
                 {
                     continue;
                 }
 
-                validElectronicSignatureCount += municipality.ElectronicCitizenCount;
-                validPhysicalSignatureCount += municipality.PhysicalCount.Valid;
-                invalidPhysicalSignatureCount += municipality.PhysicalCount.Invalid;
+                var validElectronicSignatureCount = municipalities.Sum(x => x.ElectronicCitizenCount);
+                var validPhysicalSignatureCount = municipalities.Sum(x => x.PhysicalCount.Valid);
+                var invalidPhysicalSignatureCount = municipalities.Sum(x => x.PhysicalCount.Invalid);
+
+                totalValidElectronicSignatureCount += validElectronicSignatureCount;
+                totalValidPhysicalSignatureCount += validPhysicalSignatureCount;
+                totalInvalidPhysicalSignatureCount += invalidPhysicalSignatureCount;
+
                 muDomainOfInfluenceDataContainers.Add(
-                    TemplateBagMapper.MapToDomainOfInfluenceDataContainer(municipality));
+                    new DomainOfInfluenceDataContainer(
+                    municipalities[0].MunicipalityName,
+                    validElectronicSignatureCount,
+                    validPhysicalSignatureCount,
+                    invalidPhysicalSignatureCount));
             }
 
             if (muDomainOfInfluenceDataContainers.Count == 0)
@@ -83,24 +97,14 @@ public static class DataContainerBuilder
 
             var domainOfInfluenceDataContainer = new DomainOfInfluenceDataContainer(
                 parent.Name,
-                validElectronicSignatureCount,
-                validPhysicalSignatureCount,
-                invalidPhysicalSignatureCount)
+                totalValidElectronicSignatureCount,
+                totalValidPhysicalSignatureCount,
+                totalInvalidPhysicalSignatureCount)
             { DomainOfInfluences = muDomainOfInfluenceDataContainers, };
 
             domainOfInfluenceDataContainers.Add(domainOfInfluenceDataContainer);
         }
 
         return domainOfInfluenceDataContainers;
-    }
-
-    private static string GetCollectionTypeName(CollectionBaseEntity collection, InitiativeSubTypeEntity? subType)
-    {
-        return collection.Type switch
-        {
-            CollectionType.Initiative => subType?.Description ?? DefaultInitiativeCollectionTypeName,
-            CollectionType.Referendum => DefaultReferendumCollectionTypeName,
-            _ => throw new InvalidOperationException($"Unexpected collection type: {collection.Type}"),
-        };
     }
 }

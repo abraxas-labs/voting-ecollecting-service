@@ -2,277 +2,300 @@
   Groups: [
     {
       DomainOfInfluenceType: Ch,
-      Initiatives: [
+      Referendums: [
         {
           Id: Guid_1,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
+          Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
+          CollectionStartDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 6,
+            Day: 10
+          },
+          MinSignatureCount: 50000,
+          MaxElectronicSignatureCount: 5000,
+          Link: https://www.admin.ch/,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+              Collection: {
+                Id: Guid_2,
+                Description: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
+                Type: Referendum,
+                Reason:
+Das Parlament hat beschlossen, dass alle Bergführerinnen und Bergführer ein Jodel-Zertifikat erwerben müssen, um alpine Traditionen zu bewahren.
+Das Referendumskomitee hält diese Vorschrift für übertrieben und unpraktisch.
+Bergführen ist eine Sicherheitsfrage, keine Folklore-Veranstaltung. Jodeln ist schön, aber kein Pflichtteil der Ausbildung.
+Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für Professionalität und die Erkenntnis, dass Tradition freiwillig gelebt werden sollte.,
+                Link: https://www.admin.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_3,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_4,
+                  CollectionId: Guid_2,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 2
+                },
+                Address: {
+                  CommitteeOrPerson: Verband Schweizer Bergführer,
+                  StreetOrPostOfficeBox: Postfach 123,
+                  ZipCode: 3920,
+                  Locality: Zermatt
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 6,
+                  Day: 10
+                },
+                PeriodState: InCollection
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_5,
+              Decree: {
+                Id: Guid_1,
+                Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 5000
+              },
+              MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
+              Collection: {
+                Id: Guid_5,
+                Description: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
+                Type: Referendum,
+                Reason:
+Ein zweites Komitee lehnt die Jodel-Pflicht ab, weil sie unnötige Kosten verursacht.
+Bergführerinnen und Bergführer müssen bereits viele teure Ausbildungen absolvieren – ein Jodel-Zertifikat ist eine finanzielle Mehrbelastung ohne Mehrwert.
+Die Kursgebühren und Prüfungskosten belasten einen ohnehin schon herausfordernden Beruf zusätzlich.
+Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die Überzeugung, dass Kultur nicht auf Kosten der Berufsleute gefördert werden sollte.,
+                Link: https://www.admin.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_6,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_7,
+                  CollectionId: Guid_5,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 2
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee für Steuergerechtigkeit,
+                  StreetOrPostOfficeBox: Kramgasse 12,
+                  ZipCode: 3011,
+                  Locality: Bern
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 6,
+                  Day: 10
+                },
+                PeriodState: InCollection
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 4
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_8,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
+          CollectionStartDate: {
+            Year: 2017,
+            Month: 7,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2018,
+            Month: 7,
+            Day: 10
+          },
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Link: https://www.admin.ch/,
+          PeriodState: Expired,
+          Collections: [
+            {
+              Id: Guid_9,
+              Decree: {
+                Id: Guid_8,
+                Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
+                PeriodState: Expired,
+                MaxElectronicSignatureCount: 10000
+              },
+              MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
+              Collection: {
+                Id: Guid_9,
+                Description: Referendum gegen die obligatorische tägliche Schokoladen-Pause in allen Unternehmen,
+                Type: Referendum,
+                Reason:
+Das Parlament hat beschlossen, dass alle Schweizer Unternehmen eine 15-minütige Schokoladen-Pause einführen müssen, um die Produktivität zu steigern.
+Das Referendumskomitee findet diese Vorschrift bevormundend und unpraktisch.
+Nicht alle mögen Schokolade, manche vertragen sie nicht, und viele Betriebe haben bereits eigene Pausenregelungen.
+Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und die Überzeugung, dass der Staat nicht jede Pause regulieren sollte.,
+                Link: https://www.admin.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_10,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EndedCameAbout,
+                AttestedCollectionCount: {
+                  Id: Guid_11,
+                  CollectionId: Guid_9,
+                  TotalCitizenCount: 121632,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 1610
+                },
+                Address: {
+                  CommitteeOrPerson: Verband Schweizer Arbeitgeber,
+                  StreetOrPostOfficeBox: Hegibachstrasse 47,
+                  ZipCode: 8032,
+                  Locality: Zürich
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2017,
+                  Month: 7,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2018,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: Expired
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 121632,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 1610
+          },
+          State: EndedCameAbout
+        }
+      ],
+      Initiatives: [
+        {
+          Id: Guid_12,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
           Wording:
-Die AHV-Reform soll die Finanzierung der Altersvorsorge sichern. Dafür werden
-verschiedene Massnahmen vorgeschlagen, darunter eine Erhöhung des Rentenalters
-und eine Anpassung der Beiträge.,
+Die Bundesverfassung wird wie folgt geändert:
+Art. 78c (neu) – Förderung der Raclette-Kultur
+1 Der Bund anerkennt Raclette als wichtigen Teil der Schweizer Kultur und Tradition.
+2 Er kann Projekte unterstützen, die Raclette-Anlässe fördern und regionale Käseproduktion einbeziehen.
+3 Der Bund kann einen jährlichen nationalen Raclette-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.,
           Collection: {
-            Id: Guid_1,
-            Description: AHV-Reform,
+            Id: Guid_12,
+            Description: Für Raclette-Abende (Raclette-Initiative),
             Type: Initiative,
-            Reason: Die AHV muss nachhaltig finanziert werden!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/ahv-21.html,
+            Reason:
+Raclette ist Schweizer Tradition – doch gemeinsame Raclette-Abende werden seltener. Diese Initiative will die gesellige Raclette-Kultur wiederbeleben und fördern.
+Raclette ist mehr als geschmolzener Käse – es ist Gemeinschaft, Tradition und Genuss. Mit regionalen Käsesorten und gemütlichem Beisammensein entstehen unvergessliche Momente.
+Die Initiative fordert keine Raclette-Pflicht, sondern Unterstützung für Raclette-Anlässe in Gemeinden und Vereinen. Ein bisschen mehr gemeinsam Raclette essen – das stärkt den Zusammenhalt und pflegt Schweizer Brauchtum.
+Denn wer zusammen Raclette isst, versteht sich besser.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_2,
+              Id: Guid_13,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_3,
-              CollectionId: Guid_1,
+              Id: Guid_14,
+              CollectionId: Guid_12,
               HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Komitee AHV Reform,
-              StreetOrPostOfficeBox: Postfach 400,
-              ZipCode: 3000,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Raclette-Initiative,
+              StreetOrPostOfficeBox: Racletteweg 11,
+              ZipCode: 1950,
+              Locality: Sion
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1583845930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 3,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1597065130,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Published
           },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
+          },
           GovernmentDecisionNumber: CHE-2023-0008,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_4,
-          DomainOfInfluenceType: Ch,
-          Bfs: 1,
-          MinSignatureCount: 100000,
-          MaxElectronicSignatureCount: 10000,
-          Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
-          Collection: {
-            Id: Guid_4,
-            Description: Für den öffentlichen Veloverkehr,
-            Type: Initiative,
-            Reason: Der Veloverkehr muss nachhaltig finanziert werden!,
-            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_5,
-              Name: placeholder-signatures.pdf
-            },
-            State: SignatureSheetsSubmitted,
-            AttestedCollectionCount: {
-              Id: Guid_6,
-              CollectionId: Guid_4,
-              HasTotalCitizenCount: false
-            },
-            Address: {
-              CommitteeOrPerson: Verein Verkehrsschutz,
-              StreetOrPostOfficeBox: Bahnhofstrasse 10,
-              ZipCode: 9000,
-              Locality: St. Gallen
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
-          },
-          GovernmentDecisionNumber: CHE-2023-0012,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_7,
-          DomainOfInfluenceType: Ch,
-          Bfs: 1,
-          MinSignatureCount: 100000,
-          MaxElectronicSignatureCount: 10000,
-          Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
-          Collection: {
-            Id: Guid_7,
-            Description: Für den öffentlichen Verkehr,
-            Type: Initiative,
-            Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden!,
-            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t.html,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_8,
-              Name: placeholder-signatures.pdf
-            },
-            State: EnabledForCollection,
-            AttestedCollectionCount: {
-              Id: Guid_9,
-              CollectionId: Guid_7,
-              HasTotalCitizenCount: false
-            },
-            Address: {
-              CommitteeOrPerson: Verein Verkehrsschutz,
-              StreetOrPostOfficeBox: Bahnhofstrasse 10,
-              ZipCode: 9000,
-              Locality: St. Gallen
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
-          },
-          GovernmentDecisionNumber: CHE-2023-0009,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_10,
-          DomainOfInfluenceType: Ch,
-          Bfs: 1,
-          MinSignatureCount: 100000,
-          MaxElectronicSignatureCount: 10000,
-          Wording:
-#2
-Die Bundesverfassung wird wie folgt geändert:
-Art. 81a (neu) Öffentlicher Verkehr
-Bund und Kantone fördern in allen Landesgegenden den öffentlichen Verkehr auf Schiene, Strasse und Wasser sowie die Verlagerung des Güterverkehrs von der Strasse auf die Schiene.,
-          Collection: {
-            Id: Guid_10,
-            Description: Für den öffentlichen Verkehr (2),
-            Type: Initiative,
-            Reason: Der öffentliche Verkehr muss nachhaltig finanziert werden! (2),
-            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis366t2.html,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_11,
-              Name: placeholder-signatures.pdf
-            },
-            State: EnabledForCollection,
-            AttestedCollectionCount: {
-              Id: Guid_12,
-              CollectionId: Guid_10,
-              HasTotalCitizenCount: false
-            },
-            Address: {
-              CommitteeOrPerson: ,
-              StreetOrPostOfficeBox: ,
-              ZipCode: ,
-              Locality: 
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
-          },
-          GovernmentDecisionNumber: CHE-2023-0010,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_13,
-          DomainOfInfluenceType: Ch,
-          Bfs: 1,
-          MinSignatureCount: 100000,
-          MaxElectronicSignatureCount: 10000,
-          Wording:
-Die Bundesverfassung vom 18. April 1999 wird wie folgt geändert:
-Art. 108b (neu) Steuerpolitische Massnahmen zur Wohneigentumsförderung
-1 Bund und Kantone treffen zur Förderung und zum Erhalt des selbstgenutzten Wohneigentums wirksame steuerpolitische Massnahmen.,
-          Collection: {
-            Id: Guid_13,
-            Description: Sicheres Wohnen im Alter,
-            Type: Initiative,
-            Reason: Die AHV muss nachhaltig finanziert werden!,
-            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis359t.html,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_14,
-              Name: placeholder-signatures.pdf
-            },
-            State: EnabledForCollection,
-            AttestedCollectionCount: {
-              Id: Guid_15,
-              CollectionId: Guid_13,
-              HasTotalCitizenCount: false,
-              ElectronicCitizenCount: 167
-            },
-            Address: {
-              CommitteeOrPerson: Initiative Sicheres Wohnen im Alter,
-              StreetOrPostOfficeBox: Aeschenplatz 6,
-              ZipCode: 4052,
-              Locality: Basel
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
-            },
-            PeriodState: Expired
-          },
-          GovernmentDecisionNumber: CHE-2023-0011,
           CommitteeDescription: ,
           LockedFields: {
             Wording: false,
@@ -287,47 +310,412 @@ Art. 108b (neu) Steuerpolitische Massnahmen zur Wohneigentumsförderung
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
           Wording:
-Diese Initiative fordert eine nachhaltige Verkehrspolitik auf Bundesebene.
-Der öffentliche Verkehr soll gestärkt und der motorisierte Individualverkehr
-reduziert werden.,
+Die Bundesverfassung wird wie folgt geändert:
+Art. 352 (neu) – Förderung von Humor und guter Laune
+1 Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+2 Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+3 Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
           Collection: {
             Id: Guid_16,
-            Description: Bundesweite Verkehrsinitiative,
+            Description: Für die Förderung der guten Laune (Humorinitiative),
             Type: Initiative,
-            Reason: Verkehr muss nachhaltig sein!,
-            Link: https://www.admin.ch/gov/de/start/dokumentation/abstimmungen/20230924/verkehrsinitiative.html,
+            Reason:
+Die Schweiz hat Preise für Wissenschaft, Architektur und Käse – aber keinen fürs Lachen. Diese Initiative will Humor als Teil der kulturellen Identität stärken.
+Ein verfassungsmässiger Auftrag zur Förderung von Humor bedeutet nicht, dass jede Bundesratssitzung mit einem Witz beginnen muss. Aber er unterstreicht, dass Lachen eine verbindende, friedensfördernde und gesundheitsstärkende Ressource ist.
+Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, die nicht nur effizient, sondern auch herzlich ist – und die über sich selbst lachen kann, ohne das Gesicht zu verlieren.,
+            Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
               Id: Guid_17,
               Name: placeholder-signatures.pdf
             },
-            State: EndedCameNotAbout,
+            State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
               Id: Guid_18,
               CollectionId: Guid_16,
-              TotalCitizenCount: 50000,
-              HasTotalCitizenCount: true,
-              ElectronicCitizenCount: 587
+              HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Verein Verkehrsschutz,
-              StreetOrPostOfficeBox: Bahnhofstrasse 10,
-              ZipCode: 9000,
-              Locality: St. Gallen
+              CommitteeOrPerson: Komitee Honig-Initiative,
+              StreetOrPostOfficeBox: Bienenweg 19,
+              ZipCode: 8180,
+              Locality: Bülach
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1547125930,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
+            },
+            PeriodState: InCollection
+          },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
+          },
+          GovernmentDecisionNumber: CHE-2023-0012,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_19,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 351 (neu) – Gelassenheit im öffentlichen Leben
+1 Der Bund fördert die Gelassenheit, Achtsamkeit und Ruhe im gesellschaftlichen und öffentlichen Leben.
+2 Der Bund kann einen jährlichen nationalen Tag der Entschleunigung festlegen, um den Wert der Ruhe im Land zu würdigen.,
+          Collection: {
+            Id: Guid_19,
+            Description: Für mehr Gelassenheit im öffentlichen Leben (Entschleunigungs-Initiative),
+            Type: Initiative,
+            Reason:
+Die Schweiz funktioniert wie ein Uhrwerk: präzise und zuverlässig. Zwischen Sitzungskalendern, Formularfristen und E-Mail-Fluten droht allerdings die Ruhe verloren zu gehen.
+Diese Initiative will kein neues Amt für Achtsamkeit schaffen, sondern einen verfassungsmässigen Impuls setzen: Gelassenheit ist kein Luxus, sondern eine Voraussetzung für gute Entscheidungen.
+Ein eigener Verfassungsartikel erinnert Bund und Bevölkerung daran, dass Effizienz und Ruhe sich nicht ausschliessen. Ein «Tag der Entschleunigung» lädt dazu ein, kurz innezuhalten – und vielleicht sogar den Laptop zuzuklappen.
+Denn wer langsam denkt, denkt oft besser.,
+            Link: https://www.admin.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_20,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_21,
+              CollectionId: Guid_19,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Bergbahn-Initiative,
+              StreetOrPostOfficeBox: Bahnhofplatz 3,
+              ZipCode: 3800,
+              Locality: Interlaken
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 12,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 10
+            },
+            PeriodState: InCollection
+          },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
+          },
+          GovernmentDecisionNumber: CHE-2023-0009,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_22,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 68a (neu) – Förderung der Brettspielkultur
+1 Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+2 Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+3 Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
+          Collection: {
+            Id: Guid_22,
+            Description: Für Schweizer Brettspiele (Brettspiel-Initiative),
+            Type: Initiative,
+            Reason:
+Brettspiele fördern Gemeinschaft – doch traditionelle Schweizer Spiele geraten in Vergessenheit. Diese Initiative will Schweizer Brettspielkultur wiederbeleben.
+Brettspiele sind mehr als Zeitvertreib – sie sind Familienerlebnis, Strategietraining und Kulturgut. Mit Förderung traditioneller Spiele wie Eile mit Weile entsteht neues Interesse.
+Die Initiative fordert keine Spielpflicht, sondern Unterstützung für Spieleabende und Turniere. Ein bisschen mehr Brettspiel-Kultur – das bringt Generationen zusammen und fördert soziale Interaktion.
+Denn wer spielt, bleibt geistig fit.,
+            Link: https://www.admin.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_23,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_24,
+              CollectionId: Guid_22,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: ,
+              StreetOrPostOfficeBox: ,
+              ZipCode: ,
+              Locality: 
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 12,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 10
+            },
+            PeriodState: InCollection
+          },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
+          },
+          GovernmentDecisionNumber: CHE-2023-0010,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_25,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 353 (neu) – Förderung der Freundlichkeit
+1 Der Bund fördert den respektvollen und freundlichen Umgang zwischen allen Menschen im öffentlichen Leben.
+2 Er berücksichtigt bei seinen Aufgaben und in der Kommunikation eine Kultur der Höflichkeit, des Zuhörens und des gegenseitigen Respekts.
+3 Der Bund kann Programme unterstützen, die das gesellschaftliche Zusammenleben durch Freundlichkeit, Rücksichtnahme und gutes Benehmen stärken.,
+          Collection: {
+            Id: Guid_25,
+            Description: Für die Förderung der Freundlichkeit (Freundlichkeitsinitiative),
+            Type: Initiative,
+            Reason:
+Die Schweiz gilt als Land der Ordnung – doch manchmal bleibt im Alltag zwischen Pendelstress, Online-Kommentaren und Schalterbesuchen die Freundlichkeit auf der Strecke.
+Diese Initiative möchte ein kleines, aber wirkungsvolles Gegengewicht schaffen: Freundlichkeit soll als Wert in der Verfassung verankert werden – nicht als Pflicht, sondern als Orientierung.
+Ein verfassungsmässiger Auftrag zur Förderung der Höflichkeit erinnert Verwaltung, Wirtschaft und Gesellschaft daran, dass Respekt und gutes Benehmen keine altmodischen Tugenden sind, sondern moderne Werkzeuge des Zusammenlebens.
+Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroinvestitionen in den sozialen Frieden.,
+            Link: https://www.admin.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_26,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_27,
+              CollectionId: Guid_25,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 167
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Wein-Initiative,
+              StreetOrPostOfficeBox: Weinberg 28,
+              ZipCode: 1091,
+              Locality: Grandvaux
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 8,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
+          },
+          GovernmentDecisionNumber: CHE-2023-0011,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_28,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 78d (neu) – Schutz alpiner Pflanzen
+1 Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.
+2 Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.
+3 Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.,
+          Collection: {
+            Id: Guid_28,
+            Description: Für den Schutz von Bergblumen (Bergblumen-Initiative),
+            Type: Initiative,
+            Reason:
+Schweizer Bergblumen sind einzigartig – doch viele Arten sind bedroht. Diese Initiative will den Schutz alpiner Pflanzen stärken und Förderung der Artenvielfalt erreichen.
+Bergblumen sind mehr als Dekoration – sie sind Ökosystem, Naturschönheit und Touristenattraktion. Mit Schutzmassnahmen und Bildungsprojekten entstehen gesunde Lebensraüme.
+Die Initiative fordert keine Betretungsverbote, sondern achtsamen Umgang mit der Natur. Ein bisschen mehr Schutz für Bergblumen – das bewahrt Biodiversität und alpine Schönheit.
+Denn wer Blumen schützt, schützt die Berge.,
+            Link: https://www.admin.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_29,
+              Name: placeholder-signatures.pdf
+            },
+            State: EndedCameAbout,
+            AttestedCollectionCount: {
+              Id: Guid_30,
+              CollectionId: Guid_28,
+              TotalCitizenCount: 150000,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 8725
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Bergblumen-Initiative,
+              StreetOrPostOfficeBox: Blumenweg 31,
+              ZipCode: 7000,
+              Locality: Chur
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 1,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2019,
+              Month: 8,
+              Day: 10
+            },
+            PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
+          },
+          GovernmentDecisionNumber: CHE-2023-0015,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_31,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
+          MinSignatureCount: 100000,
+          MaxElectronicSignatureCount: 10000,
+          Wording:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 69d (neu) – Förderung von Volksfesten
+1 Der Bund anerkennt Volksfeste als wichtigen Teil der Schweizer Kultur und unterstützt ihre Durchführung.
+2 Er kann Organisatoren bei der Planung und Finanzierung traditioneller Feste unterstützen.
+3 Der Bund kann Projekte fördern, die Volksfeste als Teil der regionalen Identität stärken.,
+          Collection: {
+            Id: Guid_31,
+            Description: Für Schweizer Volksfeste (Volksfest-Initiative),
+            Type: Initiative,
+            Reason:
+Volksfeste bringen Menschen zusammen – doch traditionelle Feste brauchen Unterstützung. Diese Initiative will Schweizer Volksfeste fördern und bewahren.
+Volksfeste sind mehr als Unterhaltung – sie sind Tradition, Gemeinschaft und Identität. Mit Unterstützung lokaler Organisatoren und Förderung traditioneller Bräuche entstehen lebendige Feste.
+Die Initiative fordert keine neuen Feste, sondern Hilfe beim Erhalt bestehender Traditionen. Ein bisschen mehr Volksfest in der Schweiz – das stärkt regionale Identität und Zusammenhalt.
+Denn wer mitfeiert, gehört dazu.,
+            Link: https://www.admin.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_32,
+              Name: placeholder-signatures.pdf
+            },
+            State: EndedCameNotAbout,
+            AttestedCollectionCount: {
+              Id: Guid_33,
+              CollectionId: Guid_31,
+              TotalCitizenCount: 50000,
+              HasTotalCitizenCount: true,
+              ElectronicCitizenCount: 587
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Volksfest-Initiative,
+              StreetOrPostOfficeBox: Festplatz 5,
+              ZipCode: 4500,
+              Locality: Solothurn
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 1,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2019,
+              Month: 8,
+              Day: 10
+            },
+            PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_15,
+            DomainOfInfluenceType: Ch,
+            Description: Volksinitiative,
+            MinSignatureCount: 100000,
+            MaxElectronicSignatureCount: 50000
           },
           GovernmentDecisionNumber: CHE-2023-0013,
           CommitteeDescription: ,
@@ -344,104 +732,60 @@ reduziert werden.,
       DomainOfInfluenceType: Ct,
       Referendums: [
         {
-          Id: Guid_19,
+          Id: Guid_34,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
           CollectionStartDate: {
-            Seconds: 1576242730,
-            Nanos: 200000000
+            Year: 2019,
+            Month: 12,
+            Day: 13
           },
           CollectionEndDate: {
-            Seconds: 1592053930,
-            Nanos: 200000000
+            Year: 2020,
+            Month: 6,
+            Day: 13
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
+          Link: https://www.sg.ch/,
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_20,
+              Id: Guid_35,
               Decree: {
-                Id: Guid_19,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Id: Guid_34,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_20,
-                Description: Nein zum Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht,
+                Id: Guid_35,
+                Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
-                Reason: Föderalismus wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/551231/steuern.html#2,
+                Reason:
+Der Kantonsrat hat beschlossen, dass alle Haushalte verpflichtende Workshops zur Pflanzenpflege besuchen müssen, um Grünkompetenz und Luftqualität zu fördern.
+Das Referendumskomitee hält diese Pflicht für übertrieben und zeitraubend.
+Pflanzenpflege sollte freiwillig bleiben – nicht jeder hat Zeit, Interesse oder Talent für Grünpflanzen.
+Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das Recht, sein Zuhause selbst zu gestalten – mit oder ohne grünen Daumen.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_21,
+                  Id: Guid_36,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_22,
-                  CollectionId: Guid_20,
-                  HasTotalCitizenCount: false
-                },
-                Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
-                  Locality: St.Gallen
-                },
-                IsElectronicSubmission: true,
-                InformalReviewRequested: false,
-                IsSigned: false,
-                HasIsSigned: false,
-                CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
-                },
-                CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
-                },
-                PeriodState: InCollection
-              },
-              Number: ,
-              IsOtherReferendumOfSameDecreeSigned: false,
-              HasIsOtherReferendumOfSameDecreeSigned: false
-            },
-            {
-              Id: Guid_23,
-              Decree: {
-                Id: Guid_19,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
-                PeriodState: InCollection,
-                MaxElectronicSignatureCount: 300
-              },
-              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-              Collection: {
-                Id: Guid_23,
-                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
-                Type: Referendum,
-                Reason: Steuergerechtigkeit im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html,
-                SignatureSheetTemplateGenerated: false,
-                SignatureSheetTemplate: {
-                  Id: Guid_24,
-                  Name: placeholder-signatures.pdf
-                },
-                State: EnabledForCollection,
-                AttestedCollectionCount: {
-                  Id: Guid_25,
-                  CollectionId: Guid_23,
+                  Id: Guid_37,
+                  CollectionId: Guid_35,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 101
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee gegen Pflanzenzwang,
+                  StreetOrPostOfficeBox: Multergasse 8,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -449,50 +793,54 @@ reduziert werden.,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_26,
+              Id: Guid_38,
               Decree: {
-                Id: Guid_19,
-                Description: Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die BVG- und Stiftungsaufsicht der Kantone Zürich, Glarus, Schaffhausen, Appenzell Ausserrhoden, Appenzell Innerrhoden, St.Gallen, Graubünden, Thurgau und Tessin,
+                Id: Guid_34,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_26,
-                Description: Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung,
+                Id: Guid_38,
+                Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
-                Reason: Steuergerechtigkeit im Kanton wahren!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20240324/steuern.html#2,
+                Reason:
+Ein zweites Komitee lehnt die obligatorischen Pflanzen-Workshops ab, weil sie gesundheitliche Probleme verursachen können.
+Viele Menschen leiden unter Pollenallergien, Schimmelsporen oder Reaktionen auf bestimmte Pflanzen.
+Zwang zu Grünpflanzen kann Asthma und Allergien verschlimmern.
+Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft und das Recht, allergenfrei zu wohnen.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_27,
+                  Id: Guid_39,
                   Name: placeholder-signatures.pdf
                 },
-                State: SignatureSheetsSubmitted,
+                State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_28,
-                  CollectionId: Guid_26,
-                  HasTotalCitizenCount: false,
-                  ElectronicCitizenCount: 61
+                  Id: Guid_40,
+                  CollectionId: Guid_38,
+                  HasTotalCitizenCount: false
                 },
                 Address: {
-                  CommitteeOrPerson: Aktionskomitee für faire Steuern im Kanton,
-                  StreetOrPostOfficeBox: Klosterhof 1,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Verein Allergiefreies Wohnen,
+                  StreetOrPostOfficeBox: Rorschacher Strasse 88,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -500,16 +848,73 @@ reduziert werden.,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1576242730,
-                  Nanos: 200000000
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
                 },
                 CollectionEndDate: {
-                  Seconds: 1592053930,
-                  Nanos: 200000000
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
                 },
                 PeriodState: InCollection
               },
-              Number: ,
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_41,
+              Decree: {
+                Id: Guid_34,
+                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 300
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_41,
+                Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
+                Type: Referendum,
+                Reason:
+Ein drittes Komitee lehnt die obligatorischen Workshops ab, weil sie das Budget unnötig belasten.
+Die Kosten für Kursleiter, Räumlichkeiten und Material gehen in die Millionen – Geld, das anderswo fehlt.
+Bildung ist wichtig, aber nicht bei jedem Thema muss der Staat eingreifen.
+Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und die Überzeugung, dass manche Dinge freiwillig besser funktionieren.,
+                Link: https://www.sg.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_42,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_43,
+                  CollectionId: Guid_41,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 61
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee Vernünftige Ausgaben,
+                  StreetOrPostOfficeBox: Spisertor 3,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 13
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 6,
+                  Day: 13
+                },
+                PeriodState: InCollection
+              },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
@@ -523,55 +928,61 @@ reduziert werden.,
           State: CollectionApplicable
         },
         {
-          Id: Guid_29,
+          Id: Guid_44,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+          Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
           CollectionStartDate: {
-            Seconds: 1499692330,
-            Nanos: 200000000
+            Year: 2017,
+            Month: 7,
+            Day: 10
           },
           CollectionEndDate: {
-            Seconds: 1531228330,
-            Nanos: 200000000
+            Year: 2018,
+            Month: 7,
+            Day: 10
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
-          Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+          Link: https://www.sg.ch/,
           PeriodState: Expired,
           Collections: [
             {
-              Id: Guid_30,
+              Id: Guid_45,
               Decree: {
-                Id: Guid_29,
-                Description: Kantonsratsbeschluss über die Änderung des Kantonsgesetzes über die Bildung,
+                Id: Guid_44,
+                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
                 PeriodState: Expired,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_30,
-                Description: Referendum gegen die Änderung des Bildungsgesetzes,
+                Id: Guid_45,
+                Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
                 Type: Referendum,
-                Reason: Bildungsqualität im Kanton sichern!,
-                Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/initiativen---referenden/20210307/bildung.html,
+                Reason:
+Der Kantonsrat hat beschlossen, dass alle Hausnummern im Kanton St.Gallen künftig während der Nacht beleuchtet sein müssen, um Einsatzkräfte besser zu unterstützen.
+Das Referendumskomitee befürwortet den Gedanken der Sicherheit, hält aber eine Pflichtbeleuchtung für übertrieben und zu energieintensiv.
+Reflektierende Hausnummern wären effizienter und umweltfreundlicher.
+Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünftige Regulierung – im Sinne eines hellen Verstandes statt heller Hausnummern.,
+                Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_31,
+                  Id: Guid_46,
                   Name: placeholder-signatures.pdf
                 },
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
-                  Id: Guid_32,
-                  CollectionId: Guid_30,
+                  Id: Guid_47,
+                  CollectionId: Guid_45,
                   TotalCitizenCount: 3632,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 161
                 },
                 Address: {
-                  CommitteeOrPerson: Bildungsinitiative Kanton St. Gallen,
-                  StreetOrPostOfficeBox: Bahnhofstrasse 10,
-                  ZipCode: 9001,
+                  CommitteeOrPerson: Komitee Freie Bildungswahl,
+                  StreetOrPostOfficeBox: Oberstrasse 17,
+                  ZipCode: 9000,
                   Locality: St.Gallen
                 },
                 IsElectronicSubmission: true,
@@ -579,16 +990,17 @@ reduziert werden.,
                 IsSigned: false,
                 HasIsSigned: false,
                 CollectionStartDate: {
-                  Seconds: 1499692330,
-                  Nanos: 200000000
+                  Year: 2017,
+                  Month: 7,
+                  Day: 10
                 },
                 CollectionEndDate: {
-                  Seconds: 1531228330,
-                  Nanos: 200000000
+                  Year: 2018,
+                  Month: 7,
+                  Day: 10
                 },
                 PeriodState: Expired
               },
-              Number: ,
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
@@ -605,52 +1017,65 @@ reduziert werden.,
       ],
       Initiatives: [
         {
-          Id: Guid_33,
+          Id: Guid_48,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Die Einheitsinitiative «Behördenlöhne vors Volk» wurde im Februar 2020 von den Stimmberechtigten abgelehnt.
-Im Rahmen des Kantonsratsbeschlusses verlangte der Kantonsrat eine Transparenz-Bestimmung.
-Diese wurde im II. Nachtrag zum Gemeindegesetz formuliert.
-Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürgerschaft gewählten Behördenmitglieder zu veröffentlichen.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 226 (neu) – Förderung kantonaler Wanderhütten
+1 Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
+2 Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
+3 Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
           Collection: {
-            Id: Guid_33,
-            Description: Behördenlöhne vors Volk,
+            Id: Guid_48,
+            Description: Für kantonale Wanderhütten (Wanderhütten-Initiative),
             Type: Initiative,
-            Reason: Jeder soll wissen was ein Regierungsrat verdient!,
-            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            Reason:
+Wandern ist beliebt – doch gemütliche Wanderhütten zum Verweilen fehlen oft. Die «Wanderhütten-Initiative» will einfache Hütten als Rastplätze an Wanderwegen schaffen.
+Eine Wanderhütte ist mehr als Unterstand – sie ist Schutz, Rastplatz und Begegnungsort. Mit Bänken, Tisch und vielleicht einem Ofen entstehen kleine Refugien in der Natur.
+Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für Tageswanderer. Ein bisschen Schutz und Rastplatz – das macht Wandern noch schöner.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_34,
+              Id: Guid_49,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_35,
-              CollectionId: Guid_33,
+              Id: Guid_50,
+              CollectionId: Guid_48,
               HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Komitee Soziale Gerechtigkeit,
-              StreetOrPostOfficeBox: Burgstrasse 4,
-              ZipCode: 3600,
-              Locality: Thun
+              CommitteeOrPerson: Komitee Wanderhütten-Initiative,
+              StreetOrPostOfficeBox: Hüttenweg 4,
+              ZipCode: 9050,
+              Locality: Appenzell
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1583845930,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 3,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1597065130,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 8,
+              Day: 10
             },
             PeriodState: Published
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
           },
           GovernmentDecisionNumber: SG-123.412229,
           CommitteeDescription: ,
@@ -661,111 +1086,66 @@ Damit sollen die Gemeinden verpflichtet werden, die Besoldung der von der Bürge
           }
         },
         {
-          Id: Guid_36,
+          Id: Guid_52,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Frauen, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
+1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
           Collection: {
-            Id: Guid_36,
-            Description: Frauenstimm- und Wahlrecht in Kantons- und Gemeindeangelegenheiten,
+            Id: Guid_52,
+            Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
             Type: Initiative,
-            Reason: Frauen sollen auch wählen dürfen,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
+            Reason:
+St.Gallen ist ein vielfältiger Kanton – vom Bodensee bis zum Toggenburg, von der Stadt bis ins Tal. Doch im Alltag geht das einfache «Grüezi» manchmal im digitalen Rauschen verloren. Diese Initiative will daran erinnern, dass gute Nachbarschaft kein Zufall, sondern ein Stück Lebensqualität ist.
+Sie verpflichtet den Kanton nicht zu neuen Ämtern, sondern zu einer Haltung: Gemeinschaft entsteht dort, wo Menschen einander kennen und helfen. Ob gemeinsames Dorffest, Quartiergarten oder Schneeschaufeln für den Nachbarn – solche kleinen Gesten halten den Kanton zusammen.
+Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage der Herzlichkeit.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_37,
-              Name: placeholder-signatures.pdf
-            },
-            State: EnabledForCollection,
-            AttestedCollectionCount: {
-              Id: Guid_38,
-              CollectionId: Guid_36,
-              HasTotalCitizenCount: false
-            },
-            Address: {
-              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-              StreetOrPostOfficeBox: Bahnhofplatz 6,
-              ZipCode: 2502,
-              Locality: Biel/Bienne
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
-          },
-          GovernmentDecisionNumber: SG-123.412210,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_39,
-          DomainOfInfluenceType: Ct,
-          Bfs: 17,
-          MinSignatureCount: 4000,
-          MaxElectronicSignatureCount: 1000,
-          Wording:
-Noch vor etwas mehr als 50 Jahren war es in vielen Teilen der Welt undenkbar: Jugendliche, die wählen, abstimmen, mitentscheiden. Heute erscheint uns das selbstverständlich –
-doch der Weg dorthin war lang, steinig und wurde durch unermüdlichen Einsatz von mutigen Frauen und Männern geebnet, die für Gleichberechtigung eingetreten sind.
-Diese Initiative möchte das Bewusstsein für die Bedeutung des Frauenwahlrechts stärken und aufzeigen,
-dass echte Gleichstellung mehr ist als ein historischer Meilenstein –
-sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ämtern, Entscheidungspositionen und öffentlichen Debatten unterrepräsentiert.,
-          Collection: {
-            Id: Guid_39,
-            Description: Jugendwahlrecht in Kantons- und Gemeindeangelegenheiten,
-            Type: Initiative,
-            Reason: Frauen sollen auch wählen dürfen,
-            Link: https://www.sg.ch/politik-verwaltung/abstimmungen-wahlen/aktuelle-abstimmungen/_jcr_content/Par/sgch_accordion_list/AccordionListPar/sgch_accordion/AccordionPar/sgch_downloadlist/DownloadListPar/sgch_download_1958581821.ocFile/Statistik_Kantonale_Volksabstimmungen_seit_1954_Ergebnisse_Kanton_St.Gallen.pdf,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_40,
+              Id: Guid_53,
               Name: placeholder-signatures.pdf
             },
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_41,
-              CollectionId: Guid_39,
+              Id: Guid_54,
+              CollectionId: Guid_52,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 42
             },
             Address: {
-              CommitteeOrPerson: Plattform Inklusion & Vielfalt,
-              StreetOrPostOfficeBox: Bahnhofplatz 6,
-              ZipCode: 2502,
-              Locality: Biel/Bienne
+              CommitteeOrPerson: Komitee Barfusspfad-Initiative,
+              StreetOrPostOfficeBox: Pfadweg 20,
+              ZipCode: 9113,
+              Locality: Degersheim
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 11
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 11
             },
             PeriodState: InCollection
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
           },
           GovernmentDecisionNumber: SG-123.412212,
           CommitteeDescription: ,
@@ -776,52 +1156,135 @@ sie ist ein fortlaufender Auftrag. Auch heute noch sind Frauen in politischen Ä
           }
         },
         {
-          Id: Guid_42,
+          Id: Guid_55,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Die Bundesverfassung[1] wird wie folgt geändert:
-Art. 93 Abs. 4
-Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebühren. Das Empfangen von Programmen begründet keine Beitragspflicht.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
+1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
           Collection: {
-            Id: Guid_42,
-            Description: Radio und Fernsehen – ohne Billag,
+            Id: Guid_55,
+            Description: Für eine tägliche Portion Natur (Frischluftinitiative),
             Type: Initiative,
-            Reason: Keine Gebühren mehr für Radio und Fernsehen,
-            Link: https://www.bk.admin.ch/ch/d/pore/vi/vis446t.html,
+            Reason:
+Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
+Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_43,
+              Id: Guid_56,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_44,
-              CollectionId: Guid_42,
-              HasTotalCitizenCount: false,
-              ElectronicCitizenCount: 487
+              Id: Guid_57,
+              CollectionId: Guid_55,
+              HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Schweizer Medienverband,
-              StreetOrPostOfficeBox: Medienstrasse 22,
-              ZipCode: 8005,
-              Locality: Zürich
+              CommitteeOrPerson: Komitee Picknick-Plätze-Initiative,
+              StreetOrPostOfficeBox: Picknickweg 13,
+              ZipCode: 9602,
+              Locality: Bazenheid
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
+            },
+            PeriodState: InCollection
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
+          },
+          GovernmentDecisionNumber: SG-123.412210,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_58,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 1000,
+          Wording:
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 215 (neu) – Förderung von Musik im Alltag
+1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+          Collection: {
+            Id: Guid_58,
+            Description: Für mehr Musik im Alltag (Klang-Initiative),
+            Type: Initiative,
+            Reason:
+Musik verbindet – ob im Chörli, in der Schulband oder beim spontanen «Zäuerle». Die St.Gallerinnen und St.Galler sind kreativ, aber im Alltag bleibt das Musizieren oft hinter Terminen, Lärm und Hektik zurück.
+Diese Initiative verlangt keinen neuen Behördenapparat, sondern ein Bewusstsein: Musik gehört in den Alltag, nicht nur auf die Bühne.
+Ob Strassenmusikfest, offenes Singen, Jugendband oder Rentnerjazz, gemeinsames Musizieren schafft Freude, baut Brücken und weckt Erinnerungen.
+Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitzuswingen. Denn ein Kanton, der zusammen singt, streitet weniger laut.,
+            Link: https://www.sg.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_59,
+              Name: placeholder-signatures.pdf
+            },
+            State: EnabledForCollection,
+            AttestedCollectionCount: {
+              Id: Guid_60,
+              CollectionId: Guid_58,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 487
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Aussichtsturm-Initiative,
+              StreetOrPostOfficeBox: Turmweg 31,
+              ZipCode: 9056,
+              Locality: Gais
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 8,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
           },
           GovernmentDecisionNumber: SG-123.412211,
           CommitteeDescription: ,
@@ -832,58 +1295,67 @@ Radio und Fernsehen finanzieren sich selbst. Der Bund erhebt keine Empfangsgebü
           }
         },
         {
-          Id: Guid_45,
+          Id: Guid_61,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
           Wording:
-Gemäss dem Lehrplan des Kantons St. Gallen sollen Schülerinnen und Schüler auch eigene Interessen verfolgen können.
-
-In der ersten Oberstufe ist es sinnvoll, sich – als Jahres-, Semester- oder Quartalskurse –
-im Rahmen von Freifächern einerseits auf Neues einzulassen oder zum Ausgleich bestehende Interessen weiter
-zu verfolgen und andererseits daran zu denken mit einem Wahlfach allfällige Defizite zu reduzieren.
-
-In der zweiten Oberstufe können Frei-, Wahlfach- und Wahl-Pflichtangebote dazu genutzt werden, die künftige Berufswahl zu berücksichtigen.
-Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fähigkeiten fördert oder alternativ ein Freifach wählen, das einem viel Freude bereitet.,
+Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
+Art. 231 (neu) – Förderung öffentlicher Kräutergärten
+1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
           Collection: {
-            Id: Guid_45,
-            Description: Freie Schulwahl auf der Oberstufe,
+            Id: Guid_61,
+            Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
             Type: Initiative,
-            Reason: Jeder darf wählen an welche Schule er gehen möchte,
-            Link: https://www.sg.ch/news/sgch_allgemein/2020/06/behoerdenloehne-veroeffentlichen.html,
+            Reason:
+Kräuter sind nützlich und schön – doch Kräutergärten zum Kennenlernen sind rar. Die «Kräutergarten-Initiative» will öffentliche Kräutergärten zum Riechen, Lernen und Ernten schaffen.
+Ein Kräutergarten ist mehr als Beet – er ist Wissen, Duft und alte Tradition. Mit Informationstafeln und vielfältigen Kräutern entstehen Lernorte für alle.
+Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Parks und Schulhöfen, wo jeder ernten darf. Ein bisschen Kräuterwissen – das verbindet mit Natur und Küche.,
+            Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_46,
+              Id: Guid_62,
               Name: placeholder-signatures.pdf
             },
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_47,
-              CollectionId: Guid_45,
+              Id: Guid_63,
+              CollectionId: Guid_61,
               TotalCitizenCount: 3487,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 15
             },
             Address: {
-              CommitteeOrPerson: Bildungsethik Schweiz,
-              StreetOrPostOfficeBox: Rosenweg 4,
-              ZipCode: 3000,
-              Locality: Bern
+              CommitteeOrPerson: Komitee Kräutergarten-Initiative,
+              StreetOrPostOfficeBox: Kräuterweg 16,
+              ZipCode: 9240,
+              Locality: Uzwil
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1562764330,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_64,
+            DomainOfInfluenceType: Ct,
+            Description: Verfassungsinitiative,
+            MinSignatureCount: 8000,
+            MaxElectronicSignatureCount: 4000
           },
           GovernmentDecisionNumber: SG-123.4122177,
           CommitteeDescription: ,
@@ -898,138 +1370,319 @@ Man kann auch ein Wahlfach wählen, das mathematisch-naturwissenschaftliche Fäh
     },
     {
       DomainOfInfluenceType: Mu,
+      Referendums: [
+        {
+          Id: Guid_65,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
+          CollectionStartDate: {
+            Year: 2020,
+            Month: 2,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 7,
+            Day: 10
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/,
+          PeriodState: Published,
+          Collections: [
+            {
+              Id: Guid_66,
+              Decree: {
+                Id: Guid_65,
+                Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee:
+Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
+,
+              Collection: {
+                Id: Guid_66,
+                Description: Referendum gegen die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung,
+                Type: Referendum,
+                Reason:
+Der Gemeinderat hat beschlossen, alle Trinkwasserbrunnen in öffentlichen Parks durch smarte Brunnen mit Sensor-Aktivierung, automatischer Temperaturanpassung und digitalem Display zu ersetzen.
+Das Referendumskomitee findet diese Technologisierung übertrieben. Ein normaler Brunnen funktioniert seit Jahrhunderten zuverlässig – warum muss jetzt alles smart sein?
+Zudem können Kinder nicht mehr spielerisch den Hebel drücken, sondern müssen auf Sensoren warten. Das nimmt den Brunnen ihre Lebendigkeit.
+Dieses Referendum steht für einfache Lösungen, mechanische Zuverlässigkeit und das gute alte Wasserplätschern ohne digitale Schnickschnack.,
+                Link: https://www.goldach.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_67,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_68,
+                  CollectionId: Guid_66,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee Einfache Brunnen,
+                  StreetOrPostOfficeBox: Brunnenweg 3,
+                  ZipCode: 9403,
+                  Locality: Goldach
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2020,
+                  Month: 2,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: Published
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_69,
+              Decree: {
+                Id: Guid_65,
+                Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
+                PeriodState: Published,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee:
+Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
+,
+              Collection: {
+                Id: Guid_69,
+                Description: Referendum gegen die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung (zweites Komitee),
+                Type: Referendum,
+                Reason:
+Der Gemeinderat hat beschlossen, alle Trinkwasserbrunnen in öffentlichen Parks durch smarte Brunnen mit Sensor-Aktivierung zu ersetzen.
+Dieses zweite Referendumskomitee teilt die Bedenken des ersten Komitees und ergänzt: Die hohen Kosten für Installation und Wartung stehen in keinem Verhältnis zum Nutzen.
+Zudem sind die Sensoren anfällig für Defekte, besonders im Winter. Ein einfacher mechanischer Hebel ist robuster und kostengünstiger.
+Dieses Referendum steht für Sparsamkeit, Nachhaltigkeit und bewährte Technik statt teurer Spielereien.,
+                Link: https://www.goldach.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_70,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_71,
+                  CollectionId: Guid_69,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee Traditionelle Brunnen,
+                  StreetOrPostOfficeBox: Wasserweg 7,
+                  ZipCode: 9403,
+                  Locality: Goldach
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2020,
+                  Month: 2,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: Published
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_72,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
+          CollectionStartDate: {
+            Year: 2019,
+            Month: 12,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 7,
+            Day: 10
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.stadt.sg.ch/,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_73,
+              Decree: {
+                Id: Guid_72,
+                Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_73,
+                Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
+                Type: Referendum,
+                Reason:
+Der Stadtrat hat beschlossen, in allen Bibliotheken gemütliche Café-Ecken mit Kaninchen, Meerschweinchen und Katzen einzurichten, um gestressten Leserinnen und Lesern Entspannung zu bieten.
+Das Referendumskomitee findet Tierliebe zwar wichtig, befürchtet aber Allergien, Hygiene-Probleme und Ablenkung vom eigentlichen Zweck einer Bibliothek.
+Bücher und Tiere vertragen sich nicht immer gut – manche Katze bevorzugt das Schlafen auf dem Lexikon.
+Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Schutz von Allergikerinnen und Allergikern – Tiere gehören in den Zoo, nicht ins Regal.,
+                Link: https://www.stadt.sg.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_74,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_75,
+                  CollectionId: Guid_73,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Komitee Stille Bibliotheken,
+                  StreetOrPostOfficeBox: Vadianstrasse 15,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: InCollection
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            },
+            {
+              Id: Guid_76,
+              Decree: {
+                Id: Guid_72,
+                Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 30
+              },
+              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+              Collection: {
+                Id: Guid_76,
+                Description: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
+                Type: Referendum,
+                Reason:
+Ein weiteres Komitee hat sich formiert, weil auch es die Tierpläne in den Bibliotheken für problematisch hält – allerdings aus anderen Gründen.
+Eine Bibliothek ist laut, hektisch und kein artgerechter Lebensraum.
+Ausserdem entstehen zusätzliche Kosten für Futter, Pflege, Tierarzt und Versicherung – Geld, das besser in neue Bücher investiert wäre.
+Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit und die Vorstellung, dass Bibliotheken Orte des Wissens bleiben sollten – nicht Streichelzoos.,
+                Link: https://www.stadt.sg.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_77,
+                  Name: placeholder-signatures.pdf
+                },
+                State: SignatureSheetsSubmitted,
+                AttestedCollectionCount: {
+                  Id: Guid_78,
+                  CollectionId: Guid_76,
+                  HasTotalCitizenCount: false
+                },
+                Address: {
+                  CommitteeOrPerson: Verein Tierwohl und Buchkultur,
+                  StreetOrPostOfficeBox: Museumstrasse 8,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2019,
+                  Month: 12,
+                  Day: 10
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 10
+                },
+                PeriodState: InCollection
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false
+          },
+          State: CollectionApplicable
+        }
+      ],
       Initiatives: [
         {
-          Id: Guid_48,
-          DomainOfInfluenceType: Mu,
-          Bfs: 3213,
-          MinSignatureCount: 500,
-          MaxElectronicSignatureCount: 250,
-          Wording: Diese Initiative fordert eine bessere Nutzung der Bundesbahnen in Goldach.,
-          Collection: {
-            Id: Guid_48,
-            Description: Goldacher Bahnersatz,
-            Type: Initiative,
-            Reason: Bessere Nutzung der Bundesbahnen!,
-            Link: https://www.goldach.ch/,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_49,
-              Name: placeholder-signatures.pdf
-            },
-            State: SignatureSheetsSubmitted,
-            AttestedCollectionCount: {
-              Id: Guid_50,
-              CollectionId: Guid_48,
-              HasTotalCitizenCount: false
-            },
-            Address: {
-              CommitteeOrPerson: Komitee Seenähe,
-              StreetOrPostOfficeBox: Bodenseestraße 1,
-              ZipCode: 9403,
-              Locality: Goldach
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
-          },
-          GovernmentDecisionNumber: MUGD-2025-003,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_51,
-          DomainOfInfluenceType: Mu,
-          Bfs: 3213,
-          MinSignatureCount: 500,
-          MaxElectronicSignatureCount: 250,
-          Wording:
-Diese Initiative fordert eine bessere Nutzung der Bodenseenähe in Goldach.
-Die Uferpromenade soll ausgebaut und der Zugang zum See verbessert werden.
-Zudem sollen mehr Freizeitangebote am See geschaffen werden.,
-          Collection: {
-            Id: Guid_51,
-            Description: Goldacher Seenähe,
-            Type: Initiative,
-            Reason: Bessere Nutzung der Bodenseenähe!,
-            Link: https://www.goldach.ch/,
-            SignatureSheetTemplateGenerated: false,
-            SignatureSheetTemplate: {
-              Id: Guid_52,
-              Name: placeholder-signatures.pdf
-            },
-            State: EnabledForCollection,
-            AttestedCollectionCount: {
-              Id: Guid_53,
-              CollectionId: Guid_51,
-              HasTotalCitizenCount: false
-            },
-            Address: {
-              CommitteeOrPerson: Komitee Seenähe,
-              StreetOrPostOfficeBox: Bodenseestraße 1,
-              ZipCode: 9403,
-              Locality: Goldach
-            },
-            IsElectronicSubmission: true,
-            InformalReviewRequested: false,
-            IsSigned: false,
-            HasIsSigned: false,
-            CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
-            },
-            CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
-            },
-            PeriodState: InCollection
-          },
-          GovernmentDecisionNumber: MUGD-2025-002,
-          CommitteeDescription: ,
-          LockedFields: {
-            Wording: false,
-            Description: false,
-            CommitteeMembers: false
-          }
-        },
-        {
-          Id: Guid_54,
+          Id: Guid_79,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr Grünflächen in der Stadt St.Gallen.
-Parks und Gärten sollen erhalten und neue geschaffen werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
+1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
           Collection: {
-            Id: Guid_54,
-            Description: Stadtweite Grünflächen,
+            Id: Guid_79,
+            Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
             Type: Initiative,
-            Reason: Mehr Grün in der Stadt!,
-            Link: https://www.stadt.sg.ch/home/gruenflaechen.html,
+            Reason:
+St. Gallen ist die Rosenstadt – und was wäre eine Rosenstadt ohne Blütenpracht? Diese Initiative will sicherstellen, dass die Stadt auch künftig farbig, lebendig und bienenfreundlich bleibt.
+Ob Blumenkisten an Geländern, Wildblumenstreifen am Strassenrand oder Schulprojekte mit Insektenhotels – kleine grüne Gesten schaffen grosses Wohlbefinden. Die Initiative verlangt keine teuren Anlagen, sondern ein bewusstes Augenmerk auf Natur im Alltag.
+Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht nur schön fürs Auge – es ist gut fürs Klima, für die Bienen und für die Seele.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_55,
+              Id: Guid_80,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_56,
-              CollectionId: Guid_54,
+              Id: Guid_81,
+              CollectionId: Guid_79,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -1043,12 +1696,14 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -1061,29 +1716,97 @@ Parks und Gärten sollen erhalten und neue geschaffen werden.,
           }
         },
         {
-          Id: Guid_57,
+          Id: Guid_82,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          MinSignatureCount: 500,
+          MaxElectronicSignatureCount: 250,
+          Wording:
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 97 (neu) – Förderung von Dorffesten und Begegnungsanlässen
+1 Die Gemeinde unterstützt die Organisation eines jährlichen Dorffests oder vergleichbarer Begegnungsanlässe.
+2 Sie stellt geeignete Räume oder Plätze zur Verfügung und kann organisatorische Unterstützung leisten.
+3 Sie kann Vereine, Quartiergruppen oder Initiativen einbeziehen, um ein vielfältiges und gemeinschaftliches Programm zu gestalten.,
+          Collection: {
+            Id: Guid_82,
+            Description: Für mehr Gemeinschaft im Dorf (Dorffest-Initiative),
+            Type: Initiative,
+            Reason:
+Goldach hat viele Vereine, engagierte Menschen und ein schönes Ortszentrum – aber es fehlt an einem regelmässigen Anlass, der alle zusammenbringt. Die «Dorffest-Initiative» will genau das ermöglichen.
+Ein Dorffest ist mehr als Musik und Festwirtschaft – es ist ein Ort für Begegnung, Miteinander und lokale Kultur. Jung und Alt, Neuzuzüger und Alteingesessene finden hier einen Platz zum Austausch.
+Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliziertes Fest im Dorfkern. Ein bisschen Musik, regionale Stände und gute Stimmung – das wäre ganz im Sinn einer Gemeinde, die Gemeinschaft lebt.,
+            Link: https://www.goldach.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_83,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_84,
+              CollectionId: Guid_82,
+              HasTotalCitizenCount: false
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Seenähe,
+              StreetOrPostOfficeBox: Bodenseestrasse 1,
+              ZipCode: 9403,
+              Locality: Goldach
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 12,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 10
+            },
+            PeriodState: InCollection
+          },
+          GovernmentDecisionNumber: MUGD-2025-003,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_85,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert eine Verbesserung der Recyclingmöglichkeiten in der Stadt St.Gallen.
-Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling informiert werden.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten
+1 Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
+2 Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
+3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
           Collection: {
-            Id: Guid_57,
-            Description: Stadtweite Recyclinginitiative,
+            Id: Guid_85,
+            Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),
             Type: Initiative,
-            Reason: Mehr Recycling für eine nachhaltige Stadt!,
-            Link: https://www.stadt.sg.ch/home/recyclinginitiative.html,
+            Reason:
+Wer durch St. Gallen spaziert, weiss: Aussicht gibt es genug, aber oft keinen Platz zum Hinsetzen. Die «Bänkli-Initiative» will das ändern.
+Ein gut platziertes Bänkli ist mehr als eine Sitzgelegenheit – es ist ein Treffpunkt, ein Ort für Gespräche, Nachdenken oder einfach Durchatmen. Mit Blick auf See, Schloss oder Sonnenuntergang wird daraus ein Stück Alltagskultur.
+Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer gut sitzt, denkt konstruktiver – und bleibt vielleicht ein bisschen länger.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_58,
+              Id: Guid_86,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_59,
-              CollectionId: Guid_57,
+              Id: Guid_87,
+              CollectionId: Guid_85,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 500
             },
@@ -1098,12 +1821,14 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1591794730,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
             PeriodState: InCollection
           },
@@ -1116,51 +1841,60 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
           }
         },
         {
-          Id: Guid_60,
+          Id: Guid_88,
           DomainOfInfluenceType: Mu,
-          Bfs: 3203,
-          MinSignatureCount: 1000,
-          MaxElectronicSignatureCount: 500,
-          Wording: Diese Initiative fordert strengere Friedhofauflagen in der Stadt St.Gallen.,
+          Bfs: 3213,
+          MinSignatureCount: 500,
+          MaxElectronicSignatureCount: 250,
+          Wording:
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen
+1 Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.
+2 Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.
+3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.,
           Collection: {
-            Id: Guid_60,
-            Description: Stadtweite Friedhofsinitiative,
+            Id: Guid_88,
+            Description: Für plätscherndes Wasser im Dorf (Brunnen-Initiative),
             Type: Initiative,
-            Reason: Friedhof schützen für zukünftige Generationen!,
-            Link: https://www.stadt.sg.ch/home/friedhofsinitiative.html,
+            Reason:
+Goldach liegt am Bodensee – doch im Ortskern fehlt es an kleinen Wasserstellen, wo man sich im Sommer erfrischen oder einfach dem Plätschern lauschen kann. Diese Initiative will das ändern.
+Brunnen sind mehr als Wasserquelle – sie sind Treffpunkt, Kinderspielplatz und Oase an heissen Tagen. Ein Dorfbrunnen mit frischem Wasser lädt zum Verweilen ein und gibt dem Zentrum Leben.
+Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepflegte Brunnen an zentralen Orten. Ein bisschen Plätschern zwischen See und Dorf tut gut – für Kinder, Hunde und alle, die eine Abkühlung suchen.,
+            Link: https://www.goldach.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_61,
+              Id: Guid_89,
               Name: placeholder-signatures.pdf
             },
-            State: SignatureSheetsSubmitted,
+            State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_62,
-              CollectionId: Guid_60,
-              HasTotalCitizenCount: false,
-              ElectronicCitizenCount: 123
+              Id: Guid_90,
+              CollectionId: Guid_88,
+              HasTotalCitizenCount: false
             },
             Address: {
-              CommitteeOrPerson: Komitee Friedhofinitiative,
-              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
-              ZipCode: 9000,
-              Locality: St.Gallen
+              CommitteeOrPerson: Komitee Seenähe,
+              StreetOrPostOfficeBox: Bodenseestrasse 1,
+              ZipCode: 9403,
+              Locality: Goldach
             },
             IsElectronicSubmission: true,
             InformalReviewRequested: false,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 6,
+              Day: 10
             },
-            PeriodState: Expired
+            PeriodState: InCollection
           },
-          GovernmentDecisionNumber: MUSG-2025-010,
+          GovernmentDecisionNumber: MUGD-2025-002,
           CommitteeDescription: ,
           LockedFields: {
             Wording: false,
@@ -1169,29 +1903,35 @@ Mehr Sammelstellen sollen eingerichtet und die Bürger besser über Recycling in
           }
         },
         {
-          Id: Guid_63,
+          Id: Guid_91,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert strengere Umweltauflagen in der Stadt St.Gallen.
-Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 112 (neu) – Förderung öffentlicher Lesecken
+1 Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.
+2 Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.
+3 Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.,
           Collection: {
-            Id: Guid_63,
-            Description: Stadtweite Umweltinitiative,
+            Id: Guid_91,
+            Description: Für mehr Lesecken (Lesecken-Initiative),
             Type: Initiative,
-            Reason: Umwelt schützen für zukünftige Generationen!,
-            Link: https://www.stadt.sg.ch/home/umweltinitiative.html,
+            Reason:
+Lesen im Öffentlichen Raum ist rar – kleine Lesecken mit Bücherschränken und Sitzplätzen fehlen. Die «Lesecken-Initiative» will mehr Orte zum Lesen und Tauschen schaffen.
+Eine Lesecke ist mehr als ein Bücherschrank – sie ist Bildung, Begegnung und Kultur. Mit gemütlichen Sitzplätzen und Wetterschutz entsteht ein Ort zum Verweilen und Schmökern.
+Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Leseoasen in Quartieren, Parks und auf Plätzen. Ein bisschen Literatur im Alltag – das bereichert und verbindet.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_64,
+              Id: Guid_92,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_65,
-              CollectionId: Guid_63,
+              Id: Guid_93,
+              CollectionId: Guid_91,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 123
             },
@@ -1206,14 +1946,23 @@ Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1565442730,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 8,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1578575530,
-              Nanos: 200000000
+              Year: 2020,
+              Month: 1,
+              Day: 9
             },
             PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
           },
           GovernmentDecisionNumber: MUSG-2025-009,
           CommitteeDescription: ,
@@ -1224,29 +1973,105 @@ Ziel ist es, die Luftqualität zu verbessern und den CO2-Ausstoß zu reduzieren.
           }
         },
         {
-          Id: Guid_66,
+          Id: Guid_94,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
           Wording:
-Diese Initiative fordert mehr Unterstützung für kulturelle Veranstaltungen
-in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 113 (neu) – Förderung offener Gärten
+1 Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.
+2 Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.
+3 Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.,
           Collection: {
-            Id: Guid_66,
-            Description: Stadtweite Kulturinitiative,
+            Id: Guid_94,
+            Description: Für offene Gärten (Offene-Gärten-Initiative),
             Type: Initiative,
-            Reason: Kultur für alle!,
-            Link: https://www.stadt.sg.ch/home/kulturinitiative.html,
+            Reason:
+Private Gärten sind oft schön – aber niemand sieht sie. Die «Offene-Gärten-Initiative» will einen jährlichen Tag, an dem Gartenbesitzer ihre Gärten öffnen können.
+Offene Gärten sind mehr als Blumenbeete – sie sind Inspiration, Austausch und Gemeinschaft. Mit freiwilliger Teilnahme entsteht ein buntes Gartenfest für alle.
+Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenliebhaber, die ihre Leidenschaft teilen wollen. Ein bisschen Grün zeigen – das verbindet und inspiriert.,
+            Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_67,
+              Id: Guid_95,
+              Name: placeholder-signatures.pdf
+            },
+            State: SignatureSheetsSubmitted,
+            AttestedCollectionCount: {
+              Id: Guid_96,
+              CollectionId: Guid_94,
+              HasTotalCitizenCount: false,
+              ElectronicCitizenCount: 123
+            },
+            Address: {
+              CommitteeOrPerson: Komitee Friedhofinitiative,
+              StreetOrPostOfficeBox: Bahnhofsstrasse 15,
+              ZipCode: 9000,
+              Locality: St.Gallen
+            },
+            IsElectronicSubmission: true,
+            InformalReviewRequested: false,
+            IsSigned: false,
+            HasIsSigned: false,
+            CollectionStartDate: {
+              Year: 2019,
+              Month: 8,
+              Day: 10
+            },
+            CollectionEndDate: {
+              Year: 2020,
+              Month: 1,
+              Day: 9
+            },
+            PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
+          },
+          GovernmentDecisionNumber: MUSG-2025-010,
+          CommitteeDescription: ,
+          LockedFields: {
+            Wording: false,
+            Description: false,
+            CommitteeMembers: false
+          }
+        },
+        {
+          Id: Guid_97,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3203,
+          MinSignatureCount: 1000,
+          MaxElectronicSignatureCount: 500,
+          Wording:
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 115 (neu) – Förderung kreativer Fenstergestaltung
+1 Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.
+2 Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.
+3 Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.,
+          Collection: {
+            Id: Guid_97,
+            Description: Für offene Fenster zur Strasse (Offene-Fenster-Initiative),
+            Type: Initiative,
+            Reason:
+Manche Strassen wirken trist – geschlossene Fenster und leere Fassaden. Die «Offene-Fenster-Initiative» will Bürger ermutigen, ihre Fenster zu schmücken und zu beleben.
+Offene, dekorierte Fenster sind mehr als Deko – sie sind Lebendigkeit, Gastfreundschaft und Identität. Mit Blumen, Kunst oder Lichtern entsteht ein farbiges Stadtbild.
+Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung für kreative Fenstergestaltung. Ein bisschen Farbe und Leben an den Fassaden – das macht Strassen schöner und einladender.,
+            Link: https://www.stadt.sg.ch/,
+            SignatureSheetTemplateGenerated: false,
+            SignatureSheetTemplate: {
+              Id: Guid_98,
               Name: placeholder-signatures.pdf
             },
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_68,
-              CollectionId: Guid_66,
+              Id: Guid_99,
+              CollectionId: Guid_97,
               TotalCitizenCount: 875,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 45
@@ -1262,14 +2087,23 @@ in der Stadt St.Gallen. Kultur soll für alle zugänglich sein.,
             IsSigned: false,
             HasIsSigned: false,
             CollectionStartDate: {
-              Seconds: 1562764330,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 7,
+              Day: 10
             },
             CollectionEndDate: {
-              Seconds: 1575983530,
-              Nanos: 200000000
+              Year: 2019,
+              Month: 12,
+              Day: 10
             },
             PeriodState: Expired
+          },
+          SubType: {
+            Id: Guid_51,
+            DomainOfInfluenceType: Ct,
+            Description: Einheitsinitiative,
+            MinSignatureCount: 4000,
+            MaxElectronicSignatureCount: 2000
           },
           GovernmentDecisionNumber: MUSG-2025-012,
           CommitteeDescription: ,

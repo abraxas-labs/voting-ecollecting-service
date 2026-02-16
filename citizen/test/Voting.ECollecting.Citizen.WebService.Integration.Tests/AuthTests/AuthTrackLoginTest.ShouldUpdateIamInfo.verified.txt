@@ -1,0 +1,27 @@
+﻿{
+  LastName: Creator,
+  FirstName: Citizen,
+  Email: creator-updated@example.com,
+  Accepted: true,
+  State: Accepted,
+  IamLastName: user,
+  IamFirstName: Test,
+  IamUserId: default-user-id,
+  Role: Owner,
+  CollectionId: Guid_1,
+  FullName: Test user,
+  IntegritySignatureInfo: {
+    IntegritySignatureKeyId: 
+  },
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Citizen Creator,
+    CreatedByEmail: citizen-creator@example.com,
+    CreatedAt: DateTime_1,
+    ModifiedById: default-user-id,
+    ModifiedByName: Test user,
+    ModifiedByEmail: creator-updated@example.com,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

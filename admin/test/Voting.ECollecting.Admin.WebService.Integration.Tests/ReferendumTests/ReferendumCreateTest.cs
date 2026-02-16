@@ -34,12 +34,12 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     {
         var response = await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
         var referendum = await RunOnDb(db => db.Referendums.IgnoreQueryFilters().Include(x => x.Municipalities!.OrderBy(y => y.Bfs)).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum)
-            .IgnoreMember<ReferendumEntity>(x => x.Number)
             .IgnoreMembers<CollectionBaseEntity>(x => x.MacKeyId, x => x.EncryptionKeyId);
         referendum.MacKeyId.Should().NotBeNullOrEmpty();
         referendum.EncryptionKeyId.Should().NotBeNullOrEmpty();
+        referendum.SecureIdNumber.Should().NotBeNullOrEmpty();
     }
 
     [Fact]
@@ -49,9 +49,9 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
         {
             await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
             await Verify(await GetAuditTrailEntries())
-                .ScrubMember("Number")
-                .ScrubMember("EncryptionKeyId")
-                .ScrubMember("MacKeyId");
+                .ScrubMember(nameof(CollectionBaseEntity.SecureIdNumber))
+                .ScrubMember(nameof(CollectionBaseEntity.EncryptionKeyId))
+                .ScrubMember(nameof(CollectionBaseEntity.MacKeyId));
         });
     }
 
@@ -60,12 +60,12 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     {
         var response = await MuSgStammdatenverwalterClient.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesMuStGallen.IdInCollectionWithReferendum));
         var referendum = await RunOnDb(db => db.Referendums.IgnoreQueryFilters().Include(x => x.Municipalities!.OrderBy(y => y.Bfs)).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum)
-            .IgnoreMember<ReferendumEntity>(x => x.Number)
             .IgnoreMembers<CollectionBaseEntity>(x => x.MacKeyId, x => x.EncryptionKeyId);
         referendum.MacKeyId.Should().NotBeNullOrEmpty();
         referendum.EncryptionKeyId.Should().NotBeNullOrEmpty();
+        referendum.SecureIdNumber.Should().NotBeNullOrEmpty();
     }
 
     [Fact]
@@ -73,12 +73,12 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     {
         var response = await MuSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
         var referendum = await RunOnDb(db => db.Referendums.IgnoreQueryFilters().Include(x => x.Municipalities!.OrderBy(y => y.Bfs)).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum)
-            .IgnoreMember<ReferendumEntity>(x => x.Number)
             .IgnoreMembers<CollectionBaseEntity>(x => x.MacKeyId, x => x.EncryptionKeyId);
         referendum.MacKeyId.Should().NotBeNullOrEmpty();
         referendum.EncryptionKeyId.Should().NotBeNullOrEmpty();
+        referendum.SecureIdNumber.Should().NotBeNullOrEmpty();
     }
 
     [Fact]
@@ -96,12 +96,12 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
         var req = NewValidRequest(x => x.DecreeId = DecreesMuStGallen.IdInCollectionWithReferendum);
         var response = await CtSgStammdatenverwalterClient.CreateAsync(req);
         var referendum = await RunOnDb(db => db.Referendums.IgnoreQueryFilters().Include(x => x.Municipalities!.OrderBy(y => y.Bfs)).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum)
-            .IgnoreMember<ReferendumEntity>(x => x.Number)
             .IgnoreMembers<CollectionBaseEntity>(x => x.MacKeyId, x => x.EncryptionKeyId);
         referendum.MacKeyId.Should().NotBeNullOrEmpty();
         referendum.EncryptionKeyId.Should().NotBeNullOrEmpty();
+        referendum.SecureIdNumber.Should().NotBeNullOrEmpty();
     }
 
     [Fact]
@@ -109,12 +109,12 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     {
         var response = await CtSgKontrollzeichenerfasserClient.CreateAsync(NewValidRequest());
         var referendum = await RunOnDb(db => db.Referendums.IgnoreQueryFilters().Include(x => x.Municipalities!.OrderBy(y => y.Bfs)).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
-        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcNowDateTime());
+        referendum.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(referendum)
-            .IgnoreMember<ReferendumEntity>(x => x.Number)
             .IgnoreMembers<CollectionBaseEntity>(x => x.MacKeyId, x => x.EncryptionKeyId);
         referendum.MacKeyId.Should().NotBeNullOrEmpty();
         referendum.EncryptionKeyId.Should().NotBeNullOrEmpty();
+        referendum.SecureIdNumber.Should().NotBeNullOrEmpty();
     }
 
     [Fact]
@@ -129,7 +129,7 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     [Fact]
     public async Task DuplicateDescriptionShouldFail()
     {
-        var req = NewValidRequest(x => x.Description = "Referendum über den Kantonsratsbeschluss über die Genehmigung des Regierungsbeschlusses über den Beitritt zur Interkantonalen Vereinbarung über die Steuerförderung");
+        var req = NewValidRequest(x => x.Description = "Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden");
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.CreateAsync(req),
             StatusCode.FailedPrecondition);

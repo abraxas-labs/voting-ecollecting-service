@@ -40,7 +40,7 @@ public class ReferendumGrpcService : ReferendumService.ReferendumServiceBase
         SetReferendumInPreparationRequest request,
         ServerCallContext context)
     {
-        var id = await _referendumService.SetInPreparation(request.ReferendumNumber);
+        var id = await _referendumService.SetInPreparation(request.SecureIdNumber);
         return new IdValue { Id = id.ToString() };
     }
 

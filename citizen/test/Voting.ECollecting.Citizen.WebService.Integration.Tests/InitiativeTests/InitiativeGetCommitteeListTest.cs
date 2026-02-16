@@ -44,10 +44,9 @@ public class InitiativeGetCommitteeListTest : BaseRestTest
     }
 
     [Fact]
-    public async Task ShouldGetAsReader()
+    public Task GetAsReaderShouldFail()
     {
-        var resp = await DeputyClient.GetByteArrayAsync(BuildUrl());
-        resp.Should().BeEquivalentTo(Files.PlaceholderCommitteeListPdf);
+        return AssertStatus(async () => await ReaderClient.GetAsync(BuildUrl()), HttpStatusCode.NotFound);
     }
 
     [Fact]

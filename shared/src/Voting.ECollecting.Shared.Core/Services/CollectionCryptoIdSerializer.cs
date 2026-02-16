@@ -7,8 +7,9 @@ using Voting.Lib.Cryptography.Exceptions;
 namespace Voting.ECollecting.Shared.Core.Services;
 
 /// <summary>
-/// Guid serializer according to https://confluence.abraxas-tools.ch/confluence/spaces/ECOLP/pages/402893429/Duplicate+Detection+of+VOTING+Stimmregister+ID
-/// (always use big endian).
+/// Guid serializer for duplicate detection of VOTING Stimmregister ID (always use big endian).
+/// See https://github.com/abraxas-labs/voting-ecollecting-docs/blob/main/technical-documentations/VOTING_E-Collecting_Transport_Security.pdf
+/// chapter "Duplicate Detection".
 /// </summary>
 public static class CollectionCryptoIdSerializer
 {

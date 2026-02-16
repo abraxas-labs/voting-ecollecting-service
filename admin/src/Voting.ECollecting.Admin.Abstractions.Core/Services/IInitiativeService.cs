@@ -18,9 +18,9 @@ public interface IInitiativeService
 
     Task FinishCorrection(Guid id);
 
-    Task SetCollectionPeriod(Guid id, DateTime collectionStartDate, DateTime collectionEndDate);
+    Task SetCollectionPeriod(Guid id, DateOnly collectionStartDate, DateOnly collectionEndDate);
 
-    Task Enable(Guid id, DateTime? collectionStartDate, DateTime? collectionEndDate);
+    Task Enable(Guid id, DateOnly? collectionStartDate, DateOnly? collectionEndDate);
 
     Task CameAbout(Guid id, DateOnly sensitiveDataExpiryDate);
 

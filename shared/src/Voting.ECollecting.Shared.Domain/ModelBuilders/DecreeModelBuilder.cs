@@ -12,13 +12,5 @@ public class DecreeModelBuilder : IEntityTypeConfiguration<DecreeEntity>
     public void Configure(EntityTypeBuilder<DecreeEntity> builder)
     {
         IntegritySignatureEntityModelBuilder.Configure(builder);
-
-        builder
-            .Property(d => d.CollectionStartDate)
-            .HasUtcConversion();
-
-        builder
-            .Property(d => d.CollectionEndDate)
-            .HasUtcConversion();
     }
 }

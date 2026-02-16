@@ -14,14 +14,16 @@ public static class InitiativeQueries
         return q.Where(x => x.AdmissibilityDecisionState == null);
     }
 
-    public static IQueryable<InitiativeEntity> IncludeRequestedCommitteeMember(
+    public static IQueryable<InitiativeEntity> IncludeRequestedOrSignatureRejectedOrExpiredCommitteeMember(
         this IQueryable<InitiativeEntity> q,
         Guid memberId)
     {
         return q.Include(x => x.CommitteeMembers
             .Where(m =>
                 m.Id == memberId
-                && m.ApprovalState == InitiativeCommitteeMemberApprovalState.Requested
-                && m.MemberSignatureRequested));
+                && m.MemberSignatureRequested
+                && (m.ApprovalState == InitiativeCommitteeMemberApprovalState.Requested ||
+                    m.ApprovalState == InitiativeCommitteeMemberApprovalState.SignatureRejected ||
+                    m.ApprovalState == InitiativeCommitteeMemberApprovalState.Expired)));
     }
 }

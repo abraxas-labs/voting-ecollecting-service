@@ -19,6 +19,8 @@ public interface IDataContext
 
     DbSet<ImportStatisticEntity> ImportStatistics { get; set; }
 
+    DbSet<InitiativeCommitteeMemberEntity> InitiativeCommitteeMembers { get; set; }
+
     DbSet<CollectionPermissionEntity> CollectionPermissions { get; set; }
 
     DbSet<DomainOfInfluenceEntity> DomainOfInfluences { get; set; }

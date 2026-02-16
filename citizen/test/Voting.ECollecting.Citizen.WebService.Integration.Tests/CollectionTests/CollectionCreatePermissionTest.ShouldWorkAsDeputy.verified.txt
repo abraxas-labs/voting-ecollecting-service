@@ -20,7 +20,7 @@
   AuditInfo: {
     CreatedById: user-id-deputy,
     CreatedByName: Test user,
-    CreatedByEmail: voting+tester@abraxas.ch,
+    CreatedByEmail: rudolph.meier@example.com,
     CreatedAt: DateTime_2
   },
   Id: Guid_2

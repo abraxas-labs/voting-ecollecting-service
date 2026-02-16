@@ -133,7 +133,7 @@ public class CollectionRemoveSignatureSheetCitizenTest : BaseGrpcTest<Collection
         var req = NewValidInitiativeRequest();
         await ModifyDbEntities<InitiativeEntity>(
             x => x.Id == Guid.Parse(req.CollectionId),
-            x => x.CollectionStartDate = MockedClock.GetDate(1));
+            x => x.CollectionStartDate = MockedClock.NowDateOnly.AddDays(1));
         await AssertStatus(
             async () => await MuSgKontrollzeichenerfasserClient.RemoveCitizenAsync(req),
             StatusCode.NotFound);
@@ -189,7 +189,7 @@ public class CollectionRemoveSignatureSheetCitizenTest : BaseGrpcTest<Collection
         {
             CollectionId = ReferendumsCtStGallen.IdInCollectionEnabledForCollection,
             SignatureSheetId = _referendumSgSheet1Guid.ToString(),
-            PersonRegisterId = CollectionCitizens.RegisterIdSgSheet1.ToString(),
+            PersonRegisterId = CollectionCitizens.RegisterIdCollection2SgSheet1.ToString(),
         };
 
         customizer?.Invoke(request);

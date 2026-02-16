@@ -5,14 +5,20 @@
   MinSignatureCount: 1000,
   MaxElectronicSignatureCount: 500,
   Wording:
-Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
-Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst
+1 Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
+2 Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
+3 Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
   Collection: {
     Id: Guid_1,
-    Description: Stadtweite Veloinfrastruktur,
+    Description: Für mehr Farbe in der Stadt (Street-Art-Initiative),
     Type: Initiative,
-    Reason: Mehr Platz für Velos!,
-    Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+    Reason:
+Graue Wände gibt es in St.Gallen genug – doch künstlerische Wandgestaltung ist selten. Die «Street-Art-Initiative» will mehr Farbe und Kreativität in den öffentlichen Raum bringen.
+Street-Art ist mehr als Graffiti – es ist Kunst, Ausdruck und Identität. Mit bunten Murals und kreativen Gestaltungen werden graue Ecken zu Hinguckern, die die Stadt lebendig machen.
+Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Konzept: geprüfte Flächen, lokale Künstler und Projekte, die St.Gallen bunter und einzigartiger machen.,
+    Link: https://www.stadt.sg.ch/,
     Image: {
       Id: Guid_2,
       Name: placeholder.png
@@ -61,5 +67,6 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
     Wording: false,
     Description: false,
     CommitteeMembers: false
-  }
+  },
+  DomainOfInfluenceName: St.Gallen
 }

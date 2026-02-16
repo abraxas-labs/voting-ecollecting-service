@@ -64,6 +64,9 @@ public class AuthenticationHandlerMock : JwtBearerHandler
         var hasEmail = Request.Headers.TryGetValue(CitizenAuthMockDefaults.UserEMailHeaderName, out var emailValue);
         var userEmail = hasEmail ? emailValue[0] ?? CitizenAuthMockDefaults.UserTestEMail : CitizenAuthMockDefaults.UserTestEMail;
 
+        var hasEmailVerified = Request.Headers.TryGetValue(CitizenAuthMockDefaults.UserEmailVerifiedHeaderName, out var emailVerifiedValue);
+        var emailVerified = !hasEmailVerified || (bool.TryParse(emailVerifiedValue[0], out var ev) && ev);
+
         var hasSsn = Request.Headers.TryGetValue(CitizenAuthMockDefaults.UserSocialSecurityNumberHeaderName, out var ssnValue);
         var userSsn = hasSsn && !string.IsNullOrWhiteSpace(ssnValue[0]) ? ssnValue[0] : null;
 
@@ -76,6 +79,7 @@ public class AuthenticationHandlerMock : JwtBearerHandler
             userId!,
             CitizenAuthMockDefaults.UserTestName,
             userEmail,
+            emailVerified,
             CitizenAuthMockDefaults.UserTestFirstName,
             CitizenAuthMockDefaults.UserTestLastName);
         _permissionService.SetSsn(userSsn);

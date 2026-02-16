@@ -2,7 +2,8 @@
 // For license information see LICENSE file
 
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.ECollecting.Shared.Domain.Enums;
 
 namespace Voting.ECollecting.Shared.Domain.Models;
 
-public record ECollectingProtocolTemplateData(CollectionBaseEntity Collection, AccessControlListDoiEntity AccessControlListDoi, InitiativeSubTypeEntity? SubType);
+public record ECollectingProtocolTemplateData(List<CollectionBaseEntity> Collections, AccessControlListDoiEntity AccessControlListDoi, string Description, DomainOfInfluenceType DomainOfInfluenceType, bool IsDecree, InitiativeSubTypeEntity? SubType = null);

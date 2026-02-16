@@ -1,0 +1,33 @@
+﻿{
+  InitiativeId: Guid_1,
+  SortIndex: 0,
+  FirstName: Margarita,
+  LastName: Hamrick,
+  PoliticalFirstName: Margarita,
+  PoliticalLastName: Hamrick,
+  Bfs: 3211,
+  PoliticalResidence: Berg SG,
+  Street: Dorfstrasse,
+  HouseNumber: 1,
+  ZipCode: 9305,
+  PoliticalDuty: Protokollführer (updated),
+  DateOfBirth: Date_1,
+  Email: margarita@example.com,
+  MemberSignatureRequested: true,
+  ApprovalState: Requested,
+  Token: {
+    Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
+  },
+  TokenExpiry: DateTime_1,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Admin,
+    CreatedByEmail: admin@example.com,
+    CreatedAt: DateTime_2,
+    ModifiedById: user-id-deputy,
+    ModifiedByName: Test user,
+    ModifiedByEmail: rudolph.meier@example.com,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

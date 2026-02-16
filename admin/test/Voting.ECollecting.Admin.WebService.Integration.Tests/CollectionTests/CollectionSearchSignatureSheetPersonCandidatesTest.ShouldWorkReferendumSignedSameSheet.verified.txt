@@ -25,9 +25,9 @@
       },
       ExistingSignature: {
         Bfs: 3203,
-        MunicipalityName: St. Gallen,
+        MunicipalityName: St.Gallen,
         Electronic: false,
-        CollectionDescription: Referendum gegen die Änderung der direkten Bundessteuer,
+        CollectionDescription: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         SignatureSheetNumber: 1,
         HasSignatureSheetNumber: true,
         CollectionDateTime: {

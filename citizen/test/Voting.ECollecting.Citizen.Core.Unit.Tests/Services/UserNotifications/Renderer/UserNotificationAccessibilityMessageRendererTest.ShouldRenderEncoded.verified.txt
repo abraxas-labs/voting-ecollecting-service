@@ -23,6 +23,11 @@
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
   </style>
 </head>
 <body>
@@ -33,7 +38,7 @@
  <p>Email: example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</p>
  <p>Telefon: example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</p>
  <p>Kategorie: Optimierungsvorschlag</p>
- <p>Meldung: example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</p></div>
+ <p>Meldung:<br/><span class="user-text">example<span>.</span>com Foo bar baz&lt;script&gt;alert(&#39;xss&#39;)&lt;/script&gt;</span></p></div>
 </body>
 </html>
 }

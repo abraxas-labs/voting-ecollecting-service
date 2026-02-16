@@ -26,6 +26,11 @@ public static class CitizenAuthMockDefaults
     public const string UserEMailHeaderName = "x-user-email";
 
     /// <summary>
+    /// E-Mail verified claim of the mocked authentication handler.
+    /// </summary>
+    public const string UserEmailVerifiedHeaderName = "x-user-email-verified";
+
+    /// <summary>
     /// Social security number of the mocked authentication handler.
     /// </summary>
     public const string UserSocialSecurityNumberHeaderName = "x-user-ssn";

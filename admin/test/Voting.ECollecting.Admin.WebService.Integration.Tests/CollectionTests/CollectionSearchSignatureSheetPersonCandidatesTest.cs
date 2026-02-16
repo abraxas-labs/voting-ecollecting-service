@@ -2,6 +2,7 @@
 // For license information see LICENSE file
 
 using FluentAssertions;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Voting.ECollecting.Admin.Domain.Authorization;
@@ -109,6 +110,7 @@ public class
         {
             x.OfficialName = "Abicht";
             x.FirstName = "Alicia";
+            x.DateOfBirth = DateTime.SpecifyKind(new DateTime(1975, 05, 20), DateTimeKind.Utc).ToTimestamp();
         });
         var resp = await MuSgKontrollzeichenerfasserClient.SearchPersonCandidatesAsync(req);
         resp.Candidates.Should().HaveCount(1);

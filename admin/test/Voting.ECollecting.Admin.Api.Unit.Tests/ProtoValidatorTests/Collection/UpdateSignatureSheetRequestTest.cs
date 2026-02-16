@@ -1,9 +1,8 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using Google.Protobuf.WellKnownTypes;
+using Abraxas.Voting.Ecollecting.Shared.V1.Models;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
-using Voting.Lib.Testing.Mocks;
 using Voting.Lib.Testing.Validation;
 
 namespace Voting.ECollecting.Admin.Api.Unit.Tests.ProtoValidatorTests.Collection;
@@ -30,7 +29,7 @@ public class UpdateSignatureSheetRequestTest : ProtoValidatorBaseTest<UpdateSign
     {
         var request = new UpdateSignatureSheetRequest
         {
-            ReceivedAt = Timestamp.FromDateTime(MockedClock.UtcNowDate),
+            ReceivedAt = new Date { Day = 10, Month = 12, Year = 2020, },
             CollectionId = "613a50a4-2494-45b8-b656-59b4b7d9ecf0",
             SignatureSheetId = "a243a0f8-1275-4b83-91b1-b59064ffbb97",
             SignatureCountTotal = 1_000,

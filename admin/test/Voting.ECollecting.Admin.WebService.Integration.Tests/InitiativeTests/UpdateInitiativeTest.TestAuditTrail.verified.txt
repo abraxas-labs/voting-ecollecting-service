@@ -6,11 +6,14 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 3203,
-        Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+        Link: https://www.stadt.sg.ch/,
         Type: 1,
         State: 1,
         LogoId: Guid_2,
-        Reason: Mehr Platz für Velos!,
+        Reason:
+St.Gallen hat eine lebendige Altstadt, doch es fehlt an gemütlichen Plätzen, wo man bei Kaffee und Kuchen verweilen kann. Die «Café-Initiative» will das ändern.
+Ein Café ist mehr als nur eine Tasse Kaffee – es ist ein Treffpunkt, ein Ort für Gespräche, Arbeit oder einfach Entspannung. Mit gemütlichem Ambiente und lokalen Spezialitäten wird daraus ein Stück Lebensqualität.
+Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer gut sitzt und guten Kaffee trinkt, fühlt sich zu Hause – und kommt gerne wieder.,
         Address: {
           ZipCode: 9001-updated,
           Locality: St.Gallen-updated,
@@ -20,20 +23,24 @@
         },
         ImageId: Guid_3,
         Wording:
-Die Stadt St.Gallen soll mehr Velowege bauen und bestehende verbessern.
-Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
+Die Gemeindeordnung wird wie folgt geändert:
+Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur
+1 Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
+2 Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
+3 Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
           CreatedByName: Test Citizen Creator,
           CreatedByEmail: citizen-creator@example.com
         },
-        Description: Stadtweite Veloinfrastruktur,
+        Description: Für gemütliche Treffpunkte in der Stadt (Café-Initiative),
         LockedFields: {
           Wording: false,
           Description: false,
           CommitteeMembers: false
         },
+        SecureIdNumber: AAAAAAAA66AA,
         MinSignatureCount: 1000,
         DomainOfInfluenceType: 3,
         IntegritySignatureInfo: {
@@ -46,16 +53,20 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
         GovernmentDecisionNumber: ,
         SignatureSheetTemplateId: Guid_4,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: ,
         SignatureSheetTemplateGenerated: false
       },
       RecordAfter: {
         Id: Guid_1,
         Bfs: 3203,
-        Link: https://www.stadt.sg.ch/home/veloinfrastruktur.html,
+        Link: https://www.stadt.sg.ch/,
         Type: 1,
         State: 1,
         LogoId: Guid_2,
-        Reason: Mehr Platz für Velos!,
+        Reason:
+St.Gallen hat eine lebendige Altstadt, doch es fehlt an gemütlichen Plätzen, wo man bei Kaffee und Kuchen verweilen kann. Die «Café-Initiative» will das ändern.
+Ein Café ist mehr als nur eine Tasse Kaffee – es ist ein Treffpunkt, ein Ort für Gespräche, Arbeit oder einfach Entspannung. Mit gemütlichem Ambiente und lokalen Spezialitäten wird daraus ein Stück Lebensqualität.
+Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer gut sitzt und guten Kaffee trinkt, fühlt sich zu Hause – und kommt gerne wieder.,
         Address: {
           ZipCode: 9001-updated,
           Locality: St.Gallen-updated,
@@ -77,6 +88,7 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
           Description: false,
           CommitteeMembers: false
         },
+        SecureIdNumber: AAAAAAAA66AA,
         MinSignatureCount: 1000,
         DomainOfInfluenceType: 3,
         IntegritySignatureInfo: {
@@ -89,6 +101,7 @@ Dies fördert die nachhaltige Mobilität und macht die Stadt lebenswerter.,
         GovernmentDecisionNumber: ,
         SignatureSheetTemplateId: Guid_4,
         MaxElectronicSignatureCount: 500,
+        GovernmentDecisionNumberLower: ,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

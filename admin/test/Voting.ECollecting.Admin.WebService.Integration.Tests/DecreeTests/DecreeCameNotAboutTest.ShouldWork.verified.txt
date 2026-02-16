@@ -3,7 +3,7 @@
     {
       RecipientEMail: bund+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        CollectionName: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: bund+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung der direkten Bundessteuer,
+        CollectionName: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_3,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        CollectionName: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -36,7 +36,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung der direkten Bundessteuer,
+        CollectionName: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_3,
@@ -47,7 +47,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung der nationalen Liegenschaftssteuer,
+        CollectionName: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -58,7 +58,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung der direkten Bundessteuer,
+        CollectionName: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_3,

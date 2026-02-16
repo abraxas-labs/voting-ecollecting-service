@@ -5,8 +5,8 @@ namespace Voting.ECollecting.Citizen.Domain.Exceptions;
 
 public class InitiativeAlreadyInPreparationException : Exception
 {
-    public InitiativeAlreadyInPreparationException(string governmentDecisionNumber)
-        : base($"Initiative with government decision number {governmentDecisionNumber} is already in preparation")
+    public InitiativeAlreadyInPreparationException(string secureIdNumber)
+        : base($"Initiative with number {secureIdNumber} is already in preparation")
     {
     }
 }

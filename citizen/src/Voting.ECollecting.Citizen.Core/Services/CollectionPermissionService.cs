@@ -1,13 +1,14 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Data;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Citizen.Abstractions.Core.Services;
 using Voting.ECollecting.Citizen.Core.Configuration;
 using Voting.ECollecting.Citizen.Core.Exceptions;
+using Voting.ECollecting.Citizen.Core.Mappings;
 using Voting.ECollecting.Citizen.Core.Permissions;
 using Voting.ECollecting.Citizen.Domain.Models;
 using Voting.ECollecting.Citizen.Domain.Queries;
@@ -24,6 +25,8 @@ namespace Voting.ECollecting.Citizen.Core.Services;
 // collections can still be edited even if collection is not in pre recorded / in preparation state anymore.
 public class CollectionPermissionService : ICollectionPermissionService
 {
+    private const string IamUserIdUniqueConstraintName = "IX_CollectionPermissions_CollectionId_IamUserId";
+
     private readonly CoreAppConfig _config;
     private readonly IUserNotificationService _userNotificationService;
     private readonly ICollectionPermissionRepository _collectionPermissionRepository;
@@ -50,15 +53,19 @@ public class CollectionPermissionService : ICollectionPermissionService
         _timeProvider = timeProvider;
     }
 
-    public async Task<List<CollectionPermissionEntity>> ListPermissions(Guid collectionId)
+    public async Task<List<CollectionPermission>> ListPermissions(Guid collectionId)
     {
-        return await _collectionRepository.Query()
+        var permissionEntities = await _collectionRepository.Query()
             .Where(x => x.Id == collectionId)
             .WhereCanReadPermissions(_permissionService)
             .SelectMany(x => x.Permissions!)
+            .Where(x => x.Role != CollectionPermissionRole.Owner)
             .OrderBy(x => x.LastName)
             .ThenBy(x => x.FirstName)
             .ToListAsync();
+        var permissions = Mapper.MapToCollectionPermissions(permissionEntities);
+        SetUserPermissions(permissions);
+        return permissions;
     }
 
     public async Task<Guid> CreatePermission(
@@ -90,7 +97,7 @@ public class CollectionPermissionService : ICollectionPermissionService
         if (await _collectionRepository.Query()
                 .WhereCanEditPermissions(_permissionService)
                 .SelectMany(x => x.Permissions!)
-                .AnyAsync(x => x.Id == id && x.Email == _permissionService.UserEmail))
+                .AnyAsync(x => x.Id == id && x.IamUserId == _permissionService.UserId))
         {
             throw new CannotDeleteOwnPermissionException();
         }
@@ -98,6 +105,7 @@ public class CollectionPermissionService : ICollectionPermissionService
         var existing = await _collectionRepository.Query()
             .WhereCanEditPermissions(_permissionService)
             .SelectMany(x => x.Permissions!)
+            .WhereCanDeletePermission(_permissionService)
             .FirstOrDefaultAsync(x => x.Id == id)
             ?? throw new EntityNotFoundException(nameof(CollectionPermissionEntity), id);
 
@@ -109,12 +117,13 @@ public class CollectionPermissionService : ICollectionPermissionService
         var collection = await _collectionRepository.Query()
                              .AsTracking()
                              .WhereCanEditPermissions(_permissionService)
-                             .WhereHasPendingPermission(id)
-                             .IncludePendingPermission(id)
+                             .WhereHasPendingOrRejectedOrExpiredPermission(id)
+                             .IncludePendingOrRejectedOrExpiredPermission(id)
                              .FirstOrDefaultAsync(ct)
                          ?? throw new EntityNotFoundException(nameof(CollectionPermissionEntity), id);
 
         var permission = collection.Permissions!.Single();
+        permission.State = CollectionPermissionState.Pending;
         permission.Token = UrlToken.New();
         permission.TokenExpiry = _timeProvider.GetUtcNowDateTime() + _config.PermissionTokenLifetime;
         await _dataContext.SaveChangesAsync();
@@ -169,7 +178,15 @@ public class CollectionPermissionService : ICollectionPermissionService
         permission.Token = null;
         permission.TokenExpiry = null;
         _permissionService.SetModified(permission);
-        await _dataContext.SaveChangesAsync();
+
+        try
+        {
+            await _dataContext.SaveChangesAsync();
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: IamUserIdUniqueConstraintName })
+        {
+            throw new UserHasAlreadyAPermissionException();
+        }
     }
 
     public async Task RejectByToken(UrlToken token)
@@ -194,6 +211,33 @@ public class CollectionPermissionService : ICollectionPermissionService
         await _dataContext.SaveChangesAsync();
     }
 
+    public async Task UpdateIamInfo()
+    {
+        if (string.IsNullOrWhiteSpace(_permissionService.UserEmail)
+            || !_permissionService.UserEmailVerified)
+        {
+            return;
+        }
+
+        await _collectionPermissionRepository.AuditedUpdateRange(BuildQuery, UpdateAction);
+        return;
+
+        IQueryable<CollectionPermissionEntity> BuildQuery(IQueryable<CollectionPermissionEntity> q)
+            => q.Where(x =>
+                x.IamUserId == _permissionService.UserId
+                && (x.Email != _permissionService.UserEmail
+                    || x.IamFirstName != _permissionService.UserFirstName
+                    || x.IamLastName != _permissionService.UserLastName));
+
+        void UpdateAction(CollectionPermissionEntity p)
+        {
+            _permissionService.SetModified(p);
+            p.Email = _permissionService.UserEmail!;
+            p.IamFirstName = _permissionService.UserFirstName;
+            p.IamLastName = _permissionService.UserLastName;
+        }
+    }
+
     internal async Task<CollectionPermissionEntity> CreatePermissionInternal(
         CollectionBaseEntity collection,
         string firstName,
@@ -203,7 +247,7 @@ public class CollectionPermissionService : ICollectionPermissionService
     {
         if (role is CollectionPermissionRole.Owner)
         {
-            throw new ValidationException("Cannot create owner permission");
+            throw new CannotAddOwnerPermissionException();
         }
 
         if (string.Equals(collection.AuditInfo.CreatedByEmail, email, StringComparison.Ordinal))
@@ -211,6 +255,9 @@ public class CollectionPermissionService : ICollectionPermissionService
             throw new CannotAddOwnerPermissionException();
         }
 
+        // this is a simple check to avoid duplicate permissions
+        // this unique check is not mission forced and therefore not enforced by the DB.
+        // duplicates can still be created by concurrent requests and/or users updating their emails in the IAM.
         var permissionAlreadyExists = await _collectionPermissionRepository.Query()
             .AnyAsync(x => x.CollectionId == collection.Id && x.Email == email);
         if (permissionAlreadyExists)
@@ -232,5 +279,13 @@ public class CollectionPermissionService : ICollectionPermissionService
         _permissionService.SetCreated(permission);
         await _collectionPermissionRepository.Create(permission);
         return permission;
+    }
+
+    private void SetUserPermissions(IEnumerable<CollectionPermission> permissions)
+    {
+        foreach (var permission in permissions)
+        {
+            permission.UserPermissions = CollectionPermissionPermissions.Build(permission);
+        }
     }
 }

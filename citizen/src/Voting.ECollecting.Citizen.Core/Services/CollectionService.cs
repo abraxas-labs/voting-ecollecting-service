@@ -66,7 +66,7 @@ public class CollectionService : ICollectionService
 
     public async Task<Dictionary<DomainOfInfluenceType, CollectionsGroup>> ListByDoiType(CollectionPeriodState periodState, IReadOnlySet<DomainOfInfluenceType>? doiTypes, string? bfs)
     {
-        var now = _timeProvider.GetUtcNowDateTime();
+        var now = _timeProvider.GetUtcTodayDateOnly();
         var decreeQuery = _decreeRepository
             .Query()
             .WhereInPeriodState(periodState, now)
@@ -120,6 +120,7 @@ public class CollectionService : ICollectionService
             .Query()
             .Include(x => x.CollectionCount)
             .Include(x => x.SignatureSheetTemplate)
+            .Include(x => x.SubType)
             .IncludePermission(_permissionService.UserId)
             .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes)
             .Where(x => x.DomainOfInfluenceType.HasValue)

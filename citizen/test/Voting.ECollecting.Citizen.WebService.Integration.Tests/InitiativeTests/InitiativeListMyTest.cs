@@ -72,4 +72,14 @@ public class InitiativeListMyTest : BaseGrpcTest<InitiativeService.InitiativeSer
         var response = await AuthenticatedNoPermissionClient.ListMyAsync(new ListMyInitiativesRequest());
         response.Initiatives.Should().BeEmpty();
     }
+
+    [Fact]
+    public async Task TestOnlyCtEnabled()
+    {
+        await WithOnlyCtDomainOfInfluenceTypeEnabled(async () =>
+        {
+            var response = await AuthenticatedClient.ListMyAsync(new ListMyInitiativesRequest());
+            await Verify(response);
+        });
+    }
 }

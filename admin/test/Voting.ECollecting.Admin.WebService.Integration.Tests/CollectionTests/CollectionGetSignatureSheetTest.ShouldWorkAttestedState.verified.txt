@@ -2,8 +2,9 @@
   Id: Guid_1,
   Number: 4,
   ReceivedAt: {
-    Seconds: 1578489130,
-    Nanos: 200000000
+    Year: 2020,
+    Month: 1,
+    Day: 8
   },
   AttestedAt: {
     Seconds: 1578575530,
@@ -17,7 +18,7 @@
     Invalid: 5
   },
   State: Attested,
-  MunicipalityName: St. Gallen,
+  MunicipalityName: St.Gallen,
   Bfs: 3203,
   UserPermissions: {
     CanEdit: false,
@@ -27,5 +28,6 @@
     CanDiscard: false,
     CanRestore: false,
     CanConfirm: false
-  }
+  },
+  ModifiedBySuperiorAuthority: false
 }

@@ -3,7 +3,7 @@
     {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung des Steuergesetzes,
+        CollectionName: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -14,7 +14,7 @@
     {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung des Steuergesetzes,
+        CollectionName: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
@@ -25,7 +25,7 @@
     {
       RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
       TemplateBag: {
-        CollectionName: Referendum gegen die Änderung des Steuergesetzes,
+        CollectionName: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,

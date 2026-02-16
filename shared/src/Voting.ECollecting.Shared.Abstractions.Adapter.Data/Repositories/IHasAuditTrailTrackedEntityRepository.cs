@@ -11,9 +11,9 @@ namespace Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories;
 public interface IHasAuditTrailTrackedEntityRepository<TAuditTrailTrackedEntity> : IDbRepository<DbContext, TAuditTrailTrackedEntity>
     where TAuditTrailTrackedEntity : BaseEntity, IAuditTrailTrackedEntity, new()
 {
-    Task AuditedDeleteRange(Func<IQueryable<TAuditTrailTrackedEntity>, IQueryable<TAuditTrailTrackedEntity>> predicate);
+    Task<int> AuditedDeleteRange(Func<IQueryable<TAuditTrailTrackedEntity>, IQueryable<TAuditTrailTrackedEntity>> predicate);
 
-    Task AuditedUpdateRange(
+    Task<int> AuditedUpdateRange(
         Func<IQueryable<TAuditTrailTrackedEntity>, IQueryable<TAuditTrailTrackedEntity>> predicate,
         Action<TAuditTrailTrackedEntity> updateAction);
 
@@ -23,7 +23,8 @@ public interface IHasAuditTrailTrackedEntityRepository<TAuditTrailTrackedEntity>
 
     Task AuditedUpdate(
         TAuditTrailTrackedEntity originalValue,
-        Action updateAction);
+        Action updateAction,
+        int expectedAffectedEntities = 1);
 
     Task AuditedUpdate(
         TAuditTrailTrackedEntity originalValue,

@@ -36,5 +36,18 @@ public class CollectionBaseModelBuilder : IEntityTypeConfiguration<CollectionBas
 
         builder.OwnsOne(x => x.Address);
         builder.Navigation(x => x.Address).IsRequired();
+
+        builder
+            .HasIndex(x => x.SecureIdNumber)
+            .IsUnique()
+            .HasFilter($"\"{nameof(CollectionBaseEntity.SecureIdNumber)}\" IS NOT NULL");
+
+        var checkSql = $"""
+                        "{nameof(CollectionBaseEntity.IsElectronicSubmission)}" OR (
+                           "{nameof(CollectionBaseEntity.SecureIdNumber)}" IS NOT NULL
+                           AND "{nameof(CollectionBaseEntity.SecureIdNumber)}" <> ''
+                        )
+                        """;
+        builder.ToTable(t => t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", checkSql));
     }
 }
