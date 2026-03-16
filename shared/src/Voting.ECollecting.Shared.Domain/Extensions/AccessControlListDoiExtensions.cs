@@ -7,7 +7,7 @@ namespace Voting.ECollecting.Shared.Domain.Extensions;
 
 public static class AccessControlListDoiExtensions
 {
-    public static IEnumerable<AccessControlListDoiEntity> GetFlattenParentsInclSelf(this AccessControlListDoiEntity acl)
+    public static IEnumerable<DomainOfInfluenceEntity> GetFlattenParentsInclSelf(this DomainOfInfluenceEntity acl)
     {
         yield return acl;
 
@@ -23,7 +23,7 @@ public static class AccessControlListDoiExtensions
         }
     }
 
-    public static IEnumerable<AccessControlListDoiEntity> GetFlattenChildrenInclSelf(this AccessControlListDoiEntity acl)
+    public static IEnumerable<DomainOfInfluenceEntity> GetFlattenChildrenInclSelf(this DomainOfInfluenceEntity acl)
     {
         yield return acl;
         foreach (var childDoi in acl.Children.SelectMany(GetFlattenChildrenInclSelf))
@@ -32,7 +32,7 @@ public static class AccessControlListDoiExtensions
         }
     }
 
-    public static IEnumerable<AccessControlListDoiEntity> GetFlattenChildren(this AccessControlListDoiEntity acl)
+    public static IEnumerable<DomainOfInfluenceEntity> GetFlattenChildren(this DomainOfInfluenceEntity acl)
     {
         foreach (var child in acl.Children)
         {
@@ -44,7 +44,7 @@ public static class AccessControlListDoiExtensions
         }
     }
 
-    public static IEnumerable<AccessControlListDoiEntity> GetFlattenParents(this AccessControlListDoiEntity acl)
+    public static IEnumerable<DomainOfInfluenceEntity> GetFlattenParents(this DomainOfInfluenceEntity acl)
     {
         while (true)
         {

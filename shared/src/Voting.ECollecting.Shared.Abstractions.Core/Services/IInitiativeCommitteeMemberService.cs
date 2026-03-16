@@ -10,5 +10,5 @@ public interface IInitiativeCommitteeMemberService
 {
     InitiativeCommitteeMember EnrichCommitteeMember(
         InitiativeCommitteeMemberEntity memberEntity,
-        Dictionary<string, AccessControlListDoiEntity> domainOfInfluencesByBfs);
+        Dictionary<string, DomainOfInfluenceEntity> domainOfInfluencesByBfs);
 }

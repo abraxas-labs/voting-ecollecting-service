@@ -3,11 +3,11 @@
     Bfs: 3203,
     MunicipalityName: St.Gallen,
     PhysicalCount: {
-      Total: 63,
-      Valid: 54,
-      Invalid: 9
+      Total: 20,
+      Valid: 17,
+      Invalid: 3
     },
-    TotalValidCitizenCount: 64,
+    TotalValidCitizenCount: 27,
     ElectronicCitizenCount: 10,
     IsLocked: true,
     SignatureSheetsCount: {
@@ -15,11 +15,5 @@
       TotalSubmittedOrConfirmedSignatureSheetsCount: 4,
       TotalNotSubmittedSignatureSheetsCount: 1
     }
-  },
-  CollectionCount: {
-    Id: Guid_1,
-    CollectionId: Guid_2,
-    TotalCitizenCount: 37,
-    HasTotalCitizenCount: true
   }
 }

@@ -17,13 +17,15 @@ public class ReferendumSignatureSheetTemplateGenerator : PdfGenerator<Referendum
     public ReferendumSignatureSheetTemplateGenerator(
         DmDocConfig config,
         RecyclableMemoryStreamManager memoryStreamManager,
-        IDmDocService dmDoc)
-        : base(config.TemplateKeys.ReferendumSignatureSheet, memoryStreamManager, dmDoc)
+        IDmDocService dmDoc,
+        TimeProvider timeProvider)
+        : base(config.TemplateKeys.ReferendumSignatureSheet, memoryStreamManager, dmDoc, timeProvider, config)
     {
         _config = config;
     }
 
     protected override ReferendumSignatureSheetTemplateBag Map(ReferendumEntity entity) => TemplateBagMapper.MapToReferendumSignatureSheetTemplateBag(entity);
 
-    protected override string BuildFileName(ReferendumEntity fileName) => _config.SignatureSheetTemplateFileName;
+    protected override string BuildFileName(ReferendumEntity referendum)
+        => AppendTimestampSuffix(string.Format(_config.SignatureSheetTemplateFileName, referendum.Description));
 }

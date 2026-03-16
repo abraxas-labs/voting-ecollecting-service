@@ -14,6 +14,7 @@ using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
 using Voting.ECollecting.Shared.Test.Utils;
+using Voting.Lib.Database.Models;
 
 namespace Voting.ECollecting.Citizen.WebService.Integration.Tests.InitiativeTests;
 
@@ -102,14 +103,13 @@ public class InitiativeSubmitTest : BaseGrpcTest<InitiativeService.InitiativeSer
 
         await AuthenticatedClient.SubmitAsync(NewValidRequest());
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data));
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -120,6 +120,11 @@ public class InitiativeSubmitTest : BaseGrpcTest<InitiativeService.InitiativeSer
     {
         var config = GetService<CoreAppConfig>();
         config.InitiativeCommitteeMinApprovedMembersCount = 18;
+
+        // Ensure the config is used by removing the specific limit for the initiative's domain of influence
+        await ModifyDbEntities<DomainOfInfluenceEntity>(
+            x => x.Bfs == Bfs.CantonStGallen,
+            x => x.InitiativeNumberOfMembersCommittee = null);
 
         await AssertStatus(
             async () => await AuthenticatedClient.SubmitAsync(NewValidRequest()),
@@ -162,7 +167,7 @@ public class InitiativeSubmitTest : BaseGrpcTest<InitiativeService.InitiativeSer
     {
         await RunOnDb(db => db.Initiatives
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .ExecuteUpdateAsync(x => x.SetProperty(y => y.Wording, string.Empty)));
+            .ExecuteUpdateAsync(x => x.SetProperty(y => y.Wording, MarkdownString.Empty)));
         await AssertStatus(
             async () => await AuthenticatedClient.SubmitAsync(NewValidRequest()),
             StatusCode.InvalidArgument);

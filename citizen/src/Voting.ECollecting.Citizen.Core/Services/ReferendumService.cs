@@ -150,7 +150,7 @@ public class ReferendumService : IReferendumService
             query = query
                 .AsNoTrackingWithIdentityResolution()
                 .AsSplitQuery()
-                .Include(x => x.Decree!.Collections.Where(y => y.State != CollectionState.InPreparation && y.State != CollectionState.PreparingForCollection));
+                .Include(x => x.Decree!.Collections.Where(y => !string.IsNullOrWhiteSpace(y.EncryptionKeyId) && !string.IsNullOrWhiteSpace(y.MacKeyId)));
         }
         else
         {

@@ -3,10 +3,15 @@
 
 namespace Voting.ECollecting.Admin.Domain.Models;
 
-public record DomainOfInfluenceSettings(
-    int? InitiativeMinSignatureCount,
-    int? InitiativeMaxElectronicSignaturePercent,
-    int? InitiativeNumberOfMembersCommittee,
-    int? ReferendumMinSignatureCount,
-    int? ReferendumMaxElectronicSignaturePercent,
-    bool? ECollectingEnabled);
+public class DomainOfInfluenceSettings
+{
+    public int? InitiativeMinSignatureCount { get; set; }
+
+    public int? InitiativeMaxElectronicSignaturePercent { get; set; }
+
+    public int? InitiativeNumberOfMembersCommittee { get; set; }
+
+    public int? ReferendumMinSignatureCount { get; set; }
+
+    public int? ReferendumMaxElectronicSignaturePercent { get; set; }
+}

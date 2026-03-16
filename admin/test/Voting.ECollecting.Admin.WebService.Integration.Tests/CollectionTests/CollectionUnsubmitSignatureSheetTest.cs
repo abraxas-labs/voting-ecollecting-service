@@ -1,11 +1,8 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using System.Net.Http.Json;
-using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
-using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
@@ -29,8 +26,8 @@ public class CollectionUnsubmitSignatureSheetTest : BaseGrpcTest<CollectionSigna
         ReferendumsMuStGallen.GuidSignatureSheetsSubmitted,
         Bfs.MunicipalityStGallen);
 
-    private static readonly Guid _sheetCtSgId = CollectionSignatureSheets.BuildGuid(_municipalityCtSgId, 7);
-    private static readonly Guid _sheetMuSgId = CollectionSignatureSheets.BuildGuid(_municipalityMuSgId, 7);
+    private static readonly Guid _sheetCtSgId = CollectionSignatureSheets.BuildGuid(_municipalityCtSgId, 4);
+    private static readonly Guid _sheetMuSgId = CollectionSignatureSheets.BuildGuid(_municipalityMuSgId, 4);
 
     public CollectionUnsubmitSignatureSheetTest(TestApplicationFactory factory)
         : base(factory)
@@ -52,25 +49,8 @@ public class CollectionUnsubmitSignatureSheetTest : BaseGrpcTest<CollectionSigna
     [Fact]
     public async Task ShouldWork()
     {
-        var prevCount = await RunOnDb(db => db.CollectionCounts
-            .SingleAsync(x => x.CollectionId == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
-
-        var prevCollectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
-            .SingleAsync(x => x.Id == _municipalityCtSgId));
-
-        var sheet = await RunOnDb(db => db.CollectionSignatureSheets
-            .SingleAsync(x => x.Id == _sheetCtSgId));
-
         var response = await CtSgStichprobenverwalterClient.UnsubmitAsync(NewValidRequest());
         await Verify(response);
-
-        var collectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
-            .SingleAsync(x => x.Id == _municipalityCtSgId));
-
-        collectionMunicipality.PhysicalCount.Valid.Should().Be(prevCollectionMunicipality.PhysicalCount.Valid - sheet.Count.Valid);
-        collectionMunicipality.PhysicalCount.Invalid.Should().Be(prevCollectionMunicipality.PhysicalCount.Invalid - sheet.Count.Invalid);
-        response.CollectionCount.ElectronicCitizenCount.Should().Be(prevCount.ElectronicCitizenCount);
-        response.CollectionCount.TotalCitizenCount.Should().Be(prevCount.TotalCitizenCount - sheet.Count.Valid);
     }
 
     [Fact]
@@ -86,74 +66,11 @@ public class CollectionUnsubmitSignatureSheetTest : BaseGrpcTest<CollectionSigna
     [Fact]
     public async Task ShouldWorkAsMu()
     {
-        var prevCount = await RunOnDb(db => db.CollectionCounts
-            .SingleAsync(x => x.CollectionId == ReferendumsMuStGallen.GuidSignatureSheetsSubmitted));
-
-        var prevCollectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
-            .SingleAsync(x => x.Id == _municipalityMuSgId));
-
-        var sheet = await RunOnDb(db => db.CollectionSignatureSheets
-            .SingleAsync(x => x.Id == _sheetMuSgId));
-
         var req = NewValidRequest();
         req.CollectionId = ReferendumsMuStGallen.IdSignatureSheetsSubmitted;
         req.SignatureSheetId = _sheetMuSgId.ToString();
         var response = await MuSgStichprobenverwalterClient.UnsubmitAsync(req);
         await Verify(response);
-
-        var collectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
-            .SingleAsync(x => x.Id == _municipalityMuSgId));
-
-        collectionMunicipality.PhysicalCount.Valid.Should().Be(prevCollectionMunicipality.PhysicalCount.Valid - sheet.Count.Valid);
-        collectionMunicipality.PhysicalCount.Invalid.Should().Be(prevCollectionMunicipality.PhysicalCount.Invalid - sheet.Count.Invalid);
-        response.CollectionCount.ElectronicCitizenCount.Should().Be(prevCount.ElectronicCitizenCount);
-        response.CollectionCount.TotalCitizenCount.Should().Be(prevCount.TotalCitizenCount - sheet.Count.Valid);
-    }
-
-    [Fact]
-    public async Task ShouldWorkWithParallelAttest()
-    {
-        var prevCount = await RunOnDb(db => db.CollectionCounts
-            .SingleAsync(x => x.CollectionId == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
-
-        var prevCollectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
-            .SingleAsync(x => x.Id == _municipalityCtSgId));
-
-        var sheet = await RunOnDb(db => db.CollectionSignatureSheets
-            .SingleAsync(x => x.Id == _sheetCtSgId));
-
-        var submitCall = CtSgStichprobenverwalterClient.UnsubmitAsync(NewValidRequest()).ResponseAsync;
-
-        await ModifyDbEntities<CollectionMunicipalityEntity>(
-            x => x.CollectionId == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted && x.Bfs == Bfs.MunicipalityStGallen,
-            x => x.IsLocked = false);
-
-        HashSet<Guid> sheetIds =
-        [
-            CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    ReferendumsCtStGallen.GuidSignatureSheetsSubmitted,
-                    Bfs.MunicipalityStGallen),
-                1),
-            CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    ReferendumsCtStGallen.GuidSignatureSheetsSubmitted,
-                    Bfs.MunicipalityStGallen),
-                2),
-        ];
-        var muSgKontrollzeichenerstellerClient = CreateHttpClient(tenant: MockedTenantIds.MUSG, roles: Roles.Kontrollzeichenerfasser);
-        var resp = await muSgKontrollzeichenerstellerClient.PostAsJsonAsync($"v1/api/collections/{ReferendumsCtStGallen.IdSignatureSheetsSubmitted}/signature-sheets/attest", sheetIds);
-        resp.EnsureSuccessStatusCode();
-
-        var response = await submitCall;
-
-        var collectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
-            .SingleAsync(x => x.Id == _municipalityCtSgId));
-
-        collectionMunicipality.PhysicalCount.Valid.Should().Be(prevCollectionMunicipality.PhysicalCount.Valid - sheet.Count.Valid);
-        collectionMunicipality.PhysicalCount.Invalid.Should().Be(prevCollectionMunicipality.PhysicalCount.Invalid - sheet.Count.Invalid);
-        response.CollectionCount.ElectronicCitizenCount.Should().Be(prevCount.ElectronicCitizenCount);
-        response.CollectionCount.TotalCitizenCount.Should().Be(prevCount.TotalCitizenCount - sheet.Count.Valid);
     }
 
     [Fact]

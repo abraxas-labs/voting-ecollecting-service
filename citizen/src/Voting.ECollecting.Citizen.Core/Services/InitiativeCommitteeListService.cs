@@ -17,7 +17,10 @@ using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using Voting.Lib.Common;
+using Voting.Lib.Common.Files;
+using IDomainOfInfluenceRepository = Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories.IDomainOfInfluenceRepository;
 using IInitiativeCommitteeMemberService = Voting.ECollecting.Shared.Abstractions.Core.Services.IInitiativeCommitteeMemberService;
+using IInitiativeRepository = Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories.IInitiativeRepository;
 using IPermissionService = Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.IPermissionService;
 
 namespace Voting.ECollecting.Citizen.Core.Services;
@@ -27,7 +30,7 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
     private readonly IFileRepository _fileRepository;
     private readonly IInitiativeCommitteeMemberRepository _committeeMemberRepository;
     private readonly IInitiativeRepository _initiativeRepository;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly IPermissionService _permissionService;
     private readonly IDataContext _dataContext;
     private readonly IFileService _fileService;
@@ -40,19 +43,18 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
         IFileRepository fileRepository,
         IInitiativeCommitteeMemberRepository committeeMemberRepository,
         IInitiativeRepository initiativeRepository,
-        IAccessControlListDoiRepository accessControlListDoiRepository,
         IPermissionService permissionService,
         IDataContext dataContext,
         IFileService fileService,
         ICommitteeListTemplateGenerator committeeListTemplateGenerator,
         TimeProvider timeProvider,
         CoreAppConfig config,
-        IInitiativeCommitteeMemberService initiativeCommitteeMemberService)
+        IInitiativeCommitteeMemberService initiativeCommitteeMemberService,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository)
     {
         _fileRepository = fileRepository;
         _committeeMemberRepository = committeeMemberRepository;
         _initiativeRepository = initiativeRepository;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
         _permissionService = permissionService;
         _dataContext = dataContext;
         _fileService = fileService;
@@ -60,6 +62,7 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
         _timeProvider = timeProvider;
         _config = config;
         _initiativeCommitteeMemberService = initiativeCommitteeMemberService;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
     }
 
     public async Task<FileEntity> AddCommitteeList(Guid initiativeId, Stream file, string? contentType, string? fileName, CancellationToken ct)
@@ -132,7 +135,7 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
                ?? throw new EntityNotFoundException(nameof(FileEntity), new { initiativeId, fileId });
     }
 
-    public async Task<Stream> GetCommitteeListTemplate(Guid initiativeId, CancellationToken ct)
+    public async Task<IFile> GetCommitteeListTemplate(Guid initiativeId, CancellationToken ct)
     {
         var initiative = await _initiativeRepository.Query()
                              .WhereCanWrite(_permissionService)
@@ -150,10 +153,10 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
 
         var templateData = await GetCommitteeListTemplateData(initiative);
-        return await _committeeListTemplateGenerator.Generate(templateData, ct);
+        return await _committeeListTemplateGenerator.GenerateFileModel(templateData, ct);
     }
 
-    public async Task<Stream> GetCommitteeListTemplateForMemberByToken(Guid initiativeId, UrlToken token, CancellationToken ct)
+    public async Task<IFile> GetCommitteeListTemplateForMemberByToken(Guid initiativeId, UrlToken token, CancellationToken ct)
     {
         var initiative = await _initiativeRepository.Query()
                              .WhereCanReadWithMembershipToken(_permissionService, token)
@@ -171,7 +174,7 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
 
         var templateData = await GetCommitteeListTemplateData(initiative);
-        return await _committeeListTemplateGenerator.Generate(templateData, ct);
+        return await _committeeListTemplateGenerator.GenerateFileModel(templateData, ct);
     }
 
     public async Task DeleteCommitteeList(Guid initiativeId, Guid listId)
@@ -219,13 +222,13 @@ public class InitiativeCommitteeListService : IInitiativeCommitteeListService
 
     private async Task<CommitteeListTemplateData> GetCommitteeListTemplateData(InitiativeEntity initiative)
     {
-        var requiredApprovedMembersCount = await _accessControlListDoiRepository.Query()
+        var requiredApprovedMembersCount = await _domainOfInfluenceRepository.Query()
                                                .Where(x => x.Bfs == initiative.Bfs)
-                                               .Select(x => x.ECollectingInitiativeNumberOfMembersCommittee)
+                                               .Select(x => x.InitiativeNumberOfMembersCommittee)
                                                .FirstOrDefaultAsync()
                                            ?? _config.InitiativeCommitteeMinApprovedMembersCount;
 
-        var domainOfInfluencesByBfs = await _accessControlListDoiRepository.Query()
+        var domainOfInfluencesByBfs = await _domainOfInfluenceRepository.Query()
             .Where(x => !string.IsNullOrWhiteSpace(x.Bfs))
             .GroupBy(x => x.Bfs)
             .ToDictionaryAsync(x => x.Key!, x => x.First());

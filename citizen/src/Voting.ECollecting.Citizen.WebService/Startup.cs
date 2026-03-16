@@ -44,13 +44,13 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment environme
     {
         services.AddWebServiceServices(AppConfig);
         services.AddCoreServices(AppConfig);
-        services.AddSharedCoreServices(AppConfig.Urls, AppConfig.UserNotification, AppConfig.DmDoc)
+        services.AddSharedCoreServices(AppConfig.Urls, AppConfig.DmDoc)
             .AddPermissionService<PermissionService>()
             .AddUserNotificationRepo<UserNotificationRepository>()
-            .AddAccessControlListDoiRepository<AccessControlListDoiRepository>()
             .AddReferendumRepository<ReferendumRepository>()
             .AddInitiativeRepository<InitiativeRepository>()
             .AddCollectionCitizenLogRepository<CollectionCitizenLogRepository>()
+            .AddDomainOfInfluenceRepository<DomainOfInfluenceRepository>()
             .AddDmDocOrMock(AppConfig.DmDoc);
         services.AddIamServices(AppConfig.ELogin);
         services.AddVotingStimmregisterServices(AppConfig.VotingStimmregister);
@@ -104,9 +104,8 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment environme
     public void Configure(IApplicationBuilder app)
     {
         app.UseMetricServer(AppConfig.MetricPort);
-        app.UseHttpMetrics();
-
         app.UseRouting();
+        app.UseHttpMetrics();
 
         if (AppConfig.EnableGrpcWeb)
         {

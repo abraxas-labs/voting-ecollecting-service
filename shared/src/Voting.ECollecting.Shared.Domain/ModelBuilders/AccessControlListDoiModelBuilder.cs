@@ -9,9 +9,9 @@ using Voting.ECollecting.Shared.Domain.Enums;
 
 namespace Voting.ECollecting.Shared.Domain.ModelBuilders;
 
-public class AccessControlListDoiModelBuilder : IEntityTypeConfiguration<AccessControlListDoiEntity>
+public class AccessControlListDoiModelBuilder : IEntityTypeConfiguration<DomainOfInfluenceEntity>
 {
-    public void Configure(EntityTypeBuilder<AccessControlListDoiEntity> builder)
+    public void Configure(EntityTypeBuilder<DomainOfInfluenceEntity> builder)
     {
         AuditedEntityModelBuilder.Configure(builder);
 
@@ -32,7 +32,11 @@ public class AccessControlListDoiModelBuilder : IEntityTypeConfiguration<AccessC
             .HasConversion(new EnumToStringConverter<Canton>());
 
         builder
+            .Property(d => d.BasisType)
+            .HasConversion(new EnumToStringConverter<BasisDomainOfInfluenceType>());
+
+        builder
             .Property(d => d.Type)
-            .HasConversion(new EnumToStringConverter<AclDomainOfInfluenceType>());
+            .HasConversion(new EnumToStringConverter<DomainOfInfluenceType>());
     }
 }

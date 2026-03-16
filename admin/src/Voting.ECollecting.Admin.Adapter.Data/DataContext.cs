@@ -9,6 +9,7 @@ using Voting.ECollecting.Shared.Adapter.Data.Builders;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Entities.Audit;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
+using Voting.Lib.Database.Extensions;
 
 namespace Voting.ECollecting.Admin.Adapter.Data;
 
@@ -31,8 +32,6 @@ public class DataContext : DbContext, IDataContext
     public DbSet<FileContentEntity> FileContents { get; set; } = null!;
 
     public DbSet<DecreeEntity> Decrees { get; set; } = null!;
-
-    public DbSet<AccessControlListDoiEntity> AccessControlListDois { get; set; } = null!;
 
     public DbSet<CollectionBaseEntity> Collections { get; set; } = null!;
 
@@ -88,6 +87,12 @@ public class DataContext : DbContext, IDataContext
     {
         DbContextAccessor.DbContext = this;
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(IntegritySignatureEntityModelBuilder).Assembly);
+    }
+
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+    {
+        configurationBuilder.ConfigureMarkdownString();
+        base.ConfigureConventions(configurationBuilder);
     }
 
     private void AddAuditTrailEntries()

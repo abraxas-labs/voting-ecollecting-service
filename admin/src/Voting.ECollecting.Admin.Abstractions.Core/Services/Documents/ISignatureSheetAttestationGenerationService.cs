@@ -2,13 +2,14 @@
 // For license information see LICENSE file
 
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.Lib.Common.Files;
 
 namespace Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 
 public interface ISignatureSheetAttestationGenerationService
 {
-    Task<Stream> GenerateFile(
+    Task<IFile> GenerateFile(
         CollectionBaseEntity collection,
-        AccessControlListDoiEntity aclDoi,
+        DomainOfInfluenceEntity domainOfInfluence,
         ICollection<CollectionSignatureSheetEntity> signatureSheets);
 }

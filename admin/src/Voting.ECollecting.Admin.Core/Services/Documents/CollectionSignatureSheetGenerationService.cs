@@ -1,12 +1,11 @@
 ﻿// (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Core.Permissions;
+using Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Shared.Domain.Entities;
-using IAccessControlListDoiRepository = Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories.IAccessControlListDoiRepository;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 
 namespace Voting.ECollecting.Admin.Core.Services.Documents;
@@ -18,7 +17,7 @@ public class CollectionSignatureSheetGenerationService : Shared.Core.Services.Do
     private readonly IPermissionService _permissionService;
 
     public CollectionSignatureSheetGenerationService(
-        IAccessControlListDoiRepository accessControlListDoiRepository,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
         IInitiativeCommitteeMemberService initiativeCommitteeService,
         IInitiativeSignatureSheetTemplateGenerator initiativeSignatureSheetTemplateGenerator,
         IReferendumSignatureSheetTemplateGenerator referendumSignatureSheetTemplateGenerator,
@@ -26,7 +25,7 @@ public class CollectionSignatureSheetGenerationService : Shared.Core.Services.Do
         IReferendumRepository referendumRepository,
         IPermissionService permissionService)
         : base(
-            accessControlListDoiRepository,
+            domainOfInfluenceRepository,
             initiativeCommitteeService,
             initiativeSignatureSheetTemplateGenerator,
             referendumSignatureSheetTemplateGenerator)

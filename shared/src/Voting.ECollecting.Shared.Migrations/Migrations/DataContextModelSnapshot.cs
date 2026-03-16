@@ -24,85 +24,6 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.AccessControlListDoiEntity", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uuid");
-
-                    b.Property<string>("Bfs")
-                        .HasColumnType("text");
-
-                    b.Property<string>("Canton")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("ECollectingEmail")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<bool>("ECollectingEnabled")
-                        .HasColumnType("boolean");
-
-                    b.Property<int?>("ECollectingInitiativeMaxElectronicSignaturePercent")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("ECollectingInitiativeMinSignatureCount")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("ECollectingInitiativeNumberOfMembersCommittee")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("ECollectingReferendumMaxElectronicSignaturePercent")
-                        .HasColumnType("integer");
-
-                    b.Property<int?>("ECollectingReferendumMinSignatureCount")
-                        .HasColumnType("integer");
-
-                    b.Property<Guid?>("ImportStatisticId")
-                        .HasColumnType("uuid");
-
-                    b.Property<bool>("IsValid")
-                        .HasColumnType("boolean");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("NameForProtocol")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<Guid?>("ParentId")
-                        .HasColumnType("uuid");
-
-                    b.Property<int>("SortNumber")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("TenantId")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("TenantName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("ValidationErrors")
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ImportStatisticId");
-
-                    b.HasIndex("ParentId");
-
-                    b.ToTable("AccessControlListDois");
-                });
-
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.Audit.AuditTrailEntryEntity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -191,6 +112,9 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.Property<string>("Bfs")
                         .HasColumnType("text");
+
+                    b.Property<DateTime?>("CleanupWarningSentAt")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<DateOnly?>("CollectionEndDate")
                         .HasColumnType("date");
@@ -573,12 +497,41 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Bfs")
+                    b.Property<string>("AddressName")
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("BasisType")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Bfs")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Canton")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<bool>("ECollectingEnabled")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("Email")
                         .HasColumnType("text");
+
+                    b.Property<Guid?>("ImportStatisticId")
+                        .HasColumnType("uuid");
+
+                    b.Property<int?>("InitiativeMaxElectronicSignaturePercent")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("InitiativeMinSignatureCount")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("InitiativeNumberOfMembersCommittee")
+                        .HasColumnType("integer");
+
+                    b.Property<bool>("IsValid")
+                        .HasColumnType("boolean");
 
                     b.Property<string>("Locality")
                         .IsRequired()
@@ -591,15 +544,43 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<List<string>>("NotificationEmails")
+                        .IsRequired()
+                        .HasColumnType("text[]");
+
+                    b.Property<Guid?>("ParentId")
+                        .HasColumnType("uuid");
+
                     b.Property<string>("Phone")
                         .HasColumnType("text");
+
+                    b.Property<int?>("ReferendumMaxElectronicSignaturePercent")
+                        .HasColumnType("integer");
+
+                    b.Property<int?>("ReferendumMinSignatureCount")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("SortNumber")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Street")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int>("Type")
-                        .HasColumnType("integer");
+                    b.Property<string>("TenantId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("TenantName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Type")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("ValidationErrors")
+                        .HasColumnType("text");
 
                     b.Property<string>("Webpage")
                         .HasColumnType("text");
@@ -613,8 +594,12 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("Bfs")
                         .IsUnique();
 
+                    b.HasIndex("ImportStatisticId");
+
                     b.HasIndex("LogoId")
                         .IsUnique();
+
+                    b.HasIndex("ParentId");
 
                     b.ToTable("DomainOfInfluences");
                 });
@@ -1007,65 +992,6 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         });
 
                     b.HasDiscriminator().HasValue(2);
-                });
-
-            modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.AccessControlListDoiEntity", b =>
-                {
-                    b.HasOne("Voting.ECollecting.Shared.Domain.Entities.ImportStatisticEntity", "ImportStatistic")
-                        .WithMany("AccessControlListDois")
-                        .HasForeignKey("ImportStatisticId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.HasOne("Voting.ECollecting.Shared.Domain.Entities.AccessControlListDoiEntity", "Parent")
-                        .WithMany("Children")
-                        .HasForeignKey("ParentId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.OwnsOne("Voting.ECollecting.Shared.Domain.Entities.Audit.AuditInfo", "AuditInfo", b1 =>
-                        {
-                            b1.Property<Guid>("AccessControlListDoiEntityId")
-                                .HasColumnType("uuid");
-
-                            b1.Property<DateTime>("CreatedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<string>("CreatedByEmail")
-                                .HasColumnType("text");
-
-                            b1.Property<string>("CreatedById")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<string>("CreatedByName")
-                                .IsRequired()
-                                .HasColumnType("text");
-
-                            b1.Property<DateTime?>("ModifiedAt")
-                                .HasColumnType("timestamp with time zone");
-
-                            b1.Property<string>("ModifiedByEmail")
-                                .HasColumnType("text");
-
-                            b1.Property<string>("ModifiedById")
-                                .HasColumnType("text");
-
-                            b1.Property<string>("ModifiedByName")
-                                .HasColumnType("text");
-
-                            b1.HasKey("AccessControlListDoiEntityId");
-
-                            b1.ToTable("AccessControlListDois");
-
-                            b1.WithOwner()
-                                .HasForeignKey("AccessControlListDoiEntityId");
-                        });
-
-                    b.Navigation("AuditInfo")
-                        .IsRequired();
-
-                    b.Navigation("ImportStatistic");
-
-                    b.Navigation("Parent");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.Audit.AuditTrailEntryEntity", b =>
@@ -2024,10 +1950,20 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.DomainOfInfluenceEntity", b =>
                 {
+                    b.HasOne("Voting.ECollecting.Shared.Domain.Entities.ImportStatisticEntity", "ImportStatistic")
+                        .WithMany("AccessControlListDois")
+                        .HasForeignKey("ImportStatisticId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
                     b.HasOne("Voting.ECollecting.Shared.Domain.Entities.FileEntity", "Logo")
                         .WithOne("LogoOfDomainOfInfluence")
                         .HasForeignKey("Voting.ECollecting.Shared.Domain.Entities.DomainOfInfluenceEntity", "LogoId")
                         .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("Voting.ECollecting.Shared.Domain.Entities.DomainOfInfluenceEntity", "Parent")
+                        .WithMany("Children")
+                        .HasForeignKey("ParentId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.OwnsOne("Voting.ECollecting.Shared.Domain.Entities.Audit.AuditInfo", "AuditInfo", b1 =>
                         {
@@ -2071,7 +2007,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Navigation("AuditInfo")
                         .IsRequired();
 
+                    b.Navigation("ImportStatistic");
+
                     b.Navigation("Logo");
+
+                    b.Navigation("Parent");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.FileContentEntity", b =>
@@ -2249,6 +2189,9 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                             b1.Property<Guid>("UserNotificationEntityId")
                                 .HasColumnType("uuid");
 
+                            b1.Property<DateOnly?>("CollectionCleanupDate")
+                                .HasColumnType("date");
+
                             b1.Property<Guid?>("CollectionId")
                                 .HasColumnType("uuid");
 
@@ -2327,11 +2270,6 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Navigation("Decree");
                 });
 
-            modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.AccessControlListDoiEntity", b =>
-                {
-                    b.Navigation("Children");
-                });
-
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionBaseEntity", b =>
                 {
                     b.Navigation("CitizenLogs");
@@ -2372,6 +2310,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Navigation("CollectionCitizenLogs");
 
                     b.Navigation("Collections");
+                });
+
+            modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.DomainOfInfluenceEntity", b =>
+                {
+                    b.Navigation("Children");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.FileEntity", b =>

@@ -27,7 +27,7 @@ namespace Voting.ECollecting.Citizen.Core.Services;
 
 public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberService
 {
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IInitiativeCommitteeMemberRepository _committeeMemberRepository;
     private readonly ICollectionPermissionRepository _collectionPermissionRepository;
@@ -41,7 +41,6 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
     private readonly Shared.Abstractions.Core.Services.IInitiativeCommitteeMemberService _initiativeCommitteeMemberService;
 
     public InitiativeCommitteeMemberService(
-        IAccessControlListDoiRepository accessControlListDoiRepository,
         IInitiativeRepository initiativeRepository,
         IInitiativeCommitteeMemberRepository committeeMemberRepository,
         ICollectionPermissionRepository collectionPermissionRepository,
@@ -52,9 +51,9 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
         TimeProvider timeProvider,
         IUserNotificationService userNotificationService,
         IVotingStimmregisterAdapter stimmregister,
-        Shared.Abstractions.Core.Services.IInitiativeCommitteeMemberService initiativeCommitteeMemberService)
+        Shared.Abstractions.Core.Services.IInitiativeCommitteeMemberService initiativeCommitteeMemberService,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository)
     {
-        _accessControlListDoiRepository = accessControlListDoiRepository;
         _initiativeRepository = initiativeRepository;
         _committeeMemberRepository = committeeMemberRepository;
         _collectionPermissionRepository = collectionPermissionRepository;
@@ -66,11 +65,12 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
         _userNotificationService = userNotificationService;
         _stimmregister = stimmregister;
         _initiativeCommitteeMemberService = initiativeCommitteeMemberService;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
     }
 
     public async Task<InitiativeCommittee> GetCommittee(Guid initiativeId)
     {
-        var domainOfInfluencesByBfs = await _accessControlListDoiRepository.Query()
+        var domainOfInfluencesByBfs = await _domainOfInfluenceRepository.Query()
             .Where(x => !string.IsNullOrWhiteSpace(x.Bfs))
             .GroupBy(x => x.Bfs)
             .ToDictionaryAsync(x => x.Key!, x => x.First());
@@ -91,9 +91,9 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
                                     .Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs)).ToList()))
                             .FirstOrDefaultAsync()
                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
-        committee.RequiredApprovedMembersCount = await _accessControlListDoiRepository.Query()
+        committee.RequiredApprovedMembersCount = await _domainOfInfluenceRepository.Query()
                                                      .Where(x => x.Bfs == committee.Bfs)
-                                                     .Select(x => x.ECollectingInitiativeNumberOfMembersCommittee)
+                                                     .Select(x => x.InitiativeNumberOfMembersCommittee)
                                                      .FirstOrDefaultAsync()
                                                  ?? _config.InitiativeCommitteeMinApprovedMembersCount;
         SetUserPermissions(committee);

@@ -5,12 +5,23 @@
     Bfs: 17,
     MinSignatureCount: 4000,
     MaxElectronicSignatureCount: 500,
-    Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+    Wording: {
+      Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+      Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+
+    },
     Collection: {
       Id: Guid_1,
       Description: Für kantonale Velorouten (Velorouten-Initiative),
@@ -82,7 +93,7 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
   },
   userNotifications: [
     {
-      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      RecipientEMail: kanton+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für kantonale Velorouten (Velorouten-Initiative),
         RecipientIsCitizen: false,
@@ -93,6 +104,17 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
       Id: Guid_6
     },
     {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für kantonale Velorouten (Velorouten-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_7
+    },
+    {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
         CollectionName: Für kantonale Velorouten (Velorouten-Initiative),
@@ -101,7 +123,7 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_7
+      Id: Guid_8
     }
   ],
   collectionMessage: {
@@ -113,6 +135,6 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_8
+    Id: Guid_9
   }
 }

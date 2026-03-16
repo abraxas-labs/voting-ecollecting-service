@@ -7,15 +7,18 @@ namespace Voting.ECollecting.Admin.Abstractions.Core.Services;
 
 public interface ICollectionFilesService
 {
-    Task DeleteImage(Guid collectionId);
+    // returns the signature sheet template if 'SignatureSheetTemplateGenerated' is true
+    Task<FileEntity?> DeleteImage(Guid collectionId);
 
     Task<FileEntity> GetImage(Guid collectionId);
 
-    Task DeleteLogo(Guid collectionId);
+    // returns the signature sheet template if 'SignatureSheetTemplateGenerated' is true
+    Task<FileEntity?> DeleteLogo(Guid collectionId);
 
     Task<FileEntity> GetLogo(Guid collectionId);
 
     Task<FileEntity> GetSignatureSheetTemplate(Guid collectionId);
 
-    Task DeleteSignatureSheetTemplate(Guid collectionId);
+    // returns the signature sheet template
+    Task<FileEntity> DeleteSignatureSheetTemplate(Guid collectionId);
 }

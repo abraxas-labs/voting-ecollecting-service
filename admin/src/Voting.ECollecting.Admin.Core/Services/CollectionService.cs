@@ -40,7 +40,7 @@ public class CollectionService : ICollectionService
     private readonly IDataContext _db;
     private readonly TimeProvider _timeProvider;
     private readonly ICollectionMunicipalityRepository _collectionMunicipalityRepository;
-    private readonly AccessControlListDoiService _accessControlListDoiService;
+    private readonly AccessControlListService _accessControlListService;
     private readonly IDecreeRepository _decreeRepository;
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly ICollectionSignatureSheetRepository _collectionSignatureSheetRepository;
@@ -56,7 +56,7 @@ public class CollectionService : ICollectionService
         IDataContext db,
         TimeProvider timeProvider,
         ICollectionMunicipalityRepository collectionMunicipalityRepository,
-        AccessControlListDoiService accessControlListDoiService,
+        AccessControlListService accessControlListService,
         IDecreeRepository decreeRepository,
         IInitiativeRepository initiativeRepository,
         ICollectionSignatureSheetRepository collectionSignatureSheetRepository)
@@ -71,7 +71,7 @@ public class CollectionService : ICollectionService
         _db = db;
         _timeProvider = timeProvider;
         _collectionMunicipalityRepository = collectionMunicipalityRepository;
-        _accessControlListDoiService = accessControlListDoiService;
+        _accessControlListService = accessControlListService;
         _decreeRepository = decreeRepository;
         _initiativeRepository = initiativeRepository;
         _collectionSignatureSheetRepository = collectionSignatureSheetRepository;
@@ -494,8 +494,8 @@ public class CollectionService : ICollectionService
 
     private async Task CreateCollectionMunicipalities(Guid collectionId, string bfs)
     {
-        var aclDois = await _accessControlListDoiService.GetMunicipalities(bfs);
-        var collectionMunicipalities = aclDois.Select(x =>
+        var municipalities = await _accessControlListService.GetMunicipalities(bfs);
+        var collectionMunicipalities = municipalities.Select(x =>
         {
             var collectionMunicipality = new CollectionMunicipalityEntity
             {

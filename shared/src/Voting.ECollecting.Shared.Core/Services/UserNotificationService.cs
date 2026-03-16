@@ -7,7 +7,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
-using Voting.ECollecting.Shared.Core.Configuration;
 using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
@@ -22,8 +21,7 @@ public class UserNotificationService : IUserNotificationService
 {
     private readonly IPermissionService _permissionService;
     private readonly IUserNotificationRepository _userNotificationRepository;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
-    private readonly UserNotificationsConfig _config;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly ILogger<UserNotificationService> _logger;
     private readonly TimeProvider _timeProvider;
     private readonly IUserNotificationSender _userNotificationSender;
@@ -32,8 +30,7 @@ public class UserNotificationService : IUserNotificationService
     public UserNotificationService(
         IPermissionService permissionService,
         IUserNotificationRepository userNotificationRepository,
-        IAccessControlListDoiRepository accessControlListDoiRepository,
-        UserNotificationsConfig config,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
         ILogger<UserNotificationService> logger,
         TimeProvider timeProvider,
         IUserNotificationSender userNotificationSender,
@@ -41,8 +38,7 @@ public class UserNotificationService : IUserNotificationService
     {
         _permissionService = permissionService;
         _userNotificationRepository = userNotificationRepository;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
-        _config = config;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
         _logger = logger;
         _timeProvider = timeProvider;
         _userNotificationSender = userNotificationSender;
@@ -80,6 +76,7 @@ public class UserNotificationService : IUserNotificationService
         UrlToken? permissionToken = null,
         UrlToken? initiativeCommitteeMembershipToken = null,
         AccessibilityMessage? accessibilityMessage = null,
+        DateOnly? collectionCleanupDate = null,
         CancellationToken cancellationToken = default)
     {
         var userNotification = new UserNotificationEntity
@@ -97,6 +94,7 @@ public class UserNotificationService : IUserNotificationService
                 PermissionToken = permissionToken,
                 InitiativeCommitteeMembershipToken = initiativeCommitteeMembershipToken,
                 AccessibilityMessage = accessibilityMessage,
+                CollectionCleanupDate = collectionCleanupDate,
             },
         };
 
@@ -129,23 +127,71 @@ public class UserNotificationService : IUserNotificationService
         }
     }
 
+    public async Task SendUserNotifications(
+        IReadOnlyCollection<string> emails,
+        bool recipientsAreCitizen,
+        UserNotificationType type,
+        DecreeEntity? decree = null,
+        CollectionBaseEntity? collection = null,
+        IFile[]? attachments = null,
+        UrlToken? permissionToken = null,
+        UrlToken? initiativeCommitteeMembershipToken = null,
+        AccessibilityMessage? accessibilityMessage = null,
+        DateOnly? collectionCleanupDate = null,
+        CancellationToken cancellationToken = default)
+    {
+        var exceptions = new List<Exception>();
+        var sentCount = 0;
+
+        if (emails.Count == 0)
+        {
+            return;
+        }
+
+        foreach (var email in emails.OrderBy(x => x))
+        {
+            try
+            {
+                await SendUserNotification(
+                    email,
+                    recipientsAreCitizen,
+                    type,
+                    decree,
+                    collection,
+                    attachments,
+                    permissionToken,
+                    initiativeCommitteeMembershipToken,
+                    accessibilityMessage,
+                    collectionCleanupDate,
+                    cancellationToken);
+
+                sentCount++;
+            }
+            catch (Exception ex)
+            {
+                // Exception is already logged in SendUserNotification
+                exceptions.Add(ex);
+            }
+        }
+
+        if (sentCount == 0 && exceptions.Count > 0)
+        {
+            throw new AggregateException($"All {emails.Count} notifications failed.", exceptions);
+        }
+    }
+
     private async Task<HashSet<(string EMail, bool IsCitizen)>> BuildRecipients(CollectionBaseEntity collection)
     {
         var recipients = new HashSet<(string EMail, bool IsCitizen)>();
 
-        foreach (var recipientAddress in _config.AdditionalRecipientMailAddresses)
-        {
-            recipients.Add((recipientAddress, false));
-        }
-
         if (!string.IsNullOrWhiteSpace(collection.Bfs))
         {
-            var doiEmail = await _accessControlListDoiRepository.Query()
+            var doiEmails = await _domainOfInfluenceRepository.Query()
                 .Where(x => x.Bfs == collection.Bfs)
-                .Select(x => x.ECollectingEmail)
-                .FirstOrDefaultAsync();
+                .Select(x => x.NotificationEmails)
+                .ToListAsync();
 
-            if (!string.IsNullOrWhiteSpace(doiEmail))
+            foreach (var doiEmail in doiEmails.SelectMany(x => x))
             {
                 recipients.Add((doiEmail, false));
             }

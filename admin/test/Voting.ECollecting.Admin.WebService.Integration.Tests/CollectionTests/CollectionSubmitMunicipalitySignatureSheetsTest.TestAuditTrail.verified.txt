@@ -12,7 +12,7 @@
           Invalid: 5
         },
         State: 2,
-        Number: 4,
+        Number: 1,
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -34,7 +34,7 @@
           Invalid: 5
         },
         State: 4,
-        Number: 4,
+        Number: 1,
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -72,7 +72,7 @@
           Invalid: 1
         },
         State: 2,
-        Number: 5,
+        Number: 2,
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -94,7 +94,7 @@
           Invalid: 1
         },
         State: 4,
-        Number: 5,
+        Number: 2,
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -119,114 +119,6 @@
         CreatedAt: DateTime_2
       },
       Id: Guid_5
-    },
-    {
-      SourceEntityName: CollectionMunicipalities,
-      Action: Modified,
-      RecordBefore: {
-        Id: Guid_2,
-        Bfs: 3203,
-        IsLocked: true,
-        AuditInfo: {
-          CreatedAt: DateTimeOffset_1,
-          CreatedById: default-user-id,
-          CreatedByName: Test Admin,
-          CreatedByEmail: admin@example.com
-        },
-        CollectionId: Guid_6,
-        PhysicalCount: {
-          Total: 20,
-          Valid: 17,
-          CanAdd: true,
-          Invalid: 3
-        },
-        NextSheetNumber: 9,
-        MunicipalityName: St.Gallen,
-        ElectronicCitizenCount: 10
-      },
-      RecordAfter: {
-        Id: Guid_2,
-        Bfs: 3203,
-        IsLocked: true,
-        AuditInfo: {
-          CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_5,
-          CreatedById: default-user-id,
-          ModifiedById: default-user-id,
-          CreatedByName: Test Admin,
-          CreatedByEmail: admin@example.com,
-          ModifiedByName: default user firstname default user lastname,
-          ModifiedByEmail: default-user@example.com
-        },
-        CollectionId: Guid_6,
-        PhysicalCount: {
-          Total: 63,
-          Valid: 54,
-          CanAdd: true,
-          Invalid: 9
-        },
-        NextSheetNumber: 9,
-        MunicipalityName: St.Gallen,
-        ElectronicCitizenCount: 10
-      },
-      SourceEntityId: Guid_2,
-      AuditInfo: {
-        CreatedById: default-user-id,
-        CreatedByName: default user firstname default user lastname,
-        CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_3
-      },
-      Id: Guid_7
-    },
-    {
-      SourceEntityName: CollectionCounts,
-      Action: Modified,
-      RecordBefore: {
-        Id: Guid_8,
-        AuditInfo: {
-          CreatedAt: DateTimeOffset_6,
-          CreatedById: default-user-id,
-          CreatedByName: Test Citizen Creator,
-          CreatedByEmail: citizen-creator@example.com
-        },
-        CollectionId: Guid_6,
-        TotalCitizenCount: 0,
-        ElectronicCitizenCount: 0,
-        IntegritySignatureInfo: {
-          IntegritySignature: ,
-          IntegritySignatureKeyId: ,
-          IntegritySignatureVersion: 0
-        }
-      },
-      RecordAfter: {
-        Id: Guid_8,
-        AuditInfo: {
-          CreatedAt: DateTimeOffset_6,
-          ModifiedAt: DateTimeOffset_7,
-          CreatedById: default-user-id,
-          ModifiedById: default-user-id,
-          CreatedByName: Test Citizen Creator,
-          CreatedByEmail: citizen-creator@example.com,
-          ModifiedByName: default user firstname default user lastname,
-          ModifiedByEmail: default-user@example.com
-        },
-        CollectionId: Guid_6,
-        TotalCitizenCount: 37,
-        ElectronicCitizenCount: 0,
-        IntegritySignatureInfo: {
-          IntegritySignature: ,
-          IntegritySignatureKeyId: ,
-          IntegritySignatureVersion: 0
-        }
-      },
-      SourceEntityId: Guid_8,
-      AuditInfo: {
-        CreatedById: default-user-id,
-        CreatedByName: default user firstname default user lastname,
-        CreatedByEmail: default-user@example.com,
-        CreatedAt: DateTime_4
-      },
-      Id: Guid_9
     }
   ]
 }

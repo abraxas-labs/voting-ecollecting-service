@@ -1,0 +1,6 @@
+﻿{
+  GeneratedSignatureSheetTemplate: {
+    Id: Guid_1,
+    Name: Unterschriftenliste_Für eine tägliche Portion Natur (Frischluftinitiative).pdf
+  }
+}

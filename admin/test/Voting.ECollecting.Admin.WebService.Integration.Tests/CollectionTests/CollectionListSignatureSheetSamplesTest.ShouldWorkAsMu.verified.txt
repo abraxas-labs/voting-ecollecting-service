@@ -2,7 +2,7 @@
   SignatureSheets: [
     {
       Id: Guid_1,
-      Number: 6,
+      Number: 3,
       ReceivedAt: {
         Year: 2020,
         Month: 1,
@@ -25,7 +25,7 @@
     },
     {
       Id: Guid_2,
-      Number: 7,
+      Number: 4,
       ReceivedAt: {
         Year: 2020,
         Month: 1,

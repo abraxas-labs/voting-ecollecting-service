@@ -3,12 +3,14 @@
 
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Voting.ECollecting.Admin.Core.Services;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
+using Voting.Lib.Scheduler;
 using Voting.Lib.Testing.Mocks;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.InitiativeTests;
@@ -55,7 +57,7 @@ public class InitiativeCommitteeMemberExpiryJobTest : BaseDbTest
             item.ApprovalState.Should().Be(stateBeforeJob);
         }
 
-        await GetService<InitiativeCommitteeMemberExpiryJob>().Run(CancellationToken.None);
+        await GetService<JobRunner>().RunJob<InitiativeCommitteeMemberExpiryJob>(CancellationToken.None);
 
         foreach (var (id, _, stateAfterJob) in expectedStates)
         {
@@ -76,7 +78,7 @@ public class InitiativeCommitteeMemberExpiryJobTest : BaseDbTest
             x => x.Id == memberId,
             x => x.TokenExpiry = MockedClock.UtcNowDate.AddDays(-1));
 
-        await GetService<InitiativeCommitteeMemberExpiryJob>().Run(CancellationToken.None);
+        await GetService<JobRunner>().RunJob<InitiativeCommitteeMemberExpiryJob>(CancellationToken.None);
 
         var member = await RunOnDb(db => db.InitiativeCommitteeMembers.SingleAsync(x => x.Id == memberId));
         member.SortIndex.Should().BeNull();
@@ -104,7 +106,8 @@ public class InitiativeCommitteeMemberExpiryJobTest : BaseDbTest
 
         await RunInAuditTrailTestScope(async () =>
         {
-            await GetService<InitiativeCommitteeMemberExpiryJob>().Run(CancellationToken.None);
+            await using var scope = GetService<IServiceScopeFactory>().CreateAsyncScope();
+            await scope.ServiceProvider.GetRequiredService<JobRunner>().RunJob<InitiativeCommitteeMemberExpiryJob>(CancellationToken.None);
             await Verify(await GetAuditTrailEntries());
         });
     }

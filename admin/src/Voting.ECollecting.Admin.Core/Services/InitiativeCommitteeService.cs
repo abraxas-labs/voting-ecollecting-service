@@ -4,43 +4,44 @@
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
-using Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam;
 using Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Admin.Core.Permissions;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
+using Voting.ECollecting.Shared.Abstractions.Core.Services;
+using Voting.ECollecting.Shared.Core.Permissions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Models;
+using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 using IVotingStimmregisterPersonInfo = Voting.ECollecting.Admin.Domain.Models.IVotingStimmregisterPersonInfo;
 
 namespace Voting.ECollecting.Admin.Core.Services;
 
 public class InitiativeCommitteeService : IInitiativeCommitteeService
 {
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IInitiativeCommitteeMemberRepository _committeeMemberRepository;
     private readonly CoreAppConfig _config;
     private readonly IDataContext _dataContext;
     private readonly IPermissionService _permissionService;
     private readonly IVotingStimmregisterAdapter _stimmregister;
-    private readonly Shared.Abstractions.Core.Services.IInitiativeCommitteeMemberService _initiativeCommitteeMemberService;
+    private readonly IInitiativeCommitteeMemberService _initiativeCommitteeMemberService;
 
     public InitiativeCommitteeService(
-        IAccessControlListDoiRepository accessControlListDoiRepository,
         IInitiativeRepository initiativeRepository,
         IInitiativeCommitteeMemberRepository committeeMemberRepository,
         CoreAppConfig config,
         IDataContext dataContext,
         IPermissionService permissionService,
         IVotingStimmregisterAdapter stimmregister,
-        Shared.Abstractions.Core.Services.IInitiativeCommitteeMemberService initiativeCommitteeMemberService)
+        IInitiativeCommitteeMemberService initiativeCommitteeMemberService,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository)
     {
-        _accessControlListDoiRepository = accessControlListDoiRepository;
         _initiativeRepository = initiativeRepository;
         _committeeMemberRepository = committeeMemberRepository;
         _config = config;
@@ -48,11 +49,12 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
         _permissionService = permissionService;
         _stimmregister = stimmregister;
         _initiativeCommitteeMemberService = initiativeCommitteeMemberService;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
     }
 
     public async Task<InitiativeCommittee> GetCommittee(Guid initiativeId)
     {
-        var domainOfInfluencesByBfs = await _accessControlListDoiRepository
+        var domainOfInfluencesByBfs = await _domainOfInfluenceRepository
             .Query()
             .Where(x => !string.IsNullOrWhiteSpace(x.Bfs))
             .GroupBy(x => x.Bfs)
@@ -74,9 +76,9 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
                                     .Select(y => _initiativeCommitteeMemberService.EnrichCommitteeMember(y, domainOfInfluencesByBfs)).ToList()))
                             .FirstOrDefaultAsync()
                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
-        committee.RequiredApprovedMembersCount = await _accessControlListDoiRepository.Query()
+        committee.RequiredApprovedMembersCount = await _domainOfInfluenceRepository.Query()
                                                      .Where(x => x.Bfs == committee.Bfs)
-                                                     .Select(x => x.ECollectingInitiativeNumberOfMembersCommittee)
+                                                     .Select(x => x.InitiativeNumberOfMembersCommittee)
                                                      .FirstOrDefaultAsync()
                                                  ?? _config.InitiativeCommitteeMinApprovedMembersCount;
         SetUserPermissions(committee);
@@ -188,6 +190,6 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
 
     private void SetUserPermissions(InitiativeCommitteeMember member)
     {
-        member.UserPermissions = Shared.Core.Permissions.InitiativeCommitteeMemberPermissions.Build(member);
+        member.UserPermissions = InitiativeCommitteeMemberPermissions.Build(member);
     }
 }

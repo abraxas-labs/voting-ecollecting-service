@@ -9,5 +9,5 @@ namespace Voting.ECollecting.Shared.Domain.Enums;
 public enum ImportType
 {
     Unspecified,
-    Acl,
+    DomainOfInfluences,
 }

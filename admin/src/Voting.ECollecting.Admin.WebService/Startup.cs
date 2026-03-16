@@ -41,10 +41,10 @@ public class Startup(IConfiguration configuration)
         services.AddWebServiceServices(AppConfig);
         services.AddIamServices(AppConfig.SecureConnect);
         services.AddCoreServices(AppConfig);
-        services.AddSharedCoreServices(AppConfig.Urls, AppConfig.UserNotifications, AppConfig.DmDoc)
+        services.AddSharedCoreServices(AppConfig.Urls, AppConfig.DmDoc)
             .AddPermissionService<PermissionService>()
             .AddUserNotificationRepo<UserNotificationRepository>()
-            .AddAccessControlListDoiRepository<AccessControlListDoiRepository>()
+            .AddDomainOfInfluenceRepository<DomainOfInfluenceRepository>()
             .AddReferendumRepository<ReferendumRepository>()
             .AddInitiativeRepository<InitiativeRepository>()
             .AddCollectionCitizenLogRepository<CollectionCitizenLogRepository>()
@@ -90,10 +90,9 @@ public class Startup(IConfiguration configuration)
     public void Configure(IApplicationBuilder app)
     {
         app.UseMetricServer(AppConfig.MetricPort);
+        app.UseRouting();
         app.UseHttpMetrics();
         app.UseGrpcMetrics();
-
-        app.UseRouting();
 
         if (AppConfig.EnableGrpcWeb)
         {
@@ -105,7 +104,7 @@ public class Startup(IConfiguration configuration)
         app.UseAuthorization();
 
         app.UseMiddleware<ExceptionHandler>();
-        app.UseMiddleware<AccessControlListDoiMiddleware>();
+        app.UseMiddleware<AccessControlListMiddleware>();
         app.UseMiddleware<IamLoggingHandler>();
         app.UseSerilogRequestLoggingWithTraceabilityModifiers();
 

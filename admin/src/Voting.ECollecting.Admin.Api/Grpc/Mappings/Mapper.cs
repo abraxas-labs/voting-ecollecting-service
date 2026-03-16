@@ -205,10 +205,14 @@ internal static partial class Mapper
     internal static ListCollectionMunicipalitySignatureSheetsResponse MapToListCollectionMunicipalitySignatureSheetsResponse(List<DomainModels.CollectionSignatureSheet> signatureSheets)
         => new ListCollectionMunicipalitySignatureSheetsResponse { SignatureSheets = { MapToCollectionSignatureSheets(signatureSheets) } };
 
+    [MapPropertyFromSource(nameof(ProtoAdminModels.DomainOfInfluence.Settings))]
+    [MapPropertyFromSource(nameof(ProtoAdminModels.DomainOfInfluence.Address))]
     internal static partial ProtoAdminModels.DomainOfInfluence MapToDomainOfInfluence(DomainModels.DomainOfInfluence domainOfInfluence);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     internal static partial SubmitSignatureSheetResponse MapToSubmitSignatureSheetResponse(DomainModels.SignatureSheetStateChangeResult result);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     internal static partial UnsubmitSignatureSheetResponse MapToUnsubmitSignatureSheetResponse(DomainModels.SignatureSheetStateChangeResult result);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
@@ -231,6 +235,15 @@ internal static partial class Mapper
 
     internal static AddSignatureSheetSamplesResponse MapToAddSignatureSheetSamplesResponse(IEnumerable<CollectionSignatureSheetEntity> sheets)
         => new AddSignatureSheetSamplesResponse { SignatureSheets = { MapToCollectionSignatureSheets(sheets) } };
+
+    internal static DeleteCollectionImageResponse MapToDeleteCollectionImageResponse(FileEntity? file)
+        => new DeleteCollectionImageResponse { GeneratedSignatureSheetTemplate = file == null ? null : MapToFile(file) };
+
+    internal static DeleteCollectionLogoResponse MapToDeleteCollectionLogoResponse(FileEntity? file)
+        => new DeleteCollectionLogoResponse { GeneratedSignatureSheetTemplate = file == null ? null : MapToFile(file) };
+
+    internal static DeleteSignatureSheetTemplateResponse MapToDeleteSignatureSheetTemplateResponse(FileEntity file)
+        => new DeleteSignatureSheetTemplateResponse { GeneratedSignatureSheetTemplate = MapToFile(file) };
 
     private static DateOnly MapToDateOnly(Timestamp timestamp)
         => DateOnly.FromDateTime(MapToDateTime(timestamp));
@@ -393,6 +406,36 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial ProtoAdminModels.InitiativeCommitteeMemberUserPermissions MapInitiativeCommitteeMemberUserPermissions(SharedDomainModels.InitiativeCommitteeMemberUserPermissions userPermissions);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    [MapProperty(nameof(DomainModels.DomainOfInfluence.AddressName), nameof(ProtoAdminModels.DomainOfInfluenceAddress.Name))]
+    private static partial ProtoAdminModels.DomainOfInfluenceAddress MapToDomainOfInfluenceAddress(DomainModels.DomainOfInfluence domainOfInfluence);
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial ProtoAdminModels.DomainOfInfluenceSettings MapToDomainOfInfluenceSettings(DomainModels.DomainOfInfluence domainOfInfluence);
+
+    private static DomainModels.DomainOfInfluenceSettings MapDomainOfInfluenceSettings(
+        UpdateDomainOfInfluenceSettings settings)
+    {
+        return new DomainModels.DomainOfInfluenceSettings
+        {
+            InitiativeMinSignatureCount = settings.HasInitiativeMinSignatureCount
+                ? settings.InitiativeMinSignatureCount
+                : null,
+            ReferendumMaxElectronicSignaturePercent = settings.HasReferendumMaxElectronicSignaturePercent
+                ? settings.ReferendumMaxElectronicSignaturePercent
+                : null,
+            ReferendumMinSignatureCount = settings.HasReferendumMinSignatureCount
+                ? settings.ReferendumMinSignatureCount
+                : null,
+            InitiativeMaxElectronicSignaturePercent = settings.HasInitiativeMaxElectronicSignaturePercent
+                ? settings.InitiativeMaxElectronicSignaturePercent
+                : null,
+            InitiativeNumberOfMembersCommittee = settings.HasInitiativeNumberOfMembersCommittee
+                ? settings.InitiativeNumberOfMembersCommittee
+                : null,
+        };
+    }
+
     private static DateTime MapToDateTime(Timestamp timestamp)
     {
         return timestamp.ToDateTime();
@@ -430,4 +473,7 @@ internal static partial class Mapper
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial SharedProtoModels.Date MapToDate(DateOnly date);
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial SharedProtoModels.MarkdownString MapMarkdownString(MarkdownString mdStr);
 }

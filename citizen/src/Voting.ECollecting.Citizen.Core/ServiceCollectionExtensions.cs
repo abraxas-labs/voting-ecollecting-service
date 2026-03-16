@@ -16,6 +16,7 @@ using Voting.ECollecting.Shared.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.Lib.UserNotifications;
+using IDomainOfInfluenceService = Voting.ECollecting.Citizen.Abstractions.Core.Services.IDomainOfInfluenceService;
 using IInitiativeCommitteeMemberService = Voting.ECollecting.Citizen.Abstractions.Core.Services.IInitiativeCommitteeMemberService;
 using InitiativeCommitteeMemberService = Voting.ECollecting.Citizen.Core.Services.InitiativeCommitteeMemberService;
 using IUserNotificationService = Voting.ECollecting.Citizen.Abstractions.Core.Services.IUserNotificationService;

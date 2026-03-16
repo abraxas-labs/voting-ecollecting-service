@@ -1,11 +1,30 @@
 ﻿{
   MinSignatureCount: 1000,
-  Wording:
+  Wording: {
+    Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur***
+1. Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
+2. Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
+3. Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
+    IsEmpty: false,
+    IsEmptyOrWhiteSpace: false,
+    Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.</li>
+<li>Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.</li>
+<li>Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.</li>
+</ol>
+,
+    Plaintext:
 Die Gemeindeordnung wird wie folgt geändert:
 Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur
-1 Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
-2 Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
-3 Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
+Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
+Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
+Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.
+  },
   GovernmentDecisionNumber: ,
   LockedFields: {
     Description: false,

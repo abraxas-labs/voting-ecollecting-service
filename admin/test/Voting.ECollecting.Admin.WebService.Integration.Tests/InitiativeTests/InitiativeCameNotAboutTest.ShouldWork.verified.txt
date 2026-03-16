@@ -1,7 +1,7 @@
 ﻿{
   userNotifications: [
     {
-      RecipientEMail: bund+staatskanzlei@abraxas.ch,
+      RecipientEMail: bund+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für die Förderung der guten Laune (Humorinitiative),
         RecipientIsCitizen: false,
@@ -12,6 +12,17 @@
       Id: Guid_2
     },
     {
+      RecipientEMail: bund+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für die Förderung der guten Laune (Humorinitiative),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
       RecipientEMail: citizen-creator@example.com,
       TemplateBag: {
         CollectionName: Für die Förderung der guten Laune (Humorinitiative),
@@ -20,7 +31,7 @@
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_3
+      Id: Guid_4
     },
     {
       RecipientEMail: rudolph.meier@example.com,
@@ -31,7 +42,7 @@
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_4
+      Id: Guid_5
     }
   ],
   collectionMessage: {
@@ -43,6 +54,6 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_6
   }
 }

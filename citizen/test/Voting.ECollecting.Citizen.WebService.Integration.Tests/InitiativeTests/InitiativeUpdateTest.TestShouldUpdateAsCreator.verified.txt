@@ -1,6 +1,14 @@
 ﻿{
   MinSignatureCount: 4000,
-  Wording: Gewässer schützen vor dem schmutzigen Abwasser.,
+  Wording: {
+    Markdown: Gewässer schützen vor dem schmutzigen Abwasser.,
+    IsEmpty: false,
+    IsEmptyOrWhiteSpace: false,
+    Html:
+<p>Gewässer schützen vor dem schmutzigen Abwasser.</p>
+,
+    Plaintext: Gewässer schützen vor dem schmutzigen Abwasser.
+  },
   SubTypeId: Guid_1,
   GovernmentDecisionNumber: ,
   LockedFields: {

@@ -20,7 +20,7 @@
           CanAdd: true,
           Invalid: 3
         },
-        NextSheetNumber: 9,
+        NextSheetNumber: 6,
         MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
@@ -45,7 +45,7 @@
           CanAdd: true,
           Invalid: 32
         },
-        NextSheetNumber: 9,
+        NextSheetNumber: 6,
         MunicipalityName: St.Gallen,
         ElectronicCitizenCount: 10
       },
@@ -120,7 +120,7 @@
           Invalid: 0
         },
         State: 4,
-        Number: 6,
+        Number: 3,
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -142,7 +142,7 @@
           Invalid: 29
         },
         State: 5,
-        Number: 6,
+        Number: 3,
         IsSample: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

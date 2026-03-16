@@ -8,9 +8,9 @@ namespace Voting.ECollecting.Admin.Core.Configuration;
 public class ImportConfig
 {
     /// <summary>
-    /// Gets or sets the cron schedule expression for DOI-ACL synchronization.
+    /// Gets or sets the cron schedule expression for DOI synchronization.
     /// </summary>
-    public string CronScheduleDoiAclSync { get; set; } = string.Empty;
+    public string CronScheduleDoiSync { get; set; } = string.Empty;
 
     /// <summary>
     /// Gets or sets the canton which the imported data should be filtered for.

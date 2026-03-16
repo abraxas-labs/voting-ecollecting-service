@@ -1,13 +1,16 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Core;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Citizen.WebService.Exceptions;
 using Voting.ECollecting.DataSeeder.Data;
+using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
 using Voting.ECollecting.Shared.Test.MockedData;
 
@@ -26,7 +29,7 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Acl);
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.DomainOfInfluences);
     }
 
     [Fact]
@@ -36,6 +39,18 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
         var initiative = await RunOnDb(db => db.Initiatives.Include(x => x.Permissions).FirstAsync(x => x.Id == Guid.Parse(response.Id)));
         initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(initiative);
+    }
+
+    [Fact]
+    public async Task InitiativeMaxElectronicSignaturePercentShouldWork()
+    {
+        await ModifyDbEntities<DomainOfInfluenceEntity>(
+            x => x.Bfs == Bfs.Switzerland,
+            x => x.InitiativeMaxElectronicSignaturePercent = 50);
+
+        var response = await _client.CreateAsync(NewValidChRequest());
+        var initiative = await RunOnDb(db => db.Initiatives.IgnoreQueryFilters().FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        initiative.MaxElectronicSignatureCount.Should().Be(50_000);
     }
 
     [Fact]

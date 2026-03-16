@@ -24,9 +24,7 @@ public class CollectionAddSignatureSheetSamplesTest : BaseGrpcTest<CollectionSig
         ReferendumsCtStGallen.GuidSignatureSheetsSubmitted,
         Bfs.MunicipalityStGallen);
 
-    private static readonly Guid _municipalityMuSgId = CollectionMunicipalities.BuildGuid(
-        ReferendumsMuStGallen.GuidSignatureSheetsSubmitted,
-        Bfs.MunicipalityStGallen);
+    private static readonly Guid _sheetCtSgId = CollectionSignatureSheets.BuildGuid(_municipalityCtSgId, 1);
 
     public CollectionAddSignatureSheetSamplesTest(TestApplicationFactory factory)
         : base(factory)
@@ -44,7 +42,7 @@ public class CollectionAddSignatureSheetSamplesTest : BaseGrpcTest<CollectionSig
             });
 
         await ModifyDbEntities<CollectionSignatureSheetEntity>(
-            e => (e.CollectionMunicipalityId == _municipalityCtSgId || e.CollectionMunicipalityId == _municipalityMuSgId) && e.State == CollectionSignatureSheetState.Attested,
+            e => (e.CollectionMunicipality!.CollectionId == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted || e.CollectionMunicipality.CollectionId == ReferendumsMuStGallen.GuidSignatureSheetsSubmitted) && e.State == CollectionSignatureSheetState.Attested,
             e => e.State = CollectionSignatureSheetState.Submitted);
     }
 
@@ -157,6 +155,19 @@ public class CollectionAddSignatureSheetSamplesTest : BaseGrpcTest<CollectionSig
         await AssertStatus(
             async () => await MuSgStichprobenverwalterClient.AddSamplesAsync(req),
             StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task ShouldThrowNotAllSignatureSheetsPastAttested()
+    {
+        await ModifyDbEntities<CollectionSignatureSheetEntity>(
+            e => e.Id == _sheetCtSgId,
+            e => e.State = CollectionSignatureSheetState.Attested);
+
+        await AssertStatus(
+            async () => await CtSgStichprobenverwalterClient.AddSamplesAsync(NewValidRequest()),
+            StatusCode.InvalidArgument,
+            "All signature sheets must be past attested.");
     }
 
     [Theory]

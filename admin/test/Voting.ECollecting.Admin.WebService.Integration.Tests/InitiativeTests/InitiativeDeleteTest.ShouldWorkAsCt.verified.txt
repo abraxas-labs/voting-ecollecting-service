@@ -41,5 +41,48 @@
         MimeType: application/zip
       }
     ]
+  },
+  {
+    RecipientEmail: kanton+staatskanzlei2@abraxas.ch,
+    Subject: Für Schmetterlingsgärten (Schmetterling-Initiative) gelöscht,
+    HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>F&#252;r Schmetterlingsg&#228;rten (Schmetterling-Initiative) gel&#246;scht</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde die Sammlung <strong>F&#252;r Schmetterlingsg&#228;rten (Schmetterling-Initiative)</strong> gelöscht.</p></div>
+</body>
+</html>,
+    Attachments: [
+      {
+        FileName: archive.zip,
+        MimeType: application/zip
+      }
+    ]
   }
 ]

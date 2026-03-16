@@ -22,12 +22,31 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
           StreetOrPostOfficeBox: Kräuterweg 16
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 231 (neu) – Förderung öffentlicher Kräutergärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.</li>
+<li>Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 231 (neu) – Förderung öffentlicher Kräutergärten***
+1. Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2. Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3. Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 231 (neu) – Förderung öffentlicher Kräutergärten
-1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
-2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
-3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -82,12 +101,31 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
           StreetOrPostOfficeBox: Kräuterweg 16
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 231 (neu) – Förderung öffentlicher Kräutergärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.</li>
+<li>Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 231 (neu) – Förderung öffentlicher Kräutergärten***
+1. Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2. Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3. Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 231 (neu) – Förderung öffentlicher Kräutergärten
-1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
-2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
-3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

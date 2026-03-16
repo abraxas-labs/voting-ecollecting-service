@@ -18,8 +18,9 @@ public class CommitteeListTemplateGenerator : PdfGenerator<CommitteeListTemplate
     public CommitteeListTemplateGenerator(
         DmDocConfig config,
         RecyclableMemoryStreamManager memoryStreamManager,
-        IDmDocService dmDoc)
-        : base(config.TemplateKeys.CommitteeList, memoryStreamManager, dmDoc)
+        IDmDocService dmDoc,
+        TimeProvider timeProvider)
+        : base(config.TemplateKeys.CommitteeList, memoryStreamManager, dmDoc, timeProvider, config)
     {
         _config = config;
     }
@@ -27,5 +28,6 @@ public class CommitteeListTemplateGenerator : PdfGenerator<CommitteeListTemplate
     protected override CommitteeListTemplateBag Map(CommitteeListTemplateData data)
         => DataContainerBuilder.BuildCommitteeListTemplateBag(data);
 
-    protected override string BuildFileName(CommitteeListTemplateData data) => _config.CommitteeListTemplateFileName;
+    protected override string BuildFileName(CommitteeListTemplateData data)
+        => AppendTimestampSuffix(_config.CommitteeListTemplateFileName);
 }

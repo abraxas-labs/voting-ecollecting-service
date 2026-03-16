@@ -23,7 +23,6 @@ public class CollectionMunicipalityService : ICollectionMunicipalityService
     private readonly ICollectionRepository _collectionRepository;
     private readonly IDataContext _db;
     private readonly ICollectionMunicipalityRepository _collectionMunicipalityRepository;
-    private readonly ICollectionCountRepository _collectionCountRepository;
     private readonly ICollectionSignatureSheetRepository _collectionSignatureSheetRepository;
 
     public CollectionMunicipalityService(
@@ -31,14 +30,12 @@ public class CollectionMunicipalityService : ICollectionMunicipalityService
         ICollectionRepository collectionRepository,
         IDataContext db,
         ICollectionMunicipalityRepository collectionMunicipalityRepository,
-        ICollectionCountRepository collectionCountRepository,
         ICollectionSignatureSheetRepository collectionSignatureSheetRepository)
     {
         _permissionService = permissionService;
         _collectionRepository = collectionRepository;
         _db = db;
         _collectionMunicipalityRepository = collectionMunicipalityRepository;
-        _collectionCountRepository = collectionCountRepository;
         _collectionSignatureSheetRepository = collectionSignatureSheetRepository;
     }
 
@@ -91,64 +88,24 @@ public class CollectionMunicipalityService : ICollectionMunicipalityService
                 .FirstOrDefaultAsync()
             ?? throw new EntityNotFoundException(nameof(CollectionMunicipalityEntity), new { collectionId, bfs });
 
-        // lock collection count to ensure sign a collection does not affect collection count
-        _ = await _collectionCountRepository.Query()
-                .ForUpdate()
-                .Where(x => x.CollectionId == collectionId)
-                .Select(_ => (int?)1)
-                .FirstOrDefaultAsync()
-            ?? throw new EntityNotFoundException(nameof(CollectionCountEntity), collectionId);
-
-        var sums = await _collectionSignatureSheetRepository.Query()
-            .Where(x => x.CollectionMunicipality!.CollectionId == collectionId &&
-                        x.CollectionMunicipality!.Bfs == bfs && x.State == CollectionSignatureSheetState.Attested)
-            .GroupBy(_ => 1)
-            .Select(x => new { Valid = x.Sum(y => y.Count.Valid), Invalid = x.Sum(y => y.Count.Invalid), })
-            .FirstOrDefaultAsync();
-
-        if (sums != null)
-        {
-            await _collectionSignatureSheetRepository.AuditedUpdateRange(
-                q => q
-                    .Where(x => x.CollectionMunicipality!.CollectionId == collectionId &&
+        await _collectionSignatureSheetRepository.AuditedUpdateRange(
+            q => q
+                .Where(x => x.CollectionMunicipality!.CollectionId == collectionId &&
                             x.CollectionMunicipality!.Bfs == bfs && x.State == CollectionSignatureSheetState.Attested)
-                    .OrderBy(x => x.Number),
-                x =>
-                {
-                    x.State = CollectionSignatureSheetState.Submitted;
-                    _permissionService.SetModified(x);
-                });
-
-            await _collectionMunicipalityRepository.AuditedUpdateRange(
-                q => q.Where(x => x.CollectionId == collectionId && x.Bfs == bfs),
-                x =>
-                {
-                    x.PhysicalCount.Valid += sums.Valid;
-                    x.PhysicalCount.Invalid += sums.Invalid;
-                    _permissionService.SetModified(x);
-                });
-
-            await _collectionCountRepository.AuditedUpdateRange(
-                q => q.Where(x => x.CollectionId == collectionId),
-                x =>
-                {
-                    x.TotalCitizenCount += sums.Valid;
-                    _permissionService.SetModified(x);
-                });
-        }
-
-        await transaction.CommitAsync();
+                .OrderBy(x => x.Number),
+            x =>
+            {
+                x.State = CollectionSignatureSheetState.Submitted;
+                _permissionService.SetModified(x);
+            });
 
         var collectionMunicipality = await _collectionMunicipalityRepository.Query()
                                          .FirstOrDefaultAsync(x => x.CollectionId == collectionId && x.Bfs == bfs)
                                      ?? throw new EntityNotFoundException(nameof(CollectionMunicipalityEntity), new { collectionId, bfs });
         await SetSignatureSheetsCount(collectionMunicipality);
 
-        var collectionCount = await _collectionCountRepository.Query()
-                                  .FirstOrDefaultAsync(x => x.CollectionId == collectionId)
-                              ?? throw new EntityNotFoundException(nameof(CollectionCountEntity), collectionId);
-
-        return new SubmitMunicipalitySignatureSheetsResult(collectionMunicipality, collectionCount);
+        await transaction.CommitAsync();
+        return new SubmitMunicipalitySignatureSheetsResult(collectionMunicipality);
     }
 
     public async Task<List<CollectionSignatureSheet>> ListSignatureSheets(Guid collectionId, string bfs)

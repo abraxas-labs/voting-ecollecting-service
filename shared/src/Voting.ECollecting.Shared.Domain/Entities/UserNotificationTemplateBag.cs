@@ -28,4 +28,6 @@ public class UserNotificationTemplateBag
     public UrlToken? InitiativeCommitteeMembershipToken { get; set; }
 
     public AccessibilityMessage? AccessibilityMessage { get; set; }
+
+    public DateOnly? CollectionCleanupDate { get; set; }
 }

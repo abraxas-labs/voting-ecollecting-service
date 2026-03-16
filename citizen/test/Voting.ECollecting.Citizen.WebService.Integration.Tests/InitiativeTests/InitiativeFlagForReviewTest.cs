@@ -15,6 +15,7 @@ using Voting.ECollecting.Shared.Domain.Entities.Audit;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
 using Voting.ECollecting.Shared.Test.Utils;
+using Voting.Lib.Database.Models;
 using Voting.Lib.Testing;
 using Voting.Lib.Testing.Mocks;
 
@@ -158,14 +159,13 @@ public class InitiativeFlagForReviewTest : BaseGrpcTest<InitiativeService.Initia
 
         await AuthenticatedClient.FlagForReviewAsync(NewValidRequest());
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeReturnedForCorrection)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data));
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -177,9 +177,42 @@ public class InitiativeFlagForReviewTest : BaseGrpcTest<InitiativeService.Initia
         var config = GetService<CoreAppConfig>();
         config.InitiativeCommitteeMinApprovedMembersCount = 18;
 
+        // ensure the app config is used.
+        await ModifyDbEntities<DomainOfInfluenceEntity>(
+            x => x.Bfs == Bfs.CantonStGallen,
+            x => x.InitiativeNumberOfMembersCommittee = null);
+
         await AssertStatus(
             async () => await AuthenticatedClient.FlagForReviewAsync(NewValidRequest()),
             StatusCode.InvalidArgument);
+    }
+
+    [Fact]
+    public async Task LessApprovedCommitteeMembersDefinedOnDoiShouldFail()
+    {
+        var config = GetService<CoreAppConfig>();
+        config.InitiativeCommitteeMinApprovedMembersCount = 1;
+
+        await ModifyDbEntities<DomainOfInfluenceEntity>(
+            x => x.Bfs == Bfs.CantonStGallen,
+            x => x.InitiativeNumberOfMembersCommittee = 50);
+
+        await AssertStatus(
+            async () => await AuthenticatedClient.FlagForReviewAsync(NewValidRequest()),
+            StatusCode.InvalidArgument);
+    }
+
+    [Fact]
+    public async Task ApprovedCommitteeMembersDefinedOnDoiShouldWork()
+    {
+        var config = GetService<CoreAppConfig>();
+        config.InitiativeCommitteeMinApprovedMembersCount = 50;
+
+        await ModifyDbEntities<DomainOfInfluenceEntity>(
+            x => x.Bfs == Bfs.CantonStGallen,
+            x => x.InitiativeNumberOfMembersCommittee = 1);
+
+        await AuthenticatedClient.FlagForReviewAsync(NewValidRequest());
     }
 
     [Fact]
@@ -218,7 +251,7 @@ public class InitiativeFlagForReviewTest : BaseGrpcTest<InitiativeService.Initia
     {
         await RunOnDb(db => db.Initiatives
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeReturnedForCorrection)
-            .ExecuteUpdateAsync(x => x.SetProperty(y => y.Wording, string.Empty)));
+            .ExecuteUpdateAsync(x => x.SetProperty(y => y.Wording, MarkdownString.Empty)));
         await AssertStatus(
             async () => await AuthenticatedClient.FlagForReviewAsync(NewValidRequest()),
             StatusCode.InvalidArgument);

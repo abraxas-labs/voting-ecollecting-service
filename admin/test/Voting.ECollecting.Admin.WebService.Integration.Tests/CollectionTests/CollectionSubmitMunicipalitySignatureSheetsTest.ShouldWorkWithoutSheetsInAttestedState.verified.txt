@@ -11,15 +11,8 @@
     ElectronicCitizenCount: 10,
     IsLocked: true,
     SignatureSheetsCount: {
-      TotalSignatureSheetsCount: 8,
-      TotalSubmittedOrConfirmedSignatureSheetsCount: 8
+      TotalSignatureSheetsCount: 5,
+      TotalSubmittedOrConfirmedSignatureSheetsCount: 5
     }
-  },
-  CollectionCount: {
-    Id: Guid_1,
-    CollectionId: Guid_2,
-    TotalCitizenCount: 4124,
-    HasTotalCitizenCount: true,
-    ElectronicCitizenCount: 61
   }
 }

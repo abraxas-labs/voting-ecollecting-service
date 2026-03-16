@@ -1,24 +1,12 @@
 ﻿// (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
-using Voting.ECollecting.Shared.Domain.Entities;
 
 namespace Voting.ECollecting.Citizen.Abstractions.Adapter.Data;
 
 public interface IDataContext
 {
-    string? Language { get; set; }
-
-    DbSet<DecreeEntity> Decrees { get; set; }
-
-    DbSet<CollectionCountEntity> CollectionCounts { get; set; }
-
-    DbSet<AccessControlListDoiEntity> AccessControlListDois { get; set; }
-
-    DbSet<CollectionPermissionEntity> CollectionPermissions { get; set; }
-
     Task SaveChangesAsync();
 
     Task<IDbContextTransaction> BeginTransaction();

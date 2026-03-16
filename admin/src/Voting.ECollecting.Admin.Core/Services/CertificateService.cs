@@ -11,10 +11,8 @@ using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Entities;
-using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.Lib.Common;
-using Voting.Lib.Iam.Exceptions;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 
 namespace Voting.ECollecting.Admin.Core.Services;
@@ -27,7 +25,7 @@ public class CertificateService : ICertificateService
     private readonly IPermissionService _permissionService;
     private readonly IDataContext _dataContext;
     private readonly CertificateValidator _validator;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IAccessControlListService _accessControlListService;
 
     public CertificateService(
         CoreAppConfig config,
@@ -36,7 +34,7 @@ public class CertificateService : ICertificateService
         IPermissionService permissionService,
         IDataContext dataContext,
         CertificateValidator validator,
-        IAccessControlListDoiRepository accessControlListDoiRepository)
+        IAccessControlListService accessControlListService)
     {
         _config = config;
         _logger = logger;
@@ -44,12 +42,12 @@ public class CertificateService : ICertificateService
         _permissionService = permissionService;
         _dataContext = dataContext;
         _validator = validator;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
+        _accessControlListService = accessControlListService;
     }
 
     public async Task<ActiveCertificate> GetActive()
     {
-        await EnsureIsCtOrChTenant();
+        await _accessControlListService.EnsureIsCtOrChTenant();
         var cert = await _certificateRepository.Query()
                    .Where(x => x.Active)
                    .FirstOrDefaultAsync()
@@ -59,7 +57,7 @@ public class CertificateService : ICertificateService
 
     public async Task<IReadOnlyList<CertificateEntity>> List()
     {
-        await EnsureIsCtOrChTenant();
+        await _accessControlListService.EnsureIsCtOrChTenant();
         return await _certificateRepository
             .Query()
             .Where(x => !x.Active)
@@ -73,7 +71,7 @@ public class CertificateService : ICertificateService
         string fileName,
         CancellationToken ct)
     {
-        await EnsureIsCtOrChTenant();
+        await _accessControlListService.EnsureIsCtOrChTenant();
         return await _validator.ValidateBackupCertificate(
             GetCertificateAuthorityCertificate(),
             stream,
@@ -89,7 +87,7 @@ public class CertificateService : ICertificateService
         string fileName,
         CancellationToken ct)
     {
-        await EnsureIsCtOrChTenant();
+        await _accessControlListService.EnsureIsCtOrChTenant();
         await using var transaction = await _dataContext.BeginTransaction(ct);
 
         var validationResult = await _validator.ValidateBackupCertificate(GetCertificateAuthorityCertificate(), stream, contentType, fileName, ct);
@@ -127,17 +125,5 @@ public class CertificateService : ICertificateService
 
         _logger.LogCritical(SecurityLogging.SecurityEventId, "Private key in backup ca certificate detected");
         throw new InvalidOperationException("Private key in backup ca certificate detected");
-    }
-
-    private async Task EnsureIsCtOrChTenant()
-    {
-        var isChOrCtTenant = await _accessControlListDoiRepository.Query()
-            .AnyAsync(x =>
-                x.TenantId == _permissionService.TenantId &&
-                (x.Type == AclDomainOfInfluenceType.Ct || x.Type == AclDomainOfInfluenceType.Ch));
-        if (!isChOrCtTenant)
-        {
-            throw new ForbiddenException("Only tenants of DOIs of type CT or CH are allowed to perform this operation.");
-        }
     }
 }

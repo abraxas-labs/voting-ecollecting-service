@@ -153,8 +153,16 @@ public class ReferendumGetTest : BaseGrpcTest<ReferendumService.ReferendumServic
     }
 
     [Fact]
-    public async Task ShouldWorkWithOtherReferendumInPreparation()
+    public async Task ShouldWorkWithOtherReferendumWithoutKeys()
     {
+        await ModifyDbEntities<ReferendumEntity>(
+            e => e.Id == ReferendumsCtStGallen.GuidInPreparation2,
+            e =>
+            {
+                e.MacKeyId = null;
+                e.EncryptionKeyId = null;
+            });
+
         var client = CreateCitizenClient(
             acrValue: CitizenAuthMockDefaults.AcrValue400,
             ssn: VotingStimmregisterAdapterMock.VotingRightPerson12Ssn);

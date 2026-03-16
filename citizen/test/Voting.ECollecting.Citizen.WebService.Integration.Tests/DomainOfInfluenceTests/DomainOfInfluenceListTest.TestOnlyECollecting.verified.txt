@@ -5,21 +5,28 @@
       Type: Mu,
       Bfs: 3213,
       InitiativeMinSignatureCount: 50000,
-      InitiativeMaxElectronicSignaturePercent: 100,
+      InitiativeMaxElectronicSignaturePercent: 7,
+      InitiativeNumberOfMembersCommittee: 30,
+      ReferendumMinSignatureCount: 10000,
+      ReferendumMaxElectronicSignaturePercent: 20,
       ECollectingEnabled: true
     },
     {
       Name: Kanton St.Gallen eidgenössisch,
       Type: Ch,
       Bfs: 1,
-      InitiativeMinSignatureCount: 100000,
-      InitiativeMaxElectronicSignaturePercent: 80,
+      InitiativeNumberOfMembersCommittee: 20,
+      ReferendumMinSignatureCount: 100000,
       ECollectingEnabled: true
     },
     {
       Name: Kanton St.Gallen kantonal,
       Type: Ct,
       Bfs: 17,
+      InitiativeMaxElectronicSignaturePercent: 7,
+      InitiativeNumberOfMembersCommittee: 15,
+      ReferendumMinSignatureCount: 50000,
+      ReferendumMaxElectronicSignaturePercent: 20,
       ECollectingEnabled: true
     },
     {
@@ -27,7 +34,10 @@
       Type: Mu,
       Bfs: 3340,
       InitiativeMinSignatureCount: 50000,
-      InitiativeMaxElectronicSignaturePercent: 100,
+      InitiativeMaxElectronicSignaturePercent: 7,
+      InitiativeNumberOfMembersCommittee: 30,
+      ReferendumMinSignatureCount: 10000,
+      ReferendumMaxElectronicSignaturePercent: 20,
       ECollectingEnabled: true
     },
     {
@@ -35,7 +45,10 @@
       Type: Mu,
       Bfs: 3203,
       InitiativeMinSignatureCount: 100000,
-      InitiativeMaxElectronicSignaturePercent: 50,
+      InitiativeMaxElectronicSignaturePercent: 7,
+      InitiativeNumberOfMembersCommittee: 15,
+      ReferendumMinSignatureCount: 10000,
+      ReferendumMaxElectronicSignaturePercent: 20,
       ECollectingEnabled: true
     }
   ]

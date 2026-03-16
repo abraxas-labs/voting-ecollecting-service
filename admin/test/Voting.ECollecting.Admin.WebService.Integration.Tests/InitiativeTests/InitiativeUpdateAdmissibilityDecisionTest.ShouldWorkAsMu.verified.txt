@@ -4,12 +4,23 @@
   Bfs: 3203,
   MinSignatureCount: 1000,
   MaxElectronicSignatureCount: 500,
-  Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 103 (neu) – Förderung von Musik im öffentlichen Raum
-1 Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
-2 Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
-3 Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
+  Wording: {
+    Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 103 (neu) – Förderung von Musik im öffentlichen Raum***
+1. Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
+2. Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
+3. Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
+    Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 103 (neu) – Förderung von Musik im öffentlichen Raum</strong></em></p>
+<ol>
+<li>Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.</li>
+<li>Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.</li>
+<li>Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.</li>
+</ol>
+
+  },
   Collection: {
     Id: Guid_1,
     Description: Für mehr Musik im öffentlichen Raum (Musikbrunnen-Initiative),

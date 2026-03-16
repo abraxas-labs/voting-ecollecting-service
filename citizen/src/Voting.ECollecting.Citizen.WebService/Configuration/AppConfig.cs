@@ -96,11 +96,6 @@ public class AppConfig : CoreAppConfig
     public bool EnableServerTiming { get; set; }
 
     /// <summary>
-    /// Gets or sets the user notification config.
-    /// </summary>
-    public UserNotificationsConfig UserNotification { get; set; } = new();
-
-    /// <summary>
     /// Gets or sets public urls.
     /// </summary>
     public UrlConfig Urls { get; set; } = new();

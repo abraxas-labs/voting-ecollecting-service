@@ -1,7 +1,7 @@
 ﻿{
   userNotifications: [
     {
-      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      RecipientEMail: kanton+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für kantonale Leseecken (Leseecken-Initiative),
         RecipientIsCitizen: false,
@@ -12,6 +12,17 @@
       Id: Guid_2
     },
     {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für kantonale Leseecken (Leseecken-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_3
+    },
+    {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
         CollectionName: Für kantonale Leseecken (Leseecken-Initiative),
@@ -20,7 +31,7 @@
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_3
+      Id: Guid_4
     }
   ],
   collectionMessage: {
@@ -32,6 +43,6 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_4
+    Id: Guid_5
   }
 }

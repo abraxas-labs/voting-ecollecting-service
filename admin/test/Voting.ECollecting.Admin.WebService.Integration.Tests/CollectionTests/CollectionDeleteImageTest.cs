@@ -37,7 +37,8 @@ public class CollectionDeleteImageTest : BaseGrpcTest<CollectionService.Collecti
             .Select(x => x.Image!.Id)
             .SingleAsync());
 
-        await CtSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest());
+        var response = await CtSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest());
+        response.GeneratedSignatureSheetTemplate.Should().BeNull();
 
         var collection = await RunOnDb(db => db.Collections
             .Include(x => x.Image)
@@ -81,16 +82,16 @@ public class CollectionDeleteImageTest : BaseGrpcTest<CollectionService.Collecti
             .Select(x => x.SignatureSheetTemplateId)
             .SingleAsync());
 
-        await CtSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest());
+        var response = await CtSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest());
+        await Verify(response).UseMethodName(nameof(ShouldGenerateSignatureSheet) + "_response");
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data));
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -103,7 +104,8 @@ public class CollectionDeleteImageTest : BaseGrpcTest<CollectionService.Collecti
             .Select(x => x.Image!.Id)
             .SingleAsync());
 
-        await MuSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest(x => x.CollectionId = InitiativesMuStGallen.IdInPreparation));
+        var response = await MuSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest(x => x.CollectionId = InitiativesMuStGallen.IdInPreparation));
+        response.GeneratedSignatureSheetTemplate.Should().BeNull();
 
         var collection = await RunOnDb(db => db.Collections
             .Include(x => x.Image)
@@ -159,6 +161,19 @@ public class CollectionDeleteImageTest : BaseGrpcTest<CollectionService.Collecti
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest(x => x.CollectionId = "fffb515c-a261-482f-bd7d-7d6c5f419567")),
             StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task NoImageShouldFail()
+    {
+        await ModifyDbEntities<InitiativeEntity>(
+            x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation,
+            x => x.ImageId = null);
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.DeleteImageAsync(NewValidRequest()),
+            StatusCode.InvalidArgument,
+            "Image cannot be deleted because it is not set");
     }
 
     protected override async Task AuthorizationTestCall(GrpcChannel channel)

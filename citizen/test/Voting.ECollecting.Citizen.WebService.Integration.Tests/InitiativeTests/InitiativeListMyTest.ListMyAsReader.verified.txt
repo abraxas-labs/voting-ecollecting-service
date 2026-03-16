@@ -6,12 +6,23 @@
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 69a (neu) – Förderung der Schokoladenkultur
-1 Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.
-2 Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.
-3 Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 69a (neu) – Förderung der Schokoladenkultur***
+1. Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.
+2. Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.
+3. Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 69a (neu) – Förderung der Schokoladenkultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.</li>
+<li>Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.</li>
+<li>Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_1,
         Description: Für Schweizer Schokolade als Kulturgut (Schokolade-Initiative),
@@ -68,12 +79,23 @@ Denn gute Schokolade verbindet Generationen.,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
       MinSignatureCount: 1000,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen
-1 Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
-2 Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
-3 Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen***
+1. Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
+2. Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
+3. Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.</li>
+<li>Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.</li>
+<li>Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_2,
         Description: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
@@ -130,12 +152,23 @@ Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegt
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten
-1 Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.
-2 Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.
-3 Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten***
+1. Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.
+2. Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.
+3. Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.</li>
+<li>Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.</li>
+<li>Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_3,
         Description: Für urbanes Gärtnern in der Stadt (Stadtgarten-Initiative),
@@ -191,12 +224,23 @@ Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gä
       DomainOfInfluenceType: Ct,
       Bfs: 17,
       MinSignatureCount: 4000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 222 (neu) – Förderung kantonaler Wochenmärkte
-1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
-2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
-3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 222 (neu) – Förderung kantonaler Wochenmärkte***
+1. Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2. Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3. Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 222 (neu) – Förderung kantonaler Wochenmärkte</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.</li>
+<li>Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_4,
         Description: Für kantonale Märkte (Markt-Initiative),
@@ -252,12 +296,23 @@ Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmä
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
       MinSignatureCount: 1000,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 105 (neu) – Förderung kostenloser Stadtführungen
-1 Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.
-2 Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.
-3 Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 105 (neu) – Förderung kostenloser Stadtführungen***
+1. Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.
+2. Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.
+3. Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 105 (neu) – Förderung kostenloser Stadtführungen</strong></em></p>
+<ol>
+<li>Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.</li>
+<li>Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.</li>
+<li>Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_5,
         Description: Für kostenlose Stadtführungen (Stadtführungen-Initiative),
@@ -314,12 +369,23 @@ Die Initiative fordert keine professionellen Touristenprogramme, sondern regelm�
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 69d (neu) – Förderung von Volksfesten
-1 Der Bund anerkennt Volksfeste als wichtigen Teil der Schweizer Kultur und unterstützt ihre Durchführung.
-2 Er kann Organisatoren bei der Planung und Finanzierung traditioneller Feste unterstützen.
-3 Der Bund kann Projekte fördern, die Volksfeste als Teil der regionalen Identität stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 69d (neu) – Förderung von Volksfesten***
+1. Der Bund anerkennt Volksfeste als wichtigen Teil der Schweizer Kultur und unterstützt ihre Durchführung.
+2. Er kann Organisatoren bei der Planung und Finanzierung traditioneller Feste unterstützen.
+3. Der Bund kann Projekte fördern, die Volksfeste als Teil der regionalen Identität stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 69d (neu) – Förderung von Volksfesten</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Volksfeste als wichtigen Teil der Schweizer Kultur und unterstützt ihre Durchführung.</li>
+<li>Er kann Organisatoren bei der Planung und Finanzierung traditioneller Feste unterstützen.</li>
+<li>Der Bund kann Projekte fördern, die Volksfeste als Teil der regionalen Identität stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_6,
         Description: Für Schweizer Volksfeste (Volksfest-Initiative),
@@ -396,12 +462,23 @@ Denn wer mitfeiert, gehört dazu.,
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur
-1 Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
-2 Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
-3 Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur***
+1. Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
+2. Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
+3. Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur</strong></em></p>
+<ol>
+<li>Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.</li>
+<li>Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.</li>
+<li>Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_8,
         Description: Für lebendige Marktplätze (Marktplatz-Initiative),
@@ -458,11 +535,21 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen
-1 Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.
-2 Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.
-3 Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.,
+      Wording: {
+        Markdown:
+***Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen***
+1. Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.
+2. Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.
+3. Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.,
+        Html:
+<p><em><strong>Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.</li>
+<li>Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.</li>
+<li>Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_9,
         Description: Für mehr Trinkbrunnen (Trinkbrunnen-Initiative) (p: Reader),
@@ -519,12 +606,23 @@ Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trin
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst
-1 Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
-2 Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
-3 Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst***
+1. Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
+2. Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
+3. Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst</strong></em></p>
+<ol>
+<li>Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.</li>
+<li>Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.</li>
+<li>Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_10,
         Description: Für mehr Farbe in der Stadt (Street-Art-Initiative),
@@ -581,12 +679,23 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 214 (neu) – Förderung kantonaler Wandertage
-1 Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.
-2 Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.
-3 Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 214 (neu) – Förderung kantonaler Wandertage***
+1. Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.
+2. Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.
+3. Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 214 (neu) – Förderung kantonaler Wandertage</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.</li>
+<li>Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.</li>
+<li>Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_11,
         Description: Für kantonale Wandertage (Wandertag-Initiative) (p: Reader),
@@ -643,12 +752,23 @@ Die Initiative fordert keine Marathon-Wanderungen, sondern einfache Tagestouren 
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen
-1 Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
-2 Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
-3 Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen***
+1. Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
+2. Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
+3. Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.</li>
+<li>Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.</li>
+<li>Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_12,
         Description: Für gemütliche Leseorte in der Stadt (Bibliothek-Initiative),
@@ -705,12 +825,23 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 218 (neu) – Förderung kantonaler Spielplätze
-1 Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
-2 Er kann Gemeinden finanziell und beratend unterstützen.
-3 Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 218 (neu) – Förderung kantonaler Spielplätze***
+1. Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
+2. Er kann Gemeinden finanziell und beratend unterstützen.
+3. Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 218 (neu) – Förderung kantonaler Spielplätze</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.</li>
+<li>Er kann Gemeinden finanziell und beratend unterstützen.</li>
+<li>Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_13,
         Description: Für kantonale Spielplätze (Spielplatz-Initiative),
@@ -767,12 +898,23 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl�
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 88a (neu) – Förderung von Wanderwegen
-1 Der Bund fördert den Ausbau und die Pflege von Wanderwegen in den Schweizer Alpen und im Mittelland.
-2 Er unterstützt Kantone und Gemeinden bei der Beschilderung, Instandhaltung und Sicherung von Wanderwegen.
-3 Der Bund kann Projekte fördern, die das Wandern als Teil des Tourismus und der Erholung stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88a (neu) – Förderung von Wanderwegen***
+1. Der Bund fördert den Ausbau und die Pflege von Wanderwegen in den Schweizer Alpen und im Mittelland.
+2. Er unterstützt Kantone und Gemeinden bei der Beschilderung, Instandhaltung und Sicherung von Wanderwegen.
+3. Der Bund kann Projekte fördern, die das Wandern als Teil des Tourismus und der Erholung stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88a (neu) – Förderung von Wanderwegen</strong></em></p>
+<ol>
+<li>Der Bund fördert den Ausbau und die Pflege von Wanderwegen in den Schweizer Alpen und im Mittelland.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Beschilderung, Instandhaltung und Sicherung von Wanderwegen.</li>
+<li>Der Bund kann Projekte fördern, die das Wandern als Teil des Tourismus und der Erholung stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_14,
         Description: Für mehr Wanderwege in den Schweizer Alpen (Wanderweg-Initiative) (p: Reader),
@@ -830,12 +972,23 @@ Denn wer wandert, entdeckt die Schweiz neu.,
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz
-1 Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.
-2 Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.
-3 Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz***
+1. Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.
+2. Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.
+3. Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz</strong></em></p>
+<ol>
+<li>Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.</li>
+<li>Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.</li>
+<li>Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_15,
         Description: Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative),
@@ -893,12 +1046,23 @@ Denn wer entspannt arbeitet, arbeitet besser.,
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 217 (neu) – Förderung öffentlicher Leseecken
-1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
-2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
-3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 217 (neu) – Förderung öffentlicher Leseecken***
+1. Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2. Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3. Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 217 (neu) – Förderung öffentlicher Leseecken</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.</li>
+<li>Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_16,
         Description: Für kantonale Leseecken (Leseecken-Initiative),
@@ -955,12 +1119,23 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 76a (neu) – Förderung sauberer Seen und öffentlicher Badestellen
-1 Der Bund fördert die Wasserqualität der Schweizer Seen und den öffentlichen Zugang zu Badestellen.
-2 Er unterstützt Kantone und Gemeinden bei der Pflege von Uferpromenaden und der Schaffung neuer Badestellen.
-3 Der Bund kann Projekte zur Renaturierung von Seeufern und zum Schutz der Gewässer fördern.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 76a (neu) – Förderung sauberer Seen und öffentlicher Badestellen***
+1. Der Bund fördert die Wasserqualität der Schweizer Seen und den öffentlichen Zugang zu Badestellen.
+2. Er unterstützt Kantone und Gemeinden bei der Pflege von Uferpromenaden und der Schaffung neuer Badestellen.
+3. Der Bund kann Projekte zur Renaturierung von Seeufern und zum Schutz der Gewässer fördern.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 76a (neu) – Förderung sauberer Seen und öffentlicher Badestellen</strong></em></p>
+<ol>
+<li>Der Bund fördert die Wasserqualität der Schweizer Seen und den öffentlichen Zugang zu Badestellen.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Pflege von Uferpromenaden und der Schaffung neuer Badestellen.</li>
+<li>Der Bund kann Projekte zur Renaturierung von Seeufern und zum Schutz der Gewässer fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_17,
         Description: Für saubere Schweizer Seen (Seebad-Initiative),
@@ -1018,12 +1193,23 @@ Denn wer im See schwimmt, spürt die Schweiz.,
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 69b (neu) – Förderung der Jodel-Kultur
-1 Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.
-2 Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.
-3 Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 69b (neu) – Förderung der Jodel-Kultur***
+1. Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.
+2. Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.
+3. Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 69b (neu) – Förderung der Jodel-Kultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.</li>
+<li>Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.</li>
+<li>Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_18,
         Description: Für mehr Jodel-Festivals (Jodel-Initiative),
@@ -1080,12 +1266,23 @@ Denn wer jodelt, singt von den Bergen.,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
       MinSignatureCount: 4000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 221 (neu) – Förderung kantonaler Begegnungsräume
-1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
-2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
-3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 221 (neu) – Förderung kantonaler Begegnungsräume***
+1. Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2. Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3. Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 221 (neu) – Förderung kantonaler Begegnungsräume</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.</li>
+<li>Er kann Gemeinden beim Ausbau und Betrieb unterstützen.</li>
+<li>Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_19,
         Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
@@ -1142,12 +1339,23 @@ Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Verein
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 103 (neu) – Förderung von Musik im öffentlichen Raum
-1 Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
-2 Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
-3 Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 103 (neu) – Förderung von Musik im öffentlichen Raum***
+1. Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
+2. Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
+3. Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 103 (neu) – Förderung von Musik im öffentlichen Raum</strong></em></p>
+<ol>
+<li>Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.</li>
+<li>Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.</li>
+<li>Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_20,
         Description: Für mehr Musik im öffentlichen Raum (Musikbrunnen-Initiative),
@@ -1204,12 +1412,23 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_21,
         Description: Für kantonale Velorouten (Velorouten-Initiative),
@@ -1265,12 +1484,23 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       MinSignatureCount: 100000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 88b (neu) – Förderung von Berghütten
-1 Der Bund unterstützt die Sanierung, den Ausbau und die Modernisierung von Berghütten.
-2 Er fördert nachhaltige Infrastruktur und kann Hüttenwarte bei der Ausbildung unterstützen.
-3 Der Bund kann Projekte fördern, die Berghütten als Teil der alpinen Kultur und des Tourismus stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88b (neu) – Förderung von Berghütten***
+1. Der Bund unterstützt die Sanierung, den Ausbau und die Modernisierung von Berghütten.
+2. Er fördert nachhaltige Infrastruktur und kann Hüttenwarte bei der Ausbildung unterstützen.
+3. Der Bund kann Projekte fördern, die Berghütten als Teil der alpinen Kultur und des Tourismus stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88b (neu) – Förderung von Berghütten</strong></em></p>
+<ol>
+<li>Der Bund unterstützt die Sanierung, den Ausbau und die Modernisierung von Berghütten.</li>
+<li>Er fördert nachhaltige Infrastruktur und kann Hüttenwarte bei der Ausbildung unterstützen.</li>
+<li>Der Bund kann Projekte fördern, die Berghütten als Teil der alpinen Kultur und des Tourismus stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_22,
         Description: Für mehr Berghütten (Berghütten-Initiative),
@@ -1327,12 +1557,23 @@ Denn wer in der Hütte übernachtet, erlebt die Berge intensiv.,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       MinSignatureCount: 100000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 70a (neu) – Förderung des Fahnenstolzes
-1 Der Bund fördert das Zeigen der Schweizer Fahne im öffentlichen und privaten Raum.
-2 Er kann nationale Fahnentage festlegen und Gemeinden beim Beflaggen öffentlicher Gebäude unterstützen.
-3 Der Bund kann Projekte fördern, die die Schweizer Fahne als Symbol der Identität stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 70a (neu) – Förderung des Fahnenstolzes***
+1. Der Bund fördert das Zeigen der Schweizer Fahne im öffentlichen und privaten Raum.
+2. Er kann nationale Fahnentage festlegen und Gemeinden beim Beflaggen öffentlicher Gebäude unterstützen.
+3. Der Bund kann Projekte fördern, die die Schweizer Fahne als Symbol der Identität stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 70a (neu) – Förderung des Fahnenstolzes</strong></em></p>
+<ol>
+<li>Der Bund fördert das Zeigen der Schweizer Fahne im öffentlichen und privaten Raum.</li>
+<li>Er kann nationale Fahnentage festlegen und Gemeinden beim Beflaggen öffentlicher Gebäude unterstützen.</li>
+<li>Der Bund kann Projekte fördern, die die Schweizer Fahne als Symbol der Identität stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_23,
         Description: Für mehr Schweizer Fahnen (Fahnenstolz-Initiative),
@@ -1390,12 +1631,23 @@ Denn wer die Fahne zeigt, zeigt Verbundenheit.,
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 <sup>(neu)</sup> – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den *regelmässigen* Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann ~~~Programme~~~ und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 <sup>(neu)</sup> – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den <em>regelmässigen</em> Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann ~<del>Programme~ und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</del></li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_24,
         Description: Für eine tägliche Portion Natur (Frischluftinitiative),
@@ -1452,12 +1704,23 @@ Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- u
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 220 (neu) – Förderung kantonaler Badi-Tage
-1 Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.
-2 Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.
-3 Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 220 (neu) – Förderung kantonaler Badi-Tage***
+1. Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.
+2. Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.
+3. Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 220 (neu) – Förderung kantonaler Badi-Tage</strong></em></p>
+<ol>
+<li>Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.</li>
+<li>Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.</li>
+<li>Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_25,
         Description: Für kantonale Badi-Tage (Badi-Initiative),
@@ -1514,11 +1777,21 @@ Die Initiative fordert keine Gratis-Eintritt, sondern regelmässige Aktionstage 
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 351 (neu) – Gelassenheit im öffentlichen Leben
-1 Der Bund fördert die Gelassenheit, Achtsamkeit und Ruhe im gesellschaftlichen und öffentlichen Leben.
-2 Der Bund kann einen jährlichen nationalen Tag der Entschleunigung festlegen, um den Wert der Ruhe im Land zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 351 (neu) – Gelassenheit im öffentlichen Leben***
+1. Der Bund fördert die Gelassenheit, Achtsamkeit und Ruhe im gesellschaftlichen und öffentlichen Leben.
+2. Der Bund kann einen jährlichen nationalen Tag der Entschleunigung festlegen, um den Wert der Ruhe im Land zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 351 (neu) – Gelassenheit im öffentlichen Leben</strong></em></p>
+<ol>
+<li>Der Bund fördert die Gelassenheit, Achtsamkeit und Ruhe im gesellschaftlichen und öffentlichen Leben.</li>
+<li>Der Bund kann einen jährlichen nationalen Tag der Entschleunigung festlegen, um den Wert der Ruhe im Land zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_26,
         Description: Für mehr Gelassenheit im öffentlichen Leben (Entschleunigungs-Initiative),
@@ -1592,12 +1865,23 @@ Denn wer langsam denkt, denkt oft besser.,
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 353 (neu) – Förderung der Freundlichkeit
-1 Der Bund fördert den respektvollen und freundlichen Umgang zwischen allen Menschen im öffentlichen Leben.
-2 Er berücksichtigt bei seinen Aufgaben und in der Kommunikation eine Kultur der Höflichkeit, des Zuhörens und des gegenseitigen Respekts.
-3 Der Bund kann Programme unterstützen, die das gesellschaftliche Zusammenleben durch Freundlichkeit, Rücksichtnahme und gutes Benehmen stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 353 (neu) – Förderung der Freundlichkeit***
+1. Der Bund fördert den respektvollen und freundlichen Umgang zwischen allen Menschen im öffentlichen Leben.
+2. Er berücksichtigt bei seinen Aufgaben und in der Kommunikation eine Kultur der Höflichkeit, des Zuhörens und des gegenseitigen Respekts.
+3. Der Bund kann Programme unterstützen, die das gesellschaftliche Zusammenleben durch Freundlichkeit, Rücksichtnahme und gutes Benehmen stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 353 (neu) – Förderung der Freundlichkeit</strong></em></p>
+<ol>
+<li>Der Bund fördert den respektvollen und freundlichen Umgang zwischen allen Menschen im öffentlichen Leben.</li>
+<li>Er berücksichtigt bei seinen Aufgaben und in der Kommunikation eine Kultur der Höflichkeit, des Zuhörens und des gegenseitigen Respekts.</li>
+<li>Der Bund kann Programme unterstützen, die das gesellschaftliche Zusammenleben durch Freundlichkeit, Rücksichtnahme und gutes Benehmen stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_28,
         Description: Für die Förderung der Freundlichkeit (Freundlichkeitsinitiative),
@@ -1672,12 +1956,23 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 215 (neu) – Förderung von Musik im Alltag
-1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
-2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
-3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 215 (neu) – Förderung von Musik im Alltag***
+1. Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2. Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3. Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 215 (neu) – Förderung von Musik im Alltag</strong></em></p>
+<ol>
+<li>Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.</li>
+<li>Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.</li>
+<li>Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_30,
         Description: Für mehr Musik im Alltag (Klang-Initiative),
@@ -1752,12 +2047,23 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 88c (neu) – Förderung von Bergpicknickplätzen
-1 Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
-2 Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
-3 Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88c (neu) – Förderung von Bergpicknickplätzen***
+1. Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+2. Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+3. Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88c (neu) – Förderung von Bergpicknickplätzen</strong></em></p>
+<ol>
+<li>Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.</li>
+<li>Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_32,
         Description: Für mehr Picknickplätze in den Bergen (Bergpicknick-Initiative),
@@ -1826,12 +2132,23 @@ Denn wer picknickt, geniesst die Berge bewusst.,
       Bfs: 3213,
       MinSignatureCount: 500,
       MaxElectronicSignatureCount: 250,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 97 (neu) – Förderung von Dorffesten und Begegnungsanlässen
-1 Die Gemeinde unterstützt die Organisation eines jährlichen Dorffests oder vergleichbarer Begegnungsanlässe.
-2 Sie stellt geeignete Räume oder Plätze zur Verfügung und kann organisatorische Unterstützung leisten.
-3 Sie kann Vereine, Quartiergruppen oder Initiativen einbeziehen, um ein vielfältiges und gemeinschaftliches Programm zu gestalten.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 97 (neu) – Förderung von Dorffesten und Begegnungsanlässen***
+1. Die Gemeinde unterstützt die Organisation eines jährlichen Dorffests oder vergleichbarer Begegnungsanlässe.
+2. Sie stellt geeignete Räume oder Plätze zur Verfügung und kann organisatorische Unterstützung leisten.
+3. Sie kann Vereine, Quartiergruppen oder Initiativen einbeziehen, um ein vielfältiges und gemeinschaftliches Programm zu gestalten.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 97 (neu) – Förderung von Dorffesten und Begegnungsanlässen</strong></em></p>
+<ol>
+<li>Die Gemeinde unterstützt die Organisation eines jährlichen Dorffests oder vergleichbarer Begegnungsanlässe.</li>
+<li>Sie stellt geeignete Räume oder Plätze zur Verfügung und kann organisatorische Unterstützung leisten.</li>
+<li>Sie kann Vereine, Quartiergruppen oder Initiativen einbeziehen, um ein vielfältiges und gemeinschaftliches Programm zu gestalten.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_33,
         Description: Für mehr Gemeinschaft im Dorf (Dorffest-Initiative),
@@ -1904,12 +2221,23 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 225 (neu) – Förderung kantonaler Panoramawege
-1 Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.
-2 Er kann Gemeinden bei Bau und Beschilderung unterstützen.
-3 Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 225 (neu) – Förderung kantonaler Panoramawege***
+1. Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.
+2. Er kann Gemeinden bei Bau und Beschilderung unterstützen.
+3. Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 225 (neu) – Förderung kantonaler Panoramawege</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.</li>
+<li>Er kann Gemeinden bei Bau und Beschilderung unterstützen.</li>
+<li>Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_35,
         Description: Für kantonale Panoramawege (Panorama-Initiative),
@@ -1977,12 +2305,23 @@ Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schö
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 113 (neu) – Förderung offener Gärten
-1 Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.
-2 Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.
-3 Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 113 (neu) – Förderung offener Gärten***
+1. Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.
+2. Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.
+3. Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 113 (neu) – Förderung offener Gärten</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.</li>
+<li>Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.</li>
+<li>Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_36,
         Description: Für offene Gärten (Offene-Gärten-Initiative),
@@ -2056,12 +2395,23 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport
-1 Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.
-2 Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.
-3 Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport***
+1. Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.
+2. Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.
+3. Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.</li>
+<li>Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.</li>
+<li>Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_38,
         Description: Für mehr Skateboard-Anlagen (Skateboard-Initiative),
@@ -2118,12 +2468,23 @@ Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von
       Bfs: 3213,
       MinSignatureCount: 500,
       MaxElectronicSignatureCount: 250,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen
-1 Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.
-2 Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.
-3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen***
+1. Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.
+2. Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.
+3. Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen</strong></em></p>
+<ol>
+<li>Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.</li>
+<li>Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.</li>
+<li>Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_39,
         Description: Für plätscherndes Wasser im Dorf (Brunnen-Initiative),
@@ -2196,12 +2557,23 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen
-1 Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
-2 Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
-3 Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen***
+1. Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
+2. Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
+3. Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.</li>
+<li>Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.</li>
+<li>Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_41,
         Description: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
@@ -2258,12 +2630,23 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 223 (neu) – Förderung kantonaler Volksfeste
-1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
-2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
-3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 223 (neu) – Förderung kantonaler Volksfeste***
+1. Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2. Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3. Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 223 (neu) – Förderung kantonaler Volksfeste</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.</li>
+<li>Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_42,
         Description: Für kantonale Volksfeste (Volksfest-Initiative),
@@ -2320,12 +2703,23 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_43,
         Description: Für eine tägliche Portion Natur (Frischluftinitiative),
@@ -2397,12 +2791,23 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
-1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
-2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
-3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität***
+1. Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2. Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3. Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.</li>
+<li>Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.</li>
+<li>Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_45,
         Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
@@ -2475,12 +2880,23 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_47,
         Description: Für kantonale Feuerstellen (Feuerstellen-Initiative),
@@ -2537,12 +2953,23 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 226 (neu) – Förderung kantonaler Wanderhütten
-1 Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
-2 Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
-3 Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 226 (neu) – Förderung kantonaler Wanderhütten***
+1. Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
+2. Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
+3. Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 226 (neu) – Förderung kantonaler Wanderhütten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.</li>
+<li>Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_48,
         Description: Für kantonale Wanderhütten (Wanderhütten-Initiative),
@@ -2615,12 +3042,23 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten
-1 Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
-2 Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
-3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten***
+1. Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
+2. Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
+3. Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.</li>
+<li>Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.</li>
+<li>Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_50,
         Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),
@@ -2694,12 +3132,23 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 78c (neu) – Förderung der Raclette-Kultur
-1 Der Bund anerkennt Raclette als wichtigen Teil der Schweizer Kultur und Tradition.
-2 Er kann Projekte unterstützen, die Raclette-Anlässe fördern und regionale Käseproduktion einbeziehen.
-3 Der Bund kann einen jährlichen nationalen Raclette-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 78c (neu) – Förderung der Raclette-Kultur***
+1. Der Bund anerkennt Raclette als wichtigen Teil der Schweizer Kultur und Tradition.
+2. Er kann Projekte unterstützen, die Raclette-Anlässe fördern und regionale Käseproduktion einbeziehen.
+3. Der Bund kann einen jährlichen nationalen Raclette-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 78c (neu) – Förderung der Raclette-Kultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Raclette als wichtigen Teil der Schweizer Kultur und Tradition.</li>
+<li>Er kann Projekte unterstützen, die Raclette-Anlässe fördern und regionale Käseproduktion einbeziehen.</li>
+<li>Der Bund kann einen jährlichen nationalen Raclette-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_52,
         Description: Für Raclette-Abende (Raclette-Initiative),
@@ -2773,12 +3222,23 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 61a (neu) – Förderung der Käsebildung
-1 Der Bund fördert die Vermittlung von Wissen über Schweizer Käse und seine Herstellung.
-2 Er unterstützt Schulprojekte zur Käsedegustation und Besuche bei Käsereien.
-3 Der Bund kann Programme fördern, die Kindern und Jugendlichen regionale Käsekultur nahebringen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 61a (neu) – Förderung der Käsebildung***
+1. Der Bund fördert die Vermittlung von Wissen über Schweizer Käse und seine Herstellung.
+2. Er unterstützt Schulprojekte zur Käsedegustation und Besuche bei Käsereien.
+3. Der Bund kann Programme fördern, die Kindern und Jugendlichen regionale Käsekultur nahebringen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 61a (neu) – Förderung der Käsebildung</strong></em></p>
+<ol>
+<li>Der Bund fördert die Vermittlung von Wissen über Schweizer Käse und seine Herstellung.</li>
+<li>Er unterstützt Schulprojekte zur Käsedegustation und Besuche bei Käsereien.</li>
+<li>Der Bund kann Programme fördern, die Kindern und Jugendlichen regionale Käsekultur nahebringen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_54,
         Description: Für Käsedegustation in Schulen (Käsebildung-Initiative),
@@ -2836,12 +3296,23 @@ Denn wer Käse kennt, schätzt Qualität.,
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 112 (neu) – Förderung öffentlicher Lesecken
-1 Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.
-2 Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.
-3 Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 112 (neu) – Förderung öffentlicher Lesecken***
+1. Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.
+2. Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.
+3. Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 112 (neu) – Förderung öffentlicher Lesecken</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.</li>
+<li>Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.</li>
+<li>Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_55,
         Description: Für mehr Lesecken (Lesecken-Initiative),
@@ -2915,12 +3386,23 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 68a (neu) – Förderung der Brettspielkultur
-1 Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
-2 Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
-3 Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 68a (neu) – Förderung der Brettspielkultur***
+1. Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+2. Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+3. Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 68a (neu) – Förderung der Brettspielkultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.</li>
+<li>Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.</li>
+<li>Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_57,
         Description: Für Schweizer Brettspiele (Brettspiel-Initiative),
@@ -2994,12 +3476,23 @@ Denn wer spielt, bleibt geistig fit.,
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen
-1 Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.
-2 Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.
-3 Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen***
+1. Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.
+2. Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.
+3. Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.</li>
+<li>Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.</li>
+<li>Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_59,
         Description: Für mehr Waldspielplätze (Stadtwälder-Initiative),
@@ -3067,12 +3560,23 @@ Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielp
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 78b (neu) – Schutz der Kuhglocken-Tradition
-1 Der Bund anerkennt Kuhglocken als wichtiges Kulturgut und schützt ihre Verwendung in alpinen Regionen.
-2 Er unterstützt das Handwerk der Glockenherstellung und kann Projekte zur Traditionspflege fördern.
-3 Der Bund kann einen jährlichen Tag der Kuhglocke festlegen, um die Tradition zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 78b (neu) – Schutz der Kuhglocken-Tradition***
+1. Der Bund anerkennt Kuhglocken als wichtiges Kulturgut und schützt ihre Verwendung in alpinen Regionen.
+2. Er unterstützt das Handwerk der Glockenherstellung und kann Projekte zur Traditionspflege fördern.
+3. Der Bund kann einen jährlichen Tag der Kuhglocke festlegen, um die Tradition zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 78b (neu) – Schutz der Kuhglocken-Tradition</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Kuhglocken als wichtiges Kulturgut und schützt ihre Verwendung in alpinen Regionen.</li>
+<li>Er unterstützt das Handwerk der Glockenherstellung und kann Projekte zur Traditionspflege fördern.</li>
+<li>Der Bund kann einen jährlichen Tag der Kuhglocke festlegen, um die Tradition zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_60,
         Description: Für traditionelle Kuhglocken (Kuhglocken-Initiative),
@@ -3130,12 +3634,23 @@ Denn wer Kuhglocken hört, hört die Alpen leben.,
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
-1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
-2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
-3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts***
+1. Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2. Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3. Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts</strong></em></p>
+<ol>
+<li>Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.</li>
+<li>Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.</li>
+<li>Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_61,
         Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
@@ -3209,12 +3724,23 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 352 (neu) – Förderung von Humor und guter Laune
-1 Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
-2 Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
-3 Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 352 (neu) – Förderung von Humor und guter Laune***
+1. Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+2. Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+3. Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 352 (neu) – Förderung von Humor und guter Laune</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.</li>
+<li>Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.</li>
+<li>Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_63,
         Description: Für die Förderung der guten Laune (Humorinitiative),
@@ -3287,12 +3813,23 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 69c (neu) – Förderung der Alphornmusik
-1 Der Bund anerkennt das Alphorn als wichtiges Kulturgut und fördert Alphornvereine und Musiker.
-2 Er unterstützt die musikalische Ausbildung am Alphorn und kann Projekte zur Nachwuchsförderung fördern.
-3 Der Bund kann einen jährlichen nationalen Alphorn-Tag festlegen, um die Tradition zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 69c (neu) – Förderung der Alphornmusik***
+1. Der Bund anerkennt das Alphorn als wichtiges Kulturgut und fördert Alphornvereine und Musiker.
+2. Er unterstützt die musikalische Ausbildung am Alphorn und kann Projekte zur Nachwuchsförderung fördern.
+3. Der Bund kann einen jährlichen nationalen Alphorn-Tag festlegen, um die Tradition zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 69c (neu) – Förderung der Alphornmusik</strong></em></p>
+<ol>
+<li>Der Bund anerkennt das Alphorn als wichtiges Kulturgut und fördert Alphornvereine und Musiker.</li>
+<li>Er unterstützt die musikalische Ausbildung am Alphorn und kann Projekte zur Nachwuchsförderung fördern.</li>
+<li>Der Bund kann einen jährlichen nationalen Alphorn-Tag festlegen, um die Tradition zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_65,
         Description: Für mehr Alphornmusik (Alphorn-Initiative),
@@ -3350,12 +3887,23 @@ Denn wer Alphorn hört, hört die Berge rufen.,
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 115 (neu) – Förderung kreativer Fenstergestaltung
-1 Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.
-2 Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.
-3 Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 115 (neu) – Förderung kreativer Fenstergestaltung***
+1. Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.
+2. Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.
+3. Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 115 (neu) – Förderung kreativer Fenstergestaltung</strong></em></p>
+<ol>
+<li>Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.</li>
+<li>Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.</li>
+<li>Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_66,
         Description: Für offene Fenster zur Strasse (Offene-Fenster-Initiative),
@@ -3431,12 +3979,23 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 231 (neu) – Förderung öffentlicher Kräutergärten
-1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
-2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
-3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 231 (neu) – Förderung öffentlicher Kräutergärten***
+1. Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2. Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3. Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 231 (neu) – Förderung öffentlicher Kräutergärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.</li>
+<li>Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_68,
         Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
@@ -3512,12 +4071,23 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 1000,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten
-1 Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.
-2 Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.
-3 Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten***
+1. Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.
+2. Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.
+3. Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.</li>
+<li>Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.</li>
+<li>Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_70,
         Description: Für mehr Picknickplätze in der Stadt (Picknick-Initiative),
@@ -3573,12 +4143,23 @@ Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       MinSignatureCount: 100000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 78d (neu) – Schutz alpiner Pflanzen
-1 Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.
-2 Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.
-3 Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 78d (neu) – Schutz alpiner Pflanzen***
+1. Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.
+2. Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.
+3. Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 78d (neu) – Schutz alpiner Pflanzen</strong></em></p>
+<ol>
+<li>Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.</li>
+<li>Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.</li>
+<li>Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_71,
         Description: Für den Schutz von Bergblumen (Bergblumen-Initiative),
@@ -3654,12 +4235,23 @@ Denn wer Blumen schützt, schützt die Berge.,
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 78a (neu) – Förderung der Fondue-Kultur
-1 Der Bund anerkennt Käsefondue als wichtigen Teil der Schweizer Kultur und Tradition.
-2 Er kann Projekte unterstützen, die Fondue-Anlässe fördern und regionale Käseproduktion einbeziehen.
-3 Der Bund kann einen jährlichen nationalen Fondue-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 78a (neu) – Förderung der Fondue-Kultur***
+1. Der Bund anerkennt Käsefondue als wichtigen Teil der Schweizer Kultur und Tradition.
+2. Er kann Projekte unterstützen, die Fondue-Anlässe fördern und regionale Käseproduktion einbeziehen.
+3. Der Bund kann einen jährlichen nationalen Fondue-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 78a (neu) – Förderung der Fondue-Kultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Käsefondue als wichtigen Teil der Schweizer Kultur und Tradition.</li>
+<li>Er kann Projekte unterstützen, die Fondue-Anlässe fördern und regionale Käseproduktion einbeziehen.</li>
+<li>Der Bund kann einen jährlichen nationalen Fondue-Tag festlegen, um die Tradition des gemeinsamen Essens zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_73,
         Description: Für mehr Käsefondue-Abende (Fondue-Initiative),
@@ -3717,12 +4309,23 @@ Denn wer zusammen isst, versteht sich besser.,
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 10000,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 216 (neu) – Förderung öffentlicher Grillplätze
-1 Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
-2 Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
-3 Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 216 (neu) – Förderung öffentlicher Grillplätze***
+1. Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+2. Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+3. Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 216 (neu) – Förderung öffentlicher Grillplätze</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.</li>
+<li>Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_74,
         Description: Für kantonale Grill-Plätze (Grill-Initiative),

@@ -3,6 +3,7 @@
 
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.Lib.Common;
+using Voting.Lib.Common.Files;
 
 namespace Voting.ECollecting.Citizen.Abstractions.Core.Services;
 
@@ -14,9 +15,9 @@ public interface IInitiativeCommitteeListService
 
     Task<FileEntity> GetCommitteeList(Guid initiativeId, Guid fileId);
 
-    Task<Stream> GetCommitteeListTemplate(Guid initiativeId, CancellationToken ct);
+    Task<IFile> GetCommitteeListTemplate(Guid initiativeId, CancellationToken ct);
 
-    Task<Stream> GetCommitteeListTemplateForMemberByToken(Guid initiativeId, UrlToken token, CancellationToken ct);
+    Task<IFile> GetCommitteeListTemplateForMemberByToken(Guid initiativeId, UrlToken token, CancellationToken ct);
 
     Task DeleteCommitteeList(Guid initiativeId, Guid listId);
 }

@@ -22,12 +22,31 @@ Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Verein
           StreetOrPostOfficeBox: Begegnungsweg 12
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 221 (neu) – Förderung kantonaler Begegnungsräume</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.</li>
+<li>Er kann Gemeinden beim Ausbau und Betrieb unterstützen.</li>
+<li>Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 221 (neu) – Förderung kantonaler Begegnungsräume***
+1. Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2. Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3. Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 221 (neu) – Förderung kantonaler Begegnungsräume
-1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
-2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
-3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -76,12 +95,31 @@ Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Verein
           StreetOrPostOfficeBox: Begegnungsweg 12
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 221 (neu) – Förderung kantonaler Begegnungsräume</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.</li>
+<li>Er kann Gemeinden beim Ausbau und Betrieb unterstützen.</li>
+<li>Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 221 (neu) – Förderung kantonaler Begegnungsräume***
+1. Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2. Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3. Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 221 (neu) – Förderung kantonaler Begegnungsräume
-1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
-2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
-3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,

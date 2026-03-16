@@ -12,7 +12,7 @@
       Id: Guid_2
     },
     {
-      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      RecipientEMail: kanton+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für kantonale Feuerstellen (Feuerstellen-Initiative),
         RecipientIsCitizen: false,
@@ -23,6 +23,17 @@
       Id: Guid_3
     },
     {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für kantonale Feuerstellen (Feuerstellen-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    },
+    {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
         CollectionName: Für kantonale Feuerstellen (Feuerstellen-Initiative),
@@ -31,7 +42,7 @@
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_4
+      Id: Guid_5
     }
   ],
   collectionMessage: {
@@ -43,17 +54,36 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_6
   },
   initiative: {
     MinSignatureCount: 4000,
-    Wording:
+    Wording: {
+      Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+      IsEmpty: false,
+      IsEmptyOrWhiteSpace: false,
+      Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+      Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
-    SubTypeId: Guid_6,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.
+    },
+    SubTypeId: Guid_7,
     GovernmentDecisionNumber: SG-123.412226,
     AdmissibilityDecisionState: Valid,
     LockedFields: {
@@ -70,10 +100,10 @@ Feuer fasziniert – doch sichere Feuerstellen im Öffentlichen Raum sind selten
 Eine Feuerstelle ist mehr als Lagerfeuer – sie ist Gemütlichkeit, Naturerlebnis und Gemeinschaft. Mit sicherer Bauweise und klaren Regeln entstehen beliebte Treffpunkte.
 Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstellen mit Holzvorrat und Sitzgelegenheiten. Ein bisschen Lagerfeuer-Romantik – das bereichert Familienausflüge und Wanderungen.,
     Link: https://www.sg.ch/,
-    LogoId: Guid_7,
-    ImageId: Guid_8,
+    LogoId: Guid_8,
+    ImageId: Guid_9,
     SignatureSheetTemplateGenerated: true,
-    SignatureSheetTemplateId: Guid_9,
+    SignatureSheetTemplateId: Guid_10,
     State: EnabledForCollection,
     Address: {
       CommitteeOrPerson: Komitee Feuerstellen-Initiative,
@@ -98,7 +128,7 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           CreatedByEmail: default-user@example.com,
           CreatedAt: DateTime_1
         },
-        Id: Guid_10
+        Id: Guid_11
       },
       {
         CollectionId: Guid_1,
@@ -115,7 +145,7 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           CreatedByEmail: default-user@example.com,
           CreatedAt: DateTime_1
         },
-        Id: Guid_11
+        Id: Guid_12
       },
       {
         CollectionId: Guid_1,
@@ -132,7 +162,7 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           CreatedByEmail: default-user@example.com,
           CreatedAt: DateTime_1
         },
-        Id: Guid_12
+        Id: Guid_13
       },
       {
         CollectionId: Guid_1,
@@ -149,7 +179,7 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           CreatedByEmail: default-user@example.com,
           CreatedAt: DateTime_1
         },
-        Id: Guid_13
+        Id: Guid_14
       }
     ],
     EncryptionKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_Encryption12,

@@ -4,6 +4,7 @@
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
+using Voting.Lib.Common.Files;
 using Voting.Lib.Database.Models;
 using IVotingStimmregisterPersonInfo = Voting.ECollecting.Admin.Domain.Models.IVotingStimmregisterPersonInfo;
 
@@ -31,7 +32,9 @@ public interface ICollectionSignatureSheetService
 
     Task Update(Guid collectionId, Guid sheetId, DateOnly receivedAt, int signatureCountTotal);
 
-    Task<Stream> Attest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds);
+    Task<IFile> Attest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds);
+
+    Task<IFile> Reattest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds);
 
     Task<CollectionSignatureSheet> Get(Guid collectionId, Guid sheetId);
 

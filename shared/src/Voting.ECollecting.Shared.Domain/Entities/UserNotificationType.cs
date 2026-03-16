@@ -14,4 +14,5 @@ public enum UserNotificationType
     CollectionDeleted,
     AccessibilityMessage,
     DecreeDeleted,
+    CollectionCleanupWarning,
 }

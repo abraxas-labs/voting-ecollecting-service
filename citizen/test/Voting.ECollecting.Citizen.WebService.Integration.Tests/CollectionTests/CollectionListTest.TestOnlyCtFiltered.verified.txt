@@ -210,12 +210,23 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
-1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
-2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
-3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts***
+1. Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2. Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3. Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts</strong></em></p>
+<ol>
+<li>Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.</li>
+<li>Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.</li>
+<li>Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_11,
             Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
@@ -280,12 +291,23 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_15,
             Description: Für eine tägliche Portion Natur (Frischluftinitiative),

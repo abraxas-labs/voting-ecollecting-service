@@ -2,27 +2,41 @@
   DomainOfInfluences: [
     {
       Bfs: 3203,
-      Name: Stadt St.Gallen,
+      Name: St.Gallen,
+      NameForProtocol: ,
       Type: Mu,
       Settings: {
         InitiativeMinSignatureCount: 100000,
-        InitiativeMaxElectronicSignaturePercent: 50,
+        HasInitiativeMinSignatureCount: true,
+        InitiativeMaxElectronicSignaturePercent: 7,
+        HasInitiativeMaxElectronicSignaturePercent: true,
         InitiativeNumberOfMembersCommittee: 15,
+        HasInitiativeNumberOfMembersCommittee: true,
         ReferendumMinSignatureCount: 10000,
+        HasReferendumMinSignatureCount: true,
         ReferendumMaxElectronicSignaturePercent: 20,
-        ECollectingEnabled: true
+        HasReferendumMaxElectronicSignaturePercent: true
       },
       Address: {
+        Name: Rathaus Stadt St. Gallen,
         Street: Bahnhofsplatz 1,
         ZipCode: 9001,
         Locality: St.Gallen
       },
       Phone: +41 12 345 67 99,
-      Email: stadt-sg@example.com,
+      Email: st.gallen+staatskanzlei@abraxas.ch,
+      NotificationEmails: [
+        st.gallen+staatskanzlei@abraxas.ch,
+        st.gallen+staatskanzlei2@abraxas.ch
+      ],
       Webpage: https://stadt.sg.ch,
       Logo: {
         Id: Guid_1,
         Name: placeholder-logo.png
+      },
+      ECollectingEnabled: true,
+      UserPermissions: {
+        CanEdit: true
       }
     }
   ]

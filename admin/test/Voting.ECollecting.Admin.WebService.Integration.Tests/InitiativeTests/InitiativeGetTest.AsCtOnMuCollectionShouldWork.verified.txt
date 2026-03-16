@@ -4,12 +4,23 @@
   Bfs: 3203,
   MinSignatureCount: 1000,
   MaxElectronicSignatureCount: 500,
-  Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst
-1 Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
-2 Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
-3 Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
+  Wording: {
+    Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst***
+1. Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
+2. Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
+3. Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
+    Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst</strong></em></p>
+<ol>
+<li>Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.</li>
+<li>Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.</li>
+<li>Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.</li>
+</ol>
+
+  },
   Collection: {
     Id: Guid_1,
     Description: Für mehr Farbe in der Stadt (Street-Art-Initiative),

@@ -6,7 +6,10 @@
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording: ,
+      Wording: {
+        Markdown: ,
+        Html: 
+      },
       Collection: {
         Id: Guid_1,
         Description: Für kantonale Brunch-Treffs (Kantons-Brunch-Initiative),
@@ -70,7 +73,10 @@ Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunch
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording: ,
+      Wording: {
+        Markdown: ,
+        Html: 
+      },
       Collection: {
         Id: Guid_3,
         Description: Für kantonale Jass-Turniere (Kantons-Jass-Initiative),
@@ -134,7 +140,10 @@ Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Ja
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording: ,
+      Wording: {
+        Markdown: ,
+        Html: 
+      },
       Collection: {
         Id: Guid_4,
         Description: Für mehr Sonntagskonzerte (Sonntagsmusik-Initiative),
@@ -198,7 +207,10 @@ Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 1000,
-      Wording: ,
+      Wording: {
+        Markdown: ,
+        Html: 
+      },
       Collection: {
         Id: Guid_5,
         Description: Für mehr Waldspazier-Routen (Kantonswald-Initiative),
@@ -262,12 +274,23 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
-1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
-2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
-3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität***
+1. Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2. Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3. Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.</li>
+<li>Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.</li>
+<li>Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_6,
         Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
@@ -334,12 +357,23 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
       Bfs: 3213,
       MinSignatureCount: 500,
       MaxElectronicSignatureCount: 250,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen
-1 Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.
-2 Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.
-3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen***
+1. Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.
+2. Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.
+3. Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 96 (neu) – Förderung öffentlicher Brunnen und Wasserstellen</strong></em></p>
+<ol>
+<li>Die Gemeinde sorgt für ausreichend, gut platzierte und gepflegte Brunnen im öffentlichen Raum.</li>
+<li>Sie achtet darauf, dass Brunnen als Treffpunkt, Erfrischung und gestalterisches Element dienen.</li>
+<li>Sie kann Patenschaften oder kreative Projekte zur Gestaltung und Pflege von Brunnen fördern.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_7,
         Description: Für plätscherndes Wasser im Dorf (Brunnen-Initiative),

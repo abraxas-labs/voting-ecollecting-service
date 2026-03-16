@@ -1,0 +1,107 @@
+﻿[
+  {
+    Name: Auslandschweizer (MU),
+    Bfs: 4000,
+    TenantName: Staatskanzlei des Kantons Thurgau,
+    TenantId: SC-KANTON-TG,
+    BasisType: Mu,
+    Type: Mu,
+    Canton: TG,
+    IsValid: true,
+    ParentId: Guid_1,
+    Parent: {
+      Name: Kanton Thurgau (CH) (updated),
+      Bfs: 9999,
+      TenantName: Staatskanzlei des Kantons Thurgau (updated),
+      TenantId: SC-KANTON-TG (updated),
+      BasisType: Mu,
+      Type: Mu,
+      Canton: TG,
+      IsValid: true,
+      ValidationErrors: {"Bfs":["\u0027Bfs\u0027 must not be empty."]},
+      ImportStatisticId: Guid_2,
+      Children: [],
+      ECollectingEnabled: true,
+      NameForProtocol: ,
+      AddressName: ,
+      Street: ,
+      ZipCode: ,
+      Locality: ,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_1,
+        ModifiedById: 514963638398779657,
+        ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        ModifiedAt: DateTime_1
+      },
+      Id: Guid_1
+    },
+    ImportStatisticId: Guid_3,
+    ECollectingEnabled: false,
+    NameForProtocol: ,
+    AddressName: ,
+    Street: ,
+    ZipCode: ,
+    Locality: ,
+    AuditInfo: {
+      CreatedById: 514963638398779657,
+      CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      CreatedAt: DateTime_1
+    },
+    Id: Guid_4
+  },
+  {
+    Name: Kanton Thurgau (CH) (updated),
+    Bfs: 9999,
+    TenantName: Staatskanzlei des Kantons Thurgau (updated),
+    TenantId: SC-KANTON-TG (updated),
+    BasisType: Mu,
+    Type: Mu,
+    Canton: TG,
+    IsValid: true,
+    ValidationErrors: {"Bfs":["\u0027Bfs\u0027 must not be empty."]},
+    ImportStatisticId: Guid_2,
+    Children: [
+      {
+        Name: Auslandschweizer (MU),
+        Bfs: 4000,
+        TenantName: Staatskanzlei des Kantons Thurgau,
+        TenantId: SC-KANTON-TG,
+        BasisType: Mu,
+        Type: Mu,
+        Canton: TG,
+        IsValid: true,
+        ParentId: Guid_1,
+        ImportStatisticId: Guid_3,
+        ECollectingEnabled: false,
+        NameForProtocol: ,
+        AddressName: ,
+        Street: ,
+        ZipCode: ,
+        Locality: ,
+        AuditInfo: {
+          CreatedById: 514963638398779657,
+          CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+          CreatedAt: DateTime_1
+        },
+        Id: Guid_4
+      }
+    ],
+    ECollectingEnabled: true,
+    NameForProtocol: ,
+    AddressName: ,
+    Street: ,
+    ZipCode: ,
+    Locality: ,
+    AuditInfo: {
+      CreatedById: 514963638398779657,
+      CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      CreatedAt: DateTime_1,
+      ModifiedById: 514963638398779657,
+      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
+      ModifiedAt: DateTime_1
+    },
+    Id: Guid_1
+  }
+]

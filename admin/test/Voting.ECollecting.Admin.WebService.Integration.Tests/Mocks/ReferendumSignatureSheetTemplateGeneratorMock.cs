@@ -16,5 +16,5 @@ public class ReferendumSignatureSheetTemplateGeneratorMock(IDmDocDataSerializer 
         => TemplateBagMapper.MapToReferendumSignatureSheetTemplateBag(entity);
 
     protected override string BuildFileName(ReferendumEntity entity)
-        => "Referendum_" + config.SignatureSheetTemplateFileName;
+        => string.Format(config.SignatureSheetTemplateFileName, entity.Description);
 }

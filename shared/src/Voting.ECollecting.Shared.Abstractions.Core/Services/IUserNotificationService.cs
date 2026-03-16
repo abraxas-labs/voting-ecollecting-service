@@ -24,5 +24,19 @@ public interface IUserNotificationService
         UrlToken? permissionToken = null,
         UrlToken? initiativeCommitteeMembershipToken = null,
         AccessibilityMessage? accessibilityMessage = null,
+        DateOnly? collectionCleanupDate = null,
+        CancellationToken cancellationToken = default);
+
+    Task SendUserNotifications(
+        IReadOnlyCollection<string> emails,
+        bool recipientsAreCitizen,
+        UserNotificationType type,
+        DecreeEntity? decree = null,
+        CollectionBaseEntity? collection = null,
+        IFile[]? attachments = null,
+        UrlToken? permissionToken = null,
+        UrlToken? initiativeCommitteeMembershipToken = null,
+        AccessibilityMessage? accessibilityMessage = null,
+        DateOnly? collectionCleanupDate = null,
         CancellationToken cancellationToken = default);
 }

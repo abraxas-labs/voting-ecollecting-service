@@ -23,12 +23,31 @@ Denn wer picknickt, geniesst die Berge bewusst.,
           StreetOrPostOfficeBox: Picknickweg 22
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88c (neu) – Förderung von Bergpicknickplätzen</strong></em></p>
+<ol>
+<li>Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.</li>
+<li>Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88c (neu) – Förderung von Bergpicknickplätzen***
+1. Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+2. Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+3. Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 88c (neu) – Förderung von Bergpicknickplätzen
-1 Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
-2 Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
-3 Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -79,12 +98,31 @@ Denn wer picknickt, geniesst die Berge bewusst.,
           StreetOrPostOfficeBox: Picknickweg 22
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88c (neu) – Förderung von Bergpicknickplätzen</strong></em></p>
+<ol>
+<li>Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.</li>
+<li>Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88c (neu) – Förderung von Bergpicknickplätzen***
+1. Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+2. Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+3. Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 88c (neu) – Förderung von Bergpicknickplätzen
-1 Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
-2 Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
-3 Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -281,12 +319,31 @@ Denn wer picknickt, geniesst die Berge bewusst.,
           StreetOrPostOfficeBox: Picknickweg 22
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88c (neu) – Förderung von Bergpicknickplätzen</strong></em></p>
+<ol>
+<li>Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.</li>
+<li>Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88c (neu) – Förderung von Bergpicknickplätzen***
+1. Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+2. Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+3. Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 88c (neu) – Förderung von Bergpicknickplätzen
-1 Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
-2 Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
-3 Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -340,12 +397,31 @@ Denn wer picknickt, geniesst die Berge bewusst.,
           StreetOrPostOfficeBox: Picknickweg 22
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 88c (neu) – Förderung von Bergpicknickplätzen</strong></em></p>
+<ol>
+<li>Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.</li>
+<li>Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.</li>
+<li>Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 88c (neu) – Förderung von Bergpicknickplätzen***
+1. Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+2. Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+3. Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 88c (neu) – Förderung von Bergpicknickplätzen
-1 Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
-2 Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
-3 Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+Der Bund fördert die Einrichtung von Picknickplätzen in Bergregionen und an Wanderwegen.
+Er unterstützt Kantone und Gemeinden bei der Ausstattung mit Tischen, Bänken und Feuerstellen.
+Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfrastruktur stärken.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

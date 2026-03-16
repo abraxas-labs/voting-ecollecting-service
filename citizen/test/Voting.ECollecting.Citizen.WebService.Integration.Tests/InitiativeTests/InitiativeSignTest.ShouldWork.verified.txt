@@ -3,12 +3,31 @@
   CollectionMunicipality: {
     Collection: {
       MinSignatureCount: 4000,
-      Wording:
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+        IsEmpty: false,
+        IsEmptyOrWhiteSpace: false,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+,
+        Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.
+      },
       SubTypeId: Guid_2,
       GovernmentDecisionNumber: SG-123.412210,
       AdmissibilityDecisionState: Valid,
@@ -105,12 +124,31 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
     CollectionId: Guid_6,
     Collection: {
       MinSignatureCount: 4000,
-      Wording:
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+        IsEmpty: false,
+        IsEmptyOrWhiteSpace: false,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+,
+        Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.
+      },
       SubTypeId: Guid_2,
       GovernmentDecisionNumber: SG-123.412210,
       AdmissibilityDecisionState: Valid,

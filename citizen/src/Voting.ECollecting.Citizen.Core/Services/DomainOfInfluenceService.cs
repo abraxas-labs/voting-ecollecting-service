@@ -14,18 +14,18 @@ namespace Voting.ECollecting.Citizen.Core.Services;
 
 public class DomainOfInfluenceService : IDomainOfInfluenceService
 {
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly CoreAppConfig _config;
 
-    public DomainOfInfluenceService(IAccessControlListDoiRepository accessControlListDoiRepository, CoreAppConfig config)
+    public DomainOfInfluenceService(IDomainOfInfluenceRepository domainOfInfluenceRepository, CoreAppConfig config)
     {
-        _accessControlListDoiRepository = accessControlListDoiRepository;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
         _config = config;
     }
 
     public async Task<List<DomainOfInfluence>> List(bool? eCollectingEnabled, IReadOnlySet<DomainOfInfluenceType>? doiTypes)
     {
-        IQueryable<AccessControlListDoiEntity> query = _accessControlListDoiRepository
+        IQueryable<DomainOfInfluenceEntity> query = _domainOfInfluenceRepository
             .Query()
             .OrderBy(x => x.Name);
 
@@ -34,10 +34,24 @@ public class DomainOfInfluenceService : IDomainOfInfluenceService
             query = query.Where(x => x.ECollectingEnabled == eCollectingEnabled.Value);
         }
 
-        doiTypes ??= Enum.GetValues<DomainOfInfluenceType>().ToHashSet();
-        var aclDoiTypes = Mapper.MapToAclDoiTypes(doiTypes).ToHashSet();
-        query = query.Where(x => aclDoiTypes.Contains(x.Type));
-        return Mapper.MapToDomainOfInfluences(await query.ToListAsync()).ToList();
+        query = doiTypes != null
+            ? query.Where(x => doiTypes.Contains(x.Type))
+            : query.Where(x => x.Type != DomainOfInfluenceType.Unspecified);
+
+        var dois = await query.ToListAsync();
+
+        // the MU's inherit the canton's max electronic signature percent
+        if (dois.Any(x => x.Type == DomainOfInfluenceType.Mu))
+        {
+            var quorumDoi = await _domainOfInfluenceRepository.GetSingleByType(DomainOfInfluenceType.Ct);
+            foreach (var doi in dois.Where(x => x.Type == DomainOfInfluenceType.Mu))
+            {
+                doi.InitiativeMaxElectronicSignaturePercent = quorumDoi.InitiativeMaxElectronicSignaturePercent;
+                doi.ReferendumMaxElectronicSignaturePercent = quorumDoi.ReferendumMaxElectronicSignaturePercent;
+            }
+        }
+
+        return Mapper.MapToDomainOfInfluences(dois).ToList();
     }
 
     public IEnumerable<DomainOfInfluenceType> ListDomainOfInfluenceTypes() => _config.EnabledDomainOfInfluenceTypes.OrderBy(x => x);

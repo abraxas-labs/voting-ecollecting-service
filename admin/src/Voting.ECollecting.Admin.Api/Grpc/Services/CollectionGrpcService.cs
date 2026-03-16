@@ -76,24 +76,24 @@ public class CollectionGrpcService : CollectionService.CollectionServiceBase
     }
 
     [Stammdatenverwalter]
-    public override async Task<Empty> DeleteImage(DeleteCollectionImageRequest request, ServerCallContext context)
+    public override async Task<DeleteCollectionImageResponse> DeleteImage(DeleteCollectionImageRequest request, ServerCallContext context)
     {
-        await _collectionFilesService.DeleteImage(GuidParser.Parse(request.CollectionId));
-        return ProtobufEmpty.Instance;
+        var generatedSignatureSheetTemplate = await _collectionFilesService.DeleteImage(GuidParser.Parse(request.CollectionId));
+        return Mapper.MapToDeleteCollectionImageResponse(generatedSignatureSheetTemplate);
     }
 
     [Stammdatenverwalter]
-    public override async Task<Empty> DeleteLogo(DeleteCollectionLogoRequest request, ServerCallContext context)
+    public override async Task<DeleteCollectionLogoResponse> DeleteLogo(DeleteCollectionLogoRequest request, ServerCallContext context)
     {
-        await _collectionFilesService.DeleteLogo(GuidParser.Parse(request.CollectionId));
-        return ProtobufEmpty.Instance;
+        var generatedSignatureSheetTemplate = await _collectionFilesService.DeleteLogo(GuidParser.Parse(request.CollectionId));
+        return Mapper.MapToDeleteCollectionLogoResponse(generatedSignatureSheetTemplate);
     }
 
     [Stammdatenverwalter]
-    public override async Task<Empty> DeleteSignatureSheetTemplate(DeleteSignatureSheetTemplateRequest request, ServerCallContext context)
+    public override async Task<DeleteSignatureSheetTemplateResponse> DeleteSignatureSheetTemplate(DeleteSignatureSheetTemplateRequest request, ServerCallContext context)
     {
-        await _collectionFilesService.DeleteSignatureSheetTemplate(GuidParser.Parse(request.CollectionId));
-        return ProtobufEmpty.Instance;
+        var generatedSignatureSheetTemplate = await _collectionFilesService.DeleteSignatureSheetTemplate(GuidParser.Parse(request.CollectionId));
+        return Mapper.MapToDeleteSignatureSheetTemplateResponse(generatedSignatureSheetTemplate);
     }
 
     [Stammdatenverwalter]

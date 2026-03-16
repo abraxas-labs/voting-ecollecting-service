@@ -8,25 +8,26 @@ using Voting.ECollecting.Citizen.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using DomainEnums = Voting.ECollecting.Shared.Domain.Enums;
+using IDomainOfInfluenceRepository = Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories.IDomainOfInfluenceRepository;
 
 namespace Voting.ECollecting.Citizen.Core.Services.Validation;
 
 public class InitiativeValidationService : CollectionValidationService
 {
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _doiRepository;
     private readonly IInitiativeCommitteeMemberRepository _committeeMemberRepository;
     private readonly IFileRepository _fileRepository;
     private readonly CoreAppConfig _config;
 
     public InitiativeValidationService(
-        IAccessControlListDoiRepository accessControlListDoiRepository,
+        IDomainOfInfluenceRepository doiRepository,
         IInitiativeCommitteeMemberRepository committeeMemberRepository,
         ICollectionPermissionRepository collectionPermissionRepository,
         IFileRepository fileRepository,
         CoreAppConfig config)
         : base(collectionPermissionRepository)
     {
-        _accessControlListDoiRepository = accessControlListDoiRepository;
+        _doiRepository = doiRepository;
         _committeeMemberRepository = committeeMemberRepository;
         _fileRepository = fileRepository;
         _config = config;
@@ -37,7 +38,7 @@ public class InitiativeValidationService : CollectionValidationService
         var validationResult = base.ValidateGeneralInformation(collection);
         return validationResult with
         {
-            IsValid = validationResult.IsValid && !string.IsNullOrEmpty(((InitiativeEntity)collection).Wording),
+            IsValid = validationResult.IsValid && !((InitiativeEntity)collection).Wording.IsEmptyOrWhiteSpace,
         };
     }
 
@@ -46,9 +47,9 @@ public class InitiativeValidationService : CollectionValidationService
         var validationResults = (await base.ValidateForSubmission(collection)).ValidationResults.ToList();
 
         var initiative = (InitiativeEntity)collection;
-        var requiredApprovedMembersCount = await _accessControlListDoiRepository.Query()
+        var requiredApprovedMembersCount = await _doiRepository.Query()
                                                .Where(x => x.Bfs == initiative.Bfs)
-                                               .Select(x => x.ECollectingInitiativeNumberOfMembersCommittee)
+                                               .Select(x => x.InitiativeNumberOfMembersCommittee)
                                                .FirstOrDefaultAsync()
                                            ?? _config.InitiativeCommitteeMinApprovedMembersCount;
 

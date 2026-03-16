@@ -1,6 +1,12 @@
 ﻿{
   MinSignatureCount: 4000,
-  Wording: ,
+  Wording: {
+    Markdown: ,
+    IsEmpty: true,
+    IsEmptyOrWhiteSpace: true,
+    Html: ,
+    Plaintext: 
+  },
   SubTypeId: Guid_1,
   GovernmentDecisionNumber: CH-123.4567,
   AdmissibilityDecisionState: Open,

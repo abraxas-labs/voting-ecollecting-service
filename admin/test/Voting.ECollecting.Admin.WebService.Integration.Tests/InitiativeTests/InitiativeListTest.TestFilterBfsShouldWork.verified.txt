@@ -14,12 +14,23 @@
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen
-1 Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
-2 Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
-3 Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen***
+1. Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
+2. Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
+3. Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.</li>
+<li>Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.</li>
+<li>Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_1,
             Description: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
@@ -75,12 +86,23 @@ Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegt
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten
-1 Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.
-2 Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.
-3 Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten***
+1. Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.
+2. Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.
+3. Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 104 (neu) – Förderung urbaner Gärten und Gemeinschaftsgärten</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung urbaner Gärten und Gemeinschaftsgärten im Stadtgebiet.</li>
+<li>Sie stellt geeignete Flächen zur Verfügung und unterstützt Initiativen beim Aufbau und Betrieb.</li>
+<li>Sie kann Bildungsprojekte fördern, die das Wissen über Gärtnern und regionale Lebensmittel vermitteln.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_2,
             Description: Für urbanes Gärtnern in der Stadt (Stadtgarten-Initiative),
@@ -135,12 +157,23 @@ Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gä
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 105 (neu) – Förderung kostenloser Stadtführungen
-1 Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.
-2 Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.
-3 Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 105 (neu) – Förderung kostenloser Stadtführungen***
+1. Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.
+2. Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.
+3. Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 105 (neu) – Förderung kostenloser Stadtführungen</strong></em></p>
+<ol>
+<li>Die Stadt fördert regelmässige, kostenlose Stadtführungen für Einheimische und Besucher.</li>
+<li>Sie unterstützt Freiwillige oder Organisationen, die Führungen anbieten, und stellt Informationsmaterial bereit.</li>
+<li>Sie kann thematische Führungen fördern, die Geschichte, Kultur und besondere Orte der Stadt vermitteln.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_3,
             Description: Für kostenlose Stadtführungen (Stadtführungen-Initiative),
@@ -196,12 +229,23 @@ Die Initiative fordert keine professionellen Touristenprogramme, sondern regelm�
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur
-1 Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
-2 Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
-3 Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur***
+1. Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
+2. Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
+3. Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur</strong></em></p>
+<ol>
+<li>Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.</li>
+<li>Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.</li>
+<li>Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_4,
             Description: Für lebendige Marktplätze (Marktplatz-Initiative),
@@ -256,12 +300,23 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten
-1 Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.
-2 Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.
-3 Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten***
+1. Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.
+2. Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.
+3. Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 100 (neu) – Förderung von Picknickplätzen und Verweilorten</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend, gepflegte Picknickplätze in Parks und Grünanlagen.</li>
+<li>Sie achtet darauf, dass diese Plätze mit Bänken, Tischen und gegebenenfalls Grillstellen ausgestattet sind.</li>
+<li>Sie kann Projekte unterstützen, die das Picknicken im Freien fördern und die Aufenthaltsqualität erhöhen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_5,
             Description: Für mehr Picknickplätze in der Stadt (Picknick-Initiative),
@@ -316,11 +371,21 @@ Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen
-1 Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.
-2 Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.
-3 Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.,
+          Wording: {
+            Markdown:
+***Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen***
+1. Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.
+2. Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.
+3. Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.,
+            Html:
+<p><em><strong>Art. 110 (neu) – Förderung öffentlicher Trinkbrunnen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung und Pflege öffentlicher Trinkbrunnen im Stadtgebiet.</li>
+<li>Sie achtet auf gute Verteilung, Zugänglichkeit und hygienische Standards.</li>
+<li>Sie kann Projekte unterstützen, die Trinkwasser als öffentliches Gut fördern und Einwegflaschen reduzieren.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_6,
             Description: Für mehr Trinkbrunnen (Trinkbrunnen-Initiative) (p: Reader),
@@ -375,12 +440,23 @@ Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trin
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 115 (neu) – Förderung kreativer Fenstergestaltung
-1 Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.
-2 Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.
-3 Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 115 (neu) – Förderung kreativer Fenstergestaltung***
+1. Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.
+2. Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.
+3. Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 115 (neu) – Förderung kreativer Fenstergestaltung</strong></em></p>
+<ol>
+<li>Die Stadt ermutigt Bürger zur kreativen Gestaltung ihrer strassenseitigen Fenster.</li>
+<li>Sie kann Wettbewerbe, Workshops oder Informationsmaterial zur Fenstergestaltung fördern.</li>
+<li>Sie kann Projekte unterstützen, die Strassenbilder durch dekorative, belebte Fenster verschönern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_7,
             Description: Für offene Fenster zur Strasse (Offene-Fenster-Initiative),
@@ -459,12 +535,23 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst
-1 Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
-2 Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
-3 Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst***
+1. Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.
+2. Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.
+3. Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 99 (neu) – Förderung von Street-Art und urbaner Kunst</strong></em></p>
+<ol>
+<li>Die Stadt fördert künstlerische Wandgestaltungen und Street-Art auf geeigneten öffentlichen Flächen.</li>
+<li>Sie achtet darauf, dass Projekte in Abstimmung mit Anwohnern und Künstlern entstehen und die Stadt bunter machen.</li>
+<li>Sie kann Wettbewerbe oder Aktionen unterstützen, die lokale Künstler einbeziehen und die Kreativszene stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_9,
             Description: Für mehr Farbe in der Stadt (Street-Art-Initiative),
@@ -519,12 +606,23 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen
-1 Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
-2 Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
-3 Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen***
+1. Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
+2. Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
+3. Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.</li>
+<li>Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.</li>
+<li>Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_10,
             Description: Für gemütliche Leseorte in der Stadt (Bibliothek-Initiative),
@@ -579,12 +677,23 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 113 (neu) – Förderung offener Gärten
-1 Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.
-2 Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.
-3 Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 113 (neu) – Förderung offener Gärten***
+1. Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.
+2. Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.
+3. Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 113 (neu) – Förderung offener Gärten</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt einen jährlichen Tag der offenen Gärten organisatorisch und mit Information.</li>
+<li>Sie koordiniert die Teilnahme und stellt Informationsmaterial bereit.</li>
+<li>Sie kann Projekte fördern, die Gartenkultur und Austausch zwischen Gartenbesitzern stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_11,
             Description: Für offene Gärten (Offene-Gärten-Initiative),
@@ -657,12 +766,23 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 114 (neu) – Förderung temporärer Spielstrassen
-1 Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.
-2 Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.
-3 Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 114 (neu) – Förderung temporärer Spielstrassen***
+1. Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.
+2. Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.
+3. Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 114 (neu) – Förderung temporärer Spielstrassen</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.</li>
+<li>Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.</li>
+<li>Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_13,
             Description: Für mehr Spielstrassen (Spielstrassen-Initiative),
@@ -741,12 +861,23 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur
-1 Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
-2 Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
-3 Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur***
+1. Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.
+2. Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.
+3. Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 98 (neu) – Förderung von Begegnungsräumen und Cafékultur</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Schaffung und Erhaltung von Cafés und Begegnungsräumen im öffentlichen Raum.</li>
+<li>Sie achtet darauf, dass diese Orte einladend, barrierefrei und für alle Altersgruppen zugänglich sind.</li>
+<li>Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Cafékultur in der Stadt beleben.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_15,
             Description: Für gemütliche Treffpunkte in der Stadt (Café-Initiative),
@@ -801,12 +932,23 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 103 (neu) – Förderung von Musik im öffentlichen Raum
-1 Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
-2 Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
-3 Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 103 (neu) – Förderung von Musik im öffentlichen Raum***
+1. Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.
+2. Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.
+3. Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 103 (neu) – Förderung von Musik im öffentlichen Raum</strong></em></p>
+<ol>
+<li>Die Stadt fördert Musik und musikalische Darbietungen im öffentlichen Raum.</li>
+<li>Sie schafft geeignete Orte und unterstützt Projekte, die Strassenmusik und Musikkultur beleben.</li>
+<li>Sie kann Musikinstallationen oder kleine Bühnen einrichten, die spontane Auftritte ermöglichen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_16,
             Description: Für mehr Musik im öffentlichen Raum (Musikbrunnen-Initiative),
@@ -862,12 +1004,23 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport
-1 Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.
-2 Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.
-3 Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport***
+1. Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.
+2. Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.
+3. Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 107 (neu) – Förderung von Skateboard-Anlagen und Rollsport</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung und Pflege von Skateboard-Anlagen im Stadtgebiet.</li>
+<li>Sie achtet auf sichere, vielfältige Gestaltung und bezieht die Skateboard-Community in die Planung ein.</li>
+<li>Sie kann Projekte unterstützen, die Rollsport als Teil der Jugendkultur und des öffentlichen Lebens stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_17,
             Description: Für mehr Skateboard-Anlagen (Skateboard-Initiative),
@@ -923,12 +1076,23 @@ Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen
-1 Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
-2 Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
-3 Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen***
+1. Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
+2. Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
+3. Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.</li>
+<li>Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.</li>
+<li>Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_18,
             Description: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
@@ -984,12 +1148,23 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
-1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
-2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
-3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität***
+1. Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2. Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3. Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.</li>
+<li>Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.</li>
+<li>Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_19,
             Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
@@ -1061,12 +1236,23 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten
-1 Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
-2 Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
-3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten***
+1. Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
+2. Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
+3. Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.</li>
+<li>Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.</li>
+<li>Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_21,
             Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),
@@ -1139,12 +1325,23 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 112 (neu) – Förderung öffentlicher Lesecken
-1 Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.
-2 Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.
-3 Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 112 (neu) – Förderung öffentlicher Lesecken***
+1. Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.
+2. Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.
+3. Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 112 (neu) – Förderung öffentlicher Lesecken</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung von Lesecken mit Bücherschränken und Sitzgelegenheiten.</li>
+<li>Sie achtet auf gute Erreichbarkeit, Wetterschutz und Pflege.</li>
+<li>Sie kann Projekte unterstützen, die Lesen und Büchertausch als Teil des öffentlichen Lebens fördern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_23,
             Description: Für mehr Lesecken (Lesecken-Initiative),
@@ -1218,12 +1415,23 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen
-1 Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.
-2 Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.
-3 Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen***
+1. Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.
+2. Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.
+3. Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 109 (neu) – Förderung von Waldspielplätzen und Naturerlebnisräumen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung von Waldspielplätzen und Naturerlebnisräumen für Kinder.</li>
+<li>Sie achtet auf naturnahe, sichere Gestaltung und bezieht pädagogische Konzepte ein.</li>
+<li>Sie kann Projekte unterstützen, die Kindern den Wald als Spiel- und Lernort näherbringen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_25,
             Description: Für mehr Waldspielplätze (Stadtwälder-Initiative),

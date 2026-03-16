@@ -11,12 +11,23 @@
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 230 (neu) – Förderung von Schmetterlingsgärten
-1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
-2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
-3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 230 (neu) – Förderung von Schmetterlingsgärten***
+1. Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2. Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3. Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 230 (neu) – Förderung von Schmetterlingsgärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.</li>
+<li>Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.</li>
+<li>Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_1,
             Description: Für Schmetterlingsgärten (Schmetterling-Initiative),
@@ -95,7 +106,10 @@ Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlings
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording: ,
+          Wording: {
+            Markdown: ,
+            Html: 
+          },
           Collection: {
             Id: Guid_3,
             Description: Für mehr Waldspazier-Routen (Kantonswald-Initiative),
@@ -150,12 +164,23 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 222 (neu) – Förderung kantonaler Wochenmärkte
-1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
-2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
-3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 222 (neu) – Förderung kantonaler Wochenmärkte***
+1. Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2. Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3. Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 222 (neu) – Förderung kantonaler Wochenmärkte</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.</li>
+<li>Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_4,
             Description: Für kantonale Märkte (Markt-Initiative),
@@ -211,12 +236,23 @@ Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmä
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 215 (neu) – Förderung von Musik im Alltag
-1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
-2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
-3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 215 (neu) – Förderung von Musik im Alltag***
+1. Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2. Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3. Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 215 (neu) – Förderung von Musik im Alltag</strong></em></p>
+<ol>
+<li>Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.</li>
+<li>Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.</li>
+<li>Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_5,
             Description: Für mehr Musik im Alltag (Klang-Initiative) (p: Deputy),
@@ -271,7 +307,10 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording: ,
+          Wording: {
+            Markdown: ,
+            Html: 
+          },
           Collection: {
             Id: Guid_6,
             Description: Für kantonale Sternenwanderungen (Sternenhimmel-Initiative),
@@ -338,7 +377,10 @@ Die Initiative fordert keine Observatorien, sondern unkomplizierte Nachtwanderun
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording: ,
+          Wording: {
+            Markdown: ,
+            Html: 
+          },
           Collection: {
             Id: Guid_7,
             Description: Für kantonale Brunch-Treffs (Kantons-Brunch-Initiative),
@@ -394,12 +436,23 @@ Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunch
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 215 (neu) – Förderung von Musik im Alltag
-1 Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
-2 Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
-3 Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 215 (neu) – Förderung von Musik im Alltag***
+1. Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.
+2. Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.
+3. Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 215 (neu) – Förderung von Musik im Alltag</strong></em></p>
+<ol>
+<li>Der Kanton fördert Gelegenheiten für musikalische Aktivitäten, die das gesellschaftliche Miteinander und die Lebensfreude stärken.</li>
+<li>Er achtet darauf, dass Menschen aller Generationen Zugang zu niederschwelligen Musikangeboten und gemeinschaftlichen Musikerlebnissen haben.</li>
+<li>Er kann Projekte unterstützen, die Musik im öffentlichen Raum, an Schulen oder in Vereinen erlebbar machen – ohne Zwang zum perfekten Ton.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_8,
             Description: Für mehr Musik im Alltag (Klang-Initiative),
@@ -474,12 +527,23 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 214 (neu) – Förderung kantonaler Wandertage
-1 Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.
-2 Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.
-3 Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 214 (neu) – Förderung kantonaler Wandertage***
+1. Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.
+2. Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.
+3. Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 214 (neu) – Förderung kantonaler Wandertage</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Organisation regelmässiger Wandertage mit verschiedenen Routen im ganzen Kantonsgebiet.</li>
+<li>Er kann Gemeinden, Vereine und Tourismusorganisationen bei der Durchführung unterstützen.</li>
+<li>Er achtet darauf, dass die Angebote für verschiedene Altersgruppen und Fitnessniveaus geeignet sind.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_10,
             Description: Für kantonale Wandertage (Wandertag-Initiative) (p: Reader),
@@ -534,12 +598,23 @@ Die Initiative fordert keine Marathon-Wanderungen, sondern einfache Tagestouren 
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 218 (neu) – Förderung kantonaler Spielplätze
-1 Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
-2 Er kann Gemeinden finanziell und beratend unterstützen.
-3 Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 218 (neu) – Förderung kantonaler Spielplätze***
+1. Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
+2. Er kann Gemeinden finanziell und beratend unterstützen.
+3. Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 218 (neu) – Förderung kantonaler Spielplätze</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.</li>
+<li>Er kann Gemeinden finanziell und beratend unterstützen.</li>
+<li>Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_11,
             Description: Für kantonale Spielplätze (Spielplatz-Initiative),
@@ -594,12 +669,23 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl�
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 225 (neu) – Förderung kantonaler Panoramawege
-1 Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.
-2 Er kann Gemeinden bei Bau und Beschilderung unterstützen.
-3 Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 225 (neu) – Förderung kantonaler Panoramawege***
+1. Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.
+2. Er kann Gemeinden bei Bau und Beschilderung unterstützen.
+3. Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 225 (neu) – Förderung kantonaler Panoramawege</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage von Panoramawegen zu bedeutenden Aussichtspunkten.</li>
+<li>Er kann Gemeinden bei Bau und Beschilderung unterstützen.</li>
+<li>Er achtet auf landschaftsverträgliche Gestaltung und Informationsvermittlung.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_12,
             Description: Für kantonale Panoramawege (Panorama-Initiative),
@@ -666,12 +752,23 @@ Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schö
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 217 (neu) – Förderung öffentlicher Leseecken
-1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
-2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
-3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 217 (neu) – Förderung öffentlicher Leseecken***
+1. Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2. Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3. Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 217 (neu) – Förderung öffentlicher Leseecken</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.</li>
+<li>Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_13,
             Description: Für kantonale Leseecken (Leseecken-Initiative),
@@ -725,12 +822,23 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 221 (neu) – Förderung kantonaler Begegnungsräume
-1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
-2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
-3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 221 (neu) – Förderung kantonaler Begegnungsräume***
+1. Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
+2. Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
+3. Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 221 (neu) – Förderung kantonaler Begegnungsräume</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.</li>
+<li>Er kann Gemeinden beim Ausbau und Betrieb unterstützen.</li>
+<li>Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_14,
             Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
@@ -786,7 +894,10 @@ Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Verein
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording: ,
+          Wording: {
+            Markdown: ,
+            Html: 
+          },
           Collection: {
             Id: Guid_15,
             Description: Für mehr Sonntagskonzerte (Sonntagsmusik-Initiative),
@@ -842,7 +953,10 @@ Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording: ,
+          Wording: {
+            Markdown: ,
+            Html: 
+          },
           Collection: {
             Id: Guid_16,
             Description: Für kantonale Jass-Turniere (Kantons-Jass-Initiative),
@@ -898,12 +1012,23 @@ Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Ja
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_17,
             Description: Für kantonale Velorouten (Velorouten-Initiative),
@@ -959,12 +1084,23 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 223 (neu) – Förderung kantonaler Volksfeste
-1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
-2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
-3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 223 (neu) – Förderung kantonaler Volksfeste***
+1. Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2. Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3. Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 223 (neu) – Förderung kantonaler Volksfeste</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.</li>
+<li>Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_18,
             Description: Für kantonale Volksfeste (Volksfest-Initiative),
@@ -1020,12 +1156,23 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_19,
             Description: Für eine tägliche Portion Natur (Frischluftinitiative),
@@ -1096,12 +1243,23 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 231 (neu) – Förderung öffentlicher Kräutergärten
-1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
-2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
-3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 231 (neu) – Förderung öffentlicher Kräutergärten***
+1. Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2. Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3. Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 231 (neu) – Förderung öffentlicher Kräutergärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.</li>
+<li>Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_21,
             Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
@@ -1180,12 +1338,23 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_23,
             Description: Für kantonale Feuerstellen (Feuerstellen-Initiative),
@@ -1241,12 +1410,23 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 <sup>(neu)</sup> – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den *regelmässigen* Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann ~~~Programme~~~ und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 <sup>(neu)</sup> – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den <em>regelmässigen</em> Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann ~<del>Programme~ und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</del></li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_24,
             Description: Für eine tägliche Portion Natur (Frischluftinitiative),
@@ -1301,12 +1481,23 @@ Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- u
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 226 (neu) – Förderung kantonaler Wanderhütten
-1 Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
-2 Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
-3 Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 226 (neu) – Förderung kantonaler Wanderhütten***
+1. Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.
+2. Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.
+3. Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 226 (neu) – Förderung kantonaler Wanderhütten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Errichtung einfacher Wanderhütten als Rastplätze an Wanderwegen.</li>
+<li>Er kann Gemeinden und Wandervereine beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf landschaftsverträgliche Bauweise und gute Erreichbarkeit.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_25,
             Description: Für kantonale Wanderhütten (Wanderhütten-Initiative),
@@ -1378,12 +1569,23 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 220 (neu) – Förderung kantonaler Badi-Tage
-1 Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.
-2 Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.
-3 Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 220 (neu) – Förderung kantonaler Badi-Tage***
+1. Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.
+2. Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.
+3. Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 220 (neu) – Förderung kantonaler Badi-Tage</strong></em></p>
+<ol>
+<li>Der Kanton fördert Aktionstage mit reduzierten Eintrittspreisen in öffentlichen Schwimmbädern.</li>
+<li>Er kann Gemeinden und Badbetreiber bei der Organisation unterstützen.</li>
+<li>Er achtet auf familienfreundliche Angebote und barrierefreien Zugang.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_27,
             Description: Für kantonale Badi-Tage (Badi-Initiative),
@@ -1439,12 +1641,23 @@ Die Initiative fordert keine Gratis-Eintritt, sondern regelmässige Aktionstage 
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts
-1 Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
-2 Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
-3 Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts***
+1. Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.
+2. Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.
+3. Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 213 (neu) – Förderung des nachbarschaftlichen Zusammenhalts</strong></em></p>
+<ol>
+<li>Der Kanton fördert den nachbarschaftlichen Austausch und das gegenseitige Unterstützen zwischen den Einwohnerinnen und Einwohnern.</li>
+<li>Er kann Projekte, Begegnungsorte und lokale Aktivitäten unterstützen, die das gesellschaftliche Miteinander stärken.</li>
+<li>Er achtet darauf, dass in Gemeinden und Quartieren der persönliche Kontakt, das Vertrauen und das bekannte «Grüezi» gepflegt werden.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_28,
             Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
@@ -1518,12 +1731,23 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 10000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 216 (neu) – Förderung öffentlicher Grillplätze
-1 Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
-2 Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
-3 Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 216 (neu) – Förderung öffentlicher Grillplätze***
+1. Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+2. Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+3. Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 216 (neu) – Förderung öffentlicher Grillplätze</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.</li>
+<li>Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_30,
             Description: Für kantonale Grill-Plätze (Grill-Initiative),

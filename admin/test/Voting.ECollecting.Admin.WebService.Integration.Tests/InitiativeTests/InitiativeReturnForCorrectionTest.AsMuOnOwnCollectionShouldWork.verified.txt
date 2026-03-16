@@ -23,7 +23,7 @@
       Id: Guid_3
     },
     {
-      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      RecipientEMail: st.gallen+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
         RecipientIsCitizen: false,
@@ -32,6 +32,17 @@
         CollectionType: Initiative
       },
       Id: Guid_4
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für mehr Hundeparks in der Stadt (Hundepark-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_5
     }
   ],
   collectionMessage: {
@@ -43,16 +54,35 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_6
   },
   initiative: {
     MinSignatureCount: 1000,
-    Wording:
+    Wording: {
+      Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen***
+1. Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
+2. Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
+3. Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
+      IsEmpty: false,
+      IsEmptyOrWhiteSpace: false,
+      Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.</li>
+<li>Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.</li>
+<li>Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.</li>
+</ol>
+,
+      Plaintext:
 Die Gemeindeordnung wird wie folgt geändert:
 Art. 106 (neu) – Förderung von Hundeparks und Auslaufzonen
-1 Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
-2 Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
-3 Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.,
+Die Stadt sorgt für ausreichend eingezäunte Hundeparks im Stadtgebiet.
+Sie achtet auf eine gute Verteilung, Pflege und Ausstattung der Parks mit Spiel- und Trainingsmöglichkeiten.
+Sie kann Projekte unterstützen, die das verantwortungsvolle Zusammenleben von Mensch und Hund fördern.
+    },
     GovernmentDecisionNumber: MUSG-2025-003,
     AdmissibilityDecisionState: ValidButSubjectToConditions,
     LockedFields: {
@@ -67,10 +97,10 @@ St.Gallen ist hundefreundlich – doch eingezäunte Flächen, wo Hunde frei tobe
 Ein Hundepark ist mehr als eine Wiese – es ist ein Treffpunkt für Hundebesitzer, ein Ort zum Spielen und Sozialisieren. Mit Hindernissen, Schatten und Sitzgelegenheiten wird daraus ein Paradies für Vierbeiner.
 Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegte Parks in verschiedenen Quartieren. Ein bisschen Auslauf ohne Leine – das macht Hunde glücklich und Hundebesitzer entspannt.,
     Link: https://www.stadt.sg.ch/,
-    LogoId: Guid_6,
-    ImageId: Guid_7,
+    LogoId: Guid_7,
+    ImageId: Guid_8,
     SignatureSheetTemplateGenerated: false,
-    SignatureSheetTemplateId: Guid_8,
+    SignatureSheetTemplateId: Guid_9,
     State: ReturnedForCorrection,
     Address: {
       CommitteeOrPerson: Komitee Verkehrsberuhigung,

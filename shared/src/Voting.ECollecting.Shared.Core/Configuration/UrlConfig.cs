@@ -28,7 +28,7 @@ public class UrlConfig
     public string BuildInitiativeCommitteeMembershipApprovalUrl(UrlToken? token)
         => BuildUrl(true, $"initiative-committee-membership-approval#token={token}");
 
-    public string BuildCollectionUrl(Guid id, CollectionType collectionType, bool isCitizen)
+    public string BuildCollectionUrl(Guid id, CollectionType collectionType, bool isCitizen, bool showChat)
     {
         var segment = collectionType switch
         {
@@ -38,7 +38,9 @@ public class UrlConfig
         };
 
         var url = BuildUrl(isCitizen, segment, id.ToString());
-        return isCitizen ? url + "?showChat=true" : url;
+        return showChat
+            ? url + "?showChat=true"
+            : url;
     }
 
     private string BuildUrl(bool isCitizen, params string[] pathSegments)

@@ -22,12 +22,31 @@ Die Initiative fordert keine Luxus-Anlagen, sondern einfache, gepflegte Grillste
           StreetOrPostOfficeBox: Grillweg 6
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 216 (neu) – Förderung öffentlicher Grillplätze</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.</li>
+<li>Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 216 (neu) – Förderung öffentlicher Grillplätze***
+1. Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+2. Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+3. Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 216 (neu) – Förderung öffentlicher Grillplätze
-1 Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
-2 Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
-3 Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+Der Kanton fördert die Einrichtung und Pflege öffentlicher Grillplätze im gesamten Kantonsgebiet.
+Er kann Gemeinden bei der Anlage und Unterhaltung von Grillstellen unterstützen.
+Er achtet auf sichere Bauweise, ansprechende Gestaltung und gute Erreichbarkeit der Anlagen.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,

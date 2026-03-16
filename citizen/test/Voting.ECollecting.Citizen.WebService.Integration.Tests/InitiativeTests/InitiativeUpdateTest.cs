@@ -76,7 +76,7 @@ public class InitiativeUpdateTest : BaseGrpcTest<InitiativeService.InitiativeSer
         await AuthenticatedClient.UpdateAsync(req);
         var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeReturnedForCorrection));
         initiative.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
-        initiative.Wording.Should().Be("foo bar baz updated");
+        initiative.Wording.Markdown.Should().Be("foo bar baz updated");
         await Verify(initiative);
     }
 

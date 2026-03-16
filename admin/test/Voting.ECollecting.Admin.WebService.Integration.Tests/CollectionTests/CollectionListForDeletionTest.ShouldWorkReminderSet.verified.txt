@@ -115,12 +115,23 @@ Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und 
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
-          Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 78d (neu) – Schutz alpiner Pflanzen
-1 Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.
-2 Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.
-3 Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.,
+          Wording: {
+            Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 78d (neu) – Schutz alpiner Pflanzen***
+1. Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.
+2. Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.
+3. Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.,
+            Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 78d (neu) – Schutz alpiner Pflanzen</strong></em></p>
+<ol>
+<li>Der Bund fördert den Schutz von Bergblumen und alpinen Pflanzenarten.</li>
+<li>Er unterstützt Projekte zur Erhaltung der Artenvielfalt und kann Schutzgebiete ausweisen.</li>
+<li>Der Bund kann Bildungsprogramme fördern, die das Bewusstsein für alpine Flora stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_4,
             Description: Für den Schutz von Bergblumen (Bergblumen-Initiative),
@@ -205,12 +216,23 @@ Denn wer Blumen schützt, schützt die Berge.,
           Bfs: 17,
           MinSignatureCount: 4000,
           MaxElectronicSignatureCount: 1000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 231 (neu) – Förderung öffentlicher Kräutergärten
-1 Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
-2 Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
-3 Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 231 (neu) – Förderung öffentlicher Kräutergärten***
+1. Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.
+2. Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.
+3. Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 231 (neu) – Förderung öffentlicher Kräutergärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage öffentlicher Kräutergärten zum Lernen und Ernten.</li>
+<li>Er kann Gemeinden und Schulen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräuter.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_6,
             Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),

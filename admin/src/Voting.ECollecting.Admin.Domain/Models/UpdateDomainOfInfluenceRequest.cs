@@ -4,10 +4,12 @@
 namespace Voting.ECollecting.Admin.Domain.Models;
 
 public record UpdateDomainOfInfluenceRequest(
-    string Name,
+    string AddressName,
     string Street,
     string ZipCode,
     string Locality,
     string? Phone,
     string? Email,
-    string? Webpage);
+    string? Webpage,
+    IReadOnlyCollection<string> NotificationEmails,
+    DomainOfInfluenceSettings? Settings);

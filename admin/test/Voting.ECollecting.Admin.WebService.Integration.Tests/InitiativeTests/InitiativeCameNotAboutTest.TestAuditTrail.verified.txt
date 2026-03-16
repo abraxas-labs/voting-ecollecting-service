@@ -22,12 +22,31 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
           StreetOrPostOfficeBox: Bienenweg 19
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 352 (neu) – Förderung von Humor und guter Laune</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.</li>
+<li>Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.</li>
+<li>Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 352 (neu) – Förderung von Humor und guter Laune***
+1. Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+2. Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+3. Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+          Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 352 (neu) – Förderung von Humor und guter Laune
-1 Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
-2 Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
-3 Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -80,12 +99,31 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
           StreetOrPostOfficeBox: Bienenweg 19
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 352 (neu) – Förderung von Humor und guter Laune</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.</li>
+<li>Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.</li>
+<li>Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 352 (neu) – Förderung von Humor und guter Laune***
+1. Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+2. Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+3. Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+          Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 352 (neu) – Förderung von Humor und guter Laune
-1 Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
-2 Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
-3 Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+Der Bund anerkennt Humor, Satire und Lebensfreude als Ausdruck kultureller Vielfalt und gesellschaftlichen Zusammenhalts.
+Er kann Projekte unterstützen, die mit Hilfe von Humor, Kunst oder Kommunikation das friedliche Zusammenleben fördern.
+Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren von Lachen verleihen.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

@@ -7,7 +7,7 @@ using Voting.ECollecting.Shared.Domain.Enums;
 namespace Voting.ECollecting.Shared.Domain.Entities;
 
 /// <summary>
-/// ImportAcl statistics entity which will be created for each import request.
+/// Import statistics entity which will be created for each import request.
 /// </summary>
 public class ImportStatisticEntity : AuditedEntity
 {
@@ -89,5 +89,5 @@ public class ImportStatisticEntity : AuditedEntity
     /// <summary>
     /// Gets or sets the access control DOI references.
     /// </summary>
-    public ICollection<AccessControlListDoiEntity> AccessControlListDois { get; set; } = new HashSet<AccessControlListDoiEntity>();
+    public ICollection<DomainOfInfluenceEntity> AccessControlListDois { get; set; } = new HashSet<DomainOfInfluenceEntity>();
 }

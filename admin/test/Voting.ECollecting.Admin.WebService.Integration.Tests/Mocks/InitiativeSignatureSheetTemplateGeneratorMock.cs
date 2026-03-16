@@ -16,5 +16,5 @@ public class InitiativeSignatureSheetTemplateGeneratorMock(IDmDocDataSerializer 
         => TemplateBagMapper.MapToInitiativeSignatureSheetTemplateBag(entity);
 
     protected override string BuildFileName(InitiativeTemplateData entity)
-        => "Initiative_" + config.SignatureSheetTemplateFileName;
+        => string.Format(config.SignatureSheetTemplateFileName, entity.Initiative.Description);
 }

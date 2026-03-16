@@ -17,6 +17,7 @@ using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using Voting.Lib.Common.Files;
+using IDomainOfInfluenceService = Voting.ECollecting.Shared.Abstractions.Core.Services.IDomainOfInfluenceService;
 using IPermissionService = Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.IPermissionService;
 
 namespace Voting.ECollecting.Citizen.Core.Services;
@@ -32,7 +33,7 @@ public class CollectionFilesService : ICollectionFilesService
     private readonly IServiceProvider _serviceProvider;
     private readonly ICollectionSignatureSheetGenerationService _collectionSignatureSheetGenerationService;
     private readonly IElectronicSignaturesProtocolGenerator _electronicSignaturesProtocolGenerator;
-    private readonly IAccessControlListDoiService _accessControlListDoiService;
+    private readonly IDomainOfInfluenceService _domainOfInfluenceService;
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
 
     public CollectionFilesService(
@@ -45,7 +46,7 @@ public class CollectionFilesService : ICollectionFilesService
         IServiceProvider serviceProvider,
         ICollectionSignatureSheetGenerationService collectionSignatureSheetGenerationService,
         IElectronicSignaturesProtocolGenerator electronicSignaturesProtocolGenerator,
-        IAccessControlListDoiService accessControlListDoiService,
+        IDomainOfInfluenceService domainOfInfluenceService,
         IInitiativeSubTypeRepository initiativeSubTypeRepository)
     {
         _fileRepository = fileRepository;
@@ -57,7 +58,7 @@ public class CollectionFilesService : ICollectionFilesService
         _serviceProvider = serviceProvider;
         _collectionSignatureSheetGenerationService = collectionSignatureSheetGenerationService;
         _electronicSignaturesProtocolGenerator = electronicSignaturesProtocolGenerator;
-        _accessControlListDoiService = accessControlListDoiService;
+        _domainOfInfluenceService = domainOfInfluenceService;
         _initiativeSubTypeRepository = initiativeSubTypeRepository;
     }
 
@@ -193,7 +194,7 @@ public class CollectionFilesService : ICollectionFilesService
                ?? throw new EntityNotFoundException(nameof(CollectionBaseEntity), id);
     }
 
-    public async Task SetSignatureSheetTemplateGenerated(Guid id, CollectionType collectionType)
+    public async Task<FileEntity> SetSignatureSheetTemplateGenerated(Guid id, CollectionType collectionType)
     {
         await using var transaction = await _dataContext.BeginTransaction();
 
@@ -218,6 +219,8 @@ public class CollectionFilesService : ICollectionFilesService
 
         await GenerateSignatureSheetTemplate(collection);
         await transaction.CommitAsync();
+
+        return collection.SignatureSheetTemplate!;
     }
 
     public async Task<FileEntity> GetSignatureSheetTemplate(Guid id, bool requireEnabledForSubmission)
@@ -291,7 +294,7 @@ public class CollectionFilesService : ICollectionFilesService
         await transaction.CommitAsync(ct);
     }
 
-    public async Task GenerateSignatureSheetTemplatePreview(Guid id, CollectionType collectionType)
+    public async Task<FileEntity> GenerateSignatureSheetTemplatePreview(Guid id, CollectionType collectionType)
     {
         var collection = await _collectionRepository.Query()
                              .WhereCanGenerateSignatureSheetTemplatePreview(_permissionService)
@@ -305,6 +308,7 @@ public class CollectionFilesService : ICollectionFilesService
         await using var transaction = await _dataContext.BeginTransaction();
         await GenerateSignatureSheetTemplate(collection);
         await transaction.CommitAsync();
+        return collection.SignatureSheetTemplate!;
     }
 
     public async Task<IFile> GetElectronicSignaturesProtocol(Guid collectionId, CancellationToken cancellationToken)
@@ -316,7 +320,7 @@ public class CollectionFilesService : ICollectionFilesService
             .FirstOrDefaultAsync(x => x.Id == collectionId, cancellationToken)
             ?? throw new EntityNotFoundException(nameof(CollectionBaseEntity), collectionId);
 
-        var accessControlListDoi = await _accessControlListDoiService.GetAccessControlListDoiWithChildren(collection.Bfs!);
+        var accessControlListDoi = await _domainOfInfluenceService.GetWithChildren(collection.Bfs!);
         InitiativeSubTypeEntity? subType = null;
         if (collection is InitiativeEntity { SubTypeId: not null })
         {

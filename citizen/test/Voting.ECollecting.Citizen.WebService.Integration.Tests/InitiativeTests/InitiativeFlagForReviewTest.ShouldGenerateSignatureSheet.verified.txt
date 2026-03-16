@@ -1,11 +1,14 @@
 ﻿{
   Description: Für kantonale Begegnungsräume (Begegnungs-Initiative),
   Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 221 (neu) – Förderung kantonaler Begegnungsräume
-1 Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.
-2 Er kann Gemeinden beim Ausbau und Betrieb unterstützen.
-3 Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 221 (neu) – Förderung kantonaler Begegnungsräume</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Bereitstellung öffentlicher Begegnungsräume.</li>
+<li>Er kann Gemeinden beim Ausbau und Betrieb unterstützen.</li>
+<li>Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.</li>
+</ol>
+,
   Reason:
 Begegnung braucht Raum – doch offene Treffpunkte fehlen vielerorts. Die «Begegnungs-Initiative» will mehr öffentliche Räume schaffen, wo Menschen zusammenkommen können.
 Ein Begegnungsraum ist mehr als ein Saal – er ist Austausch, Kultur und Gemeinschaft. Mit niederschwelligem Zugang und flexibler Nutzung entstehen lebendige Treffpunkte.

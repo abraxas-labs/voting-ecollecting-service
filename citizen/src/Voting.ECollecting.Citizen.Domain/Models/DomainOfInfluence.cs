@@ -17,5 +17,11 @@ public class DomainOfInfluence
 
     public int InitiativeMaxElectronicSignaturePercent { get; set; }
 
+    public int InitiativeNumberOfMembersCommittee { get; set; }
+
+    public int ReferendumMinSignatureCount { get; set; }
+
+    public int ReferendumMaxElectronicSignaturePercent { get; set; }
+
     public bool ECollectingEnabled { get; set; }
 }

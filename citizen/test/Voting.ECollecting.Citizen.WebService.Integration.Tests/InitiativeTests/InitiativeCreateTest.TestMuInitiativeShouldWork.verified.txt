@@ -1,6 +1,12 @@
 ﻿{
   MinSignatureCount: 100000,
-  Wording: ,
+  Wording: {
+    Markdown: ,
+    IsEmpty: true,
+    IsEmptyOrWhiteSpace: true,
+    Html: ,
+    Plaintext: 
+  },
   GovernmentDecisionNumber: ,
   LockedFields: {
     Description: false,
@@ -49,7 +55,7 @@
   InformalReviewRequested: false,
   DomainOfInfluenceType: Mu,
   Bfs: 3203,
-  MaxElectronicSignatureCount: 50000,
+  MaxElectronicSignatureCount: 7000,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },

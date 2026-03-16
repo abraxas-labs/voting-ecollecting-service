@@ -11,7 +11,7 @@
       Id: Guid_2
     },
     {
-      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      RecipientEMail: kanton+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
         RecipientIsCitizen: false,
@@ -21,6 +21,16 @@
       Id: Guid_3
     },
     {
+      RecipientEMail: kanton+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_4
+    },
+    {
       RecipientEMail: rudolph.meier@example.com,
       TemplateBag: {
         CollectionName: Für eine tägliche Portion Natur (Frischluftinitiative),
@@ -28,7 +38,7 @@
         CollectionId: Guid_1,
         CollectionType: Initiative
       },
-      Id: Guid_4
+      Id: Guid_5
     }
   ],
   collectionMessage: {
@@ -40,6 +50,6 @@
       CreatedByEmail: voting+tester@abraxas.ch,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_6
   }
 }

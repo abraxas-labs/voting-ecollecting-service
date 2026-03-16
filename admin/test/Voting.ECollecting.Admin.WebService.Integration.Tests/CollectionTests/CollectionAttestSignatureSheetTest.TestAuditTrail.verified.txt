@@ -178,44 +178,36 @@
       Id: Guid_7
     },
     {
-      SourceEntityName: CollectionSignatureSheets,
+      SourceEntityName: CollectionMunicipalities,
       Action: Modified,
       RecordBefore: {
-        Id: Guid_8,
-        Count: {
-          Total: 17,
-          Valid: 12,
-          CanAdd: true,
-          Invalid: 5
-        },
-        State: 2,
-        Number: 4,
-        IsSample: false,
+        Id: Guid_2,
+        Bfs: 3203,
+        IsLocked: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        AttestedAt: DateTimeOffset_5,
-        ReceivedAt: 2020-01-08,
-        CollectionMunicipalityId: Guid_2,
-        ModifiedBySuperiorAuthority: false
+        CollectionId: Guid_8,
+        PhysicalCount: {
+          Total: 20,
+          Valid: 17,
+          CanAdd: true,
+          Invalid: 3
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: St.Gallen,
+        ElectronicCitizenCount: 10
       },
       RecordAfter: {
-        Id: Guid_8,
-        Count: {
-          Total: 17,
-          Valid: 12,
-          CanAdd: true,
-          Invalid: 5
-        },
-        State: 2,
-        Number: 4,
-        IsSample: false,
+        Id: Guid_2,
+        Bfs: 3203,
+        IsLocked: false,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
-          ModifiedAt: DateTimeOffset_6,
+          ModifiedAt: DateTimeOffset_5,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
           CreatedByName: Test Admin,
@@ -223,12 +215,18 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        AttestedAt: DateTimeOffset_5,
-        ReceivedAt: 2020-01-08,
-        CollectionMunicipalityId: Guid_2,
-        ModifiedBySuperiorAuthority: false
+        CollectionId: Guid_8,
+        PhysicalCount: {
+          Total: 78,
+          Valid: 31,
+          CanAdd: true,
+          Invalid: 47
+        },
+        NextSheetNumber: 9,
+        MunicipalityName: St.Gallen,
+        ElectronicCitizenCount: 10
       },
-      SourceEntityId: Guid_8,
+      SourceEntityId: Guid_2,
       AuditInfo: {
         CreatedById: default-user-id,
         CreatedByName: default user firstname default user lastname,
@@ -238,55 +236,45 @@
       Id: Guid_9
     },
     {
-      SourceEntityName: CollectionSignatureSheets,
+      SourceEntityName: CollectionCounts,
       Action: Modified,
       RecordBefore: {
         Id: Guid_10,
-        Count: {
-          Total: 26,
-          Valid: 25,
-          CanAdd: true,
-          Invalid: 1
-        },
-        State: 2,
-        Number: 5,
-        IsSample: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_1,
+          CreatedAt: DateTimeOffset_6,
           CreatedById: default-user-id,
-          CreatedByName: Test Admin,
-          CreatedByEmail: admin@example.com
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
         },
-        AttestedAt: DateTimeOffset_5,
-        ReceivedAt: 2020-01-08,
-        CollectionMunicipalityId: Guid_2,
-        ModifiedBySuperiorAuthority: false
+        CollectionId: Guid_8,
+        TotalCitizenCount: 0,
+        ElectronicCitizenCount: 0,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
       },
       RecordAfter: {
         Id: Guid_10,
-        Count: {
-          Total: 26,
-          Valid: 25,
-          CanAdd: true,
-          Invalid: 1
-        },
-        State: 2,
-        Number: 5,
-        IsSample: false,
         AuditInfo: {
-          CreatedAt: DateTimeOffset_1,
+          CreatedAt: DateTimeOffset_6,
           ModifiedAt: DateTimeOffset_7,
           CreatedById: default-user-id,
           ModifiedById: default-user-id,
-          CreatedByName: Test Admin,
-          CreatedByEmail: admin@example.com,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com,
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        AttestedAt: DateTimeOffset_5,
-        ReceivedAt: 2020-01-08,
-        CollectionMunicipalityId: Guid_2,
-        ModifiedBySuperiorAuthority: false
+        CollectionId: Guid_8,
+        TotalCitizenCount: 14,
+        ElectronicCitizenCount: 0,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        }
       },
       SourceEntityId: Guid_10,
       AuditInfo: {

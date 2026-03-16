@@ -1,10 +1,4 @@
 ﻿{
-  CollectionCount: {
-    Id: Guid_1,
-    CollectionId: Guid_2,
-    TotalCitizenCount: 12,
-    HasTotalCitizenCount: true
-  },
   UserPermissions: {
     CanEdit: false,
     CanDelete: false,

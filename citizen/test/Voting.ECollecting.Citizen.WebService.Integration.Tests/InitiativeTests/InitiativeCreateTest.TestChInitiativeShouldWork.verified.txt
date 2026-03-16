@@ -1,6 +1,12 @@
 ﻿{
   MinSignatureCount: 100000,
-  Wording: ,
+  Wording: {
+    Markdown: ,
+    IsEmpty: true,
+    IsEmptyOrWhiteSpace: true,
+    Html: ,
+    Plaintext: 
+  },
   SubTypeId: Guid_1,
   GovernmentDecisionNumber: ,
   LockedFields: {

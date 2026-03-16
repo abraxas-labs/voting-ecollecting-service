@@ -35,6 +35,11 @@ public class CoreAppConfig
     public CollectionPermissionExpiryJobConfig CollectionPermissionExpiryJob { get; set; } = new();
 
     /// <summary>
+    /// Gets or sets the collection cleanup job config.
+    /// </summary>
+    public CollectionCleanupJobConfig CollectionCleanupJob { get; set; } = new();
+
+    /// <summary>
     /// Gets or sets public urls.
     /// </summary>
     public UrlConfig Urls { get; set; } = new();

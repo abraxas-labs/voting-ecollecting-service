@@ -5,10 +5,21 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
-using Voting.ECollecting.Admin.Adapter.Data.Builders;
 using Voting.ECollecting.Admin.Adapter.Data.Configuration;
 using Voting.ECollecting.Admin.Adapter.Data.Repositories;
+using Voting.ECollecting.Shared.Adapter.Data.Builders;
 using Voting.Lib.Database.Interceptors;
+using AuditTrailEntryBuilder = Voting.ECollecting.Admin.Adapter.Data.Builders.AuditTrailEntryBuilder;
+using ICollectionCitizenLogRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.ICollectionCitizenLogRepository;
+using ICollectionCitizenRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.ICollectionCitizenRepository;
+using ICollectionCountRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.ICollectionCountRepository;
+using ICollectionMunicipalityRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.ICollectionMunicipalityRepository;
+using ICollectionRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.ICollectionRepository;
+using IDecreeRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.IDecreeRepository;
+using IDomainOfInfluenceRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.IDomainOfInfluenceRepository;
+using IInitiativeRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.IInitiativeRepository;
+using IReferendumRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.IReferendumRepository;
+using IUserNotificationRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.IUserNotificationRepository;
 
 namespace Voting.ECollecting.Admin.Adapter.Data.DependencyInjection;
 
@@ -62,7 +73,6 @@ public static class ServiceCollectionExtensions
             .AddScoped<IDecreeRepository, DecreeRepository>()
             .AddScoped<IInitiativeRepository, InitiativeRepository>()
             .AddScoped<IInitiativeSubTypeRepository, InitiativeSubTypeRepository>()
-            .AddScoped<IAccessControlListDoiRepository, AccessControlListDoiRepository>()
             .AddScoped<IImportStatisticRepository, ImportStatisticRepository>()
             .AddScoped<IReferendumRepository, ReferendumRepository>()
             .AddScoped<IUserNotificationRepository, UserNotificationRepository>()
@@ -77,7 +87,7 @@ public static class ServiceCollectionExtensions
             .AddScoped<ICollectionMunicipalityRepository, CollectionMunicipalityRepository>()
             .AddScoped<ICollectionCountRepository, CollectionCountRepository>()
             .AddScoped<IInitiativeCommitteeMemberRepository, InitiativeCommitteeMemberRepository>()
-            .AddScoped<Shared.Adapter.Data.Builders.IAuditTrailEntryBuilder, AuditTrailEntryBuilder>()
+            .AddScoped<IAuditTrailEntryBuilder, AuditTrailEntryBuilder>()
             .AddVotingLibDatabase<DataContext>();
     }
 }

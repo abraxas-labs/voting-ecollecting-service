@@ -5,7 +5,6 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
-using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Exceptions;
@@ -14,10 +13,12 @@ using Voting.ECollecting.Admin.Core.Permissions;
 using Voting.ECollecting.Admin.Core.Resources;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
+using Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Extensions;
+using IInitiativeRepository = Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories.IInitiativeRepository;
 
 namespace Voting.ECollecting.Admin.Core.Services;
 
@@ -31,7 +32,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
     private readonly CollectionService _collectionService;
     private readonly IDataContext _dataContext;
     private readonly InitiativeService _initiativeService;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
 
     public InitiativeAdmissibilityDecisionService(
         IInitiativeRepository initiativeRepository,
@@ -40,7 +41,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         CollectionService collectionService,
         IDataContext dataContext,
         InitiativeService initiativeService,
-        IAccessControlListDoiRepository accessControlListDoiRepository)
+        IDomainOfInfluenceRepository domainOfInfluenceRepository)
     {
         _initiativeRepository = initiativeRepository;
         _permissionService = permissionService;
@@ -48,7 +49,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         _collectionService = collectionService;
         _dataContext = dataContext;
         _initiativeService = initiativeService;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
     }
 
     public async Task<List<Initiative>> ListEligibleForAdmissibilityDecision()
@@ -135,6 +136,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         };
 
         await _initiativeService.ValidateGeneralInformation(initiative);
+        await _initiativeService.SetMinMaxSignatureCount(initiative);
         _permissionService.SetCreated(initiative);
         try
         {
@@ -213,9 +215,9 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
 
     private async Task LoadDomainOfInfluenceNames(List<Initiative> initiatives)
     {
-        var domainOfInfluenceNamesByBfs = await _accessControlListDoiRepository
+        var domainOfInfluenceNamesByBfs = await _domainOfInfluenceRepository
             .Query()
-            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == AclDomainOfInfluenceType.Mu)
+            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == DomainOfInfluenceType.Mu)
             .GroupBy(x => x.Bfs)
             .ToDictionaryAsync(x => x.Key!, x => x.First().Name);
         foreach (var initiative in initiatives)
@@ -225,7 +227,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
                 DomainOfInfluenceType.Mu => domainOfInfluenceNamesByBfs[initiative.Bfs!],
                 DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
                 DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
-                _ => throw new ArgumentOutOfRangeException(nameof(initiative.DomainOfInfluenceType)),
+                _ => throw new InvalidOperationException($"Unexpected {nameof(DomainOfInfluenceType)}: {initiative.DomainOfInfluenceType}"),
             };
         }
     }

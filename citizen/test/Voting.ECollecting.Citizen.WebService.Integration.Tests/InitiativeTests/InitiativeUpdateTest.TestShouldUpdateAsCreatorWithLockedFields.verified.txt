@@ -1,6 +1,14 @@
 ﻿{
   MinSignatureCount: 4000,
-  Wording: foo bar baz updated,
+  Wording: {
+    Markdown: foo bar baz updated,
+    IsEmpty: false,
+    IsEmptyOrWhiteSpace: false,
+    Html:
+<p>foo bar baz updated</p>
+,
+    Plaintext: foo bar baz updated
+  },
   SubTypeId: Guid_1,
   GovernmentDecisionNumber: SG-123.412223,
   AdmissibilityDecisionState: ValidButSubjectToConditions,

@@ -24,7 +24,7 @@ public class DomainOfInfluenceController : ControllerBase
     public async Task<FileResult> GetLogo(string bfs)
     {
         var logo = await _filesService.GetLogo(bfs);
-        return new FileContentResult(logo.Content!.Data, logo.ContentType);
+        return File(logo.Content!.Data, logo.ContentType, logo.Name);
     }
 
     [RequestSizeLimit(3 * 1024 * 1024)] // 3MB max size

@@ -1,11 +1,30 @@
 ﻿{
   MinSignatureCount: 100000,
-  Wording:
+  Wording: {
+    Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 68a (neu) – Förderung der Brettspielkultur***
+1. Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+2. Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+3. Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
+    IsEmpty: false,
+    IsEmptyOrWhiteSpace: false,
+    Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 68a (neu) – Förderung der Brettspielkultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.</li>
+<li>Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.</li>
+<li>Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.</li>
+</ol>
+,
+    Plaintext:
 Die Bundesverfassung wird wie folgt geändert:
 Art. 68a (neu) – Förderung der Brettspielkultur
-1 Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
-2 Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
-3 Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.,
+Der Bund anerkennt Schweizer Brettspiele als Teil der Kultur und fördert ihre Pflege.
+Er kann Spieleabende, Turniere und Projekte zur Nachwuchsförderung unterstützen.
+Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Tradition zu würdigen.
+  },
   SubTypeId: Guid_1,
   GovernmentDecisionNumber: CHE-2023-0010,
   AdmissibilityDecisionState: Valid,

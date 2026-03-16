@@ -13,7 +13,7 @@ using Voting.ECollecting.Shared.Domain.Models;
 namespace Voting.ECollecting.Shared.Core.Services.Documents;
 
 public abstract class CollectionSignatureSheetGenerationService(
-    IAccessControlListDoiRepository accessControlListDoiRepository,
+    IDomainOfInfluenceRepository domainOfInfluenceRepository,
     IInitiativeCommitteeMemberService initiativeCommitteeService,
     IInitiativeSignatureSheetTemplateGenerator initiativeSignatureSheetTemplateGenerator,
     IReferendumSignatureSheetTemplateGenerator referendumSignatureSheetTemplateGenerator)
@@ -47,7 +47,7 @@ public abstract class CollectionSignatureSheetGenerationService(
                    .FirstOrDefaultAsync(x => x.Id == collectionId)
                ?? throw new EntityNotFoundException(nameof(InitiativeEntity), collectionId);
 
-        var domainOfInfluencesByBfs = await accessControlListDoiRepository.Query()
+        var domainOfInfluencesByBfs = await domainOfInfluenceRepository.Query()
             .Where(x => !string.IsNullOrWhiteSpace(x.Bfs))
             .GroupBy(x => x.Bfs)
             .ToDictionaryAsync(x => x.Key!, x => x.First());

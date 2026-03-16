@@ -122,12 +122,23 @@ Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof 
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 114 (neu) – Förderung temporärer Spielstrassen
-1 Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.
-2 Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.
-3 Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 114 (neu) – Förderung temporärer Spielstrassen***
+1. Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.
+2. Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.
+3. Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 114 (neu) – Förderung temporärer Spielstrassen</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt die Einrichtung temporärer Spielstrassen in Wohnquartieren.</li>
+<li>Sie vereinfacht Bewilligungsverfahren und stellt bei Bedarf Absperrungen und Hinweisschilder bereit.</li>
+<li>Sie kann Projekte fördern, die Spielstrassen als sicheren Raum für Kinder und soziales Miteinander stärken.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_4,
             Description: Für mehr Spielstrassen (Spielstrassen-Initiative),

@@ -8,7 +8,7 @@
   TotalSignatureCount: 4124,
   DomainOfInfluences: [
     {
-      Name: Bezirk St.Gallen,
+      Name: ,
       ValidElectronicSignatureCount: 40,
       ValidPhysicalSignatureCount: 68,
       InvalidPhysicalSignatureCount: 12,

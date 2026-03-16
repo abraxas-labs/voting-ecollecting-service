@@ -1,4 +1,4 @@
-# ✨ Changelog (`v1.132.13`)
+# ✨ Changelog (`v1.138.1`)
 
 All notable changes to this project will be documented in this file.
 
@@ -8,11 +8,123 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Version Info
 
 ```text
-This version -------- v1.132.13
-Previous version ---- v1.125.3
+This version -------- v1.138.1
+Previous version ---- v1.132.13
 Initial version ----- v1.125.3
-Total commits ------- 43
+Total commits ------- 21
 ```
+
+## [v1.138.1] - 2026-03-16
+
+### 🔄 Changed
+
+- fix usage of ArgumentOutOfRangeException for non-arguments
+
+## [v1.138.0] - 2026-03-09
+
+### 🔄 Changed
+
+- feat(VOTING-6818): add doi address name
+
+## [v1.137.0] - 2026-03-09
+
+### 🔄 Changed
+
+- feat(VOTING-6334): rm initiative quorum on federal level
+
+## [v1.136.0] - 2026-03-04
+
+### 🆕 Added
+
+- feat(VOTING-6729): initiative wording as markdown
+
+## [v1.135.2] - 2026-02-27
+
+### 🔄 Changed
+
+- fix(VOTING-6334): set signature counts correctly on dois and init subtype to single type for doi type CH
+
+## [v1.135.1] - 2026-02-25
+
+### 🔄 Changed
+
+- fix(VOTING-6334): inherit mu max electronic quorum from ct on doi list
+
+### 🔄 Changed
+
+- fix(VOTING-6334): include doi logo for attestation
+
+## [v1.135.0] - 2026-02-24
+
+### 🆕 Added
+
+- feat(VOTING-6827): add counts on attestation
+
+## [v1.134.1] - 2026-02-23
+
+### 🔄 Changed
+
+- make phone, email and website on signature sheet attestation optional
+
+## [v1.134.0] - 2026-02-19
+
+### 🆕 Added
+
+- feat(VOTING-6808): add initiatives cleanup job
+
+## [v1.133.7] - 2026-02-18
+
+### 🔄 Changed
+
+- list decree only include referendums from parents only in period state in collection or expired
+
+## [v1.133.6] - 2026-02-18
+
+### 🔄 Changed
+
+- ensure all signature sheets are past attested to add samples
+
+## [v1.133.5] - 2026-02-18
+
+### 🔄 Changed
+
+- reorder metrics middleware calls in Startup configuration to catch final response status.
+
+## [v1.133.4] - 2026-02-16
+
+### ❌ Removed
+
+- fix(VOTING-6368): rm additional notification emails
+
+## [v1.133.3] - 2026-02-13
+
+### 🔄 Changed
+
+- include all collection with keys for is other referendum signed check
+
+## [v1.133.2] - 2026-02-13
+
+### 🔄 Changed
+
+- remove filename generation in UI
+
+## [v1.133.1] - 2026-02-13
+
+### 🔄 Changed
+
+- adjust filenames
+
+## [v1.133.0] - 2026-02-12
+
+### 🔄 Changed
+
+- feat(VOTING-6334): move settings from voting basis and merge domain of influence with acl dois.
+
+## [v1.132.14] - 2026-02-12
+
+### 🔄 Changed
+
+- rename withdrawn state for referendums
 
 ## [v1.132.13] - 2026-02-09
 

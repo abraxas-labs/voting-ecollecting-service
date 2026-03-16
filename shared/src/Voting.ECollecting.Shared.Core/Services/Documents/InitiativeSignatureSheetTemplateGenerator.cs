@@ -17,13 +17,15 @@ public class InitiativeSignatureSheetTemplateGenerator : PdfGenerator<Initiative
     public InitiativeSignatureSheetTemplateGenerator(
         DmDocConfig config,
         RecyclableMemoryStreamManager memoryStreamManager,
-        IDmDocService dmDoc)
-        : base(config.TemplateKeys.InitiativeSignatureSheetTemplate, memoryStreamManager, dmDoc)
+        IDmDocService dmDoc,
+        TimeProvider timeProvider)
+        : base(config.TemplateKeys.InitiativeSignatureSheetTemplate, memoryStreamManager, dmDoc, timeProvider, config)
     {
         _config = config;
     }
 
     protected override InitiativeSignatureSheetTemplateBag Map(InitiativeTemplateData entity) => TemplateBagMapper.MapToInitiativeSignatureSheetTemplateBag(entity);
 
-    protected override string BuildFileName(InitiativeTemplateData fileName) => _config.SignatureSheetTemplateFileName;
+    protected override string BuildFileName(InitiativeTemplateData templateData)
+        => AppendTimestampSuffix(string.Format(_config.SignatureSheetTemplateFileName, templateData.Initiative.Description));
 }

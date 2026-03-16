@@ -2,7 +2,7 @@
   DomainOfInfluenceType: Ct,
   CollectionType: Gesetzesinitiative,
   CollectionDescription: Für eine tägliche Portion Natur (Frischluftinitiative),
-  MinimumNumberOfCommitteeMembers: 3,
+  MinimumNumberOfCommitteeMembers: 15,
   CommitteeMembers: [
     {
       LastName: Member,

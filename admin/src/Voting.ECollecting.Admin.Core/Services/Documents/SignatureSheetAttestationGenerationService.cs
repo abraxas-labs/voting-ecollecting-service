@@ -3,14 +3,12 @@
 
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
-using Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam;
 using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
-using Voting.ECollecting.Admin.Core.Exceptions;
-using Voting.ECollecting.Admin.Core.Permissions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
+using Voting.Lib.Common.Files;
 
 namespace Voting.ECollecting.Admin.Core.Services.Documents;
 
@@ -21,27 +19,21 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
 
     private readonly ISignatureSheetAttestationGenerator _generator;
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
-    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
-    private readonly IPermissionService _permissionService;
     private readonly TimeProvider _timeProvider;
 
     public SignatureSheetAttestationGenerationService(
         ISignatureSheetAttestationGenerator generator,
         IInitiativeSubTypeRepository initiativeSubTypeRepository,
-        IDomainOfInfluenceRepository domainOfInfluenceRepository,
-        IPermissionService permissionService,
         TimeProvider timeProvider)
     {
         _generator = generator;
         _initiativeSubTypeRepository = initiativeSubTypeRepository;
-        _domainOfInfluenceRepository = domainOfInfluenceRepository;
-        _permissionService = permissionService;
         _timeProvider = timeProvider;
     }
 
-    public async Task<Stream> GenerateFile(
+    public async Task<IFile> GenerateFile(
         CollectionBaseEntity collection,
-        AccessControlListDoiEntity aclDoi,
+        DomainOfInfluenceEntity domainOfInfluence,
         ICollection<CollectionSignatureSheetEntity> signatureSheets)
     {
         string collectionTypeName;
@@ -65,11 +57,6 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
                 throw new InvalidOperationException($"Unexpected collection type: {collection.Type}");
         }
 
-        var doi = await _domainOfInfluenceRepository.Query()
-                      .Include(x => x.Logo!.Content)
-                      .WhereCanAccessOwnBfsOrChildren(_permissionService)
-                      .FirstOrDefaultAsync(x => x.Bfs == aclDoi.Bfs)
-                  ?? throw new AddressMissingForAttestException();
         var signatureSheetGroups = GetSignatureSheetGroups(signatureSheets);
         var signatureSheetCount = signatureSheets.Count;
         var validSignatureCount = signatureSheets.Sum(s => s.Count.Valid);
@@ -85,11 +72,10 @@ public class SignatureSheetAttestationGenerationService : ISignatureSheetAttesta
                 : date;
         }
 
-        return await _generator.Generate(
+        return await _generator.GenerateFileModel(
             new SignatureSheetAttestationTemplateData(
                 collection,
-                aclDoi,
-                doi,
+                domainOfInfluence,
                 signatureSheetCount,
                 signatureSheetGroups,
                 validSignatureCount,

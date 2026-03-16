@@ -6,6 +6,7 @@ using Riok.Mapperly.Abstractions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Models;
+using Voting.Lib.Database.Models;
 
 namespace Voting.ECollecting.Shared.Core.Services.Documents.TemplateBag;
 
@@ -63,4 +64,7 @@ public static partial class TemplateBagMapper
     {
         return date?.ToString("o", CultureInfo.InvariantCulture) ?? DateOnly.FromDateTime(DateTime.MinValue).ToString("o", CultureInfo.InvariantCulture);
     }
+
+    // templates always use html
+    private static string MapMarkdownString(MarkdownString md) => md.Html;
 }

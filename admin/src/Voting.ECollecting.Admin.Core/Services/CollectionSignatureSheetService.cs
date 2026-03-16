@@ -20,6 +20,7 @@ using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
+using Voting.Lib.Common.Files;
 using Voting.Lib.Database.Models;
 using Voting.Lib.Database.Postgres.Locking;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
@@ -36,7 +37,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
     private readonly ICollectionSignatureSheetRepository _signatureSheetRepository;
     private readonly IDataContext _dataContext;
     private readonly IPermissionService _permissionService;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly ISignatureSheetAttestationGenerationService _signatureSheetAttestationGenerationService;
     private readonly TimeProvider _timeProvider;
     private readonly IVotingStimmregisterAdapter _stimmregister;
@@ -53,7 +54,6 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         ICollectionRepository collectionRepository,
         IPermissionService permissionService,
         IDataContext dataContext,
-        IAccessControlListDoiRepository accessControlListDoiRepository,
         ISignatureSheetAttestationGenerationService signatureSheetAttestationGenerationService,
         TimeProvider timeProvider,
         IVotingStimmregisterAdapter stimmregister,
@@ -63,13 +63,13 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         ICollectionMunicipalityRepository collectionMunicipalityRepository,
         ICollectionCitizenRepository citizenRepository,
         ICollectionCryptoService cryptoService,
-        ICollectionCountRepository collectionCountRepository)
+        ICollectionCountRepository collectionCountRepository,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository)
     {
         _signatureSheetRepository = signatureSheetRepository;
         _collectionRepository = collectionRepository;
         _permissionService = permissionService;
         _dataContext = dataContext;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
         _signatureSheetAttestationGenerationService = signatureSheetAttestationGenerationService;
         _timeProvider = timeProvider;
         _stimmregister = stimmregister;
@@ -80,6 +80,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         _citizenRepository = citizenRepository;
         _cryptoService = cryptoService;
         _collectionCountRepository = collectionCountRepository;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
     }
 
     public async Task<Page<CollectionSignatureSheet>> List(
@@ -149,25 +150,24 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
     public async Task<CollectionSignatureSheetNumberInfo> ReserveNumber(Guid collectionId)
     {
         await EnsureCanEditSignatureSheets(collectionId);
-        var bfs = await _accessControlListDoiRepository.GetSingleBfsForDoiType(_permissionService.AclBfsLists, AclDomainOfInfluenceType.Mu);
-        var name = await _accessControlListDoiRepository.GetMunicipalityNameByBfs(AclDomainOfInfluenceType.Mu, bfs);
+        var doi = await _domainOfInfluenceRepository.GetSingleByType(_permissionService.AclBfsLists, DomainOfInfluenceType.Mu);
 
         await using var transaction = await _dataContext.BeginTransaction();
         var collectionMunicipality = await _collectionMunicipalityRepository.Query()
             .AsTracking()
             .ForUpdate()
-            .FirstAsync(x => x.Bfs == bfs && x.CollectionId == collectionId);
+            .FirstAsync(x => x.Bfs == doi.Bfs && x.CollectionId == collectionId);
         collectionMunicipality.NextSheetNumber++;
         await _dataContext.SaveChangesAsync();
         await transaction.CommitAsync();
 
-        return new CollectionSignatureSheetNumberInfo(bfs, name, collectionMunicipality.NextSheetNumber - 1);
+        return new CollectionSignatureSheetNumberInfo(doi.Bfs!, doi.Name, collectionMunicipality.NextSheetNumber - 1);
     }
 
     public async Task TryReleaseNumber(Guid collectionId, int number)
     {
         await EnsureCanEditSignatureSheets(collectionId);
-        var bfs = await _accessControlListDoiRepository.GetSingleBfsForDoiType(_permissionService.AclBfsLists, AclDomainOfInfluenceType.Mu);
+        var bfs = await _domainOfInfluenceRepository.GetSingleBfsByType(_permissionService.AclBfsLists, DomainOfInfluenceType.Mu);
 
         await using var transaction = await _dataContext.BeginTransaction();
 
@@ -196,7 +196,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             throw new ValidationException("Received at date can't be in the future.");
         }
 
-        var bfs = await _accessControlListDoiRepository.GetSingleBfsForDoiType(_permissionService.AclBfsLists, AclDomainOfInfluenceType.Mu);
+        var bfs = await _domainOfInfluenceRepository.GetSingleBfsByType(_permissionService.AclBfsLists, DomainOfInfluenceType.Mu);
         var collectionMunicipality = await _collectionMunicipalityRepository.Query().FirstAsync(x => x.Bfs == bfs && x.CollectionId == collectionId);
         await using var transaction = await _dataContext.BeginTransaction();
 
@@ -261,24 +261,34 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         await _dataContext.SaveChangesAsync();
     }
 
-    public async Task<Stream> Attest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds)
+    public async Task<IFile> Attest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds)
     {
+        if (signatureSheetIds.Count == 0)
+        {
+            throw new ValidationException("No signature sheets were selected for attestation.");
+        }
+
         var collection = await _collectionRepository
                              .Query()
                              .WhereCanEditSignatureSheets(_permissionService)
                              .FirstOrDefaultAsync(x => x.Id == collectionId) ??
                          throw new EntityNotFoundException(nameof(CollectionBaseEntity), collectionId);
-        var doi = await _accessControlListDoiRepository.GetSingleForDoiType(_permissionService.AclBfsLists, AclDomainOfInfluenceType.Mu);
+
+        // logo is needed for pdf
+        var doi = await _domainOfInfluenceRepository.GetSingleWithLogoContentsByType(_permissionService.AclBfsLists, DomainOfInfluenceType.Mu);
+
         await using var transaction = await _dataContext.BeginTransaction();
 
-        // load via municipality entity to ensure entity is locked if signature sheets of municipality are submitted
-        var signatureSheets = await _collectionMunicipalityRepository.Query()
-            .Where(x => x.CollectionId == collectionId && x.Bfs == doi.Bfs)
-            .SelectMany(x => x.SignatureSheets!)
-            .Where(y => signatureSheetIds.Contains(y.Id))
+        var signatureSheets = await _signatureSheetRepository.Query()
             .WhereCanAttest(_permissionService)
-            .AsTracking()
+            .Where(x =>
+                x.CollectionMunicipality!.CollectionId == collectionId
+                && x.CollectionMunicipality.Bfs == doi.Bfs
+                && signatureSheetIds.Contains(x.Id)
+                && x.State == CollectionSignatureSheetState.Created)
             .OrderBy(x => x.Number)
+            .AsTracking()
+            .ForUpdate()
             .ToListAsync();
 
         if (signatureSheets.Count != signatureSheetIds.Count)
@@ -288,22 +298,61 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), notFoundId);
         }
 
+        var collectionMunicipalityId = EnsureAllSheetsFoundAndOfSameMunicipality(signatureSheetIds, signatureSheets);
+        await LockMunicipalityAndCollectionCount(collectionId, collectionMunicipalityId);
+
         var attestedAt = _timeProvider.GetUtcNowDateTime();
+
+        var validCount = 0;
+        var invalidCount = 0;
+
         foreach (var sheet in signatureSheets)
         {
-            _permissionService.SetModified(sheet);
+            validCount += sheet.Count.Valid;
+            invalidCount += sheet.Count.Invalid;
             sheet.State = CollectionSignatureSheetState.Attested;
-            sheet.AttestedAt ??= attestedAt;
+            sheet.AttestedAt = attestedAt;
+            _permissionService.SetModified(sheet);
         }
 
         await _dataContext.SaveChangesAsync();
 
-        var stream = await _signatureSheetAttestationGenerationService.GenerateFile(
+        await UpdateMunicipalityAndCollectionCounts(collectionMunicipalityId, collectionId, validCount, invalidCount);
+        await transaction.CommitAsync();
+
+        return await _signatureSheetAttestationGenerationService.GenerateFile(
             collection,
             doi,
             signatureSheets);
-        await transaction.CommitAsync();
-        return stream;
+    }
+
+    public async Task<IFile> Reattest(Guid collectionId, IReadOnlySet<Guid> signatureSheetIds)
+    {
+        var collection = await _collectionRepository
+                             .Query()
+                             .WhereCanEditSignatureSheets(_permissionService)
+                             .FirstOrDefaultAsync(x => x.Id == collectionId) ??
+                         throw new EntityNotFoundException(nameof(CollectionBaseEntity), collectionId);
+
+        // logo is needed for pdf
+        var doi = await _domainOfInfluenceRepository.GetSingleWithLogoContentsByType(_permissionService.AclBfsLists, DomainOfInfluenceType.Mu);
+
+        var signatureSheets = await _signatureSheetRepository.Query()
+            .WhereCanAttest(_permissionService)
+            .Where(x =>
+                x.CollectionMunicipality!.CollectionId == collectionId
+                && x.CollectionMunicipality.Bfs == doi.Bfs
+                && signatureSheetIds.Contains(x.Id)
+                && x.State != CollectionSignatureSheetState.Created)
+            .OrderBy(x => x.Number)
+            .ToListAsync();
+
+        EnsureAllSheetsFoundAndOfSameMunicipality(signatureSheetIds, signatureSheets);
+
+        return await _signatureSheetAttestationGenerationService.GenerateFile(
+            collection,
+            doi,
+            signatureSheets);
     }
 
     public async Task<CollectionSignatureSheet> Get(Guid collectionId, Guid sheetId)
@@ -510,33 +559,19 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
     {
         await EnsureCanCheckSamples(collectionId);
 
-        await using var transaction = await _dataContext.BeginTransaction();
-
         var sheet = await _signatureSheetRepository.Query()
                         .WhereCanSubmit(_permissionService)
                         .Where(x => x.CollectionMunicipality!.CollectionId == collectionId && x.Id == sheetId)
                         .Include(x => x.CollectionMunicipality)
                         .FirstOrDefaultAsync()
                     ?? throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
-
-        // lock municipality and collection count to set count correctly
-        await LockMunicipalityAndCollectionCount(collectionId, sheet.CollectionMunicipalityId);
-
-        await SetSheetStateAndUpdateCounts(sheet, collectionId, CollectionSignatureSheetState.Submitted, sheet.Count.Valid, sheet.Count.Invalid);
-
-        await transaction.CommitAsync();
-
-        var collectionCount = await _collectionCountRepository.Query()
-                                  .FirstOrDefaultAsync(x => x.CollectionId == collectionId)
-                              ?? throw new EntityNotFoundException(nameof(CollectionCountEntity), collectionId);
-        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet), collectionCount);
+        await SetSheetState(sheet, CollectionSignatureSheetState.Submitted);
+        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet));
     }
 
     public async Task<SignatureSheetStateChangeResult> Unsubmit(Guid collectionId, Guid sheetId)
     {
         await EnsureCanCheckSamples(collectionId);
-
-        await using var transaction = await _dataContext.BeginTransaction();
 
         var sheet = await _signatureSheetRepository.Query()
                         .WhereCanUnsubmit(_permissionService)
@@ -545,17 +580,8 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
                         .FirstOrDefaultAsync()
                     ?? throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
 
-        // lock municipality and collection count to set count correctly
-        await LockMunicipalityAndCollectionCount(collectionId, sheet.CollectionMunicipalityId);
-
-        await SetSheetStateAndUpdateCounts(sheet, collectionId, CollectionSignatureSheetState.Attested, -1 * sheet.Count.Valid, -1 * sheet.Count.Invalid);
-
-        await transaction.CommitAsync();
-
-        var collectionCount = await _collectionCountRepository.Query()
-                                  .FirstOrDefaultAsync(x => x.CollectionId == collectionId)
-                              ?? throw new EntityNotFoundException(nameof(CollectionCountEntity), collectionId);
-        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet), collectionCount);
+        await SetSheetState(sheet, CollectionSignatureSheetState.Attested);
+        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet));
     }
 
     public async Task<SignatureSheetStateChangeResult> Discard(Guid collectionId, Guid sheetId)
@@ -563,7 +589,6 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         await EnsureCanCheckSamples(collectionId);
 
         await using var transaction = await _dataContext.BeginTransaction();
-
         var sheet = await _signatureSheetRepository.Query()
                         .WhereCanDiscard(_permissionService)
                         .Where(x => x.CollectionMunicipality!.CollectionId == collectionId && x.Id == sheetId)
@@ -571,10 +596,13 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
                         .FirstOrDefaultAsync()
                     ?? throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
 
-        await SetSheetState(sheet, CollectionSignatureSheetState.NotSubmitted);
+        await LockMunicipalityAndCollectionCount(collectionId, sheet.CollectionMunicipalityId);
+        await SetSheetStateAndUpdateCounts(sheet, collectionId, CollectionSignatureSheetState.NotSubmitted, -sheet.Count.Valid, -sheet.Count.Invalid);
 
         await transaction.CommitAsync();
-        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet));
+
+        var collectionCount = await _collectionCountRepository.Query().FirstAsync(x => x.CollectionId == collectionId);
+        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet), collectionCount);
     }
 
     public async Task<SignatureSheetStateChangeResult> Restore(Guid collectionId, Guid sheetId)
@@ -590,10 +618,13 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
                         .FirstOrDefaultAsync()
                     ?? throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
 
-        await SetSheetState(sheet, CollectionSignatureSheetState.Attested);
+        await LockMunicipalityAndCollectionCount(collectionId, sheet.CollectionMunicipalityId);
+        await SetSheetStateAndUpdateCounts(sheet, collectionId, CollectionSignatureSheetState.Attested, sheet.Count.Valid, sheet.Count.Invalid);
 
         await transaction.CommitAsync();
-        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet));
+
+        var collectionCount = await _collectionCountRepository.Query().FirstAsync(x => x.CollectionId == collectionId);
+        return new SignatureSheetStateChangeResult(CollectionSignatureSheetPermissions.Build(_permissionService, sheet), collectionCount);
     }
 
     public async Task<SignatureSheetConfirmResult> Confirm(SignatureSheetConfirmRequest request)
@@ -671,6 +702,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
     public async Task<List<CollectionSignatureSheetEntity>> AddSamples(Guid collectionId, int signatureSheetsCount)
     {
         await EnsureCanCheckSamples(collectionId);
+        await EnsureAllSignatureSheetsArePastAttested(collectionId);
 
         var potentialSampleIds = await _signatureSheetRepository.Query()
             .WhereCanCheckSamples(_permissionService)
@@ -704,6 +736,24 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
 
         await _dataContext.SaveChangesAsync();
         return sheets;
+    }
+
+    private static Guid EnsureAllSheetsFoundAndOfSameMunicipality(IReadOnlySet<Guid> signatureSheetIds, List<CollectionSignatureSheetEntity> signatureSheets)
+    {
+        if (signatureSheets.Count != signatureSheetIds.Count)
+        {
+            var foundIds = signatureSheets.Select(x => x.Id).ToHashSet();
+            var notFoundId = signatureSheetIds.Except(foundIds).First();
+            throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), notFoundId);
+        }
+
+        var collectionMunicipalityIds = signatureSheets.Select(x => x.CollectionMunicipalityId).ToHashSet();
+        if (collectionMunicipalityIds.Count != 1)
+        {
+            throw new ValidationException("All signature sheets must belong to the same municipality.");
+        }
+
+        return collectionMunicipalityIds.First();
     }
 
     private async Task EnsureCanEditSignatureSheets(Guid collectionId)
@@ -758,6 +808,22 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         }
     }
 
+    private async Task EnsureAllSignatureSheetsArePastAttested(Guid collectionId)
+    {
+        var allSignatureSheetsArePastAttested = await _signatureSheetRepository
+            .Query()
+            .Where(x => x.CollectionMunicipality!.CollectionId == collectionId)
+            .AllAsync(x =>
+                x.State == CollectionSignatureSheetState.Submitted ||
+                x.State == CollectionSignatureSheetState.NotSubmitted ||
+                x.State == CollectionSignatureSheetState.Confirmed);
+
+        if (!allSignatureSheetsArePastAttested)
+        {
+            throw new ValidationException("All signature sheets must be past attested.");
+        }
+    }
+
     private IQueryable<CollectionBaseEntity> BuildSignatureInfoQuery(CollectionType collectionType)
     {
         return collectionType switch
@@ -767,7 +833,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
                 .AsSplitQuery()
                 .AsNoTrackingWithIdentityResolution()
                 .Include(x => x.Decree!.Collections
-                    .Where(y => y.State != CollectionState.InPreparation && y.State != CollectionState.PreparingForCollection)),
+                    .Where(y => !string.IsNullOrWhiteSpace(y.EncryptionKeyId) && !string.IsNullOrWhiteSpace(y.MacKeyId))),
             _ => throw new ArgumentOutOfRangeException(nameof(collectionType), collectionType, "Unknown collection type"),
         };
     }

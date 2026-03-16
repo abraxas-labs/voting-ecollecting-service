@@ -58,7 +58,9 @@ public class ReferendumSignService : CollectionSignBaseService<ReferendumEntity>
 
         var referendum = await _referendumRepository.Query()
                              .AsNoTrackingWithIdentityResolution()
-                             .Include(x => x.Decree!.Collections.Where(y => y.State != CollectionState.InPreparation && y.State != CollectionState.PreparingForCollection)) // load other collections to check existing signature on same decree
+
+                             // load other collections to check existing signature on same decree
+                             .Include(x => x.Decree!.Collections.Where(y => !string.IsNullOrWhiteSpace(y.EncryptionKeyId) && !string.IsNullOrWhiteSpace(y.MacKeyId)))
                              .WhereInPeriodState(CollectionPeriodState.InCollection, true, TimeProvider.GetUtcTodayDateOnly())
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);

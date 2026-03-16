@@ -20,7 +20,7 @@ using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.Lib.Iam.SecondFactor.DependencyInjection;
 using Voting.Lib.Scheduler;
 using Voting.Lib.UserNotifications;
-using IAccessControlListDoiService = Voting.ECollecting.Admin.Abstractions.Core.Services.IAccessControlListDoiService;
+using IDomainOfInfluenceService = Voting.ECollecting.Admin.Abstractions.Core.Services.IDomainOfInfluenceService;
 
 namespace Voting.ECollecting.Admin.Core;
 
@@ -32,21 +32,23 @@ public static class ServiceCollectionExtensions
     {
         services
             .AddSingleton(config.UserNotificationsJob)
+            .AddSingleton(config.CollectionCleanupJob)
             .AddSingleton(config)
             .AddSecondFactorTransactionProvider<SecondFactorTransactionStorageService>(config.SecondFactorTransaction)
             .AddForwardRefScoped<ICollectionService, CollectionService>()
             .AddForwardRefScoped<IDecreeService, DecreeService>()
-            .AddForwardRefScoped<IAccessControlListDoiService, AccessControlListDoiService>()
+            .AddForwardRefScoped<IAccessControlListService, AccessControlListService>()
             .AddScoped<ICollectionFilesService, CollectionFilesService>()
             .AddScoped<CollectionCryptoService>()
             .AddScoped<IDomainOfInfluenceFilesService, DomainOfInfluenceFilesService>()
-            .AddScoped<IDomainOfInfluenceService, DomainOfInfluenceService>()
+            .AddForwardRefScoped<IDomainOfInfluenceService, DomainOfInfluenceService>()
             .AddScoped<InitiativeSignService>()
             .AddScoped<ReferendumSignService>()
             .AddScoped<CollectionSignService>()
             .AddScoped<CertificateValidator>()
             .AddKeyedScoped<IUserNotificationRenderer, CollectionDeletedUserNotificationRenderer>(UserNotificationType.CollectionDeleted)
             .AddKeyedScoped<IUserNotificationRenderer, DecreeDeletedUserNotificationRenderer>(UserNotificationType.DecreeDeleted)
+            .AddKeyedScoped<IUserNotificationRenderer, CollectionCleanupWarningUserNotificationRenderer>(UserNotificationType.CollectionCleanupWarning)
             .AddScoped<ICertificateService, CertificateService>()
             .AddScoped<IDomainOfInfluenceService, DomainOfInfluenceService>()
             .AddForwardRefScoped<IInitiativeService, InitiativeService>()
@@ -70,6 +72,13 @@ public static class ServiceCollectionExtensions
             .AddScoped<IStatisticalDataCsvGenerator, StatisticalDataCsvGenerator>()
             .AddScoped<IStatisticalDataTimeLapseCsvGenerator, StatisticalDataTimeLapseCsvGenerator>();
 
+        if (config.CollectionCleanupJob.Enabled)
+        {
+            services
+                .AddCronJob<InitiativeCleanupJob>(config.CollectionCleanupJob)
+                .AddCronJob<InitiativeCleanupWarningNotificationJob>(config.CollectionCleanupJob);
+        }
+
         if (config.Kms.EnableMock)
         {
             services.AddVotingLibCryptoProviderMock();
@@ -82,9 +91,9 @@ public static class ServiceCollectionExtensions
         // AddHostedService (Generic) only supports specifying the implementation, but not the interface.
         // This is done to Be able to replace the HostedService with a mock in integration tests
         services.AddSingleton(config.Import);
-        services.AddSingleton<IAccessControlListDoiHostedService, AccessControlListDoiHostedService>();
-        services.AddTransient<IAccessControlListImporter, AccessControlListImporter>();
-        services.AddHostedService(sp => sp.GetRequiredService<IAccessControlListDoiHostedService>());
+        services.AddSingleton<IDomainOfInfluenceHostedService, DomainOfInfluenceHostedService>();
+        services.AddTransient<IDomainOfInfluenceImporter, DomainOfInfluenceImporter>();
+        services.AddHostedService(sp => sp.GetRequiredService<IDomainOfInfluenceHostedService>());
 
         return services;
     }

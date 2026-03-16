@@ -117,11 +117,6 @@ public class AppConfig : CoreAppConfig
     public AuthStoreConfig AuthStore { get; set; } = new();
 
     /// <summary>
-    /// Gets or sets the user notifications configuration.
-    /// </summary>
-    public UserNotificationsConfig UserNotifications { get; set; } = new();
-
-    /// <summary>
     /// Gets or sets the documatrix config.
     /// </summary>
     public DmDocConfig DmDoc { get; set; } = new();

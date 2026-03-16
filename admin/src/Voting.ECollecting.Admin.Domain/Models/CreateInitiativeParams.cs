@@ -3,6 +3,7 @@
 
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
+using Voting.Lib.Database.Models;
 
 namespace Voting.ECollecting.Admin.Domain.Models;
 
@@ -10,7 +11,7 @@ public record CreateInitiativeParams(
     DomainOfInfluenceType DomainOfInfluenceType,
     Guid? SubTypeId,
     string Description,
-    string Wording,
+    MarkdownString Wording,
     CollectionAddress? Address,
     string GovernmentDecisionNumber,
     AdmissibilityDecisionState AdmissibilityDecisionState);

@@ -9,21 +9,9 @@ namespace Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 
 public interface IDataContext
 {
-    string? Language { get; set; }
-
-    DbSet<DecreeEntity> Decrees { get; set; }
-
-    DbSet<CollectionCountEntity> CollectionCounts { get; set; }
-
-    DbSet<AccessControlListDoiEntity> AccessControlListDois { get; set; }
-
-    DbSet<ImportStatisticEntity> ImportStatistics { get; set; }
-
     DbSet<InitiativeCommitteeMemberEntity> InitiativeCommitteeMembers { get; set; }
 
     DbSet<CollectionPermissionEntity> CollectionPermissions { get; set; }
-
-    DbSet<DomainOfInfluenceEntity> DomainOfInfluences { get; set; }
 
     Task SaveChangesAsync();
 

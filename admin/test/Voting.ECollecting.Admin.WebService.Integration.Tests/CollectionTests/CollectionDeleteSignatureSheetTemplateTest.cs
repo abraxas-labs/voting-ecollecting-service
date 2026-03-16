@@ -36,16 +36,15 @@ public class CollectionDeleteSignatureSheetTemplateTest : BaseGrpcTest<Collectio
             .Select(x => x.SignatureSheetTemplate!.Id)
             .SingleAsync());
 
-        await CtSgStammdatenverwalterClient.DeleteSignatureSheetTemplateAsync(NewValidRequest());
+        var response = await CtSgStammdatenverwalterClient.DeleteSignatureSheetTemplateAsync(NewValidRequest());
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        var fileData = Encoding.UTF8.GetString(file!.Content!.Data);
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        var fileData = Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data);
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -62,7 +61,7 @@ public class CollectionDeleteSignatureSheetTemplateTest : BaseGrpcTest<Collectio
             .ToListAsync());
 
         var collectionMessage = await RunOnDb(async db => await db.CollectionMessages.FirstAsync(x => x.CollectionId == InitiativesCtStGallen.GuidLegislativeInPreparation));
-        await Verify(new { fileData, userNotifications, collectionMessage });
+        await Verify(new { fileData, userNotifications, collectionMessage, response });
     }
 
     [Fact]
@@ -82,16 +81,15 @@ public class CollectionDeleteSignatureSheetTemplateTest : BaseGrpcTest<Collectio
             .Select(x => x.SignatureSheetTemplate!.Id)
             .SingleAsync());
 
-        await MuSgStammdatenverwalterClient.DeleteSignatureSheetTemplateAsync(NewValidRequest(x => x.CollectionId = InitiativesMuStGallen.IdInPreparation));
+        var response = await MuSgStammdatenverwalterClient.DeleteSignatureSheetTemplateAsync(NewValidRequest(x => x.CollectionId = InitiativesMuStGallen.IdInPreparation));
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesMuStGallen.GuidInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        var fileData = Encoding.UTF8.GetString(file!.Content!.Data);
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        var fileData = Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data);
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -108,7 +106,7 @@ public class CollectionDeleteSignatureSheetTemplateTest : BaseGrpcTest<Collectio
             .ToListAsync());
 
         var collectionMessage = await RunOnDb(async db => await db.CollectionMessages.FirstAsync(x => x.CollectionId == InitiativesMuStGallen.GuidInPreparation));
-        await Verify(new { fileData, userNotifications, collectionMessage });
+        await Verify(new { fileData, userNotifications, collectionMessage, response });
     }
 
     [Fact]

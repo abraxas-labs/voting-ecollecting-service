@@ -808,57 +808,6 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                 },
                 PeriodState: InCollection
               }
-            },
-            {
-              Id: Guid_23,
-              Decree: {
-                Id: Guid_15,
-                Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
-                MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
-              },
-              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-              Collection: {
-                Id: Guid_23,
-                Description: Referendum gegen Pflanzen-Workshops, die Kakteen ausgrenzen,
-                Type: Referendum,
-                Reason:
-Ein viertes Komitee lehnt die obligatorischen Workshops ab, weil sie Kakteen ausgrenzen.
-Die starre Struktur der Präsenzworkshops ignoriert die speziellen Bedürfnisse unserer dornigen Mitbewohner, die durch ihre sesshafte Natur und ihr langsames Tempo systematisch benachteiligt werden.
-Eine inklusive Diskussionskultur darf nicht an der Stachelobergrenze enden, sondern muss auch non-verbale, xerophyte Lebensformen vollumfänglich integrieren.
-Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unzumutbare Ausgrenzung.,
-                Link: https://www.sg.ch/,
-                SignatureSheetTemplateGenerated: false,
-                State: InPreparation,
-                Address: {
-                  CommitteeOrPerson: Komitee Kakteen,
-                  StreetOrPostOfficeBox: Otmarstrasse 17,
-                  ZipCode: 9000,
-                  Locality: St.Gallen
-                },
-                IsElectronicSubmission: true,
-                InformalReviewRequested: false,
-                UserPermissions: {
-                  CanEdit: false,
-                  IsRequestInformalReviewVisible: false,
-                  CanCreateMessages: false,
-                  CanFinishCorrection: false,
-                  CanSetCollectionPeriod: false,
-                  CanEnable: false,
-                  CanDelete: false,
-                  CanDeleteWithdrawn: false,
-                  CanAddSignatureSheet: false,
-                  CanReadSignatureSheets: false,
-                  CanCheckSamples: false,
-                  CanSubmitSignatureSheets: false,
-                  CanFinish: false,
-                  CanGenerateDocuments: false,
-                  CanEditAdmissibilityDecision: false,
-                  CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
-                  CanReturnForCorrection: false
-                }
-              }
             }
           ],
           UserPermissions: {
@@ -878,7 +827,7 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
           DomainOfInfluenceName: 
         },
         {
-          Id: Guid_24,
+          Id: Guid_23,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
@@ -907,7 +856,7 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
           DomainOfInfluenceName: 
         },
         {
-          Id: Guid_25,
+          Id: Guid_24,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
@@ -927,16 +876,16 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
           PeriodState: Expired,
           Collections: [
             {
-              Id: Guid_26,
+              Id: Guid_25,
               Decree: {
-                Id: Guid_25,
+                Id: Guid_24,
                 Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
                 MinSignatureCount: 3000,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_26,
+                Id: Guid_25,
                 Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
                 Type: Referendum,
                 Reason:
@@ -948,8 +897,8 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
-                  Id: Guid_27,
-                  CollectionId: Guid_26,
+                  Id: Guid_26,
+                  CollectionId: Guid_25,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 161
                 },
@@ -993,57 +942,6 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                 },
                 PeriodState: Expired
               }
-            },
-            {
-              Id: Guid_28,
-              Decree: {
-                Id: Guid_25,
-                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
-                MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
-              },
-              MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
-              Collection: {
-                Id: Guid_28,
-                Description: Referendum gegen Jodel-Pflicht in Schulen (zurückgezogen),
-                Type: Referendum,
-                Reason:
-Ein zweites Komitee hatte sich ebenfalls gegen die Jodel-Pflicht gewehrt, das Referendum aber später zurückgezogen.
-Nach Gesprächen mit dem Kantonsrat wurde ein Kompromiss gefunden: Jodeln bleibt freiwillig, wird aber gefördert.
-Das Komitee war mit dieser Lösung zufrieden und zog das Referendum zurück.
-Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen bringen als Konfrontation.,
-                Link: https://www.sg.ch/,
-                SignatureSheetTemplateGenerated: false,
-                State: Withdrawn,
-                Address: {
-                  CommitteeOrPerson: Verein Freiwillige Kultur,
-                  StreetOrPostOfficeBox: St. Jakob-Strasse 55,
-                  ZipCode: 9000,
-                  Locality: St.Gallen
-                },
-                IsElectronicSubmission: true,
-                InformalReviewRequested: false,
-                UserPermissions: {
-                  CanEdit: false,
-                  IsRequestInformalReviewVisible: false,
-                  CanCreateMessages: false,
-                  CanFinishCorrection: false,
-                  CanSetCollectionPeriod: false,
-                  CanEnable: false,
-                  CanDelete: false,
-                  CanDeleteWithdrawn: false,
-                  CanAddSignatureSheet: false,
-                  CanReadSignatureSheets: false,
-                  CanCheckSamples: false,
-                  CanSubmitSignatureSheets: false,
-                  CanFinish: false,
-                  CanGenerateDocuments: false,
-                  CanEditAdmissibilityDecision: false,
-                  CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
-                  CanReturnForCorrection: false
-                }
-              }
             }
           ],
           UserPermissions: {
@@ -1073,7 +971,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
       DomainOfInfluenceType: Mu,
       Decrees: [
         {
-          Id: Guid_29,
+          Id: Guid_27,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           Description: Gemeinderatsbeschluss über die Anbringung von QR-Codes auf allen öffentlichen Kunstwerken und Graffiti-Wänden für digitale Künstlerprofile und Audioguides,
@@ -1102,7 +1000,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
           DomainOfInfluenceName: 
         },
         {
-          Id: Guid_30,
+          Id: Guid_28,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
@@ -1122,16 +1020,16 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_31,
+              Id: Guid_29,
               Decree: {
-                Id: Guid_30,
+                Id: Guid_28,
                 Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
                 MinSignatureCount: 300,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_31,
+                Id: Guid_29,
                 Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
                 Type: Referendum,
                 Reason:
@@ -1143,8 +1041,8 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_32,
-                  CollectionId: Guid_31,
+                  Id: Guid_30,
+                  CollectionId: Guid_29,
                   HasTotalCitizenCount: true
                 },
                 Address: {
@@ -1189,16 +1087,16 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
               }
             },
             {
-              Id: Guid_33,
+              Id: Guid_31,
               Decree: {
-                Id: Guid_30,
+                Id: Guid_28,
                 Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
                 MinSignatureCount: 300,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_33,
+                Id: Guid_31,
                 Description: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
                 Type: Referendum,
                 Reason:
@@ -1210,8 +1108,8 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
                 SignatureSheetTemplateGenerated: false,
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_34,
-                  CollectionId: Guid_33,
+                  Id: Guid_32,
+                  CollectionId: Guid_31,
                   HasTotalCitizenCount: true
                 },
                 Address: {
@@ -1272,7 +1170,7 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
           DomainOfInfluenceName: 
         },
         {
-          Id: Guid_35,
+          Id: Guid_33,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
@@ -1292,16 +1190,16 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
           PeriodState: Expired,
           Collections: [
             {
-              Id: Guid_36,
+              Id: Guid_34,
               Decree: {
-                Id: Guid_35,
+                Id: Guid_33,
                 Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
                 MinSignatureCount: 300,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_36,
+                Id: Guid_34,
                 Description: Referendum gegen das Verbot von Bubble Tea in städtischen Schulen und Kindergärten,
                 Type: Referendum,
                 Reason:
@@ -1313,8 +1211,8 @@ Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof 
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameNotAbout,
                 AttestedCollectionCount: {
-                  Id: Guid_37,
-                  CollectionId: Guid_36,
+                  Id: Guid_35,
+                  CollectionId: Guid_34,
                   TotalCitizenCount: 432,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 41

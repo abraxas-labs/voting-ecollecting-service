@@ -6,12 +6,23 @@
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 217 (neu) – Förderung öffentlicher Leseecken
-1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
-2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
-3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 217 (neu) – Förderung öffentlicher Leseecken***
+1. Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2. Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3. Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 217 (neu) – Förderung öffentlicher Leseecken</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.</li>
+<li>Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_1,
         Description: Für kantonale Leseecken (Leseecken-Initiative),
@@ -74,12 +85,23 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
       Bfs: 17,
       MinSignatureCount: 4000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 218 (neu) – Förderung kantonaler Spielplätze
-1 Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
-2 Er kann Gemeinden finanziell und beratend unterstützen.
-3 Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+      Wording: {
+        Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 218 (neu) – Förderung kantonaler Spielplätze***
+1. Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.
+2. Er kann Gemeinden finanziell und beratend unterstützen.
+3. Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.,
+        Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 218 (neu) – Förderung kantonaler Spielplätze</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Bau und die Pflege sicherer, attraktiver Spielplätze.</li>
+<li>Er kann Gemeinden finanziell und beratend unterstützen.</li>
+<li>Er achtet auf zeitgemässe Ausstattung und gute Erreichbarkeit der Anlagen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_3,
         Description: Für kantonale Spielplätze (Spielplatz-Initiative),
@@ -142,12 +164,23 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl�
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 69b (neu) – Förderung der Jodel-Kultur
-1 Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.
-2 Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.
-3 Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 69b (neu) – Förderung der Jodel-Kultur***
+1. Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.
+2. Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.
+3. Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 69b (neu) – Förderung der Jodel-Kultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Jodeln als wichtigen Teil der Schweizer Volkskultur und unterstützt Jodlervereine und Festivals.</li>
+<li>Er fördert die musikalische Ausbildung im Jodeln und kann Projekte zur Nachwuchsförderung unterstützen.</li>
+<li>Der Bund kann einen jährlichen nationalen Jodel-Tag festlegen, um die Tradition zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_4,
         Description: Für mehr Jodel-Festivals (Jodel-Initiative),
@@ -211,12 +244,23 @@ Denn wer jodelt, singt von den Bergen.,
       Bfs: 1,
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Bundesverfassung wird wie folgt geändert:
-Art. 69a (neu) – Förderung der Schokoladenkultur
-1 Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.
-2 Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.
-3 Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.,
+      Wording: {
+        Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 69a (neu) – Förderung der Schokoladenkultur***
+1. Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.
+2. Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.
+3. Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.,
+        Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 69a (neu) – Förderung der Schokoladenkultur</strong></em></p>
+<ol>
+<li>Der Bund anerkennt Schweizer Schokolade als wichtiges Kulturgut und unterstützt ihre Herstellung und Vermarktung.</li>
+<li>Er fördert die Ausbildung von Chocolatiers und kann Schokoladenmuseen unterstützen.</li>
+<li>Der Bund kann einen jährlichen Tag der Schweizer Schokolade festlegen, um die Tradition und das Handwerk zu würdigen.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_6,
         Description: Für Schweizer Schokolade als Kulturgut (Schokolade-Initiative),

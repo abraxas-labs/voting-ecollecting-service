@@ -103,7 +103,7 @@ public class GroupedUserNotificationRenderer
             .GroupBy(x => x.TemplateBag.CollectionId!.Value)
             .Select(g => new CollectionGroup(
                 g.First().TemplateBag.CollectionName,
-                _urlConfig.BuildCollectionUrl(g.Key, g.First().TemplateBag.CollectionType!.Value, g.First().TemplateBag.RecipientIsCitizen),
+                _urlConfig.BuildCollectionUrl(g.Key, g.First().TemplateBag.CollectionType!.Value, g.First().TemplateBag.RecipientIsCitizen, g.First().TemplateBag.RecipientIsCitizen),
                 g.Select(x => x.TemplateBag.NotificationType).Distinct().ToList()))
             .ToList();
     }

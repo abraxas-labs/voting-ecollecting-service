@@ -25,7 +25,7 @@ using Voting.Lib.Database.Postgres.Locking;
 using Voting.Lib.Iam.SecondFactor.Models;
 using Voting.Lib.Iam.SecondFactor.Services;
 using CollectionCryptoService = Voting.ECollecting.Admin.Core.Services.Crypto.CollectionCryptoService;
-using IAccessControlListDoiService = Voting.ECollecting.Shared.Abstractions.Core.Services.IAccessControlListDoiService;
+using IDomainOfInfluenceService = Voting.ECollecting.Shared.Abstractions.Core.Services.IDomainOfInfluenceService;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 using SecondFactorTransactionInfo = Voting.ECollecting.Admin.Domain.Models.SecondFactorTransactionInfo;
 
@@ -42,19 +42,18 @@ public class DecreeService : IDecreeService
     private readonly IStatisticalDataTimeLapseCsvGenerator _statisticalDataTimeLapseCsvGenerator;
     private readonly IPermissionService _permissionService;
     private readonly IDataContext _dataContext;
-    private readonly IAccessControlListDoiService _coreAccessControlListDoiService;
+    private readonly IDomainOfInfluenceService _coreDomainOfInfluenceService;
     private readonly TimeProvider _timeProvider;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly ISecondFactorTransactionService _secondFactorTransactionService;
     private readonly CollectionCryptoService _collectionCryptoService;
     private readonly IUserNotificationService _userNotificationService;
-    private readonly AccessControlListDoiService _accessControlListDoiService;
+    private readonly DomainOfInfluenceService _domainOfInfluenceService;
 
     public DecreeService(
         IDecreeRepository decreeRepository,
         IPermissionService permissionService,
         TimeProvider timeProvider,
-        IAccessControlListDoiRepository accessControlListDoiRepository,
         IReferendumRepository referendumRepository,
         CollectionService collectionService,
         IOfficialJournalPublicationProtocolGenerator officialJournalPublicationProtocolGenerator,
@@ -62,16 +61,16 @@ public class DecreeService : IDecreeService
         IStatisticalDataCsvGenerator statisticalDataCsvGenerator,
         IStatisticalDataTimeLapseCsvGenerator statisticalDataTimeLapseCsvGenerator,
         IDataContext dataContext,
-        IAccessControlListDoiService coreAccessControlListDoiService,
+        IDomainOfInfluenceService coreDomainOfInfluenceService,
         ISecondFactorTransactionService secondFactorTransactionService,
         CollectionCryptoService collectionCryptoService,
         IUserNotificationService userNotificationService,
-        AccessControlListDoiService accessControlListDoiService)
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
+        DomainOfInfluenceService domainOfInfluenceService)
     {
         _decreeRepository = decreeRepository;
         _permissionService = permissionService;
         _timeProvider = timeProvider;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
         _referendumRepository = referendumRepository;
         _collectionService = collectionService;
         _officialJournalPublicationProtocolGenerator = officialJournalPublicationProtocolGenerator;
@@ -79,11 +78,12 @@ public class DecreeService : IDecreeService
         _statisticalDataCsvGenerator = statisticalDataCsvGenerator;
         _statisticalDataTimeLapseCsvGenerator = statisticalDataTimeLapseCsvGenerator;
         _dataContext = dataContext;
-        _coreAccessControlListDoiService = coreAccessControlListDoiService;
+        _coreDomainOfInfluenceService = coreDomainOfInfluenceService;
         _secondFactorTransactionService = secondFactorTransactionService;
         _collectionCryptoService = collectionCryptoService;
         _userNotificationService = userNotificationService;
-        _accessControlListDoiService = accessControlListDoiService;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
+        _domainOfInfluenceService = domainOfInfluenceService;
     }
 
     public async Task<Decree> Create(Decree decree)
@@ -95,7 +95,7 @@ public class DecreeService : IDecreeService
         ValidateDecree(decree);
         _permissionService.SetCreated(decree);
         await _decreeRepository.Create(decree);
-        decree.DomainOfInfluenceName = await _accessControlListDoiService.LoadDomainOfInfluenceName(decree.DomainOfInfluenceType, decree.Bfs);
+        decree.DomainOfInfluenceName = await _domainOfInfluenceService.LoadDomainOfInfluenceName(decree.DomainOfInfluenceType, decree.Bfs);
         return decree;
     }
 
@@ -226,18 +226,17 @@ public class DecreeService : IDecreeService
                              .FirstOrDefaultAsync(x => x.Id == id, cancellationToken: cancellationToken)
                          ?? throw new EntityNotFoundException(nameof(DecreeEntity), id);
 
-        var aclDoiType = Mapper.MapToAclDomainOfInfluenceType(decree.DomainOfInfluenceType);
-        var recipient = await _accessControlListDoiRepository.Query()
-                      .Where(x => x.Bfs == decree.Bfs && x.Type == aclDoiType)
-                      .Select(x => x.ECollectingEmail)
-                      .SingleOrDefaultAsync(cancellationToken)
-                  ?? throw new EntityNotFoundException(nameof(AclDomainOfInfluenceType), new { decree.Bfs, decree.DomainOfInfluenceType, });
-
-        if (!string.IsNullOrEmpty(recipient) && !string.IsNullOrEmpty(decree.Bfs))
+        if (!string.IsNullOrEmpty(decree.Bfs))
         {
+            var recipients = await _domainOfInfluenceRepository.Query()
+                                 .Where(x => x.Bfs == decree.Bfs && x.Type == decree.DomainOfInfluenceType)
+                                 .Select(x => x.NotificationEmails)
+                                 .SingleOrDefaultAsync(cancellationToken)
+                             ?? [];
+
             var attachment = ZipFile.Create(GenerateFiles(decree, cancellationToken), "archive.zip");
-            await _userNotificationService.SendUserNotification(
-                recipient,
+            await _userNotificationService.SendUserNotifications(
+                recipients,
                 false,
                 UserNotificationType.DecreeDeleted,
                 decree,
@@ -384,12 +383,18 @@ public class DecreeService : IDecreeService
 
     private async Task SetBfsAndSignatureCounts(Decree decree)
     {
-        var aclDoiType = Mapper.MapToAclDomainOfInfluenceType(decree.DomainOfInfluenceType);
-        var aclDoi = await _accessControlListDoiRepository.GetSingleForDoiType(_permissionService.AclBfsLists, aclDoiType);
+        // if this inheritance logic is adjusted, also adjust the Admin DomainOfInfluenceService.List
+        var doi = await _domainOfInfluenceRepository.GetSingleByType(_permissionService.AclBfsLists, decree.DomainOfInfluenceType);
 
-        decree.Bfs = aclDoi.Bfs!;
-        decree.MinSignatureCount = aclDoi.ECollectingReferendumMinSignatureCount.GetValueOrDefault();
-        decree.MaxElectronicSignatureCount = (int)Math.Round(decree.MinSignatureCount * aclDoi.ECollectingReferendumMaxElectronicSignaturePercent.GetValueOrDefault() / 100.0);
+        var quorumDoi = doi;
+        if (doi.Type == DomainOfInfluenceType.Mu)
+        {
+            quorumDoi = await _domainOfInfluenceRepository.GetCanton();
+        }
+
+        decree.Bfs = doi.Bfs!;
+        decree.MinSignatureCount = doi.ReferendumMinSignatureCount.GetValueOrDefault();
+        decree.MaxElectronicSignatureCount = quorumDoi.GetMaxReferendumElectronicSignatureCount(decree.MinSignatureCount);
     }
 
     private async Task<SecondFactorTransactionActionId> CreateDeleteActionId(Guid decreeId, bool forUpdate)
@@ -411,9 +416,9 @@ public class DecreeService : IDecreeService
 
     private async Task LoadDomainOfInfluenceNames(List<Decree> decrees)
     {
-        var domainOfInfluenceNamesByBfs = await _accessControlListDoiRepository
+        var domainOfInfluenceNamesByBfs = await _domainOfInfluenceRepository
             .Query()
-            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == AclDomainOfInfluenceType.Mu)
+            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == DomainOfInfluenceType.Mu)
             .GroupBy(x => x.Bfs)
             .ToDictionaryAsync(x => x.Key!, x => x.First().Name);
         foreach (var decree in decrees)
@@ -423,7 +428,7 @@ public class DecreeService : IDecreeService
                 DomainOfInfluenceType.Mu => domainOfInfluenceNamesByBfs[decree.Bfs],
                 DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
                 DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
-                _ => throw new ArgumentOutOfRangeException(nameof(decree.DomainOfInfluenceType)),
+                _ => throw new InvalidOperationException($"Unexpected {nameof(DomainOfInfluenceType)}: {decree.DomainOfInfluenceType}"),
             };
         }
     }
@@ -438,7 +443,7 @@ public class DecreeService : IDecreeService
             yield break;
         }
 
-        var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(decree.Bfs);
+        var accessControlListDoi = await _coreDomainOfInfluenceService.GetWithChildren(decree.Bfs);
         var templateData = new ECollectingProtocolTemplateData(
             decree.Collections.Cast<CollectionBaseEntity>().ToList(),
             accessControlListDoi,

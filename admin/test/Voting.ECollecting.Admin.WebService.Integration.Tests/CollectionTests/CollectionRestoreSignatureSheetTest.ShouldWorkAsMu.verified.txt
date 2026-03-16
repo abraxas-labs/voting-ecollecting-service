@@ -7,5 +7,11 @@
     CanDiscard: true,
     CanRestore: false,
     CanConfirm: false
+  },
+  CollectionCount: {
+    Id: Guid_1,
+    CollectionId: Guid_2,
+    TotalCitizenCount: 50,
+    HasTotalCitizenCount: true
   }
 }

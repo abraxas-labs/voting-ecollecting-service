@@ -48,6 +48,7 @@ public class DecreeCameNotAboutTest : BaseGrpcTest<DecreeService.DecreeServiceCl
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == ReferendumsCh.GuidInCollection || x.TemplateBag.CollectionId == ReferendumsCh.GuidSignatureSheetsSubmitted)
             .OrderBy(x => x.RecipientEMail)
+            .ThenBy(x => x.TemplateBag.CollectionName)
             .ToListAsync());
 
         var collectionMessages = await RunOnDb(async db => await db.CollectionMessages.Where(x => x.CollectionId == ReferendumsCh.GuidInCollection || x.CollectionId == ReferendumsCh.GuidSignatureSheetsSubmitted).OrderBy(x => x.CollectionId).ToListAsync());
@@ -70,6 +71,7 @@ public class DecreeCameNotAboutTest : BaseGrpcTest<DecreeService.DecreeServiceCl
         var userNotifications = await RunOnDb(async db => await db.UserNotifications
             .Where(x => x.TemplateBag.CollectionId == ReferendumsMuStGallen.GuidInCollectionActive || x.TemplateBag.CollectionId == ReferendumsMuStGallen.GuidSignatureSheetsSubmitted)
             .OrderBy(x => x.RecipientEMail)
+            .ThenBy(x => x.TemplateBag.CollectionName)
             .ToListAsync());
 
         var collectionMessages = await RunOnDb(async db => await db.CollectionMessages.Where(x => x.CollectionId == ReferendumsMuStGallen.GuidInCollectionActive || x.CollectionId == ReferendumsMuStGallen.GuidSignatureSheetsSubmitted).OrderBy(x => x.CollectionId).ToListAsync());

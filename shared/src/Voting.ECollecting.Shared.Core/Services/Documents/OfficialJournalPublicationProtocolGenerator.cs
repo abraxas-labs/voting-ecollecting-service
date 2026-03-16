@@ -18,8 +18,9 @@ public class OfficialJournalPublicationProtocolGenerator : PdfGenerator<ECollect
     public OfficialJournalPublicationProtocolGenerator(
         DmDocConfig config,
         RecyclableMemoryStreamManager memoryStreamManager,
-        IDmDocService dmDoc)
-        : base(config.TemplateKeys.OfficialJournalPublicationProtocol, memoryStreamManager, dmDoc)
+        IDmDocService dmDoc,
+        TimeProvider timeProvider)
+        : base(config.TemplateKeys.OfficialJournalPublicationProtocol, memoryStreamManager, dmDoc, timeProvider, config)
     {
         _config = config;
     }
@@ -27,6 +28,6 @@ public class OfficialJournalPublicationProtocolGenerator : PdfGenerator<ECollect
     protected override ECollectingProtocolDataContainer Map(ECollectingProtocolTemplateData data) =>
             DataContainerBuilder.BuildProtocolDataContainer(data);
 
-    protected override string BuildFileName(ECollectingProtocolTemplateData data) =>
-        $"{data.Description}_{_config.OfficialJournalPublicationProtocolFileName}";
+    protected override string BuildFileName(ECollectingProtocolTemplateData data)
+        => AppendTimestampSuffix($"{data.Description}_{_config.OfficialJournalPublicationProtocolFileName}");
 }

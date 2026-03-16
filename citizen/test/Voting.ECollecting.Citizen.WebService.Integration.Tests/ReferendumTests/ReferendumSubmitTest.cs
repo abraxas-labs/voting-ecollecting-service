@@ -100,14 +100,13 @@ public class ReferendumSubmitTest : BaseGrpcTest<ReferendumService.ReferendumSer
 
         await AuthenticatedClient.SubmitAsync(NewValidRequest());
 
-        var file = await RunOnDb(db => db.Referendums
+        var referendum = await RunOnDb(db => db.Referendums
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == ReferendumsCtStGallen.GuidInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Referendum_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(referendum.SignatureSheetTemplate!.Content!.Data));
+        referendum.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{referendum.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();

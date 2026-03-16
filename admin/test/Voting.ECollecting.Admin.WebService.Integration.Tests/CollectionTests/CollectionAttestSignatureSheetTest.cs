@@ -55,34 +55,7 @@ public class CollectionAttestSignatureSheetTest : BaseRestTest
                     ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
                     Bfs.MunicipalityStGallen),
                 3),
-            CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-                    Bfs.MunicipalityStGallen),
-                4),
-            CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    ReferendumsCtStGallen.GuidInCollectionEnabledForCollection,
-                    Bfs.MunicipalityStGallen),
-                5),
         ];
-
-        var sheets = await RunOnDb(db => db.CollectionSignatureSheets
-            .Where(x => sheetIds.Contains(x.Id))
-            .OrderBy(x => x.Number)
-            .ToListAsync());
-
-        // ensure at least one attested and one created sheet is tested,
-        // this ensures the test still works as expected if the mock data is updated.
-        sheets
-            .Any(s => s.State == CollectionSignatureSheetState.Attested)
-            .Should()
-            .BeTrue();
-
-        sheets
-            .Any(s => s.State == CollectionSignatureSheetState.Created)
-            .Should()
-            .BeTrue();
 
         var resp = await MuSgKontrollzeichenerstellerClient.PostAsJsonAsync(
             BuildUrl(ReferendumsCtStGallen.IdInCollectionEnabledForCollection),
@@ -91,14 +64,27 @@ public class CollectionAttestSignatureSheetTest : BaseRestTest
 
         var responseData = await resp.Content.ReadAsStringAsync();
 
-        sheets = await RunOnDb(db => db.CollectionSignatureSheets
+        var sheets = await RunOnDb(db => db.CollectionSignatureSheets
             .Where(x => sheetIds.Contains(x.Id))
             .OrderBy(x => x.Number)
             .ToListAsync());
         sheets.All(x => x.State == CollectionSignatureSheetState.Attested).Should().BeTrue();
         sheets.All(x => x.AttestedAt.HasValue).Should().BeTrue();
 
-        await Verify(new { sheets, responseData });
+        var count = await RunOnDb(db =>
+            db.CollectionCounts.SingleAsync(x =>
+                x.CollectionId == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection));
+
+        var municipalityCount = await RunOnDb(db =>
+            db.CollectionMunicipalities.SingleAsync(x =>
+                x.CollectionId == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection
+                && x.Bfs == Bfs.MunicipalityStGallen));
+
+        count.TotalCitizenCount.Should().Be(4137);
+        municipalityCount.PhysicalCount.Invalid.Should().Be(47);
+        municipalityCount.PhysicalCount.Valid.Should().Be(31);
+
+        await Verify(new { sheets, responseData, count, municipalityCount });
     }
 
     [Fact]
@@ -121,34 +107,7 @@ public class CollectionAttestSignatureSheetTest : BaseRestTest
                     InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
                     Bfs.MunicipalityStGallen),
                 3),
-            CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
-                    Bfs.MunicipalityStGallen),
-                4),
-            CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
-                    Bfs.MunicipalityStGallen),
-                5),
         ];
-
-        var sheets = await RunOnDb(db => db.CollectionSignatureSheets
-            .Where(x => sheetIds.Contains(x.Id))
-            .OrderBy(x => x.Number)
-            .ToListAsync());
-
-        // ensure at least one attested and one created sheet is tested,
-        // this ensures the test still works as expected if the mock data is updated.
-        sheets
-            .Any(s => s.State == CollectionSignatureSheetState.Attested)
-            .Should()
-            .BeTrue();
-
-        sheets
-            .Any(s => s.State == CollectionSignatureSheetState.Created)
-            .Should()
-            .BeTrue();
 
         var resp = await MuSgKontrollzeichenerstellerClient.PostAsJsonAsync(
             BuildUrl(InitiativesCtStGallen.IdUnityEnabledForCollectionCollecting),
@@ -157,14 +116,27 @@ public class CollectionAttestSignatureSheetTest : BaseRestTest
 
         var responseData = await resp.Content.ReadAsStringAsync();
 
-        sheets = await RunOnDb(db => db.CollectionSignatureSheets
+        var sheets = await RunOnDb(db => db.CollectionSignatureSheets
             .Where(x => sheetIds.Contains(x.Id))
             .OrderBy(x => x.Number)
             .ToListAsync());
         sheets.All(x => x.State == CollectionSignatureSheetState.Attested).Should().BeTrue();
         sheets.All(x => x.AttestedAt.HasValue).Should().BeTrue();
 
-        await Verify(new { sheets, responseData });
+        var count = await RunOnDb(db =>
+            db.CollectionCounts.SingleAsync(x =>
+                x.CollectionId == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection));
+
+        var municipalityCount = await RunOnDb(db =>
+            db.CollectionMunicipalities.SingleAsync(x =>
+                x.CollectionId == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection
+                && x.Bfs == Bfs.MunicipalityStGallen));
+
+        count.TotalCitizenCount.Should().Be(4123);
+        municipalityCount.PhysicalCount.Invalid.Should().Be(3);
+        municipalityCount.PhysicalCount.Valid.Should().Be(17);
+
+        await Verify(new { sheets, responseData, count, municipalityCount });
     }
 
     [Fact]
@@ -187,34 +159,7 @@ public class CollectionAttestSignatureSheetTest : BaseRestTest
                     InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
                     Bfs.MunicipalityStGallen),
                 3),
-                 CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
-                    Bfs.MunicipalityStGallen),
-                4),
-                 CollectionSignatureSheets.BuildGuid(
-                CollectionMunicipalities.BuildGuid(
-                    InitiativesCtStGallen.GuidUnityEnabledForCollectionCollecting,
-                    Bfs.MunicipalityStGallen),
-                5),
              ];
-
-        var sheets = await RunOnDb(db => db.CollectionSignatureSheets
-            .Where(x => sheetIds.Contains(x.Id))
-            .OrderBy(x => x.Number)
-            .ToListAsync());
-
-        // ensure at least one attested and one created sheet is tested,
-        // this ensures the test still works as expected if the mock data is updated.
-        sheets
-            .Any(s => s.State == CollectionSignatureSheetState.Attested)
-            .Should()
-            .BeTrue();
-
-        sheets
-            .Any(s => s.State == CollectionSignatureSheetState.Created)
-            .Should()
-            .BeTrue();
 
         await RunInAuditTrailTestScope(async () =>
         {

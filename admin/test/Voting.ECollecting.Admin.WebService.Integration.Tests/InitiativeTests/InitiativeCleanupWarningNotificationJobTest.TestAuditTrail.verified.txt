@@ -1,0 +1,162 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: Collections,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: https://www.admin.ch/,
+        Type: 1,
+        State: 2,
+        LogoId: Guid_2,
+        Reason:
+Die Schweiz ist produktiv und effizient – doch zwischen Sitzungen, Deadlines und To-Do-Listen geht manchmal die Musse verloren, kurz innezuhalten.
+Diese Initiative fordert keine obligatorischen Pausen, sondern eine Kultur der Entschleunigung: Wer regelmässig kurz verschnauft, arbeitet konzentrierter und kreativer.
+Ein verfassungsmässiger Impuls zur Förderung der Kaffeepause erinnert daran, dass Produktivität und Erholung sich nicht ausschliessen. Ein guter Espresso kann Wunder wirken – und ein bisschen Plaudern am Automaten stärkt den Teamgeist.
+Denn wer entspannt arbeitet, arbeitet besser.,
+        Address: {
+          ZipCode: 3011,
+          Locality: Bern,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Kaffeepausen-Initiative,
+          StreetOrPostOfficeBox: Kaffeestrasse 12
+        },
+        ImageId: Guid_3,
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz</strong></em></p>
+<ol>
+<li>Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.</li>
+<li>Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.</li>
+<li>Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz***
+1. Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.
+2. Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.
+3. Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.,
+          Plaintext:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz
+Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.
+Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.
+Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.,
+          IsEmptyOrWhiteSpace: false
+        },
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative),
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 100000,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        SignatureSheetTemplateId: Guid_5,
+        MaxElectronicSignatureCount: 10000,
+        GovernmentDecisionNumberLower: ,
+        SignatureSheetTemplateGenerated: false
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 1,
+        Link: https://www.admin.ch/,
+        Type: 1,
+        State: 2,
+        LogoId: Guid_2,
+        Reason:
+Die Schweiz ist produktiv und effizient – doch zwischen Sitzungen, Deadlines und To-Do-Listen geht manchmal die Musse verloren, kurz innezuhalten.
+Diese Initiative fordert keine obligatorischen Pausen, sondern eine Kultur der Entschleunigung: Wer regelmässig kurz verschnauft, arbeitet konzentrierter und kreativer.
+Ein verfassungsmässiger Impuls zur Förderung der Kaffeepause erinnert daran, dass Produktivität und Erholung sich nicht ausschliessen. Ein guter Espresso kann Wunder wirken – und ein bisschen Plaudern am Automaten stärkt den Teamgeist.
+Denn wer entspannt arbeitet, arbeitet besser.,
+        Address: {
+          ZipCode: 3011,
+          Locality: Bern,
+          IsComplete: true,
+          CommitteeOrPerson: Komitee Kaffeepausen-Initiative,
+          StreetOrPostOfficeBox: Kaffeestrasse 12
+        },
+        ImageId: Guid_3,
+        Wording: {
+          Html:
+<p><strong>Die Bundesverfassung wird wie folgt geändert:</strong>
+<em><strong>Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz</strong></em></p>
+<ol>
+<li>Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.</li>
+<li>Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.</li>
+<li>Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Bundesverfassung wird wie folgt geändert:**
+***Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz***
+1. Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.
+2. Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.
+3. Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.,
+          Plaintext:
+Die Bundesverfassung wird wie folgt geändert:
+Art. 110a (neu) – Förderung von Kaffeepausen am Arbeitsplatz
+Der Bund fördert eine Kultur der Entschleunigung und Erholung am Arbeitsplatz.
+Er kann Arbeitgeber ermutigen, ausreichend Zeit für Kaffeepausen und soziale Interaktion bereitzustellen.
+Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung von Erholung im Arbeitsleben zu würdigen.,
+          IsEmptyOrWhiteSpace: false
+        },
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Citizen Creator,
+          CreatedByEmail: citizen-creator@example.com
+        },
+        SubTypeId: Guid_4,
+        Description: Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative),
+        LockedFields: {
+          Wording: false,
+          Description: false,
+          CommitteeMembers: false
+        },
+        MinSignatureCount: 100000,
+        CleanupWarningSentAt: DateTimeOffset_2,
+        DomainOfInfluenceType: 1,
+        IntegritySignatureInfo: {
+          IntegritySignature: ,
+          IntegritySignatureKeyId: ,
+          IntegritySignatureVersion: 0
+        },
+        IsElectronicSubmission: true,
+        InformalReviewRequested: false,
+        GovernmentDecisionNumber: ,
+        SignatureSheetTemplateId: Guid_5,
+        MaxElectronicSignatureCount: 10000,
+        GovernmentDecisionNumberLower: ,
+        SignatureSheetTemplateGenerated: false
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: 514963638398779657,
+        CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_6
+    }
+  ]
+}

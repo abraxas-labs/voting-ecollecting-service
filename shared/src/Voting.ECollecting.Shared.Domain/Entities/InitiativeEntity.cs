@@ -2,6 +2,7 @@
 // For license information see LICENSE file
 
 using Voting.ECollecting.Shared.Domain.Enums;
+using Voting.Lib.Database.Models;
 
 namespace Voting.ECollecting.Shared.Domain.Entities;
 
@@ -9,7 +10,7 @@ public class InitiativeEntity : CollectionBaseEntity
 {
     public int MinSignatureCount { get; set; }
 
-    public string Wording { get; set; } = string.Empty;
+    public MarkdownString Wording { get; set; } = string.Empty;
 
     public Guid? SubTypeId { get; set; }
 

@@ -21,7 +21,7 @@ public enum CollectionState
     InPreparation,
 
     /// <summary>
-    /// Zurückgezogen.
+    /// Zurückgezogen (Initiative) / Nicht gestartet (Referendum).
     /// </summary>
     Withdrawn,
 

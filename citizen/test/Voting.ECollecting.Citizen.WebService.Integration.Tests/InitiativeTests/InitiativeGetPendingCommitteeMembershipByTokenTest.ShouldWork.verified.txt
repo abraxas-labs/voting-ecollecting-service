@@ -8,12 +8,23 @@
     MinSignatureCount: 6000,
     MaxElectronicSignatureCount: 3000
   },
-  Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 211 (neu) – Förderung der Frischluftzufuhr beim Menschen
-1 Der Kanton fördert den regelmässigen Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
-2 Er kann Programme und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
-3 Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+  Wording: {
+    Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 211 <sup>(neu)</sup> – Förderung der Frischluftzufuhr beim Menschen***
+1. Der Kanton fördert den *regelmässigen* Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.
+2. Er kann ~~~Programme~~~ und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.
+3. Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.,
+    Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 211 <sup>(neu)</sup> – Förderung der Frischluftzufuhr beim Menschen</strong></em></p>
+<ol>
+<li>Der Kanton fördert den <em>regelmässigen</em> Aufenthalt in der freien Natur als Beitrag zur Gesundheit und Lebensqualität.</li>
+<li>Er kann ~<del>Programme~ und Infrastrukturen unterstützen, die den Zugang zu Grün- und Erholungsräumen erleichtern.</del></li>
+<li>Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivitäten gelegentlich im Freien durchführen.</li>
+</ol>
+
+  },
   Reason:
 Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
 Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpflichtet niemanden zum Wandern, aber er signalisiert: Gesundheit, Naturverbundenheit und Achtsamkeit sind öffentliche Anliegen.

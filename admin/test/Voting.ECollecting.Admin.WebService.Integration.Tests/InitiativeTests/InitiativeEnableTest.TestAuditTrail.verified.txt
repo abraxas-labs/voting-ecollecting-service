@@ -22,12 +22,31 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           StreetOrPostOfficeBox: Feuerweg 25
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -76,12 +95,31 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           StreetOrPostOfficeBox: Feuerweg 25
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -148,12 +186,31 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           StreetOrPostOfficeBox: Feuerweg 25
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,
@@ -207,12 +264,31 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           StreetOrPostOfficeBox: Feuerweg 25
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -412,12 +488,31 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           StreetOrPostOfficeBox: Feuerweg 25
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -474,12 +569,31 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
           StreetOrPostOfficeBox: Feuerweg 25
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 224 (neu) – Förderung kantonaler Feuerstellen</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt unterstützen.</li>
+<li>Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 224 (neu) – Förderung kantonaler Feuerstellen***
+1. Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+2. Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+3. Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 224 (neu) – Förderung kantonaler Feuerstellen
-1 Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
-2 Er kann Gemeinden beim Bau und Unterhalt unterstützen.
-3 Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+Der Kanton fördert die Einrichtung sicherer Feuerstellen in Erholungsgebieten.
+Er kann Gemeinden beim Bau und Unterhalt unterstützen.
+Er achtet auf Brandsicherheit, Umweltschutz und ansprechende Gestaltung.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KVotingECollecting_c9d2e5f7-8b3e-4a6a-8d2f-3e7b9c4f8e6d_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

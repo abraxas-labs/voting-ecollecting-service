@@ -1,6 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
@@ -43,7 +44,7 @@ public class CollectionFilesService : ICollectionFilesService
         _collectionSignatureSheetGenerationService = collectionSignatureSheetGenerationService;
     }
 
-    public async Task DeleteImage(Guid collectionId)
+    public async Task<FileEntity?> DeleteImage(Guid collectionId)
     {
         await using var transaction = await _dataContext.BeginTransaction();
 
@@ -56,7 +57,7 @@ public class CollectionFilesService : ICollectionFilesService
 
         if (!collection.ImageId.HasValue)
         {
-            return;
+            throw new ValidationException("Image cannot be deleted because it is not set");
         }
 
         await _fileRepository.Query()
@@ -76,9 +77,10 @@ public class CollectionFilesService : ICollectionFilesService
         await AddFileDeletedMessage(collection, Strings.UserNotification_ImageDeleted);
 
         await transaction.CommitAsync();
+        return collection.SignatureSheetTemplate;
     }
 
-    public async Task DeleteLogo(Guid collectionId)
+    public async Task<FileEntity?> DeleteLogo(Guid collectionId)
     {
         await using var transaction = await _dataContext.BeginTransaction();
 
@@ -91,7 +93,7 @@ public class CollectionFilesService : ICollectionFilesService
 
         if (!collection.LogoId.HasValue)
         {
-            return;
+            throw new ValidationException("Logo cannot be deleted because it is not set");
         }
 
         await _fileRepository.Query()
@@ -111,6 +113,7 @@ public class CollectionFilesService : ICollectionFilesService
         await AddFileDeletedMessage(collection, Strings.UserNotification_LogoDeleted);
 
         await transaction.CommitAsync();
+        return collection.SignatureSheetTemplate;
     }
 
     public async Task<FileEntity> GetImage(Guid collectionId)
@@ -149,7 +152,7 @@ public class CollectionFilesService : ICollectionFilesService
                ?? throw new EntityNotFoundException(nameof(CollectionBaseEntity), collectionId);
     }
 
-    public async Task DeleteSignatureSheetTemplate(Guid collectionId)
+    public async Task<FileEntity> DeleteSignatureSheetTemplate(Guid collectionId)
     {
         await using var transaction = await _dataContext.BeginTransaction();
 
@@ -162,7 +165,7 @@ public class CollectionFilesService : ICollectionFilesService
 
         if (!collection.SignatureSheetTemplateId.HasValue)
         {
-            return;
+            throw new ValidationException("Signature sheet template cannot be deleted because it is not set");
         }
 
         await GenerateSignatureSheetTemplate(collection);
@@ -174,6 +177,7 @@ public class CollectionFilesService : ICollectionFilesService
         await AddFileDeletedMessage(collection, Strings.UserNotification_SignatureSheetDeleted);
 
         await transaction.CommitAsync();
+        return collection.SignatureSheetTemplate!;
     }
 
     private async Task GenerateSignatureSheetTemplate(CollectionBaseEntity collection)

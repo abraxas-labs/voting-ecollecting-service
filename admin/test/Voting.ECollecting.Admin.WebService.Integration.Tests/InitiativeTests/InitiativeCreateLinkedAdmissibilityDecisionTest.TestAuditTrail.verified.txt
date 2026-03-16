@@ -22,12 +22,31 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
           StreetOrPostOfficeBox: Buchweg 14
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 217 (neu) – Förderung öffentlicher Leseecken</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.</li>
+<li>Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 217 (neu) – Förderung öffentlicher Leseecken***
+1. Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2. Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3. Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 217 (neu) – Förderung öffentlicher Leseecken
-1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
-2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
-3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -75,12 +94,31 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
           StreetOrPostOfficeBox: Buchweg 14
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 217 (neu) – Förderung öffentlicher Leseecken</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.</li>
+<li>Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.</li>
+<li>Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 217 (neu) – Förderung öffentlicher Leseecken***
+1. Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+2. Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+3. Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 217 (neu) – Förderung öffentlicher Leseecken
-1 Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
-2 Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
-3 Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+Der Kanton fördert die Einrichtung gemütlicher Leseecken im öffentlichen Raum.
+Er kann Gemeinden und Organisationen bei der Gestaltung unterstützen.
+Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,

@@ -7,7 +7,6 @@ namespace Voting.ECollecting.Admin.Abstractions.Core.Models;
 
 public record SignatureSheetAttestationTemplateData(
     CollectionBaseEntity Collection,
-    AccessControlListDoiEntity AclDomainOfInfluence,
     DomainOfInfluenceEntity DomainOfInfluence,
     int SignatureListCount,
     IEnumerable<SignatureSheetListDataContainer> SignatureList,

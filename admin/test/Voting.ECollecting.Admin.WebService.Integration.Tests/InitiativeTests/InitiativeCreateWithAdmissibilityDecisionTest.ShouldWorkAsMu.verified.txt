@@ -2,7 +2,14 @@
   Id: Guid_1,
   DomainOfInfluenceType: Mu,
   Bfs: 3203,
-  Wording: Für mehr gerechtigkeit!,
+  MinSignatureCount: 100000,
+  MaxElectronicSignatureCount: 7000,
+  Wording: {
+    Markdown: Für mehr gerechtigkeit!,
+    Html:
+<p>Für mehr gerechtigkeit!</p>
+
+  },
   Collection: {
     Id: Guid_1,
     Description: foo bar baz,

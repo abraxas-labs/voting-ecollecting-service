@@ -2,7 +2,6 @@
 // For license information see LICENSE file
 
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
@@ -14,45 +13,53 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class InitiativeCommitteeMemberExpiryJob : IScheduledJob
 {
-    private readonly IServiceProvider _serviceProvider;
+    private readonly IDataContext _db;
+    private readonly ILogger<InitiativeCommitteeMemberExpiryJob> _logger;
+    private readonly TimeProvider _timeProvider;
+    private readonly IInitiativeCommitteeMemberRepository _repo;
+    private readonly IPermissionService _permissionService;
 
-    public InitiativeCommitteeMemberExpiryJob(IServiceProvider serviceProvider)
+    public InitiativeCommitteeMemberExpiryJob(
+        IDataContext db,
+        ILogger<InitiativeCommitteeMemberExpiryJob> logger,
+        TimeProvider timeProvider,
+        IInitiativeCommitteeMemberRepository repo,
+        IPermissionService permissionService)
     {
-        _serviceProvider = serviceProvider;
+        _db = db;
+        _logger = logger;
+        _timeProvider = timeProvider;
+        _repo = repo;
+        _permissionService = permissionService;
     }
 
     public async Task Run(CancellationToken ct)
     {
-        await using var scope = _serviceProvider.CreateAsyncScope();
-        var db = scope.ServiceProvider.GetRequiredService<IDataContext>();
-        var logger = scope.ServiceProvider.GetRequiredService<ILogger<InitiativeCommitteeMemberExpiryJob>>();
-        var timeProvider = scope.ServiceProvider.GetRequiredService<TimeProvider>();
-        var now = timeProvider.GetUtcNowDateTime();
-        var repo = scope.ServiceProvider.GetRequiredService<IInitiativeCommitteeMemberRepository>();
+        var now = _timeProvider.GetUtcNowDateTime();
 
-        scope.ServiceProvider.GetRequiredService<IPermissionService>().SetAbraxasAuthIfNotAuthenticated();
+        _permissionService.SetAbraxasAuthIfNotAuthenticated();
 
         try
         {
             // Process highest indices first, so shifting doesn't affect the indices of the remaining members
             // if there are multiple members to expire in the same initiative.
-            var membersToExpire = await db.InitiativeCommitteeMembers
+            var membersToExpire = await _db.InitiativeCommitteeMembers
                 .Where(x => x.ApprovalState == InitiativeCommitteeMemberApprovalState.Requested && x.TokenExpiry < now)
                 .OrderByDescending(x => x.SortIndex)
                 .ToListAsync(ct);
 
-            await using var transaction = await db.BeginTransaction(ct);
+            await using var transaction = await _db.BeginTransaction(ct);
 
             foreach (var member in membersToExpire)
             {
-                await repo.AuditedUpdateRange(
+                await _repo.AuditedUpdateRange(
                     q => q.Where(x => x.InitiativeId == member.InitiativeId && x.SortIndex > member.SortIndex).OrderBy(y => y.SortIndex),
                     x => --x.SortIndex);
             }
 
             var memberIds = membersToExpire.ConvertAll(t => t.Id);
 
-            var expiredCount = await repo.AuditedUpdateRange(
+            var expiredCount = await _repo.AuditedUpdateRange(
                 q => q.Where(x => memberIds.Contains(x.Id)),
                 x =>
                 {
@@ -64,16 +71,16 @@ public class InitiativeCommitteeMemberExpiryJob : IScheduledJob
 
             if (expiredCount > 0)
             {
-                logger.LogInformation("Expired {Count} initiative committee members.", expiredCount);
+                _logger.LogInformation("Expired {Count} initiative committee members.", expiredCount);
             }
             else
             {
-                logger.LogDebug("No initiative committee members expired.");
+                _logger.LogDebug("No initiative committee members expired.");
             }
         }
         catch (Exception ex)
         {
-            logger.LogError(ex, "Error while expiring initiative committee members.");
+            _logger.LogError(ex, "Error while expiring initiative committee members.");
         }
     }
 }

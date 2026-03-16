@@ -6,4 +6,4 @@ using Voting.ECollecting.Shared.Domain.Enums;
 
 namespace Voting.ECollecting.Shared.Domain.Models;
 
-public record ECollectingProtocolTemplateData(List<CollectionBaseEntity> Collections, AccessControlListDoiEntity AccessControlListDoi, string Description, DomainOfInfluenceType DomainOfInfluenceType, bool IsDecree, InitiativeSubTypeEntity? SubType = null);
+public record ECollectingProtocolTemplateData(List<CollectionBaseEntity> Collections, DomainOfInfluenceEntity DomainOfInfluence, string Description, DomainOfInfluenceType DomainOfInfluenceType, bool IsDecree, InitiativeSubTypeEntity? SubType = null);

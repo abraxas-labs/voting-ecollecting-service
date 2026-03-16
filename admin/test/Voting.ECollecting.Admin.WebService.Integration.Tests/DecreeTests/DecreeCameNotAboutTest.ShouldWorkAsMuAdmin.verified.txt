@@ -45,7 +45,7 @@
       Id: Guid_6
     },
     {
-      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      RecipientEMail: st.gallen+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
         RecipientIsCitizen: false,
@@ -56,7 +56,7 @@
       Id: Guid_7
     },
     {
-      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      RecipientEMail: st.gallen+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
         RecipientIsCitizen: false,
@@ -65,6 +65,28 @@
         CollectionType: Referendum
       },
       Id: Guid_8
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Referendum
+      },
+      Id: Guid_9
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_3,
+        CollectionType: Referendum
+      },
+      Id: Guid_10
     }
   ],
   collectionMessages: [
@@ -77,7 +99,7 @@
         CreatedByEmail: default-user@example.com,
         CreatedAt: DateTime_1
       },
-      Id: Guid_9
+      Id: Guid_11
     },
     {
       CollectionId: Guid_3,
@@ -88,7 +110,7 @@
         CreatedByEmail: default-user@example.com,
         CreatedAt: DateTime_1
       },
-      Id: Guid_10
+      Id: Guid_12
     }
   ]
 }

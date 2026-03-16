@@ -25,11 +25,11 @@ public interface ICollectionFilesService
 
     Task<FileEntity> GetSignatureSheetTemplate(Guid id, bool requireEnabledForSubmission);
 
-    Task SetSignatureSheetTemplateGenerated(Guid id, CollectionType collectionType);
+    Task<FileEntity> SetSignatureSheetTemplateGenerated(Guid id, CollectionType collectionType);
 
     Task DeleteSignatureSheetTemplate(Guid id);
 
-    Task GenerateSignatureSheetTemplatePreview(Guid id, CollectionType collectionType);
+    Task<FileEntity> GenerateSignatureSheetTemplatePreview(Guid id, CollectionType collectionType);
 
     Task<IFile> GetElectronicSignaturesProtocol(Guid collectionId, CancellationToken cancellationToken);
 }

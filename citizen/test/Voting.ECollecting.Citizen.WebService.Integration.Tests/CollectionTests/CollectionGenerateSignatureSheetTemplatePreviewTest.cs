@@ -13,6 +13,7 @@ using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Extensions;
 using Voting.ECollecting.Shared.Test.MockedData;
 using Voting.ECollecting.Shared.Test.Utils;
+using Voting.Lib.Database.Models;
 using CollectionType = Voting.ECollecting.Proto.Shared.V1.Enums.CollectionType;
 
 namespace Voting.ECollecting.Citizen.WebService.Integration.Tests.CollectionTests;
@@ -38,16 +39,16 @@ public class CollectionGenerateSignatureSheetTemplatePreviewTest : BaseGrpcTest<
             .Select(x => x.SignatureSheetTemplateId)
             .SingleAsync());
 
-        await AuthenticatedClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest());
+        var response = await AuthenticatedClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest());
+        await Verify(response).UseMethodName(nameof(ShouldWorkWithInitiative) + "_response");
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data));
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -71,20 +72,20 @@ public class CollectionGenerateSignatureSheetTemplatePreviewTest : BaseGrpcTest<
             .Select(x => x.SignatureSheetTemplateId)
             .SingleAsync());
 
-        await AuthenticatedClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest(x =>
+        var response = await AuthenticatedClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest(x =>
         {
             x.Id = ReferendumsCtStGallen.IdInPreparation;
             x.CollectionType = CollectionType.Referendum;
         }));
+        await Verify(response).UseMethodName(nameof(ShouldWorkWithReferendum) + "_response");
 
-        var file = await RunOnDb(db => db.Referendums
+        var referendum = await RunOnDb(db => db.Referendums
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == ReferendumsCtStGallen.GuidInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Referendum_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(referendum.SignatureSheetTemplate!.Content!.Data));
+        referendum.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{referendum.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -93,16 +94,16 @@ public class CollectionGenerateSignatureSheetTemplatePreviewTest : BaseGrpcTest<
     [Fact]
     public async Task ShouldWorkAsDeputy()
     {
-        await DeputyClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest());
+        var response = await DeputyClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest());
+        await Verify(response).UseMethodName(nameof(ShouldWorkAsDeputy) + "_response");
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data));
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
     }
 
     [Fact]
@@ -121,7 +122,7 @@ public class CollectionGenerateSignatureSheetTemplatePreviewTest : BaseGrpcTest<
     {
         await RunOnDb(db => db.Initiatives
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .ExecuteUpdateAsync(x => x.SetProperty(y => y.Wording, string.Empty)));
+            .ExecuteUpdateAsync(x => x.SetProperty(y => y.Wording, MarkdownString.Empty)));
         await AssertStatus(
             async () => await AuthenticatedClient.GenerateSignatureSheetTemplatePreviewAsync(NewValidRequest()),
             StatusCode.InvalidArgument);

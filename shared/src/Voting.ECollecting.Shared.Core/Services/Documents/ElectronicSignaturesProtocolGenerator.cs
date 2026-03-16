@@ -19,8 +19,9 @@ public class ElectronicSignaturesProtocolGenerator :
     public ElectronicSignaturesProtocolGenerator(
         DmDocConfig config,
         RecyclableMemoryStreamManager memoryStreamManager,
-        IDmDocService dmDoc)
-        : base(config.TemplateKeys.ElectronicSignaturesProtocol, memoryStreamManager, dmDoc)
+        IDmDocService dmDoc,
+        TimeProvider timeProvider)
+        : base(config.TemplateKeys.ElectronicSignaturesProtocol, memoryStreamManager, dmDoc, timeProvider, config)
     {
         _config = config;
     }
@@ -29,5 +30,5 @@ public class ElectronicSignaturesProtocolGenerator :
         => DataContainerBuilder.BuildProtocolDataContainer(data);
 
     protected override string BuildFileName(ECollectingProtocolTemplateData data)
-        => $"{data.Description}_{_config.ElectronicSignaturesProtocolFileName}";
+        => AppendTimestampSuffix($"{data.Description}_{_config.ElectronicSignaturesProtocolFileName}");
 }

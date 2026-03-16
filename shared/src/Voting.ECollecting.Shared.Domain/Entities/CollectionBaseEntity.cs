@@ -77,6 +77,8 @@ public class CollectionBaseEntity : IntegritySignatureEntity, IHasBfs, IHasColle
     /// </summary>
     public string? SecureIdNumber { get; set; }
 
+    public DateTime? CleanupWarningSentAt { get; set; }
+
     public CollectionPeriodState PeriodState => _periodState ?? throw new InvalidOperationException("State not initialized.");
 
     // The signature list submission end date is a defined amount of days before the collection end date.

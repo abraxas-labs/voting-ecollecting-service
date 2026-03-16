@@ -6,12 +6,23 @@
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen
-1 Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
-2 Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
-3 Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen***
+1. Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.
+2. Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.
+3. Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 101 (neu) – Förderung von Leseorten und Büchertauschplätzen</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Einrichtung gemütlicher Leseorte im öffentlichen Raum.</li>
+<li>Sie unterstützt offene Bücherschränke und Büchertauschprojekte zur Förderung der Lesekultur.</li>
+<li>Sie kann Initiativen unterstützen, die Lesen als Teil des öffentlichen Lebens stärken.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_1,
         Description: Für gemütliche Leseorte in der Stadt (Bibliothek-Initiative),
@@ -66,12 +77,23 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
       Bfs: 3203,
       MinSignatureCount: 1000,
       MaxElectronicSignatureCount: 500,
-      Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur
-1 Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
-2 Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
-3 Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
+      Wording: {
+        Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur***
+1. Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.
+2. Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.
+3. Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.,
+        Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 102 (neu) – Förderung von Wochenmärkten und Marktkultur</strong></em></p>
+<ol>
+<li>Die Stadt fördert regelmässige Wochenmärkte mit regionalen Produkten auf öffentlichen Plätzen.</li>
+<li>Sie achtet darauf, dass Märkte gut organisiert, vielfältig und für alle zugänglich sind.</li>
+<li>Sie kann Projekte unterstützen, die lokale Produzenten einbeziehen und die Marktkultur beleben.</li>
+</ol>
+
+      },
       Collection: {
         Id: Guid_2,
         Description: Für lebendige Marktplätze (Marktplatz-Initiative),

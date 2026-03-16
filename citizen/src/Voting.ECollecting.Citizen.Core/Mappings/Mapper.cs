@@ -4,7 +4,6 @@
 using Riok.Mapperly.Abstractions;
 using Voting.ECollecting.Citizen.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Entities;
-using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Models;
 using DomainOfInfluence = Voting.ECollecting.Citizen.Domain.Models.DomainOfInfluence;
 
@@ -13,7 +12,7 @@ namespace Voting.ECollecting.Citizen.Core.Mappings;
 [Mapper]
 internal static partial class Mapper
 {
-    internal static partial IEnumerable<DomainOfInfluence> MapToDomainOfInfluences(IEnumerable<AccessControlListDoiEntity> accessControlListDoiEntities);
+    internal static partial IEnumerable<DomainOfInfluence> MapToDomainOfInfluences(IEnumerable<DomainOfInfluenceEntity> dois);
 
     internal static partial List<Initiative> MapToInitiatives(IEnumerable<InitiativeEntity> initiativeEntities);
 
@@ -80,8 +79,6 @@ internal static partial class Mapper
         InitiativeCommitteeMemberEntity member,
         CollectionPermissionEntity? permission);
 
-    internal static partial IEnumerable<AclDomainOfInfluenceType> MapToAclDoiTypes(IEnumerable<DomainOfInfluenceType> doiTypes);
-
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.Residence))]
     [MapperIgnoreTarget(nameof(InitiativeCommitteeMember.UserPermissions))]
     internal static partial InitiativeCommitteeMember MapToInitiativeCommitteeMember(InitiativeCommitteeMemberEntity initiativeCommitteeMember);
@@ -89,17 +86,7 @@ internal static partial class Mapper
     internal static partial List<CollectionPermission> MapToCollectionPermissions(IEnumerable<CollectionPermissionEntity> collectionPermissionEntities);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    [MapProperty(nameof(AccessControlListDoiEntity.ECollectingInitiativeMinSignatureCount), nameof(DomainOfInfluence.InitiativeMinSignatureCount))]
-    [MapProperty(nameof(AccessControlListDoiEntity.ECollectingInitiativeMaxElectronicSignaturePercent), nameof(DomainOfInfluence.InitiativeMaxElectronicSignaturePercent))]
-    private static partial DomainOfInfluence MapToDomainOfInfluence(AccessControlListDoiEntity accessControlListDoiEntity);
-
-    [MapEnum(EnumMappingStrategy.ByName)]
-    [MapperRequiredMapping(RequiredMappingStrategy.Source)]
-    private static partial AclDomainOfInfluenceType MapToDomainOfInfluenceType(DomainOfInfluenceType aclDomainOfInfluenceType);
-
-    [MapEnum(EnumMappingStrategy.ByName)]
-    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    private static partial DomainOfInfluenceType MapToDomainOfInfluenceType(AclDomainOfInfluenceType aclDomainOfInfluenceType);
+    private static partial DomainOfInfluence MapToDomainOfInfluence(DomainOfInfluenceEntity domainOfInfluenceEntity);
 
     [MapProperty(nameof(DecreeEntity.Collections), nameof(Decree.Referendums))]
     [MapperIgnoreTarget(nameof(Initiative.UserPermissions))]

@@ -23,12 +23,10 @@ public static class ServiceCollectionExtensions
     public static IServiceCollection AddSharedCoreServices(
         this IServiceCollection services,
         UrlConfig urlConfig,
-        UserNotificationsConfig userNotificationsConfig,
         DmDocConfig dmDocConfig)
     {
         services
             .AddSingleton(urlConfig)
-            .AddSingleton(userNotificationsConfig)
             .AddSingleton(dmDocConfig)
             .AddScoped<ISignService<InitiativeEntity>, InitiativeSignService>()
             .AddScoped<ISignService<ReferendumEntity>, ReferendumSignService>()
@@ -42,7 +40,7 @@ public static class ServiceCollectionExtensions
             .AddScoped<IInitiativeCommitteeMemberService, InitiativeCommitteeMemberService>()
             .AddScoped<IOfficialJournalPublicationProtocolGenerator, OfficialJournalPublicationProtocolGenerator>()
             .AddScoped<IElectronicSignaturesProtocolGenerator, ElectronicSignaturesProtocolGenerator>()
-            .AddScoped<IAccessControlListDoiService, AccessControlListDoiService>()
+            .AddScoped<IDomainOfInfluenceService, DomainOfInfluenceService>()
             .AddSingleton<RecyclableMemoryStreamManager>();
         return services;
     }
@@ -58,13 +56,6 @@ public static class ServiceCollectionExtensions
         where T : class, IUserNotificationRepository
     {
         services.AddForwardRefScoped<IUserNotificationRepository, T>();
-        return services;
-    }
-
-    public static IServiceCollection AddAccessControlListDoiRepository<T>(this IServiceCollection services)
-        where T : class, IAccessControlListDoiRepository
-    {
-        services.AddForwardRefScoped<IAccessControlListDoiRepository, T>();
         return services;
     }
 
@@ -86,6 +77,13 @@ public static class ServiceCollectionExtensions
         where T : class, IInitiativeRepository
     {
         services.AddForwardRefScoped<IInitiativeRepository, T>();
+        return services;
+    }
+
+    public static IServiceCollection AddDomainOfInfluenceRepository<T>(this IServiceCollection services)
+        where T : class, IDomainOfInfluenceRepository
+    {
+        services.AddForwardRefScoped<IDomainOfInfluenceRepository, T>();
         return services;
     }
 

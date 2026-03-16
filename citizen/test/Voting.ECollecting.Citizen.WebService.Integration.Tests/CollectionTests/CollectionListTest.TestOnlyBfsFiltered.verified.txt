@@ -155,12 +155,23 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität
-1 Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
-2 Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
-3 Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität***
+1. Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.
+2. Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.
+3. Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 94 (neu) – Förderung der Stadtbegrünung und Biodiversität</strong></em></p>
+<ol>
+<li>Die Stadt fördert die Begrünung und Blütenvielfalt im öffentlichen Raum sowie auf städtischen Liegenschaften.</li>
+<li>Sie achtet darauf, dass Grünflächen, Verkehrsinseln und Plätze insektenfreundlich gestaltet und gepflegt werden.</li>
+<li>Sie kann Projekte unterstützen, die das Bewusstsein für Natur im Siedlungsraum und die Freude an Pflanzen und Tieren fördern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_8,
             Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
@@ -217,12 +228,23 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
           Bfs: 3203,
           MinSignatureCount: 1000,
           MaxElectronicSignatureCount: 500,
-          Wording:
-Die Gemeindeordnung wird wie folgt geändert:
-Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten
-1 Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
-2 Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
-3 Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
+          Wording: {
+            Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten***
+1. Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.
+2. Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.
+3. Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.,
+            Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 93 (neu) – Förderung öffentlicher Sitzgelegenheiten</strong></em></p>
+<ol>
+<li>Die Stadt sorgt für ausreichend, gut platzierte und gepflegte Sitzgelegenheiten im öffentlichen Raum.</li>
+<li>Sie berücksichtigt dabei Standorte mit Aussicht, Ruhe oder besonderer Aufenthaltsqualität.</li>
+<li>Sie kann Patenschaften oder kreative Projekte zur Gestaltung von Sitzgelegenheiten fördern.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_11,
             Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),

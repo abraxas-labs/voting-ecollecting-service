@@ -22,12 +22,31 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
           StreetOrPostOfficeBox: Festweg 17
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 223 (neu) – Förderung kantonaler Volksfeste</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.</li>
+<li>Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 223 (neu) – Förderung kantonaler Volksfeste***
+1. Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2. Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3. Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 223 (neu) – Förderung kantonaler Volksfeste
-1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
-2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
-3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -76,12 +95,31 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
           StreetOrPostOfficeBox: Festweg 17
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 223 (neu) – Förderung kantonaler Volksfeste</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.</li>
+<li>Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 223 (neu) – Förderung kantonaler Volksfeste***
+1. Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+2. Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+3. Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 223 (neu) – Förderung kantonaler Volksfeste
-1 Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
-2 Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
-3 Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+Der Kanton fördert die Organisation regelmässiger Volksfeste im gesamten Kantonsgebiet.
+Er kann Gemeinden und Veranstalter bei der Durchführung unterstützen.
+Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,

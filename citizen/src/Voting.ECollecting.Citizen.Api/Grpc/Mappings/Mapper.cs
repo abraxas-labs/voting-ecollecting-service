@@ -10,6 +10,7 @@ using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.Lib.Database.Models;
 using DomainModels = Voting.ECollecting.Citizen.Domain.Models;
+using MarkdownString = Voting.Lib.Database.Models.MarkdownString;
 using ProtoCitizenModels = Voting.ECollecting.Proto.Citizen.Services.V1.Models;
 using ProtoSharedEnums = Voting.ECollecting.Proto.Shared.V1.Enums;
 using SharedDomainModels = Voting.ECollecting.Shared.Domain.Models;
@@ -105,6 +106,12 @@ internal static partial class Mapper
 
     internal static partial SharedDomainModels.AccessibilityMessage MapToAccessibilityMessage(SendAccessibilityMessageRequest request);
 
+    internal static GenerateSignatureSheetTemplatePreviewResponse MapToGenerateSignatureSheetTemplatePreviewResponse(FileEntity file)
+        => new GenerateSignatureSheetTemplatePreviewResponse { GeneratedSignatureSheetTemplate = MapToFile(file) };
+
+    internal static SetSignatureSheetTemplateGeneratedResponse MapToSetSignatureSheetTemplateGeneratedResponse(FileEntity file)
+        => new SetSignatureSheetTemplateGeneratedResponse { GeneratedSignatureSheetTemplate = MapToFile(file) };
+
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapProperty(nameof(@InitiativeCommitteeMemberEntity.Permission.Role), nameof(ProtoCitizenModels.InitiativeCommitteeMember.Role))]
     private static partial ProtoCitizenModels.InitiativeCommitteeMember MapToInitiativeCommitteeMember(SharedDomainModels.InitiativeCommitteeMember member);
@@ -135,7 +142,7 @@ internal static partial class Mapper
     private static partial SharedDomainModels.NullableCollectionCount MapToNullableCollectionCount(CollectionCountEntity source);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    private static partial ProtoCitizenModels.CollectionFile MapToFile(FileEntity file);
+    private static partial SharedProtoModels.File MapToFile(FileEntity file);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     [MapperIgnoreTarget(nameof(ProtoCitizenModels.Collection.UserPermissions))]
@@ -150,9 +157,6 @@ internal static partial class Mapper
     private static partial IEnumerable<ProtoCitizenModels.DomainOfInfluence> MapToDomainOfInfluences(
         IEnumerable<DomainModels.DomainOfInfluence> domainOfInfluences);
 
-    [MapperIgnoreTarget(nameof(ProtoCitizenModels.DomainOfInfluence.InitiativeNumberOfMembersCommittee))]
-    [MapperIgnoreTarget(nameof(ProtoCitizenModels.DomainOfInfluence.ReferendumMinSignatureCount))]
-    [MapperIgnoreTarget(nameof(ProtoCitizenModels.DomainOfInfluence.ReferendumMaxElectronicSignaturePercent))]
     private static partial ProtoCitizenModels.DomainOfInfluence MapToDomainOfInfluence(DomainModels.DomainOfInfluence domainOfInfluence);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
@@ -232,4 +236,7 @@ internal static partial class Mapper
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial SharedProtoModels.Date MapToDate(DateOnly date);
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial SharedProtoModels.MarkdownString MapMarkdownString(MarkdownString mdStr);
 }

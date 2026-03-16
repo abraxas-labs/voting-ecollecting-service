@@ -28,8 +28,8 @@ public class CollectionRestoreSignatureSheetTest : BaseGrpcTest<CollectionSignat
         ReferendumsMuStGallen.GuidSignatureSheetsSubmitted,
         Bfs.MunicipalityStGallen);
 
-    private static readonly Guid _sheetCtSgId = CollectionSignatureSheets.BuildGuid(_municipalityCtSgId, 8);
-    private static readonly Guid _sheetMuSgId = CollectionSignatureSheets.BuildGuid(_municipalityMuSgId, 8);
+    private static readonly Guid _sheetCtSgId = CollectionSignatureSheets.BuildGuid(_municipalityCtSgId, 5);
+    private static readonly Guid _sheetMuSgId = CollectionSignatureSheets.BuildGuid(_municipalityMuSgId, 5);
 
     public CollectionRestoreSignatureSheetTest(TestApplicationFactory factory)
         : base(factory)
@@ -50,7 +50,25 @@ public class CollectionRestoreSignatureSheetTest : BaseGrpcTest<CollectionSignat
     [Fact]
     public async Task ShouldWork()
     {
+        var prevCount = await RunOnDb(db => db.CollectionCounts
+            .SingleAsync(x => x.CollectionId == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
+        var prevCollectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
+            .SingleAsync(x => x.Id == _municipalityCtSgId));
+        var prevSheet = await RunOnDb(db => db.CollectionSignatureSheets
+            .SingleAsync(x => x.Id == _sheetCtSgId));
+
         var response = await CtSgStichprobenverwalterClient.RestoreAsync(NewValidRequest());
+
+        var collectionCount = await RunOnDb(db => db.CollectionCounts
+            .SingleAsync(x => x.CollectionId == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
+        var collectionMunicipality = await RunOnDb(db => db.CollectionMunicipalities
+            .SingleAsync(x => x.Id == _municipalityCtSgId));
+
+        collectionCount.TotalCitizenCount.Should().Be(prevCount.TotalCitizenCount + prevSheet.Count.Valid);
+        collectionCount.ElectronicCitizenCount.Should().Be(prevCount.ElectronicCitizenCount);
+        collectionMunicipality.PhysicalCount.Valid.Should().Be(prevCollectionMunicipality.PhysicalCount.Valid + prevSheet.Count.Valid);
+        collectionMunicipality.PhysicalCount.Invalid.Should().Be(prevCollectionMunicipality.PhysicalCount.Invalid + prevSheet.Count.Invalid);
+
         await Verify(response);
 
         var sheet = await RunOnDb(db => db.CollectionSignatureSheets

@@ -33,7 +33,7 @@ public class InitiativeController : ControllerBase
         Guid fileId)
     {
         var file = await _initiativeCommitteeService.GetCommitteeList(initiativeId, fileId);
-        return new FileContentResult(file.Content!.Data, file.ContentType);
+        return File(file.Content!.Data, file.ContentType, file.Name);
     }
 
     [HttpGet("documents")]

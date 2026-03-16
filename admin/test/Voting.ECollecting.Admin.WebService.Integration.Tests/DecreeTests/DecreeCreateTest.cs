@@ -2,14 +2,17 @@
 // For license information see LICENSE file
 
 using Abraxas.Voting.Ecollecting.Shared.V1.Models;
+using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
+using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.DecreeTests;
@@ -24,7 +27,7 @@ public class DecreeCreateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Acl);
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.DomainOfInfluences);
     }
 
     [Fact]
@@ -34,6 +37,18 @@ public class DecreeCreateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
         var decree = await RunOnDb(db => db.Decrees.IgnoreQueryFilters().FirstAsync(x => x.Id == Guid.Parse(response.Id)));
         decree.SetPeriodState(GetService<TimeProvider>().GetUtcTodayDateOnly());
         await Verify(new { response, decree });
+    }
+
+    [Fact]
+    public async Task ReferendumMaxElectronicSignaturePercentShouldWork()
+    {
+        await ModifyDbEntities<DomainOfInfluenceEntity>(
+            x => x.Bfs == Bfs.CantonStGallen,
+            x => x.ReferendumMaxElectronicSignaturePercent = 40);
+
+        var response = await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest());
+        var decree = await RunOnDb(db => db.Decrees.IgnoreQueryFilters().FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        decree.MaxElectronicSignatureCount.Should().Be(20_000);
     }
 
     [Fact]

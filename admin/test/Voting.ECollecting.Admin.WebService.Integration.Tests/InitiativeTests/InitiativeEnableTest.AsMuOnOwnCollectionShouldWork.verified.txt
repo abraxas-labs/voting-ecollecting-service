@@ -23,7 +23,7 @@
       Id: Guid_3
     },
     {
-      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      RecipientEMail: st.gallen+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
         RecipientIsCitizen: false,
@@ -32,6 +32,17 @@
         CollectionType: Initiative
       },
       Id: Guid_4
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für mehr Nachbarschaftsfeste (Nachbarschaftsfeste-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: StateChanged,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_5
     }
   ],
   collectionMessage: {
@@ -43,16 +54,35 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_6
   },
   initiative: {
     MinSignatureCount: 1000,
-    Wording:
+    Wording: {
+      Markdown:
+**Die Gemeindeordnung wird wie folgt geändert:**
+***Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen***
+1. Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
+2. Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
+3. Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
+      IsEmpty: false,
+      IsEmptyOrWhiteSpace: false,
+      Html:
+<p><strong>Die Gemeindeordnung wird wie folgt geändert:</strong>
+<em><strong>Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen</strong></em></p>
+<ol>
+<li>Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.</li>
+<li>Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.</li>
+<li>Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.</li>
+</ol>
+,
+      Plaintext:
 Die Gemeindeordnung wird wie folgt geändert:
 Art. 108 (neu) – Förderung von Nachbarschaftsfesten und Quartierveranstaltungen
-1 Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
-2 Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
-3 Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.,
+Die Stadt unterstützt Nachbarschaftsfeste und Quartierveranstaltungen organisatorisch und finanziell.
+Sie vereinfacht Bewilligungsverfahren für Strassenfeste und stellt bei Bedarf Infrastruktur bereit.
+Sie kann Initiativen fördern, die Nachbarschaft und soziales Miteinander im Quartier stärken.
+    },
     GovernmentDecisionNumber: MUSG-2025-005,
     AdmissibilityDecisionState: Valid,
     LockedFields: {
@@ -69,10 +99,10 @@ In vielen Quartieren kennen sich die Menschen kaum noch – Nachbarschaftsfeste 
 Ein Nachbarschaftsfest ist mehr als Grillieren und Musik – es ist ein Ort für Kennenlernen, Austausch und Zusammenhalt. Mit einfachen Mitteln entsteht ein Stück Heimat vor der Haustür.
 Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassenfeste, die von Anwohnern selbst organisiert werden. Ein bisschen Feiern, Plaudern und Nachbarschaft leben – das stärkt den Zusammenhalt in der Stadt.,
     Link: https://www.stadt.sg.ch/,
-    LogoId: Guid_6,
-    ImageId: Guid_7,
+    LogoId: Guid_7,
+    ImageId: Guid_8,
     SignatureSheetTemplateGenerated: true,
-    SignatureSheetTemplateId: Guid_8,
+    SignatureSheetTemplateId: Guid_9,
     State: EnabledForCollection,
     Address: {
       CommitteeOrPerson: Komitee Gesundheitsinitiative,
@@ -97,7 +127,7 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
           CreatedByEmail: default-user@example.com,
           CreatedAt: DateTime_1
         },
-        Id: Guid_9
+        Id: Guid_10
       }
     ],
     EncryptionKeyId: KVotingECollecting_b2c3d4e5-f6a7-8901-bcde-2345678901fa_Encryption12,

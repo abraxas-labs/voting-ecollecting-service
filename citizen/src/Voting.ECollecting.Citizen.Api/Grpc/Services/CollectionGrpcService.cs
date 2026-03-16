@@ -123,22 +123,22 @@ public class CollectionGrpcService : CollectionService.CollectionServiceBase
         return ProtobufEmpty.Instance;
     }
 
-    public override async Task<Empty> SetSignatureSheetTemplateGenerated(
+    public override async Task<SetSignatureSheetTemplateGeneratedResponse> SetSignatureSheetTemplateGenerated(
         SetSignatureSheetTemplateGeneratedRequest request,
         ServerCallContext context)
     {
         var collectionType = Mapper.MapCollectionType(request.CollectionType);
-        await _collectionFilesService.SetSignatureSheetTemplateGenerated(GuidParser.Parse(request.Id), collectionType);
-        return ProtobufEmpty.Instance;
+        var generatedSignatureSheetTemplate = await _collectionFilesService.SetSignatureSheetTemplateGenerated(GuidParser.Parse(request.Id), collectionType);
+        return Mapper.MapToSetSignatureSheetTemplateGeneratedResponse(generatedSignatureSheetTemplate);
     }
 
-    public override async Task<Empty> GenerateSignatureSheetTemplatePreview(
+    public override async Task<GenerateSignatureSheetTemplatePreviewResponse> GenerateSignatureSheetTemplatePreview(
         GenerateSignatureSheetTemplatePreviewRequest request,
         ServerCallContext context)
     {
         var collectionType = Mapper.MapCollectionType(request.CollectionType);
-        await _collectionFilesService.GenerateSignatureSheetTemplatePreview(GuidParser.Parse(request.Id), collectionType);
-        return ProtobufEmpty.Instance;
+        var generatedSignatureSheetTemplate = await _collectionFilesService.GenerateSignatureSheetTemplatePreview(GuidParser.Parse(request.Id), collectionType);
+        return Mapper.MapToGenerateSignatureSheetTemplatePreviewResponse(generatedSignatureSheetTemplate);
     }
 
     public override async Task<Empty> DeleteSignatureSheetTemplate(

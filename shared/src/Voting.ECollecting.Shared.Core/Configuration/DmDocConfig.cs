@@ -9,13 +9,15 @@ public class DmDocConfig : Lib.DmDoc.Configuration.DmDocConfig
 
     public DmDocTemplateKeysConfig TemplateKeys { get; set; } = new();
 
-    public string SignatureSheetTemplateFileName { get; set; } = "Unterschriftenliste.pdf";
+    public string SignatureSheetTemplateFileName { get; set; } = "Unterschriftenliste_{0}.pdf";
 
-    public string CommitteeListTemplateFileName { get; set; } = "Komiteeliste.pdf";
+    public string CommitteeListTemplateFileName { get; set; } = "Formular_Komiteemitglieder.pdf";
 
-    public string SignatureSheetAttestationFileName { get; set; } = "Bescheinigung.pdf";
+    public string SignatureSheetAttestationFileName { get; set; } = "Begleitschreiben_Unterschriftenlisten.pdf";
 
     public string OfficialJournalPublicationProtocolFileName { get; set; } = "Amtsblattpublikation.pdf";
 
     public string ElectronicSignaturesProtocolFileName { get; set; } = "Elektronische_Unterschriften.pdf";
+
+    public string FileNameSuffixDateFormat { get; set; } = "_yyyyMMdd-HHmm";
 }

@@ -7,5 +7,5 @@ namespace Voting.ECollecting.Admin.Abstractions.Adapter.VotingBasis;
 
 public interface IVotingBasisAdapter
 {
-    Task<IEnumerable<AccessControlListDoiEntity>> GetAccessControlList(Guid? importStatisticId);
+    Task<IEnumerable<DomainOfInfluenceEntity>> GetAccessControlList(Guid? importStatisticId);
 }

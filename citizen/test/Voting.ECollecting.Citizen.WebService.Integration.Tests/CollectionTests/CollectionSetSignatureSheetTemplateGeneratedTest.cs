@@ -38,11 +38,12 @@ public class CollectionSetSignatureSheetTemplateGeneratedTest : BaseGrpcTest<Col
             .Select(x => x.SignatureSheetTemplate!.Id)
             .SingleAsync());
 
-        await AuthenticatedClient.SetSignatureSheetTemplateGeneratedAsync(new SetSignatureSheetTemplateGeneratedRequest
+        var response = await AuthenticatedClient.SetSignatureSheetTemplateGeneratedAsync(new SetSignatureSheetTemplateGeneratedRequest
         {
             Id = InitiativesCtStGallen.IdLegislativeInPreparation,
             CollectionType = CollectionType.Initiative,
         });
+        await Verify(response);
 
         var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
@@ -79,11 +80,12 @@ public class CollectionSetSignatureSheetTemplateGeneratedTest : BaseGrpcTest<Col
             .Select(x => x.SignatureSheetTemplate!.Id)
             .SingleAsync());
 
-        await DeputyClient.SetSignatureSheetTemplateGeneratedAsync(new SetSignatureSheetTemplateGeneratedRequest
+        var response = await DeputyClient.SetSignatureSheetTemplateGeneratedAsync(new SetSignatureSheetTemplateGeneratedRequest
         {
             Id = InitiativesCtStGallen.IdLegislativeInPreparation,
             CollectionType = CollectionType.Initiative,
         });
+        await Verify(response);
 
         var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
@@ -165,11 +167,12 @@ public class CollectionSetSignatureSheetTemplateGeneratedTest : BaseGrpcTest<Col
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
             .ExecuteUpdateAsync(x => x.SetProperty(y => y.State, CollectionState.EnabledForCollection)));
 
-        await AuthenticatedClient.SetSignatureSheetTemplateGeneratedAsync(new SetSignatureSheetTemplateGeneratedRequest
+        var response = await AuthenticatedClient.SetSignatureSheetTemplateGeneratedAsync(new SetSignatureSheetTemplateGeneratedRequest
         {
             Id = InitiativesCtStGallen.IdLegislativeInPreparation,
             CollectionType = CollectionType.Initiative,
         });
+        await Verify(response).UseMethodName(nameof(ShouldGenerateSignatureSheetWhenEnabledForCollection) + "_response");
 
         var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)

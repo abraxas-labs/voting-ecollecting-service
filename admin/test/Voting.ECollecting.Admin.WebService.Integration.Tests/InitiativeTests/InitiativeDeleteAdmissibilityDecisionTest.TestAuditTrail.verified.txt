@@ -22,7 +22,13 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
           StreetOrPostOfficeBox: Waldweg 15
         },
         ImageId: Guid_3,
-        Wording: ,
+        Wording: {
+          Html: ,
+          IsEmpty: true,
+          Markdown: ,
+          Plaintext: ,
+          IsEmptyOrWhiteSpace: true
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: unrelated-admin,

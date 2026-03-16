@@ -18,8 +18,9 @@ public class SignatureSheetAttestationGenerator : PdfGenerator<SignatureSheetAtt
     public SignatureSheetAttestationGenerator(
         DmDocConfig config,
         RecyclableMemoryStreamManager memoryStreamManager,
-        IDmDocService dmDoc)
-        : base(config.TemplateKeys.SignatureSheetAttestation, memoryStreamManager, dmDoc)
+        IDmDocService dmDoc,
+        TimeProvider timeProvider)
+        : base(config.TemplateKeys.SignatureSheetAttestation, memoryStreamManager, dmDoc, timeProvider, config)
     {
         _config = config;
     }
@@ -28,5 +29,5 @@ public class SignatureSheetAttestationGenerator : PdfGenerator<SignatureSheetAtt
         => TemplateBagMapper.MapToSignatureSheetAttestationTemplateBag(entity);
 
     protected override string BuildFileName(SignatureSheetAttestationTemplateData entity)
-        => _config.SignatureSheetAttestationFileName;
+        => AppendTimestampSuffix(_config.SignatureSheetAttestationFileName);
 }

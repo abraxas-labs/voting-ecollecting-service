@@ -5,7 +5,6 @@ using Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Shared.Domain.Entities;
-using IAccessControlListDoiRepository = Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories.IAccessControlListDoiRepository;
 
 namespace Voting.ECollecting.Citizen.Core.Services.Documents;
 
@@ -15,14 +14,14 @@ public class CollectionSignatureSheetGenerationService : Voting.ECollecting.Shar
     private readonly IReferendumRepository _referendumRepository;
 
     public CollectionSignatureSheetGenerationService(
-        IAccessControlListDoiRepository accessControlListDoiRepository,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
         IInitiativeCommitteeMemberService initiativeCommitteeService,
         IInitiativeSignatureSheetTemplateGenerator initiativeSignatureSheetTemplateGenerator,
         IReferendumSignatureSheetTemplateGenerator referendumSignatureSheetTemplateGenerator,
         IInitiativeRepository initiativeRepository,
         IReferendumRepository referendumRepository)
         : base(
-            accessControlListDoiRepository,
+            domainOfInfluenceRepository,
             initiativeCommitteeService,
             initiativeSignatureSheetTemplateGenerator,
             referendumSignatureSheetTemplateGenerator)

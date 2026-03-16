@@ -1,11 +1,4 @@
 ﻿{
-  CollectionCount: {
-    Id: Guid_1,
-    CollectionId: Guid_2,
-    TotalCitizenCount: 4074,
-    HasTotalCitizenCount: true,
-    ElectronicCitizenCount: 61
-  },
   UserPermissions: {
     CanEdit: false,
     CanDelete: false,

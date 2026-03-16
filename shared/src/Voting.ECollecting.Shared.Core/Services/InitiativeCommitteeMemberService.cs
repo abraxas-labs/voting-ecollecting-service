@@ -10,7 +10,9 @@ namespace Voting.ECollecting.Shared.Core.Services;
 
 public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberService
 {
-    public InitiativeCommitteeMember EnrichCommitteeMember(InitiativeCommitteeMemberEntity memberEntity, Dictionary<string, AccessControlListDoiEntity> domainOfInfluencesByBfs)
+    public InitiativeCommitteeMember EnrichCommitteeMember(
+        InitiativeCommitteeMemberEntity memberEntity,
+        Dictionary<string, DomainOfInfluenceEntity> domainOfInfluencesByBfs)
     {
         var member = Mapper.MapToInitiativeCommitteeMember(memberEntity);
         member.Residence = domainOfInfluencesByBfs.GetValueOrDefault(memberEntity.Bfs)?.Name ?? string.Empty;

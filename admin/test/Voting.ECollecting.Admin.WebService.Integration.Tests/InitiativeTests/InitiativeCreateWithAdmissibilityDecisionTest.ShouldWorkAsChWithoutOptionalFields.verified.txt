@@ -2,7 +2,12 @@
   Id: Guid_1,
   DomainOfInfluenceType: Ch,
   Bfs: 1,
-  Wording: ,
+  MinSignatureCount: 100000,
+  MaxElectronicSignatureCount: 50000,
+  Wording: {
+    Markdown: ,
+    Html: 
+  },
   Collection: {
     Id: Guid_1,
     Description: foo bar baz,
@@ -39,6 +44,14 @@
       CanEditGeneralInformation: true,
       CanReturnForCorrection: false
     }
+  },
+  SubType: {
+    Id: Guid_2,
+    Bfs: ,
+    DomainOfInfluenceType: Ch,
+    Description: Volksinitiative,
+    MinSignatureCount: 100000,
+    MaxElectronicSignatureCount: 50000
   },
   GovernmentDecisionNumber: 12345,
   AdmissibilityDecisionState: Open,

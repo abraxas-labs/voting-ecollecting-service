@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Voting.ECollecting.Citizen.Abstractions.Core.Services;
 using Voting.ECollecting.Citizen.Api.Http.Responses;
+using Voting.Lib.Rest.Files;
 
 namespace Voting.ECollecting.Citizen.Api.Http.Controllers;
 
@@ -37,7 +38,7 @@ public class InitiativeController : ControllerBase
     public async Task<FileResult> GetCommitteeListTemplate(Guid initiativeId, CancellationToken ct)
     {
         var file = await _initiativeCommitteeListService.GetCommitteeListTemplate(initiativeId, ct);
-        return new FileStreamResult(file, "application/pdf");
+        return SingleFileResult.Create(file, ct);
     }
 
     [AllowAnonymous]
@@ -66,7 +67,7 @@ public class InitiativeController : ControllerBase
         CancellationToken ct)
     {
         var file = await _initiativeCommitteeListService.GetCommitteeListTemplateForMemberByToken(initiativeId, token, ct);
-        return new FileStreamResult(file, "application/pdf");
+        return SingleFileResult.Create(file, ct);
     }
 
     [HttpGet("committee-lists/{fileId:guid}")]
@@ -75,6 +76,6 @@ public class InitiativeController : ControllerBase
         Guid fileId)
     {
         var file = await _initiativeCommitteeListService.GetCommitteeList(initiativeId, fileId);
-        return new FileContentResult(file.Content!.Data, file.ContentType);
+        return File(file.Content!.Data, file.ContentType, file.Name);
     }
 }

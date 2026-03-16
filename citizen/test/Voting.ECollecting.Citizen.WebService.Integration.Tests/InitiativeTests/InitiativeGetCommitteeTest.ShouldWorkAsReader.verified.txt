@@ -583,5 +583,5 @@
   ApprovedMembersCountOk: true,
   ApprovedMembersCount: 15,
   TotalMembersCount: 22,
-  RequiredApprovedMembersCount: 3
+  RequiredApprovedMembersCount: 15
 }

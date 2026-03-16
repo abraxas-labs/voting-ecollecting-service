@@ -69,6 +69,19 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     }
 
     [Fact]
+    public async Task ReferendumShouldInheritMaxElectronicSignatureCountFromDecree()
+    {
+        var decreeId = DecreesCtStGallen.IdFutureNoReferendum;
+        await ModifyDbEntities<DecreeEntity>(
+            x => x.Id == Guid.Parse(decreeId),
+            x => x.MaxElectronicSignatureCount = 9999);
+
+        var response = await _client.CreateAsync(NewValidRequest(x => x.DecreeId = decreeId));
+        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        referendum.MaxElectronicSignatureCount.Should().Be(9999);
+    }
+
+    [Fact]
     public async Task MoreThanOneReferendumOnDecreePerUserShouldThrow()
     {
         await _client.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithoutReferendum));

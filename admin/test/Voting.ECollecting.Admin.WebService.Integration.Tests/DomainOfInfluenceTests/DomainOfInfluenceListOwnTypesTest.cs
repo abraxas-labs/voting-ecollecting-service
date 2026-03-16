@@ -20,7 +20,7 @@ public class DomainOfInfluenceListOwnTypesTest : BaseGrpcTest<DomainOfInfluenceS
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Acl);
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.DomainOfInfluences);
     }
 
     [Fact]

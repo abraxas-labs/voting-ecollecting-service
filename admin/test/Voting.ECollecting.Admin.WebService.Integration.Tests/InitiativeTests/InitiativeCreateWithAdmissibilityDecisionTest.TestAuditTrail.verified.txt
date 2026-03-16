@@ -17,7 +17,15 @@
           CommitteeOrPerson: Hans Muster,
           StreetOrPostOfficeBox: Postfach 12
         },
-        Wording: Für mehr gerechtigkeit!,
+        Wording: {
+          Html:
+<p>Für mehr gerechtigkeit!</p>
+,
+          IsEmpty: false,
+          Markdown: Für mehr gerechtigkeit!,
+          Plaintext: Für mehr gerechtigkeit!,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -31,7 +39,7 @@
           CommitteeMembers: false
         },
         SecureIdNumber: Scrubbed,
-        MinSignatureCount: 0,
+        MinSignatureCount: 100000,
         DomainOfInfluenceType: 3,
         IntegritySignatureInfo: {
           IntegritySignature: ,
@@ -42,6 +50,7 @@
         InformalReviewRequested: false,
         GovernmentDecisionNumber: 12345,
         AdmissibilityDecisionState: 1,
+        MaxElectronicSignatureCount: 7000,
         SignatureSheetTemplateGenerated: false
       },
       SourceEntityId: Guid_1,

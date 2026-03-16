@@ -5,4 +5,4 @@ using Voting.ECollecting.Shared.Domain.Entities;
 
 namespace Voting.ECollecting.Admin.Domain.Models;
 
-public record SubmitMunicipalitySignatureSheetsResult(CollectionMunicipalityEntity Municipality, CollectionCountEntity CollectionCount);
+public record SubmitMunicipalitySignatureSheetsResult(CollectionMunicipalityEntity Municipality);

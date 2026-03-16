@@ -13,7 +13,7 @@ public class UpdateDomainOfInfluenceRequestTest : ProtoValidatorBaseTest<UpdateD
     {
         yield return NewValidRequest();
         yield return NewValidRequest(x => x.Bfs = RandomStringUtil.GenerateAlphabetic(8));
-        yield return NewValidRequest(x => x.Name = RandomStringUtil.GenerateSimpleSingleLineText(100));
+        yield return NewValidRequest(x => x.AddressName = RandomStringUtil.GenerateSimpleSingleLineText(100));
         yield return NewValidRequest(x => x.Street = RandomStringUtil.GenerateSimpleSingleLineText(150));
         yield return NewValidRequest(x => x.ZipCode = RandomStringUtil.GenerateSimpleSingleLineText(15));
         yield return NewValidRequest(x => x.Locality = RandomStringUtil.GenerateSimpleSingleLineText(150));
@@ -27,7 +27,7 @@ public class UpdateDomainOfInfluenceRequestTest : ProtoValidatorBaseTest<UpdateD
     {
         yield return NewValidRequest(x => x.Bfs = string.Empty);
         yield return NewValidRequest(x => x.Bfs = RandomStringUtil.GenerateAlphabetic(9));
-        yield return NewValidRequest(x => x.Name = RandomStringUtil.GenerateSimpleSingleLineText(101));
+        yield return NewValidRequest(x => x.AddressName = RandomStringUtil.GenerateSimpleSingleLineText(101));
         yield return NewValidRequest(x => x.Street = RandomStringUtil.GenerateSimpleSingleLineText(151));
         yield return NewValidRequest(x => x.ZipCode = RandomStringUtil.GenerateSimpleSingleLineText(16));
         yield return NewValidRequest(x => x.Locality = RandomStringUtil.GenerateSimpleSingleLineText(151));
@@ -40,7 +40,7 @@ public class UpdateDomainOfInfluenceRequestTest : ProtoValidatorBaseTest<UpdateD
     {
         var request = new UpdateDomainOfInfluenceRequest
         {
-            Name = "New Name",
+            AddressName = "New Name",
             Bfs = "1234",
             Email = "hans@example.com",
             Locality = "foo",

@@ -21,7 +21,7 @@
       Id: Guid_3
     },
     {
-      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      RecipientEMail: st.gallen+staatskanzlei2@abraxas.ch,
       TemplateBag: {
         CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: false,
@@ -29,6 +29,16 @@
         CollectionType: Initiative
       },
       Id: Guid_4
+    },
+    {
+      RecipientEMail: st.gallen+staatskanzlei@abraxas.ch,
+      TemplateBag: {
+        CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
+        RecipientIsCitizen: false,
+        CollectionId: Guid_1,
+        CollectionType: Initiative
+      },
+      Id: Guid_5
     }
   ],
   collectionMessage: {
@@ -40,6 +50,6 @@
       CreatedByEmail: default-user@example.com,
       CreatedAt: DateTime_1
     },
-    Id: Guid_5
+    Id: Guid_6
   }
 }

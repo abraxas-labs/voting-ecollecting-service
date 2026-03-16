@@ -37,7 +37,8 @@ public class CollectionDeleteLogoTest : BaseGrpcTest<CollectionService.Collectio
             .Select(x => x.Logo!.Id)
             .SingleAsync());
 
-        await CtSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest());
+        var response = await CtSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest());
+        response.GeneratedSignatureSheetTemplate.Should().BeNull();
 
         var collection = await RunOnDb(db => db.Collections
             .Include(x => x.Logo)
@@ -81,16 +82,16 @@ public class CollectionDeleteLogoTest : BaseGrpcTest<CollectionService.Collectio
             .Select(x => x.SignatureSheetTemplateId)
             .SingleAsync());
 
-        await CtSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest());
+        var response = await CtSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest());
+        await Verify(response).UseMethodName(nameof(ShouldGenerateSignatureSheet) + "_response");
 
-        var file = await RunOnDb(db => db.Initiatives
+        var initiative = await RunOnDb(db => db.Initiatives
             .Include(x => x.SignatureSheetTemplate!.Content)
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
-            .Select(x => x.SignatureSheetTemplate)
             .SingleAsync());
 
-        await VerifyJson(Encoding.UTF8.GetString(file!.Content!.Data));
-        file.Name.Should().Be("Initiative_Unterschriftenliste.pdf");
+        await VerifyJson(Encoding.UTF8.GetString(initiative.SignatureSheetTemplate!.Content!.Data));
+        initiative.SignatureSheetTemplate.Name.Should().Be($"Unterschriftenliste_{initiative.Description}.pdf");
 
         var oldFileExists = await RunOnDb(db => db.Files.AnyAsync(x => x.Id == oldFileId));
         oldFileExists.Should().BeFalse();
@@ -103,7 +104,8 @@ public class CollectionDeleteLogoTest : BaseGrpcTest<CollectionService.Collectio
             .Select(x => x.Logo!.Id)
             .SingleAsync());
 
-        await MuSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest(x => x.CollectionId = InitiativesMuStGallen.IdInPreparation));
+        var response = await MuSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest(x => x.CollectionId = InitiativesMuStGallen.IdInPreparation));
+        response.GeneratedSignatureSheetTemplate.Should().BeNull();
 
         var collection = await RunOnDb(db => db.Collections
             .Include(x => x.Logo)
@@ -159,6 +161,19 @@ public class CollectionDeleteLogoTest : BaseGrpcTest<CollectionService.Collectio
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest(x => x.CollectionId = "fffb515c-a261-482f-bd7d-7d6c5f419567")),
             StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task NoLogoShouldFail()
+    {
+        await ModifyDbEntities<InitiativeEntity>(
+            x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation,
+            x => x.LogoId = null);
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.DeleteLogoAsync(NewValidRequest()),
+            StatusCode.InvalidArgument,
+            "Logo cannot be deleted because it is not set");
     }
 
     protected override async Task AuthorizationTestCall(GrpcChannel channel)

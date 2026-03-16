@@ -60,7 +60,10 @@ public class ReferendumService : IReferendumService
         }
 
         var decreesByDoiType = await query
-            .Include<DecreeEntity, List<ReferendumEntity>>(x => x.Collections)
+
+            // include own referendums or parent referendums which are in collection or expired
+            // same logic as in AclPermissions.WhereCanAccessOwnBfsOrChildrenOrParentsInPeriodStateInCollectionOrExpired
+            .IncludeFilteredReferendums(_permissionService.AclBfsLists, _timeProvider.GetUtcTodayDateOnly())
             .ThenIncludeMunicipalities(_permissionService.AclBfsLists)
             .Include<DecreeEntity, List<ReferendumEntity>>(x => x.Collections)
             .ThenInclude(x => x.CollectionCount)

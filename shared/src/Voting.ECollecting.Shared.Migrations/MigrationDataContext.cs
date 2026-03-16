@@ -6,6 +6,7 @@ using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Entities.Audit;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
 using Voting.ECollecting.Shared.Migrations.ModelBuilders;
+using Voting.Lib.Database.Extensions;
 
 namespace Voting.ECollecting.Shared.Migrations;
 
@@ -27,8 +28,6 @@ public class MigrationDataContext(DbContextOptions<MigrationDataContext> options
     public DbSet<CollectionSignatureSheetEntity> CollectionSignatureSheets { get; set; } = null!;
 
     public DbSet<CollectionCountEntity> CollectionCounts { get; set; } = null!;
-
-    public DbSet<AccessControlListDoiEntity> AccessControlListDois { get; set; } = null!;
 
     public DbSet<ImportStatisticEntity> ImportStatistics { get; set; } = null!;
 
@@ -64,5 +63,11 @@ public class MigrationDataContext(DbContextOptions<MigrationDataContext> options
     {
         DbContextAccessor.DbContext = this;
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(IntegritySignatureEntityModelBuilder).Assembly);
+    }
+
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+    {
+        configurationBuilder.ConfigureMarkdownString();
+        base.ConfigureConventions(configurationBuilder);
     }
 }

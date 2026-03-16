@@ -2,24 +2,40 @@
   DomainOfInfluences: [
     {
       Bfs: 17,
-      Name: Kanton St.Gallen,
+      Name: Kanton St.Gallen kantonal,
+      NameForProtocol: ,
       Type: Ct,
       Settings: {
+        HasInitiativeMinSignatureCount: false,
+        InitiativeMaxElectronicSignaturePercent: 7,
+        HasInitiativeMaxElectronicSignaturePercent: true,
+        InitiativeNumberOfMembersCommittee: 15,
+        HasInitiativeNumberOfMembersCommittee: true,
         ReferendumMinSignatureCount: 50000,
+        HasReferendumMinSignatureCount: true,
         ReferendumMaxElectronicSignaturePercent: 20,
-        ECollectingEnabled: true
+        HasReferendumMaxElectronicSignaturePercent: true
       },
       Address: {
+        Name: Dienst für Politische Rechte - Staatskanzlei,
         Street: Regierungsgebaeude,
         ZipCode: 9000,
         Locality: St.Gallen
       },
       Phone: +41 12 345 67 89,
-      Email: kanton-sg@example.com,
+      Email: kanton+staatskanzlei@abraxas.ch,
+      NotificationEmails: [
+        kanton+staatskanzlei@abraxas.ch,
+        kanton+staatskanzlei2@abraxas.ch
+      ],
       Webpage: https://sg.ch,
       Logo: {
         Id: Guid_1,
         Name: placeholder-logo.png
+      },
+      ECollectingEnabled: true,
+      UserPermissions: {
+        CanEdit: true
       }
     }
   ]

@@ -22,12 +22,31 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
           StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -76,12 +95,31 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
           StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -142,12 +180,31 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
           StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -196,12 +253,31 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
           StreetOrPostOfficeBox: Veloweg 28
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 219 (neu) – Förderung kantonaler Velorouten</strong></em></p>
+<ol>
+<li>Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.</li>
+<li>Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.</li>
+<li>Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 219 (neu) – Förderung kantonaler Velorouten***
+1. Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+2. Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+3. Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 219 (neu) – Förderung kantonaler Velorouten
-1 Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
-2 Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
-3 Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+Der Kanton fördert den Ausbau eines kantonalen Veloroutennetzes.
+Er kann Gemeinden beim Bau und Unterhalt von Velowegen unterstützen.
+Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Routen.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,

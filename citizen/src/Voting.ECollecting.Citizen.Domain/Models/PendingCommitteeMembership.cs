@@ -2,6 +2,7 @@
 // For license information see LICENSE file
 
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.Lib.Database.Models;
 
 namespace Voting.ECollecting.Citizen.Domain.Models;
 
@@ -9,7 +10,7 @@ public record PendingCommitteeMembership(
     Guid InitiativeId,
     string Description,
     InitiativeSubTypeEntity? SubType,
-    string Wording,
+    MarkdownString Wording,
     string Reason,
     string Link,
     string FirstName,

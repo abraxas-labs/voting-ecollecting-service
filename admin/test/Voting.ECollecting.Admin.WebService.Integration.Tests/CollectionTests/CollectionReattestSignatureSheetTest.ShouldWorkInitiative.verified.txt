@@ -1,0 +1,49 @@
+﻿{
+  sheets: [
+    {
+      CollectionMunicipalityId: Guid_1,
+      Number: 4,
+      ReceivedAt: Date_1,
+      AttestedAt: DateTime_1,
+      Count: {
+        Invalid: 5,
+        Valid: 12,
+        Total: 17,
+        CanAdd: true
+      },
+      State: Attested,
+      IsSample: false,
+      ModifiedBySuperiorAuthority: false,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test Admin,
+        CreatedByEmail: admin@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_2
+    },
+    {
+      CollectionMunicipalityId: Guid_1,
+      Number: 5,
+      ReceivedAt: Date_1,
+      AttestedAt: DateTime_1,
+      Count: {
+        Invalid: 1,
+        Valid: 25,
+        Total: 26,
+        CanAdd: true
+      },
+      State: Attested,
+      IsSample: false,
+      ModifiedBySuperiorAuthority: false,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: Test Admin,
+        CreatedByEmail: admin@example.com,
+        CreatedAt: DateTime_2
+      },
+      Id: Guid_3
+    }
+  ],
+  responseData: {"MunicipalityLogo":"iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAADzklEQVR4nO2Y6U7jMBSFef83KJsAAapQSwGx70sFpSDEVtaeZ/HoWLhK0pRFdDRn4Pz4BLHrxL7f9c0yAiAYyDDyrydgYCEQxkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQvALhHS73fD09BT/lvU/PDyE\u002B/v7geMfHx9j/6Dx3\u002BX5\u002BTm8vLyU9nHevPbr62tpP8exf9B4OSFcbK1WC5VKJZydneX6uJBqtRr7yOzsbLi\u002Bvs4Fo/Y2lkxPT4d2uz3U\u002Be3u7sZzr66u9iUR20ZHR2P/xMREODk5yf1me3s7jI2Nxf7x8fF4LmkhDDiDnAKaFcIFz8/PxwUdHByEZrMZJicnw9TUVJTI39Tr9RiQnZ2dcHp6GoVw4e/tps/CjF9ZWenNrShkc3Oz1855p8S5vLyM/YeHh/F4cXExtFqtXuJwHZJCuIUZXAZ5eXm5TwgznW0bGxu9tqOjo9jGv3d3d/H/RqPR6z8/P49tDFbxetxNa2trudJBiaRsfpwTZa\u002Bvr/cJ4TkonsmUTS7\u002BjknC45mZmbi2VMrSmLm5OU0hhJnDhaRAZ4Vwu7MtW4LSopeWlmJ5qFQq4fj4OLerGERma/FaHMsEWFhYiMGhiLS7yuZ2c3MTr93pdPqEXF1dxTbKyo6hIJYu3vPS7sj2p13C5JAUUsz8rBAGgG3ZewYDyTYGNdX2VquVOxezkqWr7DrcVZTCUkgZlP7R3MqEcJ5sK94TOK9UtsrKXCqBt7e3FoI39vf34ziWlM88\u002BVjIXypZeLtnpPtCtnx9VcivLFkXFxdDvam32\u002B3cPSOVLwbpq0J\u002B7E2dmcSStLW1FRfDcsJjLuI7j72dTqfvWhxTfE\u002BglEHvLQwg55IkM9t5zJfQH/nYm63nRdJ7BAP70YthvV7PvRhyZw1jbnzKKpsbA132Yshk\u002BejFcG9vb6gyhi6EO4FBLVL8BMKdVJb1yIgZ9qeT9DmnSPETCXfee9f\u002B7z6dGFgIfhAWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWlgItLAQaGEh0MJCoIWFQAsLgRYWAi0sBFpYCLSwEGhhIdDCQqCFhUALC4EWFgItLARaWAi0sBBoYSHQwkKghYVACwuBFhYCLSwEWvwBvp5lf\u002BN7iLMAAAAASUVORK5CYII=","MunicipalityAddressName":"Rathaus Stadt St. Gallen","MunicipalityStreet":"Bahnhofsplatz 1","MunicipalityZipCode":"9001","MunicipalityLocality":"St.Gallen","MunicipalityPhoneNumber":"\u002B41 12 345 67 99","MunicipalityEmail":"st.gallen\u002Bstaatskanzlei@abraxas.ch","MunicipalityWebsite":"https://stadt.sg.ch","CommitteeName":"Komitee Picknick-Pl\u00E4tze-Initiative","CommitteeStreet":"Picknickweg 13","CommitteeZipCode":"9602","CommitteeLocality":"Bazenheid","DomainOfInfluenceType":"Ct","CollectionType":"Einheitsinitiative","CollectionDescription":"F\u00FCr eine t\u00E4gliche Portion Natur (Frischluftinitiative)","CollectionStartDate":"2019-12-09","MunicipalityName":"St.Gallen","MunicipalityNameIncludingType":"","SignatureListCount":2,"SignatureList":[{"MinNumber":4,"MaxNumber":5}],"ValidSignatureCount":37,"InvalidSignatureCount":6,"CertificationDate":"2020-01-10T13:12:10.2000000Z","ReferendumNumber":""}
+}

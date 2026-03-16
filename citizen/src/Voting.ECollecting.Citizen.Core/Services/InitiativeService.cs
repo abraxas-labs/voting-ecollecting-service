@@ -21,6 +21,9 @@ using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Queries;
+using Voting.Lib.Database.Models;
+using IDomainOfInfluenceRepository = Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories.IDomainOfInfluenceRepository;
+using IInitiativeRepository = Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories.IInitiativeRepository;
 
 namespace Voting.ECollecting.Citizen.Core.Services;
 
@@ -28,7 +31,7 @@ public class InitiativeService : IInitiativeService
 {
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
     private readonly IInitiativeRepository _initiativeRepository;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly TimeProvider _timeProvider;
     private readonly CoreAppConfig _config;
     private readonly IPermissionService _permissionService;
@@ -41,7 +44,7 @@ public class InitiativeService : IInitiativeService
     public InitiativeService(
         IInitiativeSubTypeRepository initiativeSubTypeRepository,
         IInitiativeRepository initiativeRepository,
-        IAccessControlListDoiRepository accessControlListDoiRepository,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
         TimeProvider timeProvider,
         CoreAppConfig config,
         IPermissionService permissionService,
@@ -53,7 +56,7 @@ public class InitiativeService : IInitiativeService
     {
         _initiativeSubTypeRepository = initiativeSubTypeRepository;
         _initiativeRepository = initiativeRepository;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
         _timeProvider = timeProvider;
         _config = config;
         _permissionService = permissionService;
@@ -119,8 +122,8 @@ public class InitiativeService : IInitiativeService
 
         initiative.Bfs = initiative.DomainOfInfluenceType switch
         {
-            DomainOfInfluenceType.Ct => await _accessControlListDoiRepository.GetSingleBfsForDoiType(AclDomainOfInfluenceType.Ct),
-            DomainOfInfluenceType.Ch => await _accessControlListDoiRepository.GetSingleBfsForDoiType(AclDomainOfInfluenceType.Ch),
+            DomainOfInfluenceType.Ct => await _domainOfInfluenceRepository.GetSingleBfsByType(DomainOfInfluenceType.Ct),
+            DomainOfInfluenceType.Ch => await _domainOfInfluenceRepository.GetSingleBfsByType(DomainOfInfluenceType.Ch),
             _ => initiative.Bfs,
         };
 
@@ -136,7 +139,8 @@ public class InitiativeService : IInitiativeService
         }
         else if (initiative.DomainOfInfluenceType == DomainOfInfluenceType.Mu)
         {
-            var domainOfInfluence = await _accessControlListDoiRepository.Query()
+            // if this inheritance logic is adjusted, also adjust the Admin DomainOfInfluenceService.List
+            var domainOfInfluence = await _domainOfInfluenceRepository.Query()
                 .Where(x => x.Bfs == initiative.Bfs)
                 .FirstOrDefaultAsync();
 
@@ -150,8 +154,9 @@ public class InitiativeService : IInitiativeService
                 throw new ValidationException("Domain of Influence has eCollecting not enabled.");
             }
 
-            initiative.MinSignatureCount = domainOfInfluence.ECollectingInitiativeMinSignatureCount.GetValueOrDefault();
-            initiative.MaxElectronicSignatureCount = (int)Math.Round(initiative.MinSignatureCount * domainOfInfluence.ECollectingInitiativeMaxElectronicSignaturePercent.GetValueOrDefault() / 100.0);
+            var quorumDoi = await _domainOfInfluenceRepository.GetSingleByType(DomainOfInfluenceType.Ct);
+            initiative.MinSignatureCount = domainOfInfluence.InitiativeMinSignatureCount.GetValueOrDefault();
+            initiative.MaxElectronicSignatureCount = quorumDoi.GetMaxInitiativeElectronicSignatureCount(initiative.MinSignatureCount);
         }
 
         _permissionService.SetCreated(initiative);
@@ -219,7 +224,7 @@ public class InitiativeService : IInitiativeService
         SetStateAndPermission(initiative);
         if (includeCommitteeDescription)
         {
-            await SetCommitteeDescription(initiative);
+            BuildCommitteeDescription(initiative);
         }
 
         if (includeIsSigned)
@@ -231,7 +236,7 @@ public class InitiativeService : IInitiativeService
         return initiative;
     }
 
-    public async Task Update(Guid id, Guid? subTypeId, string description, string wording, string reason, CollectionAddress address, string link)
+    public async Task Update(Guid id, Guid? subTypeId, string description, MarkdownString wording, string reason, CollectionAddress address, string link)
     {
         var existingInitiative = await _initiativeRepository.Query()
                              .WhereCanEdit(_permissionService)
@@ -398,7 +403,7 @@ public class InitiativeService : IInitiativeService
         _collectionService.SetCollectionCount(initiative);
     }
 
-    private async Task SetCommitteeDescription(Initiative initiative)
+    private void BuildCommitteeDescription(Initiative initiative)
     {
         if (initiative.CommitteeMembers.Count == 0)
         {
@@ -406,13 +411,7 @@ public class InitiativeService : IInitiativeService
             return;
         }
 
-        var domainOfInfluencesByBfs = await _accessControlListDoiRepository.Query()
-            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs))
-            .GroupBy(x => x.Bfs)
-            .ToDictionaryAsync(x => x.Key!, x => x.First());
-
         var sb = new StringBuilder(initiative.CommitteeMembers.Count * 20);
-
         foreach (var member in initiative.CommitteeMembers)
         {
             sb.Append(member.PoliticalFirstName);

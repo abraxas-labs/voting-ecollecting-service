@@ -53,8 +53,8 @@ public static class DataContainerBuilder
             .SelectMany(x => x.Municipalities!)
             .GroupBy(x => x.Bfs)
             .ToDictionary(x => x.Key, x => x.ToList());
-        var doiMunicipalitiesByParent = data.AccessControlListDoi.GetFlattenChildren()
-            .Where(x => x is { Type: AclDomainOfInfluenceType.Mu, Parent: not null })
+        var doiMunicipalitiesByParent = data.DomainOfInfluence.GetFlattenChildren()
+            .Where(x => x is { Type: DomainOfInfluenceType.Mu, Parent: not null })
             .GroupBy(x => x.Parent!)
             .OrderBy(x => x.Key.SortNumber)
             .ToDictionary(x => x.Key, x => x.ToList());
@@ -96,7 +96,7 @@ public static class DataContainerBuilder
             }
 
             var domainOfInfluenceDataContainer = new DomainOfInfluenceDataContainer(
-                parent.Name,
+                parent.NameForProtocol,
                 totalValidElectronicSignatureCount,
                 totalValidPhysicalSignatureCount,
                 totalInvalidPhysicalSignatureCount)

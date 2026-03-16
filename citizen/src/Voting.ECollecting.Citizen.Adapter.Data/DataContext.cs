@@ -9,6 +9,7 @@ using Voting.ECollecting.Shared.Adapter.Data.Builders;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Entities.Audit;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
+using Voting.Lib.Database.Extensions;
 
 namespace Voting.ECollecting.Citizen.Adapter.Data;
 
@@ -32,8 +33,6 @@ public class DataContext : DbContext, IDataContext
 
     public DbSet<CollectionCountEntity> CollectionCounts { get; set; } = null!;
 
-    public DbSet<AccessControlListDoiEntity> AccessControlListDois { get; set; } = null!;
-
     public DbSet<InitiativeSubTypeEntity> InitiativeSubTypes { get; set; } = null!;
 
     public DbSet<InitiativeEntity> Initiatives { get; set; } = null!;
@@ -54,7 +53,9 @@ public class DataContext : DbContext, IDataContext
 
     public DbSet<CollectionMunicipalityEntity> CollectionMunicipalities { get; set; } = null!;
 
-    public DbSet<AuditTrailEntryEntity> AuditTrailEntries { get; set; }
+    public DbSet<DomainOfInfluenceEntity> DomainOfInfluences { get; set; } = null!;
+
+    public DbSet<AuditTrailEntryEntity> AuditTrailEntries { get; set; } = null!;
 
     public DbSet<CollectionCitizenLogAuditTrailEntryEntity> CollectionCitizenLogAuditTrailEntries { get; set; }
 
@@ -76,6 +77,12 @@ public class DataContext : DbContext, IDataContext
     {
         DbContextAccessor.DbContext = this;
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(IntegritySignatureEntityModelBuilder).Assembly);
+    }
+
+    protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
+    {
+        configurationBuilder.ConfigureMarkdownString();
+        base.ConfigureConventions(configurationBuilder);
     }
 
     private void AddAuditTrailEntries()

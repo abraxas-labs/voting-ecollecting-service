@@ -60,7 +60,7 @@ public class CertificateSetBackupCertificateTest : BaseRestTest
         await RunInAuditTrailTestScope(async () =>
         {
             var content = BuildSimpleContent();
-            var result = await CtSgZertifikatsverwalterClient.PostAsync(Url, content);
+            await CtSgZertifikatsverwalterClient.PostAsync(Url, content);
             await Verify(await GetAuditTrailEntries());
         });
     }

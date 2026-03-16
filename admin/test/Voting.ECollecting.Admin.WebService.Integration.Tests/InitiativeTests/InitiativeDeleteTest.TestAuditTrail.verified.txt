@@ -22,12 +22,31 @@ Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlings
           StreetOrPostOfficeBox: Blütenweg 7
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 230 (neu) – Förderung von Schmetterlingsgärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.</li>
+<li>Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.</li>
+<li>Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 230 (neu) – Förderung von Schmetterlingsgärten***
+1. Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2. Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3. Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 230 (neu) – Förderung von Schmetterlingsgärten
-1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
-2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
-3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+          IsEmptyOrWhiteSpace: false
+        },
         MacKeyId: KSedVotingECollecting_10a2bc83-c30d-4893-bd5d-852c30227e6c_DuplicateDetection128,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

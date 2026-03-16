@@ -1,21 +1,26 @@
 ﻿{
   Bfs: 3203,
-  Name: St. Gallen-updated,
+  Name: St.Gallen,
+  NameForProtocol: ,
   Type: Mu,
   Settings: {
-    InitiativeMinSignatureCount: 100000,
-    InitiativeMaxElectronicSignaturePercent: 50,
-    InitiativeNumberOfMembersCommittee: 15,
-    ReferendumMinSignatureCount: 10000,
-    ReferendumMaxElectronicSignaturePercent: 20,
-    ECollectingEnabled: true
+    HasInitiativeMinSignatureCount: false,
+    HasInitiativeMaxElectronicSignaturePercent: false,
+    HasInitiativeNumberOfMembersCommittee: false,
+    HasReferendumMinSignatureCount: false,
+    HasReferendumMaxElectronicSignaturePercent: false
   },
   Address: {
+    Name: St. Gallen-updated,
     Street: Edited street 99,
     ZipCode: 9099,
     Locality: St.Gallen-updated
   },
   Phone: +41 79 123 99 99,
   Email: canton-sg-edited@example.com,
-  Webpage: https://www.sg-updated.example.ch
+  Webpage: https://www.sg-updated.example.ch,
+  ECollectingEnabled: true,
+  UserPermissions: {
+    CanEdit: true
+  }
 }

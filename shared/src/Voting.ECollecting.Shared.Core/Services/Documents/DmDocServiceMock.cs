@@ -90,6 +90,24 @@ public class DmDocServiceMock : IDmDocService
         T templateData,
         string webhookEndpoint,
         string? bulkRoot,
+        int? asyncJobPriority = null,
+        CancellationToken ct = default) =>
+        throw new NotImplementedException();
+
+    public Task<Draft> StartAsyncPdfGeneration<T>(
+        string templateName,
+        T templateData,
+        string webhookEndpoint,
+        string? bulkRoot = null,
+        int? asyncJobPriority = null,
+        CancellationToken ct = default) =>
+        throw new NotImplementedException();
+
+    public Task<Draft> StartAsyncPdfGeneration<T>(
+        int templateId,
+        T templateData,
+        string webhookEndpoint,
+        string? bulkRoot,
         CancellationToken ct = default) =>
         throw new NotImplementedException();
 

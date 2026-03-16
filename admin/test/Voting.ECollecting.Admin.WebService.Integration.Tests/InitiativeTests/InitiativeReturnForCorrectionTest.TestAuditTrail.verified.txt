@@ -22,12 +22,31 @@ Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmä
           StreetOrPostOfficeBox: Marktgasse 8
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 222 (neu) – Förderung kantonaler Wochenmärkte</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.</li>
+<li>Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 222 (neu) – Förderung kantonaler Wochenmärkte***
+1. Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2. Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3. Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 222 (neu) – Förderung kantonaler Wochenmärkte
-1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
-2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
-3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           CreatedById: default-user-id,
@@ -75,12 +94,31 @@ Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmä
           StreetOrPostOfficeBox: Marktgasse 8
         },
         ImageId: Guid_3,
-        Wording:
+        Wording: {
+          Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 222 (neu) – Förderung kantonaler Wochenmärkte</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.</li>
+<li>Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.</li>
+<li>Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.</li>
+</ol>
+,
+          IsEmpty: false,
+          Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 222 (neu) – Förderung kantonaler Wochenmärkte***
+1. Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+2. Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+3. Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+          Plaintext:
 Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
 Art. 222 (neu) – Förderung kantonaler Wochenmärkte
-1 Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
-2 Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
-3 Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+Der Kanton fördert die Durchführung regelmässiger Wochenmärkte im ganzen Kantonsgebiet.
+Er kann Gemeinden und Marktbetreiber organisatorisch und finanziell unterstützen.
+Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
+          IsEmptyOrWhiteSpace: false
+        },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
           ModifiedAt: DateTimeOffset_2,

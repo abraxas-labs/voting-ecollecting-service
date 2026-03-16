@@ -27,7 +27,7 @@ using Voting.Lib.Common.Files;
 using Voting.Lib.Database.Postgres.Locking;
 using Voting.Lib.Iam.SecondFactor.Models;
 using Voting.Lib.Iam.SecondFactor.Services;
-using IAccessControlListDoiService = Voting.ECollecting.Shared.Abstractions.Core.Services.IAccessControlListDoiService;
+using IDomainOfInfluenceService = Voting.ECollecting.Shared.Abstractions.Core.Services.IDomainOfInfluenceService;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 using SecondFactorTransactionInfo = Voting.ECollecting.Admin.Domain.Models.SecondFactorTransactionInfo;
 
@@ -37,10 +37,10 @@ public class InitiativeService : IInitiativeService
 {
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
-    private readonly IAccessControlListDoiRepository _accessControlListDoiRepository;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly IStatisticalDataCsvGenerator _statisticalDataCsvGenerator;
     private readonly IStatisticalDataTimeLapseCsvGenerator _statisticalDataTimeLapseCsvGenerator;
-    private readonly IAccessControlListDoiService _coreAccessControlListDoiService;
+    private readonly IDomainOfInfluenceService _coreDomainOfInfluenceService;
     private readonly IOfficialJournalPublicationProtocolGenerator _officialJournalPublicationProtocolGenerator;
     private readonly IElectronicSignaturesProtocolGenerator _electronicSignaturesProtocolGenerator;
     private readonly TimeProvider _timeProvider;
@@ -49,8 +49,8 @@ public class InitiativeService : IInitiativeService
     private readonly IPermissionService _permissionService;
     private readonly ISecondFactorTransactionService _secondFactorTransactionService;
     private readonly CollectionCryptoService _collectionCryptoService;
-    private readonly AccessControlListDoiService _accessControlListDoiService;
     private readonly IUserNotificationService _userNotificationService;
+    private readonly DomainOfInfluenceService _domainOfInfluenceService;
 
     public InitiativeService(
         IInitiativeRepository initiativeRepository,
@@ -61,14 +61,14 @@ public class InitiativeService : IInitiativeService
         IInitiativeSubTypeRepository initiativeSubTypeRepository,
         IOfficialJournalPublicationProtocolGenerator officialJournalPublicationProtocolGenerator,
         IElectronicSignaturesProtocolGenerator electronicSignaturesProtocolGenerator,
-        IAccessControlListDoiRepository accessControlListDoiRepository,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
         IStatisticalDataCsvGenerator statisticalDataCsvGenerator,
         IStatisticalDataTimeLapseCsvGenerator statisticalDataTimeLapseCsvGenerator,
-        IAccessControlListDoiService coreAccessControlListDoiService,
+        IDomainOfInfluenceService coreDomainOfInfluenceService,
         ISecondFactorTransactionService secondFactorTransactionService,
         IUserNotificationService userNotificationService,
         CollectionCryptoService collectionCryptoService,
-        AccessControlListDoiService accessControlListDoiService)
+        DomainOfInfluenceService domainOfInfluenceService)
     {
         _initiativeRepository = initiativeRepository;
         _timeProvider = timeProvider;
@@ -78,14 +78,14 @@ public class InitiativeService : IInitiativeService
         _initiativeSubTypeRepository = initiativeSubTypeRepository;
         _officialJournalPublicationProtocolGenerator = officialJournalPublicationProtocolGenerator;
         _electronicSignaturesProtocolGenerator = electronicSignaturesProtocolGenerator;
-        _accessControlListDoiRepository = accessControlListDoiRepository;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
         _statisticalDataCsvGenerator = statisticalDataCsvGenerator;
         _statisticalDataTimeLapseCsvGenerator = statisticalDataTimeLapseCsvGenerator;
-        _coreAccessControlListDoiService = coreAccessControlListDoiService;
+        _coreDomainOfInfluenceService = coreDomainOfInfluenceService;
         _secondFactorTransactionService = secondFactorTransactionService;
         _userNotificationService = userNotificationService;
         _collectionCryptoService = collectionCryptoService;
-        _accessControlListDoiService = accessControlListDoiService;
+        _domainOfInfluenceService = domainOfInfluenceService;
     }
 
     public Task<List<InitiativeSubTypeEntity>> ListSubTypes()
@@ -164,7 +164,7 @@ public class InitiativeService : IInitiativeService
         initiative.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(initiative);
         _collectionService.SetCollectionCount(initiative);
-        initiative.DomainOfInfluenceName = await _accessControlListDoiService.LoadDomainOfInfluenceName(initiative.DomainOfInfluenceType!.Value, initiative.Bfs!);
+        initiative.DomainOfInfluenceName = await _domainOfInfluenceService.LoadDomainOfInfluenceName(initiative.DomainOfInfluenceType!.Value, initiative.Bfs!);
         return initiative;
     }
 
@@ -363,18 +363,17 @@ public class InitiativeService : IInitiativeService
                              .FirstOrDefaultAsync(x => x.Id == initiativeId, cancellationToken: cancellationToken)
                          ?? throw new EntityNotFoundException(nameof(CollectionBaseEntity), initiativeId);
 
-        var aclDoiType = Mapper.MapToAclDomainOfInfluenceType(collection.DomainOfInfluenceType!.Value);
-        var recipient = await _accessControlListDoiRepository.Query()
-                      .Where(x => x.Bfs == collection.Bfs && x.Type == aclDoiType)
-                      .Select(x => x.ECollectingEmail)
+        var recipients = await _domainOfInfluenceRepository.Query()
+                      .Where(x => x.Bfs == collection.Bfs && x.Type == collection.DomainOfInfluenceType!.Value)
+                      .Select(x => x.NotificationEmails)
                       .SingleOrDefaultAsync(cancellationToken)
-                  ?? throw new EntityNotFoundException(nameof(AclDomainOfInfluenceType), new { collection.Bfs, collection.DomainOfInfluenceType, });
+                  ?? throw new EntityNotFoundException(nameof(BasisDomainOfInfluenceType), new { collection.Bfs, collection.DomainOfInfluenceType, });
 
-        if (!string.IsNullOrEmpty(recipient) && !string.IsNullOrEmpty(collection.Bfs))
+        if (!string.IsNullOrEmpty(collection.Bfs) && recipients.Count > 0)
         {
             var attachment = ZipFile.Create(GenerateFiles(collection, cancellationToken), "archive.zip");
-            await _userNotificationService.SendUserNotification(
-                recipient,
+            await _userNotificationService.SendUserNotifications(
+                recipients,
                 false,
                 UserNotificationType.CollectionDeleted,
                 collection: collection,
@@ -402,6 +401,41 @@ public class InitiativeService : IInitiativeService
         await _dataContext.SaveChangesAsync();
     }
 
+    internal async Task SetMinMaxSignatureCount(InitiativeEntity initiative)
+    {
+        if (initiative.DomainOfInfluenceType is DomainOfInfluenceType.Ch or DomainOfInfluenceType.Ct)
+        {
+            if (!initiative.SubTypeId.HasValue)
+            {
+                throw new ValidationException("The sub type is required for cantonal and federal initiatives.");
+            }
+
+            var subType = await _initiativeSubTypeRepository.Query()
+                              .Where(x => x.Id == initiative.SubTypeId!.Value && x.DomainOfInfluenceType == initiative.DomainOfInfluenceType)
+                              .FirstOrDefaultAsync()
+                          ?? throw new EntityNotFoundException(nameof(InitiativeSubTypeEntity), initiative.SubTypeId);
+
+            initiative.MinSignatureCount = subType.MinSignatureCount;
+            initiative.MaxElectronicSignatureCount = subType.MaxElectronicSignatureCount;
+            return;
+        }
+
+        // domain of influence is Mu
+        // if this inheritance logic is adjusted, also adjust the Admin DomainOfInfluenceService.List
+        var domainOfInfluence = await _domainOfInfluenceRepository.Query()
+            .Where(x => x.Bfs == initiative.Bfs)
+            .FirstOrDefaultAsync();
+
+        if (domainOfInfluence == null)
+        {
+            throw new ValidationException("No domain of influence with this municipality id found.");
+        }
+
+        var quorumDoi = await _domainOfInfluenceRepository.GetCanton();
+        initiative.MinSignatureCount = domainOfInfluence.InitiativeMinSignatureCount.GetValueOrDefault();
+        initiative.MaxElectronicSignatureCount = quorumDoi.GetMaxInitiativeElectronicSignatureCount(initiative.MinSignatureCount);
+    }
+
     internal async Task ValidateGeneralInformation(InitiativeEntity initiative)
     {
         if (initiative is { DomainOfInfluenceType: DomainOfInfluenceType.Ct, SubTypeId: null })
@@ -409,7 +443,7 @@ public class InitiativeService : IInitiativeService
             throw new ValidationException("SubType is required for cantonal initiatives.");
         }
 
-        if (string.IsNullOrWhiteSpace(initiative.Wording) && initiative.DomainOfInfluenceType != DomainOfInfluenceType.Ch)
+        if (initiative.Wording.IsEmptyOrWhiteSpace && initiative.DomainOfInfluenceType != DomainOfInfluenceType.Ch)
         {
             throw new ValidationException("Wording is required for non-federal initiatives.");
         }
@@ -419,8 +453,7 @@ public class InitiativeService : IInitiativeService
             throw new ValidationException("Address is required for non-federal initiatives.");
         }
 
-        var aclDoiType = Mapper.MapToAclDomainOfInfluenceType(initiative.DomainOfInfluenceType!.Value);
-        var bfs = await _accessControlListDoiRepository.GetSingleBfsForDoiType(_permissionService.AclBfsLists, aclDoiType);
+        var bfs = await _domainOfInfluenceRepository.GetSingleBfsByType(_permissionService.AclBfsLists, initiative.DomainOfInfluenceType!.Value);
         if (initiative.Bfs != bfs && !string.IsNullOrWhiteSpace(initiative.Bfs))
         {
             throw new ValidationException("Cannot update bfs of initiative.");
@@ -451,9 +484,24 @@ public class InitiativeService : IInitiativeService
 
     private async Task ValidateSubType(InitiativeEntity initiative)
     {
-        if (!initiative.SubTypeId.HasValue)
+        if (initiative.DomainOfInfluenceType == DomainOfInfluenceType.Mu)
         {
             return;
+        }
+
+        // currently there is only one sub type for federal initiatives.
+        if (!initiative.SubTypeId.HasValue && initiative.DomainOfInfluenceType == DomainOfInfluenceType.Ch)
+        {
+            initiative.SubTypeId = await _initiativeSubTypeRepository.Query()
+                .Where(x => x.DomainOfInfluenceType == initiative.DomainOfInfluenceType)
+                .Select(x => x.Id)
+                .SingleAsync();
+            return;
+        }
+
+        if (!initiative.SubTypeId.HasValue)
+        {
+            throw new ValidationException("Sub type is required for cantonal initiatives.");
         }
 
         var hasSubType = await _initiativeSubTypeRepository.Query()
@@ -532,7 +580,7 @@ public class InitiativeService : IInitiativeService
                 .FirstOrDefaultAsync(x => x.Id == initiative.SubTypeId, cancellationToken);
         }
 
-        var accessControlListDoi = await _coreAccessControlListDoiService.GetAccessControlListDoiWithChildren(initiative.Bfs!);
+        var accessControlListDoi = await _coreDomainOfInfluenceService.GetWithChildren(initiative.Bfs!);
         var templateData = new ECollectingProtocolTemplateData(
             [initiative],
             accessControlListDoi,

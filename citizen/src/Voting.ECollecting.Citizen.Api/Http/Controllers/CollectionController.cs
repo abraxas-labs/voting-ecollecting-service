@@ -34,7 +34,7 @@ public class CollectionController : ControllerBase
     public async Task<FileResult> GetImage(Guid collectionId)
     {
         var image = await _collectionFilesService.GetImage(collectionId);
-        return new FileContentResult(image.Content!.Data, image.ContentType);
+        return File(image.Content!.Data, image.ContentType, image.Name);
     }
 
     [RequestSizeLimit(3 * 1024 * 1024)] // 3MB max size
@@ -51,7 +51,7 @@ public class CollectionController : ControllerBase
     public async Task<FileResult> GetLogo(Guid collectionId)
     {
         var image = await _collectionFilesService.GetLogo(collectionId);
-        return new FileContentResult(image.Content!.Data, image.ContentType);
+        return File(image.Content!.Data, image.ContentType, image.Name);
     }
 
     [RequestSizeLimit(5 * 1024 * 1024)] // 5MB max size
@@ -68,7 +68,7 @@ public class CollectionController : ControllerBase
     public async Task<FileResult> GetSignatureSheetTemplatePreview(Guid collectionId)
     {
         var image = await _collectionFilesService.GetSignatureSheetTemplate(collectionId, false);
-        return new FileContentResult(image.Content!.Data, image.ContentType);
+        return File(image.Content!.Data, image.ContentType, image.Name);
     }
 
     [AllowAnonymous]
@@ -76,7 +76,7 @@ public class CollectionController : ControllerBase
     public async Task<FileResult> GetSignatureSheetTemplate(Guid collectionId)
     {
         var image = await _collectionFilesService.GetSignatureSheetTemplate(collectionId, true);
-        return new FileContentResult(image.Content!.Data, image.ContentType);
+        return File(image.Content!.Data, image.ContentType, image.Name);
     }
 
     [HttpGet("electronic-signatures-protocol")]

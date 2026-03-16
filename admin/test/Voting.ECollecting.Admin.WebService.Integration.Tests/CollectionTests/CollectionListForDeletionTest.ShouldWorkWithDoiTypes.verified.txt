@@ -166,12 +166,23 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
-          Wording:
-Die Verfassung des Kantons St.Gallen wird wie folgt geändert:
-Art. 230 (neu) – Förderung von Schmetterlingsgärten
-1 Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
-2 Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
-3 Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+          Wording: {
+            Markdown:
+**Die Verfassung des Kantons St.Gallen wird wie folgt geändert:**
+***Art. 230 (neu) – Förderung von Schmetterlingsgärten***
+1. Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.
+2. Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.
+3. Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.,
+            Html:
+<p><strong>Die Verfassung des Kantons St.Gallen wird wie folgt geändert:</strong>
+<em><strong>Art. 230 (neu) – Förderung von Schmetterlingsgärten</strong></em></p>
+<ol>
+<li>Der Kanton fördert die Anlage schmetterlingsfreundlicher Gärten und Wiesen.</li>
+<li>Er kann Gemeinden, Schulen und Private bei der Gestaltung beraten und unterstützen.</li>
+<li>Er achtet auf einheimische Pflanzenarten und naturnahe Pflege.</li>
+</ol>
+
+          },
           Collection: {
             Id: Guid_5,
             Description: Für Schmetterlingsgärten (Schmetterling-Initiative),
