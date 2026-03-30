@@ -59,7 +59,8 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
           CanGenerateDocuments: false,
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
+          CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: true
         }
       },
@@ -138,7 +139,8 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl√
           CanGenerateDocuments: false,
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
+          CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: true
         }
       },
@@ -218,7 +220,8 @@ Denn wer jodelt, singt von den Bergen.,
           CanGenerateDocuments: false,
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
+          CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: true
         }
       },
@@ -298,7 +301,8 @@ Denn gute Schokolade verbindet Generationen.,
           CanGenerateDocuments: false,
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
+          CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: true
         }
       },

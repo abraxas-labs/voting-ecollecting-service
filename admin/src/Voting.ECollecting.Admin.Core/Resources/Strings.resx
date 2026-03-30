@@ -34,10 +34,55 @@
   <data name="SecondFactorTransaction.DeleteDecree" xml:space="preserve">
     <value>Kontrollzeichen löschen</value>
   </data>
+  <data name="UserNotification.GeneralInformationChanged" xml:space="preserve">
+    <value>Folgende Felder wurden angepasst: {0}</value>
+  </data>
+  <data name="UserNotification.CommitteeMemberUpdated" xml:space="preserve">
+    <value>Folgende Felder des Komiteemitglieds {1} {2} wurden angepasst: {0}</value>
+  </data>
+  <data name="InitiativeCommitteeMemberFields.PoliticalFirstName" xml:space="preserve">
+    <value>Politischer Vorname</value>
+  </data>
+  <data name="InitiativeCommitteeMemberFields.PoliticalLastName" xml:space="preserve">
+    <value>Politischer Nachname</value>
+  </data>
+  <data name="InitiativeCommitteeMemberFields.PoliticalResidence" xml:space="preserve">
+    <value>Politischer Wohnort</value>
+  </data>
+  <data name="InitiativeCommitteeMemberFields.PoliticalDuty" xml:space="preserve">
+    <value>Politisches Amt</value>
+  </data>
   <data name="DomainOfInfluenceName.Ch" xml:space="preserve">
     <value>Schweiz</value>
   </data>
   <data name="DomainOfInfluenceName.Ct" xml:space="preserve">
     <value>St. Gallen</value>
+  </data>
+  <data name="ReferendumFields.Description" xml:space="preserve">
+    <value>Bezeichnung</value>
+  </data>
+  <data name="ReferendumFields.Reason" xml:space="preserve">
+    <value>Begründung</value>
+  </data>
+  <data name="ReferendumFields.MembersCommittee" xml:space="preserve">
+    <value>Komiteemitglieder</value>
+  </data>
+  <data name="ReferendumFields.Link" xml:space="preserve">
+    <value>Link</value>
+  </data>
+  <data name="ReferendumFields.Address" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="InitiativeFields.Description" xml:space="preserve">
+    <value>Bezeichnung</value>
+  </data>
+  <data name="InitiativeFields.Wording" xml:space="preserve">
+    <value>Wortlaut</value>
+  </data>
+  <data name="InitiativeFields.Reason" xml:space="preserve">
+    <value>Begründung</value>
+  </data>
+  <data name="InitiativeFields.Address" xml:space="preserve">
+    <value>Adresse</value>
   </data>
 </root>

@@ -31,7 +31,8 @@
       ApprovalState: Requested,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -56,7 +57,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -80,7 +82,8 @@
       ApprovalState: Requested,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -105,7 +108,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -130,7 +134,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -155,7 +160,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -180,7 +186,8 @@
       SignatureType: VerifiedIamIdentity,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -205,7 +212,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -230,7 +238,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -255,7 +264,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -280,7 +290,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -305,7 +316,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -330,7 +342,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -355,7 +368,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -380,7 +394,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -405,7 +420,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -430,7 +446,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: true
       }
     },
     {
@@ -454,7 +471,8 @@
       ApprovalState: Requested,
       UserPermissions: {
         CanReset: false,
-        CanVerify: true
+        CanVerify: true,
+        CanEditPoliticalDetails: true
       }
     }
   ],
@@ -481,7 +499,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: false
       }
     },
     {
@@ -505,7 +524,8 @@
       ApprovalState: Expired,
       UserPermissions: {
         CanReset: false,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: false
       }
     },
     {
@@ -529,7 +549,8 @@
       ApprovalState: SignatureRejected,
       UserPermissions: {
         CanReset: false,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: false
       }
     },
     {
@@ -554,7 +575,8 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanReset: true,
-        CanVerify: false
+        CanVerify: false,
+        CanEditPoliticalDetails: false
       }
     }
   ],

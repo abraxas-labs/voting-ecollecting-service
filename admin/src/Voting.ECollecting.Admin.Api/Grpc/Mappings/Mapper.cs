@@ -41,6 +41,10 @@ internal static partial class Mapper
     internal static partial DomainModels.CreateInitiativeParams MapToCreateInitiativeParams(
         CreateInitiativeWithAdmissibilityDecisionRequest request);
 
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    internal static partial DomainModels.UpdateReferendumParams MapToUpdateReferendumParams(
+        UpdateReferendumRequest request);
+
     internal static partial IReadOnlySet<DateTime> MapTimestampsToSet(IEnumerable<Timestamp> data);
 
     internal static partial DomainEnums.SortDirection MapToSortDirection(SortDirection dir);
@@ -85,6 +89,9 @@ internal static partial class Mapper
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     internal static partial DomainModels.UpdateInitiativeParams MapToUpdateInitiativeParams(UpdateInitiativeRequest request);
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    internal static partial DomainModels.UpdateCommitteeMemberParams MapToUpdateCommitteeMemberParams(UpdateCommitteeMemberRequest request);
 
     internal static ListSignatureSheetsAttestedAtResponse MapToListSignatureSheetsAttestedAtResponse(
         IEnumerable<DateTime> src)

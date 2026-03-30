@@ -13,6 +13,7 @@ using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
+using Voting.ECollecting.Admin.Core.Services.Crypto;
 using Voting.ECollecting.Admin.Core.Services.Signature;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
@@ -38,6 +39,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
     private readonly IDataContext _dataContext;
     private readonly IPermissionService _permissionService;
     private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
+    private readonly CollectionCryptoService _cryptoService;
     private readonly ISignatureSheetAttestationGenerationService _signatureSheetAttestationGenerationService;
     private readonly TimeProvider _timeProvider;
     private readonly IVotingStimmregisterAdapter _stimmregister;
@@ -46,7 +48,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly ICollectionMunicipalityRepository _collectionMunicipalityRepository;
     private readonly ICollectionCitizenRepository _citizenRepository;
-    private readonly ICollectionCryptoService _cryptoService;
+    private readonly ICollectionCryptoService _coreCryptoService;
     private readonly ICollectionCountRepository _collectionCountRepository;
 
     public CollectionSignatureSheetService(
@@ -62,9 +64,10 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         IInitiativeRepository initiativeRepository,
         ICollectionMunicipalityRepository collectionMunicipalityRepository,
         ICollectionCitizenRepository citizenRepository,
-        ICollectionCryptoService cryptoService,
+        ICollectionCryptoService coreCryptoService,
         ICollectionCountRepository collectionCountRepository,
-        IDomainOfInfluenceRepository domainOfInfluenceRepository)
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
+        CollectionCryptoService cryptoService)
     {
         _signatureSheetRepository = signatureSheetRepository;
         _collectionRepository = collectionRepository;
@@ -78,9 +81,10 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
         _initiativeRepository = initiativeRepository;
         _collectionMunicipalityRepository = collectionMunicipalityRepository;
         _citizenRepository = citizenRepository;
-        _cryptoService = cryptoService;
+        _coreCryptoService = coreCryptoService;
         _collectionCountRepository = collectionCountRepository;
         _domainOfInfluenceRepository = domainOfInfluenceRepository;
+        _cryptoService = cryptoService;
     }
 
     public async Task<Page<CollectionSignatureSheet>> List(
@@ -448,9 +452,9 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
         }
 
-        var decryptionTasks = sheet.Citizens
-            .Select(citizen => _cryptoService.DecryptStimmregisterId(sheet.CollectionMunicipality!.Collection!, citizen.Log!.VotingStimmregisterIdEncrypted));
-        var decryptedIds = await Task.WhenAll(decryptionTasks);
+        var citizenLogEntities = sheet.Citizens.Select(x => x.Log!);
+        var decryptedIds = await _cryptoService.DecryptStimmregisterIds(sheet.CollectionMunicipality!.Collection!, citizenLogEntities);
+
         var citizens = await _stimmregister.GetPersonInfos(sheet.CollectionMunicipality!.Bfs, decryptedIds.ToHashSet(), sheet.ReceivedAt.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc));
         return citizens
             .OrderBy(x => x.OfficialName)
@@ -538,7 +542,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
                          .FirstOrDefaultAsync(x => x.Id == sheetId && x.CollectionMunicipality!.CollectionId == collectionId)
                      ?? throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
 
-        var personMac = await _cryptoService.StimmregisterIdHmac(sheet.CollectionMunicipality!.Collection!, personRegisterId);
+        var personMac = await _coreCryptoService.StimmregisterIdHmac(sheet.CollectionMunicipality!.Collection!, personRegisterId);
 
         _permissionService.SetModified(sheet);
         sheet.Count.Valid--;
@@ -927,7 +931,7 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
 
     private async Task RemoveCitizens(SignatureSheetConfirmRequest request, CollectionSignatureSheetEntity sheet)
     {
-        var personMacsToRemove = await _cryptoService.StimmregisterIdHmacs(sheet.CollectionMunicipality!.Collection!, request.RemovedPersonRegisterIds);
+        var personMacsToRemove = await _coreCryptoService.StimmregisterIdHmacs(sheet.CollectionMunicipality!.Collection!, request.RemovedPersonRegisterIds);
         var keysToDelete = await _citizenRepository.Query()
             .Where(x => x.SignatureSheetId == request.SheetId && personMacsToRemove.Contains(x.Log!.VotingStimmregisterIdMac))
             .Select(x => x.Id)

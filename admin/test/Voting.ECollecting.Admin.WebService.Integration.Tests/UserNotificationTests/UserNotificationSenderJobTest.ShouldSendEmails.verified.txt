@@ -34,7 +34,7 @@
     <p>im E-Collecting gibt es Neuigkeiten:</p>
     <ul>
        <li>
-   <a href="http://localhost:4600/sg/initiatives/Guid_1">my collection</a><br />
+   <a href="http://localhost:4600/initiatives/Guid_1">my collection</a><br />
    Es ist eine neue Nachricht verf&#252;gbar<span>.</span>
 </li>
     </ul>
@@ -53,7 +53,8 @@
         CollectionName: my collection,
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_2
     },
@@ -67,7 +68,8 @@
         CollectionName: my collection,
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_3
     },
@@ -79,7 +81,8 @@
         CollectionName: my collection,
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_4
     },
@@ -91,7 +94,8 @@
         CollectionName: my collection,
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_5
     },
@@ -104,7 +108,8 @@
         CollectionName: my collection,
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_6
     }

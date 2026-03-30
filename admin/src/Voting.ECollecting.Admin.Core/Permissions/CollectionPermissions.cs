@@ -53,7 +53,8 @@ internal static class CollectionPermissions
     {
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
-            .WhereCanAccessOwnBfs(permissionService);
+            .WhereCanAccessOwnBfs(permissionService)
+            .WhereIsNotEndedAndNotAborted();
     }
 
     public static IQueryable<T> WhereCanEdit<T>(this IQueryable<T> query, IPermissionService permissionService)
@@ -370,7 +371,7 @@ internal static class CollectionPermissions
         return query
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
-            .Where(x => x.State == CollectionState.PreRecorded);
+            .WhereIsNotEndedAndNotAborted();
     }
 
     private static bool CanEditGeneralInformation(
@@ -379,7 +380,15 @@ internal static class CollectionPermissions
     {
         return AclPermissions.HasRole(permissionService, Roles.Stammdatenverwalter)
                && AclPermissions.CanAccessOwnBfs(permissionService, collection)
-               && collection.State == CollectionState.PreRecorded;
+               && collection.State.IsNotEndedAndNotAborted();
+    }
+
+    private static bool CanEditGeneralInformationInAdmissibilityDecision(
+        IPermissionService permissionService,
+        CollectionBaseEntity collection)
+    {
+        return CanEditGeneralInformation(permissionService, collection)
+            && collection.State == CollectionState.PreRecorded;
     }
 
     private static bool CanReadTotalCount(IPermissionService permissionService, CollectionBaseEntity collection)
@@ -447,6 +456,7 @@ internal static class CollectionPermissions
             CanEditAdmissibilityDecision(permissionService, collection),
             CanDeleteAdmissibilityDecision(permissionService, collection),
             CanEditGeneralInformation(permissionService, collection),
+            CanEditGeneralInformationInAdmissibilityDecision(permissionService, collection),
             CanReturnForCorrection(permissionService, collection));
     }
 }

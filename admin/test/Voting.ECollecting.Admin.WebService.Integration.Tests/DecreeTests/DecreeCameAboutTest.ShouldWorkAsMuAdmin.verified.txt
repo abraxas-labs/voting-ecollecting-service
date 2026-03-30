@@ -7,7 +7,8 @@
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_2
     },
@@ -18,7 +19,8 @@
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_3,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_4
     },
@@ -29,7 +31,8 @@
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_5
     },
@@ -40,7 +43,8 @@
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_3,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_6
     },
@@ -51,7 +55,8 @@
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_7
     },
@@ -62,7 +67,8 @@
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_3,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_8
     },
@@ -73,7 +79,8 @@
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_9
     },
@@ -84,7 +91,8 @@
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_3,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_10
     }

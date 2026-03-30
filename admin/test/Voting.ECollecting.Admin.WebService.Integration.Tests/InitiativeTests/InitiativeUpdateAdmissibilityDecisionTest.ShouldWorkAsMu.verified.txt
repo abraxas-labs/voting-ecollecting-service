@@ -66,6 +66,7 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
       CanEditGeneralInformation: false,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     }
   },

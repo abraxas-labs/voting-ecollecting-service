@@ -6,7 +6,8 @@
         CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_2
     },
@@ -16,7 +17,8 @@
         CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: true,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_3
     },
@@ -26,7 +28,8 @@
         CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_4
     },
@@ -36,7 +39,8 @@
         CollectionName: Für mehr Farbe in der Stadt (Street-Art-Initiative),
         RecipientIsCitizen: false,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_5
     }

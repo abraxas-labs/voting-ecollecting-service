@@ -75,6 +75,42 @@ namespace Voting.ECollecting.Admin.Core.Resources {
             }
         }
         
+        internal static string UserNotification_GeneralInformationChanged {
+            get {
+                return ResourceManager.GetString("UserNotification.GeneralInformationChanged", resourceCulture);
+            }
+        }
+        
+        internal static string UserNotification_CommitteeMemberUpdated {
+            get {
+                return ResourceManager.GetString("UserNotification.CommitteeMemberUpdated", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeCommitteeMemberFields_PoliticalFirstName {
+            get {
+                return ResourceManager.GetString("InitiativeCommitteeMemberFields.PoliticalFirstName", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeCommitteeMemberFields_PoliticalLastName {
+            get {
+                return ResourceManager.GetString("InitiativeCommitteeMemberFields.PoliticalLastName", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeCommitteeMemberFields_PoliticalResidence {
+            get {
+                return ResourceManager.GetString("InitiativeCommitteeMemberFields.PoliticalResidence", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeCommitteeMemberFields_PoliticalDuty {
+            get {
+                return ResourceManager.GetString("InitiativeCommitteeMemberFields.PoliticalDuty", resourceCulture);
+            }
+        }
+        
         internal static string DomainOfInfluenceName_Ch {
             get {
                 return ResourceManager.GetString("DomainOfInfluenceName.Ch", resourceCulture);
@@ -84,6 +120,60 @@ namespace Voting.ECollecting.Admin.Core.Resources {
         internal static string DomainOfInfluenceName_Ct {
             get {
                 return ResourceManager.GetString("DomainOfInfluenceName.Ct", resourceCulture);
+            }
+        }
+        
+        internal static string ReferendumFields_Description {
+            get {
+                return ResourceManager.GetString("ReferendumFields.Description", resourceCulture);
+            }
+        }
+        
+        internal static string ReferendumFields_Reason {
+            get {
+                return ResourceManager.GetString("ReferendumFields.Reason", resourceCulture);
+            }
+        }
+        
+        internal static string ReferendumFields_MembersCommittee {
+            get {
+                return ResourceManager.GetString("ReferendumFields.MembersCommittee", resourceCulture);
+            }
+        }
+        
+        internal static string ReferendumFields_Link {
+            get {
+                return ResourceManager.GetString("ReferendumFields.Link", resourceCulture);
+            }
+        }
+        
+        internal static string ReferendumFields_Address {
+            get {
+                return ResourceManager.GetString("ReferendumFields.Address", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeFields_Description {
+            get {
+                return ResourceManager.GetString("InitiativeFields.Description", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeFields_Wording {
+            get {
+                return ResourceManager.GetString("InitiativeFields.Wording", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeFields_Reason {
+            get {
+                return ResourceManager.GetString("InitiativeFields.Reason", resourceCulture);
+            }
+        }
+        
+        internal static string InitiativeFields_Address {
+            get {
+                return ResourceManager.GetString("InitiativeFields.Address", resourceCulture);
             }
         }
     }

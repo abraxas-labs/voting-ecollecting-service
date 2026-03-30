@@ -20,7 +20,7 @@
           },
           MinSignatureCount: 50000,
           MaxElectronicSignatureCount: 5000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: InCollection,
           Collections: [
             {
@@ -161,7 +161,7 @@ Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: Expired,
           Collections: [
             {

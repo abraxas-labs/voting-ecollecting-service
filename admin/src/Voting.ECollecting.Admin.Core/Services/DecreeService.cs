@@ -239,8 +239,7 @@ public class DecreeService : IDecreeService
                 recipients,
                 false,
                 UserNotificationType.DecreeDeleted,
-                decree,
-                attachments: [attachment],
+                new UserNotificationContext(Decree: decree, Attachments: [attachment]),
                 cancellationToken: cancellationToken);
         }
 

@@ -22,4 +22,5 @@ public record CollectionUserPermissions(
     bool CanEditAdmissibilityDecision,
     bool CanDeleteAdmissibilityDecision,
     bool CanEditGeneralInformation,
+    bool CanEditGeneralInformationInAdmissibilityDecision,
     bool CanReturnForCorrection);

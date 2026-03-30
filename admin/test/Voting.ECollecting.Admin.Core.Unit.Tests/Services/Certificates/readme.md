@@ -15,6 +15,8 @@ openssl req \
   -out ca-certificate.pem
 ```
 
+Add new CA to AppConfig `Voting.ECollecting.Admin.Core.Configuration.BackupCertificateConfig.CACertificate` (read cert with `openssl x509 -in ca-certificate.pem -text`)
+
 Create a new certificate:
 ```bash
 openssl req \

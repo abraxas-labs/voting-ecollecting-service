@@ -71,6 +71,7 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
         CanEditAdmissibilityDecision: false,
         CanDeleteAdmissibilityDecision: false,
         CanEditGeneralInformation: false,
+        CanEditGeneralInformationInAdmissibilityDecision: false,
         CanReturnForCorrection: false
       }
     },
@@ -99,7 +100,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_6
     },
@@ -110,7 +112,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_7
     },
@@ -121,7 +124,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_8
     }

@@ -82,10 +82,7 @@ Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Caféku
         Type: 1,
         State: 1,
         LogoId: Guid_2,
-        Reason:
-St.Gallen hat eine lebendige Altstadt, doch es fehlt an gemütlichen Plätzen, wo man bei Kaffee und Kuchen verweilen kann. Die «Café-Initiative» will das ändern.
-Ein Café ist mehr als nur eine Tasse Kaffee – es ist ein Treffpunkt, ein Ort für Gespräche, Arbeit oder einfach Entspannung. Mit gemütlichem Ambiente und lokalen Spezialitäten wird daraus ein Stück Lebensqualität.
-Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer gut sitzt und guten Kaffee trinkt, fühlt sich zu Hause – und kommt gerne wieder.,
+        Reason: reason-updated,
         Address: {
           ZipCode: 9001-updated,
           Locality: St.Gallen-updated,
@@ -105,9 +102,13 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
         },
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_2,
           CreatedById: default-user-id,
+          ModifiedById: default-user-id,
           CreatedByName: Test Citizen Creator,
-          CreatedByEmail: citizen-creator@example.com
+          CreatedByEmail: citizen-creator@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
         },
         Description: foo bar baz-updated,
         LockedFields: {

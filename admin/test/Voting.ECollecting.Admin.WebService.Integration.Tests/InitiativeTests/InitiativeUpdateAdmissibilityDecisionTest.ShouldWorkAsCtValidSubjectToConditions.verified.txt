@@ -69,7 +69,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
       CanGenerateDocuments: false,
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
-      CanEditGeneralInformation: false,
+      CanEditGeneralInformation: true,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: true
     }
   },

@@ -221,6 +221,7 @@ internal static partial class Mapper
     private static partial ProtoCitizenModels.SimpleDecree MapToSimpleDecree(DecreeEntity decree);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    [MapProperty(nameof(SharedDomainModels.InitiativeCommitteeMemberUserPermissions.CanEditPoliticalDetails), nameof(ProtoCitizenModels.InitiativeCommitteeMemberUserPermissions.CanEditPoliticalDuty))]
     private static partial ProtoCitizenModels.InitiativeCommitteeMemberUserPermissions MapInitiativeCommitteeMemberUserPermissions(SharedDomainModels.InitiativeCommitteeMemberUserPermissions userPermissions);
 
     private static Timestamp MapToDateTime(DateTime dateTime)

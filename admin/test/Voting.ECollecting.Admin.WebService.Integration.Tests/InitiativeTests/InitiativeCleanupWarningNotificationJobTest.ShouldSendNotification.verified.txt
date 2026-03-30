@@ -33,7 +33,7 @@
 </head>
 <body>
   <div class="container"><p>Hallo,</p>
-<p><strong><a href="http://localhost:4700/sg/initiatives/82ec863d-9ad3-4043-b17f-3f57c3cfc15d">F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)</a></strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
+<p><strong><a href="http://localhost:4700/initiatives/82ec863d-9ad3-4043-b17f-3f57c3cfc15d">F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)</a></strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
 <p>Aus Datenschutzgründen wird die Sammlung und alle zugehörigen Daten am 22.01.2020 unwiderruflich gelöscht.</p>
 <p>Falls Sie die Sammlung weiter bearbeiten und einreichen möchten, loggen Sie sich bitte im E-Collecting ein und schliessen Sie die Erfassung ab.</p></div>
 </body>
@@ -73,7 +73,7 @@
 </head>
 <body>
   <div class="container"><p>Hallo,</p>
-<p><strong><a href="http://localhost:4700/sg/initiatives/82ec863d-9ad3-4043-b17f-3f57c3cfc15d">F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)</a></strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
+<p><strong><a href="http://localhost:4700/initiatives/82ec863d-9ad3-4043-b17f-3f57c3cfc15d">F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)</a></strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
 <p>Aus Datenschutzgründen wird die Sammlung und alle zugehörigen Daten am 22.01.2020 unwiderruflich gelöscht.</p>
 <p>Falls Sie die Sammlung weiter bearbeiten und einreichen möchten, loggen Sie sich bitte im E-Collecting ein und schliessen Sie die Erfassung ab.</p></div>
 </body>

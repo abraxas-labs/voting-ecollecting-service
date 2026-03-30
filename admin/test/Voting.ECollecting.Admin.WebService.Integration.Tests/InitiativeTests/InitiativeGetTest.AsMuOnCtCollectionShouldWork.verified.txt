@@ -74,6 +74,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
       CanEditGeneralInformation: false,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     },
     CollectionStartDate: {

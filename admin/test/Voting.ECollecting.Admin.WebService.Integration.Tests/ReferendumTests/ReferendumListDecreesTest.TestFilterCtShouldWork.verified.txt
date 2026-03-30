@@ -101,7 +101,8 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
                   CanGenerateDocuments: false,
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
+                  CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 }
               }
@@ -152,7 +153,8 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
                   CanGenerateDocuments: false,
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
+                  CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 }
               }
@@ -203,7 +205,8 @@ Dieses Referendum steht für Nachhaltigkeit, Ressourcenschonung und das Prinzip 
                   CanGenerateDocuments: false,
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
+                  CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 }
               }
@@ -292,7 +295,8 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
                   CanGenerateDocuments: false,
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
+                  CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -362,6 +366,7 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -424,6 +429,7 @@ Dieses Referendum steht für Freiheit, individuelle Lebensgestaltung und das Rec
                   CanEditAdmissibilityDecision: true,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: true,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -491,7 +497,8 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                   CanGenerateDocuments: false,
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
+                  CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -553,7 +560,8 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
                   CanGenerateDocuments: false,
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
-                  CanEditGeneralInformation: false,
+                  CanEditGeneralInformation: true,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 }
               }
@@ -679,6 +687,7 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -741,6 +750,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 }
               }
@@ -749,7 +759,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
           UserPermissions: {
             CanEdit: false,
             CanFinish: false,
-            CanGenerateDocuments: false,
+            CanGenerateDocuments: true,
             CanAddCollection: false,
             CanDelete: false
           },

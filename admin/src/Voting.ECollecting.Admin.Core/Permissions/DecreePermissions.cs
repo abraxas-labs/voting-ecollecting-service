@@ -74,7 +74,6 @@ internal static class DecreePermissions
             .WhereHasRole(permissionService, Roles.Stammdatenverwalter)
             .WhereCanAccessOwnBfs(permissionService)
             .WhereInCollectionOrExpired(permissionService.Today)
-            .Where(x => x.State == DecreeState.CollectionApplicable)
             .Where(x => x.Collections.Count > 0);
     }
 
@@ -83,7 +82,6 @@ internal static class DecreePermissions
         return AclPermissions.HasRole(permissionService, Roles.Stammdatenverwalter)
                && AclPermissions.CanAccessOwnBfs(permissionService, decree)
                && decree.PeriodState is CollectionPeriodState.InCollection or CollectionPeriodState.Expired
-               && decree.State is DecreeState.CollectionApplicable
                && decree.Collections.Count > 0;
     }
 

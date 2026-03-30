@@ -10,6 +10,7 @@ using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
 using Voting.ECollecting.Admin.Core.Exceptions;
+using Voting.ECollecting.Admin.Core.Extensions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
 using Voting.ECollecting.Admin.Core.Resources;
@@ -51,6 +52,7 @@ public class InitiativeService : IInitiativeService
     private readonly CollectionCryptoService _collectionCryptoService;
     private readonly IUserNotificationService _userNotificationService;
     private readonly DomainOfInfluenceService _domainOfInfluenceService;
+    private readonly ICollectionMessageRepository _collectionMessageRepository;
 
     public InitiativeService(
         IInitiativeRepository initiativeRepository,
@@ -68,7 +70,8 @@ public class InitiativeService : IInitiativeService
         ISecondFactorTransactionService secondFactorTransactionService,
         IUserNotificationService userNotificationService,
         CollectionCryptoService collectionCryptoService,
-        DomainOfInfluenceService domainOfInfluenceService)
+        DomainOfInfluenceService domainOfInfluenceService,
+        ICollectionMessageRepository collectionMessageRepository)
     {
         _initiativeRepository = initiativeRepository;
         _timeProvider = timeProvider;
@@ -86,6 +89,7 @@ public class InitiativeService : IInitiativeService
         _userNotificationService = userNotificationService;
         _collectionCryptoService = collectionCryptoService;
         _domainOfInfluenceService = domainOfInfluenceService;
+        _collectionMessageRepository = collectionMessageRepository;
     }
 
     public Task<List<InitiativeSubTypeEntity>> ListSubTypes()
@@ -285,20 +289,45 @@ public class InitiativeService : IInitiativeService
 
     public async Task Update(Guid id, UpdateInitiativeParams updateParams)
     {
+        await using var transaction = await _dataContext.BeginTransaction();
+
         var initiative = await _initiativeRepository
                              .Query()
                              .WhereCanEditGeneralInformation(_permissionService)
                              .AsTracking()
+                             .Include(x => x.Permissions)
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(InitiativeEntity), id);
 
-        initiative.SubTypeId = updateParams.SubTypeId;
+        var changedFields = GetChangedFields(initiative, updateParams);
+        if (initiative.State == CollectionState.PreRecorded)
+        {
+            initiative.SubTypeId = updateParams.SubTypeId;
+        }
+        else if (initiative.SubTypeId != updateParams.SubTypeId)
+        {
+            throw new ValidationException("Cannot change the sub type.");
+        }
+        else if (changedFields == InitiativeFields.None)
+        {
+            return;
+        }
+
         initiative.Description = updateParams.Description;
         initiative.Wording = updateParams.Wording;
+        initiative.Reason = updateParams.Reason;
         initiative.Address = updateParams.Address ?? new();
 
         await ValidateGeneralInformation(initiative);
+        _permissionService.SetModified(initiative);
         await _dataContext.SaveChangesAsync();
+
+        if (initiative.State != CollectionState.PreRecorded)
+        {
+            await AddGeneralInformationChangedMessage(initiative, changedFields);
+        }
+
+        await transaction.CommitAsync();
     }
 
     public async IAsyncEnumerable<IFile> GetDocuments(Guid id, [EnumeratorCancellation] CancellationToken cancellationToken = default)
@@ -376,8 +405,7 @@ public class InitiativeService : IInitiativeService
                 recipients,
                 false,
                 UserNotificationType.CollectionDeleted,
-                collection: collection,
-                attachments: [attachment],
+                new UserNotificationContext(Collection: collection, Attachments: [attachment]),
                 cancellationToken: cancellationToken);
         }
 
@@ -463,6 +491,33 @@ public class InitiativeService : IInitiativeService
 
         await ValidateUnique(initiative, bfs);
         await ValidateSubType(initiative);
+    }
+
+    private static InitiativeFields GetChangedFields(InitiativeEntity existing, UpdateInitiativeParams updateParams)
+    {
+        var changedFields = InitiativeFields.None;
+
+        if (updateParams.Description != existing.Description)
+        {
+            changedFields |= InitiativeFields.Description;
+        }
+
+        if (updateParams.Wording != existing.Wording)
+        {
+            changedFields |= InitiativeFields.Wording;
+        }
+
+        if (updateParams.Reason != existing.Reason)
+        {
+            changedFields |= InitiativeFields.Reason;
+        }
+
+        if (updateParams.Address != null && !existing.Address.Equals(updateParams.Address))
+        {
+            changedFields |= InitiativeFields.Address;
+        }
+
+        return changedFields;
     }
 
     private async Task ValidateUnique(InitiativeEntity initiative, string bfs)
@@ -590,5 +645,14 @@ public class InitiativeService : IInitiativeService
             subType);
         yield return await _officialJournalPublicationProtocolGenerator.GenerateFileModel(templateData, cancellationToken);
         yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(templateData, cancellationToken);
+    }
+
+    private async Task AddGeneralInformationChangedMessage(InitiativeEntity initiative, InitiativeFields changedFields)
+    {
+        var content = string.Format(Strings.UserNotification_GeneralInformationChanged, changedFields.ToLocalizedString());
+        var msg = new CollectionMessageEntity { Content = content, CollectionId = initiative.Id };
+        _permissionService.SetCreated(msg);
+        await _collectionMessageRepository.Create(msg);
+        await _userNotificationService.ScheduleNotification(initiative, UserNotificationType.MessageAdded);
     }
 }

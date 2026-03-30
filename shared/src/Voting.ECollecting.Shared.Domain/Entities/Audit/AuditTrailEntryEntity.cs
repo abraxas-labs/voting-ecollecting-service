@@ -7,7 +7,7 @@ namespace Voting.ECollecting.Shared.Domain.Entities.Audit;
 
 public class AuditTrailEntryEntity : AuditedEntity
 {
-    public string SourceEntityName { get; set; } = string.Empty;
+    public string? SourceEntityName { get; set; }
 
     public string Action { get; set; } = string.Empty;
 
@@ -15,5 +15,7 @@ public class AuditTrailEntryEntity : AuditedEntity
 
     public JsonDocument? RecordAfter { get; set; }
 
-    public Guid SourceEntityId { get; set; }
+    public Guid? SourceEntityId { get; set; }
+
+    public string? Information { get; set; }
 }

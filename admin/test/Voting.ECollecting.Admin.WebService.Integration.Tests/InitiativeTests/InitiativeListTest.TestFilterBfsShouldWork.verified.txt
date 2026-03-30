@@ -68,6 +68,7 @@ Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegt
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -140,6 +141,7 @@ Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gä
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -211,6 +213,7 @@ Die Initiative fordert keine professionellen Touristenprogramme, sondern regelm�
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -283,6 +286,7 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -354,6 +358,7 @@ Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -423,6 +428,7 @@ Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trin
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -501,6 +507,7 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -589,6 +596,7 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -660,6 +668,7 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -738,6 +747,7 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -827,6 +837,7 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -915,6 +926,7 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -986,6 +998,7 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1058,6 +1071,7 @@ Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1130,6 +1144,7 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1207,6 +1222,7 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1296,6 +1312,7 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1386,6 +1403,7 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1469,6 +1487,7 @@ Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielp
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {

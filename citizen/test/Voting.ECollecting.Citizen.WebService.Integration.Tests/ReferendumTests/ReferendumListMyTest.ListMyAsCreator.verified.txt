@@ -17,7 +17,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       Collections: [
         {
@@ -184,7 +184,7 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       Collections: [
         {
@@ -1015,7 +1015,7 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
       },
       MinSignatureCount: 50000,
       MaxElectronicSignatureCount: 5000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: InCollection,
       Collections: [
         {
@@ -1188,7 +1188,7 @@ Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für P
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       Collections: [
         {
@@ -1542,7 +1542,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       Collections: [
         {
@@ -1750,7 +1750,7 @@ Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof 
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       Collections: [
         {

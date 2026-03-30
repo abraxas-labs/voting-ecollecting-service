@@ -43,6 +43,9 @@ public class UrlConfig
             : url;
     }
 
+    public string BuildCertificateManagementUrl()
+        => BuildUrl(false, "administration", "certificates");
+
     private string BuildUrl(bool isCitizen, params string[] pathSegments)
     {
         var baseUrl = isCitizen ? Citizen : Admin;

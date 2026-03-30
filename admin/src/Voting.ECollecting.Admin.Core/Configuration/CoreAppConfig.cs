@@ -67,4 +67,9 @@ public class CoreAppConfig
     /// Gets or sets the csv config.
     /// </summary>
     public CsvConfig Csv { get; set; } = new();
+
+    /// <summary>
+    /// Gets or sets the certificate validity check job config.
+    /// </summary>
+    public CertificateValidityCheckJobConfig CertificateValidityCheckJob { get; set; } = new();
 }

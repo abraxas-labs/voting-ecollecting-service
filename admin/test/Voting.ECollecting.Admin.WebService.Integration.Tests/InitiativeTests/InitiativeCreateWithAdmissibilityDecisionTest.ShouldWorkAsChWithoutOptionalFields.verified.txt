@@ -42,6 +42,7 @@
       CanEditAdmissibilityDecision: true,
       CanDeleteAdmissibilityDecision: true,
       CanEditGeneralInformation: true,
+      CanEditGeneralInformationInAdmissibilityDecision: true,
       CanReturnForCorrection: false
     }
   },

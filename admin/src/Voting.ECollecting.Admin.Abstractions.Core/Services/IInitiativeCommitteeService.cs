@@ -1,6 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Models;
 using IVotingStimmregisterPersonInfo = Voting.ECollecting.Admin.Domain.Models.IVotingStimmregisterPersonInfo;
@@ -20,4 +21,6 @@ public interface IInitiativeCommitteeService
     Task ApproveCommitteeMember(Guid initiativeId, Guid id);
 
     Task RejectCommitteeMember(Guid initiativeId, Guid id);
+
+    Task UpdateCommitteeMember(Guid initiativeId, Guid id, UpdateCommitteeMemberParams updateParams);
 }

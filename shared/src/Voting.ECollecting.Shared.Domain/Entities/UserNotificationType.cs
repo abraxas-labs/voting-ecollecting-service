@@ -15,4 +15,5 @@ public enum UserNotificationType
     AccessibilityMessage,
     DecreeDeleted,
     CollectionCleanupWarning,
+    CertificateExpirationWarning,
 }

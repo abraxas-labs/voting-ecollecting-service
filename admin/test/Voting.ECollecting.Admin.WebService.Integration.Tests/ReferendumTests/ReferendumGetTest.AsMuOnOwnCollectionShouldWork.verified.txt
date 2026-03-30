@@ -61,7 +61,8 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
       CanGenerateDocuments: false,
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
-      CanEditGeneralInformation: false,
+      CanEditGeneralInformation: true,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     },
     CollectionStartDate: {

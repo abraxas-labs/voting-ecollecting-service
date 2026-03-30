@@ -498,9 +498,10 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
             member.Email ?? throw new ValidationException("If a role or approval is set, an email is required"),
             true,
             notificationType.Value,
-            collection: initiative,
-            permissionToken: member.Permission?.Token,
-            initiativeCommitteeMembershipToken: member.Token);
+            new UserNotificationContext(
+                Collection: initiative,
+                PermissionToken: member.Permission?.Token,
+                InitiativeCommitteeMembershipToken: member.Token));
     }
 
     private async Task UpdateCommitteeMemberPermission(

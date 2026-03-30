@@ -1,0 +1,15 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      Action: DENIED ACCESS,
+      Information: gRPC - /abraxas.voting.ecollecting.admin.services.v1.InitiativeService/GetCommittee,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_1
+    }
+  ]
+}

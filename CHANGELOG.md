@@ -1,4 +1,4 @@
-# ✨ Changelog (`v1.138.1`)
+# ✨ Changelog (`v1.142.3`)
 
 All notable changes to this project will be documented in this file.
 
@@ -8,11 +8,59 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Version Info
 
 ```text
-This version -------- v1.138.1
-Previous version ---- v1.132.13
+This version -------- v1.142.3
+Previous version ---- v1.138.1
 Initial version ----- v1.125.3
-Total commits ------- 21
+Total commits ------- 8
 ```
+
+## [v1.142.3] - 2026-03-25
+
+### 🔄 Changed
+
+- fix(VOTING-6842): rm link of federal decrees (invalid mock data)
+
+## [v1.142.2] - 2026-03-23
+
+### 🔄 Changed
+
+- fix(VOTING-6816): initiative reason editable in admin and separate flag for admissibility decision
+
+## [v1.142.1] - 2026-03-18
+
+### 🔄 Changed
+
+- fix(VOTING-6942): allow to generate documents on past decrees
+
+## [v1.142.0] - 2026-03-18
+
+### 🆕 Added
+
+- feat(VOTING-6816): editable initiative in admin portal
+
+## [v1.141.1] - 2026-03-17
+
+### 🔄 Changed
+
+- adjust certificate validity warning notification
+
+## [v1.141.0] - 2026-03-17
+
+### 🆕 Added
+
+- add extended audit trail
+
+## [v1.140.0] - 2026-03-16
+
+### 🆕 Added
+
+- feat(VOTING-6816): editable referendum in admin portal
+
+## [v1.139.0] - 2026-03-16
+
+### 🆕 Added
+
+- add certificate validity check job
 
 ## [v1.138.1] - 2026-03-16
 

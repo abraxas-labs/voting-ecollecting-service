@@ -47,6 +47,7 @@ Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunch
           CanEditAdmissibilityDecision: true,
           CanDeleteAdmissibilityDecision: true,
           CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: true,
           CanReturnForCorrection: false
         }
       },
@@ -114,6 +115,7 @@ Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Ja
           CanEditAdmissibilityDecision: true,
           CanDeleteAdmissibilityDecision: true,
           CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: true,
           CanReturnForCorrection: false
         }
       },
@@ -181,6 +183,7 @@ Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte
           CanEditAdmissibilityDecision: true,
           CanDeleteAdmissibilityDecision: true,
           CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: true,
           CanReturnForCorrection: false
         }
       },
@@ -248,6 +251,7 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
           CanEditAdmissibilityDecision: true,
           CanDeleteAdmissibilityDecision: true,
           CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: true,
           CanReturnForCorrection: false
         }
       },
@@ -328,6 +332,7 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
           CanEditGeneralInformation: false,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: false
         },
         CollectionStartDate: {
@@ -411,6 +416,7 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
           CanEditGeneralInformation: false,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: false
         },
         CollectionStartDate: {

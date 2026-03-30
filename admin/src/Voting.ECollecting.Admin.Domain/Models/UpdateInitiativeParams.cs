@@ -9,5 +9,6 @@ namespace Voting.ECollecting.Admin.Domain.Models;
 public record UpdateInitiativeParams(
     Guid? SubTypeId,
     string Description,
+    string Reason,
     MarkdownString Wording,
     CollectionAddress? Address);

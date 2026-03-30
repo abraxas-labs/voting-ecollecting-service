@@ -30,4 +30,8 @@ public class UserNotificationTemplateBag
     public AccessibilityMessage? AccessibilityMessage { get; set; }
 
     public DateOnly? CollectionCleanupDate { get; set; }
+
+    public DateTime? CertificateExpirationDate { get; set; }
+
+    public bool IsCaCertificate { get; set; }
 }

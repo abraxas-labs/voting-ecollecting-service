@@ -11,8 +11,6 @@ using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Models;
-using Voting.Lib.Common;
-using Voting.Lib.Common.Files;
 using Voting.Lib.UserNotifications;
 
 namespace Voting.ECollecting.Shared.Core.Services;
@@ -70,13 +68,7 @@ public class UserNotificationService : IUserNotificationService
         string email,
         bool recipientIsCitizen,
         UserNotificationType type,
-        DecreeEntity? decree = null,
-        CollectionBaseEntity? collection = null,
-        IFile[]? attachments = null,
-        UrlToken? permissionToken = null,
-        UrlToken? initiativeCommitteeMembershipToken = null,
-        AccessibilityMessage? accessibilityMessage = null,
-        DateOnly? collectionCleanupDate = null,
+        UserNotificationContext context,
         CancellationToken cancellationToken = default)
     {
         var userNotification = new UserNotificationEntity
@@ -84,17 +76,19 @@ public class UserNotificationService : IUserNotificationService
             RecipientEMail = email,
             TemplateBag = new UserNotificationTemplateBag
             {
-                DecreeId = decree?.Id,
-                DecreeName = decree?.Description,
-                CollectionId = collection?.Id,
-                CollectionName = collection?.Description ?? string.Empty,
-                CollectionType = collection?.Type,
+                DecreeId = context.Decree?.Id,
+                DecreeName = context.Decree?.Description,
+                CollectionId = context.Collection?.Id,
+                CollectionName = context.Collection?.Description ?? string.Empty,
+                CollectionType = context.Collection?.Type,
                 NotificationType = type,
                 RecipientIsCitizen = recipientIsCitizen,
-                PermissionToken = permissionToken,
-                InitiativeCommitteeMembershipToken = initiativeCommitteeMembershipToken,
-                AccessibilityMessage = accessibilityMessage,
-                CollectionCleanupDate = collectionCleanupDate,
+                PermissionToken = context.PermissionToken,
+                InitiativeCommitteeMembershipToken = context.InitiativeCommitteeMembershipToken,
+                AccessibilityMessage = context.AccessibilityMessage,
+                CollectionCleanupDate = context.CollectionCleanupDate,
+                CertificateExpirationDate = context.CertificateExpirationDate,
+                IsCaCertificate = context.IsCaCertificate,
             },
         };
 
@@ -102,9 +96,9 @@ public class UserNotificationService : IUserNotificationService
         {
             var renderer = _serviceProvider.GetRequiredKeyedService<IUserNotificationRenderer>(userNotification.TemplateBag.NotificationType);
             var message = renderer.Render(userNotification);
-            if (attachments != null)
+            if (context.Attachments != null)
             {
-                message = message with { Attachments = attachments };
+                message = message with { Attachments = context.Attachments };
             }
 
             await _userNotificationSender.Send(message, cancellationToken);
@@ -131,13 +125,7 @@ public class UserNotificationService : IUserNotificationService
         IReadOnlyCollection<string> emails,
         bool recipientsAreCitizen,
         UserNotificationType type,
-        DecreeEntity? decree = null,
-        CollectionBaseEntity? collection = null,
-        IFile[]? attachments = null,
-        UrlToken? permissionToken = null,
-        UrlToken? initiativeCommitteeMembershipToken = null,
-        AccessibilityMessage? accessibilityMessage = null,
-        DateOnly? collectionCleanupDate = null,
+        UserNotificationContext context,
         CancellationToken cancellationToken = default)
     {
         var exceptions = new List<Exception>();
@@ -156,13 +144,7 @@ public class UserNotificationService : IUserNotificationService
                     email,
                     recipientsAreCitizen,
                     type,
-                    decree,
-                    collection,
-                    attachments,
-                    permissionToken,
-                    initiativeCommitteeMembershipToken,
-                    accessibilityMessage,
-                    collectionCleanupDate,
+                    context,
                     cancellationToken);
 
                 sentCount++;

@@ -4,16 +4,19 @@
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
-using Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Exceptions;
+using Voting.ECollecting.Admin.Core.Extensions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
+using Voting.ECollecting.Admin.Core.Resources;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
+using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
+using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 
 namespace Voting.ECollecting.Admin.Core.Services;
 
@@ -26,6 +29,8 @@ public class ReferendumService : IReferendumService
     private readonly TimeProvider _timeProvider;
     private readonly IPermissionService _permissionService;
     private readonly IDataContext _dataContext;
+    private readonly ICollectionMessageRepository _collectionMessageRepository;
+    private readonly IUserNotificationService _userNotificationService;
 
     public ReferendumService(
         IDecreeRepository decreeRepository,
@@ -34,7 +39,9 @@ public class ReferendumService : IReferendumService
         DecreeService decreeService,
         TimeProvider timeProvider,
         IPermissionService permissionService,
-        IDataContext dataContext)
+        IDataContext dataContext,
+        ICollectionMessageRepository collectionMessageRepository,
+        IUserNotificationService userNotificationService)
     {
         _decreeRepository = decreeRepository;
         _referendumRepository = referendumRepository;
@@ -43,6 +50,8 @@ public class ReferendumService : IReferendumService
         _timeProvider = timeProvider;
         _permissionService = permissionService;
         _dataContext = dataContext;
+        _collectionMessageRepository = collectionMessageRepository;
+        _userNotificationService = userNotificationService;
     }
 
     public async Task<Dictionary<DomainOfInfluenceType, List<Decree>>> ListDecreesByDoiType(IReadOnlySet<DomainOfInfluenceType>? doiTypes, string? bfs)
@@ -158,5 +167,82 @@ public class ReferendumService : IReferendumService
 
         await transaction.CommitAsync();
         return referendum.Id;
+    }
+
+    public async Task Update(Guid id, UpdateReferendumParams parameters)
+    {
+        await using var transaction = await _dataContext.BeginTransaction();
+
+        var referendum = await _referendumRepository
+                             .Query()
+                             .WhereCanEditGeneralInformation(_permissionService)
+                             .AsTracking()
+                             .Include(x => x.Permissions)
+                             .FirstOrDefaultAsync(x => x.Id == id)
+                         ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
+
+        var changedFields = GetChangedFields(referendum, parameters);
+
+        if (changedFields == ReferendumFields.None)
+        {
+            return;
+        }
+
+        referendum.Description = parameters.Description ?? referendum.Description;
+        referendum.Reason = parameters.Reason ?? referendum.Reason;
+        referendum.MembersCommittee = parameters.MembersCommittee ?? referendum.MembersCommittee;
+        referendum.Link = parameters.Link ?? referendum.Link;
+        referendum.Address = parameters.Address ?? referendum.Address;
+
+        _permissionService.SetModified(referendum);
+        await _dataContext.SaveChangesAsync();
+
+        if (referendum.State != CollectionState.PreRecorded)
+        {
+            await AddGeneralInformationChangedMessage(referendum, changedFields);
+        }
+
+        await transaction.CommitAsync();
+    }
+
+    private static ReferendumFields GetChangedFields(ReferendumEntity existing, UpdateReferendumParams parameters)
+    {
+        var changedFields = ReferendumFields.None;
+
+        if (parameters.Description != null && parameters.Description != existing.Description)
+        {
+            changedFields |= ReferendumFields.Description;
+        }
+
+        if (parameters.Reason != null && parameters.Reason != existing.Reason)
+        {
+            changedFields |= ReferendumFields.Reason;
+        }
+
+        if (parameters.MembersCommittee != null && parameters.MembersCommittee != existing.MembersCommittee)
+        {
+            changedFields |= ReferendumFields.MembersCommittee;
+        }
+
+        if (parameters.Link != null && parameters.Link != existing.Link)
+        {
+            changedFields |= ReferendumFields.Link;
+        }
+
+        if (parameters.Address != null && !existing.Address.Equals(parameters.Address))
+        {
+            changedFields |= ReferendumFields.Address;
+        }
+
+        return changedFields;
+    }
+
+    private async Task AddGeneralInformationChangedMessage(ReferendumEntity referendum, ReferendumFields changedFields)
+    {
+        var content = string.Format(Strings.UserNotification_GeneralInformationChanged, changedFields.ToLocalizedString());
+        var msg = new CollectionMessageEntity { Content = content, CollectionId = referendum.Id };
+        _permissionService.SetCreated(msg);
+        await _collectionMessageRepository.Create(msg);
+        await _userNotificationService.ScheduleNotification(referendum, UserNotificationType.MessageAdded);
     }
 }

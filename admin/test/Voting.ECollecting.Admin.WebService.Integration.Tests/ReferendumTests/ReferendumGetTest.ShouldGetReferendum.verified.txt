@@ -56,7 +56,8 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
       CanGenerateDocuments: false,
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
-      CanEditGeneralInformation: false,
+      CanEditGeneralInformation: true,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     }
   }

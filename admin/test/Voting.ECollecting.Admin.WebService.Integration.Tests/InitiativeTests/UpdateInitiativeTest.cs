@@ -103,11 +103,11 @@ public class UpdateInitiativeTest : BaseGrpcTest<InitiativeService.InitiativeSer
     }
 
     [Fact]
-    public async Task CtNotInPreRecordedShouldThrow()
+    public async Task CtInEndedShouldThrow()
     {
         await ModifyDbEntities(
             (InitiativeEntity i) => i.Id == InitiativesCtStGallen.GuidLegislativeInPaperSubmission,
-            i => i.State = CollectionState.Submitted);
+            i => i.State = CollectionState.EndedCameAbout);
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest()),
             StatusCode.NotFound);
@@ -147,6 +147,7 @@ public class UpdateInitiativeTest : BaseGrpcTest<InitiativeService.InitiativeSer
             Id = InitiativesCtStGallen.IdLegislativeInPaperSubmission,
             SubTypeId = InitiativeModelBuilder.LegislativeId.ToString(),
             Description = "foo bar baz-updated",
+            Reason = "reason-updated",
             Address = new()
             {
                 CommitteeOrPerson = "Hans Muster-updated",

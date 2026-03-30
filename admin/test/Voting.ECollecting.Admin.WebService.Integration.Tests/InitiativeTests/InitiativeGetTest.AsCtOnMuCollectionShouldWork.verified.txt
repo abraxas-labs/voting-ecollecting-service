@@ -70,6 +70,7 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
       CanEditGeneralInformation: false,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     }
   },

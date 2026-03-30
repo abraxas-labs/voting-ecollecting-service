@@ -83,6 +83,7 @@ Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof 
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -183,6 +184,7 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {

@@ -9,9 +9,8 @@ using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Voting.ECollecting.Citizen.WebService.Exceptions;
 using Voting.ECollecting.Citizen.WebService.Interceptors;
-using ClaimTypes = Voting.ECollecting.Citizen.WebService.ClaimTypes;
 
-namespace Voting.ECollecting.Admin.WebService.Middlewares;
+namespace Voting.ECollecting.Citizen.WebService.Middlewares;
 
 public class AuthorizationResultHandler : IAuthorizationMiddlewareResultHandler
 {

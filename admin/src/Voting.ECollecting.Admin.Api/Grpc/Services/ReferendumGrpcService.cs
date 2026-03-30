@@ -2,6 +2,7 @@
 // For license information see LICENSE file
 
 using Abraxas.Voting.Ecollecting.Shared.V1.Models;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Api.Grpc.Mappings;
@@ -11,6 +12,7 @@ using Voting.ECollecting.Proto.Admin.Services.V1.Models;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Proto.Admin.Services.V1.Responses;
 using Voting.Lib.Common;
+using Voting.Lib.Grpc;
 
 namespace Voting.ECollecting.Admin.Api.Grpc.Services;
 
@@ -45,5 +47,14 @@ public class ReferendumGrpcService : ReferendumService.ReferendumServiceBase
     {
         var id = await _referendumService.Create(GuidParser.Parse(request.DecreeId), request.Description, Mapper.MapToCollectionAddress(request.Address));
         return new IdValue { Id = id.ToString() };
+    }
+
+    [Stammdatenverwalter]
+    public override async Task<Empty> Update(UpdateReferendumRequest request, ServerCallContext context)
+    {
+        await _referendumService.Update(
+            GuidParser.Parse(request.Id),
+            Mapper.MapToUpdateReferendumParams(request));
+        return ProtobufEmpty.Instance;
     }
 }

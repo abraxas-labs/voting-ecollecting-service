@@ -20,7 +20,7 @@
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -45,7 +45,7 @@
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -70,7 +70,7 @@
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: false,
@@ -95,7 +95,7 @@
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: Published,
           UserPermissions: {
             CanCreateReferendum: true,
@@ -120,7 +120,7 @@
           },
           MinSignatureCount: 50000,
           MaxElectronicSignatureCount: 5000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: InCollection,
           UserPermissions: {
             CanCreateReferendum: false,

@@ -4,6 +4,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Voting.ECollecting.Shared.Domain.Entities;
+using Voting.ECollecting.Shared.Domain.Entities.Audit;
 
 namespace Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 
@@ -12,6 +13,10 @@ public interface IDataContext
     DbSet<InitiativeCommitteeMemberEntity> InitiativeCommitteeMembers { get; set; }
 
     DbSet<CollectionPermissionEntity> CollectionPermissions { get; set; }
+
+    DbSet<AuditTrailEntryEntity> AuditTrailEntries { get; set; }
+
+    DbSet<CollectionCitizenLogAuditTrailEntryEntity> CollectionCitizenLogAuditTrailEntries { get; set; }
 
     Task SaveChangesAsync();
 

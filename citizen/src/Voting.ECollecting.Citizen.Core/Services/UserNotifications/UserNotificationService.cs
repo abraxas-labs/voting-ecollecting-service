@@ -25,6 +25,6 @@ public class UserNotificationService : IUserNotificationService
             _config.AccessibilityEmail,
             false,
             UserNotificationType.AccessibilityMessage,
-            accessibilityMessage: message);
+            new UserNotificationContext(AccessibilityMessage: message));
     }
 }

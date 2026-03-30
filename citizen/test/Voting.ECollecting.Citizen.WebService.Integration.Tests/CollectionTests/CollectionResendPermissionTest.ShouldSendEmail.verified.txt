@@ -36,8 +36,8 @@
   <div class="container"><h2>Neue Berechtigung in E-Collecting</h2>
 <p>Hallo,</p>
 <p>
-Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">F&#252;r eine t&#228;gliche Portion Natur (Frischluftinitiative)</a> für Sie hinzugefügt.
-Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
+Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:4700/permission-approval#token=<url-token>">F&#252;r eine t&#228;gliche Portion Natur (Frischluftinitiative)</a> für Sie hinzugefügt.
+Klicken Sie <a href="http://localhost:4700/permission-approval#token=<url-token>">hier</a> um diese anzunehmen oder abzulehnen.
 </p></div>
 </body>
 </html>
@@ -53,7 +53,8 @@ Klicken Sie <a href="http://localhost:4700/sg/permission-approval#token=<url-tok
         RecipientIsCitizen: true,
         NotificationType: PermissionAdded,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_2
     }

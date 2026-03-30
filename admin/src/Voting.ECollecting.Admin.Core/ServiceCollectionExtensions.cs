@@ -33,6 +33,7 @@ public static class ServiceCollectionExtensions
         services
             .AddSingleton(config.UserNotificationsJob)
             .AddSingleton(config.CollectionCleanupJob)
+            .AddSingleton(config.CertificateValidityCheckJob)
             .AddSingleton(config)
             .AddSecondFactorTransactionProvider<SecondFactorTransactionStorageService>(config.SecondFactorTransaction)
             .AddForwardRefScoped<ICollectionService, CollectionService>()
@@ -49,7 +50,8 @@ public static class ServiceCollectionExtensions
             .AddKeyedScoped<IUserNotificationRenderer, CollectionDeletedUserNotificationRenderer>(UserNotificationType.CollectionDeleted)
             .AddKeyedScoped<IUserNotificationRenderer, DecreeDeletedUserNotificationRenderer>(UserNotificationType.DecreeDeleted)
             .AddKeyedScoped<IUserNotificationRenderer, CollectionCleanupWarningUserNotificationRenderer>(UserNotificationType.CollectionCleanupWarning)
-            .AddScoped<ICertificateService, CertificateService>()
+            .AddKeyedScoped<IUserNotificationRenderer, CertificateValidityWarningUserNotificationRenderer>(UserNotificationType.CertificateExpirationWarning)
+            .AddForwardRefScoped<ICertificateService, CertificateService>()
             .AddScoped<IDomainOfInfluenceService, DomainOfInfluenceService>()
             .AddForwardRefScoped<IInitiativeService, InitiativeService>()
             .AddScoped<IReferendumService, ReferendumService>()
@@ -77,6 +79,11 @@ public static class ServiceCollectionExtensions
             services
                 .AddCronJob<InitiativeCleanupJob>(config.CollectionCleanupJob)
                 .AddCronJob<InitiativeCleanupWarningNotificationJob>(config.CollectionCleanupJob);
+        }
+
+        if (config.CertificateValidityCheckJob.Enabled)
+        {
+            services.AddCronJob<CertificateValidityCheckJob>(config.CertificateValidityCheckJob);
         }
 
         if (config.Kms.EnableMock)

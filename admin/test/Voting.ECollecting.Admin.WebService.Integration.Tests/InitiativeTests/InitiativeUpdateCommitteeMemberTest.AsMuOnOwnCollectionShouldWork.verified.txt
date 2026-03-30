@@ -1,0 +1,33 @@
+﻿{
+  InitiativeId: Guid_1,
+  SortIndex: 0,
+  FirstName: Margarita,
+  LastName: Hamrick,
+  PoliticalFirstName: Margarita (updated),
+  PoliticalLastName: Hamrick (updated),
+  Bfs: 3211,
+  PoliticalResidence: Goldach,
+  Street: Dorfstrasse,
+  HouseNumber: 1,
+  ZipCode: 9305,
+  PoliticalDuty: Gemeinderätin,
+  DateOfBirth: Date_1,
+  Email: margarita@example.com,
+  MemberSignatureRequested: true,
+  ApprovalState: Requested,
+  Token: {
+    Value: ut.1-e4968444-d950-530a-b23d-a489208d4039
+  },
+  TokenExpiry: DateTime_1,
+  AuditInfo: {
+    CreatedById: default-user-id,
+    CreatedByName: Test Admin,
+    CreatedByEmail: admin@example.com,
+    CreatedAt: DateTime_2,
+    ModifiedById: default-user-id,
+    ModifiedByName: default user firstname default user lastname,
+    ModifiedByEmail: default-user@example.com,
+    ModifiedAt: DateTime_2
+  },
+  Id: Guid_2
+}

@@ -34,17 +34,19 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Information")
+                        .HasColumnType("text");
+
                     b.Property<JsonDocument>("RecordAfter")
                         .HasColumnType("jsonb");
 
                     b.Property<JsonDocument>("RecordBefore")
                         .HasColumnType("jsonb");
 
-                    b.Property<Guid>("SourceEntityId")
+                    b.Property<Guid?>("SourceEntityId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("SourceEntityName")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
@@ -2189,6 +2191,9 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                             b1.Property<Guid>("UserNotificationEntityId")
                                 .HasColumnType("uuid");
 
+                            b1.Property<DateTime?>("CertificateExpirationDate")
+                                .HasColumnType("timestamp with time zone");
+
                             b1.Property<DateOnly?>("CollectionCleanupDate")
                                 .HasColumnType("date");
 
@@ -2207,6 +2212,9 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.Property<string>("DecreeName")
                                 .HasColumnType("text");
+
+                            b1.Property<bool>("IsCaCertificate")
+                                .HasColumnType("boolean");
 
                             b1.Property<int>("NotificationType")
                                 .HasColumnType("integer");

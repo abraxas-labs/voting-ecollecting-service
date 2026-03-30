@@ -499,7 +499,7 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanEdit: false,
-        CanEditPoliticalDuty: true,
+        CanEditPoliticalDuty: false,
         CanResend: false
       }
     },
@@ -524,7 +524,7 @@
       ApprovalState: Expired,
       UserPermissions: {
         CanEdit: false,
-        CanEditPoliticalDuty: true,
+        CanEditPoliticalDuty: false,
         CanResend: true
       }
     },
@@ -549,7 +549,7 @@
       ApprovalState: SignatureRejected,
       UserPermissions: {
         CanEdit: false,
-        CanEditPoliticalDuty: true,
+        CanEditPoliticalDuty: false,
         CanResend: true
       }
     },
@@ -575,7 +575,7 @@
       SignatureType: UploadedSignature,
       UserPermissions: {
         CanEdit: false,
-        CanEditPoliticalDuty: true,
+        CanEditPoliticalDuty: false,
         CanResend: false
       }
     }

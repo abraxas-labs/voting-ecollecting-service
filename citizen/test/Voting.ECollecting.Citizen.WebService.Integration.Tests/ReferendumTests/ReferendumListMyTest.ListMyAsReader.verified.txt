@@ -205,7 +205,7 @@ Dieses Referendum steht für Nachhaltigkeit, Ressourcenschonung und das Prinzip 
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       Collections: [
         {
@@ -1091,7 +1091,7 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
       },
       MinSignatureCount: 50000,
       MaxElectronicSignatureCount: 5000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: InCollection,
       Collections: [
         {
@@ -1422,7 +1422,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       Collections: [
         {

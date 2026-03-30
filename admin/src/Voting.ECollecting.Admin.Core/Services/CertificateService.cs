@@ -115,7 +115,7 @@ public class CertificateService : ICertificateService
         await transaction.CommitAsync(ct);
     }
 
-    private X509Certificate2 GetCertificateAuthorityCertificate()
+    internal X509Certificate2 GetCertificateAuthorityCertificate()
     {
         var cert = X509Certificate2.CreateFromPem(_config.BackupCertificate.CACertificate);
         if (!cert.HasPrivateKey)

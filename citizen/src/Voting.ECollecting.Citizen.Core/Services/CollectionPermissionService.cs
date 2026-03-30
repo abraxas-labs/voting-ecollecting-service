@@ -15,6 +15,7 @@ using Voting.ECollecting.Citizen.Domain.Queries;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Queries;
 using Voting.Lib.Common;
 using IPermissionService = Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.IPermissionService;
@@ -86,8 +87,7 @@ public class CollectionPermissionService : ICollectionPermissionService
             email,
             true,
             UserNotificationType.PermissionAdded,
-            collection: collection,
-            permissionToken: permission.Token,
+            new UserNotificationContext(Collection: collection, PermissionToken: permission.Token),
             cancellationToken: ct);
         return permission.Id;
     }
@@ -132,8 +132,7 @@ public class CollectionPermissionService : ICollectionPermissionService
             permission.Email,
             true,
             UserNotificationType.PermissionAdded,
-            collection: collection,
-            permissionToken: permission.Token,
+            new UserNotificationContext(Collection: collection, PermissionToken: permission.Token),
             cancellationToken: ct);
     }
 

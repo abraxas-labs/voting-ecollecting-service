@@ -110,6 +110,7 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -177,6 +178,7 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -282,6 +284,7 @@ Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof 
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {

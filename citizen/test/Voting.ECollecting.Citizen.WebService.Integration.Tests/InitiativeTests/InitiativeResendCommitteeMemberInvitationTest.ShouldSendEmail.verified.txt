@@ -37,7 +37,7 @@
 <p>Hallo,</p>
 <p>
   Im E-Collecting wurden Sie zum Initiativkomitee von F&#252;r eine t&#228;gliche Portion Natur (Frischluftinitiative) hinzugefügt.
-  Bestätigen Sie die Teilnahme <a href="http://localhost:4700/sg/initiative-committee-membership-approval#token=<url-token>">hier</a>.
+  Bestätigen Sie die Teilnahme <a href="http://localhost:4700/initiative-committee-membership-approval#token=<url-token>">hier</a>.
 </p>
 </div>
 </body>
@@ -54,7 +54,8 @@
         RecipientIsCitizen: true,
         NotificationType: CommitteeMembershipAdded,
         CollectionId: Guid_1,
-        CollectionType: Initiative
+        CollectionType: Initiative,
+        IsCaCertificate: false
       },
       Id: Guid_2
     }

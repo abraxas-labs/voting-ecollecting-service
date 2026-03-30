@@ -1,0 +1,79 @@
+﻿{
+  AuditTrailEntries: [
+    {
+      SourceEntityName: InitiativeCommitteeMembers,
+      Action: Modified,
+      RecordBefore: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: margarita@example.com,
+        Token: {
+          Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
+        },
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Hamrick,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          CreatedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com
+        },
+        FirstName: Margarita,
+        SortIndex: 0,
+        DateOfBirth: 1995-12-10,
+        HouseNumber: 1,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 1,
+        SignatureType: 0,
+        PoliticalLastName: Hamrick,
+        PoliticalFirstName: Margarita,
+        PoliticalResidence: Berg SG,
+        MemberSignatureRequested: true
+      },
+      RecordAfter: {
+        Id: Guid_1,
+        Bfs: 3211,
+        Email: margarita@example.com,
+        Token: {
+          Value: ut.1-17c93f56-5af0-542a-a412-770818b2e97c
+        },
+        Street: Dorfstrasse,
+        ZipCode: 9305,
+        LastName: Hamrick,
+        AuditInfo: {
+          CreatedAt: DateTimeOffset_1,
+          ModifiedAt: DateTimeOffset_3,
+          CreatedById: default-user-id,
+          ModifiedById: default-user-id,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
+          ModifiedByName: default user firstname default user lastname,
+          ModifiedByEmail: default-user@example.com
+        },
+        FirstName: Margarita,
+        SortIndex: 0,
+        DateOfBirth: 1995-12-10,
+        HouseNumber: 1,
+        TokenExpiry: DateTimeOffset_2,
+        InitiativeId: Guid_2,
+        ApprovalState: 1,
+        PoliticalDuty: Gemeinderätin,
+        SignatureType: 0,
+        PoliticalLastName: Hamrick (updated),
+        PoliticalFirstName: Margarita (updated),
+        PoliticalResidence: Goldach,
+        MemberSignatureRequested: true
+      },
+      SourceEntityId: Guid_1,
+      AuditInfo: {
+        CreatedById: default-user-id,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
+        CreatedAt: DateTime_1
+      },
+      Id: Guid_3
+    }
+  ]
+}

@@ -14,4 +14,6 @@ public interface IReferendumService
     Task<Referendum> Get(Guid id);
 
     Task<Guid> Create(Guid decreeId, string description, CollectionAddress collectionAddress);
+
+    Task Update(Guid id, UpdateReferendumParams parameters);
 }

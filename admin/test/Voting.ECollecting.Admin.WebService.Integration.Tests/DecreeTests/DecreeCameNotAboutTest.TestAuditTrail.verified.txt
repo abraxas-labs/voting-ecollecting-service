@@ -6,7 +6,7 @@
       RecordBefore: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.admin.ch/,
+        Link: ,
         State: 1,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,
@@ -29,7 +29,7 @@
       RecordAfter: {
         Id: Guid_1,
         Bfs: 1,
-        Link: https://www.admin.ch/,
+        Link: ,
         State: 3,
         AuditInfo: {
           CreatedAt: DateTimeOffset_1,

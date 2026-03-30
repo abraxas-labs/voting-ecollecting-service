@@ -17,7 +17,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       UserPermissions: {
         CanEdit: true,
@@ -46,7 +46,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       UserPermissions: {
         CanEdit: true,
@@ -162,7 +162,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       UserPermissions: {
         CanEdit: true,
@@ -220,7 +220,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Published,
       UserPermissions: {
         CanEdit: true,
@@ -336,7 +336,7 @@
       },
       MinSignatureCount: 50000,
       MaxElectronicSignatureCount: 5000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: InCollection,
       UserPermissions: {
         CanEdit: false,
@@ -394,7 +394,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       UserPermissions: {
         CanEdit: false,
@@ -423,7 +423,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       UserPermissions: {
         CanEdit: false,
@@ -452,7 +452,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       UserPermissions: {
         CanEdit: false,
@@ -590,7 +590,7 @@
       },
       MinSignatureCount: 100000,
       MaxElectronicSignatureCount: 10000,
-      Link: https://www.admin.ch/,
+      Link: ,
       PeriodState: Expired,
       UserPermissions: {
         CanEdit: false,

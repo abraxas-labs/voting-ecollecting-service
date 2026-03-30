@@ -63,7 +63,8 @@ Denn gute Schokolade verbindet Generationen.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -136,6 +137,7 @@ Denn wer Alphorn hört, hört die Berge rufen.,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -211,7 +213,8 @@ Denn wer langsam denkt, denkt oft besser.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -303,6 +306,7 @@ Denn wer mitfeiert, gehört dazu.,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -398,7 +402,8 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -482,7 +487,8 @@ Denn wer picknickt, geniesst die Berge bewusst.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -566,7 +572,8 @@ Denn wer wandert, entdeckt die Schweiz neu.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -638,7 +645,8 @@ Denn wer entspannt arbeitet, arbeitet besser.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -710,7 +718,8 @@ Denn wer im See schwimmt, spürt die Schweiz.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -783,7 +792,8 @@ Denn wer jodelt, singt von den Bergen.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -862,6 +872,7 @@ Denn wer Blumen schützt, schützt die Berge.,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -949,7 +960,8 @@ Denn wer in der Hütte übernachtet, erlebt die Berge intensiv.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1021,7 +1033,8 @@ Denn wer die Fahne zeigt, zeigt Verbundenheit.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -1095,6 +1108,7 @@ Denn wer zusammen isst, versteht sich besser.,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1171,7 +1185,8 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1255,7 +1270,8 @@ Denn wer Käse kennt, schätzt Qualität.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1333,7 +1349,8 @@ Denn wer spielt, bleibt geistig fit.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1417,7 +1434,8 @@ Denn wer Kuhglocken hört, hört die Alpen leben.,
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1495,6 +1513,7 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1589,6 +1608,7 @@ Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlings
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1664,6 +1684,7 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: true,
               CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: true,
               CanReturnForCorrection: false
             }
           },
@@ -1734,7 +1755,8 @@ Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmä
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -1806,7 +1828,8 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -1865,6 +1888,7 @@ Die Initiative fordert keine Observatorien, sondern unkomplizierte Nachtwanderun
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: true,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -1935,6 +1959,7 @@ Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunch
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: true,
               CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: true,
               CanReturnForCorrection: false
             }
           },
@@ -2014,7 +2039,8 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -2097,7 +2123,8 @@ Die Initiative fordert keine Marathon-Wanderungen, sondern einfache Tagestouren 
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -2168,7 +2195,8 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl�
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -2239,7 +2267,8 @@ Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schö
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -2322,7 +2351,8 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -2392,7 +2422,8 @@ Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Verein
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -2452,6 +2483,7 @@ Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: true,
               CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: true,
               CanReturnForCorrection: false
             }
           },
@@ -2511,6 +2543,7 @@ Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Ja
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: true,
               CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: true,
               CanReturnForCorrection: false
             }
           },
@@ -2582,7 +2615,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: true,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: true
             }
           },
@@ -2654,7 +2688,8 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -2730,7 +2765,8 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -2821,6 +2857,7 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -2908,7 +2945,8 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -2980,7 +3018,8 @@ Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- u
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3056,7 +3095,8 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
               CanGenerateDocuments: false,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
-              CanEditGeneralInformation: false,
+              CanEditGeneralInformation: true,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -3140,6 +3180,7 @@ Die Initiative fordert keine Gratis-Eintritt, sondern regelmässige Aktionstage 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3219,6 +3260,7 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -3302,6 +3344,7 @@ Die Initiative fordert keine Luxus-Anlagen, sondern einfache, gepflegte Grillste
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3377,6 +3420,7 @@ Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegt
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3449,6 +3493,7 @@ Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gä
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3520,6 +3565,7 @@ Die Initiative fordert keine professionellen Touristenprogramme, sondern regelm�
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3592,6 +3638,7 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3663,6 +3710,7 @@ Diese Initiative fordert keine riesigen Freizeitparks, sondern ein einfaches Pri
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -3746,6 +3794,7 @@ Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3815,6 +3864,7 @@ Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trin
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -3893,6 +3943,7 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -3986,6 +4037,7 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -4069,6 +4121,7 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -4140,6 +4193,7 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -4218,6 +4272,7 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -4307,6 +4362,7 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -4395,6 +4451,7 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -4466,6 +4523,7 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -4538,6 +4596,7 @@ Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -4615,6 +4674,7 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -4698,6 +4758,7 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             }
           },
@@ -4775,6 +4836,7 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -4864,6 +4926,7 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -4954,6 +5017,7 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -5037,6 +5101,7 @@ Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielp
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {

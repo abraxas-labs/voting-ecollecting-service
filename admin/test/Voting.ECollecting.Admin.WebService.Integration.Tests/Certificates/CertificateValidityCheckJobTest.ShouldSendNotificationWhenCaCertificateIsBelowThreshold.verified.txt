@@ -1,0 +1,61 @@
+﻿{
+  SentUserNotifications: [
+    {
+      RecipientEmail: voting@abraxas.ch,
+      Subject: E-Collecting: Zertifikat läuft bald ab: CA-Zertifikat,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Zertifikat l&#228;uft bald ab: CA-Zertifikat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p>Hallo,</p>
+<p>Das aktuelle CA-Zertifikat läuft bald ab:</p>
+<ul>
+    <li><strong>Ablaufdatum:</strong> 07<span>.</span>02<span>.</span>2030 17<span>:</span>41 UTC</li>
+</ul>
+<p>Bitte erneuern Sie das Zertifikat rechtzeitig, um einen reibungslosen Betrieb sicherzustellen: <a href="http://localhost:4600/administration/certificates">Schlüsselmanagement</a></p></div>
+</body>
+</html>
+    }
+  ],
+  dbNotifications: [
+    {
+      RecipientEMail: voting@abraxas.ch,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        CollectionName: ,
+        RecipientIsCitizen: false,
+        NotificationType: CertificateExpirationWarning,
+        CertificateExpirationDate: DateTime_2,
+        IsCaCertificate: true
+      },
+      Id: Guid_1
+    }
+  ]
+}

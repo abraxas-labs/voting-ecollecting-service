@@ -9,6 +9,7 @@ using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
+using Voting.ECollecting.Shared.Domain.Models;
 using Voting.Lib.Database.Postgres.Locking;
 using Voting.Lib.Scheduler;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
@@ -106,8 +107,7 @@ public class InitiativeCleanupWarningNotificationJob : IScheduledJob
                 recipients,
                 true,
                 UserNotificationType.CollectionCleanupWarning,
-                collection: collection,
-                collectionCleanupDate: cleanupDate,
+                new UserNotificationContext(Collection: collection, CollectionCleanupDate: cleanupDate),
                 cancellationToken: ct);
 
             collection.CleanupWarningSentAt = now;

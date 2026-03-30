@@ -132,6 +132,16 @@ public class InitiativeGrpcService : InitiativeService.InitiativeServiceBase
     }
 
     [Stammdatenverwalter]
+    public override async Task<Empty> UpdateCommitteeMember(UpdateCommitteeMemberRequest request, ServerCallContext context)
+    {
+        await _initiativeCommitteeService.UpdateCommitteeMember(
+            GuidParser.Parse(request.InitiativeId),
+            GuidParser.Parse(request.Id),
+            Mapper.MapToUpdateCommitteeMemberParams(request));
+        return ProtobufEmpty.Instance;
+    }
+
+    [Stammdatenverwalter]
     public override async Task<Empty> CameAbout(CameAboutInitiativeRequest request, ServerCallContext context)
     {
         await _initiativeService.CameAbout(

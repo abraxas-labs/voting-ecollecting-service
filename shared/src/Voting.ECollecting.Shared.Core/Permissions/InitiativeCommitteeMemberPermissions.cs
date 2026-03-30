@@ -16,7 +16,7 @@ public static class InitiativeCommitteeMemberPermissions
         Debug.Assert(member.Initiative != null, "Initiative should be loaded with integrated query.");
         return new InitiativeCommitteeMemberUserPermissions(
             CanEdit(member),
-            CanEditPoliticalDuty(member),
+            CanEditPoliticalDetails(member),
             CanResend(member),
             CanReset(member),
             CanVerify(member));
@@ -40,8 +40,12 @@ public static class InitiativeCommitteeMemberPermissions
                    SignatureType: InitiativeCommitteeMemberSignatureType.UploadedSignature
                });
 
-    private static bool CanEditPoliticalDuty(InitiativeCommitteeMemberEntity member)
-        => member.Initiative!.State.IsNotEndedAndNotAborted();
+    private static bool CanEditPoliticalDetails(InitiativeCommitteeMemberEntity member)
+        => member.Initiative!.State.IsNotEndedAndNotAborted()
+           && member.ApprovalState
+               is InitiativeCommitteeMemberApprovalState.Approved
+               or InitiativeCommitteeMemberApprovalState.Requested
+               or InitiativeCommitteeMemberApprovalState.Signed;
 
     private static bool CanResend(InitiativeCommitteeMemberEntity member)
         => member.Initiative!.State.InPreparationOrReturnForCorrection()

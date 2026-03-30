@@ -20,7 +20,7 @@
           },
           MinSignatureCount: 100000,
           MaxElectronicSignatureCount: 10000,
-          Link: https://www.admin.ch/,
+          Link: ,
           PeriodState: Expired,
           Collections: [
             {
@@ -77,6 +77,7 @@ Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und 
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -177,6 +178,7 @@ Denn wer Blumen schützt, schützt die Berge.,
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {
@@ -277,6 +279,7 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {

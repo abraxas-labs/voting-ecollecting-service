@@ -69,7 +69,8 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
       CanGenerateDocuments: false,
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
-      CanEditGeneralInformation: false,
+      CanEditGeneralInformation: true,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     }
   },

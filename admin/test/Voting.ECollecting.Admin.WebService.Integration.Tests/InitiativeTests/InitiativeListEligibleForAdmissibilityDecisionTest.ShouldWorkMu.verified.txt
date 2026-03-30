@@ -59,7 +59,8 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
           CanGenerateDocuments: false,
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
+          CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: true
         }
       },
@@ -130,7 +131,8 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
           CanGenerateDocuments: false,
           CanEditAdmissibilityDecision: false,
           CanDeleteAdmissibilityDecision: false,
-          CanEditGeneralInformation: false,
+          CanEditGeneralInformation: true,
+          CanEditGeneralInformationInAdmissibilityDecision: false,
           CanReturnForCorrection: true
         }
       },

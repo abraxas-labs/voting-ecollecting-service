@@ -70,6 +70,7 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 }
               }
@@ -128,6 +129,7 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                   CanEditAdmissibilityDecision: false,
                   CanDeleteAdmissibilityDecision: false,
                   CanEditGeneralInformation: false,
+                  CanEditGeneralInformationInAdmissibilityDecision: false,
                   CanReturnForCorrection: false
                 },
                 CollectionStartDate: {
@@ -227,6 +229,7 @@ Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlings
               CanEditAdmissibilityDecision: false,
               CanDeleteAdmissibilityDecision: false,
               CanEditGeneralInformation: false,
+              CanEditGeneralInformationInAdmissibilityDecision: false,
               CanReturnForCorrection: false
             },
             CollectionStartDate: {

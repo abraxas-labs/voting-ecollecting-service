@@ -7,7 +7,8 @@
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_2
     },
@@ -18,7 +19,8 @@
         RecipientIsCitizen: true,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_3
     },
@@ -29,7 +31,8 @@
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_4
     },
@@ -40,7 +43,8 @@
         RecipientIsCitizen: false,
         NotificationType: StateChanged,
         CollectionId: Guid_1,
-        CollectionType: Referendum
+        CollectionType: Referendum,
+        IsCaCertificate: false
       },
       Id: Guid_5
     }
@@ -75,6 +79,7 @@
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
       CanEditGeneralInformation: false,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     }
   }

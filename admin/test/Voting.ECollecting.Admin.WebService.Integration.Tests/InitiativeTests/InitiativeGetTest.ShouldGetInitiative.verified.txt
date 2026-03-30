@@ -69,7 +69,8 @@ Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- u
       CanGenerateDocuments: false,
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
-      CanEditGeneralInformation: false,
+      CanEditGeneralInformation: true,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     }
   },

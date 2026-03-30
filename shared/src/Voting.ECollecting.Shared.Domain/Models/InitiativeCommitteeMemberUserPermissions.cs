@@ -3,4 +3,9 @@
 
 namespace Voting.ECollecting.Shared.Domain.Models;
 
-public record InitiativeCommitteeMemberUserPermissions(bool CanEdit, bool CanEditPoliticalDuty, bool CanResend, bool CanReset, bool CanVerify);
+public record InitiativeCommitteeMemberUserPermissions(
+    bool CanEdit,
+    bool CanEditPoliticalDetails,
+    bool CanResend,
+    bool CanReset,
+    bool CanVerify);

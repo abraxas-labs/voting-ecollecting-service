@@ -7,7 +7,9 @@ using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Configuration;
+using Voting.ECollecting.Admin.Core.Extensions;
 using Voting.ECollecting.Admin.Core.Permissions;
+using Voting.ECollecting.Admin.Core.Resources;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
@@ -31,6 +33,8 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
     private readonly IPermissionService _permissionService;
     private readonly IVotingStimmregisterAdapter _stimmregister;
     private readonly IInitiativeCommitteeMemberService _initiativeCommitteeMemberService;
+    private readonly ICollectionMessageRepository _collectionMessageRepository;
+    private readonly IUserNotificationService _userNotificationService;
 
     public InitiativeCommitteeService(
         IInitiativeRepository initiativeRepository,
@@ -40,7 +44,9 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
         IPermissionService permissionService,
         IVotingStimmregisterAdapter stimmregister,
         IInitiativeCommitteeMemberService initiativeCommitteeMemberService,
-        IDomainOfInfluenceRepository domainOfInfluenceRepository)
+        IDomainOfInfluenceRepository domainOfInfluenceRepository,
+        ICollectionMessageRepository collectionMessageRepository,
+        IUserNotificationService userNotificationService)
     {
         _initiativeRepository = initiativeRepository;
         _committeeMemberRepository = committeeMemberRepository;
@@ -50,6 +56,8 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
         _stimmregister = stimmregister;
         _initiativeCommitteeMemberService = initiativeCommitteeMemberService;
         _domainOfInfluenceRepository = domainOfInfluenceRepository;
+        _collectionMessageRepository = collectionMessageRepository;
+        _userNotificationService = userNotificationService;
     }
 
     public async Task<InitiativeCommittee> GetCommittee(Guid initiativeId)
@@ -178,6 +186,72 @@ public class InitiativeCommitteeService : IInitiativeCommitteeService
         member.ApprovalState = InitiativeCommitteeMemberApprovalState.Rejected;
         _permissionService.SetModified(member);
         await _dataContext.SaveChangesAsync();
+    }
+
+    public async Task UpdateCommitteeMember(Guid initiativeId, Guid id, UpdateCommitteeMemberParams updateParams)
+    {
+        await using var transaction = await _dataContext.BeginTransaction();
+
+        var initiative = await _initiativeRepository.Query()
+                             .WhereCanEditCommittee(_permissionService)
+                             .AsTracking()
+                             .Include(x => x.CommitteeMembers.Where(m => m.Id == id))
+                             .Include(x => x.Permissions)
+                             .FirstOrDefaultAsync(x => x.Id == initiativeId)
+                         ?? throw new EntityNotFoundException(nameof(InitiativeEntity), initiativeId);
+        var member = initiative.CommitteeMembers.FirstOrDefault()
+                     ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
+
+        var changedFields = GetChangedFields(member, updateParams);
+        if (changedFields == InitiativeCommitteeMemberFields.None)
+        {
+            return;
+        }
+
+        member.PoliticalFirstName = updateParams.PoliticalFirstName;
+        member.PoliticalLastName = updateParams.PoliticalLastName;
+        member.PoliticalResidence = updateParams.PoliticalResidence;
+        member.PoliticalDuty = updateParams.PoliticalDuty;
+        _permissionService.SetModified(member);
+        await _dataContext.SaveChangesAsync();
+
+        var content = string.Format(
+            Strings.UserNotification_CommitteeMemberUpdated,
+            changedFields.ToLocalizedString(),
+            member.FirstName,
+            member.LastName);
+        var msg = new CollectionMessageEntity { Content = content, CollectionId = initiative.Id };
+        _permissionService.SetCreated(msg);
+        await _collectionMessageRepository.Create(msg);
+        await _userNotificationService.ScheduleNotification(initiative, UserNotificationType.MessageAdded);
+        await transaction.CommitAsync();
+    }
+
+    private static InitiativeCommitteeMemberFields GetChangedFields(InitiativeCommitteeMemberEntity existing, UpdateCommitteeMemberParams updateParams)
+    {
+        var changedFields = InitiativeCommitteeMemberFields.None;
+
+        if (updateParams.PoliticalFirstName != existing.PoliticalFirstName)
+        {
+            changedFields |= InitiativeCommitteeMemberFields.PoliticalFirstName;
+        }
+
+        if (updateParams.PoliticalLastName != existing.PoliticalLastName)
+        {
+            changedFields |= InitiativeCommitteeMemberFields.PoliticalLastName;
+        }
+
+        if (updateParams.PoliticalResidence != existing.PoliticalResidence)
+        {
+            changedFields |= InitiativeCommitteeMemberFields.PoliticalResidence;
+        }
+
+        if (updateParams.PoliticalDuty != existing.PoliticalDuty)
+        {
+            changedFields |= InitiativeCommitteeMemberFields.PoliticalDuty;
+        }
+
+        return changedFields;
     }
 
     private void SetUserPermissions(InitiativeCommittee committee)

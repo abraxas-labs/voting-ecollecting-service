@@ -63,6 +63,7 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
       CanEditAdmissibilityDecision: false,
       CanDeleteAdmissibilityDecision: false,
       CanEditGeneralInformation: false,
+      CanEditGeneralInformationInAdmissibilityDecision: false,
       CanReturnForCorrection: false
     },
     CollectionStartDate: {

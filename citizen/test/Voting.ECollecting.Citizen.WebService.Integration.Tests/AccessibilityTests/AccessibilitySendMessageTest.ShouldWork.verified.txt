@@ -5,7 +5,8 @@
   TemplateBag: {
     CollectionName: ,
     RecipientIsCitizen: false,
-    NotificationType: AccessibilityMessage
+    NotificationType: AccessibilityMessage,
+    IsCaCertificate: false
   },
   Id: Guid_1
 }

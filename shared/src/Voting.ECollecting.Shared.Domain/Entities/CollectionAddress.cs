@@ -18,4 +18,12 @@ public class CollectionAddress
            && !string.IsNullOrWhiteSpace(StreetOrPostOfficeBox)
            && !string.IsNullOrWhiteSpace(ZipCode)
            && !string.IsNullOrWhiteSpace(Locality);
+
+    public bool Equals(CollectionAddress other)
+    {
+        return CommitteeOrPerson == other.CommitteeOrPerson
+               && StreetOrPostOfficeBox == other.StreetOrPostOfficeBox
+               && ZipCode == other.ZipCode
+               && Locality == other.Locality;
+    }
 }
