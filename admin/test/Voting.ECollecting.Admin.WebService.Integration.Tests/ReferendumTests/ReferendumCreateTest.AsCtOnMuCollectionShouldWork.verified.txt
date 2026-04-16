@@ -41,7 +41,7 @@
   Bfs: 3203,
   MaxElectronicSignatureCount: 30,
   PeriodState: InCollection,
-  SignatureListSubmissionEndDate: DateTime_2,
+  SignatureListSubmissionEndDate: Date_3,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },

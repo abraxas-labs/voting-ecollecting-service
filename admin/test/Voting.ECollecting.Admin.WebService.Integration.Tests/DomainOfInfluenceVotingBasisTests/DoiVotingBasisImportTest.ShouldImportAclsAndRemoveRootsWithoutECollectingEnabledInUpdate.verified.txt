@@ -118,10 +118,10 @@
         Canton: SG,
         IsValid: true,
         ParentId: Guid_6,
-        ImportStatisticId: Guid_7,
+        ImportStatisticId: Guid_4,
         ECollectingEnabled: true,
         SortNumber: 1,
-        NameForProtocol: ,
+        NameForProtocol: Stadt St. Gallen,
         AddressName: ,
         Street: ,
         ZipCode: ,
@@ -129,12 +129,9 @@
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-          CreatedAt: DateTime_1,
-          ModifiedById: 514963638398779657,
-          ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-          ModifiedAt: DateTime_1
+          CreatedAt: DateTime_1
         },
-        Id: Guid_8
+        Id: Guid_7
       },
       {
         Name: Goldach (MU),
@@ -146,10 +143,10 @@
         Canton: SG,
         IsValid: true,
         ParentId: Guid_6,
-        ImportStatisticId: Guid_7,
+        ImportStatisticId: Guid_4,
         ECollectingEnabled: false,
         SortNumber: 11,
-        NameForProtocol: ,
+        NameForProtocol: Gemeinde Goldach,
         AddressName: ,
         Street: ,
         ZipCode: ,
@@ -157,12 +154,9 @@
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-          CreatedAt: DateTime_1,
-          ModifiedById: 514963638398779657,
-          ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-          ModifiedAt: DateTime_1
+          CreatedAt: DateTime_1
         },
-        Id: Guid_9
+        Id: Guid_8
       },
       {
         Name: Rorschacherberg (MU),
@@ -185,7 +179,7 @@
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
           CreatedAt: DateTime_1
         },
-        Id: Guid_10
+        Id: Guid_9
       },
       {
         Name: Mörschwil (MU),
@@ -197,10 +191,10 @@
         Canton: SG,
         IsValid: true,
         ParentId: Guid_6,
-        ImportStatisticId: Guid_7,
+        ImportStatisticId: Guid_4,
         ECollectingEnabled: true,
         SortNumber: 10,
-        NameForProtocol: ,
+        NameForProtocol: Gemeinde Mörschwil,
         AddressName: ,
         Street: ,
         ZipCode: ,
@@ -208,12 +202,9 @@
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-          CreatedAt: DateTime_1,
-          ModifiedById: 514963638398779657,
-          ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-          ModifiedAt: DateTime_1
+          CreatedAt: DateTime_1
         },
-        Id: Guid_11
+        Id: Guid_10
       }
     ],
     ECollectingEnabled: false,
@@ -285,10 +276,10 @@
                     Canton: SG,
                     IsValid: true,
                     ParentId: Guid_6,
-                    ImportStatisticId: Guid_7,
+                    ImportStatisticId: Guid_4,
                     ECollectingEnabled: true,
                     SortNumber: 1,
-                    NameForProtocol: ,
+                    NameForProtocol: Stadt St. Gallen,
                     AddressName: ,
                     Street: ,
                     ZipCode: ,
@@ -296,12 +287,9 @@
                     AuditInfo: {
                       CreatedById: 514963638398779657,
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                      CreatedAt: DateTime_1,
-                      ModifiedById: 514963638398779657,
-                      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                      ModifiedAt: DateTime_1
+                      CreatedAt: DateTime_1
                     },
-                    Id: Guid_8
+                    Id: Guid_7
                   },
                   {
                     Name: Goldach (MU),
@@ -313,10 +301,10 @@
                     Canton: SG,
                     IsValid: true,
                     ParentId: Guid_6,
-                    ImportStatisticId: Guid_7,
+                    ImportStatisticId: Guid_4,
                     ECollectingEnabled: false,
                     SortNumber: 11,
-                    NameForProtocol: ,
+                    NameForProtocol: Gemeinde Goldach,
                     AddressName: ,
                     Street: ,
                     ZipCode: ,
@@ -324,12 +312,9 @@
                     AuditInfo: {
                       CreatedById: 514963638398779657,
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                      CreatedAt: DateTime_1,
-                      ModifiedById: 514963638398779657,
-                      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                      ModifiedAt: DateTime_1
+                      CreatedAt: DateTime_1
                     },
-                    Id: Guid_9
+                    Id: Guid_8
                   },
                   {
                     Name: Rorschacherberg (MU),
@@ -352,7 +337,7 @@
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
                       CreatedAt: DateTime_1
                     },
-                    Id: Guid_10
+                    Id: Guid_9
                   },
                   {
                     Name: Mörschwil (MU),
@@ -364,10 +349,10 @@
                     Canton: SG,
                     IsValid: true,
                     ParentId: Guid_6,
-                    ImportStatisticId: Guid_7,
+                    ImportStatisticId: Guid_4,
                     ECollectingEnabled: true,
                     SortNumber: 10,
-                    NameForProtocol: ,
+                    NameForProtocol: Gemeinde Mörschwil,
                     AddressName: ,
                     Street: ,
                     ZipCode: ,
@@ -375,12 +360,9 @@
                     AuditInfo: {
                       CreatedById: 514963638398779657,
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                      CreatedAt: DateTime_1,
-                      ModifiedById: 514963638398779657,
-                      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                      ModifiedAt: DateTime_1
+                      CreatedAt: DateTime_1
                     },
-                    Id: Guid_11
+                    Id: Guid_10
                   }
                 ],
                 ECollectingEnabled: false,
@@ -569,10 +551,10 @@
             Canton: SG,
             IsValid: true,
             ParentId: Guid_6,
-            ImportStatisticId: Guid_7,
+            ImportStatisticId: Guid_4,
             ECollectingEnabled: true,
             SortNumber: 1,
-            NameForProtocol: ,
+            NameForProtocol: Stadt St. Gallen,
             AddressName: ,
             Street: ,
             ZipCode: ,
@@ -580,12 +562,9 @@
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-              CreatedAt: DateTime_1,
-              ModifiedById: 514963638398779657,
-              ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-              ModifiedAt: DateTime_1
+              CreatedAt: DateTime_1
             },
-            Id: Guid_8
+            Id: Guid_7
           },
           {
             Name: Goldach (MU),
@@ -597,10 +576,10 @@
             Canton: SG,
             IsValid: true,
             ParentId: Guid_6,
-            ImportStatisticId: Guid_7,
+            ImportStatisticId: Guid_4,
             ECollectingEnabled: false,
             SortNumber: 11,
-            NameForProtocol: ,
+            NameForProtocol: Gemeinde Goldach,
             AddressName: ,
             Street: ,
             ZipCode: ,
@@ -608,12 +587,9 @@
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-              CreatedAt: DateTime_1,
-              ModifiedById: 514963638398779657,
-              ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-              ModifiedAt: DateTime_1
+              CreatedAt: DateTime_1
             },
-            Id: Guid_9
+            Id: Guid_8
           },
           {
             Name: Rorschacherberg (MU),
@@ -636,7 +612,7 @@
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
               CreatedAt: DateTime_1
             },
-            Id: Guid_10
+            Id: Guid_9
           },
           {
             Name: Mörschwil (MU),
@@ -648,10 +624,10 @@
             Canton: SG,
             IsValid: true,
             ParentId: Guid_6,
-            ImportStatisticId: Guid_7,
+            ImportStatisticId: Guid_4,
             ECollectingEnabled: true,
             SortNumber: 10,
-            NameForProtocol: ,
+            NameForProtocol: Gemeinde Mörschwil,
             AddressName: ,
             Street: ,
             ZipCode: ,
@@ -659,12 +635,9 @@
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-              CreatedAt: DateTime_1,
-              ModifiedById: 514963638398779657,
-              ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-              ModifiedAt: DateTime_1
+              CreatedAt: DateTime_1
             },
-            Id: Guid_11
+            Id: Guid_10
           }
         ],
         ECollectingEnabled: false,
@@ -788,10 +761,10 @@
                 Canton: SG,
                 IsValid: true,
                 ParentId: Guid_6,
-                ImportStatisticId: Guid_7,
+                ImportStatisticId: Guid_4,
                 ECollectingEnabled: true,
                 SortNumber: 1,
-                NameForProtocol: ,
+                NameForProtocol: Stadt St. Gallen,
                 AddressName: ,
                 Street: ,
                 ZipCode: ,
@@ -799,12 +772,9 @@
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                  CreatedAt: DateTime_1,
-                  ModifiedById: 514963638398779657,
-                  ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                  ModifiedAt: DateTime_1
+                  CreatedAt: DateTime_1
                 },
-                Id: Guid_8
+                Id: Guid_7
               },
               {
                 Name: Goldach (MU),
@@ -816,10 +786,10 @@
                 Canton: SG,
                 IsValid: true,
                 ParentId: Guid_6,
-                ImportStatisticId: Guid_7,
+                ImportStatisticId: Guid_4,
                 ECollectingEnabled: false,
                 SortNumber: 11,
-                NameForProtocol: ,
+                NameForProtocol: Gemeinde Goldach,
                 AddressName: ,
                 Street: ,
                 ZipCode: ,
@@ -827,12 +797,9 @@
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                  CreatedAt: DateTime_1,
-                  ModifiedById: 514963638398779657,
-                  ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                  ModifiedAt: DateTime_1
+                  CreatedAt: DateTime_1
                 },
-                Id: Guid_9
+                Id: Guid_8
               },
               {
                 Name: Rorschacherberg (MU),
@@ -855,7 +822,7 @@
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
                   CreatedAt: DateTime_1
                 },
-                Id: Guid_10
+                Id: Guid_9
               },
               {
                 Name: Mörschwil (MU),
@@ -867,10 +834,10 @@
                 Canton: SG,
                 IsValid: true,
                 ParentId: Guid_6,
-                ImportStatisticId: Guid_7,
+                ImportStatisticId: Guid_4,
                 ECollectingEnabled: true,
                 SortNumber: 10,
-                NameForProtocol: ,
+                NameForProtocol: Gemeinde Mörschwil,
                 AddressName: ,
                 Street: ,
                 ZipCode: ,
@@ -878,12 +845,9 @@
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                  CreatedAt: DateTime_1,
-                  ModifiedById: 514963638398779657,
-                  ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                  ModifiedAt: DateTime_1
+                  CreatedAt: DateTime_1
                 },
-                Id: Guid_11
+                Id: Guid_10
               }
             ],
             ECollectingEnabled: false,
@@ -1057,10 +1021,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: false,
           SortNumber: 11,
-          NameForProtocol: ,
+          NameForProtocol: Gemeinde Goldach,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1068,12 +1032,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_9
+          Id: Guid_8
         },
         {
           Name: Rorschacherberg (MU),
@@ -1096,7 +1057,7 @@
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
             CreatedAt: DateTime_1
           },
-          Id: Guid_10
+          Id: Guid_9
         },
         {
           Name: Mörschwil (MU),
@@ -1108,10 +1069,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: true,
           SortNumber: 10,
-          NameForProtocol: ,
+          NameForProtocol: Gemeinde Mörschwil,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1119,12 +1080,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_11
+          Id: Guid_10
         }
       ],
       ECollectingEnabled: false,
@@ -1141,10 +1099,10 @@
       },
       Id: Guid_6
     },
-    ImportStatisticId: Guid_7,
+    ImportStatisticId: Guid_4,
     ECollectingEnabled: true,
     SortNumber: 1,
-    NameForProtocol: ,
+    NameForProtocol: Stadt St. Gallen,
     AddressName: ,
     Street: ,
     ZipCode: ,
@@ -1152,12 +1110,9 @@
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-      CreatedAt: DateTime_1,
-      ModifiedById: 514963638398779657,
-      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-      ModifiedAt: DateTime_1
+      CreatedAt: DateTime_1
     },
-    Id: Guid_8
+    Id: Guid_7
   },
   {
     Name: Goldach (MU),
@@ -1288,10 +1243,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: true,
           SortNumber: 1,
-          NameForProtocol: ,
+          NameForProtocol: Stadt St. Gallen,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1299,12 +1254,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_8
+          Id: Guid_7
         },
         {
           Name: Rorschacherberg (MU),
@@ -1327,7 +1279,7 @@
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
             CreatedAt: DateTime_1
           },
-          Id: Guid_10
+          Id: Guid_9
         },
         {
           Name: Mörschwil (MU),
@@ -1339,10 +1291,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: true,
           SortNumber: 10,
-          NameForProtocol: ,
+          NameForProtocol: Gemeinde Mörschwil,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1350,12 +1302,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_11
+          Id: Guid_10
         }
       ],
       ECollectingEnabled: false,
@@ -1372,10 +1321,10 @@
       },
       Id: Guid_6
     },
-    ImportStatisticId: Guid_7,
+    ImportStatisticId: Guid_4,
     ECollectingEnabled: false,
     SortNumber: 11,
-    NameForProtocol: ,
+    NameForProtocol: Gemeinde Goldach,
     AddressName: ,
     Street: ,
     ZipCode: ,
@@ -1383,12 +1332,9 @@
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-      CreatedAt: DateTime_1,
-      ModifiedById: 514963638398779657,
-      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-      ModifiedAt: DateTime_1
+      CreatedAt: DateTime_1
     },
-    Id: Guid_9
+    Id: Guid_8
   },
   {
     Name: Rorschacherberg (MU),
@@ -1518,10 +1464,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: true,
           SortNumber: 1,
-          NameForProtocol: ,
+          NameForProtocol: Stadt St. Gallen,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1529,12 +1475,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_8
+          Id: Guid_7
         },
         {
           Name: Goldach (MU),
@@ -1546,10 +1489,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: false,
           SortNumber: 11,
-          NameForProtocol: ,
+          NameForProtocol: Gemeinde Goldach,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1557,12 +1500,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_9
+          Id: Guid_8
         },
         {
           Name: Mörschwil (MU),
@@ -1574,10 +1514,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: true,
           SortNumber: 10,
-          NameForProtocol: ,
+          NameForProtocol: Gemeinde Mörschwil,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1585,12 +1525,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_11
+          Id: Guid_10
         }
       ],
       ECollectingEnabled: false,
@@ -1619,7 +1556,7 @@
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
       CreatedAt: DateTime_1
     },
-    Id: Guid_10
+    Id: Guid_9
   },
   {
     Name: Auslandschweizer SG (MU),
@@ -1686,10 +1623,10 @@
                       Canton: SG,
                       IsValid: true,
                       ParentId: Guid_6,
-                      ImportStatisticId: Guid_7,
+                      ImportStatisticId: Guid_4,
                       ECollectingEnabled: true,
                       SortNumber: 1,
-                      NameForProtocol: ,
+                      NameForProtocol: Stadt St. Gallen,
                       AddressName: ,
                       Street: ,
                       ZipCode: ,
@@ -1697,12 +1634,9 @@
                       AuditInfo: {
                         CreatedById: 514963638398779657,
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                        CreatedAt: DateTime_1,
-                        ModifiedById: 514963638398779657,
-                        ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                        ModifiedAt: DateTime_1
+                        CreatedAt: DateTime_1
                       },
-                      Id: Guid_8
+                      Id: Guid_7
                     },
                     {
                       Name: Goldach (MU),
@@ -1714,10 +1648,10 @@
                       Canton: SG,
                       IsValid: true,
                       ParentId: Guid_6,
-                      ImportStatisticId: Guid_7,
+                      ImportStatisticId: Guid_4,
                       ECollectingEnabled: false,
                       SortNumber: 11,
-                      NameForProtocol: ,
+                      NameForProtocol: Gemeinde Goldach,
                       AddressName: ,
                       Street: ,
                       ZipCode: ,
@@ -1725,12 +1659,9 @@
                       AuditInfo: {
                         CreatedById: 514963638398779657,
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                        CreatedAt: DateTime_1,
-                        ModifiedById: 514963638398779657,
-                        ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                        ModifiedAt: DateTime_1
+                        CreatedAt: DateTime_1
                       },
-                      Id: Guid_9
+                      Id: Guid_8
                     },
                     {
                       Name: Rorschacherberg (MU),
@@ -1753,7 +1684,7 @@
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
                         CreatedAt: DateTime_1
                       },
-                      Id: Guid_10
+                      Id: Guid_9
                     },
                     {
                       Name: Mörschwil (MU),
@@ -1765,10 +1696,10 @@
                       Canton: SG,
                       IsValid: true,
                       ParentId: Guid_6,
-                      ImportStatisticId: Guid_7,
+                      ImportStatisticId: Guid_4,
                       ECollectingEnabled: true,
                       SortNumber: 10,
-                      NameForProtocol: ,
+                      NameForProtocol: Gemeinde Mörschwil,
                       AddressName: ,
                       Street: ,
                       ZipCode: ,
@@ -1776,12 +1707,9 @@
                       AuditInfo: {
                         CreatedById: 514963638398779657,
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                        CreatedAt: DateTime_1,
-                        ModifiedById: 514963638398779657,
-                        ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-                        ModifiedAt: DateTime_1
+                        CreatedAt: DateTime_1
                       },
-                      Id: Guid_11
+                      Id: Guid_10
                     }
                   ],
                   ECollectingEnabled: false,
@@ -1983,10 +1911,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: true,
           SortNumber: 1,
-          NameForProtocol: ,
+          NameForProtocol: Stadt St. Gallen,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -1994,12 +1922,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_8
+          Id: Guid_7
         },
         {
           Name: Goldach (MU),
@@ -2011,10 +1936,10 @@
           Canton: SG,
           IsValid: true,
           ParentId: Guid_6,
-          ImportStatisticId: Guid_7,
+          ImportStatisticId: Guid_4,
           ECollectingEnabled: false,
           SortNumber: 11,
-          NameForProtocol: ,
+          NameForProtocol: Gemeinde Goldach,
           AddressName: ,
           Street: ,
           ZipCode: ,
@@ -2022,12 +1947,9 @@
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            CreatedAt: DateTime_1,
-            ModifiedById: 514963638398779657,
-            ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-            ModifiedAt: DateTime_1
+            CreatedAt: DateTime_1
           },
-          Id: Guid_9
+          Id: Guid_8
         },
         {
           Name: Rorschacherberg (MU),
@@ -2050,7 +1972,7 @@
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
             CreatedAt: DateTime_1
           },
-          Id: Guid_10
+          Id: Guid_9
         }
       ],
       ECollectingEnabled: false,
@@ -2067,10 +1989,10 @@
       },
       Id: Guid_6
     },
-    ImportStatisticId: Guid_7,
+    ImportStatisticId: Guid_4,
     ECollectingEnabled: true,
     SortNumber: 10,
-    NameForProtocol: ,
+    NameForProtocol: Gemeinde Mörschwil,
     AddressName: ,
     Street: ,
     ZipCode: ,
@@ -2078,11 +2000,8 @@
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
-      CreatedAt: DateTime_1,
-      ModifiedById: 514963638398779657,
-      ModifiedByName: STA-VOTING-ECOLLECTING-ADMIN,
-      ModifiedAt: DateTime_1
+      CreatedAt: DateTime_1
     },
-    Id: Guid_11
+    Id: Guid_10
   }
 ]

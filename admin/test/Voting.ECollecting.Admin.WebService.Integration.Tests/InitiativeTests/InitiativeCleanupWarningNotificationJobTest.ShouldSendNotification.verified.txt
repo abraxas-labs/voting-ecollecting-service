@@ -1,14 +1,14 @@
 ﻿[
   {
     RecipientEmail: citizen-creator@example.com,
-    Subject: 'Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)' wird bald gelöscht,
+    Subject: E-Collecting: Ihre Sammlung wird bald gelöscht,
     HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>&#39;F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)&#39; wird bald gel&#246;scht</title>
+  <title>E-Collecting: Ihre Sammlung wird bald gel&#246;scht</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,23 +32,23 @@
   </style>
 </head>
 <body>
-  <div class="container"><p>Hallo,</p>
-<p><strong><a href="http://localhost:4700/initiatives/82ec863d-9ad3-4043-b17f-3f57c3cfc15d">F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)</a></strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
-<p>Aus Datenschutzgründen wird die Sammlung und alle zugehörigen Daten am 22.01.2020 unwiderruflich gelöscht.</p>
-<p>Falls Sie die Sammlung weiter bearbeiten und einreichen möchten, loggen Sie sich bitte im E-Collecting ein und schliessen Sie die Erfassung ab.</p></div>
+  <div class="container"><p>Guten Tag</p>
+<p>Die Sammlung <strong>{collectionNameLink}</strong> wurde vor längerer Zeit erstellt, aber die Einrichtung wurde nicht abgeschlossen.</p>
+<p>Aus Datenschutzgründen wird die Sammlung und damit alle bereits erfassten Informationen am am 22.01.2020 unwiderruflich gelöscht.</p>
+<p>Falls Sie die Einrichtung der Sammlung abschliessen und diese zur Prüfung der Zulässigkeit einreichen möchten, loggen Sie sich bitte auf der E-Collecting-Plattform ein und schliessen Sie die Einrichtung ab.</p></div>
 </body>
 </html>
   },
   {
     RecipientEmail: rudolph.meier@example.com,
-    Subject: 'Für mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)' wird bald gelöscht,
+    Subject: E-Collecting: Ihre Sammlung wird bald gelöscht,
     HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>&#39;F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)&#39; wird bald gel&#246;scht</title>
+  <title>E-Collecting: Ihre Sammlung wird bald gel&#246;scht</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -72,10 +72,10 @@
   </style>
 </head>
 <body>
-  <div class="container"><p>Hallo,</p>
-<p><strong><a href="http://localhost:4700/initiatives/82ec863d-9ad3-4043-b17f-3f57c3cfc15d">F&#252;r mehr Kaffeepausen am Arbeitsplatz (Kaffeepausen-Initiative)</a></strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
-<p>Aus Datenschutzgründen wird die Sammlung und alle zugehörigen Daten am 22.01.2020 unwiderruflich gelöscht.</p>
-<p>Falls Sie die Sammlung weiter bearbeiten und einreichen möchten, loggen Sie sich bitte im E-Collecting ein und schliessen Sie die Erfassung ab.</p></div>
+  <div class="container"><p>Guten Tag</p>
+<p>Die Sammlung <strong>{collectionNameLink}</strong> wurde vor längerer Zeit erstellt, aber die Einrichtung wurde nicht abgeschlossen.</p>
+<p>Aus Datenschutzgründen wird die Sammlung und damit alle bereits erfassten Informationen am am 22.01.2020 unwiderruflich gelöscht.</p>
+<p>Falls Sie die Einrichtung der Sammlung abschliessen und diese zur Prüfung der Zulässigkeit einreichen möchten, loggen Sie sich bitte auf der E-Collecting-Plattform ein und schliessen Sie die Einrichtung ab.</p></div>
 </body>
 </html>
   }

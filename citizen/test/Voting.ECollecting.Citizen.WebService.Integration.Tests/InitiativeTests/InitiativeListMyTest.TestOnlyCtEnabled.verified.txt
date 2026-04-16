@@ -590,7 +590,12 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
           Month: 1,
           Day: 9
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 1,
+          Day: 6
+        }
       },
       GovernmentDecisionNumber: SG-123.412211,
       CommitteeDescription: ,
@@ -674,7 +679,12 @@ Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schö
           Month: 8,
           Day: 10
         },
-        PeriodState: Published
+        PeriodState: Published,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412227,
       CommitteeDescription: ,
@@ -835,7 +845,12 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412210,
       CommitteeDescription: ,
@@ -997,7 +1012,12 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
           Month: 8,
           Day: 10
         },
-        PeriodState: Published
+        PeriodState: Published,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412229,
       CommitteeDescription: ,
@@ -1087,7 +1107,12 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
           Month: 6,
           Day: 11
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 8
+        }
       },
       GovernmentDecisionNumber: SG-123.412212,
       CommitteeDescription: ,
@@ -1178,7 +1203,12 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
           Month: 12,
           Day: 10
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.4122177,
       CommitteeDescription: ,
@@ -1269,7 +1299,12 @@ Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlings
           Month: 8,
           Day: 10
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2019,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412214,
       CommitteeDescription: ,

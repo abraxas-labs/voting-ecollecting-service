@@ -11,11 +11,13 @@ public class PermissionService : IPermissionService
     private const string NoPIIName = "Citizen";
 
     private readonly TimeProvider _timeProvider;
+    private readonly SocialSecurityNumberCache _ssnCache;
     private readonly PersonServiceClient _personServiceClient;
 
-    public PermissionService(TimeProvider timeProvider, PersonServiceClient personServiceClient)
+    public PermissionService(TimeProvider timeProvider, SocialSecurityNumberCache ssnCache, PersonServiceClient personServiceClient)
     {
         _timeProvider = timeProvider;
+        _ssnCache = ssnCache;
         _personServiceClient = personServiceClient;
     }
 
@@ -30,6 +32,8 @@ public class PermissionService : IPermissionService
     public string UserEmail { get; private set; } = string.Empty;
 
     public bool UserEmailVerified { get; private set; }
+
+    public DateTimeOffset AuthenticatedTime { get; private set; }
 
     public string UserFirstName { get; private set; } = string.Empty;
 
@@ -64,7 +68,17 @@ public class PermissionService : IPermissionService
         entity.AuditInfo.ModifiedByEmail = UserEmail;
     }
 
-    public virtual Task<string?> GetSocialSecurityNumber() => _personServiceClient.GetPersonSsn();
+    public virtual async Task<string?> GetSocialSecurityNumber(bool allowCache)
+    {
+        if (!allowCache)
+        {
+            var ssn = await _personServiceClient.GetPersonSsn(UserId);
+            _ssnCache.TrySet(this, ssn);
+            return ssn;
+        }
+
+        return _ssnCache.Get(this) ?? await GetSocialSecurityNumber(false);
+    }
 
     public void Init(
         string userId,
@@ -72,7 +86,8 @@ public class PermissionService : IPermissionService
         string userEmail,
         bool userEmailVerified,
         string userFirstName,
-        string userLastName)
+        string userLastName,
+        DateTimeOffset authenticatedTime)
     {
         IsAuthenticated = true;
         UserId = userId;
@@ -81,6 +96,7 @@ public class PermissionService : IPermissionService
         UserEmailVerified = userEmailVerified;
         UserFirstName = userFirstName;
         UserLastName = userLastName;
+        AuthenticatedTime = authenticatedTime;
     }
 
     public void RequireEmail(string email)

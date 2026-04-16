@@ -22,7 +22,7 @@
         Log: {
           CollectionId: Guid_1,
           CollectionCitizenId: Guid_4,
-          VotingStimmregisterIdMac: DOKerA5JBWBeMVvX5oZJGvepfpqYiurjVTdL1nr5q/I=,
+          VotingStimmregisterIdMac: QSSeneHXM8kc5Q6jtru2fQbOPDuyyhZ30yWpa/JetzI=,
           IntegritySignatureInfo: {
             IntegritySignatureKeyId: 
           },
@@ -169,7 +169,7 @@
       Log: {
         CollectionId: Guid_1,
         CollectionCitizenId: Guid_4,
-        VotingStimmregisterIdMac: DOKerA5JBWBeMVvX5oZJGvepfpqYiurjVTdL1nr5q/I=,
+        VotingStimmregisterIdMac: QSSeneHXM8kc5Q6jtru2fQbOPDuyyhZ30yWpa/JetzI=,
         IntegritySignatureInfo: {
           IntegritySignatureKeyId: 
         },
@@ -217,7 +217,7 @@
             Log: {
               CollectionId: Guid_1,
               CollectionCitizenId: Guid_4,
-              VotingStimmregisterIdMac: DOKerA5JBWBeMVvX5oZJGvepfpqYiurjVTdL1nr5q/I=,
+              VotingStimmregisterIdMac: QSSeneHXM8kc5Q6jtru2fQbOPDuyyhZ30yWpa/JetzI=,
               IntegritySignatureInfo: {
                 IntegritySignatureKeyId: 
               },

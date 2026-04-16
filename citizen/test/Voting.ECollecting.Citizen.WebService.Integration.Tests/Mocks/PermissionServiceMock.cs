@@ -12,8 +12,8 @@ public class PermissionServiceMock : PermissionService
     private static bool _hasTimestampIncrement;
     private string? _userSsn;
 
-    public PermissionServiceMock(TimeProvider timeProvider, PersonServiceClient personServiceClient)
-        : base(timeProvider, personServiceClient)
+    public PermissionServiceMock(TimeProvider timeProvider, SocialSecurityNumberCache cache, PersonServiceClient personServiceClient)
+        : base(timeProvider, cache, personServiceClient)
     {
     }
 
@@ -32,7 +32,7 @@ public class PermissionServiceMock : PermissionService
         }
     }
 
-    public override Task<string?> GetSocialSecurityNumber() => Task.FromResult(_userSsn);
+    public override Task<string?> GetSocialSecurityNumber(bool allowCache) => Task.FromResult(_userSsn);
 
     public override void SetCreated(IAuditedEntity entity)
     {

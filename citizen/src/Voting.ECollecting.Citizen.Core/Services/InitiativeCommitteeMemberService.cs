@@ -277,16 +277,18 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
         _permissionService.SetModified(initiative);
         await _dataContext.SaveChangesAsync();
 
-        var indexToRemove = await _committeeMemberRepository.Query()
+        var memberToRemove = await _committeeMemberRepository.Query()
             .Where(x => x.InitiativeId == initiativeId && x.Id == id)
-            .Select(x => x.SortIndex)
             .FirstOrDefaultAsync()
             ?? throw new EntityNotFoundException(nameof(InitiativeCommitteeMemberEntity), new { initiativeId, id });
         await _committeeMemberRepository.AuditedDeleteRange(q => q.Where(x => x.Id == id));
 
-        await _committeeMemberRepository.AuditedUpdateRange(
-            q => q.Where(x => x.InitiativeId == initiativeId && x.SortIndex > indexToRemove).OrderBy(y => y.SortIndex),
-            x => --x.SortIndex);
+        if (memberToRemove.SortIndex.HasValue)
+        {
+            await _committeeMemberRepository.AuditedUpdateRange(
+                q => q.Where(x => x.InitiativeId == initiativeId && x.SortIndex > memberToRemove.SortIndex).OrderBy(y => y.SortIndex),
+                x => --x.SortIndex);
+        }
 
         await transaction.CommitAsync();
     }
@@ -567,7 +569,7 @@ public class InitiativeCommitteeMemberService : IInitiativeCommitteeMemberServic
 
     private async Task<bool> HasVotingRight(InitiativeCommitteeMemberEntity member)
     {
-        var userSocialSecurityNumber = await _permissionService.GetSocialSecurityNumber();
+        var userSocialSecurityNumber = await _permissionService.GetSocialSecurityNumber(false);
         if (userSocialSecurityNumber == null)
         {
             return false;

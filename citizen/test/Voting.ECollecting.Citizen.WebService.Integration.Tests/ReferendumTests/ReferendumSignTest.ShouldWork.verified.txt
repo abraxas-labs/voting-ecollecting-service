@@ -52,7 +52,7 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
       Bfs: 17,
       MaxElectronicSignatureCount: 300,
       PeriodState: InCollection,
-      SignatureListSubmissionEndDate: DateTime_2,
+      SignatureListSubmissionEndDate: Date_3,
       IntegritySignatureInfo: {
         IntegritySignatureKeyId: 
       },
@@ -60,7 +60,7 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
         CreatedById: default-user-id,
         CreatedByName: Test Citizen Creator,
         CreatedByEmail: citizen-creator@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_2
       },
       Id: Guid_6
     },
@@ -151,7 +151,7 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
       Bfs: 17,
       MaxElectronicSignatureCount: 300,
       PeriodState: InCollection,
-      SignatureListSubmissionEndDate: DateTime_2,
+      SignatureListSubmissionEndDate: Date_3,
       IntegritySignatureInfo: {
         IntegritySignatureKeyId: 
       },
@@ -159,7 +159,7 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
         CreatedById: default-user-id,
         CreatedByName: Test Citizen Creator,
         CreatedByEmail: citizen-creator@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_2
       },
       Id: Guid_6
     },

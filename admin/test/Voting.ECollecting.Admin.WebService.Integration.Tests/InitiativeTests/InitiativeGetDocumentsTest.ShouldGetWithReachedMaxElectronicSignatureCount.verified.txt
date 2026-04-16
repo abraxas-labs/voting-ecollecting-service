@@ -1,8 +1,8 @@
 ﻿{
   Statistikdaten_Für offene Gärten (Offene-Gärten-Initiative)_2020-01-10-141210.csv:
 ID_Unterschriftensammlung;ID_Erlass;Datum elektr. Unterzeichnung;Uhrzeit elektr. Unterzeichnung;Datum Eingang physische Unterschrift bei der Gemeinde;BFS Gemeinde;Name der Gemeinde;Geschlecht;Alter
-7f765866-19c9-4c57-ba71-6fca0d67d16a;;10.01.2020;13:12;;3203;St.Gallen;M;50
 7f765866-19c9-4c57-ba71-6fca0d67d16a;;;;08.01.2020;3203;St.Gallen;F;46
+7f765866-19c9-4c57-ba71-6fca0d67d16a;;10.01.2020;13:12;;3203;St.Gallen;M;50
 ,
   Statistikdaten_Zeitverlauf_Für offene Gärten (Offene-Gärten-Initiative)_2020-01-10-141210.csv:
 Gemeinde;Tag;Anzahl elektronisch gültige;Anzahl physisch gültige;Anzahl physisch ungültige;Uhrzeit Max. elektr. Unterschriften erreicht

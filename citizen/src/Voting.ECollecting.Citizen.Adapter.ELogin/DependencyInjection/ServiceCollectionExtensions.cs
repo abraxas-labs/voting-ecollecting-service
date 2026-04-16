@@ -15,6 +15,8 @@ public static class ServiceCollectionExtensions
         ELoginConfig config)
     {
         services
+            .AddSingleton(config.SocialSecurityNumberCache)
+            .AddSingleton<SocialSecurityNumberCache>()
             .AddForwardRefScoped<IPermissionService, PermissionService>()
             .AddHttpContextAccessor()
             .AddHttpClient<PersonServiceClient>((sp, client) =>

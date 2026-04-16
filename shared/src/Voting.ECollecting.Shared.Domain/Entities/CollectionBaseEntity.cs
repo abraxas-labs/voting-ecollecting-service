@@ -81,8 +81,8 @@ public class CollectionBaseEntity : IntegritySignatureEntity, IHasBfs, IHasColle
 
     public CollectionPeriodState PeriodState => _periodState ?? throw new InvalidOperationException("State not initialized.");
 
-    // The signature list submission end date is a defined amount of days before the collection end date.
-    public DateTime? SignatureListSubmissionEndDate => CollectionEndDate?.AddDays(SignatureListSubmissionOffsetInDays).ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc);
+    // The signature list submission end date is a defined number of days before the collection end date.
+    public DateOnly? SignatureListSubmissionEndDate => CollectionEndDate?.AddDays(SignatureListSubmissionOffsetInDays);
 
     public virtual void SetPeriodState(DateOnly today)
     {

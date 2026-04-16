@@ -5,13 +5,13 @@
       IsVotingAllowed: true,
       IsBirthDateValidForVotingRights: true,
       IsNationalityValidForVotingRights: true,
-      OfficialName: Ziegler,
-      FirstName: Juliana,
+      OfficialName: ZieglerT,
+      FirstName: JulienneT,
       DateOfBirth: {
-        Seconds: -790732800
+        Seconds: 959990400
       },
-      ResidenceAddressStreet: Kreuzbühlstr.,
-      ResidenceAddressHouseNumber: 35
+      ResidenceAddressStreet: Flaschnerweg,
+      ResidenceAddressHouseNumber: 5
     }
   ]
 }

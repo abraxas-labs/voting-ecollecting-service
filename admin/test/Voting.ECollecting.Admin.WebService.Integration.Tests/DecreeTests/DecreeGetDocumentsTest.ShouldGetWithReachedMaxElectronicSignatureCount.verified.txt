@@ -4,10 +4,10 @@
   Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer_Elektronische_Unterschriften.pdf: {"DomainOfInfluenceType":"Ch","CollectionType":"Referendum","CollectionDescription":"Referendum gegen teure Jodel-Kurse auf Kosten der Bergf\u00FChrer","TotalValidElectronicSignatureCount":2,"TotalValidPhysicalSignatureCount":170,"TotalInvalidPhysicalSignatureCount":12,"TotalSignatureCount":172,"DomainOfInfluences":[{"Name":"","ValidElectronicSignatureCount":40,"ValidPhysicalSignatureCount":68,"InvalidPhysicalSignatureCount":12,"DomainOfInfluences":[{"Name":"St.Gallen","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Goldach","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Berg SG","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]},{"Name":"Rapperswil-Jona","ValidElectronicSignatureCount":10,"ValidPhysicalSignatureCount":17,"InvalidPhysicalSignatureCount":3,"DomainOfInfluences":[]}]}]},
   Statistikdaten_Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen_2020-01-10-141210.csv:
 ID_Unterschriftensammlung;ID_Erlass;Datum elektr. Unterzeichnung;Uhrzeit elektr. Unterzeichnung;Datum Eingang physische Unterschrift bei der Gemeinde;BFS Gemeinde;Name der Gemeinde;Geschlecht;Alter
-47fc39fb-d4a9-4c8d-a970-3dcffc008a71;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3213;Goldach;F;23
 96949b79-b2ed-453f-92a1-bc0f874bf8ee;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3213;Goldach;F;23
-96949b79-b2ed-453f-92a1-bc0f874bf8ee;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3203;St.Gallen;M;50
+47fc39fb-d4a9-4c8d-a970-3dcffc008a71;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3213;Goldach;F;23
 47fc39fb-d4a9-4c8d-a970-3dcffc008a71;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3203;St.Gallen;M;22
+96949b79-b2ed-453f-92a1-bc0f874bf8ee;cf885533-2dfd-4f6f-a244-8ae74469b4a1;10.01.2020;13:12;;3203;St.Gallen;M;50
 ,
   Statistikdaten_Zeitverlauf_Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen_2020-01-10-141210.csv:
 Gemeinde;Tag;Anzahl elektronisch gültige;Anzahl physisch gültige;Anzahl physisch ungültige;Uhrzeit Max. elektr. Unterschriften erreicht

@@ -134,7 +134,7 @@ Denn wer picknickt, geniesst die Berge bewusst.,
     Bfs: 1,
     MaxElectronicSignatureCount: 10000,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_2,
+    SignatureListSubmissionEndDate: Date_3,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -142,15 +142,15 @@ Denn wer picknickt, geniesst die Berge bewusst.,
       CreatedById: default-user-id,
       CreatedByName: Test Citizen Creator,
       CreatedByEmail: citizen-creator@example.com,
-      CreatedAt: DateTime_3
+      CreatedAt: DateTime_2
     },
     Id: Guid_5
   },
   {
     MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
     DecreeId: Guid_10,
-    CollectionStartDate: Date_3,
-    CollectionEndDate: Date_4,
+    CollectionStartDate: Date_4,
+    CollectionEndDate: Date_5,
     Description: Referendum gegen das Verbot digitaler Wecker aus Gründen der Barrierefreiheit  (p: Reader),
     Type: Referendum,
     Reason:
@@ -249,7 +249,7 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
     Bfs: 17,
     MaxElectronicSignatureCount: 300,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_4,
+    SignatureListSubmissionEndDate: Date_6,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -257,7 +257,7 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
       CreatedById: unrelated-citizen,
       CreatedByName: Unrelated ECol Seeder Citizen Creator,
       CreatedByEmail: unrelated-citizen-creator@example.com,
-      CreatedAt: DateTime_5
+      CreatedAt: DateTime_3
     },
     Id: Guid_14
   }

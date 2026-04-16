@@ -1,7 +1,7 @@
 ﻿{
   Bfs: 17,
   Name: Kanton St.Gallen kantonal,
-  NameForProtocol: ,
+  NameForProtocol: St.Gallen,
   Type: Ct,
   Settings: {
     HasInitiativeMinSignatureCount: false,

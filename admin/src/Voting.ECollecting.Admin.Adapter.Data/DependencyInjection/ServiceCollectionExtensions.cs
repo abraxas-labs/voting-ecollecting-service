@@ -40,6 +40,23 @@ public static class ServiceCollectionExtensions
         DataConfig dataConfig,
         Action<DbContextOptionsBuilder> optionsBuilder)
     {
+        return services
+            .AddAdapterDataContext(dataConfig, optionsBuilder)
+            .AddRepositories();
+    }
+
+    /// <summary>
+    /// Adds the data context to DI container.
+    /// </summary>
+    /// <param name="services">The services collection.</param>
+    /// <param name="dataConfig">The data configuration which will be added as Singleton.</param>
+    /// <param name="optionsBuilder">The db context options builder to configure additional db options.</param>
+    /// <returns>The updated service collection.</returns>
+    public static IServiceCollection AddAdapterDataContext(
+        this IServiceCollection services,
+        DataConfig dataConfig,
+        Action<DbContextOptionsBuilder> optionsBuilder)
+    {
         services.AddDbContext<IDataContext, DataContext>((serviceProvider, db) =>
         {
             if (dataConfig.EnableDetailedErrors)
@@ -69,6 +86,13 @@ public static class ServiceCollectionExtensions
 
         return services
             .AddSingleton(dataConfig)
+            .AddScoped<IAuditTrailEntryBuilder, AuditTrailEntryBuilder>()
+            .AddVotingLibDatabase<DataContext>();
+    }
+
+    private static IServiceCollection AddRepositories(this IServiceCollection services)
+    {
+        return services
             .AddScoped<IDomainOfInfluenceRepository, DomainOfInfluenceRepository>()
             .AddScoped<IDecreeRepository, DecreeRepository>()
             .AddScoped<IInitiativeRepository, InitiativeRepository>()
@@ -86,8 +110,6 @@ public static class ServiceCollectionExtensions
             .AddScoped<IFileRepository, FileRepository>()
             .AddScoped<ICollectionMunicipalityRepository, CollectionMunicipalityRepository>()
             .AddScoped<ICollectionCountRepository, CollectionCountRepository>()
-            .AddScoped<IInitiativeCommitteeMemberRepository, InitiativeCommitteeMemberRepository>()
-            .AddScoped<IAuditTrailEntryBuilder, AuditTrailEntryBuilder>()
-            .AddVotingLibDatabase<DataContext>();
+            .AddScoped<IInitiativeCommitteeMemberRepository, InitiativeCommitteeMemberRepository>();
     }
 }

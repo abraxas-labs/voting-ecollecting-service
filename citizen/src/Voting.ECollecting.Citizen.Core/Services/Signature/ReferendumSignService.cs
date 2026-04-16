@@ -74,7 +74,7 @@ public class ReferendumSignService : CollectionSignBaseService<ReferendumEntity>
 
     internal async Task<(bool? IsSigned, bool? IsDecreeSigned, CollectionSignatureType? SignatureType)> IsReferendumOrDecreeSigned(ReferendumEntity referendum)
     {
-        var personInfo = await GetPersonInfo(referendum);
+        var personInfo = await GetPersonInfo(referendum, true);
         if (personInfo == null)
         {
             return (false, false, null);

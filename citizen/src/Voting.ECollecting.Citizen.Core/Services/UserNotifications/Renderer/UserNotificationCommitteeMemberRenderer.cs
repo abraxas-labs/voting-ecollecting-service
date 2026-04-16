@@ -17,18 +17,18 @@ public class UserNotificationCommitteeMemberRenderer : UserNotificationRenderer
     }
 
     protected override string RenderSubject(UserNotificationTemplateBag templateBag)
-        => "E-Collecting: Einladung zum Komiteemitglied";
+        => "E-Collecting: Anfrage für Mitgliedschaft in einem Komitee";
 
     protected override string RenderBodyHtml(UserNotificationTemplateBag templateBag)
     {
         var url = _urlConfig.BuildInitiativeCommitteeMembershipApprovalUrl(templateBag.InitiativeCommitteeMembershipToken);
         return Html($"""
-                      <h2>Neue Mitgliedschaft im Initiativkomitee in E-Collecting</h2>
-                      <p>Hallo,</p>
+                      <p>Guten Tag</p>
                       <p>
-                        Im E-Collecting wurden Sie zum Initiativkomitee von {EncodeHtml(templateBag.CollectionName)} hinzugefügt.
-                        Bestätigen Sie die Teilnahme <a href="{EncodeHref(url)}">hier</a>.
+                        Das Komitee der Sammlung {EncodeHtml(templateBag.CollectionName)} hat Sie als Komiteemitglied vorgeschlagen.
+                        Über den nachfolgenden Link gelangen Sie zur E-Collecting-Plattform, wo Sie die Mitgliedschaft bestätigen oder ablehnen können:
                       </p>
+                      <a href="{EncodeHref(url)}">{EncodeHtml(templateBag.CollectionName)}</a>
                       {RenderPermissionHtml(templateBag)}
                       """);
     }
@@ -43,8 +43,8 @@ public class UserNotificationCommitteeMemberRenderer : UserNotificationRenderer
         var url = _urlConfig.BuildPermissionApprovalUrl(templateBag.PermissionToken);
         return Html($"""
                      <p>
-                        Zusätzlich wurde für Sie eine Berechtigung angelegt.
-                        Klicken Sie <a href="{EncodeHref(url)}">hier</a> um diese anzunehmen oder abzulehnen.
+                        Zudem wurde Ihnen Lese- oder Schreibrechte für die Einrichtung der Sammlung auf der E-Collecting-Plattform erteilt.
+                        Um diese anzunehmen oder abzulehnen, klicken Sie bitte <a href="{EncodeHref(url)}">hier</a>.
                      </p>
                      """);
     }

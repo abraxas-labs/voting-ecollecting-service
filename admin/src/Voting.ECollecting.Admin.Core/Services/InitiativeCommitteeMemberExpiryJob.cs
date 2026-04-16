@@ -60,7 +60,9 @@ public class InitiativeCommitteeMemberExpiryJob : IScheduledJob
             var memberIds = membersToExpire.ConvertAll(t => t.Id);
 
             var expiredCount = await _repo.AuditedUpdateRange(
-                q => q.Where(x => memberIds.Contains(x.Id)),
+                q => q
+                    .Where(x => memberIds.Contains(x.Id))
+                    .OrderBy(x => x.Id),
                 x =>
                 {
                     x.ApprovalState = InitiativeCommitteeMemberApprovalState.Expired;

@@ -1,13 +1,13 @@
 ﻿{
   RecipientEmail: foo@example.com,
-  Subject: E-Collecting: Einladung zum Komiteemitglied,
+  Subject: E-Collecting: Anfrage für Mitgliedschaft in einem Komitee,
   HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Collecting: Einladung zum Komiteemitglied</title>
+  <title>E-Collecting: Anfrage f&#252;r Mitgliedschaft in einem Komitee</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -31,12 +31,12 @@
   </style>
 </head>
 <body>
-  <div class="container"><h2>Neue Mitgliedschaft im Initiativkomitee in E-Collecting</h2>
-<p>Hallo,</p>
+  <div class="container"><p>Guten Tag</p>
 <p>
-  Im E-Collecting wurden Sie zum Initiativkomitee von Foo bar baz hinzugefügt.
-  Bestätigen Sie die Teilnahme <a href="http://localhost:5001/initiative-committee-membership-approval#token=">hier</a>.
+  Das Komitee der Sammlung Foo bar baz hat Sie als Komiteemitglied vorgeschlagen.
+  Über den nachfolgenden Link gelangen Sie zur E-Collecting-Plattform, wo Sie die Mitgliedschaft bestätigen oder ablehnen können:
 </p>
+<a href="http://localhost:5001/initiative-committee-membership-approval#token=">Foo bar baz</a>
 </div>
 </body>
 </html>

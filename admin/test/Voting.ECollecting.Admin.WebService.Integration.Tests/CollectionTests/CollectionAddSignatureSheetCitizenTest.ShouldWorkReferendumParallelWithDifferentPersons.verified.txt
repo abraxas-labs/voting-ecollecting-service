@@ -47,20 +47,20 @@
       CollectionMunicipalityId: Guid_1,
       Electronic: false,
       SignatureSheetId: Guid_2,
-      Age: 58,
+      Age: 42,
       Sex: 2,
       CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_6,
-        VotingStimmregisterIdMac: JNW9lLwcj8F5DD+Y/XmlQeOJ5mR379+nvqKoEFpqs5c=,
+        VotingStimmregisterIdMac: Eat1Dcaxjant3swTnLZfBxfFr1fXNiio0Dcb9WD5VMY=,
         IntegritySignatureInfo: {
           IntegritySignatureKeyId: 
         },
         AuditInfo: {
           CreatedById: default-user-id,
-          CreatedByName: default user firstname default user lastname,
-          CreatedByEmail: default-user@example.com,
+          CreatedByName: Test Admin,
+          CreatedByEmail: admin@example.com,
           CreatedAt: DateTime_1
         },
         Id: Guid_7
@@ -70,8 +70,8 @@
       },
       AuditInfo: {
         CreatedById: default-user-id,
-        CreatedByName: default user firstname default user lastname,
-        CreatedByEmail: default-user@example.com,
+        CreatedByName: Test Admin,
+        CreatedByEmail: admin@example.com,
         CreatedAt: DateTime_1
       },
       Id: Guid_6
@@ -80,13 +80,13 @@
       CollectionMunicipalityId: Guid_1,
       Electronic: false,
       SignatureSheetId: Guid_2,
-      Age: 70,
-      Sex: 1,
+      Age: 58,
+      Sex: 2,
       CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_8,
-        VotingStimmregisterIdMac: YQqcQ21Qm6qQv3muP6j2k8em1k4pYhXY1fXqEMb6/Wk=,
+        VotingStimmregisterIdMac: JNW9lLwcj8F5DD+Y/XmlQeOJ5mR379+nvqKoEFpqs5c=,
         IntegritySignatureInfo: {
           IntegritySignatureKeyId: 
         },
@@ -113,13 +113,13 @@
       CollectionMunicipalityId: Guid_1,
       Electronic: false,
       SignatureSheetId: Guid_2,
-      Age: 35,
-      Sex: 3,
+      Age: 70,
+      Sex: 1,
       CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_10,
-        VotingStimmregisterIdMac: zuGdkmO4ExFCaInjpVHevGbh7NXvZKgpiZl/xzV8Y/Y=,
+        VotingStimmregisterIdMac: YQqcQ21Qm6qQv3muP6j2k8em1k4pYhXY1fXqEMb6/Wk=,
         IntegritySignatureInfo: {
           IntegritySignatureKeyId: 
         },
@@ -146,20 +146,20 @@
       CollectionMunicipalityId: Guid_1,
       Electronic: false,
       SignatureSheetId: Guid_2,
-      Age: 42,
-      Sex: 2,
+      Age: 35,
+      Sex: 3,
       CollectionDateTime: DateTime_1,
       Log: {
         CollectionId: Guid_3,
         CollectionCitizenId: Guid_12,
-        VotingStimmregisterIdMac: 8AmlwCbIK7cKu4sZ5zYcaqWCFOHma1PVcx9KPy/Hjxk=,
+        VotingStimmregisterIdMac: zuGdkmO4ExFCaInjpVHevGbh7NXvZKgpiZl/xzV8Y/Y=,
         IntegritySignatureInfo: {
           IntegritySignatureKeyId: 
         },
         AuditInfo: {
           CreatedById: default-user-id,
-          CreatedByName: Test Admin,
-          CreatedByEmail: admin@example.com,
+          CreatedByName: default user firstname default user lastname,
+          CreatedByEmail: default-user@example.com,
           CreatedAt: DateTime_1
         },
         Id: Guid_13
@@ -169,8 +169,8 @@
       },
       AuditInfo: {
         CreatedById: default-user-id,
-        CreatedByName: Test Admin,
-        CreatedByEmail: admin@example.com,
+        CreatedByName: default user firstname default user lastname,
+        CreatedByEmail: default-user@example.com,
         CreatedAt: DateTime_1
       },
       Id: Guid_12

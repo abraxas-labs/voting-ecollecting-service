@@ -11,6 +11,8 @@ namespace Voting.ECollecting.Admin.Core.Services.UserNotifications;
 
 public class GroupedUserNotificationRenderer
 {
+    private const string Subject = "E-Collecting: Änderungen in Update zu Ihrer Sammlung";
+
     private readonly UrlConfig _urlConfig;
 
     public GroupedUserNotificationRenderer(UrlConfig urlConfig)
@@ -21,13 +23,10 @@ public class GroupedUserNotificationRenderer
     public UserNotification Render(string recipientEmail, List<UserNotificationEntity> notifications)
     {
         var groups = BuildGroups(notifications);
-        return new UserNotification(recipientEmail, RenderSubject(groups).Truncate(100), RenderHtml(groups));
+        return new UserNotification(recipientEmail, Subject, RenderHtml(groups));
     }
 
     private static string Html([StringSyntax("html")] string html) => html;
-
-    private string RenderSubject(IReadOnlyList<CollectionGroup> groups)
-        => $"E-Collecting: Änderungen in {string.Join(", ", groups.Select(x => x.CollectionName))}";
 
     private string RenderHtml(IReadOnlyList<CollectionGroup> groups)
     {
@@ -59,9 +58,8 @@ public class GroupedUserNotificationRenderer
                  </head>
                  <body>
                    <div class="container">
-                     <h2>Neuigkeiten in E-Collecting</h2>
-                     <p>Hallo,</p>
-                     <p>im E-Collecting gibt es Neuigkeiten:</p>
+                     <p>Guten Tag</p>
+                     <p>Es gibt ein Update zur Ihrer Sammlung. Über den nachfolgenden Link gelangen Sie zur E-Collecting-Plattform:</p>
                      <ul>
                         {{renderedGroups}}
                      </ul>
@@ -88,8 +86,8 @@ public class GroupedUserNotificationRenderer
     {
         var text = type switch
         {
-            UserNotificationType.MessageAdded => "Es ist eine neue Nachricht verfügbar.",
-            UserNotificationType.StateChanged => "Der Status hat sich geändert.",
+            UserNotificationType.MessageAdded => "Art des Updates: Es ist eine neue Nachricht verfügbar.",
+            UserNotificationType.StateChanged => "Art des Updates: Der Status der Sammlung hat sich geändert.",
             _ => throw new ArgumentOutOfRangeException(nameof(type), type, null),
         };
 

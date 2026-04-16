@@ -39,6 +39,7 @@ public class ELoginHandler : JwtBearerHandler
             return AuthenticateResult.Fail("No sub present in token");
         }
 
+        var authTime = identity.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.AuthTime)?.Value ?? string.Empty;
         var userName = identity.Claims.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Name)?.Value ?? string.Empty;
         var userFirstName = identity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.GivenName)?.Value ?? string.Empty;
         var userLastName = identity.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Surname)?.Value ?? string.Empty;
@@ -50,13 +51,19 @@ public class ELoginHandler : JwtBearerHandler
             userEmailVerified = false;
         }
 
+        if (!long.TryParse(authTime, out var authenticatedTime))
+        {
+            return AuthenticateResult.Fail("No valid auth time present in token");
+        }
+
         _permissionService.Init(
             sub,
             userName,
             userEmail,
             userEmailVerified,
             userFirstName,
-            userLastName);
+            userLastName,
+            DateTimeOffset.FromUnixTimeSeconds(authenticatedTime));
         return result;
     }
 }

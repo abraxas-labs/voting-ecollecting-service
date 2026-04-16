@@ -3,7 +3,7 @@
     {
       Bfs: 1,
       Name: Kanton St.Gallen eidgenössisch,
-      NameForProtocol: ,
+      NameForProtocol: St.Gallen,
       Type: Ch,
       Settings: {
         HasInitiativeMinSignatureCount: false,
@@ -39,7 +39,7 @@
     {
       Bfs: 17,
       Name: Kanton St.Gallen kantonal,
-      NameForProtocol: ,
+      NameForProtocol: St.Gallen,
       Type: Ct,
       Settings: {
         HasInitiativeMinSignatureCount: false,

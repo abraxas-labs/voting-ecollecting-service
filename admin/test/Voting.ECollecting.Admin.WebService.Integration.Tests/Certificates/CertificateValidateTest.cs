@@ -22,7 +22,7 @@ public class CertificateValidateTest : BaseRestTest
         // use time when test cert is valid
         // adjustTime is already stable in .NET 10
 #pragma warning disable EXTEXP0004
-        GetService<FakeTimeProvider>().AdjustTime(new DateTimeOffset(new DateTime(2025, 06, 12)));
+        GetService<FakeTimeProvider>().AdjustTime(new DateTimeOffset(new DateTime(2026, 01, 16)));
 #pragma warning restore EXTEXP0004
     }
 

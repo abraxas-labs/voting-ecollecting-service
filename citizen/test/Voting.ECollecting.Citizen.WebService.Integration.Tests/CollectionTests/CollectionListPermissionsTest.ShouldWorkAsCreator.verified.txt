@@ -3,6 +3,21 @@
     {
       Id: Guid_1,
       CollectionId: Guid_2,
+      LastName: Creator,
+      FirstName: Citizen,
+      Email: citizen-creator@example.com,
+      State: Accepted,
+      Role: Owner,
+      IamLastName: Creator,
+      IamFirstName: Citizen,
+      IamUserId: default-user-id,
+      UserPermissions: {
+        CanResend: false
+      }
+    },
+    {
+      Id: Guid_3,
+      CollectionId: Guid_2,
       LastName: Gruen,
       FirstName: Jessica,
       Email: jessica.gruen@example.com,
@@ -16,7 +31,7 @@
       }
     },
     {
-      Id: Guid_3,
+      Id: Guid_4,
       CollectionId: Guid_2,
       LastName: Huenkeler,
       FirstName: Peter,
@@ -31,7 +46,7 @@
       }
     },
     {
-      Id: Guid_4,
+      Id: Guid_5,
       CollectionId: Guid_2,
       LastName: Meier,
       FirstName: Rudolph,
@@ -46,7 +61,7 @@
       }
     },
     {
-      Id: Guid_5,
+      Id: Guid_6,
       CollectionId: Guid_2,
       LastName: Mueller,
       FirstName: Jeanine,
@@ -61,7 +76,7 @@
       }
     },
     {
-      Id: Guid_6,
+      Id: Guid_7,
       CollectionId: Guid_2,
       LastName: Permission,
       FirstName: Expired,
@@ -76,7 +91,7 @@
       }
     },
     {
-      Id: Guid_7,
+      Id: Guid_8,
       CollectionId: Guid_2,
       LastName: Permission,
       FirstName: Expired Not Updated,

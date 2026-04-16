@@ -8,7 +8,6 @@ using System.Text;
 using Microsoft.Extensions.Logging;
 using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Admin.Domain.Models;
-using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.Lib.Common;
 
@@ -16,39 +15,21 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class CertificateValidator
 {
-    private readonly IFileService _fileService;
-    private readonly CoreAppConfig _config;
     private readonly ILogger<CertificateValidator> _logger;
     private readonly TimeProvider _timeProvider;
 
-    public CertificateValidator(IFileService fileService, CoreAppConfig config, ILogger<CertificateValidator> logger, TimeProvider timeProvider)
+    public CertificateValidator(ILogger<CertificateValidator> logger, TimeProvider timeProvider)
     {
-        _fileService = fileService;
-        _config = config;
         _logger = logger;
         _timeProvider = timeProvider;
     }
 
-    public async Task<CertificateValidationSummary> ValidateBackupCertificate(
+    public CertificateValidationSummary ValidateBackupCertificate(
+        FileEntity certificate,
         X509Certificate2 caCert,
-        Stream stream,
-        string contentType,
-        string fileName,
-        CancellationToken ct)
+        BackupCertificateConfig config)
     {
-        // some browsers send the wrong mime-type (e.g. chrome application/x-x509-ca-cert instead of application/x-pem-file)
-        // therefore we cannot really validate it since application/x-x509-ca-cert is normally binary
-        // but the real content is still a pem (which is text based).
-        // We use the validation of the pem deserialization instead to validate the contents.
-        var file = await _fileService.Validate(
-            stream,
-            contentType,
-            fileName,
-            _config.BackupCertificate.AllowedFileExtensions,
-            false,
-            ct);
-
-        var content = Encoding.ASCII.GetString(file.Content!.Data);
+        var content = Encoding.ASCII.GetString(certificate.Content!.Data);
         var hasSingleEntry = HasSingleEntry(content);
 
         List<CertificateValidationResult> validations = [new(CertificateValidation.ContainsSingleEntry, hasSingleEntry)];
@@ -66,11 +47,11 @@ public class CertificateValidator
         validations.Add(new(CertificateValidation.CertificateSelfSigned, !cert.Subject.Equals(cert.Issuer, StringComparison.Ordinal)));
         validations.Add(new(CertificateValidation.CertificateNotAfter, ValidateNotAfter(
             cert,
-            _config.BackupCertificate.NotAfterGracePeriod)));
+            config.NotAfterGracePeriod)));
         validations.Add(new(CertificateValidation.CACertificateNotAfter, ValidateNotAfter(
             caCert,
-            _config.BackupCertificate.CACertificateNotAfterGracePeriod,
-            _config.BackupCertificate.CACertificateNotAfterValidityPeriod)));
+            config.CACertificateNotAfterGracePeriod,
+            config.CACertificateNotAfterValidityPeriod)));
         validations.Add(BuildChainValidation(cert, caCert));
 
         var state = validations.Max(v => v.State);
@@ -86,7 +67,7 @@ public class CertificateValidator
 
         var info = new CertificateInfo(cert);
         var caInfo = new CertificateInfo(caCert);
-        return new CertificateValidationSummary(file, info, caInfo, validations, state);
+        return new CertificateValidationSummary(certificate, info, caInfo, validations, state);
     }
 
     private bool TryReadCertificate(string content, [NotNullWhen(true)] out X509Certificate2? cert)

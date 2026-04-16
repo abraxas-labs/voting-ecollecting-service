@@ -61,7 +61,12 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
       Month: 6,
       Day: 13
     },
-    PeriodState: InCollection
+    PeriodState: InCollection,
+    SignatureListSubmissionEndDate: {
+      Year: 2020,
+      Month: 6,
+      Day: 10
+    }
   },
   IsOtherReferendumOfSameDecreeSigned: false,
   HasIsOtherReferendumOfSameDecreeSigned: true

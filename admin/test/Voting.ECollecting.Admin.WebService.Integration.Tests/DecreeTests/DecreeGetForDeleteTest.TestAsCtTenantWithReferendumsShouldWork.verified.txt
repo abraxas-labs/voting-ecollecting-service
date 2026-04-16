@@ -1,0 +1,138 @@
+﻿{
+  Decree: {
+    Id: Guid_1,
+    DomainOfInfluenceType: Ct,
+    Bfs: 17,
+    Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
+    CollectionStartDate: {
+      Year: 2020,
+      Month: 2,
+      Day: 13
+    },
+    CollectionEndDate: {
+      Year: 2020,
+      Month: 6,
+      Day: 13
+    },
+    MinSignatureCount: 3000,
+    MaxElectronicSignatureCount: 300,
+    Link: https://www.sg.ch/,
+    PeriodState: Published,
+    UserPermissions: {
+      CanEdit: true,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanAddCollection: false,
+      CanDelete: false
+    },
+    State: CollectionApplicable,
+    DomainOfInfluenceName: St. Gallen
+  },
+  Referendums: [
+    {
+      Referendum: {
+        Id: Guid_2,
+        Decree: {
+          Id: Guid_1,
+          Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300
+        },
+        MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+        Collection: {
+          Id: Guid_2,
+          Description: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
+          Type: Referendum,
+          Reason:
+Der Kantonsrat hat beschlossen, digitale Wecker aus Schlafzimmern zu verbannen, um analoges Zeitempfinden und besseren Schlaf zu fördern.
+Das Referendumskomitee findet diese Einmischung in die Privatsphäre unangemessen.
+Wie jemand aufwacht, sollte seine eigene Entscheidung bleiben – ob mit Smartphone, mechanischem Wecker oder Sonnenaufgang.
+Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Technik und das Recht, selbst zu entscheiden, wie man den Tag beginnt.,
+          Link: https://www.sg.ch/,
+          SignatureSheetTemplateGenerated: false,
+          State: InPreparation,
+          Address: {
+            CommitteeOrPerson: Komitee Freie Zeitwahl,
+            StreetOrPostOfficeBox: Neugasse 11,
+            ZipCode: 9000,
+            Locality: St.Gallen
+          },
+          IsElectronicSubmission: true,
+          InformalReviewRequested: false
+        }
+      },
+      CreatorFullName: Test Citizen Creator,
+      CreatorEmail: citizen-creator@example.com
+    },
+    {
+      Referendum: {
+        Id: Guid_3,
+        Decree: {
+          Id: Guid_1,
+          Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300
+        },
+        MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+        Collection: {
+          Id: Guid_3,
+          Description: Referendum gegen das Verbot digitaler Wecker aus Gründen der Barrierefreiheit  (p: Reader),
+          Type: Referendum,
+          Reason:
+Ein drittes Komitee wehrt sich gegen das Wecker-Verbot, weil es Menschen mit Behinderungen benachteiligt.
+Viele digitale Geräte bieten Vibrationsalarm, Lichtsignale oder Sprachausgabe – Funktionen, die analoge Wecker nicht haben.
+Für Menschen mit Hörbeeinträchtigung oder Sehbehinderung sind digitale Hilfsmittel oft unverzichtbar.
+Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und die Erkenntnis, dass Fortschritt auch Teilhabe bedeutet.,
+          Link: https://www.sg.ch/,
+          SignatureSheetTemplateGenerated: false,
+          State: PreparingForCollection,
+          Address: {
+            CommitteeOrPerson: Komitee Barrierefreie Technik,
+            StreetOrPostOfficeBox: St. Leonhard-Strasse 40,
+            ZipCode: 9000,
+            Locality: St.Gallen
+          },
+          IsElectronicSubmission: true,
+          InformalReviewRequested: false
+        }
+      },
+      CreatorFullName: Unrelated ECol Seeder Citizen Creator,
+      CreatorEmail: unrelated-citizen-creator@example.com
+    },
+    {
+      Referendum: {
+        Id: Guid_4,
+        Decree: {
+          Id: Guid_1,
+          Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
+          MinSignatureCount: 3000,
+          MaxElectronicSignatureCount: 300
+        },
+        MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
+        Collection: {
+          Id: Guid_4,
+          Description: Referendum gegen das Wecker-Verbot wegen unnötigem Elektronikschrott (p: Reader),
+          Type: Referendum,
+          Reason:
+Ein zweites Komitee hat sich formiert, weil das Verbot digitaler Wecker nicht nur freiheitsbeschränkend, sondern auch umweltschädlich wäre.
+Wenn alle ihre funktionierenden digitalen Wecker entsorgen müssen, entstehen Tonnen von Elektronikschrott.
+Analoge Wecker müssen neu produziert werden – eine ökologisch fragwürdige Massnahme.
+Dieses Referendum steht für Nachhaltigkeit, Ressourcenschonung und das Prinzip «Reduce, Reuse, Recycle» – nicht für staatlich verordnete Verschwendung.,
+          Link: https://www.sg.ch/,
+          SignatureSheetTemplateGenerated: false,
+          State: InPreparation,
+          Address: {
+            CommitteeOrPerson: Verein Umweltschutz und Technik,
+            StreetOrPostOfficeBox: Rosenbergstrasse 22,
+            ZipCode: 9000,
+            Locality: St.Gallen
+          },
+          IsElectronicSubmission: true,
+          InformalReviewRequested: true
+        }
+      },
+      CreatorFullName: Unrelated ECol Seeder Citizen Creator,
+      CreatorEmail: unrelated-citizen-creator@example.com
+    }
+  ]
+}

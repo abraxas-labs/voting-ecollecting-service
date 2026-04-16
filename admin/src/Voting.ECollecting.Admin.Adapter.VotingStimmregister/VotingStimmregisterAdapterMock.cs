@@ -8,7 +8,7 @@ using IVotingStimmregisterPersonInfo = Voting.ECollecting.Admin.Domain.Models.IV
 
 namespace Voting.ECollecting.Admin.Adapter.VotingStimmregister;
 
-// keep in sync with CollectionCitizens and InitiativeCommitteeMembers of the seeder data and the mock in Citizen.
+// keep in sync with CollectionCitizens of the seeder data and the mock in Citizen.
 public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 {
     public static readonly PersonInfo NoVotingRightPerson1 =
@@ -67,17 +67,17 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson1 =
         new PersonInfo(
-            Guid.Parse("1482ac2e-8dc4-424f-ae47-6b722a359d0b"),
+            Guid.Parse("daa64beb-14ad-42d0-94f8-8396aab60393"),
             true,
             true,
             true,
-            "Trautmann",
-            "Lars",
-            new DateOnly(1963, 12, 14),
+            "BolligerT",
+            "LarsT",
+            new DateOnly(1952, 04, 06),
             61,
             1,
-            "Vonwilstr.",
-            "29",
+            "Rorschacher Strasse",
+            "75",
             "St. Gallen",
             "9000",
             3203,
@@ -85,17 +85,17 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson2 =
         new PersonInfo(
-            Guid.Parse("5898d5f7-8659-400d-bf38-92cfe52d98eb"),
+            Guid.Parse("0694f1fd-86c9-40bc-9521-4d2879325c67"),
             true,
             true,
             true,
-            "Abramovic",
-            "Anthony",
-            new DateOnly(1988, 3, 11),
+            "AbramovicT",
+            "AdelinaT",
+            new DateOnly(2004, 11, 25),
             55,
-            1,
-            "Vonwilstr.",
-            "29",
+            2,
+            "Zwinglistrasse",
+            "23",
             "St. Gallen",
             "9000",
             3203,
@@ -103,70 +103,70 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson3 =
         new PersonInfo(
-            Guid.Parse("c17581ba-d985-44a8-8be0-4b3d6f321860"),
+            Guid.Parse("1b92b658-e4f9-4a22-897f-3c5117371290"),
             true,
             true,
             true,
-            "Golling",
-            "Peter",
-            new DateOnly(2006, 12, 02),
+            "GeigerT",
+            "PeterT",
+            new DateOnly(1999, 05, 18),
             18,
             1,
-            "Tannenstr.",
-            "42",
+            "Höhenweg",
+            "60",
             "St. Gallen",
-            "9010",
+            "9000",
             3203,
             "Stadt St.Gallen");
 
     public static readonly PersonInfo VotingRightPerson4 =
         new PersonInfo(
-            Guid.Parse("92a99a29-e9e2-4a33-962e-7f45b9fbb6d9"),
+            Guid.Parse("bd151bbe-5120-4ec3-a430-d3771b858745"),
             true,
             true,
             true,
-            "Ziegler",
-            "Juliana",
-            new DateOnly(1944, 12, 11),
+            "ZieglerT",
+            "JulienneT",
+            new DateOnly(2000, 06, 03),
             53,
             2,
-            "Kreuzbühlstr.",
-            "35",
-            "St. Gallen",
-            "9015",
-            3203,
-            "Stadt St.Gallen");
-
-    public static readonly PersonInfo VotingRightPerson5 =
-        new PersonInfo(
-            Guid.Parse("f4a01bcf-08e9-4d90-91d5-c00fbecf1180"),
-            true,
-            true,
-            true,
-            "Achilles",
-            "Linnea",
-            new DateOnly(1940, 6, 28),
-            91,
-            1,
-            "Müller-Friedberg-Str.",
-            "24",
+            "Flaschnerweg",
+            "5",
             "St. Gallen",
             "9008",
             3203,
             "Stadt St.Gallen");
 
+    public static readonly PersonInfo VotingRightPerson5 =
+        new PersonInfo(
+            Guid.Parse("47da7287-31ef-4e39-9903-f40676c0213c"),
+            true,
+            true,
+            true,
+            "AchillesT",
+            "CassandraT",
+            new DateOnly(1945, 11, 11),
+            91,
+            2,
+            "Ringelbergstrasse",
+            "7",
+            "St. Gallen",
+            "9000",
+            3203,
+            "Stadt St.Gallen");
+
     public static readonly PersonInfo VotingRightPerson6 =
         new PersonInfo(
-            Guid.Parse("8f1e02cc-6d35-469e-9e81-ce66e12abe94"),
+            Guid.Parse("fabc0bf4-4f4e-4eaf-a4d2-af539eaf7da3"),
             true,
             true,
             true,
-            "Hügel",
-            "Hans",
-            new DateOnly(1948, 01, 26),
+            "BaderT",
+            "HansT",
+            new DateOnly(1917, 03, 19),
             77,
             1,
-            "Hölderlinstr.",
+            "Hölderlinstrasse",
             "17",
             "St. Gallen",
             "9008",
@@ -175,16 +175,16 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson7 =
         new PersonInfo(
-            Guid.Parse("510ecfff-62f5-41ce-91cc-9b734d5d3a8a"),
+            Guid.Parse("ec45d7fc-b5e8-4b5a-b4c4-8f03865864da"),
             true,
             true,
             true,
-            "Abel",
-            "Angela",
-            new DateOnly(1988, 07, 25),
+            "SchaubT",
+            "AngelaT",
+            new DateOnly(1946, 07, 05),
             37,
             2,
-            "Oststr.",
+            "Oststrasse",
             "19",
             "St. Gallen",
             "9000",

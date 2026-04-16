@@ -15,13 +15,13 @@
         IsVotingAllowed: true,
         IsBirthDateValidForVotingRights: true,
         IsNationalityValidForVotingRights: true,
-        OfficialName: Golling,
-        FirstName: Peter,
+        OfficialName: GeigerT,
+        FirstName: PeterT,
         DateOfBirth: {
-          Seconds: 1165017600
+          Seconds: 926985600
         },
-        ResidenceAddressStreet: Tannenstr.,
-        ResidenceAddressHouseNumber: 42
+        ResidenceAddressStreet: Höhenweg,
+        ResidenceAddressHouseNumber: 60
       },
       ExistingSignature: {
         Bfs: 3203,

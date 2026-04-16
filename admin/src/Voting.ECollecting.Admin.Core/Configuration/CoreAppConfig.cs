@@ -72,4 +72,9 @@ public class CoreAppConfig
     /// Gets or sets the certificate validity check job config.
     /// </summary>
     public CertificateValidityCheckJobConfig CertificateValidityCheckJob { get; set; } = new();
+
+    /// <summary>
+    /// Gets or sets the sensitive data expiry job config.
+    /// </summary>
+    public SensitiveDataExpiryReminderJobConfig SensitiveDataExpiryReminderJob { get; set; } = new();
 }

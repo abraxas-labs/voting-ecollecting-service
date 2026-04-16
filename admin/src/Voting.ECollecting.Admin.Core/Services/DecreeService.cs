@@ -170,15 +170,56 @@ public class DecreeService : IDecreeService
         return decree;
     }
 
-    public async Task DeletePublished(Guid id)
+    public async Task<DeleteDecreeInfo> GetForDelete(Guid id)
     {
-        await using var transaction = await _dataContext.BeginTransaction();
-        var collection = await _decreeRepository.Query()
+        var decreeEntity = await _decreeRepository.Query()
             .WhereCanEdit(_permissionService)
+            .Include(x => x.Collections)
+            .ThenInclude(x => x.CollectionCount)
             .FirstOrDefaultAsync(x => x.Id == id)
             ?? throw new EntityNotFoundException(nameof(DecreeEntity), id);
 
-        await _decreeRepository.AuditedDelete(collection);
+        var today = _timeProvider.GetUtcTodayDateOnly();
+        var decree = Mapper.MapToDecree(decreeEntity);
+        SetPeriodStateAndUserPermissions(decree, today);
+        foreach (var referendum in decree.Referendums)
+        {
+            referendum.SetPeriodState(today);
+        }
+
+        decree.DomainOfInfluenceName = await _domainOfInfluenceService.LoadDomainOfInfluenceName(decree.DomainOfInfluenceType, decree.Bfs);
+
+        var referendumById = decree.Referendums.ToDictionary(r => r.Id);
+        var referendums = decreeEntity.Collections
+            .ConvertAll(c => new ReferendumDeleteInfo
+            {
+                Referendum = referendumById[c.Id],
+                CreatorFullName = c.AuditInfo.CreatedByName,
+                CreatorEmail = c.AuditInfo.CreatedByEmail ?? string.Empty,
+            });
+
+        decree.Collections.Clear();
+        decree.Referendums.Clear();
+        return new DeleteDecreeInfo { Decree = decree, Referendums = referendums };
+    }
+
+    public async Task DeletePublished(Guid id)
+    {
+        await using var transaction = await _dataContext.BeginTransaction();
+        var decree = await _decreeRepository.Query()
+            .WhereCanEdit(_permissionService)
+            .Include(x => x.Collections)
+            .FirstOrDefaultAsync(x => x.Id == id)
+            ?? throw new EntityNotFoundException(nameof(DecreeEntity), id);
+
+        await DetachReferendums(decree);
+
+        foreach (var collection in decree.Collections)
+        {
+            await _collectionCryptoService.DeleteKeys(collection);
+        }
+
+        await _decreeRepository.AuditedDelete(decree);
         await transaction.CommitAsync();
     }
 
@@ -456,5 +497,31 @@ public class DecreeService : IDecreeService
             cancellationToken.ThrowIfCancellationRequested();
             yield return await _electronicSignaturesProtocolGenerator.GenerateFileModel(new ECollectingProtocolTemplateData([collection], accessControlListDoi, collection.Description, collection.DomainOfInfluenceType!.Value, true), cancellationToken);
         }
+    }
+
+    private async Task DetachReferendums(DecreeEntity decree)
+    {
+        if (decree.Collections.Count == 0)
+        {
+            return;
+        }
+
+        // only detach in preparation, delete all others
+        await _referendumRepository.AuditedUpdateRange(
+            decree.Collections.Where(x => x.State == CollectionState.InPreparation),
+            referendum =>
+            {
+                referendum.DecreeId = null;
+                referendum.Decree = null;
+                referendum.Bfs = null;
+                referendum.DomainOfInfluenceType = null;
+                referendum.MaxElectronicSignatureCount = null;
+                referendum.CollectionStartDate = null;
+                referendum.CollectionEndDate = null;
+                _permissionService.SetModified(referendum);
+                return Task.CompletedTask;
+            });
+
+        decree.Collections.RemoveAll(x => x.State == CollectionState.InPreparation);
     }
 }

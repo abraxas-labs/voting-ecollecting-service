@@ -72,7 +72,12 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
       Month: 6,
       Day: 10
     },
-    PeriodState: InCollection
+    PeriodState: InCollection,
+    SignatureListSubmissionEndDate: {
+      Year: 2020,
+      Month: 6,
+      Day: 7
+    }
   },
   SubType: {
     Id: Guid_6,

@@ -22,6 +22,7 @@ public abstract class AuditTrailEntryBuilder : IAuditTrailEntryBuilder
             .Where(e => e.Entity is IAuditTrailTrackedEntity)
             .OrderBy(e => ((IAuditTrailTrackedEntity)e.Entity).AuditInfo.CreatedAt)
             .ThenBy(e => ((IAuditTrailTrackedEntity)e.Entity).AuditInfo.ModifiedAt)
+            .ThenBy(e => ((BaseEntity)e.Entity).Id)
             .ToList();
 
         var auditTrailEntries = BuildAuditTrailEntries(auditTrailTrackedEntityEntries);

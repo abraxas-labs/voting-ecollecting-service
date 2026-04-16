@@ -1,0 +1,31 @@
+﻿{
+  Decree: {
+    Id: Guid_1,
+    DomainOfInfluenceType: Mu,
+    Bfs: 3203,
+    Description: Gemeinderatsbeschluss über die Anbringung von QR-Codes auf allen öffentlichen Kunstwerken und Graffiti-Wänden für digitale Künstlerprofile und Audioguides,
+    CollectionStartDate: {
+      Year: 2020,
+      Month: 7,
+      Day: 10
+    },
+    CollectionEndDate: {
+      Year: 2021,
+      Month: 1,
+      Day: 10
+    },
+    MinSignatureCount: 300,
+    MaxElectronicSignatureCount: 30,
+    Link: https://www.stadt.sg.ch/,
+    PeriodState: Published,
+    UserPermissions: {
+      CanEdit: true,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanAddCollection: false,
+      CanDelete: false
+    },
+    State: CollectionApplicable,
+    DomainOfInfluenceName: St.Gallen
+  }
+}

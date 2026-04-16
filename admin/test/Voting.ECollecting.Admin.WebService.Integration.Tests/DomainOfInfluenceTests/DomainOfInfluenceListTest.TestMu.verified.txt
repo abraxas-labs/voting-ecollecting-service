@@ -3,7 +3,7 @@
     {
       Bfs: 3203,
       Name: St.Gallen,
-      NameForProtocol: ,
+      NameForProtocol: Stadt St. Gallen,
       Type: Mu,
       Settings: {
         InitiativeMinSignatureCount: 100000,

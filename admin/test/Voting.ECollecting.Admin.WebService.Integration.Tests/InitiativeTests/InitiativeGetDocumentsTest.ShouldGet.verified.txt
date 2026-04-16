@@ -4,8 +4,8 @@
   Statistikdaten_Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative)_2020-01-10-141210.csv:
 ID_Unterschriftensammlung;ID_Erlass;Datum elektr. Unterzeichnung;Uhrzeit elektr. Unterzeichnung;Datum Eingang physische Unterschrift bei der Gemeinde;BFS Gemeinde;Name der Gemeinde;Geschlecht;Alter
 f5929816-20df-401e-9072-71d1f46af228;;10.01.2020;13:12;;3213;Goldach;F;23
-f5929816-20df-401e-9072-71d1f46af228;;10.01.2020;13:12;;3203;St.Gallen;M;50
 f5929816-20df-401e-9072-71d1f46af228;;;;08.01.2020;3203;St.Gallen;F;46
+f5929816-20df-401e-9072-71d1f46af228;;10.01.2020;13:12;;3203;St.Gallen;M;50
 ,
   Statistikdaten_Zeitverlauf_Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative)_2020-01-10-141210.csv:
 Gemeinde;Tag;Anzahl elektronisch gültige;Anzahl physisch gültige;Anzahl physisch ungültige;Uhrzeit Max. elektr. Unterschriften erreicht

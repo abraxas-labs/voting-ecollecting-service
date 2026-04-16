@@ -1,0 +1,9 @@
+[ v3_req_ec ]
+basicConstraints = CA:FALSE
+keyUsage = critical, keyAgreement
+subjectKeyIdentifier = hash
+
+[ v3_req_rsa ]
+basicConstraints = CA:FALSE
+keyUsage = critical, keyEncipherment, dataEncipherment
+subjectKeyIdentifier = hash

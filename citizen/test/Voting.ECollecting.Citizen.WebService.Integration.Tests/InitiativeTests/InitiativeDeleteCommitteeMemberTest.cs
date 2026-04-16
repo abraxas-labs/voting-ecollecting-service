@@ -142,7 +142,7 @@ public class InitiativeDeleteCommitteeMemberTest : BaseGrpcTest<InitiativeServic
 
     [Theory]
     [EnumData<CollectionState>]
-    public async Task WorksInStates(CollectionState state)
+    public async Task WorksInCollectionStates(CollectionState state)
     {
         await RunOnDb(db => db.Initiatives
             .Where(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation)
@@ -158,6 +158,24 @@ public class InitiativeDeleteCommitteeMemberTest : BaseGrpcTest<InitiativeServic
                 async () => await AuthenticatedClient.DeleteCommitteeMemberAsync(NewValidRequest()),
                 StatusCode.NotFound);
         }
+    }
+
+    [Theory]
+    [EnumData<InitiativeCommitteeMemberApprovalState>]
+    public async Task WorksInMemberApprovalStates(InitiativeCommitteeMemberApprovalState state)
+    {
+        await RunOnDb(db => db.InitiativeCommitteeMembers
+            .Where(x => x.Id == _id)
+            .ExecuteUpdateAsync(x => x.SetProperty(y => y.ApprovalState, state)));
+
+        if (state is InitiativeCommitteeMemberApprovalState.SignatureRejected or InitiativeCommitteeMemberApprovalState.Rejected or InitiativeCommitteeMemberApprovalState.Expired)
+        {
+            await RunOnDb(db => db.InitiativeCommitteeMembers
+                .Where(x => x.Id == _id)
+                .ExecuteUpdateAsync(x => x.SetProperty(y => y.SortIndex, (int?)null)));
+        }
+
+        await AuthenticatedClient.DeleteCommitteeMemberAsync(NewValidRequest());
     }
 
     private DeleteCommitteeMemberRequest NewValidRequest()

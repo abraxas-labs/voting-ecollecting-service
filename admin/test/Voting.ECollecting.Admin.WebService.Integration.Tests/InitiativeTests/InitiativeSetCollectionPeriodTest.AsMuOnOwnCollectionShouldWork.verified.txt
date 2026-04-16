@@ -79,7 +79,7 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
   Bfs: 3203,
   MaxElectronicSignatureCount: 500,
   PeriodState: Published,
-  SignatureListSubmissionEndDate: DateTime_2,
+  SignatureListSubmissionEndDate: Date_3,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },
@@ -87,7 +87,7 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
     CreatedById: default-user-id,
     CreatedByName: Test Citizen Creator,
     CreatedByEmail: citizen-creator@example.com,
-    CreatedAt: DateTime_3,
+    CreatedAt: DateTime_2,
     ModifiedById: default-user-id,
     ModifiedByName: default user firstname default user lastname,
     ModifiedByEmail: default-user@example.com,

@@ -153,14 +153,14 @@ public class DoiVotingBasisImportTest : BaseDbTest
     }
 
     [Fact]
-    public async Task ShouldImportAclsAndUpdateAddressInformation()
+    public async Task ShouldImportAclsAndUpdateNameForProtocol()
     {
         // Full import
         await Import(DoiVotingBasisMockedData.SG_Kanton_StGallen_L1_CH);
 
         // Update information
         var doi = DoiVotingBasisMockedData.SG_Kanton_StGallen_L1_CH;
-        doi.ReturnAddress.AddressLine1 = "Staatskanzlei St. Gallen (updated)";
+        doi.NameForProtocol = "Kanton St.Gallen (CH) (updated)";
 
         await Import(doi);
 

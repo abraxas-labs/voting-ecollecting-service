@@ -15,13 +15,13 @@
         IsVotingAllowed: true,
         IsBirthDateValidForVotingRights: true,
         IsNationalityValidForVotingRights: true,
-        OfficialName: Trautmann,
-        FirstName: Lars,
+        OfficialName: BolligerT,
+        FirstName: LarsT,
         DateOfBirth: {
-          Seconds: -190944000
+          Seconds: -559785600
         },
-        ResidenceAddressStreet: Vonwilstr.,
-        ResidenceAddressHouseNumber: 29
+        ResidenceAddressStreet: Rorschacher Strasse,
+        ResidenceAddressHouseNumber: 75
       },
       ExistingSignature: {
         Bfs: 3203,

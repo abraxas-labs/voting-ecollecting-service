@@ -1,13 +1,13 @@
 ﻿{
   RecipientEmail: foo@example.com,
-  Subject: E-Collecting: Neue Berechtigung,
+  Subject: E-Collecting: Neue Lese- oder Schreibrechte,
   HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Collecting: Neue Berechtigung</title>
+  <title>E-Collecting: Neue Lese- oder Schreibrechte</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -31,11 +31,10 @@
   </style>
 </head>
 <body>
-  <div class="container"><h2>Neue Berechtigung in E-Collecting</h2>
-<p>Hallo,</p>
+  <div class="container"><p>Guten Tag</p>
 <p>
-Im E-Collecting wurde eine neue Berechtigung in <a href="http://localhost:5001/permission-approval#token=">Foo bar baz</a> für Sie hinzugefügt.
-Klicken Sie <a href="http://localhost:5001/permission-approval#token=">hier</a> um diese anzunehmen oder abzulehnen.
+Für die Einrichtung der Sammlung Foo bar baz auf der E-Collecting-Plattform wurden Ihnen Lese- oder Schreibrechte erteilt.
+Um diese anzunehmen oder abzulehnen, klicken Sie bitte <a href="http://localhost:5001/permission-approval#token=">hier</a>.
 </p></div>
 </body>
 </html>

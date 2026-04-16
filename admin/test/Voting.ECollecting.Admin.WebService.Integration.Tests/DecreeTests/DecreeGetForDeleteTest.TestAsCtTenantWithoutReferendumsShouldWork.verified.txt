@@ -1,0 +1,31 @@
+﻿{
+  Decree: {
+    Id: Guid_1,
+    DomainOfInfluenceType: Ch,
+    Bfs: 1,
+    Description: Bundesbeschluss über die Einführung von Käsekunde als obligatorisches Schulfach in allen Schweizer Primarschulen zur Förderung kulinarischer Bildung,
+    CollectionStartDate: {
+      Year: 2020,
+      Month: 7,
+      Day: 10
+    },
+    CollectionEndDate: {
+      Year: 2021,
+      Month: 1,
+      Day: 10
+    },
+    MinSignatureCount: 100000,
+    MaxElectronicSignatureCount: 10000,
+    Link: ,
+    PeriodState: Published,
+    UserPermissions: {
+      CanEdit: true,
+      CanFinish: false,
+      CanGenerateDocuments: false,
+      CanAddCollection: false,
+      CanDelete: false
+    },
+    State: CollectionApplicable,
+    DomainOfInfluenceName: Schweiz
+  }
+}

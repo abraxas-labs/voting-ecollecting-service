@@ -4,6 +4,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
+using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Admin.Domain.Diagnostics;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
@@ -20,7 +21,7 @@ public class CertificateValidityCheckJob : IScheduledJob
     private readonly CertificateValidityCheckJobConfig _config;
     private readonly TimeProvider _timeProvider;
     private readonly ILogger<CertificateValidityCheckJob> _logger;
-    private readonly CertificateService _certificateService;
+    private readonly ICaCertificateService _caCertificateService;
 
     public CertificateValidityCheckJob(
         ICertificateRepository certificateRepository,
@@ -28,14 +29,14 @@ public class CertificateValidityCheckJob : IScheduledJob
         CertificateValidityCheckJobConfig config,
         TimeProvider timeProvider,
         ILogger<CertificateValidityCheckJob> logger,
-        CertificateService certificateService)
+        ICaCertificateService caCertificateService)
     {
         _certificateRepository = certificateRepository;
         _userNotificationService = userNotificationService;
         _config = config;
         _timeProvider = timeProvider;
         _logger = logger;
-        _certificateService = certificateService;
+        _caCertificateService = caCertificateService;
     }
 
     public async Task Run(CancellationToken ct)
@@ -46,7 +47,7 @@ public class CertificateValidityCheckJob : IScheduledJob
             await CheckExpiration(activeCertificate.Info, false, _config.BackupCertificateThreshold, ct);
         }
 
-        var caCertificate = new CertificateInfo(_certificateService.GetCertificateAuthorityCertificate());
+        var caCertificate = new CertificateInfo(_caCertificateService.GetCertificateAuthorityCertificate());
         await CheckExpiration(caCertificate, true, _config.CACertificateThreshold, ct);
     }
 

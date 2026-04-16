@@ -56,6 +56,13 @@ public class DecreeGrpcService : DecreeService.DecreeServiceBase
     }
 
     [Stammdatenverwalter]
+    public override async Task<GetDecreeForDeleteResponse> GetForDelete(GetDecreeForDeleteRequest request, ServerCallContext context)
+    {
+        var result = await _decreeService.GetForDelete(GuidParser.Parse(request.DecreeId));
+        return Mapper.MapToGetDecreeForDeleteResponse(result);
+    }
+
+    [Stammdatenverwalter]
     public override async Task<Empty> CameAbout(CameAboutDecreeRequest request, ServerCallContext context)
     {
         await _decreeService.CameAbout(

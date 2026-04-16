@@ -120,7 +120,12 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
                   Month: 7,
                   Day: 10
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 7
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
@@ -191,7 +196,12 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
                   Month: 7,
                   Day: 10
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 7
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false

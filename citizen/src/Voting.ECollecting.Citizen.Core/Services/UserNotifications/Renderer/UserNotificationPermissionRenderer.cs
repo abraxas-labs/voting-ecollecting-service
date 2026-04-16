@@ -17,17 +17,16 @@ public class UserNotificationPermissionRenderer : UserNotificationRenderer
     }
 
     protected override string RenderSubject(UserNotificationTemplateBag templateBag)
-        => "E-Collecting: Neue Berechtigung";
+        => "E-Collecting: Neue Lese- oder Schreibrechte";
 
     protected override string RenderBodyHtml(UserNotificationTemplateBag templateBag)
     {
         var url = _urlConfig.BuildPermissionApprovalUrl(templateBag.PermissionToken);
         return Html($"""
-                      <h2>Neue Berechtigung in E-Collecting</h2>
-                      <p>Hallo,</p>
+                      <p>Guten Tag</p>
                       <p>
-                      Im E-Collecting wurde eine neue Berechtigung in <a href="{EncodeHref(url)}">{EncodeHtml(templateBag.CollectionName)}</a> für Sie hinzugefügt.
-                      Klicken Sie <a href="{EncodeHref(url)}">hier</a> um diese anzunehmen oder abzulehnen.
+                      Für die Einrichtung der Sammlung {EncodeHtml(templateBag.CollectionName)} auf der E-Collecting-Plattform wurden Ihnen Lese- oder Schreibrechte erteilt.
+                      Um diese anzunehmen oder abzulehnen, klicken Sie bitte <a href="{EncodeHref(url)}">hier</a>.
                       </p>
                       """);
     }

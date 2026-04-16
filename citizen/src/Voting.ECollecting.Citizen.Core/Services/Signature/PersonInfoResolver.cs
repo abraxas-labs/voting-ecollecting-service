@@ -21,11 +21,16 @@ public class PersonInfoResolver
 
     internal async Task<IVotingStimmregisterPersonInfo?> GetPersonInfo(
         DomainOfInfluenceType doiType,
-        string bfs)
+        string bfs,
+        bool allowCache)
     {
-        var userSocialSecurityNumber = await _permissionService.GetSocialSecurityNumber();
-        if (!_permissionService.IsAuthenticated
-            || userSocialSecurityNumber == null)
+        if (!_permissionService.IsAuthenticated)
+        {
+            return null;
+        }
+
+        var userSocialSecurityNumber = await _permissionService.GetSocialSecurityNumber(allowCache);
+        if (userSocialSecurityNumber == null)
         {
             return null;
         }

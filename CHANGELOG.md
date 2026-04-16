@@ -1,4 +1,4 @@
-# ✨ Changelog (`v1.142.3`)
+# ✨ Changelog (`v1.146.1`)
 
 All notable changes to this project will be documented in this file.
 
@@ -8,11 +8,65 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Version Info
 
 ```text
-This version -------- v1.142.3
-Previous version ---- v1.138.1
+This version -------- v1.146.1
+Previous version ---- v1.142.3
 Initial version ----- v1.125.3
-Total commits ------- 8
+Total commits ------- 11
 ```
+
+## [v1.146.1] - 2026-04-15
+
+### 🔄 Changed
+
+- user notification text changes
+
+## [v1.146.0] - 2026-04-10
+
+### 🆕 Added
+
+- add accessible pdf version
+
+## [v1.145.0] - 2026-04-10
+
+### 🆕 Added
+
+- feat(VOTING-7030): elogin social security number cache
+
+## [v1.144.2] - 2026-04-09
+
+### 🔄 Changed
+
+- add doi name for protocol in db
+
+## [v1.144.1] - 2026-04-09
+
+### 🔄 Changed
+
+- fix db migration for backup service
+
+## [v1.144.0] - 2026-04-08
+
+### 🆕 Added
+
+- add backup service
+
+## [v1.143.0] - 2026-04-08
+
+### 🆕 Added
+
+- feat(VOTING-6569): unassign collections when deleting decree
+
+## [v1.142.5] - 2026-04-01
+
+### 🆕 Added
+
+- add sensitive data expiry reminder job
+
+## [v1.142.4] - 2026-04-01
+
+### 🔄 Changed
+
+- delete committee member with sort index null
 
 ## [v1.142.3] - 2026-03-25
 

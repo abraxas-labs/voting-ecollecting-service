@@ -1,6 +1,6 @@
 ﻿{
   RecipientEmail: foo@example.com,
-  Subject: E-Collecting: Änderungen in Foo bar baz,
+  Subject: E-Collecting: Änderungen in Update zu Ihrer Sammlung,
   HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
@@ -27,13 +27,12 @@
 </head>
 <body>
   <div class="container">
-    <h2>Neuigkeiten in E-Collecting</h2>
-    <p>Hallo,</p>
-    <p>im E-Collecting gibt es Neuigkeiten:</p>
+    <p>Guten Tag</p>
+    <p>Es gibt ein Update zur Ihrer Sammlung. Über den nachfolgenden Link gelangen Sie zur E-Collecting-Plattform:</p>
     <ul>
        <li>
    <a href="http://localhost:5001/initiatives/fd680937-4b7a-46d9-87ef-51540a40aa85?showChat=true">Foo bar baz</a><br />
-   Es ist eine neue Nachricht verf&#252;gbar<span>.</span>
+   Art des Updates<span>:</span> Es ist eine neue Nachricht verf&#252;gbar<span>.</span>
 </li>
     </ul>
   </div>

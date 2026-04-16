@@ -1,0 +1,218 @@
+﻿{
+  SentUserNotifications: [
+    {
+      RecipientEmail: bund+staatskanzlei@abraxas.ch,
+      Subject: E-Collecting: Erinnerung Kontrollzeichenlöschung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Erinnerung Kontrollzeichenl&#246;schung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p>Guten Tag</p>
+<p>Dies ist eine automatische Erinnerung, dass die Kontrollzeichen von <strong>Bundesbeschluss &#252;ber obligatorische Schweizerdeutsch-Kurse f&#252;r alle deutschsprachigen Bundesangestellten zur F&#246;rderung der nationalen Verst&#228;ndigung</strong> ab heute gelöscht werden können.</p>
+<p>Zur Kontrollzeichenlöschung: <a href="http://localhost:4600/control-signs">Kontrollzeichenlöschung</a></p></div>
+</body>
+</html>
+    },
+    {
+      RecipientEmail: bund+staatskanzlei2@abraxas.ch,
+      Subject: E-Collecting: Erinnerung Kontrollzeichenlöschung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Erinnerung Kontrollzeichenl&#246;schung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p>Guten Tag</p>
+<p>Dies ist eine automatische Erinnerung, dass die Kontrollzeichen von <strong>Bundesbeschluss &#252;ber obligatorische Schweizerdeutsch-Kurse f&#252;r alle deutschsprachigen Bundesangestellten zur F&#246;rderung der nationalen Verst&#228;ndigung</strong> ab heute gelöscht werden können.</p>
+<p>Zur Kontrollzeichenlöschung: <a href="http://localhost:4600/control-signs">Kontrollzeichenlöschung</a></p></div>
+</body>
+</html>
+    },
+    {
+      RecipientEmail: bund+staatskanzlei@abraxas.ch,
+      Subject: E-Collecting: Erinnerung Kontrollzeichenlöschung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Erinnerung Kontrollzeichenl&#246;schung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p>Guten Tag</p>
+<p>Dies ist eine automatische Erinnerung, dass die Kontrollzeichen von <strong>F&#252;r Schweizer Volksfeste (Volksfest-Initiative)</strong> ab heute gelöscht werden können.</p>
+<p>Zur Kontrollzeichenlöschung: <a href="http://localhost:4600/control-signs">Kontrollzeichenlöschung</a></p></div>
+</body>
+</html>
+    },
+    {
+      RecipientEmail: bund+staatskanzlei2@abraxas.ch,
+      Subject: E-Collecting: Erinnerung Kontrollzeichenlöschung,
+      HtmlBody:
+<!DOCTYPE html>
+<html lang="de-CH">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>E-Collecting: Erinnerung Kontrollzeichenl&#246;schung</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .user-text {
+      hyphens: auto;
+      overflow-wrap: break-word;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="container"><p>Guten Tag</p>
+<p>Dies ist eine automatische Erinnerung, dass die Kontrollzeichen von <strong>F&#252;r Schweizer Volksfeste (Volksfest-Initiative)</strong> ab heute gelöscht werden können.</p>
+<p>Zur Kontrollzeichenlöschung: <a href="http://localhost:4600/control-signs">Kontrollzeichenlöschung</a></p></div>
+</body>
+</html>
+    }
+  ],
+  dbNotifications: [
+    {
+      RecipientEMail: bund+staatskanzlei@abraxas.ch,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        DecreeId: Guid_1,
+        DecreeName: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,
+        CollectionName: ,
+        RecipientIsCitizen: false,
+        NotificationType: SensitiveDataExpiryReminder,
+        IsCaCertificate: false
+      },
+      Id: Guid_2
+    },
+    {
+      RecipientEMail: bund+staatskanzlei2@abraxas.ch,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        DecreeId: Guid_1,
+        DecreeName: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,
+        CollectionName: ,
+        RecipientIsCitizen: false,
+        NotificationType: SensitiveDataExpiryReminder,
+        IsCaCertificate: false
+      },
+      Id: Guid_3
+    },
+    {
+      RecipientEMail: bund+staatskanzlei@abraxas.ch,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        CollectionName: Für Schweizer Volksfeste (Volksfest-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: SensitiveDataExpiryReminder,
+        CollectionId: Guid_4,
+        CollectionType: Initiative,
+        IsCaCertificate: false
+      },
+      Id: Guid_5
+    },
+    {
+      RecipientEMail: bund+staatskanzlei2@abraxas.ch,
+      State: Sent,
+      SentTimestamp: DateTime_1,
+      TemplateBag: {
+        CollectionName: Für Schweizer Volksfeste (Volksfest-Initiative),
+        RecipientIsCitizen: false,
+        NotificationType: SensitiveDataExpiryReminder,
+        CollectionId: Guid_4,
+        CollectionType: Initiative,
+        IsCaCertificate: false
+      },
+      Id: Guid_6
+    }
+  ]
+}

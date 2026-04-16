@@ -53,7 +53,7 @@ public class CollectionSignService
 
             if (!seenPersonInfos.TryGetValue((collection.DomainOfInfluenceType.Value, collection.Bfs), out var personInfo))
             {
-                personInfo = await _personInfoResolver.GetPersonInfo(collection.DomainOfInfluenceType.Value, collection.Bfs);
+                personInfo = await _personInfoResolver.GetPersonInfo(collection.DomainOfInfluenceType.Value, collection.Bfs, true);
                 if (personInfo == null)
                 {
                     continue;

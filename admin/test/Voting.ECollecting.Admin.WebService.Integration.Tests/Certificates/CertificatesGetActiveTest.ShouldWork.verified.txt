@@ -10,12 +10,12 @@
     ImportedByName: Test Admin,
     Info: {
       NotBefore: {
-        Seconds: 1739036518
+        Seconds: 1768391298
       },
       NotAfter: {
-        Seconds: 1770572518
+        Seconds: 1778759298
       },
-      Thumbprint: 365ADB259C55FC81662099F7974C3E98AAEFD74DC2405D62FFC321E863E0D985,
+      Thumbprint: 5F79811C4358E8B695F5D59B7C8E096F79F0F7FCC8764C29B83B399538C8CBA9,
       Subject:
 C=CH
 S=St.Gallen
@@ -27,37 +27,37 @@ CN=E-Col Backup-Zertifikat Test
     },
     CaInfo: {
       NotBefore: {
-        Seconds: 1739036508
+        Seconds: 1762286543
       },
       NotAfter: {
-        Seconds: 1896716508
+        Seconds: 1919966543
       },
-      Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9,
+      Thumbprint: AD031D0E4F3C75A4C73CFEC76AF71C97705068B8C1350A7067E8932FFE910B32,
       Subject:
 C=CH
 S=St.Gallen
 L=St.Gallen
 O=Staatskanzlei des Kantons St.Gallen
 OU=DfPR
-CN=E-Col CA-Zertifikat Test
+CN=E-Col CA-Zertifikat 2025-11-04
 
     }
   },
   CaCertificate: {
     NotBefore: {
-      Seconds: 1739036508
+      Seconds: 1762286543
     },
     NotAfter: {
-      Seconds: 1896716508
+      Seconds: 1919966543
     },
-    Thumbprint: 185A3FC14C4169BE66CEBC17133BE8F5D100ECFBE31ADCA2DDB0761F561732B9,
+    Thumbprint: AD031D0E4F3C75A4C73CFEC76AF71C97705068B8C1350A7067E8932FFE910B32,
     Subject:
 C=CH
 S=St.Gallen
 L=St.Gallen
 O=Staatskanzlei des Kantons St.Gallen
 OU=DfPR
-CN=E-Col CA-Zertifikat Test
+CN=E-Col CA-Zertifikat 2025-11-04
 
   }
 }

@@ -53,7 +53,7 @@ public abstract class CollectionSignBaseService<TEntity>
 
     internal async Task<(bool IsSigned, CollectionSignatureType? SignatureType)> IsCollectionSigned(TEntity collection)
     {
-        var personInfo = await GetPersonInfo(collection);
+        var personInfo = await GetPersonInfo(collection, true);
         if (personInfo == null)
         {
             return (false, null);
@@ -66,7 +66,7 @@ public abstract class CollectionSignBaseService<TEntity>
 
     protected async Task Sign(TEntity collection)
     {
-        var userSocialSecurityNumber = await _permissionService.GetSocialSecurityNumber();
+        var userSocialSecurityNumber = await _permissionService.GetSocialSecurityNumber(false);
         if (userSocialSecurityNumber == null)
         {
             // this should never happen as the ACR cannot be fulfilled without a SSN
@@ -121,14 +121,14 @@ public abstract class CollectionSignBaseService<TEntity>
         IVotingStimmregisterPersonInfo personInfo,
         byte[] mac);
 
-    protected async Task<IVotingStimmregisterPersonInfo?> GetPersonInfo(TEntity collection)
+    protected async Task<IVotingStimmregisterPersonInfo?> GetPersonInfo(TEntity collection, bool allowCache)
     {
         if (collection.DomainOfInfluenceType == null || string.IsNullOrEmpty(collection.Bfs))
         {
             return null;
         }
 
-        return await _personInfoResolver.GetPersonInfo(collection.DomainOfInfluenceType.Value, collection.Bfs);
+        return await _personInfoResolver.GetPersonInfo(collection.DomainOfInfluenceType.Value, collection.Bfs, allowCache);
     }
 
     private CollectionCitizenEntity BuildCollectionCitizenEntity(

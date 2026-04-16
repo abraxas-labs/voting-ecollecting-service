@@ -16,4 +16,5 @@ public enum UserNotificationType
     DecreeDeleted,
     CollectionCleanupWarning,
     CertificateExpirationWarning,
+    SensitiveDataExpiryReminder,
 }

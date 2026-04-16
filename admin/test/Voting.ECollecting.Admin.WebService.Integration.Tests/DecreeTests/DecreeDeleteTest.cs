@@ -47,6 +47,27 @@ public class DecreeDeleteTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     }
 
     [Fact]
+    public async Task ShouldCascadeDeleteReferendumsWhenDeleting()
+    {
+        var decreeId = DecreesCtStGallen.GuidPastWithPassedReferendum;
+        var referendumIds = await RunOnDb(db => db.Referendums
+            .Where(x => x.DecreeId == decreeId)
+            .Select(x => x.Id)
+            .ToListAsync());
+
+        referendumIds.Should().NotBeEmpty();
+
+        await CtSgKontrollzeichenloescherClient.DeleteAsync(NewValidRequest());
+
+        var decreeExists = await RunOnDb(db => db.Decrees.AnyAsync(x => x.Id == decreeId));
+        decreeExists.Should().BeFalse();
+
+        var remainingReferendumCount = await RunOnDb(db => db.Referendums
+            .CountAsync(x => referendumIds.Contains(x.Id)));
+        remainingReferendumCount.Should().Be(0);
+    }
+
+    [Fact]
     public async Task ShouldWorkAsMuOnMu()
     {
         var req = new DeleteDecreeRequest

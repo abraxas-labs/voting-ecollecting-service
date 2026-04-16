@@ -1,43 +1,36 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
-using System.Security.Cryptography.X509Certificates;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
-using Voting.ECollecting.Admin.Core.Configuration;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Exceptions;
-using Voting.Lib.Common;
 using IPermissionService = Voting.ECollecting.Admin.Abstractions.Adapter.VotingIam.IPermissionService;
 
 namespace Voting.ECollecting.Admin.Core.Services;
 
 public class CertificateService : ICertificateService
 {
-    private readonly CoreAppConfig _config;
-    private readonly ILogger<CertificateService> _logger;
+    private readonly ICaCertificateService _caCertificateService;
     private readonly ICertificateRepository _certificateRepository;
     private readonly IPermissionService _permissionService;
     private readonly IDataContext _dataContext;
-    private readonly CertificateValidator _validator;
+    private readonly CertificateFileValidator _validator;
     private readonly IAccessControlListService _accessControlListService;
 
     public CertificateService(
-        CoreAppConfig config,
-        ILogger<CertificateService> logger,
+        ICaCertificateService caCertificateService,
         ICertificateRepository certificateRepository,
         IPermissionService permissionService,
         IDataContext dataContext,
-        CertificateValidator validator,
+        CertificateFileValidator validator,
         IAccessControlListService accessControlListService)
     {
-        _config = config;
-        _logger = logger;
+        _caCertificateService = caCertificateService;
         _certificateRepository = certificateRepository;
         _permissionService = permissionService;
         _dataContext = dataContext;
@@ -52,7 +45,8 @@ public class CertificateService : ICertificateService
                    .Where(x => x.Active)
                    .FirstOrDefaultAsync()
                ?? throw new EntityNotFoundException(nameof(CertificateEntity), new { Active = true });
-        return new ActiveCertificate(cert, new CertificateInfo(GetCertificateAuthorityCertificate()));
+        using var caCert = _caCertificateService.GetCertificateAuthorityCertificate();
+        return new ActiveCertificate(cert, new CertificateInfo(caCert));
     }
 
     public async Task<IReadOnlyList<CertificateEntity>> List()
@@ -72,8 +66,10 @@ public class CertificateService : ICertificateService
         CancellationToken ct)
     {
         await _accessControlListService.EnsureIsCtOrChTenant();
+        using var caCert = _caCertificateService.GetCertificateAuthorityCertificate();
+
         return await _validator.ValidateBackupCertificate(
-            GetCertificateAuthorityCertificate(),
+            caCert,
             stream,
             contentType,
             fileName,
@@ -90,7 +86,8 @@ public class CertificateService : ICertificateService
         await _accessControlListService.EnsureIsCtOrChTenant();
         await using var transaction = await _dataContext.BeginTransaction(ct);
 
-        var validationResult = await _validator.ValidateBackupCertificate(GetCertificateAuthorityCertificate(), stream, contentType, fileName, ct);
+        using var caCert = _caCertificateService.GetCertificateAuthorityCertificate();
+        var validationResult = await _validator.ValidateBackupCertificate(caCert, stream, contentType, fileName, ct);
         if (validationResult.State == CertificateValidationState.Error)
         {
             throw new ValidationException("Certificate validation error");
@@ -113,17 +110,5 @@ public class CertificateService : ICertificateService
         await _certificateRepository.Create(entity);
 
         await transaction.CommitAsync(ct);
-    }
-
-    internal X509Certificate2 GetCertificateAuthorityCertificate()
-    {
-        var cert = X509Certificate2.CreateFromPem(_config.BackupCertificate.CACertificate);
-        if (!cert.HasPrivateKey)
-        {
-            return cert;
-        }
-
-        _logger.LogCritical(SecurityLogging.SecurityEventId, "Private key in backup ca certificate detected");
-        throw new InvalidOperationException("Private key in backup ca certificate detected");
     }
 }

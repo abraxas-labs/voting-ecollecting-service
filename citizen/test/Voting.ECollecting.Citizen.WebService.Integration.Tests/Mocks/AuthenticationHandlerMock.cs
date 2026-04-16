@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Voting.ECollecting.Shared.Test.MockedData;
 using Voting.Lib.Iam.AuthenticationScheme;
+using Voting.Lib.Testing.Mocks;
 
 namespace Voting.ECollecting.Citizen.WebService.Integration.Tests.Mocks;
 
@@ -81,7 +82,8 @@ public class AuthenticationHandlerMock : JwtBearerHandler
             userEmail,
             emailVerified,
             CitizenAuthMockDefaults.UserTestFirstName,
-            CitizenAuthMockDefaults.UserTestLastName);
+            CitizenAuthMockDefaults.UserTestLastName,
+            MockedClock.UtcNowOffset);
         _permissionService.SetSsn(userSsn);
 
         return Task.FromResult(AuthenticateResult.Success(

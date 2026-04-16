@@ -15,12 +15,12 @@
         IsVotingAllowed: true,
         IsBirthDateValidForVotingRights: true,
         IsNationalityValidForVotingRights: true,
-        OfficialName: Abel,
-        FirstName: Angela,
+        OfficialName: SchaubT,
+        FirstName: AngelaT,
         DateOfBirth: {
-          Seconds: 585792000
+          Seconds: -741398400
         },
-        ResidenceAddressStreet: Oststr.,
+        ResidenceAddressStreet: Oststrasse,
         ResidenceAddressHouseNumber: 19
       },
       ExistingSignature: {

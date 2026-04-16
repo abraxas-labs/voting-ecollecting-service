@@ -12,7 +12,6 @@ public class DomainOfInfluenceModelBuilder : IEntityTypeConfiguration<DomainOfIn
     public void Configure(EntityTypeBuilder<DomainOfInfluenceEntity> builder)
     {
         AuditedEntityModelBuilder.Configure(builder);
-        builder.Ignore(x => x.NameForProtocol);
         builder.HasOne(x => x.Logo)
             .WithOne(x => x.LogoOfDomainOfInfluence)
             .HasForeignKey<DomainOfInfluenceEntity>(x => x.LogoId)

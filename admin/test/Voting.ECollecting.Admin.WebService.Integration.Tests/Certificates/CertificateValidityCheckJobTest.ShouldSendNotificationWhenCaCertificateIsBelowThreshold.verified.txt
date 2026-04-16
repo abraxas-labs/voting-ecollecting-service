@@ -2,14 +2,14 @@
   SentUserNotifications: [
     {
       RecipientEmail: voting@abraxas.ch,
-      Subject: E-Collecting: Zertifikat läuft bald ab: CA-Zertifikat,
+      Subject: E-Collecting: Zertifikat läuft ab: CA-Zertifikat,
       HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Collecting: Zertifikat l&#228;uft bald ab: CA-Zertifikat</title>
+  <title>E-Collecting: Zertifikat l&#228;uft ab: CA-Zertifikat</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -33,10 +33,10 @@
   </style>
 </head>
 <body>
-  <div class="container"><p>Hallo,</p>
+  <div class="container"><p>Guten Tag</p>
 <p>Das aktuelle CA-Zertifikat läuft bald ab:</p>
 <ul>
-    <li><strong>Ablaufdatum:</strong> 07<span>.</span>02<span>.</span>2030 17<span>:</span>41 UTC</li>
+    <li><strong>Ablaufdatum:</strong> 03<span>.</span>11<span>.</span>2030 20<span>:</span>02</li>
 </ul>
 <p>Bitte erneuern Sie das Zertifikat rechtzeitig, um einen reibungslosen Betrieb sicherzustellen: <a href="http://localhost:4600/administration/certificates">Schlüsselmanagement</a></p></div>
 </body>

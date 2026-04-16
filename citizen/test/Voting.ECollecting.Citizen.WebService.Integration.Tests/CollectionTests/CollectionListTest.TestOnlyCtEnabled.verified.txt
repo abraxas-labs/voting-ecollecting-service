@@ -7,6 +7,84 @@
           Id: Guid_1,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
+          Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+          CollectionStartDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 9
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 2,
+            Day: 19
+          },
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 2000,
+          Link: https://www.sg.ch/,
+          PeriodState: InCollection,
+          Collections: [
+            {
+              Id: Guid_2,
+              Decree: {
+                Id: Guid_1,
+                Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+                PeriodState: InCollection,
+                MaxElectronicSignatureCount: 2000
+              },
+              MembersCommittee: Roger Lutz, Uzwil; Manuela Huber, Rapperswil-Jona; Pascal Schmid, St.Gallen; Sandra Frei, Gossau; Thomas Rüegg, Buchs; Nicole Baumgartner, Wil; Silvio Graf, Altstätten; Karin Ackermann, Sargans; Daniel Steiner, Wittenbach; Laura Meier, Rorschach; Jonas Hug, Flawil; Peter Brändli, Gams; Vanessa Rossi, St. Margrethen; Samuel Dürst, Wattwil; Cem Yildiz, Rapperswil-Jona,
+              Collection: {
+                Id: Guid_2,
+                Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
+                Type: Referendum,
+                Reason:
+Der Kantonsrat hat beschlossen, dass alle Hausnummern im Kanton St.Gallen künftig während der Nacht beleuchtet sein müssen, um Einsatzkräfte besser zu unterstützen.
+Das Referendumskomitee befürwortet den Gedanken der Sicherheit, hält aber eine Pflichtbeleuchtung für übertrieben und zu energieintensiv.
+Reflektierende Hausnummern wären effizienter und umweltfreundlicher.
+Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünftige Regulierung – im Sinne eines hellen Verstandes statt heller Hausnummern.,
+                Link: https://www.sg.ch/,
+                SignatureSheetTemplateGenerated: false,
+                SignatureSheetTemplate: {
+                  Id: Guid_3,
+                  Name: placeholder-signatures.pdf
+                },
+                State: EnabledForCollection,
+                Address: {
+                  CommitteeOrPerson: Verein Nächtliche Beleuchtung,
+                  StreetOrPostOfficeBox: Rorschacher Strasse 88,
+                  ZipCode: 9000,
+                  Locality: St.Gallen
+                },
+                IsElectronicSubmission: true,
+                InformalReviewRequested: false,
+                IsSigned: false,
+                HasIsSigned: false,
+                CollectionStartDate: {
+                  Year: 2020,
+                  Month: 1,
+                  Day: 9
+                },
+                CollectionEndDate: {
+                  Year: 2020,
+                  Month: 2,
+                  Day: 19
+                },
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 2,
+                  Day: 16
+                }
+              },
+              IsOtherReferendumOfSameDecreeSigned: false,
+              HasIsOtherReferendumOfSameDecreeSigned: false
+            }
+          ],
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_4,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
           CollectionStartDate: {
             Year: 2019,
@@ -24,16 +102,16 @@
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_2,
+              Id: Guid_5,
               Decree: {
-                Id: Guid_1,
+                Id: Guid_4,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_2,
+                Id: Guid_5,
                 Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
                 Reason:
@@ -44,13 +122,13 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_3,
+                  Id: Guid_6,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_4,
-                  CollectionId: Guid_2,
+                  Id: Guid_7,
+                  CollectionId: Guid_5,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 101
                 },
@@ -74,22 +152,27 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
                   Month: 6,
                   Day: 13
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 6,
+                  Day: 10
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_5,
+              Id: Guid_8,
               Decree: {
-                Id: Guid_1,
+                Id: Guid_4,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_5,
+                Id: Guid_8,
                 Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
                 Reason:
@@ -100,13 +183,13 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_6,
+                  Id: Guid_9,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_7,
-                  CollectionId: Guid_5,
+                  Id: Guid_10,
+                  CollectionId: Guid_8,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -129,22 +212,27 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                   Month: 6,
                   Day: 13
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 6,
+                  Day: 10
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_8,
+              Id: Guid_11,
               Decree: {
-                Id: Guid_1,
+                Id: Guid_4,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_8,
+                Id: Guid_11,
                 Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
                 Type: Referendum,
                 Reason:
@@ -155,13 +243,13 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_9,
+                  Id: Guid_12,
                   Name: placeholder-signatures.pdf
                 },
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_10,
-                  CollectionId: Guid_8,
+                  Id: Guid_13,
+                  CollectionId: Guid_11,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 61
                 },
@@ -185,7 +273,12 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
                   Month: 6,
                   Day: 13
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 6,
+                  Day: 10
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
@@ -202,7 +295,7 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
       ],
       Initiatives: [
         {
-          Id: Guid_11,
+          Id: Guid_14,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -225,7 +318,7 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
 
           },
           Collection: {
-            Id: Guid_11,
+            Id: Guid_14,
             Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
             Type: Initiative,
             Reason:
@@ -235,13 +328,13 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_12,
+              Id: Guid_15,
               Name: placeholder-signatures.pdf
             },
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_13,
-              CollectionId: Guid_11,
+              Id: Guid_16,
+              CollectionId: Guid_14,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 42
             },
@@ -265,10 +358,15 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
               Month: 6,
               Day: 11
             },
-            PeriodState: InCollection
+            PeriodState: InCollection,
+            SignatureListSubmissionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 8
+            }
           },
           SubType: {
-            Id: Guid_14,
+            Id: Guid_17,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -283,7 +381,7 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
           }
         },
         {
-          Id: Guid_15,
+          Id: Guid_18,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -306,7 +404,7 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
 
           },
           Collection: {
-            Id: Guid_15,
+            Id: Guid_18,
             Description: Für eine tägliche Portion Natur (Frischluftinitiative),
             Type: Initiative,
             Reason:
@@ -315,13 +413,13 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_16,
+              Id: Guid_19,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_17,
-              CollectionId: Guid_15,
+              Id: Guid_20,
+              CollectionId: Guid_18,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -344,10 +442,15 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
               Month: 6,
               Day: 10
             },
-            PeriodState: InCollection
+            PeriodState: InCollection,
+            SignatureListSubmissionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 7
+            }
           },
           SubType: {
-            Id: Guid_14,
+            Id: Guid_17,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,

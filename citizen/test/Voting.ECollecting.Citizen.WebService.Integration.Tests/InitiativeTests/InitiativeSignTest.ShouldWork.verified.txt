@@ -82,7 +82,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
       Bfs: 17,
       MaxElectronicSignatureCount: 1000,
       PeriodState: InCollection,
-      SignatureListSubmissionEndDate: DateTime_2,
+      SignatureListSubmissionEndDate: Date_3,
       IntegritySignatureInfo: {
         IntegritySignatureKeyId: 
       },
@@ -90,7 +90,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
         CreatedById: default-user-id,
         CreatedByName: Test Citizen Creator,
         CreatedByEmail: citizen-creator@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_2
       },
       Id: Guid_6
     },
@@ -211,7 +211,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
       Bfs: 17,
       MaxElectronicSignatureCount: 1000,
       PeriodState: InCollection,
-      SignatureListSubmissionEndDate: DateTime_2,
+      SignatureListSubmissionEndDate: Date_3,
       IntegritySignatureInfo: {
         IntegritySignatureKeyId: 
       },
@@ -219,7 +219,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
         CreatedById: default-user-id,
         CreatedByName: Test Citizen Creator,
         CreatedByEmail: citizen-creator@example.com,
-        CreatedAt: DateTime_3
+        CreatedAt: DateTime_2
       },
       Id: Guid_6
     },

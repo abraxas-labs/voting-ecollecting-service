@@ -17,13 +17,15 @@ public interface IPermissionService : Shared.Abstractions.Core.Services.IPermiss
 
     bool UserEmailVerified { get; }
 
+    DateTimeOffset AuthenticatedTime { get; }
+
     void SetCreated(IAuditedEntity entity);
 
     void SetCreatedWithoutPII(IAuditedEntity entity);
 
     void SetModified(IAuditedEntity? entity);
 
-    Task<string?> GetSocialSecurityNumber();
+    Task<string?> GetSocialSecurityNumber(bool allowCache);
 
     void Init(
         string userId,
@@ -31,7 +33,8 @@ public interface IPermissionService : Shared.Abstractions.Core.Services.IPermiss
         string userEmail,
         bool userEmailVerified,
         string userFirstName,
-        string userLastName);
+        string userLastName,
+        DateTimeOffset authenticatedTime);
 
     void RequireEmail(string email);
 }

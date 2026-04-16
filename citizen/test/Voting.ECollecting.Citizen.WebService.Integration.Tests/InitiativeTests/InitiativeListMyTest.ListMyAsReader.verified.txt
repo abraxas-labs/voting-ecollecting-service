@@ -445,7 +445,12 @@ Denn wer mitfeiert, gehört dazu.,
           Month: 8,
           Day: 10
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2019,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0013,
       CommitteeDescription: ,
@@ -1849,7 +1854,12 @@ Denn wer langsam denkt, denkt oft besser.,
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0009,
       CommitteeDescription: ,
@@ -1940,7 +1950,12 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
           Month: 1,
           Day: 9
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 1,
+          Day: 6
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0011,
       CommitteeDescription: ,
@@ -2031,7 +2046,12 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
           Month: 1,
           Day: 9
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 1,
+          Day: 6
+        }
       },
       GovernmentDecisionNumber: SG-123.412211,
       CommitteeDescription: ,
@@ -2116,7 +2136,12 @@ Denn wer picknickt, geniesst die Berge bewusst.,
           Month: 8,
           Day: 10
         },
-        PeriodState: Published
+        PeriodState: Published,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0007,
       CommitteeDescription: ,
@@ -2205,7 +2230,12 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: MUGD-2025-003,
       CommitteeDescription: ,
@@ -2289,7 +2319,12 @@ Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schö
           Month: 8,
           Day: 10
         },
-        PeriodState: Published
+        PeriodState: Published,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412227,
       CommitteeDescription: ,
@@ -2379,7 +2414,12 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
           Month: 1,
           Day: 9
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 1,
+          Day: 6
+        }
       },
       GovernmentDecisionNumber: MUSG-2025-010,
       CommitteeDescription: ,
@@ -2541,7 +2581,12 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: MUGD-2025-002,
       CommitteeDescription: ,
@@ -2775,7 +2820,12 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412210,
       CommitteeDescription: ,
@@ -2864,7 +2914,12 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: MUSG-2025-007,
       CommitteeDescription: ,
@@ -3026,7 +3081,12 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
           Month: 8,
           Day: 10
         },
-        PeriodState: Published
+        PeriodState: Published,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.412229,
       CommitteeDescription: ,
@@ -3116,7 +3176,12 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: MUSG-2025-008,
       CommitteeDescription: ,
@@ -3206,7 +3271,12 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
           Month: 8,
           Day: 10
         },
-        PeriodState: Published
+        PeriodState: Published,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0008,
       CommitteeDescription: ,
@@ -3370,7 +3440,12 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
           Month: 1,
           Day: 9
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 1,
+          Day: 6
+        }
       },
       GovernmentDecisionNumber: MUSG-2025-009,
       CommitteeDescription: ,
@@ -3460,7 +3535,12 @@ Denn wer spielt, bleibt geistig fit.,
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0010,
       CommitteeDescription: ,
@@ -3544,7 +3624,12 @@ Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielp
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: MUSG-2025-006,
       CommitteeDescription: ,
@@ -3708,7 +3793,12 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
           Month: 6,
           Day: 11
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 8
+        }
       },
       GovernmentDecisionNumber: SG-123.412212,
       CommitteeDescription: ,
@@ -3797,7 +3887,12 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
           Month: 6,
           Day: 10
         },
-        PeriodState: InCollection
+        PeriodState: InCollection,
+        SignatureListSubmissionEndDate: {
+          Year: 2020,
+          Month: 6,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0012,
       CommitteeDescription: ,
@@ -3962,7 +4057,12 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
           Month: 12,
           Day: 10
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: MUSG-2025-012,
       CommitteeDescription: ,
@@ -4054,7 +4154,12 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
           Month: 12,
           Day: 10
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2019,
+          Month: 12,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: SG-123.4122177,
       CommitteeDescription: ,
@@ -4219,7 +4324,12 @@ Denn wer Blumen schützt, schützt die Berge.,
           Month: 8,
           Day: 10
         },
-        PeriodState: Expired
+        PeriodState: Expired,
+        SignatureListSubmissionEndDate: {
+          Year: 2019,
+          Month: 8,
+          Day: 7
+        }
       },
       GovernmentDecisionNumber: CHE-2023-0015,
       CommitteeDescription: ,

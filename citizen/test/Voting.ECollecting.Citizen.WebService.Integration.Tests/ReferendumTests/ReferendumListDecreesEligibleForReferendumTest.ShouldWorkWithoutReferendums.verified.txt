@@ -107,6 +107,31 @@
           Id: Guid_5,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
+          Description: Bundesgesetz über die Vereinheitlichung der Sitzbankfarben im öffentlichen Raum,
+          CollectionStartDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 9
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 4,
+            Day: 19
+          },
+          MinSignatureCount: 50000,
+          MaxElectronicSignatureCount: 25000,
+          Link: ,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_6,
+          DomainOfInfluenceType: Ch,
+          Bfs: 1,
           Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
           CollectionStartDate: {
             Year: 2019,
@@ -134,7 +159,7 @@
       DomainOfInfluenceType: Ct,
       Decrees: [
         {
-          Id: Guid_6,
+          Id: Guid_7,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Pflicht zur Installation von Windklangspiel an allen Balkonen zur Förderung harmonischer Klangkultur im Kanton,
@@ -159,7 +184,7 @@
           State: CollectionApplicable
         },
         {
-          Id: Guid_7,
+          Id: Guid_8,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
@@ -184,7 +209,32 @@
           State: CollectionApplicable
         },
         {
-          Id: Guid_8,
+          Id: Guid_9,
+          DomainOfInfluenceType: Ct,
+          Bfs: 17,
+          Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+          CollectionStartDate: {
+            Year: 2020,
+            Month: 1,
+            Day: 9
+          },
+          CollectionEndDate: {
+            Year: 2020,
+            Month: 2,
+            Day: 19
+          },
+          MinSignatureCount: 4000,
+          MaxElectronicSignatureCount: 2000,
+          Link: https://www.sg.ch/,
+          PeriodState: InCollection,
+          UserPermissions: {
+            CanCreateReferendum: false,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_10,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
@@ -209,7 +259,7 @@
           State: CollectionApplicable
         },
         {
-          Id: Guid_9,
+          Id: Guid_11,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
@@ -239,32 +289,7 @@
       DomainOfInfluenceType: Mu,
       Decrees: [
         {
-          Id: Guid_10,
-          DomainOfInfluenceType: Mu,
-          Bfs: 3213,
-          Description: Gemeinderatsbeschluss über die Ausstattung aller Parkbänke mit integrierten Lautsprechern für sanfte Hintergrundmusik,
-          CollectionStartDate: {
-            Year: 2020,
-            Month: 7,
-            Day: 10
-          },
-          CollectionEndDate: {
-            Year: 2021,
-            Month: 1,
-            Day: 10
-          },
-          MinSignatureCount: 300,
-          MaxElectronicSignatureCount: 30,
-          Link: https://www.goldach.ch/,
-          PeriodState: Published,
-          UserPermissions: {
-            CanCreateReferendum: true,
-            HasMaximumReferendumsBeenReached: false
-          },
-          State: CollectionApplicable
-        },
-        {
-          Id: Guid_11,
+          Id: Guid_12,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           Description: Gemeinderatsbeschluss über die Anbringung von QR-Codes auf allen öffentlichen Kunstwerken und Graffiti-Wänden für digitale Künstlerprofile und Audioguides,
@@ -289,7 +314,32 @@
           State: CollectionApplicable
         },
         {
-          Id: Guid_12,
+          Id: Guid_13,
+          DomainOfInfluenceType: Mu,
+          Bfs: 3213,
+          Description: Gemeinderatsbeschluss über die Ausstattung aller Parkbänke mit integrierten Lautsprechern für sanfte Hintergrundmusik,
+          CollectionStartDate: {
+            Year: 2020,
+            Month: 7,
+            Day: 10
+          },
+          CollectionEndDate: {
+            Year: 2021,
+            Month: 1,
+            Day: 10
+          },
+          MinSignatureCount: 300,
+          MaxElectronicSignatureCount: 30,
+          Link: https://www.goldach.ch/,
+          PeriodState: Published,
+          UserPermissions: {
+            CanCreateReferendum: true,
+            HasMaximumReferendumsBeenReached: false
+          },
+          State: CollectionApplicable
+        },
+        {
+          Id: Guid_14,
           DomainOfInfluenceType: Mu,
           Bfs: 3213,
           Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
@@ -314,7 +364,7 @@
           State: CollectionApplicable
         },
         {
-          Id: Guid_13,
+          Id: Guid_15,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,

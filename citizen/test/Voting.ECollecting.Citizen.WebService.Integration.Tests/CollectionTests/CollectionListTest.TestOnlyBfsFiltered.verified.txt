@@ -79,7 +79,12 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
                   Month: 7,
                   Day: 10
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 7
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
@@ -134,7 +139,12 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
                   Month: 7,
                   Day: 10
                 },
-                PeriodState: InCollection
+                PeriodState: InCollection,
+                SignatureListSubmissionEndDate: {
+                  Year: 2020,
+                  Month: 7,
+                  Day: 7
+                }
               },
               IsOtherReferendumOfSameDecreeSigned: false,
               HasIsOtherReferendumOfSameDecreeSigned: false
@@ -212,7 +222,12 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
               Month: 6,
               Day: 10
             },
-            PeriodState: InCollection
+            PeriodState: InCollection,
+            SignatureListSubmissionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 7
+            }
           },
           GovernmentDecisionNumber: MUSG-2025-007,
           CommitteeDescription: ,
@@ -286,7 +301,12 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
               Month: 6,
               Day: 10
             },
-            PeriodState: InCollection
+            PeriodState: InCollection,
+            SignatureListSubmissionEndDate: {
+              Year: 2020,
+              Month: 6,
+              Day: 7
+            }
           },
           GovernmentDecisionNumber: MUSG-2025-008,
           CommitteeDescription: ,

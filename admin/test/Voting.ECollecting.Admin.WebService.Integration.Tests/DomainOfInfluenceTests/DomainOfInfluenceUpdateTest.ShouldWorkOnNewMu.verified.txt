@@ -1,7 +1,7 @@
 ﻿{
   Bfs: 3213,
   Name: Goldach,
-  NameForProtocol: ,
+  NameForProtocol: Gemeinde Goldach,
   Type: Mu,
   Settings: {
     HasInitiativeMinSignatureCount: false,

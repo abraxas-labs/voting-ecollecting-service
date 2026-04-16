@@ -17,7 +17,7 @@ public class CollectionCleanupWarningUserNotificationRenderer : UserNotification
     }
 
     protected override string RenderSubject(UserNotificationTemplateBag templateBag)
-        => $"'{templateBag.CollectionName}' wird bald gelöscht";
+        => "E-Collecting: Ihre Sammlung wird bald gelöscht";
 
     protected override string RenderBodyHtml(UserNotificationTemplateBag templateBag)
     {
@@ -33,11 +33,11 @@ public class CollectionCleanupWarningUserNotificationRenderer : UserNotification
             ? $"am {templateBag.CollectionCleanupDate.Value:dd.MM.yyyy}"
             : "demnächst";
 
-        return Html($"""
-                    <p>Hallo,</p>
-                    <p><strong>{collectionNameLink}</strong> wurde vor längerer Zeit erstellt, aber noch nicht eingereicht.</p>
-                    <p>Aus Datenschutzgründen wird die Sammlung und alle zugehörigen Daten {dateString} unwiderruflich gelöscht.</p>
-                    <p>Falls Sie die Sammlung weiter bearbeiten und einreichen möchten, loggen Sie sich bitte im E-Collecting ein und schliessen Sie die Erfassung ab.</p>
+        return Html($$"""
+                    <p>Guten Tag</p>
+                    <p>Die Sammlung <strong>{collectionNameLink}</strong> wurde vor längerer Zeit erstellt, aber die Einrichtung wurde nicht abgeschlossen.</p>
+                    <p>Aus Datenschutzgründen wird die Sammlung und damit alle bereits erfassten Informationen am {{dateString}} unwiderruflich gelöscht.</p>
+                    <p>Falls Sie die Einrichtung der Sammlung abschliessen und diese zur Prüfung der Zulässigkeit einreichen möchten, loggen Sie sich bitte auf der E-Collecting-Plattform ein und schliessen Sie die Einrichtung ab.</p>
                     """);
     }
 }

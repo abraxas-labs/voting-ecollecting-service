@@ -20,17 +20,19 @@ public class CertificateValidatorTest
     private const string PemMimeType = "application/x-pem-file";
 
     private readonly FakeTimeProvider _timeProvider;
-    private readonly CertificateValidator _validator;
+    private readonly CertificateFileValidator _fileValidator;
     private readonly X509Certificate2 _caCert;
 
     public CertificateValidatorTest()
     {
         _timeProvider = new(new DateTimeOffset(new DateTime(2025, 6, 13, 9, 0, 0)));
-        _validator = new(
-            new MockFileService(),
-            new CoreAppConfig(),
+        var validator = new CertificateValidator(
             NullLogger<CertificateValidator>.Instance,
             _timeProvider);
+        _fileValidator = new(
+            new MockFileService(),
+            validator,
+            new CoreAppConfig());
         _caCert = X509Certificate2.CreateFromPem(File.ReadAllText(BuildCertFilePath("ca-certificate.pem")));
     }
 
@@ -141,7 +143,7 @@ public class CertificateValidatorTest
         CertificateValidation validation)
     {
         await using var f = OpenCert(name);
-        var result = await _validator.ValidateBackupCertificate(
+        var result = await _fileValidator.ValidateBackupCertificate(
             _caCert,
             f,
             PemMimeType,

@@ -25,6 +25,8 @@ public interface IDecreeService
 
     Task<Decree> GetForEdit(Guid id);
 
+    Task<DeleteDecreeInfo> GetForDelete(Guid id);
+
     Task CameAbout(Guid id, DateOnly sensitiveDataExpiryDate);
 
     Task CameNotAbout(Guid id, CollectionCameNotAboutReason reason, DateOnly sensitiveDataExpiryDate);

@@ -60,7 +60,6 @@ public class CollectionPermissionService : ICollectionPermissionService
             .Where(x => x.Id == collectionId)
             .WhereCanReadPermissions(_permissionService)
             .SelectMany(x => x.Permissions!)
-            .Where(x => x.Role != CollectionPermissionRole.Owner)
             .OrderBy(x => x.LastName)
             .ThenBy(x => x.FirstName)
             .ToListAsync();

@@ -17,7 +17,7 @@ public class CertificateValidityWarningUserNotificationRenderer : UserNotificati
     }
 
     protected override string RenderSubject(UserNotificationTemplateBag templateBag)
-        => $"E-Collecting: Zertifikat läuft bald ab: {GetCertificateType(templateBag)}";
+        => $"E-Collecting: Zertifikat läuft ab: {GetCertificateType(templateBag)}";
 
     protected override string RenderBodyHtml(UserNotificationTemplateBag templateBag)
     {
@@ -28,10 +28,10 @@ public class CertificateValidityWarningUserNotificationRenderer : UserNotificati
         var certificateManagementLink = $"<a href=\"{EncodeHref(certificateManagementUrl)}\">Schlüsselmanagement</a>";
 
         return Html($"""
-                    <p>Hallo,</p>
+                    <p>Guten Tag</p>
                     <p>Das aktuelle {EncodeHtml(type)} läuft bald ab:</p>
                     <ul>
-                        <li><strong>Ablaufdatum:</strong> {EncodeHtml(dateString)} UTC</li>
+                        <li><strong>Ablaufdatum:</strong> {EncodeHtml(dateString)}</li>
                     </ul>
                     <p>Bitte erneuern Sie das Zertifikat rechtzeitig, um einen reibungslosen Betrieb sicherzustellen: {certificateManagementLink}</p>
                     """);

@@ -265,6 +265,64 @@
       Id: Guid_10,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
+      Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+      CollectionStartDate: {
+        Year: 2020,
+        Month: 1,
+        Day: 9
+      },
+      CollectionEndDate: {
+        Year: 2020,
+        Month: 2,
+        Day: 19
+      },
+      MinSignatureCount: 4000,
+      MaxElectronicSignatureCount: 2000,
+      Link: https://www.sg.ch/,
+      PeriodState: InCollection,
+      UserPermissions: {
+        CanEdit: false,
+        CanFinish: false,
+        CanGenerateDocuments: false,
+        CanAddCollection: true,
+        CanDelete: false
+      },
+      State: CollectionApplicable,
+      DomainOfInfluenceName: St. Gallen
+    },
+    {
+      Id: Guid_11,
+      DomainOfInfluenceType: Ch,
+      Bfs: 1,
+      Description: Bundesgesetz über die Vereinheitlichung der Sitzbankfarben im öffentlichen Raum,
+      CollectionStartDate: {
+        Year: 2020,
+        Month: 1,
+        Day: 9
+      },
+      CollectionEndDate: {
+        Year: 2020,
+        Month: 4,
+        Day: 19
+      },
+      MinSignatureCount: 50000,
+      MaxElectronicSignatureCount: 25000,
+      Link: ,
+      PeriodState: InCollection,
+      UserPermissions: {
+        CanEdit: false,
+        CanFinish: false,
+        CanGenerateDocuments: false,
+        CanAddCollection: true,
+        CanDelete: false
+      },
+      State: CollectionApplicable,
+      DomainOfInfluenceName: Schweiz
+    },
+    {
+      Id: Guid_12,
+      DomainOfInfluenceType: Ct,
+      Bfs: 17,
       Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
       CollectionStartDate: {
         Year: 2019,
@@ -291,7 +349,7 @@
       DomainOfInfluenceName: St. Gallen
     },
     {
-      Id: Guid_11,
+      Id: Guid_13,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
       Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
@@ -320,7 +378,7 @@
       DomainOfInfluenceName: St. Gallen
     },
     {
-      Id: Guid_12,
+      Id: Guid_14,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
@@ -349,7 +407,7 @@
       DomainOfInfluenceName: Schweiz
     },
     {
-      Id: Guid_13,
+      Id: Guid_15,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
       Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
@@ -378,7 +436,7 @@
       DomainOfInfluenceName: St.Gallen
     },
     {
-      Id: Guid_14,
+      Id: Guid_16,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       Description: Bundesbeschluss über die Einführung eines eidgenössischen Fondue-Diploms für alle Restaurants, die Käsefondue anbieten, zur Qualitätssicherung,
@@ -407,7 +465,7 @@
       DomainOfInfluenceName: Schweiz
     },
     {
-      Id: Guid_15,
+      Id: Guid_17,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       Description: Bundesbeschluss über die Pflicht zur Anbringung der Schweizer Flagge an allen Balkonen und Fenstern während der Bundesfeier-Woche,
@@ -436,7 +494,7 @@
       DomainOfInfluenceName: Schweiz
     },
     {
-      Id: Guid_16,
+      Id: Guid_18,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
@@ -470,7 +528,7 @@
       DomainOfInfluenceName: Schweiz
     },
     {
-      Id: Guid_17,
+      Id: Guid_19,
       DomainOfInfluenceType: Mu,
       Bfs: 3203,
       Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
@@ -505,7 +563,7 @@
       DomainOfInfluenceName: St.Gallen
     },
     {
-      Id: Guid_18,
+      Id: Guid_20,
       DomainOfInfluenceType: Mu,
       Bfs: 3213,
       Description: Gemeinderatsbeschluss über das Verbot von Gartenzwergen in öffentlichen Grünanlagen wegen nicht zeitgemässer Ästhetik,
@@ -540,7 +598,7 @@
       DomainOfInfluenceName: Goldach
     },
     {
-      Id: Guid_19,
+      Id: Guid_21,
       DomainOfInfluenceType: Ct,
       Bfs: 17,
       Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
@@ -574,7 +632,7 @@
       DomainOfInfluenceName: St. Gallen
     },
     {
-      Id: Guid_20,
+      Id: Guid_22,
       DomainOfInfluenceType: Ch,
       Bfs: 1,
       Description: Bundesbeschluss über obligatorische Schweizerdeutsch-Kurse für alle deutschsprachigen Bundesangestellten zur Förderung der nationalen Verständigung,

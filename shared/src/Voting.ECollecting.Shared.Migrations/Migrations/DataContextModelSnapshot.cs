@@ -546,6 +546,10 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("NameForProtocol")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<List<string>>("NotificationEmails")
                         .IsRequired()
                         .HasColumnType("text[]");

@@ -57,8 +57,8 @@ public class
     {
         var req = NewValidRequest(x =>
         {
-            x.OfficialName = "Trautmann";
-            x.FirstName = "Lars";
+            x.OfficialName = "BolligerT";
+            x.FirstName = "LarsT";
         });
         var resp = await MuSgKontrollzeichenerfasserClient.SearchPersonCandidatesAsync(req);
         resp.Candidates.Should().HaveCount(1);
@@ -74,8 +74,8 @@ public class
     {
         var req = NewValidRequest(x =>
         {
-            x.OfficialName = "Golling";
-            x.FirstName = "Peter";
+            x.OfficialName = "GeigerT";
+            x.FirstName = "PeterT";
         });
         var resp = await MuSgKontrollzeichenerfasserClient.SearchPersonCandidatesAsync(req);
         resp.Candidates.Should().HaveCount(1);
@@ -91,7 +91,7 @@ public class
     {
         var req = NewValidRequest(x =>
         {
-            x.OfficialName = "Abel";
+            x.OfficialName = "SchaubT";
             x.FirstName = "Ang";
         });
         var resp = await MuSgKontrollzeichenerfasserClient.SearchPersonCandidatesAsync(req);
@@ -200,7 +200,7 @@ public class
             CollectionId = ReferendumsCh.IdInCollection,
             SignatureSheetId = _referendumSheetId.ToString(),
             CollectionType = CollectionType.Referendum,
-            OfficialName = "Tr",
+            OfficialName = "Bo",
         };
         customizer?.Invoke(request);
         return request;

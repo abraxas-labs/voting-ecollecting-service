@@ -54,7 +54,7 @@ Dieses Referendum steht für Freiheit, individuelle Lebensgestaltung und das Rec
   MaxElectronicSignatureCount: 300,
   SecureIdNumber: AAAAAAAAAAAA,
   PeriodState: InCollection,
-  SignatureListSubmissionEndDate: DateTime_2,
+  SignatureListSubmissionEndDate: Date_3,
   IntegritySignatureInfo: {
     IntegritySignatureKeyId: 
   },

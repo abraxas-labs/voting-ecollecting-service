@@ -142,7 +142,7 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
     Bfs: 3203,
     MaxElectronicSignatureCount: 500,
     PeriodState: Published,
-    SignatureListSubmissionEndDate: DateTime_2,
+    SignatureListSubmissionEndDate: Date_3,
     IntegritySignatureInfo: {
       IntegritySignatureKeyId: 
     },
@@ -150,7 +150,7 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
       CreatedById: default-user-id,
       CreatedByName: Test Citizen Creator,
       CreatedByEmail: citizen-creator@example.com,
-      CreatedAt: DateTime_3,
+      CreatedAt: DateTime_2,
       ModifiedById: default-user-id,
       ModifiedByName: default user firstname default user lastname,
       ModifiedByEmail: default-user@example.com,

@@ -118,6 +118,8 @@ internal static partial class Mapper
     internal static ListDecreesResponse MapToListDecreesResponse(IEnumerable<DomainModels.Decree> decrees)
         => new ListDecreesResponse { Decrees = { MapToDecrees(decrees) } };
 
+    internal static partial GetDecreeForDeleteResponse MapToGetDecreeForDeleteResponse(DomainModels.DeleteDecreeInfo result);
+
     internal static ListInitiativeSubTypesResponse MapToListInitiativeSubTypesResponse(
         IEnumerable<InitiativeSubTypeEntity> subTypes)
         => new ListInitiativeSubTypesResponse { SubTypes = { MapInitiativeSubTypes(subTypes) } };
@@ -251,6 +253,9 @@ internal static partial class Mapper
 
     internal static DeleteSignatureSheetTemplateResponse MapToDeleteSignatureSheetTemplateResponse(FileEntity file)
         => new DeleteSignatureSheetTemplateResponse { GeneratedSignatureSheetTemplate = MapToFile(file) };
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    private static partial ReferendumDeleteInfo MapToReferendumDeleteInfo(DomainModels.ReferendumDeleteInfo info);
 
     private static DateOnly MapToDateOnly(Timestamp timestamp)
         => DateOnly.FromDateTime(MapToDateTime(timestamp));

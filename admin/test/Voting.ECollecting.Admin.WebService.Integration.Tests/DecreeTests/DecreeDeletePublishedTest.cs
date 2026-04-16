@@ -10,6 +10,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.DecreeTests;
@@ -33,6 +34,36 @@ public class DecreeDeletePublishedTest : BaseGrpcTest<DecreeService.DecreeServic
         await CtSgStammdatenverwalterClient.DeletePublishedAsync(NewValidRequest());
         var exists = await RunOnDb(db => db.Decrees.AnyAsync(x => x.Id == DecreesCh.GuidFutureNoReferendum));
         exists.Should().BeFalse();
+    }
+
+    [Fact]
+    public async Task TestAsCtTenantWithReferendumsShouldDetachReferendums()
+    {
+        var decreeId = DecreesCtStGallen.GuidInPreparationWithReferendum;
+        var referendumIds = await RunOnDb(db => db.Referendums
+            .Where(x => x.DecreeId == decreeId && x.State == CollectionState.InPreparation)
+            .Select(x => x.Id)
+            .ToListAsync());
+
+        referendumIds.Should().NotBeEmpty();
+
+        await CtSgStammdatenverwalterClient.DeletePublishedAsync(NewValidRequest(r => r.Id = DecreesCtStGallen.IdInPreparationWithReferendum));
+
+        var decreeExists = await RunOnDb(db => db.Decrees.AnyAsync(x => x.Id == decreeId));
+        decreeExists.Should().BeFalse();
+
+        var referendums = await RunOnDb(db => db.Referendums
+            .Where(x => referendumIds.Contains(x.Id))
+            .ToListAsync());
+
+        referendums.Should().HaveCount(referendumIds.Count);
+        referendums.Should().OnlyContain(x =>
+            x.DecreeId == null
+            && x.Bfs == null
+            && x.DomainOfInfluenceType == null
+            && x.MaxElectronicSignatureCount == null
+            && x.CollectionStartDate == null
+            && x.CollectionEndDate == null);
     }
 
     [Fact]

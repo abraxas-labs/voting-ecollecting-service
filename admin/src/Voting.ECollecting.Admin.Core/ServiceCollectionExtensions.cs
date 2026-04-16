@@ -33,7 +33,9 @@ public static class ServiceCollectionExtensions
         services
             .AddSingleton(config.UserNotificationsJob)
             .AddSingleton(config.CollectionCleanupJob)
+            .AddSingleton(config.BackupCertificate)
             .AddSingleton(config.CertificateValidityCheckJob)
+            .AddSingleton(config.SensitiveDataExpiryReminderJob)
             .AddSingleton(config)
             .AddSecondFactorTransactionProvider<SecondFactorTransactionStorageService>(config.SecondFactorTransaction)
             .AddForwardRefScoped<ICollectionService, CollectionService>()
@@ -47,11 +49,14 @@ public static class ServiceCollectionExtensions
             .AddScoped<ReferendumSignService>()
             .AddScoped<CollectionSignService>()
             .AddScoped<CertificateValidator>()
+            .AddScoped<CertificateFileValidator>()
             .AddKeyedScoped<IUserNotificationRenderer, CollectionDeletedUserNotificationRenderer>(UserNotificationType.CollectionDeleted)
             .AddKeyedScoped<IUserNotificationRenderer, DecreeDeletedUserNotificationRenderer>(UserNotificationType.DecreeDeleted)
             .AddKeyedScoped<IUserNotificationRenderer, CollectionCleanupWarningUserNotificationRenderer>(UserNotificationType.CollectionCleanupWarning)
             .AddKeyedScoped<IUserNotificationRenderer, CertificateValidityWarningUserNotificationRenderer>(UserNotificationType.CertificateExpirationWarning)
+            .AddKeyedScoped<IUserNotificationRenderer, SensitiveDataExpiryReminderUserNotificationRenderer>(UserNotificationType.SensitiveDataExpiryReminder)
             .AddForwardRefScoped<ICertificateService, CertificateService>()
+            .AddScoped<ICaCertificateService, CaCertificateService>()
             .AddScoped<IDomainOfInfluenceService, DomainOfInfluenceService>()
             .AddForwardRefScoped<IInitiativeService, InitiativeService>()
             .AddScoped<IReferendumService, ReferendumService>()
@@ -84,6 +89,11 @@ public static class ServiceCollectionExtensions
         if (config.CertificateValidityCheckJob.Enabled)
         {
             services.AddCronJob<CertificateValidityCheckJob>(config.CertificateValidityCheckJob);
+        }
+
+        if (config.SensitiveDataExpiryReminderJob.Enabled)
+        {
+            services.AddCronJob<SensitiveDataExpiryReminderJob>(config.SensitiveDataExpiryReminderJob);
         }
 
         if (config.Kms.EnableMock)
