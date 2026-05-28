@@ -48,6 +48,12 @@ Dieses Referendum steht für Farbenvielfalt, Eigenverantwortung und ein kleines 
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_4,
+                  CollectionId: Guid_2,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 2
+                },
                 Address: {
                   CommitteeOrPerson: Verband Sitzbankfarben,
                   StreetOrPostOfficeBox: Postfach 123,
@@ -79,10 +85,16 @@ Dieses Referendum steht für Farbenvielfalt, Eigenverantwortung und ein kleines 
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
           ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 2
+          },
           State: CollectionApplicable
         },
         {
-          Id: Guid_4,
+          Id: Guid_5,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
@@ -102,16 +114,16 @@ Dieses Referendum steht für Farbenvielfalt, Eigenverantwortung und ein kleines 
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_5,
+              Id: Guid_6,
               Decree: {
-                Id: Guid_4,
+                Id: Guid_5,
                 Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 5000
               },
               MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
               Collection: {
-                Id: Guid_5,
+                Id: Guid_6,
                 Description: Referendum gegen obligatorische Jodel-Zertifikate für Bergführerinnen und Bergführer,
                 Type: Referendum,
                 Reason:
@@ -122,13 +134,13 @@ Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für P
                 Link: https://www.admin.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_6,
+                  Id: Guid_7,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_7,
-                  CollectionId: Guid_5,
+                  Id: Guid_8,
+                  CollectionId: Guid_6,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 2
                 },
@@ -163,16 +175,16 @@ Dieses Referendum steht für fachliche Kompetenz statt kulturellem Zwang, für P
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_8,
+              Id: Guid_9,
               Decree: {
-                Id: Guid_4,
+                Id: Guid_5,
                 Description: Bundesbeschluss über die Einführung obligatorischer Jodel-Zertifikate für alle Bergführerinnen und Bergführer zur Bewahrung alpiner Traditionen,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 5000
               },
               MembersCommittee: Paul Schneider, Präsident Ärzte ohne Grenzen Schweiz; Karin Lang, Vorsitzende Caritas Schweiz Bern; Robert Bachmann, Projektleiter Umweltschutzorganisation Zürich; Susanne Müller, Leiterin Öffentlichkeitsarbeit WWF Schweiz; Stefan Meier, Finanzverantwortlicher Greenpeace Zürich; Michaela Fischer, Pressesprecherin UNHCR Schweiz; Georg Weber, Eventmanager Fair Trade Schweiz; Theresa Roth, Projektleiterin Schweizerischer Roten Kreuz Zürich; Mark Keller, Vorsitzender Sozialer Wohnungsbau Basel; Isabel Berger, Koordinatorin Internationale Solidarität Schweiz,
               Collection: {
-                Id: Guid_8,
+                Id: Guid_9,
                 Description: Referendum gegen teure Jodel-Kurse auf Kosten der Bergführer,
                 Type: Referendum,
                 Reason:
@@ -183,13 +195,13 @@ Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die
                 Link: https://www.admin.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_9,
+                  Id: Guid_10,
                   Name: placeholder-signatures.pdf
                 },
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_10,
-                  CollectionId: Guid_8,
+                  Id: Guid_11,
+                  CollectionId: Guid_9,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 2
                 },
@@ -233,7 +245,7 @@ Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die
           State: CollectionApplicable
         },
         {
-          Id: Guid_11,
+          Id: Guid_12,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
@@ -253,16 +265,16 @@ Dieses Referendum steht für faire Arbeitsbedingungen, Kostentransparenz und die
           PeriodState: Expired,
           Collections: [
             {
-              Id: Guid_12,
+              Id: Guid_13,
               Decree: {
-                Id: Guid_11,
+                Id: Guid_12,
                 Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
                 PeriodState: Expired,
                 MaxElectronicSignatureCount: 10000
               },
               MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
               Collection: {
-                Id: Guid_12,
+                Id: Guid_13,
                 Description: Referendum gegen die obligatorische tägliche Schokoladen-Pause in allen Unternehmen,
                 Type: Referendum,
                 Reason:
@@ -273,13 +285,13 @@ Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und 
                 Link: https://www.admin.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_13,
+                  Id: Guid_14,
                   Name: placeholder-signatures.pdf
                 },
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
-                  Id: Guid_14,
-                  CollectionId: Guid_12,
+                  Id: Guid_15,
+                  CollectionId: Guid_13,
                   TotalCitizenCount: 121632,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 1610
@@ -327,7 +339,7 @@ Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und 
       ],
       Initiatives: [
         {
-          Id: Guid_15,
+          Id: Guid_16,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -350,7 +362,7 @@ Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und 
 
           },
           Collection: {
-            Id: Guid_15,
+            Id: Guid_16,
             Description: Für Raclette-Abende (Raclette-Initiative),
             Type: Initiative,
             Reason:
@@ -361,13 +373,13 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_16,
+              Id: Guid_17,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_17,
-              CollectionId: Guid_15,
+              Id: Guid_18,
+              CollectionId: Guid_16,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -398,7 +410,7 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -413,7 +425,7 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
           }
         },
         {
-          Id: Guid_19,
+          Id: Guid_20,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -436,7 +448,7 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
 
           },
           Collection: {
-            Id: Guid_19,
+            Id: Guid_20,
             Description: Für die Förderung der guten Laune (Humorinitiative),
             Type: Initiative,
             Reason:
@@ -446,13 +458,13 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_20,
+              Id: Guid_21,
               Name: placeholder-signatures.pdf
             },
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_21,
-              CollectionId: Guid_19,
+              Id: Guid_22,
+              CollectionId: Guid_20,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -483,7 +495,7 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -498,7 +510,7 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
           }
         },
         {
-          Id: Guid_22,
+          Id: Guid_23,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -519,7 +531,7 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
 
           },
           Collection: {
-            Id: Guid_22,
+            Id: Guid_23,
             Description: Für mehr Gelassenheit im öffentlichen Leben (Entschleunigungs-Initiative),
             Type: Initiative,
             Reason:
@@ -530,13 +542,13 @@ Denn wer langsam denkt, denkt oft besser.,
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_23,
+              Id: Guid_24,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_24,
-              CollectionId: Guid_22,
+              Id: Guid_25,
+              CollectionId: Guid_23,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -567,7 +579,7 @@ Denn wer langsam denkt, denkt oft besser.,
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -582,7 +594,7 @@ Denn wer langsam denkt, denkt oft besser.,
           }
         },
         {
-          Id: Guid_25,
+          Id: Guid_26,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -605,7 +617,7 @@ Denn wer langsam denkt, denkt oft besser.,
 
           },
           Collection: {
-            Id: Guid_25,
+            Id: Guid_26,
             Description: Für Schweizer Brettspiele (Brettspiel-Initiative),
             Type: Initiative,
             Reason:
@@ -616,13 +628,13 @@ Denn wer spielt, bleibt geistig fit.,
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_26,
+              Id: Guid_27,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_27,
-              CollectionId: Guid_25,
+              Id: Guid_28,
+              CollectionId: Guid_26,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -653,7 +665,7 @@ Denn wer spielt, bleibt geistig fit.,
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -668,7 +680,7 @@ Denn wer spielt, bleibt geistig fit.,
           }
         },
         {
-          Id: Guid_28,
+          Id: Guid_29,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -691,7 +703,7 @@ Denn wer spielt, bleibt geistig fit.,
 
           },
           Collection: {
-            Id: Guid_28,
+            Id: Guid_29,
             Description: Für die Förderung der Freundlichkeit (Freundlichkeitsinitiative),
             Type: Initiative,
             Reason:
@@ -702,13 +714,13 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_29,
+              Id: Guid_30,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_30,
-              CollectionId: Guid_28,
+              Id: Guid_31,
+              CollectionId: Guid_29,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 167
             },
@@ -740,7 +752,7 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -755,7 +767,7 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
           }
         },
         {
-          Id: Guid_31,
+          Id: Guid_32,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -777,7 +789,7 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
 
           },
           Collection: {
-            Id: Guid_31,
+            Id: Guid_32,
             Description: Für den Schutz von Bergblumen (Bergblumen-Initiative),
             Type: Initiative,
             Reason:
@@ -788,13 +800,13 @@ Denn wer Blumen schützt, schützt die Berge.,
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_32,
+              Id: Guid_33,
               Name: placeholder-signatures.pdf
             },
             State: EndedCameAbout,
             AttestedCollectionCount: {
-              Id: Guid_33,
-              CollectionId: Guid_31,
+              Id: Guid_34,
+              CollectionId: Guid_32,
               TotalCitizenCount: 150000,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 8725
@@ -827,7 +839,7 @@ Denn wer Blumen schützt, schützt die Berge.,
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -842,7 +854,7 @@ Denn wer Blumen schützt, schützt die Berge.,
           }
         },
         {
-          Id: Guid_34,
+          Id: Guid_35,
           DomainOfInfluenceType: Ch,
           Bfs: 1,
           MinSignatureCount: 100000,
@@ -865,7 +877,7 @@ Denn wer Blumen schützt, schützt die Berge.,
 
           },
           Collection: {
-            Id: Guid_34,
+            Id: Guid_35,
             Description: Für Schweizer Volksfeste (Volksfest-Initiative),
             Type: Initiative,
             Reason:
@@ -876,13 +888,13 @@ Denn wer mitfeiert, gehört dazu.,
             Link: https://www.admin.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_35,
+              Id: Guid_36,
               Name: placeholder-signatures.pdf
             },
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_36,
-              CollectionId: Guid_34,
+              Id: Guid_37,
+              CollectionId: Guid_35,
               TotalCitizenCount: 50000,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 587
@@ -915,7 +927,7 @@ Denn wer mitfeiert, gehört dazu.,
             }
           },
           SubType: {
-            Id: Guid_18,
+            Id: Guid_19,
             DomainOfInfluenceType: Ch,
             Description: Volksinitiative,
             MinSignatureCount: 100000,
@@ -936,7 +948,7 @@ Denn wer mitfeiert, gehört dazu.,
       DomainOfInfluenceType: Ct,
       Referendums: [
         {
-          Id: Guid_37,
+          Id: Guid_38,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
@@ -956,16 +968,16 @@ Denn wer mitfeiert, gehört dazu.,
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_38,
+              Id: Guid_39,
               Decree: {
-                Id: Guid_37,
+                Id: Guid_38,
                 Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 2000
               },
               MembersCommittee: Roger Lutz, Uzwil; Manuela Huber, Rapperswil-Jona; Pascal Schmid, St.Gallen; Sandra Frei, Gossau; Thomas Rüegg, Buchs; Nicole Baumgartner, Wil; Silvio Graf, Altstätten; Karin Ackermann, Sargans; Daniel Steiner, Wittenbach; Laura Meier, Rorschach; Jonas Hug, Flawil; Peter Brändli, Gams; Vanessa Rossi, St. Margrethen; Samuel Dürst, Wattwil; Cem Yildiz, Rapperswil-Jona,
               Collection: {
-                Id: Guid_38,
+                Id: Guid_39,
                 Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
                 Type: Referendum,
                 Reason:
@@ -976,10 +988,16 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_39,
+                  Id: Guid_40,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_41,
+                  CollectionId: Guid_39,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 75
+                },
                 Address: {
                   CommitteeOrPerson: Verein Nächtliche Beleuchtung,
                   StreetOrPostOfficeBox: Rorschacher Strasse 88,
@@ -1011,10 +1029,16 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
               HasIsOtherReferendumOfSameDecreeSigned: false
             }
           ],
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 75
+          },
           State: CollectionApplicable
         },
         {
-          Id: Guid_40,
+          Id: Guid_42,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
@@ -1034,16 +1058,16 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_41,
+              Id: Guid_43,
               Decree: {
-                Id: Guid_40,
+                Id: Guid_42,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_41,
+                Id: Guid_43,
                 Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
                 Reason:
@@ -1054,13 +1078,13 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_42,
+                  Id: Guid_44,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_43,
-                  CollectionId: Guid_41,
+                  Id: Guid_45,
+                  CollectionId: Guid_43,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 101
                 },
@@ -1095,16 +1119,16 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_44,
+              Id: Guid_46,
               Decree: {
-                Id: Guid_40,
+                Id: Guid_42,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_44,
+                Id: Guid_46,
                 Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
                 Reason:
@@ -1115,13 +1139,13 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_45,
+                  Id: Guid_47,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_46,
-                  CollectionId: Guid_44,
+                  Id: Guid_48,
+                  CollectionId: Guid_46,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -1155,16 +1179,16 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_47,
+              Id: Guid_49,
               Decree: {
-                Id: Guid_40,
+                Id: Guid_42,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_47,
+                Id: Guid_49,
                 Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
                 Type: Referendum,
                 Reason:
@@ -1175,13 +1199,13 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_48,
+                  Id: Guid_50,
                   Name: placeholder-signatures.pdf
                 },
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_49,
-                  CollectionId: Guid_47,
+                  Id: Guid_51,
+                  CollectionId: Guid_49,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 61
                 },
@@ -1225,10 +1249,10 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
           State: CollectionApplicable
         },
         {
-          Id: Guid_50,
+          Id: Guid_52,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+          Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
           CollectionStartDate: {
             Year: 2017,
             Month: 7,
@@ -1245,39 +1269,39 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
           PeriodState: Expired,
           Collections: [
             {
-              Id: Guid_51,
+              Id: Guid_53,
               Decree: {
-                Id: Guid_50,
-                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+                Id: Guid_52,
+                Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
                 PeriodState: Expired,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_51,
-                Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
+                Id: Guid_53,
+                Description: Referendum gegen die Vorschrift zur Einheitsmelodie an Haustüren,
                 Type: Referendum,
                 Reason:
-Der Kantonsrat hat beschlossen, dass alle Hausnummern im Kanton St.Gallen künftig während der Nacht beleuchtet sein müssen, um Einsatzkräfte besser zu unterstützen.
-Das Referendumskomitee befürwortet den Gedanken der Sicherheit, hält aber eine Pflichtbeleuchtung für übertrieben und zu energieintensiv.
-Reflektierende Hausnummern wären effizienter und umweltfreundlicher.
-Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünftige Regulierung – im Sinne eines hellen Verstandes statt heller Hausnummern.,
+Der Kantonsrat hat beschlossen, dass alle neu installierten Türklingeln in Wohn- und Geschäftsgebäuden im Kanton St. Gallen künftig ausschliesslich die zugelassene Amtsmelodie «Drei Töne in C-Dur» abspielen dürfen. Ziel sei eine «akustische Verträglichkeit im Siedlungsraum» und die Vermeidung von Lärmbelästigung durch kreative Klingelmelodien.
+Das Referendumskomitee hält diese Regelung für einen ungebetenen Eingriff in den privaten Alltag. Ob Klassik, Vogelzwitschern oder der Lieblingssong – die Wahl der Türklingel ist Ausdruck von Persönlichkeit und hat niemanden je ernsthaft gestört. Eine staatlich verordnete Einheitsmelodie hingegen schon.
+Dieses Referendum verteidigt das Recht jedes Haushalts, Besuch so zu empfangen, wie es ihm beliebt – laut, leise, schräg oder schön. Denn wer bestimmt, was an der eigenen Haustür klingt, sollte man selbst sein und nicht der Kantonsrat.
+Ein Ja zur klanglichen Vielfalt, ein Nein zur Drei-Töne-Diktatur.,
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_52,
+                  Id: Guid_54,
                   Name: placeholder-signatures.pdf
                 },
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
-                  Id: Guid_53,
-                  CollectionId: Guid_51,
+                  Id: Guid_55,
+                  CollectionId: Guid_53,
                   TotalCitizenCount: 3632,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 161
                 },
                 Address: {
-                  CommitteeOrPerson: Komitee Freie Bildungswahl,
+                  CommitteeOrPerson: Komitee Freie Klingelwahl,
                   StreetOrPostOfficeBox: Oberstrasse 17,
                   ZipCode: 9000,
                   Locality: St.Gallen
@@ -1319,7 +1343,7 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
       ],
       Initiatives: [
         {
-          Id: Guid_54,
+          Id: Guid_56,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -1342,7 +1366,7 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
 
           },
           Collection: {
-            Id: Guid_54,
+            Id: Guid_56,
             Description: Für kantonale Wanderhütten (Wanderhütten-Initiative),
             Type: Initiative,
             Reason:
@@ -1352,13 +1376,13 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_55,
+              Id: Guid_57,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_56,
-              CollectionId: Guid_54,
+              Id: Guid_58,
+              CollectionId: Guid_56,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -1389,7 +1413,7 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -1404,7 +1428,7 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
           }
         },
         {
-          Id: Guid_58,
+          Id: Guid_60,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -1427,7 +1451,7 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
 
           },
           Collection: {
-            Id: Guid_58,
+            Id: Guid_60,
             Description: Für mehr nachbarschaftlichen Zusammenhalt (Grüezi-Initiative),
             Type: Initiative,
             Reason:
@@ -1437,13 +1461,13 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_59,
+              Id: Guid_61,
               Name: placeholder-signatures.pdf
             },
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_60,
-              CollectionId: Guid_58,
+              Id: Guid_62,
+              CollectionId: Guid_60,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 42
             },
@@ -1475,7 +1499,7 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -1490,7 +1514,7 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
           }
         },
         {
-          Id: Guid_61,
+          Id: Guid_63,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -1513,8 +1537,8 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
 
           },
           Collection: {
-            Id: Guid_61,
-            Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+            Id: Guid_63,
+            Description: Für eine tägliche Portion Natur (Frischluftinitiative) 2,
             Type: Initiative,
             Reason:
 Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
@@ -1522,13 +1546,13 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_62,
+              Id: Guid_64,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_63,
-              CollectionId: Guid_61,
+              Id: Guid_65,
+              CollectionId: Guid_63,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -1559,7 +1583,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -1574,7 +1598,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
           }
         },
         {
-          Id: Guid_64,
+          Id: Guid_66,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -1597,7 +1621,7 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
 
           },
           Collection: {
-            Id: Guid_64,
+            Id: Guid_66,
             Description: Für mehr Musik im Alltag (Klang-Initiative),
             Type: Initiative,
             Reason:
@@ -1608,13 +1632,13 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_65,
+              Id: Guid_67,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_66,
-              CollectionId: Guid_64,
+              Id: Guid_68,
+              CollectionId: Guid_66,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 487
             },
@@ -1646,7 +1670,7 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -1661,7 +1685,7 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
           }
         },
         {
-          Id: Guid_67,
+          Id: Guid_69,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           MinSignatureCount: 4000,
@@ -1684,7 +1708,7 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
 
           },
           Collection: {
-            Id: Guid_67,
+            Id: Guid_69,
             Description: Für öffentliche Kräutergärten (Kräutergarten-Initiative),
             Type: Initiative,
             Reason:
@@ -1694,13 +1718,13 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
             Link: https://www.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_68,
+              Id: Guid_70,
               Name: placeholder-signatures.pdf
             },
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_69,
-              CollectionId: Guid_67,
+              Id: Guid_71,
+              CollectionId: Guid_69,
               TotalCitizenCount: 3487,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 15
@@ -1733,7 +1757,7 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
             }
           },
           SubType: {
-            Id: Guid_70,
+            Id: Guid_72,
             DomainOfInfluenceType: Ct,
             Description: Verfassungsinitiative,
             MinSignatureCount: 8000,
@@ -1754,7 +1778,7 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
       DomainOfInfluenceType: Mu,
       Referendums: [
         {
-          Id: Guid_71,
+          Id: Guid_73,
           DomainOfInfluenceType: Mu,
           Bfs: 3213,
           Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
@@ -1774,9 +1798,9 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
           PeriodState: Published,
           Collections: [
             {
-              Id: Guid_72,
+              Id: Guid_74,
               Decree: {
-                Id: Guid_71,
+                Id: Guid_73,
                 Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
                 PeriodState: Published,
                 MaxElectronicSignatureCount: 30
@@ -1785,7 +1809,7 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
 Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
 ,
               Collection: {
-                Id: Guid_72,
+                Id: Guid_74,
                 Description: Referendum gegen die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung,
                 Type: Referendum,
                 Reason:
@@ -1796,13 +1820,13 @@ Dieses Referendum steht für einfache Lösungen, mechanische Zuverlässigkeit un
                 Link: https://www.goldach.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_73,
+                  Id: Guid_75,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_74,
-                  CollectionId: Guid_72,
+                  Id: Guid_76,
+                  CollectionId: Guid_74,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -1836,9 +1860,9 @@ Dieses Referendum steht für einfache Lösungen, mechanische Zuverlässigkeit un
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_75,
+              Id: Guid_77,
               Decree: {
-                Id: Guid_71,
+                Id: Guid_73,
                 Description: Gemeinderatsbeschluss über die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung und automatischer Temperaturanpassung in allen öffentlichen Parks,
                 PeriodState: Published,
                 MaxElectronicSignatureCount: 30
@@ -1847,7 +1871,7 @@ Dieses Referendum steht für einfache Lösungen, mechanische Zuverlässigkeit un
 Max Müller, Präsident SP Goldach; Laura Schmid, Vorsitzende Verein Pro Goldach; Thomas Keller, Finanzverantwortlicher Klimainitiative Goldach; Anna Meier, Kommunikationsbeauftragte Naturfreunde Goldach; Felix Weber, Projektleiter Seeufer-Initiative Goldach; Clara Fischer, Pressesprecherin Jugendrat Goldach; Peter Wagner, Eventkoordinator Kulturverein Goldach; Sophie Roth, Mitgliederbetreuerin Elternverein Goldach; Jonas Berger, Vorstand IG Verkehr Goldach; Lisa Braun, Koordinatorin Initiative Lebenswertes Goldach
 ,
               Collection: {
-                Id: Guid_75,
+                Id: Guid_77,
                 Description: Referendum gegen die Installation von Trinkwasserbrunnen mit Sensor-Aktivierung (zweites Komitee),
                 Type: Referendum,
                 Reason:
@@ -1858,13 +1882,13 @@ Dieses Referendum steht für Sparsamkeit, Nachhaltigkeit und bewährte Technik s
                 Link: https://www.goldach.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_76,
+                  Id: Guid_78,
                   Name: placeholder-signatures.pdf
                 },
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_77,
-                  CollectionId: Guid_75,
+                  Id: Guid_79,
+                  CollectionId: Guid_77,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -1906,7 +1930,7 @@ Dieses Referendum steht für Sparsamkeit, Nachhaltigkeit und bewährte Technik s
           State: CollectionApplicable
         },
         {
-          Id: Guid_78,
+          Id: Guid_80,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
@@ -1926,16 +1950,16 @@ Dieses Referendum steht für Sparsamkeit, Nachhaltigkeit und bewährte Technik s
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_79,
+              Id: Guid_81,
               Decree: {
-                Id: Guid_78,
+                Id: Guid_80,
                 Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_79,
+                Id: Guid_81,
                 Description: Referendum gegen die Einrichtung von Café-Bereichen mit Streicheltieren in städtischen Bibliotheken,
                 Type: Referendum,
                 Reason:
@@ -1946,13 +1970,13 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
                 Link: https://www.stadt.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_80,
+                  Id: Guid_82,
                   Name: placeholder-signatures.pdf
                 },
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_81,
-                  CollectionId: Guid_79,
+                  Id: Guid_83,
+                  CollectionId: Guid_81,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -1986,16 +2010,16 @@ Dieses Referendum steht für ruhige Lesestuben, saubere Luftqualität und den Sc
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_82,
+              Id: Guid_84,
               Decree: {
-                Id: Guid_78,
+                Id: Guid_80,
                 Description: Gemeinderatsbeschluss über die Einrichtung von Café-Bereichen mit Streicheltieren in allen städtischen Bibliotheken zur Stressreduktion während des Lesens,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 30
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_82,
+                Id: Guid_84,
                 Description: Referendum gegen die Einrichtung von Streicheltier-Cafés in Bibliotheken (zweites Komitee),
                 Type: Referendum,
                 Reason:
@@ -2006,13 +2030,13 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
                 Link: https://www.stadt.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 SignatureSheetTemplate: {
-                  Id: Guid_83,
+                  Id: Guid_85,
                   Name: placeholder-signatures.pdf
                 },
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_84,
-                  CollectionId: Guid_82,
+                  Id: Guid_86,
+                  CollectionId: Guid_84,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -2056,7 +2080,7 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
       ],
       Initiatives: [
         {
-          Id: Guid_85,
+          Id: Guid_87,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
@@ -2079,7 +2103,7 @@ Dieses Referendum verteidigt das Wohl der Tiere, die finanzielle Vernünftigkeit
 
           },
           Collection: {
-            Id: Guid_85,
+            Id: Guid_87,
             Description: Für eine blühende Stadt (Blumen- und Bieneninitiative),
             Type: Initiative,
             Reason:
@@ -2089,13 +2113,13 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
             Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_86,
+              Id: Guid_88,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_87,
-              CollectionId: Guid_85,
+              Id: Guid_89,
+              CollectionId: Guid_87,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -2134,7 +2158,7 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
           }
         },
         {
-          Id: Guid_88,
+          Id: Guid_90,
           DomainOfInfluenceType: Mu,
           Bfs: 3213,
           MinSignatureCount: 500,
@@ -2157,7 +2181,7 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
 
           },
           Collection: {
-            Id: Guid_88,
+            Id: Guid_90,
             Description: Für mehr Gemeinschaft im Dorf (Dorffest-Initiative),
             Type: Initiative,
             Reason:
@@ -2167,13 +2191,13 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
             Link: https://www.goldach.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_89,
+              Id: Guid_91,
               Name: placeholder-signatures.pdf
             },
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_90,
-              CollectionId: Guid_88,
+              Id: Guid_92,
+              CollectionId: Guid_90,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -2212,7 +2236,7 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
           }
         },
         {
-          Id: Guid_91,
+          Id: Guid_93,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
@@ -2235,7 +2259,7 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
 
           },
           Collection: {
-            Id: Guid_91,
+            Id: Guid_93,
             Description: Für mehr Sitzgelegenheiten mit Aussicht (Bänkli-Initiative),
             Type: Initiative,
             Reason:
@@ -2245,13 +2269,13 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
             Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_92,
+              Id: Guid_94,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_93,
-              CollectionId: Guid_91,
+              Id: Guid_95,
+              CollectionId: Guid_93,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 500
             },
@@ -2291,7 +2315,7 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
           }
         },
         {
-          Id: Guid_94,
+          Id: Guid_96,
           DomainOfInfluenceType: Mu,
           Bfs: 3213,
           MinSignatureCount: 500,
@@ -2314,7 +2338,7 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
 
           },
           Collection: {
-            Id: Guid_94,
+            Id: Guid_96,
             Description: Für plätscherndes Wasser im Dorf (Brunnen-Initiative),
             Type: Initiative,
             Reason:
@@ -2324,13 +2348,13 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
             Link: https://www.goldach.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_95,
+              Id: Guid_97,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_96,
-              CollectionId: Guid_94,
+              Id: Guid_98,
+              CollectionId: Guid_96,
               HasTotalCitizenCount: false
             },
             Address: {
@@ -2369,7 +2393,7 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
           }
         },
         {
-          Id: Guid_97,
+          Id: Guid_99,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
@@ -2392,7 +2416,7 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
 
           },
           Collection: {
-            Id: Guid_97,
+            Id: Guid_99,
             Description: Für mehr Lesecken (Lesecken-Initiative),
             Type: Initiative,
             Reason:
@@ -2402,13 +2426,13 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
             Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_98,
+              Id: Guid_100,
               Name: placeholder-signatures.pdf
             },
             State: EnabledForCollection,
             AttestedCollectionCount: {
-              Id: Guid_99,
-              CollectionId: Guid_97,
+              Id: Guid_101,
+              CollectionId: Guid_99,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 123
             },
@@ -2440,7 +2464,7 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -2455,7 +2479,7 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
           }
         },
         {
-          Id: Guid_100,
+          Id: Guid_102,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
@@ -2478,7 +2502,7 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
 
           },
           Collection: {
-            Id: Guid_100,
+            Id: Guid_102,
             Description: Für offene Gärten (Offene-Gärten-Initiative),
             Type: Initiative,
             Reason:
@@ -2488,13 +2512,13 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
             Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_101,
+              Id: Guid_103,
               Name: placeholder-signatures.pdf
             },
             State: SignatureSheetsSubmitted,
             AttestedCollectionCount: {
-              Id: Guid_102,
-              CollectionId: Guid_100,
+              Id: Guid_104,
+              CollectionId: Guid_102,
               HasTotalCitizenCount: false,
               ElectronicCitizenCount: 123
             },
@@ -2526,7 +2550,7 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,
@@ -2541,7 +2565,7 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
           }
         },
         {
-          Id: Guid_103,
+          Id: Guid_105,
           DomainOfInfluenceType: Mu,
           Bfs: 3203,
           MinSignatureCount: 1000,
@@ -2564,7 +2588,7 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
 
           },
           Collection: {
-            Id: Guid_103,
+            Id: Guid_105,
             Description: Für offene Fenster zur Strasse (Offene-Fenster-Initiative),
             Type: Initiative,
             Reason:
@@ -2574,13 +2598,13 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
             Link: https://www.stadt.sg.ch/,
             SignatureSheetTemplateGenerated: false,
             SignatureSheetTemplate: {
-              Id: Guid_104,
+              Id: Guid_106,
               Name: placeholder-signatures.pdf
             },
             State: EndedCameNotAbout,
             AttestedCollectionCount: {
-              Id: Guid_105,
-              CollectionId: Guid_103,
+              Id: Guid_107,
+              CollectionId: Guid_105,
               TotalCitizenCount: 875,
               HasTotalCitizenCount: true,
               ElectronicCitizenCount: 45
@@ -2613,7 +2637,7 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
             }
           },
           SubType: {
-            Id: Guid_57,
+            Id: Guid_59,
             DomainOfInfluenceType: Ct,
             Description: Einheitsinitiative,
             MinSignatureCount: 4000,

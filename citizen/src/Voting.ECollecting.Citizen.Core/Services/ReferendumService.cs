@@ -1,7 +1,9 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using System.ComponentModel.DataAnnotations;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Admin;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Data;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories;
@@ -16,6 +18,7 @@ using Voting.ECollecting.Citizen.Core.Services.Validation;
 using Voting.ECollecting.Citizen.Domain.Exceptions;
 using Voting.ECollecting.Citizen.Domain.Models;
 using Voting.ECollecting.Citizen.Domain.Queries;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
@@ -25,6 +28,8 @@ namespace Voting.ECollecting.Citizen.Core.Services;
 
 public class ReferendumService : IReferendumService
 {
+    private const string DescriptionUniqueConstraintName = "IX_Collections_DescriptionLower_Bfs_DecreeId";
+
     private readonly IReferendumRepository _referendumRepository;
     private readonly IPermissionService _permissionService;
     private readonly CoreAppConfig _config;
@@ -36,6 +41,7 @@ public class ReferendumService : IReferendumService
     private readonly TimeProvider _timeProvider;
     private readonly IAdminAdapter _admin;
     private readonly ReferendumSignService _referendumSignService;
+    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
 
     public ReferendumService(
         IReferendumRepository referendumRepository,
@@ -48,7 +54,8 @@ public class ReferendumService : IReferendumService
         IDecreeRepository decreeRepository,
         TimeProvider timeProvider,
         IAdminAdapter admin,
-        ReferendumSignService referendumSignService)
+        ReferendumSignService referendumSignService,
+        IDomainOfInfluenceRepository domainOfInfluenceRepository)
     {
         _referendumRepository = referendumRepository;
         _permissionService = permissionService;
@@ -61,6 +68,7 @@ public class ReferendumService : IReferendumService
         _timeProvider = timeProvider;
         _admin = admin;
         _referendumSignService = referendumSignService;
+        _domainOfInfluenceRepository = domainOfInfluenceRepository;
     }
 
     public async Task<Guid> Create(string description, Guid? decreeId)
@@ -96,7 +104,15 @@ public class ReferendumService : IReferendumService
         _permissionService.SetCreated(referendum);
         _permissionService.SetCreated(referendum.CollectionCount);
         _permissionService.SetCreated(ownerPermission);
-        await _referendumRepository.Create(referendum);
+        try
+        {
+            await _referendumRepository.Create(referendum);
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
+
         return referendum.Id;
     }
 
@@ -190,16 +206,23 @@ public class ReferendumService : IReferendumService
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
 
-        await _referendumRepository.AuditedUpdate(existingReferendum, () =>
+        try
         {
-            existingReferendum.Description = description;
-            existingReferendum.Reason = reason;
-            existingReferendum.Address = address;
-            existingReferendum.MembersCommittee = membersCommittee;
-            existingReferendum.Link = link;
+            await _referendumRepository.AuditedUpdate(existingReferendum, () =>
+            {
+                existingReferendum.Description = description;
+                existingReferendum.Reason = reason;
+                existingReferendum.Address = address;
+                existingReferendum.MembersCommittee = membersCommittee;
+                existingReferendum.Link = link;
 
-            _permissionService.SetModified(existingReferendum);
-        });
+                _permissionService.SetModified(existingReferendum);
+            });
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
     }
 
     public async Task Submit(Guid id)
@@ -278,10 +301,15 @@ public class ReferendumService : IReferendumService
 
     public async Task<Dictionary<DomainOfInfluenceType, List<Decree>>> ListDecreesEligibleForReferendumByDoiType(IReadOnlySet<DomainOfInfluenceType>? doiTypes, string? bfs, bool includeReferendums)
     {
+        var eCollectingEnabledBfs = _domainOfInfluenceRepository.Query()
+            .Where(x => x.ECollectingEnabled)
+            .Select(x => x.Bfs);
+
         var query = _decreeRepository
             .Query()
             .WhereInCollectionOrPublished(_timeProvider.GetUtcTodayDateOnly())
-            .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes);
+            .WhereDoiTypeIsEnabled(_config.EnabledDomainOfInfluenceTypes)
+            .WhereDoiHasECollectingEnabled(eCollectingEnabledBfs); // only list decrees of which the domain of influence has e-collecting enabled
 
         if (doiTypes?.Count > 0)
         {
@@ -335,17 +363,24 @@ public class ReferendumService : IReferendumService
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
 
-        await _referendumRepository.AuditedUpdate(existingReferendum, async () =>
+        try
         {
-            if (existingReferendum.DecreeId != decreeId)
+            await _referendumRepository.AuditedUpdate(existingReferendum, async () =>
             {
-                existingReferendum.DecreeId = decreeId;
-                await ValidateReferendum(existingReferendum);
-                await SetDecreeData(existingReferendum);
-            }
+                if (existingReferendum.DecreeId != decreeId)
+                {
+                    existingReferendum.DecreeId = decreeId;
+                    await ValidateReferendum(existingReferendum);
+                    await SetDecreeData(existingReferendum);
+                }
 
-            _permissionService.SetModified(existingReferendum);
-        });
+                _permissionService.SetModified(existingReferendum);
+            });
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
     }
 
     private async Task ValidateReferendum(ReferendumEntity referendum)
@@ -410,8 +445,25 @@ public class ReferendumService : IReferendumService
         var decree = await _decreeRepository.GetByKey(referendum.DecreeId.Value)
             ?? throw new EntityNotFoundException(nameof(DecreeEntity), referendum.DecreeId);
 
+        if (!await IsECollectingEnabled(decree.Bfs))
+        {
+            throw new ValidationException("Domain of Influence has e-collecting not enabled.");
+        }
+
         referendum.Bfs = decree.Bfs;
         referendum.DomainOfInfluenceType = decree.DomainOfInfluenceType;
         referendum.MaxElectronicSignatureCount = decree.MaxElectronicSignatureCount;
+    }
+
+    private async Task<bool> IsECollectingEnabled(string? bfs)
+    {
+        if (string.IsNullOrEmpty(bfs))
+        {
+            return false;
+        }
+
+        return await _domainOfInfluenceRepository
+            .Query()
+            .AnyAsync(x => x.Bfs == bfs && x.ECollectingEnabled);
     }
 }

@@ -1,12 +1,14 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Core;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
@@ -114,6 +116,37 @@ public class ReferendumUpdateDecreeTest : BaseGrpcTest<ReferendumService.Referen
         await AssertStatus(
             async () => await AuthenticatedClient.UpdateDecreeAsync(NewValidRequest(x => x.DecreeId = DecreesCtStGallen.IdInCollectionWithReferendum)),
             StatusCode.InvalidArgument);
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
+        await ModifyDbEntities<ReferendumEntity>(x => x.Id == ReferendumsCtStGallen.GuidInPreparation2, x =>
+        {
+            x.DecreeId = DecreesCtStGallen.GuidFutureNoReferendum;
+            x.Description = existingReferendum.Description;
+            x.AuditInfo.CreatedById = "some-user";
+        });
+        await AssertStatus(
+            async () => await AuthenticatedClient.UpdateDecreeAsync(NewValidRequest()),
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentDecreeShouldWork()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection));
+        await ModifyDbEntities<ReferendumEntity>(x => x.Id == ReferendumsCtStGallen.GuidInPreparation2, x =>
+        {
+            x.DecreeId = DecreesCtStGallen.GuidFutureNoReferendum;
+            x.Description = existingReferendum.Description;
+            x.AuditInfo.CreatedById = "some-user";
+        });
+        await AuthenticatedClient.UpdateDecreeAsync(NewValidRequest());
+        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
+        referendum.DecreeId.Should().Be(DecreesCtStGallen.GuidFutureNoReferendum);
     }
 
     [Theory]

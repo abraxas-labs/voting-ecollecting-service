@@ -14,7 +14,8 @@
           CreatedByName: Test Admin,
           CreatedByEmail: admin@example.com
         },
-        Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+        Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
+        DescriptionLower: kantonsratsbeschluss über die pflicht zur melodischen türklingel bei neubauten,
         CollectionEndDate: 2018-07-10,
         MinSignatureCount: 3000,
         CollectionStartDate: 2017-07-10,
@@ -42,7 +43,8 @@
           ModifiedByName: default user firstname default user lastname,
           ModifiedByEmail: default-user@example.com
         },
-        Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+        Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
+        DescriptionLower: kantonsratsbeschluss über die pflicht zur melodischen türklingel bei neubauten,
         CollectionEndDate: 2018-07-10,
         MinSignatureCount: 3000,
         CollectionStartDate: 2017-07-10,

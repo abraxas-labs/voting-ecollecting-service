@@ -15,17 +15,6 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Repositories;
 public class DomainOfInfluenceRepository(DataContext context, ILogger<DomainOfInfluenceRepository> logger)
     : DbRepository<DataContext, DomainOfInfluenceEntity>(context), IDomainOfInfluenceRepository
 {
-    public async Task<string> GetNameByBfs(DomainOfInfluenceType type, string bfs)
-    {
-        var result = await Query()
-            .Where(x => x.Type == type && x.Bfs == bfs)
-            .Select(x => x.Name)
-            .Distinct()
-            .Take(2)
-            .ToListAsync();
-        return GetSingle(result, type);
-    }
-
     public async Task<string> GetSingleBfsByType(AclBfsLists aclBfsLists, DomainOfInfluenceType type)
     {
         if (type == DomainOfInfluenceType.Mu)
@@ -42,6 +31,15 @@ public class DomainOfInfluenceRepository(DataContext context, ILogger<DomainOfIn
             .Take(2)
             .ToListAsync();
         return GetSingle(result, type);
+    }
+
+    public async Task<DomainOfInfluenceEntity> GetSingleByBfs(string bfs, DomainOfInfluenceType type)
+    {
+        var dois = await Query()
+            .Where(x => x.Type == type && x.Bfs == bfs)
+            .Take(2)
+            .ToListAsync();
+        return GetSingle(dois, type);
     }
 
     public async Task<DomainOfInfluenceEntity> GetSingleByType(AclBfsLists aclBfsLists, DomainOfInfluenceType type)
@@ -75,6 +73,15 @@ public class DomainOfInfluenceRepository(DataContext context, ILogger<DomainOfIn
             .Take(2)
             .ToListAsync();
         return GetSingle(dois, DomainOfInfluenceType.Ct);
+    }
+
+    public async Task<IReadOnlyDictionary<(DomainOfInfluenceType Type, string Bfs), DomainOfInfluenceEntity>>
+        GetByTypeAndBfs(IReadOnlySet<string> bfs)
+    {
+        return await Query()
+            .Where(x => x.Bfs != null && bfs.Contains(x.Bfs))
+            .GroupBy(x => new { x.Type, x.Bfs })
+            .ToDictionaryAsync(x => (x.Key.Type, x.Key.Bfs!), x => x.First());
     }
 
     private T GetSingle<T>(IReadOnlyCollection<T> items, DomainOfInfluenceType doiType)

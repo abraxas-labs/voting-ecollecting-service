@@ -88,5 +88,6 @@ Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- u
     Description: false,
     CommitteeMembers: false
   },
-  DomainOfInfluenceName: St. Gallen
+  DomainOfInfluenceName: St. Gallen,
+  ElectronicCollectionEnabled: true
 }

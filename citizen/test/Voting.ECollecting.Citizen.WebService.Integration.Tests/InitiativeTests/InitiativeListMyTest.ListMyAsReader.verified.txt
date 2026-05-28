@@ -2767,7 +2767,7 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
       },
       Collection: {
         Id: Guid_43,
-        Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+        Description: Für eine tägliche Portion Natur (Frischluftinitiative) 2,
         Type: Initiative,
         Reason:
 Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.

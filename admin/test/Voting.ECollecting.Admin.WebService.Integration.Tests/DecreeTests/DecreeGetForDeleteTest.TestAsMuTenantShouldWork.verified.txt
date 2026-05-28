@@ -26,6 +26,7 @@
       CanDelete: false
     },
     State: CollectionApplicable,
-    DomainOfInfluenceName: St.Gallen
+    DomainOfInfluenceName: St.Gallen,
+    ElectronicCollectionEnabled: true
   }
 }

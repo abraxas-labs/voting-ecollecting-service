@@ -151,6 +151,12 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_6,
+                  CollectionId: Guid_5,
+                  HasTotalCitizenCount: false,
+                  ElectronicCitizenCount: 75
+                },
                 Address: {
                   CommitteeOrPerson: Verein Nächtliche Beleuchtung,
                   StreetOrPostOfficeBox: Rorschacher Strasse 88,
@@ -206,10 +212,16 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
             CanCreateReferendum: false,
             HasMaximumReferendumsBeenReached: false
           },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            HasTotalCitizenCount: false,
+            ElectronicCitizenCount: 75
+          },
           State: CollectionApplicable
         },
         {
-          Id: Guid_6,
+          Id: Guid_7,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
@@ -229,16 +241,16 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_7,
+              Id: Guid_8,
               Decree: {
-                Id: Guid_6,
+                Id: Guid_7,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_7,
+                Id: Guid_8,
                 Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
                 Reason:
@@ -250,8 +262,8 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_8,
-                  CollectionId: Guid_7,
+                  Id: Guid_9,
+                  CollectionId: Guid_8,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 101
                 },
@@ -306,16 +318,16 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_9,
+              Id: Guid_10,
               Decree: {
-                Id: Guid_6,
+                Id: Guid_7,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_9,
+                Id: Guid_10,
                 Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
                 Reason:
@@ -327,8 +339,8 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_10,
-                  CollectionId: Guid_9,
+                  Id: Guid_11,
+                  CollectionId: Guid_10,
                   HasTotalCitizenCount: false
                 },
                 Address: {
@@ -382,16 +394,16 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
               HasIsOtherReferendumOfSameDecreeSigned: false
             },
             {
-              Id: Guid_11,
+              Id: Guid_12,
               Decree: {
-                Id: Guid_6,
+                Id: Guid_7,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 PeriodState: InCollection,
                 MaxElectronicSignatureCount: 300
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_11,
+                Id: Guid_12,
                 Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
                 Type: Referendum,
                 Reason:
@@ -403,8 +415,8 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
                 SignatureSheetTemplateGenerated: false,
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_12,
-                  CollectionId: Guid_11,
+                  Id: Guid_13,
+                  CollectionId: Guid_12,
                   HasTotalCitizenCount: false,
                   ElectronicCitizenCount: 61
                 },
@@ -472,19 +484,19 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
           State: CollectionApplicable
         },
         {
-          Id: Guid_13,
+          Id: Guid_14,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
+          Description: Kantonsratsbeschluss über die Pflicht zur Beschriftung von Brotdosen in Gemeinschaftsküchen,
           CollectionStartDate: {
             Year: 2019,
             Month: 12,
-            Day: 13
+            Day: 12
           },
           CollectionEndDate: {
             Year: 2020,
             Month: 6,
-            Day: 13
+            Day: 12
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,

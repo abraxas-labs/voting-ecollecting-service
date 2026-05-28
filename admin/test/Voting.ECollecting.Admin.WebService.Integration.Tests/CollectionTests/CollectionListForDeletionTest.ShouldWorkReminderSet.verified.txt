@@ -29,7 +29,8 @@
                 Id: Guid_1,
                 Description: Bundesbeschluss über die Einführung einer obligatorischen Schokoladen-Pause von 15 Minuten täglich in allen Schweizer Unternehmen zur Steigerung der Produktivität,
                 MinSignatureCount: 100000,
-                MaxElectronicSignatureCount: 10000
+                MaxElectronicSignatureCount: 10000,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Martin Fischer, Vorsitzender Schweizer Tierschutzverein Zürich; Eva Meyer, Präsidentin Pro Natura Basel; Hans Zimmermann, Kommunikationschef Schweizerischer Bauernverband Bern; Julia Schulz, Projektmanagerin Ärzte für die Umwelt Schweiz; Markus Berger, Geschäftsführer Schweizerischer Gewerkschaftsbund Luzern; Claudia Weber, Eventmanagerin Naturschutzbund Schweiz; Daniel Roth, Vorstand Greenpeace Schweiz; Monika Wagner, Sprecherin Schweizerischer Frauenverein Genf; Frank Müller, Präsident Schweizerischer Rollstuhlverband Zürich; Petra Huber, Koordinatorin Initiative für saubere Luft Basel,
               Collection: {
@@ -107,7 +108,8 @@ Dieses Referendum steht für unternehmerische Freiheit, Selbstverantwortung und 
             Month: 1,
             Day: 18
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         }
       ],
       Initiatives: [
@@ -205,7 +207,8 @@ Denn wer Blumen schützt, schützt die Berge.,
             Month: 1,
             Day: 20
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         }
       ]
     },
@@ -306,7 +309,8 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
             Month: 1,
             Day: 15
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         }
       ]
     },

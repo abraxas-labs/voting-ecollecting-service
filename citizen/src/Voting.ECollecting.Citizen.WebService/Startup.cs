@@ -24,6 +24,7 @@ using Voting.ECollecting.Citizen.WebService.DependencyInjection;
 using Voting.ECollecting.Citizen.WebService.Extensions;
 using Voting.ECollecting.Citizen.WebService.Middlewares;
 using Voting.ECollecting.Shared.Core;
+using Voting.ECollecting.Shared.Migrations;
 using Voting.Lib.Common.DependencyInjection;
 using Voting.Lib.Cryptography.Extensions;
 using Voting.Lib.Database.Postgres.Locking;
@@ -95,7 +96,11 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment environme
             services.AddCors(configuration);
         }
 
-        services.AddGrpcReflection();
+        if (AppConfig.EnableGrpcReflection)
+        {
+            services.AddGrpcReflection();
+        }
+
         services.AddProtoValidators();
 
         services.AddSwaggerGenerator(configuration);
@@ -130,11 +135,22 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment environme
     }
 
     protected virtual void ConfigureDatabase(DbContextOptionsBuilder db)
-        => db.UseNpgsql(AppConfig.Database.ConnectionString, o => o.SetPostgresVersion(AppConfig.Database.Version)).AddLockInterceptors();
+    {
+        AppConfig.Database.Schema = string.IsNullOrEmpty(AppConfig.Database.Schema) ? MigrationConstants.DatabaseSchema : AppConfig.Database.Schema;
+        db.UseNpgsql(
+            AppConfig.Database.ConnectionString,
+            o => o.SetPostgresVersion(AppConfig.Database.Version)).AddLockInterceptors();
+    }
 
 #if DEBUG
     protected virtual void ConfigureMigrationDatabase(DbContextOptionsBuilder db)
-        => db.UseNpgsql(AppConfig.MigrationDatabaseOrDatabase.ConnectionString, o => o.SetPostgresVersion(AppConfig.MigrationDatabaseOrDatabase.Version));
+    {
+        AppConfig.MigrationDatabaseOrDatabase.Schema = string.IsNullOrEmpty(AppConfig.MigrationDatabaseOrDatabase.Schema) ? MigrationConstants.DatabaseSchema : AppConfig.MigrationDatabaseOrDatabase.Schema;
+        db.UseNpgsql(
+            AppConfig.MigrationDatabaseOrDatabase.ConnectionString,
+            o => o.SetPostgresVersion(AppConfig.MigrationDatabaseOrDatabase.Version)
+                .MigrationsHistoryTable(MigrationConstants.MigrationsHistoryTable, AppConfig.MigrationDatabaseOrDatabase.Schema));
+    }
 #endif
 
     protected virtual void ConfigureAuthentication(AuthenticationBuilder builder)
@@ -146,7 +162,12 @@ public class Startup(IConfiguration configuration, IWebHostEnvironment environme
     private void MapEndpoints(IEndpointRouteBuilder endpoints)
     {
         endpoints.MapControllers();
-        endpoints.MapGrpcReflectionService();
+
+        if (AppConfig.EnableGrpcReflection)
+        {
+            endpoints.MapGrpcReflectionService().RequireAuthorization();
+        }
+
         endpoints.MapGrpcService<CollectionGrpcService>();
         endpoints.MapGrpcService<DomainOfInfluenceGrpcService>();
         endpoints.MapGrpcService<InitiativeGrpcService>();

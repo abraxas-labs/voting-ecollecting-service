@@ -359,6 +359,7 @@ Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfra
           CommitteeMembers: false
         },
         EncryptionKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_Encryption12,
+        DescriptionLower: für mehr picknickplätze in den bergen (bergpicknick-initiative),
         CollectionEndDate: 2020-08-10,
         MinSignatureCount: 100000,
         CollectionStartDate: 2020-03-10,
@@ -437,6 +438,7 @@ Der Bund kann Projekte fördern, die Picknickplätze als Teil der Erholungsinfra
           CommitteeMembers: false
         },
         EncryptionKeyId: KVotingECollecting_471ed37f-a039-411e-8539-bf3e212ec71a_Encryption12,
+        DescriptionLower: für mehr picknickplätze in den bergen (bergpicknick-initiative),
         CollectionEndDate: 2020-08-10,
         MinSignatureCount: 100000,
         CollectionStartDate: 2020-03-10,
@@ -727,6 +729,7 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
         },
         Description: Referendum gegen das Verbot digitaler Wecker aus Gründen der Barrierefreiheit  (p: Reader),
         EncryptionKeyId: KVotingECollecting_98ee1e73-4866-49ec-87ba-a3fed7924ec4_Encryption12,
+        DescriptionLower: referendum gegen das verbot digitaler wecker aus gründen der barrierefreiheit  (p: reader),
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         CollectionEndDate: 2020-06-13,
         CollectionStartDate: 2020-02-13,
@@ -772,6 +775,7 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
         },
         Description: Referendum gegen das Verbot digitaler Wecker aus Gründen der Barrierefreiheit  (p: Reader),
         EncryptionKeyId: KVotingECollecting_98ee1e73-4866-49ec-87ba-a3fed7924ec4_Encryption12,
+        DescriptionLower: referendum gegen das verbot digitaler wecker aus gründen der barrierefreiheit  (p: reader),
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         CollectionEndDate: 2020-06-13,
         CollectionStartDate: 2020-02-13,

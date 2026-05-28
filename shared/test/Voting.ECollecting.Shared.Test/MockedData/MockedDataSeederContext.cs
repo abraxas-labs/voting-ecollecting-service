@@ -1,6 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using Microsoft.Extensions.Logging.Abstractions;
 using Voting.ECollecting.DataSeeder.Data.Context;
 using Voting.Lib.Testing.Mocks;
 
@@ -12,5 +13,7 @@ public static class MockedDataSeederContext
         MockedUserContext.Default,
         MockedTenantContext.Default,
         MockedClock.UtcNowDate,
-        MockedClock.NowDateOnly);
+        MockedClock.NowDateOnly,
+        NullLogger.Instance,
+        null);
 }

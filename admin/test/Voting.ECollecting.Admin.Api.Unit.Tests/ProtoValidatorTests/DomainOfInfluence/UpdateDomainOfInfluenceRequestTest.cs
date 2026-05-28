@@ -18,8 +18,6 @@ public class UpdateDomainOfInfluenceRequestTest : ProtoValidatorBaseTest<UpdateD
         yield return NewValidRequest(x => x.ZipCode = RandomStringUtil.GenerateSimpleSingleLineText(15));
         yield return NewValidRequest(x => x.Locality = RandomStringUtil.GenerateSimpleSingleLineText(150));
         yield return NewValidRequest(x => x.Webpage = RandomStringUtil.GenerateSimpleSingleLineText(10_000));
-        yield return NewValidRequest(x => x.Phone = string.Empty);
-        yield return NewValidRequest(x => x.Email = string.Empty);
         yield return NewValidRequest(x => x.Webpage = string.Empty);
     }
 
@@ -34,6 +32,8 @@ public class UpdateDomainOfInfluenceRequestTest : ProtoValidatorBaseTest<UpdateD
         yield return NewValidRequest(x => x.Webpage = RandomStringUtil.GenerateSimpleSingleLineText(10_001));
         yield return NewValidRequest(x => x.Phone = "not a phone");
         yield return NewValidRequest(x => x.Email = "not an email");
+        yield return NewValidRequest(x => x.Phone = string.Empty);
+        yield return NewValidRequest(x => x.Email = string.Empty);
     }
 
     private UpdateDomainOfInfluenceRequest NewValidRequest(Action<UpdateDomainOfInfluenceRequest>? customizer = null)

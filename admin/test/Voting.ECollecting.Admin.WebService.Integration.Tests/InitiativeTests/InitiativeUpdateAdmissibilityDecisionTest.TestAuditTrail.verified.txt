@@ -60,6 +60,7 @@ Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Rout
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale velorouten (velorouten-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -133,6 +134,7 @@ Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Rout
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale velorouten (velorouten-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -218,6 +220,7 @@ Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Rout
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale velorouten (velorouten-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -295,6 +298,7 @@ Er achtet auf sichere Führung, gute Beschilderung und Durchgängigkeit der Rout
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale velorouten (velorouten-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

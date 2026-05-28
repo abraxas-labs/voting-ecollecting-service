@@ -363,13 +363,6 @@ internal static partial class Mapper
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial ProtoAdminModels.Collection MapToReferendumCollection(DomainModels.Referendum referendum);
 
-    [MapPropertyFromSource(nameof(ProtoAdminModels.Initiative.Collection))]
-    [MapperIgnoreTarget(nameof(ProtoAdminModels.Initiative.DomainOfInfluenceName))]
-    private static partial ProtoAdminModels.Initiative MapToInitiative(InitiativeEntity initiativeEntity);
-
-    [MapPropertyFromSource(nameof(ProtoAdminModels.Referendum.Collection))]
-    private static partial ProtoAdminModels.Referendum MapToReferendum(ReferendumEntity referendumEntity);
-
     private static partial DomainEnums.DomainOfInfluenceType MapToDomainOfInfluenceType(DomainOfInfluenceType domainOfInfluenceType);
 
     private static partial ProtoAdminModels.InitiativeSubType MapToInitiativeSubType(InitiativeSubTypeEntity initiativeSubTypeEntity);
@@ -413,7 +406,7 @@ internal static partial class Mapper
     private static partial SharedProtoModels.PageInfo MapToPageInfo(PageInfo sheets);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
-    private static partial ProtoAdminModels.SimpleDecree MapToSimpleDecree(DecreeEntity decree);
+    private static partial ProtoAdminModels.SimpleDecree MapToSimpleDecree(DomainModels.Decree decree);
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial ProtoAdminModels.InitiativeCommitteeMemberUserPermissions MapInitiativeCommitteeMemberUserPermissions(SharedDomainModels.InitiativeCommitteeMemberUserPermissions userPermissions);

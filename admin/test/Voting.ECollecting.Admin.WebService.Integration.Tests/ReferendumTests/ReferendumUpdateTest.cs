@@ -1,6 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Test.MockedData;
 using CollectionAddress = Voting.ECollecting.Proto.Admin.Services.V1.Models.CollectionAddress;
 
@@ -28,6 +30,7 @@ public class ReferendumUpdateTest : BaseGrpcTest<ReferendumService.ReferendumSer
             .WithReferendums(
                 ReferendumsCtStGallen.GuidInPreparation,
                 ReferendumsCtStGallen.GuidSignatureSheetsSubmitted,
+                ReferendumsCtStGallen.GuidInPreparingForCollection,
                 ReferendumsMuStGallen.GuidInCollectionActive));
     }
 
@@ -83,6 +86,25 @@ public class ReferendumUpdateTest : BaseGrpcTest<ReferendumService.ReferendumSer
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.UpdateAsync(req),
             StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparingForCollection));
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = existingReferendum.Description)),
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentDecreeShouldWork()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
+        await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = existingReferendum.Description));
+        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
+        referendum.Description.Should().Be(existingReferendum.Description);
     }
 
     [Fact]

@@ -1,4 +1,4 @@
-# ✨ Changelog (`v1.146.1`)
+# ✨ Changelog (`v1.150.5`)
 
 All notable changes to this project will be documented in this file.
 
@@ -8,11 +8,92 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Version Info
 
 ```text
-This version -------- v1.146.1
-Previous version ---- v1.142.3
+This version -------- v1.150.5
+Previous version ---- v1.146.1
 Initial version ----- v1.125.3
-Total commits ------- 11
+Total commits ------- 14
 ```
+
+## [v1.150.5] - 2026-05-13
+
+### 🔄 Changed
+
+- update lib
+
+## [v1.150.4] - 2026-05-13
+
+### 🆕 Added
+
+- add additional protection layer for grpc reflection service endpoint
+
+## [v1.150.3] - 2026-05-13
+
+### 🔄 Changed
+
+- email and phone required for update doi settings
+
+## [v1.150.2] - 2026-05-12
+
+### 🔄 Changed
+
+- can finish decrees only if period state is expired
+
+## [v1.150.1] - 2026-05-12
+
+### 🆕 Added
+
+- add collection already exists validation
+
+## [v1.150.0] - 2026-05-07
+
+### 🔄 Changed
+
+- feat(VOTING-7081): Sort physical signatures by capture time
+
+## [v1.149.1] - 2026-05-01
+
+### 🔄 Changed
+
+- improve cli logging
+
+## [v1.149.0] - 2026-05-01
+
+### 🔄 Changed
+
+- feat(VOTING-7073): electronic collection enabled flag
+
+## [v1.148.0] - 2026-04-30
+
+### 🆕 Added
+
+- add download option for backups
+
+### 🔄 Changed
+
+- move all application tables to a custom schema
+
+### 🔒 Security
+
+- only dedicated db users have access to the application tables
+
+## [v1.147.0] - 2026-04-21
+
+### 🆕 Added
+
+- feat(VOTING-7073): enable electronic collection for specified domain of influence types
+
+## [v1.146.3] - 2026-04-17
+
+### 🔄 Changed
+
+- allow start dates in the past for decrees
+- disallow end dates in the past for decrees
+
+## [v1.146.2] - 2026-04-16
+
+### 🔄 Changed
+
+- only show decrees for dois which have e-collecting enabled
 
 ## [v1.146.1] - 2026-04-15
 

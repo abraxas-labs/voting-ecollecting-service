@@ -45,6 +45,9 @@ public class InitiativeModelBuilder : IEntityTypeConfiguration<InitiativeEntity>
             .OnDelete(DeleteBehavior.Cascade);
 
         builder.OwnsOne(x => x.LockedFields);
+
+        // The referendum model builder contains the "IX_Collections_DescriptionLower_Bfs_DecreeId" index which is also applied for initiatives.
+        // It has to be in the referendum model builder due to the decree id.
     }
 
     public void Configure(EntityTypeBuilder<InitiativeSubTypeEntity> builder)

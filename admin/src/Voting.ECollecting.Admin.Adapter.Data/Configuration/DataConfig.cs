@@ -21,6 +21,7 @@ public class DataConfig
                 Database = Name,
                 IncludeErrorDetail = EnableDetailedErrors,
                 CommandTimeout = CommandTimeout,
+                SearchPath = Schema,
             }.ToString();
         }
     }
@@ -57,4 +58,6 @@ public class DataConfig
     public bool EnableMonitoring { get; set; }
 
     public DataMonitoringConfig Monitoring { get; set; } = new();
+
+    public string Schema { get; set; } = string.Empty;
 }

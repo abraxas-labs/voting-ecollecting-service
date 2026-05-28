@@ -1,6 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Net.Client;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
@@ -8,6 +9,7 @@ using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.InitiativeTests;
@@ -57,6 +59,16 @@ public class InitiativeListTest : BaseGrpcTest<InitiativeService.InitiativeServi
             Bfs = Bfs.MunicipalityStGallen,
         });
         await Verify(response);
+    }
+
+    [Fact]
+    public async Task ShouldWorkWithDisabledECollecting()
+    {
+        await ModifyDbEntities<DomainOfInfluenceEntity>(_ => true, doi => doi.ECollectingEnabled = false);
+        var response = await CtSgStammdatenverwalterClient.ListAsync(new ListInitiativesRequest());
+        response.Groups.FirstOrDefault(g => g.Initiatives.Any(i => i.ElectronicCollectionEnabled))
+            .Should()
+            .BeNull();
     }
 
     protected override async Task AuthorizationTestCall(GrpcChannel channel)

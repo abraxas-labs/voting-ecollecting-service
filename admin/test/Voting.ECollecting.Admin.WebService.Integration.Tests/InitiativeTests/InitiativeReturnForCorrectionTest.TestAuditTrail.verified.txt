@@ -60,6 +60,7 @@ Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
           Description: true,
           CommitteeMembers: true
         },
+        DescriptionLower: für kantonale märkte (markt-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -136,6 +137,7 @@ Er achtet auf Vielfalt des Angebots und Förderung regionaler Produzenten.,
           Description: true,
           CommitteeMembers: true
         },
+        DescriptionLower: für kantonale märkte (markt-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

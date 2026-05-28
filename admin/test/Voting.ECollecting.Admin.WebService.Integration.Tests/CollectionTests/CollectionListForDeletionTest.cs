@@ -1,6 +1,7 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Net.Client;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
@@ -9,6 +10,7 @@ using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Enums;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.CollectionTests;
@@ -60,6 +62,17 @@ public class CollectionListForDeletionTest : BaseGrpcTest<CollectionService.Coll
         req.Bfs = Bfs.MunicipalityStGallen;
         var resp = await MuSgKontrollzeichenloescherClient.ListForDeletionAsync(req);
         await Verify(resp);
+    }
+
+    [Fact]
+    public async Task ShouldWorkWithDisabledECollecting()
+    {
+        await ModifyDbEntities<DomainOfInfluenceEntity>(_ => true, doi => doi.ECollectingEnabled = false);
+        var resp = await CtSgKontrollzeichenloescherClient.ListForDeletionAsync(NewValidRequest());
+        resp.Groups.FirstOrDefault(g => g.Decrees.Any(d => d.ElectronicCollectionEnabled)
+                             || g.Initiatives.Any(i => i.ElectronicCollectionEnabled))
+            .Should()
+            .BeNull();
     }
 
     protected override async Task AuthorizationTestCall(GrpcChannel channel)

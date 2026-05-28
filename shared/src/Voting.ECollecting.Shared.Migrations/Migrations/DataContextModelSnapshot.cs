@@ -19,6 +19,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .HasDefaultSchema("ecollecting")
                 .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
@@ -51,7 +52,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("AuditTrailEntries");
+                    b.ToTable("AuditTrailEntries", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.Audit.CollectionCitizenLogAuditTrailEntryEntity", b =>
@@ -80,7 +81,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("SourceEntityId");
 
-                    b.ToTable("CollectionCitizenLogAuditTrailEntries");
+                    b.ToTable("CollectionCitizenLogAuditTrailEntries", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CertificateEntity", b =>
@@ -103,7 +104,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("ContentId")
                         .IsUnique();
 
-                    b.ToTable("Certificates");
+                    b.ToTable("Certificates", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionBaseEntity", b =>
@@ -127,6 +128,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<string>("DescriptionLower")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("text")
+                        .HasComputedColumnSql("lower(\"Description\")", true);
 
                     b.Property<int?>("DomainOfInfluenceType")
                         .HasColumnType("integer");
@@ -190,7 +196,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("SignatureSheetTemplateId")
                         .IsUnique();
 
-                    b.ToTable("Collections", t =>
+                    b.ToTable("Collections", "ecollecting", t =>
                         {
                             t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", "\"IsElectronicSubmission\" OR (\n   \"SecureIdNumber\" IS NOT NULL\n   AND \"SecureIdNumber\" <> ''\n)");
                         });
@@ -227,7 +233,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("SignatureSheetId");
 
-                    b.ToTable("CollectionCitizens");
+                    b.ToTable("CollectionCitizens", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionCitizenLogEntity", b =>
@@ -263,7 +269,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("CollectionId", "VotingStimmregisterIdMac")
                         .IsUnique();
 
-                    b.ToTable("CollectionCitizenLogs");
+                    b.ToTable("CollectionCitizenLogs", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionCountEntity", b =>
@@ -286,7 +292,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("CollectionId")
                         .IsUnique();
 
-                    b.ToTable("CollectionCounts");
+                    b.ToTable("CollectionCounts", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionMessageEntity", b =>
@@ -306,7 +312,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("CollectionId");
 
-                    b.ToTable("CollectionMessages");
+                    b.ToTable("CollectionMessages", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionMunicipalityEntity", b =>
@@ -340,7 +346,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("CollectionId", "Bfs")
                         .IsUnique();
 
-                    b.ToTable("CollectionMunicipalities");
+                    b.ToTable("CollectionMunicipalities", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionPermissionEntity", b =>
@@ -407,7 +413,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsUnique()
                         .HasFilter("\"IamUserId\" <> ''");
 
-                    b.ToTable("CollectionPermissions");
+                    b.ToTable("CollectionPermissions", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.CollectionSignatureSheetEntity", b =>
@@ -443,7 +449,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("CollectionMunicipalityId", "Number")
                         .IsUnique();
 
-                    b.ToTable("CollectionSignatureSheets");
+                    b.ToTable("CollectionSignatureSheets", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.DecreeEntity", b =>
@@ -469,6 +475,11 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("DescriptionLower")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("text")
+                        .HasComputedColumnSql("lower(\"Description\")", true);
+
                     b.Property<int>("DomainOfInfluenceType")
                         .HasColumnType("integer");
 
@@ -490,7 +501,10 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Decrees");
+                    b.HasIndex("DescriptionLower", "Bfs")
+                        .IsUnique();
+
+                    b.ToTable("Decrees", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.DomainOfInfluenceEntity", b =>
@@ -518,6 +532,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .HasColumnType("boolean");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<Guid?>("ImportStatisticId")
@@ -558,6 +573,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                         .HasColumnType("uuid");
 
                     b.Property<string>("Phone")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int?>("ReferendumMaxElectronicSignaturePercent")
@@ -607,7 +623,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("ParentId");
 
-                    b.ToTable("DomainOfInfluences");
+                    b.ToTable("DomainOfInfluences", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.FileContentEntity", b =>
@@ -628,7 +644,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
                     b.HasIndex("FileId")
                         .IsUnique();
 
-                    b.ToTable("FileContents");
+                    b.ToTable("FileContents", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.FileEntity", b =>
@@ -652,7 +668,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("CommitteeListOfInitiativeId");
 
-                    b.ToTable("Files");
+                    b.ToTable("Files", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.ImportStatisticEntity", b =>
@@ -710,7 +726,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ImportStatistics");
+                    b.ToTable("ImportStatistics", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.InitiativeCommitteeMemberEntity", b =>
@@ -800,7 +816,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("InitiativeId", "SortIndex");
 
-                    b.ToTable("InitiativeCommitteeMembers");
+                    b.ToTable("InitiativeCommitteeMembers", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.InitiativeSubTypeEntity", b =>
@@ -828,7 +844,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("InitiativeSubTypes");
+                    b.ToTable("InitiativeSubTypes", "ecollecting");
 
                     b.HasData(
                         new
@@ -901,7 +917,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SecondFactorTransactions");
+                    b.ToTable("SecondFactorTransactions", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.UserNotificationEntity", b =>
@@ -930,7 +946,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("State");
 
-                    b.ToTable("UserNotifications");
+                    b.ToTable("UserNotifications", "ecollecting");
                 });
 
             modelBuilder.Entity("Voting.ECollecting.Shared.Domain.Entities.InitiativeEntity", b =>
@@ -992,6 +1008,9 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                     b.HasIndex("DecreeId");
 
+                    b.HasIndex("DescriptionLower", "Bfs", "DecreeId")
+                        .IsUnique();
+
                     b.ToTable(t =>
                         {
                             t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", "\"IsElectronicSubmission\" OR (\n   \"SecureIdNumber\" IS NOT NULL\n   AND \"SecureIdNumber\" <> ''\n)");
@@ -1035,7 +1054,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("AuditTrailEntryEntityId");
 
-                            b1.ToTable("AuditTrailEntries");
+                            b1.ToTable("AuditTrailEntries", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("AuditTrailEntryEntityId");
@@ -1086,7 +1105,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCitizenLogAuditTrailEntryEntityId");
 
-                            b1.ToTable("CollectionCitizenLogAuditTrailEntries");
+                            b1.ToTable("CollectionCitizenLogAuditTrailEntries", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCitizenLogAuditTrailEntryEntityId");
@@ -1139,7 +1158,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CertificateEntityId");
 
-                            b1.ToTable("Certificates");
+                            b1.ToTable("Certificates", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CertificateEntityId");
@@ -1166,7 +1185,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CertificateEntityId");
 
-                            b1.ToTable("Certificates");
+                            b1.ToTable("Certificates", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CertificateEntityId");
@@ -1193,7 +1212,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CertificateEntityId");
 
-                            b1.ToTable("Certificates");
+                            b1.ToTable("Certificates", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CertificateEntityId");
@@ -1249,7 +1268,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionBaseEntityId");
 
-                            b1.ToTable("Collections");
+                            b1.ToTable("Collections", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionBaseEntityId");
@@ -1288,7 +1307,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionBaseEntityId");
 
-                            b1.ToTable("Collections");
+                            b1.ToTable("Collections", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionBaseEntityId");
@@ -1312,7 +1331,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionBaseEntityId");
 
-                            b1.ToTable("Collections");
+                            b1.ToTable("Collections", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionBaseEntityId");
@@ -1379,7 +1398,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCitizenEntityId");
 
-                            b1.ToTable("CollectionCitizens");
+                            b1.ToTable("CollectionCitizens", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCitizenEntityId");
@@ -1403,7 +1422,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCitizenEntityId");
 
-                            b1.ToTable("CollectionCitizens");
+                            b1.ToTable("CollectionCitizens", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCitizenEntityId");
@@ -1471,7 +1490,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCitizenLogEntityId");
 
-                            b1.ToTable("CollectionCitizenLogs");
+                            b1.ToTable("CollectionCitizenLogs", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCitizenLogEntityId");
@@ -1495,7 +1514,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCitizenLogEntityId");
 
-                            b1.ToTable("CollectionCitizenLogs");
+                            b1.ToTable("CollectionCitizenLogs", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCitizenLogEntityId");
@@ -1553,7 +1572,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCountEntityId");
 
-                            b1.ToTable("CollectionCounts");
+                            b1.ToTable("CollectionCounts", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCountEntityId");
@@ -1577,7 +1596,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionCountEntityId");
 
-                            b1.ToTable("CollectionCounts");
+                            b1.ToTable("CollectionCounts", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionCountEntityId");
@@ -1633,7 +1652,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionMessageEntityId");
 
-                            b1.ToTable("CollectionMessages");
+                            b1.ToTable("CollectionMessages", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionMessageEntityId");
@@ -1686,7 +1705,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionMunicipalityEntityId");
 
-                            b1.ToTable("CollectionMunicipalities");
+                            b1.ToTable("CollectionMunicipalities", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionMunicipalityEntityId");
@@ -1705,7 +1724,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionMunicipalityEntityId");
 
-                            b1.ToTable("CollectionMunicipalities");
+                            b1.ToTable("CollectionMunicipalities", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionMunicipalityEntityId");
@@ -1766,7 +1785,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionPermissionEntityId");
 
-                            b1.ToTable("CollectionPermissions");
+                            b1.ToTable("CollectionPermissions", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionPermissionEntityId");
@@ -1790,7 +1809,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionPermissionEntityId");
 
-                            b1.ToTable("CollectionPermissions");
+                            b1.ToTable("CollectionPermissions", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionPermissionEntityId");
@@ -1848,7 +1867,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionSignatureSheetEntityId");
 
-                            b1.ToTable("CollectionSignatureSheets");
+                            b1.ToTable("CollectionSignatureSheets", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionSignatureSheetEntityId");
@@ -1867,7 +1886,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("CollectionSignatureSheetEntityId");
 
-                            b1.ToTable("CollectionSignatureSheets");
+                            b1.ToTable("CollectionSignatureSheets", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("CollectionSignatureSheetEntityId");
@@ -1917,7 +1936,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("DecreeEntityId");
 
-                            b1.ToTable("Decrees");
+                            b1.ToTable("Decrees", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("DecreeEntityId");
@@ -1941,7 +1960,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("DecreeEntityId");
 
-                            b1.ToTable("Decrees");
+                            b1.ToTable("Decrees", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("DecreeEntityId");
@@ -2004,7 +2023,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("DomainOfInfluenceEntityId");
 
-                            b1.ToTable("DomainOfInfluences");
+                            b1.ToTable("DomainOfInfluences", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("DomainOfInfluenceEntityId");
@@ -2071,7 +2090,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("FileEntityId");
 
-                            b1.ToTable("Files");
+                            b1.ToTable("Files", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("FileEntityId");
@@ -2118,7 +2137,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("ImportStatisticEntityId");
 
-                            b1.ToTable("ImportStatistics");
+                            b1.ToTable("ImportStatistics", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("ImportStatisticEntityId");
@@ -2174,7 +2193,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("InitiativeCommitteeMemberEntityId");
 
-                            b1.ToTable("InitiativeCommitteeMembers");
+                            b1.ToTable("InitiativeCommitteeMembers", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("InitiativeCommitteeMemberEntityId");
@@ -2228,7 +2247,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("UserNotificationEntityId");
 
-                            b1.ToTable("UserNotifications");
+                            b1.ToTable("UserNotifications", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("UserNotificationEntityId");
@@ -2260,7 +2279,7 @@ namespace Voting.ECollecting.Admin.Adapter.Data.Migrations
 
                             b1.HasKey("InitiativeEntityId");
 
-                            b1.ToTable("Collections");
+                            b1.ToTable("Collections", "ecollecting");
 
                             b1.WithOwner()
                                 .HasForeignKey("InitiativeEntityId");

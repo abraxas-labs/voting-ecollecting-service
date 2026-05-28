@@ -2,7 +2,6 @@
 // For license information see LICENSE file
 
 using System.Linq.Expressions;
-using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;

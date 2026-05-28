@@ -33,7 +33,8 @@
             CanDelete: false
           },
           State: CollectionApplicable,
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_2,
@@ -61,7 +62,8 @@
                 Id: Guid_2,
                 Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
@@ -113,7 +115,8 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
                 Id: Guid_2,
                 Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
@@ -165,7 +168,8 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
                 Id: Guid_2,
                 Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
@@ -220,7 +224,8 @@ Dieses Referendum steht für Nachhaltigkeit, Ressourcenschonung und das Prinzip 
             CanDelete: false
           },
           State: CollectionApplicable,
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_6,
@@ -248,7 +253,8 @@ Dieses Referendum steht für Nachhaltigkeit, Ressourcenschonung und das Prinzip 
                 Id: Guid_6,
                 Description: 36.25.01 Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
                 MinSignatureCount: 4000,
-                MaxElectronicSignatureCount: 2000
+                MaxElectronicSignatureCount: 2000,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Roger Lutz, Uzwil; Manuela Huber, Rapperswil-Jona; Pascal Schmid, St.Gallen; Sandra Frei, Gossau; Thomas Rüegg, Buchs; Nicole Baumgartner, Wil; Silvio Graf, Altstätten; Karin Ackermann, Sargans; Daniel Steiner, Wittenbach; Laura Meier, Rorschach; Jonas Hug, Flawil; Peter Brändli, Gams; Vanessa Rossi, St. Margrethen; Samuel Dürst, Wattwil; Cem Yildiz, Rapperswil-Jona,
               Collection: {
@@ -263,6 +269,13 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
+                AttestedCollectionCount: {
+                  Id: Guid_8,
+                  CollectionId: Guid_7,
+                  TotalCitizenCount: 75,
+                  HasTotalCitizenCount: true,
+                  ElectronicCitizenCount: 75
+                },
                 Address: {
                   CommitteeOrPerson: Verein Nächtliche Beleuchtung,
                   StreetOrPostOfficeBox: Rorschacher Strasse 88,
@@ -308,16 +321,24 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
           ],
           UserPermissions: {
             CanEdit: false,
-            CanFinish: true,
-            CanGenerateDocuments: true,
+            CanFinish: false,
+            CanGenerateDocuments: false,
             CanAddCollection: true,
             CanDelete: false
           },
+          AttestedCollectionCount: {
+            Id: Guid_Empty,
+            CollectionId: Guid_Empty,
+            TotalCitizenCount: 75,
+            HasTotalCitizenCount: true,
+            ElectronicCitizenCount: 75
+          },
           State: CollectionApplicable,
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
-          Id: Guid_8,
+          Id: Guid_9,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
           Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
@@ -337,16 +358,17 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
           PeriodState: InCollection,
           Collections: [
             {
-              Id: Guid_9,
+              Id: Guid_10,
               Decree: {
-                Id: Guid_8,
+                Id: Guid_9,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_9,
+                Id: Guid_10,
                 Description: Referendum gegen obligatorische Zimmerpflanzen-Pflege-Workshops für alle Haushalte,
                 Type: Referendum,
                 Reason:
@@ -358,8 +380,8 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_10,
-                  CollectionId: Guid_9,
+                  Id: Guid_11,
+                  CollectionId: Guid_10,
                   TotalCitizenCount: 4123,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 101
@@ -407,16 +429,17 @@ Dieses Referendum steht für Eigenverantwortung, persönliche Freiheit und das R
               }
             },
             {
-              Id: Guid_11,
+              Id: Guid_12,
               Decree: {
-                Id: Guid_8,
+                Id: Guid_9,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_11,
+                Id: Guid_12,
                 Description: Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden,
                 Type: Referendum,
                 Reason:
@@ -428,8 +451,8 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
                 SignatureSheetTemplateGenerated: false,
                 State: SignatureSheetsSubmitted,
                 AttestedCollectionCount: {
-                  Id: Guid_12,
-                  CollectionId: Guid_11,
+                  Id: Guid_13,
+                  CollectionId: Guid_12,
                   TotalCitizenCount: 4124,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 61
@@ -477,16 +500,17 @@ Dieses Referendum steht für finanzielle Verantwortung, Haushaltsdizsiplin und d
               }
             },
             {
-              Id: Guid_13,
+              Id: Guid_14,
               Decree: {
-                Id: Guid_8,
+                Id: Guid_9,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: ,
               Collection: {
-                Id: Guid_13,
+                Id: Guid_14,
                 Description: Referendum gegen die Pflicht zu mindestens einer Bergwanderung pro Monat,
                 Type: Referendum,
                 Reason:
@@ -540,16 +564,17 @@ Dieses Referendum steht für Freiheit, individuelle Lebensgestaltung und das Rec
               }
             },
             {
-              Id: Guid_14,
+              Id: Guid_15,
               Decree: {
-                Id: Guid_8,
+                Id: Guid_9,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_14,
+                Id: Guid_15,
                 Description: Referendum gegen Pflanzenpflege-Zwang wegen Allergien und Gesundheitsrisiken,
                 Type: Referendum,
                 Reason:
@@ -561,8 +586,8 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
                 SignatureSheetTemplateGenerated: false,
                 State: EnabledForCollection,
                 AttestedCollectionCount: {
-                  Id: Guid_15,
-                  CollectionId: Guid_14,
+                  Id: Guid_16,
+                  CollectionId: Guid_15,
                   TotalCitizenCount: 4124,
                   HasTotalCitizenCount: true
                 },
@@ -609,16 +634,17 @@ Dieses Referendum setzt sich ein für Gesundheitsschutz, medizinische Vernunft u
               }
             },
             {
-              Id: Guid_16,
+              Id: Guid_17,
               Decree: {
-                Id: Guid_8,
+                Id: Guid_9,
                 Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_16,
+                Id: Guid_17,
                 Description: Referendum gegen Pflanzen-Workshops, die Kakteen ausgrenzen,
                 Type: Referendum,
                 Reason:
@@ -663,8 +689,8 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
           ],
           UserPermissions: {
             CanEdit: false,
-            CanFinish: true,
-            CanGenerateDocuments: true,
+            CanFinish: false,
+            CanGenerateDocuments: false,
             CanAddCollection: true,
             CanDelete: false
           },
@@ -676,22 +702,23 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
             ElectronicCitizenCount: 162
           },
           State: CollectionApplicable,
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
-          Id: Guid_17,
+          Id: Guid_18,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
+          Description: Kantonsratsbeschluss über die Pflicht zur Beschriftung von Brotdosen in Gemeinschaftsküchen,
           CollectionStartDate: {
             Year: 2019,
             Month: 12,
-            Day: 13
+            Day: 12
           },
           CollectionEndDate: {
             Year: 2020,
             Month: 6,
-            Day: 13
+            Day: 12
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,
@@ -705,13 +732,14 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
             CanDelete: false
           },
           State: CollectionApplicable,
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
-          Id: Guid_18,
+          Id: Guid_19,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+          Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
           CollectionStartDate: {
             Year: 2017,
             Month: 7,
@@ -728,35 +756,36 @@ Solange kein sandbasiertes Hybrid-Konzept vorliegt, bleibt das Vorhaben eine unz
           PeriodState: Expired,
           Collections: [
             {
-              Id: Guid_19,
+              Id: Guid_20,
               Decree: {
-                Id: Guid_18,
-                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+                Id: Guid_19,
+                Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_19,
-                Description: Referendum gegen die Pflicht zur nächtlichen Beleuchtung von Hausnummern,
+                Id: Guid_20,
+                Description: Referendum gegen die Vorschrift zur Einheitsmelodie an Haustüren,
                 Type: Referendum,
                 Reason:
-Der Kantonsrat hat beschlossen, dass alle Hausnummern im Kanton St.Gallen künftig während der Nacht beleuchtet sein müssen, um Einsatzkräfte besser zu unterstützen.
-Das Referendumskomitee befürwortet den Gedanken der Sicherheit, hält aber eine Pflichtbeleuchtung für übertrieben und zu energieintensiv.
-Reflektierende Hausnummern wären effizienter und umweltfreundlicher.
-Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünftige Regulierung – im Sinne eines hellen Verstandes statt heller Hausnummern.,
+Der Kantonsrat hat beschlossen, dass alle neu installierten Türklingeln in Wohn- und Geschäftsgebäuden im Kanton St. Gallen künftig ausschliesslich die zugelassene Amtsmelodie «Drei Töne in C-Dur» abspielen dürfen. Ziel sei eine «akustische Verträglichkeit im Siedlungsraum» und die Vermeidung von Lärmbelästigung durch kreative Klingelmelodien.
+Das Referendumskomitee hält diese Regelung für einen ungebetenen Eingriff in den privaten Alltag. Ob Klassik, Vogelzwitschern oder der Lieblingssong – die Wahl der Türklingel ist Ausdruck von Persönlichkeit und hat niemanden je ernsthaft gestört. Eine staatlich verordnete Einheitsmelodie hingegen schon.
+Dieses Referendum verteidigt das Recht jedes Haushalts, Besuch so zu empfangen, wie es ihm beliebt – laut, leise, schräg oder schön. Denn wer bestimmt, was an der eigenen Haustür klingt, sollte man selbst sein und nicht der Kantonsrat.
+Ein Ja zur klanglichen Vielfalt, ein Nein zur Drei-Töne-Diktatur.,
                 Link: https://www.sg.ch/,
                 SignatureSheetTemplateGenerated: false,
                 State: EndedCameAbout,
                 AttestedCollectionCount: {
-                  Id: Guid_20,
-                  CollectionId: Guid_19,
+                  Id: Guid_21,
+                  CollectionId: Guid_20,
                   TotalCitizenCount: 3632,
                   HasTotalCitizenCount: true,
                   ElectronicCitizenCount: 161
                 },
                 Address: {
-                  CommitteeOrPerson: Komitee Freie Bildungswahl,
+                  CommitteeOrPerson: Komitee Freie Klingelwahl,
                   StreetOrPostOfficeBox: Oberstrasse 17,
                   ZipCode: 9000,
                   Locality: St.Gallen
@@ -798,16 +827,17 @@ Dieses Referendum setzt ein Zeichen für Nachhaltigkeit, Augenmass und vernünft
               }
             },
             {
-              Id: Guid_21,
+              Id: Guid_22,
               Decree: {
-                Id: Guid_18,
-                Description: Kantonsratsbeschluss über die Beleuchtung von Hausnummern,
+                Id: Guid_19,
+                Description: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten,
                 MinSignatureCount: 3000,
-                MaxElectronicSignatureCount: 300
+                MaxElectronicSignatureCount: 300,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
-                Id: Guid_21,
+                Id: Guid_22,
                 Description: Referendum gegen Jodel-Pflicht in Schulen (zurückgezogen),
                 Type: Referendum,
                 Reason:
@@ -870,7 +900,8 @@ Diese Einigung zeigt, dass Dialog und Kompromissbereitschaft bessere Lösungen b
             Month: 1,
             Day: 5
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         }
       ]
     },

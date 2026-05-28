@@ -75,5 +75,6 @@
     Description: false,
     CommitteeMembers: false
   },
-  DomainOfInfluenceName: St. Gallen
+  DomainOfInfluenceName: St. Gallen,
+  ElectronicCollectionEnabled: true
 }

@@ -10,6 +10,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 using CollectionAddress = Voting.ECollecting.Proto.Admin.Services.V1.Models.CollectionAddress;
@@ -26,7 +27,7 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidSignatureSheetsSubmitted, ReferendumsCtStGallen.GuidInPreparation));
     }
 
     [Fact]
@@ -129,10 +130,21 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     [Fact]
     public async Task DuplicateDescriptionShouldFail()
     {
-        var req = NewValidRequest(x => x.Description = "Referendum gegen teure Pflanzen-Workshops auf Kosten der Steuerzahlenden");
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
+        var req = NewValidRequest(x => x.Description = existingReferendum.Description);
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.CreateAsync(req),
-            StatusCode.FailedPrecondition);
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentDecreeShouldWork()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
+        var response = await CtSgStammdatenverwalterClient.CreateAsync(NewValidRequest(x => x.Description = existingReferendum.Description));
+        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        referendum.Description.Should().Be(existingReferendum.Description);
     }
 
     [Fact]

@@ -262,16 +262,16 @@
           Id: Guid_11,
           DomainOfInfluenceType: Ct,
           Bfs: 17,
-          Description: Kantonsratsbeschluss über die Einführung obligatorischer Zimmerpflanzen-Pflege-Workshops für alle Haushalte zur Förderung von Grünkompetenz und Luftqualität (ohne Referendum),
+          Description: Kantonsratsbeschluss über die Pflicht zur Beschriftung von Brotdosen in Gemeinschaftsküchen,
           CollectionStartDate: {
             Year: 2019,
             Month: 12,
-            Day: 13
+            Day: 12
           },
           CollectionEndDate: {
             Year: 2020,
             Month: 6,
-            Day: 13
+            Day: 12
           },
           MinSignatureCount: 3000,
           MaxElectronicSignatureCount: 300,

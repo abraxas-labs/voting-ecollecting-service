@@ -44,4 +44,11 @@ public static class DecreeQueries
     {
         return query.Where(x => enabledDoiTypes.Contains(x.DomainOfInfluenceType));
     }
+
+    public static IQueryable<DecreeEntity> WhereDoiHasECollectingEnabled(
+        this IQueryable<DecreeEntity> query,
+        IQueryable<string?> enabledBfs)
+    {
+        return query.Where(x => enabledBfs.Contains(x.Bfs));
+    }
 }

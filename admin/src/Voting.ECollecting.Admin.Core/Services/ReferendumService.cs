@@ -2,10 +2,10 @@
 // For license information see LICENSE file
 
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
-using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Extensions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
@@ -13,6 +13,7 @@ using Voting.ECollecting.Admin.Core.Resources;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
@@ -22,6 +23,8 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class ReferendumService : IReferendumService
 {
+    private const string DescriptionUniqueConstraintName = "IX_Collections_DescriptionLower_Bfs_DecreeId";
+
     private readonly IDecreeRepository _decreeRepository;
     private readonly IReferendumRepository _referendumRepository;
     private readonly CollectionService _collectionService;
@@ -31,6 +34,7 @@ public class ReferendumService : IReferendumService
     private readonly IDataContext _dataContext;
     private readonly ICollectionMessageRepository _collectionMessageRepository;
     private readonly IUserNotificationService _userNotificationService;
+    private readonly DomainOfInfluenceService _domainOfInfluenceService;
 
     public ReferendumService(
         IDecreeRepository decreeRepository,
@@ -41,7 +45,8 @@ public class ReferendumService : IReferendumService
         IPermissionService permissionService,
         IDataContext dataContext,
         ICollectionMessageRepository collectionMessageRepository,
-        IUserNotificationService userNotificationService)
+        IUserNotificationService userNotificationService,
+        DomainOfInfluenceService domainOfInfluenceService)
     {
         _decreeRepository = decreeRepository;
         _referendumRepository = referendumRepository;
@@ -52,6 +57,7 @@ public class ReferendumService : IReferendumService
         _dataContext = dataContext;
         _collectionMessageRepository = collectionMessageRepository;
         _userNotificationService = userNotificationService;
+        _domainOfInfluenceService = domainOfInfluenceService;
     }
 
     public async Task<Dictionary<DomainOfInfluenceType, List<Decree>>> ListDecreesByDoiType(IReadOnlySet<DomainOfInfluenceType>? doiTypes, string? bfs)
@@ -68,16 +74,25 @@ public class ReferendumService : IReferendumService
             query = query.Where(x => x.Bfs == bfs);
         }
 
-        var decreesByDoiType = await query
+        var decreeEntities = await query
 
             // include own referendums or parent referendums which are in collection or expired
             // same logic as in AclPermissions.WhereCanAccessOwnBfsOrChildrenOrParentsInPeriodStateInCollectionOrExpired
             .IncludeFilteredReferendums(_permissionService.AclBfsLists, _timeProvider.GetUtcTodayDateOnly())
             .ThenIncludeMunicipalities(_permissionService.AclBfsLists)
-            .Include<DecreeEntity, List<ReferendumEntity>>(x => x.Collections)
+            .Include(x => x.Collections)
             .ThenInclude(x => x.CollectionCount)
+            .OrderByDescending(x => x.CollectionStartDate)
+            .ToListAsync();
+
+        var decrees = Mapper.MapToDecrees(decreeEntities);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(decrees);
+
+        var decreesByDoiType = decrees
             .GroupBy(x => x.DomainOfInfluenceType)
-            .ToDictionaryAsync(x => x.Key, x => x.OrderByDescending(y => y.CollectionStartDate).ToList());
+            .ToDictionary(
+                x => x.Key,
+                x => x.ToList());
 
         var today = _timeProvider.GetUtcTodayDateOnly();
         return Enum.GetValues<DomainOfInfluenceType>()
@@ -85,9 +100,8 @@ public class ReferendumService : IReferendumService
             .OrderBy(x => x)
             .ToDictionary(x => x, x =>
             {
-                var decrees = Mapper.MapToDecrees(decreesByDoiType.GetValueOrDefault(x) ?? []);
-
-                foreach (var decree in decrees)
+                var doiTypeDecrees = decreesByDoiType.GetValueOrDefault(x) ?? [];
+                foreach (var decree in doiTypeDecrees)
                 {
                     _decreeService.SetPeriodStateAndUserPermissions(decree, today);
 
@@ -100,7 +114,7 @@ public class ReferendumService : IReferendumService
                     }
                 }
 
-                return decrees;
+                return doiTypeDecrees;
             });
     }
 
@@ -118,10 +132,24 @@ public class ReferendumService : IReferendumService
                                    .Include(x => x.SignatureSheetTemplate)
                                    .FirstOrDefaultAsync(x => x.Id == id)
                                ?? throw new EntityNotFoundException(nameof(ReferendumEntity), id);
+
+        // this only includes the loaded referendum
+        // clear it to resolve the reference loop.
+        if (referendumEntity.Decree != null)
+        {
+            referendumEntity.Decree.Collections = [];
+        }
+
         var referendum = Mapper.MapToReferendum(referendumEntity);
         referendum.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(referendum);
         _collectionService.SetCollectionCount(referendum);
+
+        if (referendum.Decree != null)
+        {
+            await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(referendum.Decree);
+        }
+
         return referendum;
     }
 
@@ -131,14 +159,8 @@ public class ReferendumService : IReferendumService
 
         var decree = await _decreeRepository.Query()
                          .WhereCanAddCollection(_permissionService)
-                         .Include(x => x.Collections)
                          .FirstOrDefaultAsync(x => x.Id == decreeId)
                      ?? throw new EntityNotFoundException(nameof(DecreeEntity), decreeId);
-
-        if (decree.Collections.Any(x => x.Description == description))
-        {
-            throw new CollectionAlreadyExistsException();
-        }
 
         var referendum = new ReferendumEntity
         {
@@ -161,7 +183,16 @@ public class ReferendumService : IReferendumService
 
         _permissionService.SetCreated(referendum);
         _permissionService.SetCreated(referendum.CollectionCount);
-        await _collectionService.CreateWithSecretIdNumber(referendum);
+
+        try
+        {
+            await _collectionService.CreateWithSecretIdNumber(referendum);
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
+
         await _collectionService.PrepareForCollection(referendum);
         await _dataContext.SaveChangesAsync();
 
@@ -195,7 +226,14 @@ public class ReferendumService : IReferendumService
         referendum.Address = parameters.Address ?? referendum.Address;
 
         _permissionService.SetModified(referendum);
-        await _dataContext.SaveChangesAsync();
+        try
+        {
+            await _dataContext.SaveChangesAsync();
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
 
         if (referendum.State != CollectionState.PreRecorded)
         {

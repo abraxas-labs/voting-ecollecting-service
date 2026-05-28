@@ -66,7 +66,8 @@ Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunch
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: St. Gallen
+      DomainOfInfluenceName: St. Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_3,
@@ -134,7 +135,8 @@ Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Ja
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: St. Gallen
+      DomainOfInfluenceName: St. Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_4,
@@ -202,7 +204,8 @@ Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: St. Gallen
+      DomainOfInfluenceName: St. Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_5,
@@ -270,7 +273,8 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: St. Gallen
+      DomainOfInfluenceName: St. Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_6,
@@ -354,7 +358,8 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: St.Gallen
+      DomainOfInfluenceName: St.Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_7,
@@ -438,7 +443,8 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: Goldach
+      DomainOfInfluenceName: Goldach,
+      ElectronicCollectionEnabled: true
     }
   ]
 }

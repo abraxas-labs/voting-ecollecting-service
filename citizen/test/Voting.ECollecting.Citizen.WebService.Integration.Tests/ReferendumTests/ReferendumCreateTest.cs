@@ -9,6 +9,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
@@ -107,9 +108,46 @@ public class ReferendumCreateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     }
 
     [Fact]
+    public async Task TestECollectingDisabledMunicipalityShouldThrow()
+    {
+        await AssertStatus(
+            async () => await _client.CreateAsync(NewValidRequest(x => x.DecreeId = DecreesMuBergSg.IdInCollection)),
+            StatusCode.InvalidArgument);
+    }
+
+    [Fact]
     public Task UnauthenticatedShouldFail()
     {
         return AssertStatus(async () => await Client.CreateAsync(new CreateReferendumRequest()), StatusCode.Unauthenticated);
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
+        await ModifyDbEntities<ReferendumEntity>(x => x.DecreeId == DecreesCtStGallen.GuidInPreparationWithReferendum, x => x.AuditInfo.CreatedById = "some-user");
+        await AssertStatus(
+            async () => await _client.CreateAsync(NewValidRequest(x =>
+            {
+                x.Description = existingReferendum.Description;
+                x.DecreeId = DecreesCtStGallen.IdInPreparationWithReferendum;
+            })),
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentDecreeShouldWork()
+    {
+        await ModifyDbEntities<ReferendumEntity>(x => x.DecreeId == DecreesCtStGallen.GuidInPreparationWithReferendum, x => x.AuditInfo.CreatedById = "some-user");
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidSignatureSheetsSubmitted));
+        var response = await _client.CreateAsync(NewValidRequest(x =>
+        {
+            x.Description = existingReferendum.Description;
+            x.DecreeId = DecreesCtStGallen.IdInPreparationWithReferendum;
+        }));
+        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        referendum.Description.Should().Be(existingReferendum.Description);
     }
 
     private CreateReferendumRequest NewValidRequest(Action<CreateReferendumRequest>? customizer = null)

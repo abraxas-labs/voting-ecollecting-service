@@ -60,6 +60,11 @@ public class AppConfig : CoreAppConfig
     public bool EnableGrpcWeb { get; set; }
 
     /// <summary>
+    /// Gets or sets a value indicating whether grpc reflection endpoint should be enabled or not.
+    /// </summary>
+    public bool EnableGrpcReflection { get; set; }
+
+    /// <summary>
     /// Gets or sets a list of paths where language headers are getting ignored.
     /// </summary>
     public HashSet<string> LanguageHeaderIgnoredPaths { get; set; } =

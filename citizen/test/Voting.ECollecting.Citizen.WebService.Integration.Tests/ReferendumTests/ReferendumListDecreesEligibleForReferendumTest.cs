@@ -101,6 +101,13 @@ public class ReferendumListDecreesEligibleForReferendumTest : BaseGrpcTest<Refer
     }
 
     [Fact]
+    public async Task TestOnlyBfsFilteredEmptyWhenECollectingDisabled()
+    {
+        var response = await AuthenticatedClient.ListDecreesEligibleForReferendumAsync(NewValidRequest(x => x.Bfs = Bfs.MunicipalityBergSG));
+        await Verify(response);
+    }
+
+    [Fact]
     public async Task ShouldWorkWithoutReferendums()
     {
         var response = await AuthenticatedClient.ListDecreesEligibleForReferendumAsync(NewValidRequest(x => x.IncludeReferendums = false));

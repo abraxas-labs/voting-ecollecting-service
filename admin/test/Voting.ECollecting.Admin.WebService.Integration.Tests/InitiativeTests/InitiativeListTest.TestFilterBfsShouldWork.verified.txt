@@ -79,7 +79,8 @@ Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegt
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_2,
@@ -152,7 +153,8 @@ Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gä
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_3,
@@ -224,7 +226,8 @@ Die Initiative fordert keine professionellen Touristenprogramme, sondern regelm�
             Description: true,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_4,
@@ -296,7 +299,8 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_5,
@@ -368,7 +372,8 @@ Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_6,
@@ -438,7 +443,8 @@ Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trin
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_7,
@@ -534,7 +540,8 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
             Month: 1,
             Day: 21
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_9,
@@ -606,7 +613,8 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_10,
@@ -678,7 +686,8 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_11,
@@ -769,7 +778,8 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_13,
@@ -864,7 +874,8 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
             Month: 1,
             Day: 7
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_15,
@@ -936,7 +947,8 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_16,
@@ -1009,7 +1021,8 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_17,
@@ -1082,7 +1095,8 @@ Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_18,
@@ -1155,7 +1169,8 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_19,
@@ -1244,7 +1259,8 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_21,
@@ -1334,7 +1350,8 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_23,
@@ -1425,7 +1442,8 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_25,
@@ -1509,7 +1527,8 @@ Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielp
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         }
       ]
     }

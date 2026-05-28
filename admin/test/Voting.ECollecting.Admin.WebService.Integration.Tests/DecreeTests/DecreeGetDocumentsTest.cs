@@ -31,10 +31,10 @@ public class DecreeGetDocumentsTest : BaseRestTest
     public async Task ShouldGet()
     {
         var resp = await AssertZipDownloadAsStringEntries(
-            async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(DecreesCh.IdInCollection)),
+            async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(DecreesCh.IdPastWithReferendumCameAbout)),
             "export.zip");
 
-        resp.Count.Should().Be(5);
+        resp.Count.Should().Be(4);
         await Verify(resp);
     }
 
@@ -42,7 +42,7 @@ public class DecreeGetDocumentsTest : BaseRestTest
     public async Task ShouldReturnEmptyAsMu()
     {
         var resp = await AssertZipDownloadAsStringEntries(
-            async () => await MuSgStammdatenverwalterClient.GetAsync(BuildUrl(DecreesMuStGallen.IdInCollectionWithReferendum)),
+            async () => await MuSgStammdatenverwalterClient.GetAsync(BuildUrl(DecreesMuStGallen.IdPastWithNotPassedReferendum)),
             "export.zip");
 
         resp.Should().HaveCount(2);
@@ -56,16 +56,16 @@ public class DecreeGetDocumentsTest : BaseRestTest
             x => x.MaxElectronicSignatureCount = 2);
 
         var resp = await AssertZipDownloadAsStringEntries(
-            async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(DecreesCh.IdInCollection)),
+            async () => await CtStammdatenverwalterClient.GetAsync(BuildUrl(DecreesCh.IdPastWithReferendumCameAbout)),
             "export.zip");
 
-        resp.Count.Should().Be(5);
+        resp.Count.Should().Be(4);
         await Verify(resp);
     }
 
     protected override Task<HttpResponseMessage> AuthorizationTestCall(HttpClient httpClient)
     {
-        return httpClient.GetAsync(BuildUrl(DecreesCh.IdInCollection));
+        return httpClient.GetAsync(BuildUrl(DecreesCh.IdPastWithReferendumCameAbout));
     }
 
     protected override IEnumerable<string> AuthorizedRoles()

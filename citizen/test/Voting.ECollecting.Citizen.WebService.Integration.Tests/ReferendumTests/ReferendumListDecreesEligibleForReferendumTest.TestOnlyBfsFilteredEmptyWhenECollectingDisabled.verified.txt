@@ -1,0 +1,13 @@
+﻿{
+  Groups: [
+    {
+      DomainOfInfluenceType: Ch
+    },
+    {
+      DomainOfInfluenceType: Ct
+    },
+    {
+      DomainOfInfluenceType: Mu
+    }
+  ]
+}

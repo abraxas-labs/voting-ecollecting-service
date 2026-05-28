@@ -60,6 +60,7 @@ Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
           Description: true,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale begegnungsräume (begegnungs-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -137,6 +138,7 @@ Er achtet auf niederschwelligen Zugang und vielfältige Nutzungsmöglichkeiten.,
           Description: true,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale begegnungsräume (begegnungs-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

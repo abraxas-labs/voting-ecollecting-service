@@ -1,14 +1,14 @@
 ﻿[
   {
     RecipientEmail: kanton+staatskanzlei@abraxas.ch,
-    Subject: Kantonsratsbeschluss über die Beleuchtung von Hausnummern gelöscht,
+    Subject: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten gelöscht,
     HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kantonsratsbeschluss &#252;ber die Beleuchtung von Hausnummern gel&#246;scht</title>
+  <title>Kantonsratsbeschluss &#252;ber die Pflicht zur melodischen T&#252;rklingel bei Neubauten gel&#246;scht</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -32,7 +32,7 @@
   </style>
 </head>
 <body>
-  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde der Erlass <strong>Kantonsratsbeschluss &#252;ber die Beleuchtung von Hausnummern</strong> gelöscht.</p></div>
+  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde der Erlass <strong>Kantonsratsbeschluss &#252;ber die Pflicht zur melodischen T&#252;rklingel bei Neubauten</strong> gelöscht.</p></div>
 </body>
 </html>,
     Attachments: [
@@ -44,14 +44,14 @@
   },
   {
     RecipientEmail: kanton+staatskanzlei2@abraxas.ch,
-    Subject: Kantonsratsbeschluss über die Beleuchtung von Hausnummern gelöscht,
+    Subject: Kantonsratsbeschluss über die Pflicht zur melodischen Türklingel bei Neubauten gelöscht,
     HtmlBody:
 <!DOCTYPE html>
 <html lang="de-CH">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kantonsratsbeschluss &#252;ber die Beleuchtung von Hausnummern gel&#246;scht</title>
+  <title>Kantonsratsbeschluss &#252;ber die Pflicht zur melodischen T&#252;rklingel bei Neubauten gel&#246;scht</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -75,7 +75,7 @@
   </style>
 </head>
 <body>
-  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde der Erlass <strong>Kantonsratsbeschluss &#252;ber die Beleuchtung von Hausnummern</strong> gelöscht.</p></div>
+  <div class="container"><p>Hallo,</p><p>Im E-Collecting wurde der Erlass <strong>Kantonsratsbeschluss &#252;ber die Pflicht zur melodischen T&#252;rklingel bei Neubauten</strong> gelöscht.</p></div>
 </body>
 </html>,
     Attachments: [

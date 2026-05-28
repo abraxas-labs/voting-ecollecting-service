@@ -8,6 +8,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Extensions;
@@ -181,6 +182,25 @@ public class InitiativeUpdateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public Task UnauthenticatedShouldFail()
     {
         return AssertStatus(async () => await Client.UpdateAsync(new UpdateInitiativeRequest()), StatusCode.Unauthenticated);
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingInitiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeReturnedForCorrection));
+        await AssertStatus(
+            async () => await AuthenticatedClient.UpdateAsync(NewValidRequest(x => x.Description = existingInitiative.Description)),
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentBfsShouldWork()
+    {
+        var existingInitiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCh.GuidInPreparation));
+        await AuthenticatedClient.UpdateAsync(NewValidRequest(x => x.Description = existingInitiative.Description));
+        var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPreparation));
+        initiative.Description.Should().Be(existingInitiative.Description);
     }
 
     [Theory]

@@ -60,6 +60,7 @@ Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivität
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für eine tägliche portion natur (frischluftinitiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -136,6 +137,7 @@ Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivität
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für eine tägliche portion natur (frischluftinitiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -223,6 +225,7 @@ Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivität
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für eine tägliche portion natur (frischluftinitiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -298,6 +301,7 @@ Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivität
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für eine tägliche portion natur (frischluftinitiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using Grpc.Core;
 using Voting.ECollecting.Admin.Abstractions.Adapter.VotingStimmregister;
 using Voting.ECollecting.Admin.Core.Exceptions;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.Lib.Iam.Exceptions;
 using Voting.Lib.Iam.SecondFactor.Exceptions;
@@ -42,6 +43,7 @@ internal readonly struct ExceptionMapping
             EntityNotFoundException _ => new ExceptionMapping(StatusCode.NotFound, StatusCodes.Status404NotFound),
             DuplicatedGovernmentDecisionNumberException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status409Conflict, true),
             CollectionAlreadyExistsException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
+            DecreeAlreadyExistsException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
             TooManyCollectionSignatureSheetSamplesException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest, true),
             AddressMissingForAttestException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest, true),
             ValidationException _ => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest),

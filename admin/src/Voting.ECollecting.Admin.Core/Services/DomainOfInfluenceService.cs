@@ -112,15 +112,82 @@ public class DomainOfInfluenceService : IDomainOfInfluenceService
         await _dataContext.SaveChangesAsync();
     }
 
-    internal async Task<string> LoadDomainOfInfluenceName(DomainOfInfluenceType domainOfInfluenceType, string bfs)
+    internal async Task LoadDomainOfInfluenceInfos(IReadOnlyCollection<Initiative> initiatives)
     {
-        return domainOfInfluenceType switch
+        var bfs = initiatives.Select(x => x.Bfs).WhereNotNull().ToHashSet();
+        var domainOfInfluenceByBfsAndType = await _doiRepository.GetByTypeAndBfs(bfs);
+
+        foreach (var initiative in initiatives)
         {
-            DomainOfInfluenceType.Mu => await _doiRepository.GetNameByBfs(DomainOfInfluenceType.Mu, bfs),
+            if (!domainOfInfluenceByBfsAndType.TryGetValue((initiative.DomainOfInfluenceType!.Value, initiative.Bfs ?? string.Empty), out var doi))
+            {
+                throw new InvalidOperationException($"Domain of influence with bfs {initiative.Bfs} and type {initiative.DomainOfInfluenceType} not found.");
+            }
+
+            LoadDomainOfInfluenceInfos(initiative, doi);
+        }
+    }
+
+    internal void LoadDomainOfInfluenceInfos(Initiative initiative, DomainOfInfluenceEntity doi)
+    {
+        initiative.DomainOfInfluenceName = initiative.DomainOfInfluenceType switch
+        {
+            DomainOfInfluenceType.Mu => doi.Name,
             DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
             DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
-            _ => throw new ArgumentOutOfRangeException(nameof(domainOfInfluenceType)),
+            _ => throw new InvalidOperationException($"Unsupported domain of influence type {initiative.DomainOfInfluenceType} for initiative"),
         };
+
+        initiative.ElectronicCollectionEnabled = doi.ECollectingEnabled;
+    }
+
+    internal async Task LoadDomainOfInfluenceInfos(Initiative initiative)
+    {
+        var doiType = initiative.DomainOfInfluenceType ??
+                      throw new InvalidOperationException("Domain of influence type is required for initiative");
+
+        if (string.IsNullOrEmpty(initiative.Bfs))
+        {
+            throw new InvalidOperationException("BFS is required for initiative");
+        }
+
+        var doi = await _doiRepository.GetSingleByBfs(initiative.Bfs, doiType);
+        LoadDomainOfInfluenceInfos(initiative, doi);
+    }
+
+    internal async Task LoadDomainOfInfluenceInfos(IReadOnlyCollection<Decree> decrees)
+    {
+        var bfs = decrees.Select(x => x.Bfs).ToHashSet();
+        var domainOfInfluenceByBfsAndType = await _doiRepository.GetByTypeAndBfs(bfs);
+
+        foreach (var decree in decrees)
+        {
+            if (!domainOfInfluenceByBfsAndType.TryGetValue((decree.DomainOfInfluenceType, decree.Bfs), out var doi))
+            {
+                throw new InvalidOperationException($"Domain of influence with bfs {decree.Bfs} and type {decree.DomainOfInfluenceType} not found.");
+            }
+
+            LoadDomainOfInfluenceInfos(decree, doi);
+        }
+    }
+
+    internal async Task LoadDomainOfInfluenceInfos(Decree decree)
+    {
+        var doi = await _doiRepository.GetSingleByBfs(decree.Bfs, decree.DomainOfInfluenceType);
+        LoadDomainOfInfluenceInfos(decree, doi);
+    }
+
+    internal void LoadDomainOfInfluenceInfos(Decree decree, DomainOfInfluenceEntity doi)
+    {
+        decree.DomainOfInfluenceName = decree.DomainOfInfluenceType switch
+        {
+            DomainOfInfluenceType.Mu => doi.Name,
+            DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
+            DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
+            _ => throw new InvalidOperationException($"Unsupported domain of influence type {decree.DomainOfInfluenceType} for decree"),
+        };
+
+        decree.ElectronicCollectionEnabled = doi.ECollectingEnabled;
     }
 
     private void ValidateUpdateRequest(

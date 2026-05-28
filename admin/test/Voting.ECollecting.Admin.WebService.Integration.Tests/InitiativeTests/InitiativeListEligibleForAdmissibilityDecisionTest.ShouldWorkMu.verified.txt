@@ -70,7 +70,8 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: 
+      DomainOfInfluenceName: St.Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_2,
@@ -142,7 +143,8 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: 
+      DomainOfInfluenceName: St.Gallen,
+      ElectronicCollectionEnabled: true
     }
   ]
 }

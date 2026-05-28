@@ -30,6 +30,9 @@ public class DecreeCameNotAboutTest : BaseGrpcTest<DecreeService.DecreeServiceCl
     {
         await base.InitializeAsync();
         await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums);
+        await ModifyDbEntities<DecreeEntity>(
+            x => x.Id == DecreesCh.GuidInCollection || x.Id == DecreesMuStGallen.GuidInCollectionWithReferendum,
+            x => x.CollectionEndDate = MockedClock.NowDateOnly.AddDays(-2));
     }
 
     [Fact]
@@ -117,6 +120,21 @@ public class DecreeCameNotAboutTest : BaseGrpcTest<DecreeService.DecreeServiceCl
             e => e.Id == DecreesCh.GuidInCollection,
             e => e.CollectionStartDate = MockedClock.NowDateOnly.AddDays(2));
 
+        await ModifyDbEntities<DecreeEntity>(
+            x => x.Id == DecreesCh.GuidInCollection,
+            x => x.CollectionEndDate = MockedClock.NowDateOnly.AddDays(5));
+
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.CameNotAboutAsync(NewValidRequest()),
+            StatusCode.NotFound);
+    }
+
+    [Fact]
+    public async Task InCollectionShouldFail()
+    {
+        await ModifyDbEntities<DecreeEntity>(
+            x => x.Id == DecreesCh.GuidInCollection,
+            x => x.CollectionEndDate = MockedClock.NowDateOnly.AddDays(2));
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.CameNotAboutAsync(NewValidRequest()),
             StatusCode.NotFound);

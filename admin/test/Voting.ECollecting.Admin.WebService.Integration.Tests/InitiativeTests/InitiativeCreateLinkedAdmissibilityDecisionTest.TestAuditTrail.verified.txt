@@ -60,6 +60,7 @@ Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale leseecken (leseecken-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -136,6 +137,7 @@ Er achtet auf ansprechende Ausstattung und Zugang zu vielfältiger Literatur.,
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale leseecken (leseecken-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

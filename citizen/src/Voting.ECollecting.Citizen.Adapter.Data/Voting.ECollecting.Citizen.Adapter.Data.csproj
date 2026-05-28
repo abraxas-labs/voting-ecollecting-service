@@ -8,7 +8,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Adapter.Data\Voting.ECollecting.Shared.Adapter.Data.csproj" />
     <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Domain\Voting.ECollecting.Shared.Domain.csproj" />
-    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Migrations\Voting.ECollecting.Shared.Migrations.csproj" />
     <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.Data\Voting.ECollecting.Citizen.Abstractions.Adapter.Data.csproj" />
     <ProjectReference Include="..\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin\Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin.csproj" />
   </ItemGroup>

@@ -43,6 +43,7 @@ public class CollectionService : ICollectionService
     private readonly AccessControlListService _accessControlListService;
     private readonly IDecreeRepository _decreeRepository;
     private readonly IInitiativeRepository _initiativeRepository;
+    private readonly DomainOfInfluenceService _domainOfInfluenceService;
     private readonly ICollectionSignatureSheetRepository _collectionSignatureSheetRepository;
 
     public CollectionService(
@@ -59,7 +60,8 @@ public class CollectionService : ICollectionService
         AccessControlListService accessControlListService,
         IDecreeRepository decreeRepository,
         IInitiativeRepository initiativeRepository,
-        ICollectionSignatureSheetRepository collectionSignatureSheetRepository)
+        ICollectionSignatureSheetRepository collectionSignatureSheetRepository,
+        DomainOfInfluenceService domainOfInfluenceService)
     {
         _messageRepository = messageRepository;
         _permissionService = permissionService;
@@ -75,6 +77,7 @@ public class CollectionService : ICollectionService
         _decreeRepository = decreeRepository;
         _initiativeRepository = initiativeRepository;
         _collectionSignatureSheetRepository = collectionSignatureSheetRepository;
+        _domainOfInfluenceService = domainOfInfluenceService;
     }
 
     public async Task<(List<CollectionMessageEntity> Messages, bool InformalReviewRequested)> ListMessages(Guid collectionId)
@@ -430,13 +433,14 @@ public class CollectionService : ICollectionService
                 .OrderByDescending(y => y.CollectionEndDate).ThenBy(y => y.Description))
             .Include(x => x.Collections)
             .ThenInclude(x => x.CollectionCount)
-            .GroupBy(x => x.DomainOfInfluenceType)
-            .ToDictionaryAsync(x => x.Key, x => x.OrderByDescending(y => y.CollectionStartDate).ThenBy(y => y.Description).ToList());
+            .OrderByDescending(y => y.CollectionStartDate)
+            .ThenBy(y => y.Description)
+            .ToListAsync();
 
-        var decrees = decreeEntities.ToDictionary(
-            x => x.Key,
-            x => Mapper.MapToDecrees(x.Value));
-        foreach (var decree in decrees.Values.SelectMany(x => x))
+        var decrees = Mapper.MapToDecrees(decreeEntities);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(decrees);
+
+        foreach (var decree in decrees)
         {
             decree.SetPeriodState(today);
 
@@ -448,7 +452,9 @@ public class CollectionService : ICollectionService
             }
         }
 
-        return decrees;
+        return decrees
+            .GroupBy(x => x.DomainOfInfluenceType)
+            .ToDictionary(x => x.Key, x => x.ToList());
     }
 
     private async Task<Dictionary<DomainOfInfluenceType, List<Initiative>>> ListInitiativesForDeletionByDoiType(
@@ -476,20 +482,22 @@ public class CollectionService : ICollectionService
         }
 
         var initiativeEntities = await initiativeQuery
-            .GroupBy(x => x.DomainOfInfluenceType)
-            .ToDictionaryAsync(x => x.Key!.Value, x => x.OrderByDescending(y => y.CollectionEndDate).ThenBy(y => y.Description).ToList());
+            .OrderByDescending(y => y.CollectionEndDate)
+            .ThenBy(y => y.Description)
+            .ToListAsync();
+        var initiatives = Mapper.MapToInitiatives(initiativeEntities);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(initiatives);
 
-        var initiatives = initiativeEntities.ToDictionary(
-            x => x.Key,
-            x => Mapper.MapToInitiatives(x.Value));
-        foreach (var initiative in initiatives.Values.SelectMany(x => x))
+        foreach (var initiative in initiatives)
         {
             initiative.SetPeriodState(today);
             LoadPermission(initiative);
             SetCollectionCount(initiative);
         }
 
-        return initiatives;
+        return initiatives
+            .GroupBy(x => x.DomainOfInfluenceType!.Value)
+            .ToDictionary(x => x.Key, x => x.ToList());
     }
 
     private async Task CreateCollectionMunicipalities(Guid collectionId, string bfs)

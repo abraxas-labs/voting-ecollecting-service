@@ -31,6 +31,7 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
           CreatedByEmail: citizen-creator@example.com
         },
         Description: Referendum gegen das Verbot von digitalen Weckern in Schlafzimmern,
+        DescriptionLower: referendum gegen das verbot von digitalen weckern in schlafzimmern,
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -72,6 +73,7 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
           ModifiedByEmail: default-user@example.com
         },
         Description: Referendum gegen das Verbot-updated,
+        DescriptionLower: referendum gegen das verbot von digitalen weckern in schlafzimmern,
         MembersCommittee: Hans Muster, Präsident-updated,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

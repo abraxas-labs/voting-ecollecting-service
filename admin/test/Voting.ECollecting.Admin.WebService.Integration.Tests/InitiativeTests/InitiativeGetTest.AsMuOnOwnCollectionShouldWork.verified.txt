@@ -80,5 +80,6 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
     Description: false,
     CommitteeMembers: false
   },
-  DomainOfInfluenceName: St.Gallen
+  DomainOfInfluenceName: St.Gallen,
+  ElectronicCollectionEnabled: true
 }

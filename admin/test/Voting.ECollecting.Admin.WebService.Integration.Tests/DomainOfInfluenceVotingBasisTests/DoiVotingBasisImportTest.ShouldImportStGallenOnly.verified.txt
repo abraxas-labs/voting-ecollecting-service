@@ -55,6 +55,8 @@
               Street: ,
               ZipCode: ,
               Locality: ,
+              Phone: ,
+              Email: ,
               AuditInfo: {
                 CreatedById: 514963638398779657,
                 CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -69,6 +71,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -84,6 +88,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -99,6 +105,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -126,6 +134,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -151,6 +161,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -176,6 +188,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -191,6 +205,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -261,6 +277,8 @@
                     Street: ,
                     ZipCode: ,
                     Locality: ,
+                    Phone: ,
+                    Email: ,
                     AuditInfo: {
                       CreatedById: 514963638398779657,
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -286,6 +304,8 @@
                     Street: ,
                     ZipCode: ,
                     Locality: ,
+                    Phone: ,
+                    Email: ,
                     AuditInfo: {
                       CreatedById: 514963638398779657,
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -311,6 +331,8 @@
                     Street: ,
                     ZipCode: ,
                     Locality: ,
+                    Phone: ,
+                    Email: ,
                     AuditInfo: {
                       CreatedById: 514963638398779657,
                       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -326,6 +348,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -340,6 +364,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -354,6 +380,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -378,6 +406,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -392,6 +422,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -446,6 +478,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -460,6 +494,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -475,6 +511,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -513,6 +551,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -538,6 +578,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -563,6 +605,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -578,6 +622,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -592,6 +638,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -637,6 +685,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -651,6 +701,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -700,6 +752,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -725,6 +779,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -750,6 +806,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -765,6 +823,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -779,6 +839,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -793,6 +855,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -866,6 +930,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -880,6 +946,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -895,6 +963,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -910,6 +980,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -937,6 +1009,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -962,6 +1036,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -977,6 +1053,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -992,6 +1070,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1065,6 +1145,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1079,6 +1161,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1094,6 +1178,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1109,6 +1195,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1136,6 +1224,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1161,6 +1251,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1176,6 +1268,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1191,6 +1285,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1271,6 +1367,8 @@
                       Street: ,
                       ZipCode: ,
                       Locality: ,
+                      Phone: ,
+                      Email: ,
                       AuditInfo: {
                         CreatedById: 514963638398779657,
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1296,6 +1394,8 @@
                       Street: ,
                       ZipCode: ,
                       Locality: ,
+                      Phone: ,
+                      Email: ,
                       AuditInfo: {
                         CreatedById: 514963638398779657,
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1321,6 +1421,8 @@
                       Street: ,
                       ZipCode: ,
                       Locality: ,
+                      Phone: ,
+                      Email: ,
                       AuditInfo: {
                         CreatedById: 514963638398779657,
                         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1336,6 +1438,8 @@
                   Street: ,
                   ZipCode: ,
                   Locality: ,
+                  Phone: ,
+                  Email: ,
                   AuditInfo: {
                     CreatedById: 514963638398779657,
                     CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1350,6 +1454,8 @@
               Street: ,
               ZipCode: ,
               Locality: ,
+              Phone: ,
+              Email: ,
               AuditInfo: {
                 CreatedById: 514963638398779657,
                 CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1364,6 +1470,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1378,6 +1486,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1392,6 +1502,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1465,6 +1577,8 @@
                 Street: ,
                 ZipCode: ,
                 Locality: ,
+                Phone: ,
+                Email: ,
                 AuditInfo: {
                   CreatedById: 514963638398779657,
                   CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1479,6 +1593,8 @@
             Street: ,
             ZipCode: ,
             Locality: ,
+            Phone: ,
+            Email: ,
             AuditInfo: {
               CreatedById: 514963638398779657,
               CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1494,6 +1610,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1509,6 +1627,8 @@
         Street: ,
         ZipCode: ,
         Locality: ,
+        Phone: ,
+        Email: ,
         AuditInfo: {
           CreatedById: 514963638398779657,
           CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1536,6 +1656,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1561,6 +1683,8 @@
           Street: ,
           ZipCode: ,
           Locality: ,
+          Phone: ,
+          Email: ,
           AuditInfo: {
             CreatedById: 514963638398779657,
             CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1576,6 +1700,8 @@
       Street: ,
       ZipCode: ,
       Locality: ,
+      Phone: ,
+      Email: ,
       AuditInfo: {
         CreatedById: 514963638398779657,
         CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,
@@ -1591,6 +1717,8 @@
     Street: ,
     ZipCode: ,
     Locality: ,
+    Phone: ,
+    Email: ,
     AuditInfo: {
       CreatedById: 514963638398779657,
       CreatedByName: STA-VOTING-ECOLLECTING-ADMIN,

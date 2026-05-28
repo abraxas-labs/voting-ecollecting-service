@@ -82,7 +82,8 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: St.Gallen
+      DomainOfInfluenceName: St.Gallen,
+      ElectronicCollectionEnabled: true
     }
   ]
 }

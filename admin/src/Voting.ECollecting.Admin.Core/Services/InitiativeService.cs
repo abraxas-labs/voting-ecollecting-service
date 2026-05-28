@@ -4,12 +4,12 @@
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
-using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Extensions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
@@ -19,6 +19,7 @@ using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
 using Voting.ECollecting.Shared.Abstractions.Core.Services;
 using Voting.ECollecting.Shared.Abstractions.Core.Services.Documents;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
@@ -36,11 +37,14 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class InitiativeService : IInitiativeService
 {
+    private const string DescriptionUniqueConstraintName = "IX_Collections_DescriptionLower_Bfs_DecreeId";
+
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
     private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
     private readonly IStatisticalDataCsvGenerator _statisticalDataCsvGenerator;
     private readonly IStatisticalDataTimeLapseCsvGenerator _statisticalDataTimeLapseCsvGenerator;
+    private readonly DomainOfInfluenceService _domainOfInfluenceService;
     private readonly IDomainOfInfluenceService _coreDomainOfInfluenceService;
     private readonly IOfficialJournalPublicationProtocolGenerator _officialJournalPublicationProtocolGenerator;
     private readonly IElectronicSignaturesProtocolGenerator _electronicSignaturesProtocolGenerator;
@@ -51,7 +55,6 @@ public class InitiativeService : IInitiativeService
     private readonly ISecondFactorTransactionService _secondFactorTransactionService;
     private readonly CollectionCryptoService _collectionCryptoService;
     private readonly IUserNotificationService _userNotificationService;
-    private readonly DomainOfInfluenceService _domainOfInfluenceService;
     private readonly ICollectionMessageRepository _collectionMessageRepository;
 
     public InitiativeService(
@@ -70,8 +73,8 @@ public class InitiativeService : IInitiativeService
         ISecondFactorTransactionService secondFactorTransactionService,
         IUserNotificationService userNotificationService,
         CollectionCryptoService collectionCryptoService,
-        DomainOfInfluenceService domainOfInfluenceService,
-        ICollectionMessageRepository collectionMessageRepository)
+        ICollectionMessageRepository collectionMessageRepository,
+        DomainOfInfluenceService domainOfInfluenceService)
     {
         _initiativeRepository = initiativeRepository;
         _timeProvider = timeProvider;
@@ -88,8 +91,8 @@ public class InitiativeService : IInitiativeService
         _secondFactorTransactionService = secondFactorTransactionService;
         _userNotificationService = userNotificationService;
         _collectionCryptoService = collectionCryptoService;
-        _domainOfInfluenceService = domainOfInfluenceService;
         _collectionMessageRepository = collectionMessageRepository;
+        _domainOfInfluenceService = domainOfInfluenceService;
     }
 
     public Task<List<InitiativeSubTypeEntity>> ListSubTypes()
@@ -118,7 +121,7 @@ public class InitiativeService : IInitiativeService
             query = query.Where(x => x.Bfs == bfs);
         }
 
-        var initiativesByDoiTypes = await query
+        var initiativeEntities = await query
             .Include(x => x.CollectionCount)
             .Include(x => x.Permissions)
             .IncludeMunicipalities(_permissionService.AclBfsLists)
@@ -132,22 +135,23 @@ public class InitiativeService : IInitiativeService
             .GroupBy(x => x.DomainOfInfluenceType)
             .ToDictionaryAsync(x => x.Key!.Value, x => x.ToList());
 
+        var initiatives = initiativeEntities
+            .ToDictionary(x => x.Key, x => Mapper.MapToInitiatives(x.Value));
+
+        var allInitiatives = initiatives.Values.SelectMany(y => y).ToList();
+        allInitiatives.SetPeriodStates(today);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(allInitiatives);
+
+        foreach (var initiative in allInitiatives)
+        {
+            _collectionService.LoadPermission(initiative);
+            _collectionService.SetCollectionCount(initiative);
+        }
+
         return Enum.GetValues<DomainOfInfluenceType>()
             .Where(x => x != DomainOfInfluenceType.Unspecified)
             .OrderBy(x => x)
-            .ToDictionary(x => x, x =>
-            {
-                var initiatives = Mapper.MapToInitiatives(initiativesByDoiTypes.GetValueOrDefault(x) ?? []);
-                initiatives.SetPeriodStates(today);
-
-                foreach (var initiative in initiatives)
-                {
-                    _collectionService.LoadPermission(initiative);
-                    _collectionService.SetCollectionCount(initiative);
-                }
-
-                return initiatives;
-            });
+            .ToDictionary(x => x, x => initiatives.GetValueOrDefault(x) ?? []);
     }
 
     public async Task<Initiative> Get(Guid id)
@@ -168,7 +172,7 @@ public class InitiativeService : IInitiativeService
         initiative.SetPeriodState(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermission(initiative);
         _collectionService.SetCollectionCount(initiative);
-        initiative.DomainOfInfluenceName = await _domainOfInfluenceService.LoadDomainOfInfluenceName(initiative.DomainOfInfluenceType!.Value, initiative.Bfs!);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(initiative);
         return initiative;
     }
 
@@ -320,7 +324,15 @@ public class InitiativeService : IInitiativeService
 
         await ValidateGeneralInformation(initiative);
         _permissionService.SetModified(initiative);
-        await _dataContext.SaveChangesAsync();
+
+        try
+        {
+            await _dataContext.SaveChangesAsync();
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
 
         if (initiative.State != CollectionState.PreRecorded)
         {
@@ -489,7 +501,6 @@ public class InitiativeService : IInitiativeService
 
         initiative.Bfs = bfs;
 
-        await ValidateUnique(initiative, bfs);
         await ValidateSubType(initiative);
     }
 
@@ -518,23 +529,6 @@ public class InitiativeService : IInitiativeService
         }
 
         return changedFields;
-    }
-
-    private async Task ValidateUnique(InitiativeEntity initiative, string bfs)
-    {
-        // this is not a mission-critical check,
-        // therefore no need to do it race-condition safe.
-        // case-insensitive comparison is not yet supported by npgsql (CA1862)
-        // since there should only be very few initiatives per bfs,
-        // this should not be a performance issue.
-        var existsAlready = await _initiativeRepository.Query()
-            .WhereCanEdit(_permissionService)
-            .AnyAsync(x => x.Id != initiative.Id && x.Bfs == bfs && EF.Functions.ILike(x.Description, initiative.Description));
-
-        if (existsAlready)
-        {
-            throw new CollectionAlreadyExistsException();
-        }
     }
 
     private async Task ValidateSubType(InitiativeEntity initiative)

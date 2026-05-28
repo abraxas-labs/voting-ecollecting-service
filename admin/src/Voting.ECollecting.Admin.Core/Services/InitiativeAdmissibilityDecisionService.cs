@@ -10,10 +10,9 @@ using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
-using Voting.ECollecting.Admin.Core.Resources;
 using Voting.ECollecting.Admin.Domain.Models;
 using Voting.ECollecting.Admin.Domain.Queries;
-using Voting.ECollecting.Shared.Abstractions.Adapter.Data.Repositories;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
@@ -25,6 +24,7 @@ namespace Voting.ECollecting.Admin.Core.Services;
 public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDecisionService
 {
     private const string GovernmentDecisionNumberUniqueConstraintName = "IX_Collections_GovernmentDecisionNumberLower";
+    private const string DescriptionUniqueConstraintName = "IX_Collections_DescriptionLower_Bfs_DecreeId";
 
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IPermissionService _permissionService;
@@ -32,7 +32,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
     private readonly CollectionService _collectionService;
     private readonly IDataContext _dataContext;
     private readonly InitiativeService _initiativeService;
-    private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
+    private readonly DomainOfInfluenceService _domainOfInfluenceService;
 
     public InitiativeAdmissibilityDecisionService(
         IInitiativeRepository initiativeRepository,
@@ -41,7 +41,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         CollectionService collectionService,
         IDataContext dataContext,
         InitiativeService initiativeService,
-        IDomainOfInfluenceRepository domainOfInfluenceRepository)
+        DomainOfInfluenceService domainOfInfluenceService)
     {
         _initiativeRepository = initiativeRepository;
         _permissionService = permissionService;
@@ -49,7 +49,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         _collectionService = collectionService;
         _dataContext = dataContext;
         _initiativeService = initiativeService;
-        _domainOfInfluenceRepository = domainOfInfluenceRepository;
+        _domainOfInfluenceService = domainOfInfluenceService;
     }
 
     public async Task<List<Initiative>> ListEligibleForAdmissibilityDecision()
@@ -63,6 +63,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         var initiatives = Mapper.MapToInitiatives(entities);
         initiatives.SetPeriodStates(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermissions(initiatives);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(initiatives);
         return initiatives;
     }
 
@@ -79,7 +80,7 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         var initiatives = Mapper.MapToInitiatives(entities);
         initiatives.SetPeriodStates(_timeProvider.GetUtcTodayDateOnly());
         _collectionService.LoadPermissions(initiatives);
-        await LoadDomainOfInfluenceNames(initiatives);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(initiatives);
         return initiatives;
     }
 
@@ -146,6 +147,10 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         {
             throw new DuplicatedGovernmentDecisionNumberException(initiative.GovernmentDecisionNumber);
         }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
 
         return initiative.Id;
     }
@@ -210,25 +215,6 @@ public class InitiativeAdmissibilityDecisionService : IInitiativeAdmissibilityDe
         if (originalState != initiative.State)
         {
             await _collectionService.AddStateChangedMessage(initiative);
-        }
-    }
-
-    private async Task LoadDomainOfInfluenceNames(List<Initiative> initiatives)
-    {
-        var domainOfInfluenceNamesByBfs = await _domainOfInfluenceRepository
-            .Query()
-            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == DomainOfInfluenceType.Mu)
-            .GroupBy(x => x.Bfs)
-            .ToDictionaryAsync(x => x.Key!, x => x.First().Name);
-        foreach (var initiative in initiatives)
-        {
-            initiative.DomainOfInfluenceName = initiative.DomainOfInfluenceType switch
-            {
-                DomainOfInfluenceType.Mu => domainOfInfluenceNamesByBfs[initiative.Bfs!],
-                DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
-                DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
-                _ => throw new InvalidOperationException($"Unexpected {nameof(DomainOfInfluenceType)}: {initiative.DomainOfInfluenceType}"),
-            };
         }
     }
 }

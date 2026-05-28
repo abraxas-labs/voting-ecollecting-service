@@ -60,6 +60,7 @@ Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Caféku
           CommitteeMembers: false
         },
         SecureIdNumber: AAAAAAAA66AA,
+        DescriptionLower: für gemütliche treffpunkte in der stadt (café-initiative),
         MinSignatureCount: 1000,
         DomainOfInfluenceType: 3,
         IntegritySignatureInfo: {
@@ -117,6 +118,7 @@ Sie kann Projekte unterstützen, die lokale Produkte einbeziehen und die Caféku
           CommitteeMembers: false
         },
         SecureIdNumber: AAAAAAAA66AA,
+        DescriptionLower: für gemütliche treffpunkte in der stadt (café-initiative),
         MinSignatureCount: 1000,
         DomainOfInfluenceType: 3,
         IntegritySignatureInfo: {

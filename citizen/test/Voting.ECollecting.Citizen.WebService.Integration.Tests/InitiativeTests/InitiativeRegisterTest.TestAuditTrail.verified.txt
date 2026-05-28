@@ -60,6 +60,7 @@ Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale volksfeste (volksfest-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {
@@ -137,6 +138,7 @@ Er achtet auf Einbezug lokaler Traditionen und regionale Vielfalt.,
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für kantonale volksfeste (volksfest-initiative),
         MinSignatureCount: 4000,
         DomainOfInfluenceType: 2,
         IntegritySignatureInfo: {

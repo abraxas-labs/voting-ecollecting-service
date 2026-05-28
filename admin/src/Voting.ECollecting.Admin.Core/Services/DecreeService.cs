@@ -4,11 +4,13 @@
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.CompilerServices;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data;
 using Voting.ECollecting.Admin.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Admin.Abstractions.Core.Models;
 using Voting.ECollecting.Admin.Abstractions.Core.Services;
 using Voting.ECollecting.Admin.Abstractions.Core.Services.Documents;
+using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Core.Mappings;
 using Voting.ECollecting.Admin.Core.Permissions;
 using Voting.ECollecting.Admin.Core.Resources;
@@ -19,7 +21,6 @@ using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
 using Voting.ECollecting.Shared.Domain.Models;
-using Voting.ECollecting.Shared.Domain.Queries;
 using Voting.Lib.Common.Files;
 using Voting.Lib.Database.Postgres.Locking;
 using Voting.Lib.Iam.SecondFactor.Models;
@@ -33,6 +34,8 @@ namespace Voting.ECollecting.Admin.Core.Services;
 
 public class DecreeService : IDecreeService
 {
+    private const string DescriptionUniqueConstraintName = "IX_Decrees_DescriptionLower_Bfs";
+
     private readonly IDecreeRepository _decreeRepository;
     private readonly IReferendumRepository _referendumRepository;
     private readonly CollectionService _collectionService;
@@ -88,14 +91,21 @@ public class DecreeService : IDecreeService
 
     public async Task<Decree> Create(Decree decree)
     {
-        await SetBfsAndSignatureCounts(decree);
+        await SetSignatureCountsAndDoiInfos(decree);
         decree.State = DecreeState.CollectionApplicable;
 
         SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcTodayDateOnly());
         ValidateDecree(decree);
         _permissionService.SetCreated(decree);
-        await _decreeRepository.Create(decree);
-        decree.DomainOfInfluenceName = await _domainOfInfluenceService.LoadDomainOfInfluenceName(decree.DomainOfInfluenceType, decree.Bfs);
+        try
+        {
+            await _decreeRepository.Create(decree);
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new DecreeAlreadyExistsException();
+        }
+
         return decree;
     }
 
@@ -110,8 +120,8 @@ public class DecreeService : IDecreeService
             .ThenBy(x => x.Description)
             .ToListAsync();
         var decrees = Mapper.MapToDecrees(decreeEntities);
-        await LoadDomainOfInfluenceNames(decrees);
         SetStates(decrees);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(decrees);
 
         return decrees;
     }
@@ -123,7 +133,7 @@ public class DecreeService : IDecreeService
         var existingDecree = await _decreeRepository.GetByKey(decree.Id)
             ?? throw new EntityNotFoundException(nameof(DecreeEntity), decree.Id);
 
-        await SetBfsAndSignatureCounts(decree);
+        await SetSignatureCountsAndDoiInfos(decree);
         SetPeriodStateAndUserPermissions(decree, _timeProvider.GetUtcTodayDateOnly());
         if (decree.UserPermissions?.CanEdit != true)
         {
@@ -133,17 +143,24 @@ public class DecreeService : IDecreeService
         ValidateDecree(decree);
         _permissionService.SetModified(decree);
 
-        await _decreeRepository.AuditedUpdate(existingDecree, () =>
+        try
         {
-            existingDecree.Description = decree.Description;
-            existingDecree.CollectionStartDate = decree.CollectionStartDate;
-            existingDecree.CollectionEndDate = decree.CollectionEndDate;
-            existingDecree.Link = decree.Link;
-            existingDecree.DomainOfInfluenceType = decree.DomainOfInfluenceType;
-            existingDecree.MinSignatureCount = decree.MinSignatureCount;
-            existingDecree.MaxElectronicSignatureCount = decree.MaxElectronicSignatureCount;
-            existingDecree.AuditInfo = decree.AuditInfo;
-        });
+            await _decreeRepository.AuditedUpdate(existingDecree, () =>
+            {
+                existingDecree.Description = decree.Description;
+                existingDecree.CollectionStartDate = decree.CollectionStartDate;
+                existingDecree.CollectionEndDate = decree.CollectionEndDate;
+                existingDecree.Link = decree.Link;
+                existingDecree.DomainOfInfluenceType = decree.DomainOfInfluenceType;
+                existingDecree.MinSignatureCount = decree.MinSignatureCount;
+                existingDecree.MaxElectronicSignatureCount = decree.MaxElectronicSignatureCount;
+                existingDecree.AuditInfo = decree.AuditInfo;
+            });
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new DecreeAlreadyExistsException();
+        }
 
         await _referendumRepository.AuditedUpdateRange(
             q => q.Where(x => x.DecreeId == decree.Id),
@@ -187,7 +204,7 @@ public class DecreeService : IDecreeService
             referendum.SetPeriodState(today);
         }
 
-        decree.DomainOfInfluenceName = await _domainOfInfluenceService.LoadDomainOfInfluenceName(decree.DomainOfInfluenceType, decree.Bfs);
+        await _domainOfInfluenceService.LoadDomainOfInfluenceInfos(decree);
 
         var referendumById = decree.Referendums.ToDictionary(r => r.Id);
         var referendums = decreeEntity.Collections
@@ -303,7 +320,6 @@ public class DecreeService : IDecreeService
                              .AsTracking()
                              .Include(x => x.Collections)
                              .ThenInclude(x => x.Permissions)
-                             .WhereInCollectionOrExpired(_timeProvider.GetUtcTodayDateOnly())
                              .FirstOrDefaultAsync(x => x.Id == id)
                          ?? throw new EntityNotFoundException(typeof(InitiativeEntity), id);
 
@@ -397,9 +413,9 @@ public class DecreeService : IDecreeService
 
     private void ValidateDecree(Decree decree)
     {
-        if (decree.CollectionStartDate < _timeProvider.GetUtcTodayDateOnly())
+        if (decree.CollectionEndDate < _timeProvider.GetUtcTodayDateOnly())
         {
-            throw new ValidationException("Start date can't be in the past.");
+            throw new ValidationException("End date can't be in the past.");
         }
 
         if (decree.CollectionStartDate >= decree.CollectionEndDate)
@@ -421,7 +437,7 @@ public class DecreeService : IDecreeService
         }
     }
 
-    private async Task SetBfsAndSignatureCounts(Decree decree)
+    private async Task SetSignatureCountsAndDoiInfos(Decree decree)
     {
         // if this inheritance logic is adjusted, also adjust the Admin DomainOfInfluenceService.List
         var doi = await _domainOfInfluenceRepository.GetSingleByType(_permissionService.AclBfsLists, decree.DomainOfInfluenceType);
@@ -435,6 +451,7 @@ public class DecreeService : IDecreeService
         decree.Bfs = doi.Bfs!;
         decree.MinSignatureCount = doi.ReferendumMinSignatureCount.GetValueOrDefault();
         decree.MaxElectronicSignatureCount = quorumDoi.GetMaxReferendumElectronicSignatureCount(decree.MinSignatureCount);
+        _domainOfInfluenceService.LoadDomainOfInfluenceInfos(decree, doi);
     }
 
     private async Task<SecondFactorTransactionActionId> CreateDeleteActionId(Guid decreeId, bool forUpdate)
@@ -452,25 +469,6 @@ public class DecreeService : IDecreeService
         return SecondFactorTransactionActionId.Create(
             SecondFactorTransactionActionTypes.DeleteDecree,
             collection.Id);
-    }
-
-    private async Task LoadDomainOfInfluenceNames(List<Decree> decrees)
-    {
-        var domainOfInfluenceNamesByBfs = await _domainOfInfluenceRepository
-            .Query()
-            .Where(x => !string.IsNullOrWhiteSpace(x.Bfs) && x.Type == DomainOfInfluenceType.Mu)
-            .GroupBy(x => x.Bfs)
-            .ToDictionaryAsync(x => x.Key!, x => x.First().Name);
-        foreach (var decree in decrees)
-        {
-            decree.DomainOfInfluenceName = decree.DomainOfInfluenceType switch
-            {
-                DomainOfInfluenceType.Mu => domainOfInfluenceNamesByBfs[decree.Bfs],
-                DomainOfInfluenceType.Ct => Strings.DomainOfInfluenceName_Ct,
-                DomainOfInfluenceType.Ch => Strings.DomainOfInfluenceName_Ch,
-                _ => throw new InvalidOperationException($"Unexpected {nameof(DomainOfInfluenceType)}: {decree.DomainOfInfluenceType}"),
-            };
-        }
     }
 
     private async IAsyncEnumerable<IFile> GenerateFiles(DecreeEntity decree, [EnumeratorCancellation] CancellationToken cancellationToken)

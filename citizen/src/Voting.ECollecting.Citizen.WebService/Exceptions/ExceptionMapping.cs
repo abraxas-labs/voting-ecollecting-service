@@ -39,6 +39,7 @@ internal readonly struct ExceptionMapping
         {
             CollectionAlreadySignedException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
             DecreeAlreadySignedException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
+            CollectionAlreadyExistsException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
             CollectionMaxElectronicSignatureCountReachedException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
             DecreeMaxElectronicSignatureCountReachedException => new ExceptionMapping(StatusCode.FailedPrecondition, StatusCodes.Status409Conflict, true),
             PersonOrVotingRightNotFoundException => new ExceptionMapping(StatusCode.InvalidArgument, StatusCodes.Status400BadRequest, true),

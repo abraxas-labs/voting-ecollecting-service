@@ -90,7 +90,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
       Description: false,
       CommitteeMembers: false
     },
-    DomainOfInfluenceName: St. Gallen
+    DomainOfInfluenceName: St. Gallen,
+    ElectronicCollectionEnabled: true
   },
   userNotifications: [
     {

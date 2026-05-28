@@ -10,6 +10,7 @@ using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
 using Voting.ECollecting.Shared.Test.MockedData;
@@ -190,9 +191,19 @@ public class InitiativeCreateWithAdmissibilityDecisionTest : BaseGrpcTest<Initia
     {
         await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest());
         await AssertStatus(
-            async () => await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest()),
+            async () => await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = "123456")),
             StatusCode.FailedPrecondition,
             nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentBfsShouldWork()
+    {
+        var responseSg = await MuSgStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest());
+        var initiativeSg = await MuSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = responseSg.Id });
+        var responseGoldach = await MuGoldachStammdatenverwalterClient.CreateWithAdmissibilityDecisionAsync(NewValidRequest(x => x.GovernmentDecisionNumber = "123456"));
+        var initiativeGoldach = await MuGoldachStammdatenverwalterClient.GetAsync(new GetInitiativeRequest { Id = responseGoldach.Id });
+        initiativeSg.Collection.Description.Should().Be(initiativeGoldach.Collection.Description);
     }
 
     [Fact]

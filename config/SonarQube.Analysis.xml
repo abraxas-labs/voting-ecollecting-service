@@ -20,4 +20,8 @@
   <Property Name="sonar.exclusions">
     **/*Exception.cs,**/Migrations/*.cs,**/appsettings.*.json,tools/Voting.ECollecting.DataSeeder/**,tools/Voting.ECollecting.DataSeeder.Data/**
   </Property>
+  <!-- Exclude from code duplication analysis since these files tend to be similar in each of the portals -->
+  <Property Name="sonar.cpd.exclusions">
+    **/Startup.cs,**/Program.cs,admin/src/Voting.ECollecting.Admin.WebService/Configuration/**,citizen/src/Voting.ECollecting.Citizen.WebService/Configuration/**
+  </Property>
 </SonarQubeAnalysisProperties>

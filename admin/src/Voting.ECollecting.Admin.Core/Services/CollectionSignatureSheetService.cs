@@ -452,14 +452,19 @@ public class CollectionSignatureSheetService : ICollectionSignatureSheetService
             throw new EntityNotFoundException(nameof(CollectionSignatureSheetEntity), sheetId);
         }
 
-        var citizenLogEntities = sheet.Citizens.Select(x => x.Log!);
+        var citizenEntries = sheet.Citizens
+            .Where(x => x.Log != null)
+            .OrderBy(x => x.CollectionDateTime)
+            .ThenBy(x => x.Id)
+            .ToList();
+        var citizenLogEntities = citizenEntries.ConvertAll(x => x.Log!);
         var decryptedIds = await _cryptoService.DecryptStimmregisterIds(sheet.CollectionMunicipality!.Collection!, citizenLogEntities);
+        var citizenOrder = decryptedIds
+            .Select((registerId, index) => new { registerId, index })
+            .ToDictionary(x => x.registerId, x => x.index);
 
         var citizens = await _stimmregister.GetPersonInfos(sheet.CollectionMunicipality!.Bfs, decryptedIds.ToHashSet(), sheet.ReceivedAt.ToDateTime(TimeOnly.MinValue, DateTimeKind.Utc));
-        return citizens
-            .OrderBy(x => x.OfficialName)
-            .ThenBy(x => x.FirstName)
-            .ThenBy(x => x.DateOfBirth);
+        return citizens.OrderBy(x => citizenOrder[x.RegisterId]);
     }
 
     public async Task AddCitizen(CollectionType collectionType, Guid collectionId, Guid sheetId, Guid personRegisterId)

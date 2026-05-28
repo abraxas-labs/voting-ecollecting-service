@@ -61,6 +61,7 @@ public class MigrationDataContext(DbContextOptions<MigrationDataContext> options
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        modelBuilder.HasDefaultSchema(MigrationConstants.DatabaseSchema);
         DbContextAccessor.DbContext = this;
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(IntegritySignatureEntityModelBuilder).Assembly);
     }

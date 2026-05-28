@@ -21,4 +21,6 @@ public class Initiative : InitiativeEntity, ICollection
     public NullableCollectionCount? AttestedCollectionCount { get; set; }
 
     public string DomainOfInfluenceName { get; set; } = string.Empty;
+
+    public bool ElectronicCollectionEnabled { get; set; }
 }

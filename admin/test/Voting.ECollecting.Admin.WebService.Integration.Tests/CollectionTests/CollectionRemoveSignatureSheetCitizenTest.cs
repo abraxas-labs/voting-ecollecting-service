@@ -176,7 +176,7 @@ public class CollectionRemoveSignatureSheetCitizenTest : BaseGrpcTest<Collection
         {
             CollectionId = InitiativesCh.IdEnabledForCollectionCollecting,
             SignatureSheetId = _initiativeSgSheet1Guid.ToString(),
-            PersonRegisterId = CollectionCitizens.RegisterIdSgSheet1.ToString(),
+            PersonRegisterId = CollectionCitizensSta.RegisterIdSgSheet1.ToString(),
         };
 
         customizer?.Invoke(request);
@@ -189,7 +189,7 @@ public class CollectionRemoveSignatureSheetCitizenTest : BaseGrpcTest<Collection
         {
             CollectionId = ReferendumsCtStGallen.IdInCollectionEnabledForCollection,
             SignatureSheetId = _referendumSgSheet1Guid.ToString(),
-            PersonRegisterId = CollectionCitizens.RegisterIdCollection2SgSheet1.ToString(),
+            PersonRegisterId = CollectionCitizensSta.RegisterIdCollection2SgSheet1.ToString(),
         };
 
         customizer?.Invoke(request);

@@ -62,6 +62,7 @@ Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren 
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_Encryption12,
+        DescriptionLower: für die förderung der guten laune (humorinitiative),
         CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
         CollectionStartDate: 2019-12-10,
@@ -143,6 +144,7 @@ Der Bund kann jährlich einen Preis für einen besonderen Beitrag zum Animieren 
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_fb187886-3a1b-4457-829c-9686a7319f5a_Encryption12,
+        DescriptionLower: für die förderung der guten laune (humorinitiative),
         CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
         CameNotAboutReason: 2,

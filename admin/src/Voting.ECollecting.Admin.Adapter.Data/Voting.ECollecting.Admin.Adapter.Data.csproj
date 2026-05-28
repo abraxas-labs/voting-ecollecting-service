@@ -7,7 +7,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Abstractions.Adapter.Data\Voting.ECollecting.Shared.Abstractions.Adapter.Data.csproj" />
     <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Adapter.Data\Voting.ECollecting.Shared.Adapter.Data.csproj" />
     <ProjectReference Include="..\..\..\shared\src\Voting.ECollecting.Shared.Domain\Voting.ECollecting.Shared.Domain.csproj" />
     <ProjectReference Include="..\Voting.ECollecting.Admin.Abstractions.Adapter.Data\Voting.ECollecting.Admin.Abstractions.Adapter.Data.csproj" />

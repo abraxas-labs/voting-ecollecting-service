@@ -4,6 +4,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Data;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.Data.Repositories;
 using Voting.ECollecting.Citizen.Abstractions.Adapter.ELogin;
@@ -17,6 +18,7 @@ using Voting.ECollecting.Citizen.Core.Services.Validation;
 using Voting.ECollecting.Citizen.Domain.Exceptions;
 using Voting.ECollecting.Citizen.Domain.Models;
 using Voting.ECollecting.Citizen.Domain.Queries;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.Exceptions;
@@ -29,6 +31,8 @@ namespace Voting.ECollecting.Citizen.Core.Services;
 
 public class InitiativeService : IInitiativeService
 {
+    private const string DescriptionUniqueConstraintName = "IX_Collections_DescriptionLower_Bfs_DecreeId";
+
     private readonly IInitiativeSubTypeRepository _initiativeSubTypeRepository;
     private readonly IInitiativeRepository _initiativeRepository;
     private readonly IDomainOfInfluenceRepository _domainOfInfluenceRepository;
@@ -151,7 +155,7 @@ public class InitiativeService : IInitiativeService
 
             if (!domainOfInfluence.ECollectingEnabled)
             {
-                throw new ValidationException("Domain of Influence has eCollecting not enabled.");
+                throw new ValidationException("Domain of Influence has e-collecting not enabled.");
             }
 
             var quorumDoi = await _domainOfInfluenceRepository.GetSingleByType(DomainOfInfluenceType.Ct);
@@ -162,7 +166,16 @@ public class InitiativeService : IInitiativeService
         _permissionService.SetCreated(initiative);
         _permissionService.SetCreated(initiative.CollectionCount);
         _permissionService.SetCreated(ownerPermission);
-        await _initiativeRepository.Create(initiative);
+
+        try
+        {
+            await _initiativeRepository.Create(initiative);
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
+
         return initiative.Id;
     }
 
@@ -258,30 +271,37 @@ public class InitiativeService : IInitiativeService
             throw new CannotEditLockedFieldException(nameof(existingInitiative.SubTypeId));
         }
 
-        await _initiativeRepository.AuditedUpdate(existingInitiative, async () =>
+        try
         {
-            existingInitiative.SubTypeId = subTypeId;
-            existingInitiative.Description = description;
-            existingInitiative.Wording = wording;
-            existingInitiative.Reason = reason;
-            existingInitiative.Address = address;
-            existingInitiative.Link = link;
-
-            ValidateInitiative(existingInitiative);
-
-            if (existingInitiative.DomainOfInfluenceType is DomainOfInfluenceType.Ch or DomainOfInfluenceType.Ct)
+            await _initiativeRepository.AuditedUpdate(existingInitiative, async () =>
             {
-                var hasSubType = await _initiativeSubTypeRepository.Query()
-                                  .Where(x => x.Id == existingInitiative.SubTypeId!.Value && x.DomainOfInfluenceType == existingInitiative.DomainOfInfluenceType)
-                                  .AnyAsync();
-                if (!hasSubType)
-                {
-                    throw new EntityNotFoundException(nameof(InitiativeSubTypeEntity), existingInitiative.SubTypeId!.Value);
-                }
-            }
+                existingInitiative.SubTypeId = subTypeId;
+                existingInitiative.Description = description;
+                existingInitiative.Wording = wording;
+                existingInitiative.Reason = reason;
+                existingInitiative.Address = address;
+                existingInitiative.Link = link;
 
-            _permissionService.SetModified(existingInitiative);
-        });
+                ValidateInitiative(existingInitiative);
+
+                if (existingInitiative.DomainOfInfluenceType is DomainOfInfluenceType.Ch or DomainOfInfluenceType.Ct)
+                {
+                    var hasSubType = await _initiativeSubTypeRepository.Query()
+                        .Where(x => x.Id == existingInitiative.SubTypeId!.Value && x.DomainOfInfluenceType == existingInitiative.DomainOfInfluenceType)
+                        .AnyAsync();
+                    if (!hasSubType)
+                    {
+                        throw new EntityNotFoundException(nameof(InitiativeSubTypeEntity), existingInitiative.SubTypeId!.Value);
+                    }
+                }
+
+                _permissionService.SetModified(existingInitiative);
+            });
+        }
+        catch (Exception e) when (e.InnerException is PostgresException { ConstraintName: DescriptionUniqueConstraintName })
+        {
+            throw new CollectionAlreadyExistsException();
+        }
     }
 
     public async Task Submit(Guid id)

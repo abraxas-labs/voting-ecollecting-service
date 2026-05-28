@@ -63,6 +63,7 @@ Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Trad
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
+        DescriptionLower: für schweizer brettspiele (brettspiel-initiative),
         CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
         CollectionStartDate: 2019-12-10,
@@ -145,6 +146,7 @@ Der Bund kann einen jährlichen nationalen Brettspiel-Tag festlegen, um die Trad
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_e673c49a-d6cb-4092-9c53-b519c7d9a5b6_Encryption12,
+        DescriptionLower: für schweizer brettspiele (brettspiel-initiative),
         CollectionEndDate: 2020-06-10,
         MinSignatureCount: 100000,
         CollectionStartDate: 2019-12-10,

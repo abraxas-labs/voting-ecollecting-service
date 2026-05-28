@@ -9,8 +9,17 @@ namespace Voting.ECollecting.Shared.Domain.ModelBuilders;
 
 public class DecreeModelBuilder : IEntityTypeConfiguration<DecreeEntity>
 {
+    private const string DescriptionLowerPropertyName = "DescriptionLower";
+
     public void Configure(EntityTypeBuilder<DecreeEntity> builder)
     {
         IntegritySignatureEntityModelBuilder.Configure(builder);
+
+        builder.Property<string>(DescriptionLowerPropertyName)
+            .HasComputedColumnSql($"lower(\"{nameof(DecreeEntity.Description)}\")", stored: true);
+
+        builder
+            .HasIndex(DescriptionLowerPropertyName, nameof(DecreeEntity.Bfs))
+            .IsUnique();
     }
 }

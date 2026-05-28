@@ -77,5 +77,6 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
     Description: false,
     CommitteeMembers: false
   },
-  DomainOfInfluenceName: St.Gallen
+  DomainOfInfluenceName: St.Gallen,
+  ElectronicCollectionEnabled: true
 }

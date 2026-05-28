@@ -61,5 +61,6 @@
     Description: true,
     CommitteeMembers: false
   },
-  DomainOfInfluenceName: Schweiz
+  DomainOfInfluenceName: Schweiz,
+  ElectronicCollectionEnabled: true
 }

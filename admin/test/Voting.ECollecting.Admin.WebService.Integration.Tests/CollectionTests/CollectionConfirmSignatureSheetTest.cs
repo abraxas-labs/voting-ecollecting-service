@@ -395,7 +395,7 @@ public class CollectionConfirmSignatureSheetTest : BaseGrpcTest<CollectionSignat
                 VotingStimmregisterAdapterMock.VotingRightPerson8.RegisterId.ToString(),
                 VotingStimmregisterAdapterMock.VotingRightPerson10.RegisterId.ToString(),
             },
-            RemovedPersonRegisterIds = { CollectionCitizens.RegisterIdSgSheet3.ToString() },
+            RemovedPersonRegisterIds = { CollectionCitizensSta.RegisterIdSgSheet3.ToString() },
             SignatureCountTotal = 55,
         };
     }

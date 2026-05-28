@@ -8,6 +8,8 @@ namespace Voting.ECollecting.Admin.Domain.Models;
 
 public class Referendum : ReferendumEntity, ICollection
 {
+    public new Decree? Decree { get; set; }
+
     public CollectionUserPermissions? UserPermissions { get; set; }
 
     // use another name to ensure this never gets mapped automatically by accident.

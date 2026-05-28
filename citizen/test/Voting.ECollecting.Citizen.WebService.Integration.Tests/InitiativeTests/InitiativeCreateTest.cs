@@ -10,6 +10,7 @@ using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
 using Voting.ECollecting.Proto.Shared.V1.Enums;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
 using Voting.ECollecting.Shared.Test.MockedData;
@@ -29,7 +30,7 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.DomainOfInfluences);
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives.WithInitiatives(InitiativesCh.GuidInPreparation));
     }
 
     [Fact]
@@ -140,9 +141,44 @@ public class InitiativeCreateTest : BaseGrpcTest<InitiativeService.InitiativeSer
     }
 
     [Fact]
+    public async Task TestMuInitiativeWithInvalidMunicipalityIdShouldThrow()
+    {
+        await AssertStatus(
+            async () => await _client.CreateAsync(NewValidMuRequest(r => r.Bfs = "invalid")),
+            StatusCode.InvalidArgument);
+    }
+
+    [Fact]
+    public async Task TestMuInitiativeWithECollectingDisabledMunicipalityShouldThrow()
+    {
+        await AssertStatus(
+            async () => await _client.CreateAsync(NewValidMuRequest(r => r.Bfs = Bfs.MunicipalityBergSG)),
+            StatusCode.InvalidArgument);
+    }
+
+    [Fact]
     public Task UnauthenticatedShouldFail()
     {
         return AssertStatus(async () => await Client.CreateAsync(new CreateInitiativeRequest()), StatusCode.Unauthenticated);
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingInitiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCh.GuidInPreparation));
+        await AssertStatus(
+            async () => await _client.CreateAsync(NewValidChRequest(x => x.Description = existingInitiative.Description)),
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentBfsShouldWork()
+    {
+        var existingInitiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCh.GuidInPreparation));
+        var response = await _client.CreateAsync(NewValidCtRequest(x => x.Description = existingInitiative.Description));
+        var initiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == Guid.Parse(response.Id)));
+        initiative.Description.Should().Be(existingInitiative.Description);
     }
 
     private CreateInitiativeRequest NewValidChRequest(Action<CreateInitiativeRequest>? customizer = null)

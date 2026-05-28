@@ -3,9 +3,11 @@
 
 using System.ComponentModel.DataAnnotations;
 using Abraxas.Voting.Ecollecting.Shared.V1.Models;
+using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
 using Microsoft.EntityFrameworkCore;
+using Voting.ECollecting.Admin.Core.Exceptions;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
@@ -76,17 +78,17 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     }
 
     [Fact]
-    public async Task TestAsCtTenantWhenInvalidStartDateShouldThrow()
+    public async Task TestAsCtTenantWhenEndDateInThePastShouldThrow()
     {
         var request = NewValidRequest(r =>
-            r.CollectionStartDate = new Date { Day = 05, Month = 05, Year = 2000 });
+            r.CollectionEndDate = new Date { Day = 05, Month = 05, Year = 2000 });
         await AssertStatus(
             async () => await CtSgStammdatenverwalterClient.UpdateAsync(request),
-            StatusCode.NotFound);
+            StatusCode.InvalidArgument);
     }
 
     [Fact]
-    public async Task TestAsCtTenantWhenInvalidEndDateShouldThrow()
+    public async Task TestAsCtTenantWhenEndDateBeforeStartDateShouldThrow()
     {
         var request = NewValidRequest(r =>
             r.CollectionEndDate = new Date { Day = 05, Month = 05, Year = 2024 });
@@ -153,6 +155,25 @@ public class DecreeUpdateTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
             async () => await MuSgStammdatenverwalterClient.UpdateAsync(request),
             StatusCode.InvalidArgument,
             $"{nameof(ValidationException)}: Expected exactly one item for doi type Ct but found none or more than one.");
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingDecree = await RunOnDb(db => db.Decrees.FirstAsync(x => x.Id == DecreesCtStGallen.GuidInPreparationWithReferendum));
+        await AssertStatus(
+            async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = existingDecree.Description)),
+            StatusCode.FailedPrecondition,
+            nameof(DecreeAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentBfsShouldWork()
+    {
+        var existingDecree = await RunOnDb(db => db.Decrees.FirstAsync(x => x.Id == DecreesCh.GuidInCollection));
+        await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = existingDecree.Description));
+        var decree = await RunOnDb(db => db.Decrees.FirstAsync(x => x.Id == DecreesCtStGallen.GuidFutureNoReferendum));
+        decree.Description.Should().Be(existingDecree.Description);
     }
 
     [Fact]

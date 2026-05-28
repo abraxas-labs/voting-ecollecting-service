@@ -26,6 +26,7 @@
       CanDelete: false
     },
     State: CollectionApplicable,
-    DomainOfInfluenceName: Schweiz
+    DomainOfInfluenceName: Schweiz,
+    ElectronicCollectionEnabled: true
   }
 }

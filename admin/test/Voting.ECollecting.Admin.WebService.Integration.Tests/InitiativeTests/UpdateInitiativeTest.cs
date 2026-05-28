@@ -2,14 +2,16 @@
 // For license information see LICENSE file
 
 using System.ComponentModel.DataAnnotations;
+using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
-using Voting.ECollecting.Admin.Core.Exceptions;
+using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Domain.ModelBuilders;
@@ -30,6 +32,7 @@ public class UpdateInitiativeTest : BaseGrpcTest<InitiativeService.InitiativeSer
 
         await MockedDataSeeder.Seed(RunScoped, SeederArgs.Initiatives
             .WithInitiatives(
+                InitiativesCh.GuidInPreparation,
                 InitiativesMuStGallen.GuidPreRecorded,
                 InitiativesCtStGallen.GuidLegislativeInPaperSubmission,
                 InitiativesCtStGallen.GuidLegislativeInPaperSubmissionAdmissibilityDecisionValid));
@@ -116,10 +119,24 @@ public class UpdateInitiativeTest : BaseGrpcTest<InitiativeService.InitiativeSer
     [Fact]
     public async Task CtDuplicateShouldThrow()
     {
+        var existingInitiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCtStGallen.GuidLegislativeInPaperSubmissionAdmissibilityDecisionValid));
         await AssertStatus(
-            async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = "Für kantonale Brunch-Treffs (Kantons-Brunch-Initiative)")),
+            async () => await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = existingInitiative.Description)),
             StatusCode.FailedPrecondition,
             nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentBfsShouldWork()
+    {
+        var existingInitiative = await RunOnDb(db => db.Initiatives.FirstAsync(x => x.Id == InitiativesCh.GuidInPreparation));
+        await CtSgStammdatenverwalterClient.UpdateAsync(NewValidRequest(x => x.Description = existingInitiative.Description));
+        var initiative = await
+            CtSgStammdatenverwalterClient.GetAsync(new GetInitiativeRequest
+            {
+                Id = InitiativesCtStGallen.IdLegislativeInPaperSubmission,
+            });
+        initiative.Collection.Description.Should().Be(existingInitiative.Description);
     }
 
     [Fact]

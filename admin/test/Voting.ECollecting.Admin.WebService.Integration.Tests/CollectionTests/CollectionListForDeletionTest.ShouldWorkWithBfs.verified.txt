@@ -35,7 +35,8 @@
                 Id: Guid_1,
                 Description: Gemeinderatsbeschluss über das Verbot von Bubble Tea in städtischen Schulen und Kindergärten wegen gesundheitlicher Bedenken bezüglich Zucker- und Farbstoffgehalt,
                 MinSignatureCount: 300,
-                MaxElectronicSignatureCount: 30
+                MaxElectronicSignatureCount: 30,
+                ElectronicCollectionEnabled: true
               },
               MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
               Collection: {
@@ -114,7 +115,8 @@ Dieses Referendum steht für Erziehung statt Verbot, für Freiheit im Pausenhof 
             Month: 1,
             Day: 3
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         }
       ],
       Initiatives: [
@@ -211,7 +213,8 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
             Month: 1,
             Day: 7
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         }
       ]
     }

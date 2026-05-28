@@ -61,6 +61,7 @@ Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung 
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für mehr kaffeepausen am arbeitsplatz (kaffeepausen-initiative),
         MinSignatureCount: 100000,
         DomainOfInfluenceType: 1,
         IntegritySignatureInfo: {
@@ -134,6 +135,7 @@ Der Bund kann einen jährlichen Tag der Kaffeepause festlegen, um die Bedeutung 
           Description: false,
           CommitteeMembers: false
         },
+        DescriptionLower: für mehr kaffeepausen am arbeitsplatz (kaffeepausen-initiative),
         MinSignatureCount: 100000,
         CleanupWarningSentAt: DateTimeOffset_2,
         DomainOfInfluenceType: 1,

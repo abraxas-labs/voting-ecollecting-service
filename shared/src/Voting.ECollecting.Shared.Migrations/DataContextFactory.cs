@@ -29,7 +29,11 @@ internal class DataContextFactory : IDesignTimeDbContextFactory<MigrationDataCon
     public MigrationDataContext CreateDbContext(string[] args)
     {
         var optionsBuilder = new DbContextOptionsBuilder<MigrationDataContext>();
-        optionsBuilder.UseNpgsql(ConnectionString);
+        optionsBuilder.UseNpgsql(
+            ConnectionString,
+            o => o.MigrationsHistoryTable(
+                MigrationConstants.MigrationsHistoryTable,
+                MigrationConstants.DatabaseSchema));
 
         return new MigrationDataContext(optionsBuilder.Options);
     }

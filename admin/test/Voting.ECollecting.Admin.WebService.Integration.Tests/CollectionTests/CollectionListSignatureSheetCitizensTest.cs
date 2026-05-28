@@ -1,8 +1,11 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Core;
 using Grpc.Net.Client;
+using Microsoft.Extensions.Time.Testing;
+using Voting.ECollecting.Admin.Adapter.VotingStimmregister;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
@@ -11,6 +14,7 @@ using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
+using CollectionType = Voting.ECollecting.Proto.Shared.V1.Enums.CollectionType;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.CollectionTests;
 
@@ -21,6 +25,12 @@ public class CollectionListSignatureSheetCitizensTest : BaseGrpcTest<CollectionS
             InitiativesCh.GuidEnabledForCollectionCollecting,
             Bfs.MunicipalityStGallen),
         1);
+
+    private static readonly Guid _initiativeSgSheet2Guid = CollectionSignatureSheets.BuildGuid(
+        CollectionMunicipalities.BuildGuid(
+            InitiativesCh.GuidEnabledForCollectionCollecting,
+            Bfs.MunicipalityStGallen),
+        2);
 
     private static readonly Guid _referendumSgSheet1Guid = CollectionSignatureSheets.BuildGuid(
         CollectionMunicipalities.BuildGuid(
@@ -47,6 +57,29 @@ public class CollectionListSignatureSheetCitizensTest : BaseGrpcTest<CollectionS
     public async Task ShouldWork()
     {
         await Verify(await MuSgKontrollzeichenerfasserClient.ListCitizensAsync(NewValidInitiativeRequest()));
+    }
+
+    [Fact]
+    public async Task ShouldWorkWithPhysicalSignaturesOrderedByCollectionDateTime()
+    {
+        var listRequest = NewValidInitiativeRequest(x => x.SignatureSheetId = _initiativeSgSheet2Guid.ToString());
+        var baselineResponse = await MuSgKontrollzeichenerfasserClient.ListCitizensAsync(listRequest);
+
+        var timeProvider = GetService<FakeTimeProvider>();
+        var targetTime = new DateTimeOffset(2030, 01, 01, 0, 0, 0, TimeSpan.Zero);
+        timeProvider.Advance(targetTime - timeProvider.GetUtcNow());
+        await MuSgKontrollzeichenerfasserClient.AddCitizenAsync(NewValidAddCitizenInitiativeRequest(VotingStimmregisterAdapterMock.VotingRightPerson8.RegisterId));
+        timeProvider.Advance(TimeSpan.FromMinutes(1));
+        await MuSgKontrollzeichenerfasserClient.AddCitizenAsync(NewValidAddCitizenInitiativeRequest(VotingStimmregisterAdapterMock.VotingRightPerson10.RegisterId));
+        timeProvider.Advance(TimeSpan.FromMinutes(1));
+        await MuSgKontrollzeichenerfasserClient.AddCitizenAsync(NewValidAddCitizenInitiativeRequest(VotingStimmregisterAdapterMock.VotingRightPerson11.RegisterId));
+
+        var response = await MuSgKontrollzeichenerfasserClient.ListCitizensAsync(listRequest);
+        response.Citizens.Select(x => x.RegisterId).Should().Equal(
+            baselineResponse.Citizens.Select(x => x.RegisterId)
+                .Append(VotingStimmregisterAdapterMock.VotingRightPerson8.RegisterId.ToString())
+                .Append(VotingStimmregisterAdapterMock.VotingRightPerson10.RegisterId.ToString())
+                .Append(VotingStimmregisterAdapterMock.VotingRightPerson11.RegisterId.ToString()));
     }
 
     [Fact]
@@ -134,4 +167,13 @@ public class CollectionListSignatureSheetCitizensTest : BaseGrpcTest<CollectionS
         customizer?.Invoke(request);
         return request;
     }
+
+    private AddSignatureSheetCitizenRequest NewValidAddCitizenInitiativeRequest(Guid personRegisterId)
+        => new()
+        {
+            CollectionId = InitiativesCh.IdEnabledForCollectionCollecting,
+            CollectionType = CollectionType.Initiative,
+            SignatureSheetId = _initiativeSgSheet2Guid.ToString(),
+            PersonRegisterId = personRegisterId.ToString(),
+        };
 }

@@ -13,10 +13,10 @@
     <FileVersion>0.0.0.1</FileVersion>
     <Version>0.0.0.1</Version>
 
-    <VotingECollectingProtoVersion>1.108.0</VotingECollectingProtoVersion>
+    <VotingECollectingProtoVersion>1.110.1</VotingECollectingProtoVersion>
     <VotingBasisServiceProtoVersion>1.136.0</VotingBasisServiceProtoVersion>
     <VotingStimmregisterServiceProtoVersion>3.7.0</VotingStimmregisterServiceProtoVersion>
-    <VotingLibVersion>20.15.0</VotingLibVersion>
+    <VotingLibVersion>21.1.2</VotingLibVersion>
     <EfCoreVersion>8.0.2</EfCoreVersion>
     <NpgsqlEfCoreVersion>8.0.4</NpgsqlEfCoreVersion>
     <FluentValidationVersion>11.9.0</FluentValidationVersion>

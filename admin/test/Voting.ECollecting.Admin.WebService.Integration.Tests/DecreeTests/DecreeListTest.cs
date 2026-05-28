@@ -1,11 +1,13 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Net.Client;
 using Voting.ECollecting.Admin.Domain.Authorization;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.Proto.Admin.Services.V1;
 using Voting.ECollecting.Proto.Admin.Services.V1.Requests;
+using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Test.MockedData;
 
 namespace Voting.ECollecting.Admin.WebService.Integration.Tests.DecreeTests;
@@ -35,6 +37,16 @@ public class DecreeListTest : BaseGrpcTest<DecreeService.DecreeServiceClient>
     {
         var response = await MuSgStammdatenverwalterClient.ListAsync(new ListDecreesRequest());
         await Verify(response);
+    }
+
+    [Fact]
+    public async Task ShouldWorkWithDisabledECollecting()
+    {
+        await ModifyDbEntities<DomainOfInfluenceEntity>(_ => true, doi => doi.ECollectingEnabled = false);
+        var response = await CtSgStammdatenverwalterClient.ListAsync(new ListDecreesRequest());
+        response.Decrees.FirstOrDefault(d => d.ElectronicCollectionEnabled)
+            .Should()
+            .BeNull();
     }
 
     protected override async Task AuthorizationTestCall(GrpcChannel channel)

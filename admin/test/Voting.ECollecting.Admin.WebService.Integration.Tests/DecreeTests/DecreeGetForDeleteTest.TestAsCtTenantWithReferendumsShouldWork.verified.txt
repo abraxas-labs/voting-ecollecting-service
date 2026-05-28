@@ -26,7 +26,8 @@
       CanDelete: false
     },
     State: CollectionApplicable,
-    DomainOfInfluenceName: St. Gallen
+    DomainOfInfluenceName: St. Gallen,
+    ElectronicCollectionEnabled: true
   },
   Referendums: [
     {
@@ -36,7 +37,8 @@
           Id: Guid_1,
           Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
           MinSignatureCount: 3000,
-          MaxElectronicSignatureCount: 300
+          MaxElectronicSignatureCount: 300,
+          ElectronicCollectionEnabled: true
         },
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         Collection: {
@@ -71,7 +73,8 @@ Dieses Referendum verteidigt die Freiheit im eigenen Schlafzimmer, moderne Techn
           Id: Guid_1,
           Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
           MinSignatureCount: 3000,
-          MaxElectronicSignatureCount: 300
+          MaxElectronicSignatureCount: 300,
+          ElectronicCollectionEnabled: true
         },
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         Collection: {
@@ -106,7 +109,8 @@ Dieses Referendum setzt sich ein für Inklusion, technische Unterstützung und d
           Id: Guid_1,
           Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
           MinSignatureCount: 3000,
-          MaxElectronicSignatureCount: 300
+          MaxElectronicSignatureCount: 300,
+          ElectronicCollectionEnabled: true
         },
         MembersCommittee: Max Müller, Präsident SP St. Gallen; Laura Schmid, Vorsitzende Pro Familia Verein St. Gallen; Thomas Keller, Finanzverantwortlicher Greenpeace St. Gallen; Anna Meier, Kommunikationsbeauftragte WWF St. Gallen; Felix Weber, Projektleiter Klimaschutzverein St. Gallen; Clara Fischer, Pressesprecherin Amnesty International St. Gallen; Peter Wagner, Eventkoordinator Jugend für Klima St. Gallen; Sophie Roth, Mitgliederbetreuerin Schweizerischer Gewerkschaftsbund St. Gallen; Jonas Berger, Geschäftsführender Vorstand Junge Grüne St. Gallen; Lisa Braun, Koordinatorin Nachhaltigkeitsinitiative St. Gallen,
         Collection: {

@@ -19,6 +19,7 @@ using Voting.ECollecting.Admin.WebService.Configuration;
 using Voting.ECollecting.Admin.WebService.DependencyInjection;
 using Voting.ECollecting.Admin.WebService.Middlewares;
 using Voting.ECollecting.Shared.Core;
+using Voting.ECollecting.Shared.Migrations;
 using Voting.ECollecting.Shared.Migrations.DependencyInjection;
 using Voting.Lib.Common.DependencyInjection;
 using Voting.Lib.Cryptography.Extensions;
@@ -84,7 +85,11 @@ public class Startup(IConfiguration configuration)
             o.Interceptors.Add<RequestProtoValidatorInterceptor>();
         });
 
-        services.AddGrpcReflection();
+        if (AppConfig.EnableGrpcReflection)
+        {
+            services.AddGrpcReflection();
+        }
+
         services.AddProtoValidators();
     }
 
@@ -132,15 +137,31 @@ public class Startup(IConfiguration configuration)
         });
 
     protected virtual void ConfigureDatabase(DbContextOptionsBuilder db)
-        => db.UseNpgsql(AppConfig.Database.ConnectionString, o => o.SetPostgresVersion(AppConfig.Database.Version)).AddLockInterceptors();
+    {
+        AppConfig.Database.Schema = string.IsNullOrEmpty(AppConfig.Database.Schema) ? MigrationConstants.DatabaseSchema : AppConfig.Database.Schema;
+        db.UseNpgsql(
+            AppConfig.Database.ConnectionString,
+            o => o.SetPostgresVersion(AppConfig.Database.Version)).AddLockInterceptors();
+    }
 
     protected virtual void ConfigureMigrationDatabase(DbContextOptionsBuilder db)
-        => db.UseNpgsql(AppConfig.MigrationDatabaseOrDatabase.ConnectionString, o => o.SetPostgresVersion(AppConfig.MigrationDatabaseOrDatabase.Version));
+    {
+        AppConfig.MigrationDatabaseOrDatabase.Schema = string.IsNullOrEmpty(AppConfig.MigrationDatabaseOrDatabase.Schema) ? MigrationConstants.DatabaseSchema : AppConfig.MigrationDatabaseOrDatabase.Schema;
+        db.UseNpgsql(
+            AppConfig.MigrationDatabaseOrDatabase.ConnectionString,
+            o => o.SetPostgresVersion(AppConfig.MigrationDatabaseOrDatabase.Version)
+                .MigrationsHistoryTable(MigrationConstants.MigrationsHistoryTable, AppConfig.MigrationDatabaseOrDatabase.Schema));
+    }
 
     private void MapEndpoints(IEndpointRouteBuilder endpoints)
     {
         endpoints.MapControllers();
-        endpoints.MapGrpcReflectionService();
+
+        if (AppConfig.EnableGrpcReflection)
+        {
+            endpoints.MapGrpcReflectionService().RequireAuthorization();
+        }
+
         endpoints.MapGrpcService<CertificateGrpcService>();
         endpoints.MapGrpcService<CollectionGrpcService>();
         endpoints.MapGrpcService<CollectionMunicipalityGrpcService>();

@@ -5,4 +5,4 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Voting.ECollecting.Admin.Core.Exceptions;
 
-public class CollectionAlreadyExistsException : ValidationException;
+public class DecreeAlreadyExistsException : ValidationException;

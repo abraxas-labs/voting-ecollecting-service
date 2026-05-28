@@ -16,5 +16,9 @@ public class ReferendumModelBuilder : IEntityTypeConfiguration<ReferendumEntity>
             .WithMany(x => x.Collections)
             .HasForeignKey(d => d.DecreeId)
             .OnDelete(DeleteBehavior.Cascade);
+
+        builder
+            .HasIndex(CollectionBaseModelBuilder.DescriptionLowerPropertyName, nameof(CollectionBaseEntity.Bfs), nameof(ReferendumEntity.DecreeId))
+            .IsUnique();
     }
 }

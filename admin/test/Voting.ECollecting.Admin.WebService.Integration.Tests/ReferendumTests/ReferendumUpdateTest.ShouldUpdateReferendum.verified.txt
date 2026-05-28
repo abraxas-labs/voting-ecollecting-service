@@ -4,7 +4,8 @@
     Id: Guid_2,
     Description: Kantonsratsbeschluss über das Verbot von digitalen Weckern in Schlafzimmern zur Förderung analoger Zeitmessung und besseren Schlafs,
     MinSignatureCount: 3000,
-    MaxElectronicSignatureCount: 300
+    MaxElectronicSignatureCount: 300,
+    ElectronicCollectionEnabled: true
   },
   MembersCommittee: Hans Muster, Präsident-updated,
   Collection: {

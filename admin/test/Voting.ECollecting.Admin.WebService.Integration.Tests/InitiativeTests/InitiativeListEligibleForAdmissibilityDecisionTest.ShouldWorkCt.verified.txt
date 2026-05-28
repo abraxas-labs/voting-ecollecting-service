@@ -78,7 +78,8 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: 
+      DomainOfInfluenceName: St. Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_3,
@@ -158,7 +159,8 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl√
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: 
+      DomainOfInfluenceName: St. Gallen,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_4,
@@ -239,7 +241,8 @@ Denn wer jodelt, singt von den Bergen.,
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: 
+      DomainOfInfluenceName: Schweiz,
+      ElectronicCollectionEnabled: true
     },
     {
       Id: Guid_6,
@@ -320,7 +323,8 @@ Denn gute Schokolade verbindet Generationen.,
         Description: false,
         CommitteeMembers: false
       },
-      DomainOfInfluenceName: 
+      DomainOfInfluenceName: Schweiz,
+      ElectronicCollectionEnabled: true
     }
   ]
 }

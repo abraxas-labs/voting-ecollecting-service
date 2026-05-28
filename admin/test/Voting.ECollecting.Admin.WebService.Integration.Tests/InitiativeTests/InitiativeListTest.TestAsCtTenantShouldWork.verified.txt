@@ -74,7 +74,8 @@ Denn gute Schokolade verbindet Generationen.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_2,
@@ -148,7 +149,8 @@ Denn wer Alphorn hört, hört die Berge rufen.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_3,
@@ -236,7 +238,8 @@ Denn wer langsam denkt, denkt oft besser.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_5,
@@ -333,7 +336,8 @@ Denn wer mitfeiert, gehört dazu.,
             Month: 1,
             Day: 9
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_7,
@@ -425,7 +429,8 @@ Ein «bitte» und «danke» kosten nichts, wirken aber wie staatstragende Mikroi
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_9,
@@ -510,7 +515,8 @@ Denn wer picknickt, geniesst die Berge bewusst.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_10,
@@ -583,7 +589,8 @@ Denn wer wandert, entdeckt die Schweiz neu.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_11,
@@ -656,7 +663,8 @@ Denn wer entspannt arbeitet, arbeitet besser.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_12,
@@ -730,7 +738,8 @@ Denn wer im See schwimmt, spürt die Schweiz.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_13,
@@ -803,7 +812,8 @@ Denn wer jodelt, singt von den Bergen.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_14,
@@ -899,7 +909,8 @@ Denn wer Blumen schützt, schützt die Berge.,
             Month: 1,
             Day: 20
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_16,
@@ -972,7 +983,8 @@ Denn wer in der Hütte übernachtet, erlebt die Berge intensiv.,
             Description: true,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_17,
@@ -1045,7 +1057,8 @@ Denn wer die Fahne zeigt, zeigt Verbundenheit.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_18,
@@ -1118,7 +1131,8 @@ Denn wer zusammen isst, versteht sich besser.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_19,
@@ -1208,7 +1222,8 @@ Denn wer zusammen Raclette isst, versteht sich besser.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_21,
@@ -1282,7 +1297,8 @@ Denn wer Käse kennt, schätzt Qualität.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_22,
@@ -1372,7 +1388,8 @@ Denn wer spielt, bleibt geistig fit.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_24,
@@ -1446,7 +1463,8 @@ Denn wer Kuhglocken hört, hört die Alpen leben.,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_25,
@@ -1535,7 +1553,8 @@ Der Preis für das «öffentliche Lachen» wäre ein Symbol: für eine Schweiz, 
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Schweiz,
+          ElectronicCollectionEnabled: true
         }
       ]
     },
@@ -1635,7 +1654,8 @@ Die Initiative fordert keine Naturreservate, sondern Anreize für schmetterlings
             Month: 12,
             Day: 31
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_29,
@@ -1695,7 +1715,8 @@ Die Initiative fordert keine teuren Anlagen, sondern einfache, naturnahe Routen,
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_30,
@@ -1767,7 +1788,8 @@ Die Initiative fordert keine täglichen Märkte, sondern regelmässige Wochenmä
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_31,
@@ -1839,7 +1861,8 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_32,
@@ -1910,7 +1933,8 @@ Die Initiative fordert keine Observatorien, sondern unkomplizierte Nachtwanderun
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_33,
@@ -1970,7 +1994,8 @@ Die Initiative fordert keine Restaurant-Standards, sondern unkomplizierte Brunch
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_34,
@@ -2062,7 +2087,8 @@ Niemand muss virtuos sein, aber jede und jeder soll die Möglichkeit haben, mitz
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_36,
@@ -2134,7 +2160,8 @@ Die Initiative fordert keine Marathon-Wanderungen, sondern einfache Tagestouren 
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_37,
@@ -2206,7 +2233,8 @@ Die Initiative fordert keine Mega-Parks, sondern gut gepflegte, sichere Spielpl�
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_38,
@@ -2290,7 +2318,8 @@ Die Initiative fordert keine Bergbahnen, sondern gut markierte Wege zu den schö
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_39,
@@ -2362,7 +2391,8 @@ Die Initiative fordert keine Bibliotheken, sondern niederschwellige Leseoasen in
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_40,
@@ -2434,7 +2464,8 @@ Die Initiative fordert keine Kultur zentren, sondern einfache Räume für Verein
             Description: true,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_41,
@@ -2494,7 +2525,8 @@ Die Initiative fordert keine Konzertsäle, sondern regelmässige kleine Konzerte
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_42,
@@ -2554,7 +2586,8 @@ Die Initiative fordert keine professionellen Turniere, sondern unkomplizierte Ja
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_43,
@@ -2627,7 +2660,8 @@ Die Initiative fordert keine Autobahn-Standards, sondern alltagstaugliche Velowe
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_44,
@@ -2700,7 +2734,8 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_45,
@@ -2727,7 +2762,7 @@ Die Initiative fordert keine riesigen Events, sondern authentische Volksfeste, d
           },
           Collection: {
             Id: Guid_45,
-            Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+            Description: Für eine tägliche Portion Natur (Frischluftinitiative) 2,
             Type: Initiative,
             Reason:
 Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
@@ -2788,7 +2823,8 @@ Ein Verfassungsartikel zur Förderung einer «täglichen Portion Natur» verpfli
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_47,
@@ -2884,7 +2920,8 @@ Die Initiative fordert keine grossen Anlagen, sondern kleine Kräuterbeete in Pa
             Month: 1,
             Day: 15
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_49,
@@ -2957,7 +2994,8 @@ Die Initiative fordert keine Feueranlagen, sondern einfache, naturnahe Feuerstel
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_50,
@@ -3029,7 +3067,8 @@ Die Initiative fordert Programme und Infrastrukturen, die den Zugang zu Grün- u
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_51,
@@ -3118,7 +3157,8 @@ Die Initiative fordert keine Berghütten, sondern einfache, offene Hütten für 
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_53,
@@ -3191,7 +3231,8 @@ Die Initiative fordert keine Gratis-Eintritt, sondern regelmässige Aktionstage 
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_54,
@@ -3282,7 +3323,8 @@ Das «Grüezi» ist mehr als eine Begrüssung – es ist eine Verfassungsfrage d
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_56,
@@ -3354,7 +3396,8 @@ Die Initiative fordert keine Luxus-Anlagen, sondern einfache, gepflegte Grillste
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St. Gallen,
+          ElectronicCollectionEnabled: true
         }
       ]
     },
@@ -3431,7 +3474,8 @@ Die Initiative fordert keine riesigen Hundeanlagen, sondern kleine, gut gepflegt
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_58,
@@ -3504,7 +3548,8 @@ Die Initiative fordert keine riesigen Schreberanlagen, sondern kleine urbane Gä
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_59,
@@ -3576,7 +3621,8 @@ Die Initiative fordert keine professionellen Touristenprogramme, sondern regelm�
             Description: true,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_60,
@@ -3648,7 +3694,8 @@ Die Initiative fordert keine riesigen Markthallen, sondern regelmässige, gut or
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_61,
@@ -3732,7 +3779,8 @@ Diese Initiative fordert keine riesigen Freizeitparks, sondern ein einfaches Pri
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Goldach,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_62,
@@ -3804,7 +3852,8 @@ Diese Initiative fordert keine grossen Anlagen, sondern einfache Picknickplätze
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_63,
@@ -3874,7 +3923,8 @@ Die Initiative fordert keine Prachtbrunnen, sondern einfache, gut verteilte Trin
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_64,
@@ -3970,7 +4020,8 @@ Die Initiative fordert keine Pflicht, sondern Inspiration und Unterstützung fü
             Month: 1,
             Day: 21
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_66,
@@ -4059,7 +4110,8 @@ Die Initiative fordert keine riesigen Events, sondern ein jährliches, unkompliz
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Goldach,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_68,
@@ -4131,7 +4183,8 @@ Die Initiative fordert keine wilden Sprühaktionen, sondern ein durchdachtes Kon
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_69,
@@ -4203,7 +4256,8 @@ Die Initiative verlangt keine grossen Lesepavillons, sondern kleine, einladende 
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_70,
@@ -4294,7 +4348,8 @@ Die Initiative fordert keine Gartenpflicht, sondern eine Plattform für Gartenli
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_72,
@@ -4389,7 +4444,8 @@ Die Initiative fordert keine dauerhaften Sperrungen, sondern zeitlich begrenzte 
             Month: 1,
             Day: 7
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_74,
@@ -4461,7 +4517,8 @@ Diese Initiative fordert keine Luxuslokale, sondern ein einfaches Prinzip: Wer g
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_75,
@@ -4534,7 +4591,8 @@ Die Initiative fordert keine grossen Konzerthäuser, sondern Orte, wo Musik spon
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_76,
@@ -4607,7 +4665,8 @@ Die Initiative fordert keine Mega-Parks, sondern gut gestaltete Anlagen, die von
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_77,
@@ -4696,7 +4755,8 @@ Die Initiative verlangt keine monumentalen Wasserspiele, sondern einfache, gepfl
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: Goldach,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_79,
@@ -4769,7 +4829,8 @@ Die Initiative fordert keine aufwendigen Events, sondern unkomplizierte Strassen
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_80,
@@ -4858,7 +4919,8 @@ Ein bisschen mehr Blühen, Summen und Grün zwischen See und Schloss ist nicht n
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_82,
@@ -4948,7 +5010,8 @@ Diese Initiative fordert keine Luxusmöbel, sondern ein einfaches Prinzip: Wer g
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_84,
@@ -5039,7 +5102,8 @@ Die Initiative fordert keine Bibliotheken, sondern kleine, niederschwellige Lese
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         },
         {
           Id: Guid_86,
@@ -5123,7 +5187,8 @@ Die Initiative fordert keine grossen Anlagen, sondern einfache, naturnahe Spielp
             Description: false,
             CommitteeMembers: false
           },
-          DomainOfInfluenceName: 
+          DomainOfInfluenceName: St.Gallen,
+          ElectronicCollectionEnabled: true
         }
       ]
     }

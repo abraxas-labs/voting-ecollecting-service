@@ -38,7 +38,7 @@ Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivität
       },
       CollectionStartDate: Date_1,
       CollectionEndDate: Date_2,
-      Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+      Description: Für eine tägliche Portion Natur (Frischluftinitiative) 2,
       Type: Initiative,
       Reason:
 Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.
@@ -159,7 +159,7 @@ Behörden und Schulen sollen, wo möglich, Sitzungen, Unterricht oder Aktivität
       },
       CollectionStartDate: Date_1,
       CollectionEndDate: Date_2,
-      Description: Für eine tägliche Portion Natur (Frischluftinitiative),
+      Description: Für eine tägliche Portion Natur (Frischluftinitiative) 2,
       Type: Initiative,
       Reason:
 Die St.Gallerinnen und St.Galler leben zwischen Seen, Hügeln und Alpstein, doch viele sehen die Natur nur noch durch Fensterscheiben. Diese Initiative will daran erinnern, dass Bewegung an der frischen Luft kein Luxus, sondern Lebensnotwendigkeit ist.

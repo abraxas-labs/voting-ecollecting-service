@@ -10,6 +10,8 @@ namespace Voting.ECollecting.Shared.Domain.ModelBuilders;
 
 public class CollectionBaseModelBuilder : IEntityTypeConfiguration<CollectionBaseEntity>
 {
+    internal const string DescriptionLowerPropertyName = "DescriptionLower";
+
     public void Configure(EntityTypeBuilder<CollectionBaseEntity> builder)
     {
         IntegritySignatureEntityModelBuilder.Configure(builder);
@@ -49,5 +51,8 @@ public class CollectionBaseModelBuilder : IEntityTypeConfiguration<CollectionBas
                         )
                         """;
         builder.ToTable(t => t.HasCheckConstraint("CK_Collections_SecureIdNumber_NotEmpty", checkSql));
+
+        builder.Property<string>(DescriptionLowerPropertyName)
+            .HasComputedColumnSql($"lower(\"{nameof(CollectionBaseEntity.Description)}\")", stored: true);
     }
 }

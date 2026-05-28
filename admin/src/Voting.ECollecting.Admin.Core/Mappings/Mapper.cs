@@ -19,10 +19,17 @@ internal static partial class Mapper
 
     internal static partial List<Decree> MapToDecrees(IEnumerable<DecreeEntity> decreeEntities);
 
-    [MapperIgnoreTarget(nameof(Decree.UserPermissions))]
-    [MapProperty(nameof(DecreeEntity.Collections), nameof(Decree.Referendums))]
-    [MapperIgnoreTarget(nameof(Initiative.DomainOfInfluenceName))]
-    internal static partial Decree MapToDecree(DecreeEntity decreeEntity);
+    [UserMapping(Default = true)]
+    internal static Decree MapToDecree(DecreeEntity decree)
+    {
+        var mapped = MapToDecreeInternal(decree);
+        foreach (var referendum in mapped.Referendums)
+        {
+            referendum.Decree = mapped;
+        }
+
+        return mapped;
+    }
 
     [MapperIgnoreTarget(nameof(CollectionSignatureSheet.UserPermissions))]
     internal static partial List<CollectionSignatureSheet> MapToCollectionSignatureSheets(IEnumerable<CollectionSignatureSheetEntity> entities);
@@ -60,6 +67,7 @@ internal static partial class Mapper
     [MapperIgnoreTarget(nameof(Initiative.UserPermissions))]
     [MapperIgnoreTarget(nameof(Initiative.AttestedCollectionCount))]
     [MapperIgnoreTarget(nameof(Initiative.DomainOfInfluenceName))]
+    [MapperIgnoreTarget(nameof(Initiative.ElectronicCollectionEnabled))]
     internal static partial Initiative MapToInitiative(InitiativeEntity initiativeEntity);
 
     internal static partial List<CollectionPermission> MapToCollectionPermissions(IEnumerable<CollectionPermissionEntity> collectionPermissionEntities);
@@ -80,4 +88,22 @@ internal static partial class Mapper
 
     [MapperRequiredMapping(RequiredMappingStrategy.Target)]
     private static partial CollectionPermission MapToCollectionPermission(CollectionPermissionEntity collectionPermissionEntity);
+
+    [MapperIgnoreTarget(nameof(Decree.UserPermissions))]
+    [MapProperty(nameof(DecreeEntity.Collections), nameof(Decree.Referendums), Use = nameof(MapToReferendumsIgnoreDecree))]
+    [MapperIgnoreTarget(nameof(Initiative.DomainOfInfluenceName))]
+    [MapperIgnoreTarget(nameof(Decree.ElectronicCollectionEnabled))]
+    private static partial Decree MapToDecreeInternal(DecreeEntity decreeEntity);
+
+    [MapperRequiredMapping(RequiredMappingStrategy.Target)]
+    [MapperIgnoreTarget(nameof(Referendum.UserPermissions))]
+    [MapperIgnoreTarget(nameof(Referendum.AttestedCollectionCount))]
+    [MapperIgnoreTarget(nameof(Referendum.Decree))]
+    private static partial Referendum MapToReferendumIgnoreDecree(ReferendumEntity referendumEntity);
+
+    private static List<Referendum> MapToReferendumsIgnoreDecree(
+        List<ReferendumEntity> referendums)
+    {
+        return referendums.ConvertAll(MapToReferendumIgnoreDecree);
+    }
 }

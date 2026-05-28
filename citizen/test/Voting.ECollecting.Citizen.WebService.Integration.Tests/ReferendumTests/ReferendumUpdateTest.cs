@@ -1,12 +1,14 @@
 // (c) Copyright by Abraxas Informatik AG
 // For license information see LICENSE file
 
+using FluentAssertions;
 using Grpc.Core;
 using Microsoft.EntityFrameworkCore;
 using Voting.ECollecting.DataSeeder.Data;
 using Voting.ECollecting.DataSeeder.Data.DataSets;
 using Voting.ECollecting.Proto.Citizen.Services.V1;
 using Voting.ECollecting.Proto.Citizen.Services.V1.Requests;
+using Voting.ECollecting.Shared.Core.Exceptions;
 using Voting.ECollecting.Shared.Domain.Entities;
 using Voting.ECollecting.Shared.Domain.Enums;
 using Voting.ECollecting.Shared.Test.MockedData;
@@ -25,7 +27,7 @@ public class ReferendumUpdateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     public override async Task InitializeAsync()
     {
         await base.InitializeAsync();
-        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidInPreparation));
+        await MockedDataSeeder.Seed(RunScoped, SeederArgs.Referendums.WithReferendums(ReferendumsCtStGallen.GuidInPreparation, ReferendumsCtStGallen.GuidInPreparationReader, ReferendumsCtStGallen.GuidInCollectionEnabledForCollection));
     }
 
     [Fact]
@@ -86,6 +88,25 @@ public class ReferendumUpdateTest : BaseGrpcTest<ReferendumService.ReferendumSer
     public Task UnauthenticatedShouldFail()
     {
         return AssertStatus(async () => await Client.UpdateAsync(new UpdateReferendumRequest()), StatusCode.Unauthenticated);
+    }
+
+    [Fact]
+    public async Task DuplicateShouldThrow()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparationReader));
+        await AssertStatus(
+            async () => await AuthenticatedClient.UpdateAsync(NewValidRequest(x => x.Description = existingReferendum.Description)),
+            StatusCode.FailedPrecondition,
+            nameof(CollectionAlreadyExistsException));
+    }
+
+    [Fact]
+    public async Task DuplicateDescriptionWithDifferentDecreeShouldWork()
+    {
+        var existingReferendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInCollectionEnabledForCollection));
+        await AuthenticatedClient.UpdateAsync(NewValidRequest(x => x.Description = existingReferendum.Description));
+        var referendum = await RunOnDb(db => db.Referendums.FirstAsync(x => x.Id == ReferendumsCtStGallen.GuidInPreparation));
+        referendum.Description.Should().Be(existingReferendum.Description);
     }
 
     [Theory]

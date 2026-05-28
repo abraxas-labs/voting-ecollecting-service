@@ -11,13 +11,13 @@ namespace Voting.ECollecting.Citizen.Adapter.VotingStimmregister;
 public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 {
     public const string NoVotingRightPerson1Ssn = "756.7499.5587.93";
-    public const string VotingRightPerson1Ssn = "756.2147.7416.95";
-    public const string VotingRightPerson2Ssn = "756.6819.4412.96";
-    public const string VotingRightPerson3Ssn = "756.7799.2101.55";
-    public const string VotingRightPerson4Ssn = "756.0270.4688.85";
-    public const string VotingRightPerson5Ssn = "756.5215.1085.67";
-    public const string VotingRightPerson6Ssn = "756.3211.0746.19";
-    public const string VotingRightPerson7Ssn = "756.4120.6846.47";
+    public const string VotingRightPerson1Ssn = "756.7752.8376.89";
+    public const string VotingRightPerson2Ssn = "756.9330.7322.25";
+    public const string VotingRightPerson3Ssn = "756.7587.0481.13";
+    public const string VotingRightPerson4Ssn = "756.9895.3057.42";
+    public const string VotingRightPerson5Ssn = "756.6337.9103.11";
+    public const string VotingRightPerson6Ssn = "756.7178.3108.72";
+    public const string VotingRightPerson7Ssn = "756.2561.6228.91";
     public const string VotingRightPerson8Ssn = "756.3476.4914.59";
     public const string VotingRightPerson9Ssn = "756.2142.4065.99";
     public const string VotingRightPerson10Ssn = "756.9474.5303.74";
@@ -26,7 +26,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson1 =
         new PersonInfo(
-            Guid.Parse("1482ac2e-8dc4-424f-ae47-6b722a359d0b"),
+            Guid.Parse("daa64beb-14ad-42d0-94f8-8396aab60393"),
             61,
             1,
             3203,
@@ -34,7 +34,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson2 =
         new PersonInfo(
-            Guid.Parse("5898d5f7-8659-400d-bf38-92cfe52d98eb"),
+            Guid.Parse("0694f1fd-86c9-40bc-9521-4d2879325c67"),
             55,
             1,
             3203,
@@ -42,7 +42,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson3 =
         new PersonInfo(
-            Guid.Parse("c17581ba-d985-44a8-8be0-4b3d6f321860"),
+            Guid.Parse("1b92b658-e4f9-4a22-897f-3c5117371290"),
             18,
             1,
             3203,
@@ -50,7 +50,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson4 =
         new PersonInfo(
-            Guid.Parse("92a99a29-e9e2-4a33-962e-7f45b9fbb6d9"),
+            Guid.Parse("bd151bbe-5120-4ec3-a430-d3771b858745"),
             53,
             2,
             3203,
@@ -58,7 +58,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson5 =
         new PersonInfo(
-            Guid.Parse("f4a01bcf-08e9-4d90-91d5-c00fbecf1180"),
+            Guid.Parse("47da7287-31ef-4e39-9903-f40676c0213c"),
             91,
             1,
             3203,
@@ -66,7 +66,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson6 =
         new PersonInfo(
-            Guid.Parse("8f1e02cc-6d35-469e-9e81-ce66e12abe94"),
+            Guid.Parse("fabc0bf4-4f4e-4eaf-a4d2-af539eaf7da3"),
             77,
             1,
             3213,
@@ -74,7 +74,7 @@ public class VotingStimmregisterAdapterMock : IVotingStimmregisterAdapter
 
     public static readonly PersonInfo VotingRightPerson7 =
         new PersonInfo(
-            Guid.Parse("510ecfff-62f5-41ce-91cc-9b734d5d3a8a"),
+            Guid.Parse("ec45d7fc-b5e8-4b5a-b4c4-8f03865864da"),
             37,
             2,
             3213,

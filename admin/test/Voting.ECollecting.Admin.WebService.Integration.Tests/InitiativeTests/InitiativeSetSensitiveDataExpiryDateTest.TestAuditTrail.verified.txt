@@ -62,6 +62,7 @@ Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräut
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_Encryption12,
+        DescriptionLower: für öffentliche kräutergärten (kräutergarten-initiative),
         CollectionEndDate: 2019-12-10,
         MinSignatureCount: 4000,
         CameNotAboutReason: 1,
@@ -145,6 +146,7 @@ Er achtet auf Vielfalt, Beschriftung und öffentliche Zugänglichkeit der Kräut
           CommitteeMembers: false
         },
         EncryptionKeyId: KSedVotingECollecting_c63a14f5-9fb1-46f6-a65d-2b8ee2f2b6a4_Encryption12,
+        DescriptionLower: für öffentliche kräutergärten (kräutergarten-initiative),
         CollectionEndDate: 2019-12-10,
         MinSignatureCount: 4000,
         CameNotAboutReason: 1,
